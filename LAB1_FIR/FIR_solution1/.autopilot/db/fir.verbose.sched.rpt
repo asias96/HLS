@@ -1,0 +1,494 @@
+
+
+================================================================
+== Vivado HLS Report for 'fir'
+================================================================
+* Date:           Tue Oct  8 23:48:03 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        LAB1_FIR
+* Solution:       FIR_solution1
+* Product family: zynq
+* Target device:  xc7z010clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.604|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |  180|  180|  180|  180|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------+-----+-----+----------+-----------+-----------+------+----------+
+        |               |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name   | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- FILTER_LOOP  |  162|  162|        18|          -|          -|     9|    no    |
+        +---------------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 36
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!tmp)
+	20  / (tmp)
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+	19  / true
+19 --> 
+	2  / true
+20 --> 
+	21  / true
+21 --> 
+	22  / true
+22 --> 
+	23  / true
+23 --> 
+	24  / true
+24 --> 
+	25  / true
+25 --> 
+	26  / true
+26 --> 
+	27  / true
+27 --> 
+	28  / true
+28 --> 
+	29  / true
+29 --> 
+	30  / true
+30 --> 
+	31  / true
+31 --> 
+	32  / true
+32 --> 
+	33  / true
+33 --> 
+	34  / true
+34 --> 
+	35  / true
+35 --> 
+	36  / true
+36 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(double %probe_in) nounwind, !map !7"   --->   Operation 37 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(double* %out_r) nounwind, !map !13"   --->   Operation 38 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %coeff) nounwind, !map !19"   --->   Operation 39 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%probe_in_read = call double @_ssdm_op_Read.ap_auto.double(double %probe_in) nounwind" [LAB1_FIR/.settings/fir.c:5]   --->   Operation 40 'read' 'probe_in_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%coeff_addr = getelementptr [10 x i32]* %coeff, i64 0, i64 0" [LAB1_FIR/.settings/fir.c:5]   --->   Operation 41 'getelementptr' 'coeff_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([4 x i8]* @fir_str) nounwind"   --->   Operation 42 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (1.76ns)   --->   "br label %1" [LAB1_FIR/.settings/fir.c:11]   --->   Operation 43 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 4.05>
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%acc = phi double [ 0.000000e+00, %0 ], [ %acc_1, %2 ]"   --->   Operation 44 'phi' 'acc' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%i = phi i4 [ -7, %0 ], [ %i_1, %2 ]"   --->   Operation 45 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 46 [1/1] (1.30ns)   --->   "%tmp = icmp eq i4 %i, 0" [LAB1_FIR/.settings/fir.c:11]   --->   Operation 46 'icmp' 'tmp' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.30> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 9, i64 9, i64 9) nounwind"   --->   Operation 47 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 48 [1/1] (0.00ns)   --->   "br i1 %tmp, label %3, label %2" [LAB1_FIR/.settings/fir.c:11]   --->   Operation 48 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 49 [1/1] (1.73ns)   --->   "%i_1 = add i4 %i, -1" [LAB1_FIR/.settings/fir.c:13]   --->   Operation 49 'add' 'i_1' <Predicate = (!tmp)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%tmp_2 = zext i4 %i_1 to i64" [LAB1_FIR/.settings/fir.c:13]   --->   Operation 50 'zext' 'tmp_2' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%data_in_addr = getelementptr inbounds [10 x double]* @data_in, i64 0, i64 %tmp_2" [LAB1_FIR/.settings/fir.c:13]   --->   Operation 51 'getelementptr' 'data_in_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 52 [2/2] (2.32ns)   --->   "%data_in_load = load double* %data_in_addr, align 8" [LAB1_FIR/.settings/fir.c:13]   --->   Operation 52 'load' 'data_in_load' <Predicate = (!tmp)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 10> <RAM>
+ST_2 : Operation 53 [1/1] (0.00ns)   --->   "%tmp_3 = zext i4 %i to i64" [LAB1_FIR/.settings/fir.c:13]   --->   Operation 53 'zext' 'tmp_3' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 54 [1/1] (0.00ns)   --->   "%coeff_addr_1 = getelementptr [10 x i32]* %coeff, i64 0, i64 %tmp_3" [LAB1_FIR/.settings/fir.c:14]   --->   Operation 54 'getelementptr' 'coeff_addr_1' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 55 [2/2] (2.32ns)   --->   "%coeff_load = load i32* %coeff_addr_1, align 4" [LAB1_FIR/.settings/fir.c:14]   --->   Operation 55 'load' 'coeff_load' <Predicate = (!tmp)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 10> <RAM>
+ST_2 : Operation 56 [2/2] (2.32ns)   --->   "%coeff_load_1 = load i32* %coeff_addr, align 4" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 56 'load' 'coeff_load_1' <Predicate = (tmp)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 10> <RAM>
+
+State 3 <SV = 2> <Delay = 8.60>
+ST_3 : Operation 57 [1/2] (2.32ns)   --->   "%data_in_load = load double* %data_in_addr, align 8" [LAB1_FIR/.settings/fir.c:13]   --->   Operation 57 'load' 'data_in_load' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 10> <RAM>
+ST_3 : Operation 58 [1/1] (0.00ns)   --->   "%data_in_addr_1 = getelementptr inbounds [10 x double]* @data_in, i64 0, i64 %tmp_3" [LAB1_FIR/.settings/fir.c:13]   --->   Operation 58 'getelementptr' 'data_in_addr_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 59 [1/1] (2.32ns)   --->   "store double %data_in_load, double* %data_in_addr_1, align 8" [LAB1_FIR/.settings/fir.c:13]   --->   Operation 59 'store' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 10> <RAM>
+ST_3 : Operation 60 [1/2] (2.32ns)   --->   "%coeff_load = load i32* %coeff_addr_1, align 4" [LAB1_FIR/.settings/fir.c:14]   --->   Operation 60 'load' 'coeff_load' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 10> <RAM>
+ST_3 : Operation 61 [6/6] (6.28ns)   --->   "%tmp_4 = sitofp i32 %coeff_load to double" [LAB1_FIR/.settings/fir.c:14]   --->   Operation 61 'sitodp' 'tmp_4' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 6.28>
+ST_4 : Operation 62 [5/6] (6.28ns)   --->   "%tmp_4 = sitofp i32 %coeff_load to double" [LAB1_FIR/.settings/fir.c:14]   --->   Operation 62 'sitodp' 'tmp_4' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 6.28>
+ST_5 : Operation 63 [4/6] (6.28ns)   --->   "%tmp_4 = sitofp i32 %coeff_load to double" [LAB1_FIR/.settings/fir.c:14]   --->   Operation 63 'sitodp' 'tmp_4' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 6.28>
+ST_6 : Operation 64 [3/6] (6.28ns)   --->   "%tmp_4 = sitofp i32 %coeff_load to double" [LAB1_FIR/.settings/fir.c:14]   --->   Operation 64 'sitodp' 'tmp_4' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 6.28>
+ST_7 : Operation 65 [2/6] (6.28ns)   --->   "%tmp_4 = sitofp i32 %coeff_load to double" [LAB1_FIR/.settings/fir.c:14]   --->   Operation 65 'sitodp' 'tmp_4' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 6.28>
+ST_8 : Operation 66 [1/6] (6.28ns)   --->   "%tmp_4 = sitofp i32 %coeff_load to double" [LAB1_FIR/.settings/fir.c:14]   --->   Operation 66 'sitodp' 'tmp_4' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 7.78>
+ST_9 : Operation 67 [6/6] (7.78ns)   --->   "%tmp_5 = fmul double %data_in_load, %tmp_4" [LAB1_FIR/.settings/fir.c:14]   --->   Operation 67 'dmul' 'tmp_5' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 7.78>
+ST_10 : Operation 68 [5/6] (7.78ns)   --->   "%tmp_5 = fmul double %data_in_load, %tmp_4" [LAB1_FIR/.settings/fir.c:14]   --->   Operation 68 'dmul' 'tmp_5' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 7.78>
+ST_11 : Operation 69 [4/6] (7.78ns)   --->   "%tmp_5 = fmul double %data_in_load, %tmp_4" [LAB1_FIR/.settings/fir.c:14]   --->   Operation 69 'dmul' 'tmp_5' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 7.78>
+ST_12 : Operation 70 [3/6] (7.78ns)   --->   "%tmp_5 = fmul double %data_in_load, %tmp_4" [LAB1_FIR/.settings/fir.c:14]   --->   Operation 70 'dmul' 'tmp_5' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 7.78>
+ST_13 : Operation 71 [2/6] (7.78ns)   --->   "%tmp_5 = fmul double %data_in_load, %tmp_4" [LAB1_FIR/.settings/fir.c:14]   --->   Operation 71 'dmul' 'tmp_5' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 7.78>
+ST_14 : Operation 72 [1/6] (7.78ns)   --->   "%tmp_5 = fmul double %data_in_load, %tmp_4" [LAB1_FIR/.settings/fir.c:14]   --->   Operation 72 'dmul' 'tmp_5' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 8.23>
+ST_15 : Operation 73 [5/5] (8.23ns)   --->   "%acc_1 = fadd double %acc, %tmp_5" [LAB1_FIR/.settings/fir.c:14]   --->   Operation 73 'dadd' 'acc_1' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 8.23>
+ST_16 : Operation 74 [4/5] (8.23ns)   --->   "%acc_1 = fadd double %acc, %tmp_5" [LAB1_FIR/.settings/fir.c:14]   --->   Operation 74 'dadd' 'acc_1' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 8.23>
+ST_17 : Operation 75 [3/5] (8.23ns)   --->   "%acc_1 = fadd double %acc, %tmp_5" [LAB1_FIR/.settings/fir.c:14]   --->   Operation 75 'dadd' 'acc_1' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 8.23>
+ST_18 : Operation 76 [2/5] (8.23ns)   --->   "%acc_1 = fadd double %acc, %tmp_5" [LAB1_FIR/.settings/fir.c:14]   --->   Operation 76 'dadd' 'acc_1' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 19 <SV = 18> <Delay = 8.23>
+ST_19 : Operation 77 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([12 x i8]* @p_str) nounwind" [LAB1_FIR/.settings/fir.c:12]   --->   Operation 77 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 78 [1/5] (8.23ns)   --->   "%acc_1 = fadd double %acc, %tmp_5" [LAB1_FIR/.settings/fir.c:14]   --->   Operation 78 'dadd' 'acc_1' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 79 [1/1] (0.00ns)   --->   "br label %1" [LAB1_FIR/.settings/fir.c:11]   --->   Operation 79 'br' <Predicate = true> <Delay = 0.00>
+
+State 20 <SV = 2> <Delay = 8.60>
+ST_20 : Operation 80 [1/2] (2.32ns)   --->   "%coeff_load_1 = load i32* %coeff_addr, align 4" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 80 'load' 'coeff_load_1' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 10> <RAM>
+ST_20 : Operation 81 [6/6] (6.28ns)   --->   "%tmp_7 = sitofp i32 %coeff_load_1 to double" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 81 'sitodp' 'tmp_7' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 21 <SV = 3> <Delay = 6.28>
+ST_21 : Operation 82 [5/6] (6.28ns)   --->   "%tmp_7 = sitofp i32 %coeff_load_1 to double" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 82 'sitodp' 'tmp_7' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 22 <SV = 4> <Delay = 6.28>
+ST_22 : Operation 83 [4/6] (6.28ns)   --->   "%tmp_7 = sitofp i32 %coeff_load_1 to double" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 83 'sitodp' 'tmp_7' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 23 <SV = 5> <Delay = 6.28>
+ST_23 : Operation 84 [3/6] (6.28ns)   --->   "%tmp_7 = sitofp i32 %coeff_load_1 to double" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 84 'sitodp' 'tmp_7' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 24 <SV = 6> <Delay = 6.28>
+ST_24 : Operation 85 [2/6] (6.28ns)   --->   "%tmp_7 = sitofp i32 %coeff_load_1 to double" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 85 'sitodp' 'tmp_7' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 25 <SV = 7> <Delay = 6.28>
+ST_25 : Operation 86 [1/6] (6.28ns)   --->   "%tmp_7 = sitofp i32 %coeff_load_1 to double" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 86 'sitodp' 'tmp_7' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 26 <SV = 8> <Delay = 7.78>
+ST_26 : Operation 87 [1/1] (2.32ns)   --->   "store double %probe_in_read, double* getelementptr inbounds ([10 x double]* @data_in, i64 0, i64 0), align 16" [LAB1_FIR/.settings/fir.c:16]   --->   Operation 87 'store' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 10> <RAM>
+ST_26 : Operation 88 [6/6] (7.78ns)   --->   "%tmp_8 = fmul double %tmp_7, %probe_in_read" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 88 'dmul' 'tmp_8' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 27 <SV = 9> <Delay = 7.78>
+ST_27 : Operation 89 [5/6] (7.78ns)   --->   "%tmp_8 = fmul double %tmp_7, %probe_in_read" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 89 'dmul' 'tmp_8' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 28 <SV = 10> <Delay = 7.78>
+ST_28 : Operation 90 [4/6] (7.78ns)   --->   "%tmp_8 = fmul double %tmp_7, %probe_in_read" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 90 'dmul' 'tmp_8' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 29 <SV = 11> <Delay = 7.78>
+ST_29 : Operation 91 [3/6] (7.78ns)   --->   "%tmp_8 = fmul double %tmp_7, %probe_in_read" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 91 'dmul' 'tmp_8' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 30 <SV = 12> <Delay = 7.78>
+ST_30 : Operation 92 [2/6] (7.78ns)   --->   "%tmp_8 = fmul double %tmp_7, %probe_in_read" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 92 'dmul' 'tmp_8' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 31 <SV = 13> <Delay = 7.78>
+ST_31 : Operation 93 [1/6] (7.78ns)   --->   "%tmp_8 = fmul double %tmp_7, %probe_in_read" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 93 'dmul' 'tmp_8' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 32 <SV = 14> <Delay = 8.23>
+ST_32 : Operation 94 [5/5] (8.23ns)   --->   "%acc_2 = fadd double %acc, %tmp_8" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 94 'dadd' 'acc_2' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 33 <SV = 15> <Delay = 8.23>
+ST_33 : Operation 95 [4/5] (8.23ns)   --->   "%acc_2 = fadd double %acc, %tmp_8" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 95 'dadd' 'acc_2' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 34 <SV = 16> <Delay = 8.23>
+ST_34 : Operation 96 [3/5] (8.23ns)   --->   "%acc_2 = fadd double %acc, %tmp_8" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 96 'dadd' 'acc_2' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 35 <SV = 17> <Delay = 8.23>
+ST_35 : Operation 97 [2/5] (8.23ns)   --->   "%acc_2 = fadd double %acc, %tmp_8" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 97 'dadd' 'acc_2' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 36 <SV = 18> <Delay = 8.23>
+ST_36 : Operation 98 [1/5] (8.23ns)   --->   "%acc_2 = fadd double %acc, %tmp_8" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 98 'dadd' 'acc_2' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_36 : Operation 99 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.doubleP(double* %out_r, double %acc_2) nounwind" [LAB1_FIR/.settings/fir.c:19]   --->   Operation 99 'write' <Predicate = true> <Delay = 0.00>
+ST_36 : Operation 100 [1/1] (0.00ns)   --->   "ret void" [LAB1_FIR/.settings/fir.c:20]   --->   Operation 100 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('acc') with incoming values : ('acc', LAB1_FIR/.settings/fir.c:14) [13]  (1.77 ns)
+
+ <State 2>: 4.06ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', LAB1_FIR/.settings/fir.c:13) [14]  (0 ns)
+	'add' operation ('i', LAB1_FIR/.settings/fir.c:13) [20]  (1.74 ns)
+	'getelementptr' operation ('data_in_addr', LAB1_FIR/.settings/fir.c:13) [22]  (0 ns)
+	'load' operation ('data_in_load', LAB1_FIR/.settings/fir.c:13) on array 'data_in' [23]  (2.32 ns)
+
+ <State 3>: 8.6ns
+The critical path consists of the following:
+	'load' operation ('coeff_load', LAB1_FIR/.settings/fir.c:14) on array 'coeff' [28]  (2.32 ns)
+	'sitodp' operation ('tmp_4', LAB1_FIR/.settings/fir.c:14) [29]  (6.28 ns)
+
+ <State 4>: 6.28ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_4', LAB1_FIR/.settings/fir.c:14) [29]  (6.28 ns)
+
+ <State 5>: 6.28ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_4', LAB1_FIR/.settings/fir.c:14) [29]  (6.28 ns)
+
+ <State 6>: 6.28ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_4', LAB1_FIR/.settings/fir.c:14) [29]  (6.28 ns)
+
+ <State 7>: 6.28ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_4', LAB1_FIR/.settings/fir.c:14) [29]  (6.28 ns)
+
+ <State 8>: 6.28ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_4', LAB1_FIR/.settings/fir.c:14) [29]  (6.28 ns)
+
+ <State 9>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_5', LAB1_FIR/.settings/fir.c:14) [30]  (7.79 ns)
+
+ <State 10>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_5', LAB1_FIR/.settings/fir.c:14) [30]  (7.79 ns)
+
+ <State 11>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_5', LAB1_FIR/.settings/fir.c:14) [30]  (7.79 ns)
+
+ <State 12>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_5', LAB1_FIR/.settings/fir.c:14) [30]  (7.79 ns)
+
+ <State 13>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_5', LAB1_FIR/.settings/fir.c:14) [30]  (7.79 ns)
+
+ <State 14>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_5', LAB1_FIR/.settings/fir.c:14) [30]  (7.79 ns)
+
+ <State 15>: 8.23ns
+The critical path consists of the following:
+	'dadd' operation ('acc', LAB1_FIR/.settings/fir.c:14) [31]  (8.23 ns)
+
+ <State 16>: 8.23ns
+The critical path consists of the following:
+	'dadd' operation ('acc', LAB1_FIR/.settings/fir.c:14) [31]  (8.23 ns)
+
+ <State 17>: 8.23ns
+The critical path consists of the following:
+	'dadd' operation ('acc', LAB1_FIR/.settings/fir.c:14) [31]  (8.23 ns)
+
+ <State 18>: 8.23ns
+The critical path consists of the following:
+	'dadd' operation ('acc', LAB1_FIR/.settings/fir.c:14) [31]  (8.23 ns)
+
+ <State 19>: 8.23ns
+The critical path consists of the following:
+	'dadd' operation ('acc', LAB1_FIR/.settings/fir.c:14) [31]  (8.23 ns)
+
+ <State 20>: 8.6ns
+The critical path consists of the following:
+	'load' operation ('coeff_load_1', LAB1_FIR/.settings/fir.c:17) on array 'coeff' [35]  (2.32 ns)
+	'sitodp' operation ('tmp_7', LAB1_FIR/.settings/fir.c:17) [36]  (6.28 ns)
+
+ <State 21>: 6.28ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_7', LAB1_FIR/.settings/fir.c:17) [36]  (6.28 ns)
+
+ <State 22>: 6.28ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_7', LAB1_FIR/.settings/fir.c:17) [36]  (6.28 ns)
+
+ <State 23>: 6.28ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_7', LAB1_FIR/.settings/fir.c:17) [36]  (6.28 ns)
+
+ <State 24>: 6.28ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_7', LAB1_FIR/.settings/fir.c:17) [36]  (6.28 ns)
+
+ <State 25>: 6.28ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_7', LAB1_FIR/.settings/fir.c:17) [36]  (6.28 ns)
+
+ <State 26>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_8', LAB1_FIR/.settings/fir.c:17) [37]  (7.79 ns)
+
+ <State 27>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_8', LAB1_FIR/.settings/fir.c:17) [37]  (7.79 ns)
+
+ <State 28>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_8', LAB1_FIR/.settings/fir.c:17) [37]  (7.79 ns)
+
+ <State 29>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_8', LAB1_FIR/.settings/fir.c:17) [37]  (7.79 ns)
+
+ <State 30>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_8', LAB1_FIR/.settings/fir.c:17) [37]  (7.79 ns)
+
+ <State 31>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_8', LAB1_FIR/.settings/fir.c:17) [37]  (7.79 ns)
+
+ <State 32>: 8.23ns
+The critical path consists of the following:
+	'dadd' operation ('acc', LAB1_FIR/.settings/fir.c:17) [38]  (8.23 ns)
+
+ <State 33>: 8.23ns
+The critical path consists of the following:
+	'dadd' operation ('acc', LAB1_FIR/.settings/fir.c:17) [38]  (8.23 ns)
+
+ <State 34>: 8.23ns
+The critical path consists of the following:
+	'dadd' operation ('acc', LAB1_FIR/.settings/fir.c:17) [38]  (8.23 ns)
+
+ <State 35>: 8.23ns
+The critical path consists of the following:
+	'dadd' operation ('acc', LAB1_FIR/.settings/fir.c:17) [38]  (8.23 ns)
+
+ <State 36>: 8.23ns
+The critical path consists of the following:
+	'dadd' operation ('acc', LAB1_FIR/.settings/fir.c:17) [38]  (8.23 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
