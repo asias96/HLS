@@ -1,15 +1,16 @@
 # ==============================================================
-# File generated on Tue Oct 08 23:50:16 +0200 2019
+# File generated on Wed Oct 16 10:21:35 CEST 2019
 # Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
-# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
 # Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 # ==============================================================
-set ::env(PATH) "$::env(PATH);C:/Xilinx/Vivado/2018.3/win64/tools/fpo_v7_0"
-set ::env(PATH) "$::env(PATH);C:/Xilinx/Vivado/2018.3/win64/tools/opencv"
-set ::env(PATH) "$::env(PATH);C:/Xilinx/Vivado/2018.3/win64/tools/fft_v9_1"
-set ::env(PATH) "$::env(PATH);C:/Xilinx/Vivado/2018.3/win64/tools/fir_v7_0"
-set ::env(PATH) "$::env(PATH);C:/Xilinx/Vivado/2018.3/win64/tools/dds_v6_0"
+set ::env(LD_LIBRARY_PATH) /opt/Xilinx/Vivado/2018.3/lnx64/tools/fpo_v7_0:$::env(LD_LIBRARY_PATH)
+set ::env(LD_LIBRARY_PATH) /opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv:$::env(LD_LIBRARY_PATH)
+set ::env(LD_LIBRARY_PATH) /opt/Xilinx/Vivado/2018.3/lnx64/tools/fft_v9_1:$::env(LD_LIBRARY_PATH)
+set ::env(LD_LIBRARY_PATH) /opt/Xilinx/Vivado/2018.3/lnx64/tools/fir_v7_0:$::env(LD_LIBRARY_PATH)
+set ::env(LD_LIBRARY_PATH) /opt/Xilinx/Vivado/2018.3/lnx64/tools/dds_v6_0:$::env(LD_LIBRARY_PATH)
+set ::env(LD_LIBRARY_PATH) /usr/lib/x86_64-linux-gnu:$::env(LD_LIBRARY_PATH)
 
 source check_sim.tcl
 
@@ -252,12 +253,11 @@ proc sim {} {
 	set info_code 15
 	set tool_name "XSIM"
 	cosim_message INFO $info_code $tool_name
-	
 	if {$::AESL_AUTOSIM::gDebug == 1} {
-		puts stdout "[debug_prompt arg .run_sim.tcl] \"./run_xsim.bat\"";
+		puts stdout "[debug_prompt arg .run_sim.tcl] \"sh ./run_xsim.sh\"";
 	}
 	
-	set cmdret [catch {eval exec "./run_xsim.bat | tee temp.log" >&@ stdout} err]
+	set cmdret [catch {eval exec "sh ./run_xsim.sh | tee temp.log" >&@ stdout} err]
 	
 	cpfilecontent temp.log ../../.temp11.log
 	

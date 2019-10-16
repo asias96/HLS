@@ -12,8 +12,8 @@ int main()
 
 	FILE *file_in;
 	FILE *file_out;
-	if ((file_in = fopen("D:/HLS/LAB1_FIR/FIR_solution1/csim/build/input.txt", "r")) == NULL
-			|| (file_out = fopen("D:/HLS/LAB1_FIR/FIR_solution1/csim/build/result.txt", "w")) == NULL)
+	if ((file_in = fopen("/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/FIR_solution1/csim/build/input.txt", "r")) == NULL
+			|| (file_out = fopen("/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/FIR_solution1/csim/build/result.txt", "w")) == NULL)
 	{
 		printf("Error while opening the file");
 		exit(1);

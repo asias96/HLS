@@ -20,7 +20,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "180",
+    "Latency": "190",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -38,18 +38,18 @@
   "Files": {
     "CSource": ["..\/.settings\/fir.c"],
     "Vhdl": [
-      "impl\/vhdl\/fir_dadd_64ns_64nbkb.vhd",
+      "impl\/vhdl\/fir_dadd_64ns_64ns_64_5_full_dsp_1.vhd",
       "impl\/vhdl\/fir_data_in.vhd",
-      "impl\/vhdl\/fir_dmul_64ns_64ncud.vhd",
-      "impl\/vhdl\/fir_sitodp_32ns_6dEe.vhd",
+      "impl\/vhdl\/fir_dmul_64ns_64ns_64_6_max_dsp_1.vhd",
+      "impl\/vhdl\/fir_sitodp_32ns_64_6_1.vhd",
       "impl\/vhdl\/fir.vhd"
     ],
     "Verilog": [
-      "impl\/verilog\/fir_dadd_64ns_64nbkb.v",
+      "impl\/verilog\/fir_dadd_64ns_64ns_64_5_full_dsp_1.v",
       "impl\/verilog\/fir_data_in.v",
       "impl\/verilog\/fir_data_in_ram.dat",
-      "impl\/verilog\/fir_dmul_64ns_64ncud.v",
-      "impl\/verilog\/fir_sitodp_32ns_6dEe.v",
+      "impl\/verilog\/fir_dmul_64ns_64ns_64_6_max_dsp_1.v",
+      "impl\/verilog\/fir_sitodp_32ns_64_6_1.v",
       "impl\/verilog\/fir.v"
     ],
     "Misc": ["impl\/misc\/logo.png"],
@@ -58,7 +58,7 @@
       "impl\/misc\/fir_ap_dmul_4_max_dsp_64_ip.tcl",
       "impl\/misc\/fir_ap_sitodp_4_no_dsp_32_ip.tcl"
     ],
-    "DesignXml": "D:\/HLS\/LAB1_FIR\/FIR_solution1\/.autopilot\/db\/fir.design.xml"
+    "DesignXml": "\/home\/lsriw\/HLS_STANISZ\/HLS\/LAB1_FIR\/FIR_solution1\/.autopilot\/db\/fir.design.xml"
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -168,6 +168,10 @@
       "dir": "in",
       "width": "64"
     },
+    "probe_in_ap_vld": {
+      "dir": "in",
+      "width": "1"
+    },
     "out_r": {
       "dir": "out",
       "width": "64"
@@ -198,14 +202,14 @@
       "interfaceRef": "probe_in",
       "dir": "in",
       "dataWidth": "64",
-      "handshakeRef": "ap_none"
+      "handshakeRef": "ap_vld"
     },
     "out_r": {
       "interfaceRef": "out_r",
       "dir": "out",
       "dataWidth": "64",
       "handshakeRef": "ap_vld",
-      "firstOutLatency": "18"
+      "firstOutLatency": "19"
     },
     "coeff_q0": {
       "interfaceRef": "coeff_q0",
@@ -220,30 +224,30 @@
     "Hierarchy": {"ModuleName": "fir"},
     "Metrics": {"fir": {
         "Latency": {
-          "LatencyBest": "180",
-          "LatencyAvg": "180",
-          "LatencyWorst": "180",
-          "PipelineII": "181",
+          "LatencyBest": "190",
+          "LatencyAvg": "190",
+          "LatencyWorst": "190",
+          "PipelineII": "191",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "8.604"
+          "Estimate": "8.232"
         },
         "Loops": [{
             "Name": "FILTER_LOOP",
             "TripCount": "9",
-            "Latency": "162",
+            "Latency": "171",
             "PipelineII": "",
-            "PipelineDepth": "18"
+            "PipelineDepth": "19"
           }],
         "Area": {
           "BRAM_18K": "0",
           "DSP48E": "14",
-          "FF": "1606",
-          "LUT": "2668"
+          "FF": "1705",
+          "LUT": "2714"
         }
       }}
   },
@@ -257,7 +261,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-10-08 23:48:05 +0200",
+    "Time": "2019-10-16 10:32:00 CEST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

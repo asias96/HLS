@@ -14,14 +14,14 @@ set C_modelType { void 0 }
 set C_modelArgList {
 	{ probe_in double 64 regular  }
 	{ out_r double 64 regular {pointer 1}  }
-	{ coeff int 32 regular {array 10 { 1 3 } 1 1 }  }
+	{ coeff int 32 regular {array 10 { 1 } 1 1 }  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "probe_in", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY", "bitSlice":[{"low":0,"up":63,"cElement": [{"cName": "probe_in","cData": "double","bit_use": { "low": 0,"up": 63},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
  	{ "Name" : "out_r", "interface" : "wire", "bitwidth" : 64, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":63,"cElement": [{"cName": "out","cData": "double","bit_use": { "low": 0,"up": 63},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
  	{ "Name" : "coeff", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "coeff","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 9,"step" : 1}]}]}]} ]}
 # RTL Port declarations: 
-set portNum 12
+set portNum 13
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -30,6 +30,7 @@ set portList {
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ probe_in sc_in sc_lv 64 signal 0 } 
+	{ probe_in_ap_vld sc_in sc_logic 1 invld 0 } 
 	{ out_r sc_out sc_lv 64 signal 1 } 
 	{ out_r_ap_vld sc_out sc_logic 1 outvld 1 } 
 	{ coeff_address0 sc_out sc_lv 4 signal 2 } 
@@ -44,6 +45,7 @@ set NewPortList {[
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "probe_in", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "probe_in", "role": "default" }} , 
+ 	{ "name": "probe_in_ap_vld", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "probe_in", "role": "ap_vld" }} , 
  	{ "name": "out_r", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "out_r", "role": "default" }} , 
  	{ "name": "out_r_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "out_r", "role": "ap_vld" }} , 
  	{ "name": "coeff_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "coeff", "role": "address0" }} , 
@@ -57,7 +59,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "180", "EstimateLatencyMax" : "180",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "190", "EstimateLatencyMax" : "190",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -65,35 +67,37 @@ set RtlHierarchyInfo {[
 		"InDataflowNetwork" : "0",
 		"HasNonBlockingOperation" : "0",
 		"Port" : [
-			{"Name" : "probe_in", "Type" : "None", "Direction" : "I"},
+			{"Name" : "probe_in", "Type" : "Vld", "Direction" : "I",
+				"BlockSignal" : [
+					{"Name" : "probe_in_blk_n", "Type" : "RtlSignal"}]},
 			{"Name" : "out_r", "Type" : "Vld", "Direction" : "O"},
 			{"Name" : "coeff", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "data_in", "Type" : "Memory", "Direction" : "IO"}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.data_in_U", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fir_dadd_64ns_64nbkb_U1", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fir_dmul_64ns_64ncud_U2", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fir_sitodp_32ns_6dEe_U3", "Parent" : "0"}]}
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fir_dadd_64ns_64ns_64_5_full_dsp_1_U1", "Parent" : "0"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fir_dmul_64ns_64ns_64_6_max_dsp_1_U2", "Parent" : "0"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fir_sitodp_32ns_64_6_1_U3", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	fir {
 		probe_in {Type I LastRead 0 FirstWrite -1}
-		out_r {Type O LastRead -1 FirstWrite 18}
+		out_r {Type O LastRead -1 FirstWrite 19}
 		coeff {Type I LastRead 2 FirstWrite -1}
 		data_in {Type IO LastRead -1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "180", "Max" : "180"}
-	, {"Name" : "Interval", "Min" : "181", "Max" : "181"}
+	{"Name" : "Latency", "Min" : "190", "Max" : "190"}
+	, {"Name" : "Interval", "Min" : "191", "Max" : "191"}
 ]}
 
 set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	probe_in { ap_none {  { probe_in in_data 0 64 } } }
+	probe_in { ap_vld {  { probe_in in_data 0 64 }  { probe_in_ap_vld in_vld 0 1 } } }
 	out_r { ap_vld {  { out_r out_data 1 64 }  { out_r_ap_vld out_vld 1 1 } } }
 	coeff { ap_memory {  { coeff_address0 mem_address 1 4 }  { coeff_ce0 mem_ce 1 1 }  { coeff_q0 mem_dout 0 32 } } }
 }

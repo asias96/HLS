@@ -4,6 +4,10 @@
 
 void fir(type_data probe_in, type_data* out, const type_coeff coeff[FILTR_LENGTH])
 {
+#pragma HLS RESOURCE variable=coeff core=RAM_1P_BRAM
+#pragma HLS INTERFACE ap_vld port=out
+#pragma HLS INTERFACE ap_vld port=probe_in
+
 	static type_data data_in[FILTR_LENGTH] = {0};
 	type_acc acc = 0;
 

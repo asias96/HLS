@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 set id 1
-set name fir_dadd_64ns_64nbkb
+set name fir_dadd_64ns_64ns_64_5_full_dsp_1
 set corename simcore_dadd
 set op dadd
 set stage_num 5
@@ -92,7 +92,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your p
 
 
 set id 2
-set name fir_dmul_64ns_64ncud
+set name fir_dmul_64ns_64ns_64_6_max_dsp_1
 set corename simcore_dmul
 set op dmul
 set stage_num 6
@@ -183,7 +183,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your p
 
 
 set id 3
-set name fir_sitodp_32ns_6dEe
+set name fir_sitodp_32ns_64_6_1
 set corename simcore_sitodp
 set op sitodp
 set stage_num 6
@@ -387,7 +387,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_probe_in \
     op interface \
-    ports { probe_in { I 64 vector } } \
+    ports { probe_in { I 64 vector } probe_in_ap_vld { I 1 bit } } \
 } "
 }
 

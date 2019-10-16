@@ -1,13 +1,13 @@
-# 1 "D:/HLS/LAB1_FIR/.settings/fir.c"
-# 1 "D:/HLS/LAB1_FIR/.settings/fir.c" 1
+# 1 "/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/.settings/fir.c"
+# 1 "/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/.settings/fir.c" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
-# 147 "<built-in>" 3
+# 149 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "D:/HLS/LAB1_FIR/.settings/fir.c" 2
+# 1 "/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/.settings/fir.c" 2
 
-# 1 "D:/HLS/LAB1_FIR/.settings/fir.h" 1
+# 1 "/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/.settings/fir.h" 1
 
 
 
@@ -18,7 +18,7 @@ typedef double type_data;
 typedef double type_acc;
 
 void fir(type_data, type_data*, const type_coeff[10]);
-# 3 "D:/HLS/LAB1_FIR/.settings/fir.c" 2
+# 3 "/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/.settings/fir.c" 2
 
 
 void fir(type_data probe_in, type_data* out, const type_coeff coeff[10])

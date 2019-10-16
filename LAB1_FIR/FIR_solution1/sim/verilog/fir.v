@@ -138,13 +138,13 @@ data_in_U(
     .q0(data_in_q0)
 );
 
-fir_dadd_64ns_64nbkb #(
+fir_dadd_64ns_64ns_64_5_full_dsp_1 #(
     .ID( 1 ),
     .NUM_STAGE( 5 ),
     .din0_WIDTH( 64 ),
     .din1_WIDTH( 64 ),
     .dout_WIDTH( 64 ))
-fir_dadd_64ns_64nbkb_U1(
+fir_dadd_64ns_64ns_64_5_full_dsp_1_U1(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(acc_reg_95),
@@ -153,13 +153,13 @@ fir_dadd_64ns_64nbkb_U1(
     .dout(grp_fu_118_p2)
 );
 
-fir_dmul_64ns_64ncud #(
+fir_dmul_64ns_64ns_64_6_max_dsp_1 #(
     .ID( 1 ),
     .NUM_STAGE( 6 ),
     .din0_WIDTH( 64 ),
     .din1_WIDTH( 64 ),
     .dout_WIDTH( 64 ))
-fir_dmul_64ns_64ncud_U2(
+fir_dmul_64ns_64ns_64_6_max_dsp_1_U2(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_124_p0),
@@ -168,12 +168,12 @@ fir_dmul_64ns_64ncud_U2(
     .dout(grp_fu_124_p2)
 );
 
-fir_sitodp_32ns_6dEe #(
+fir_sitodp_32ns_64_6_1 #(
     .ID( 1 ),
     .NUM_STAGE( 6 ),
     .din0_WIDTH( 32 ),
     .dout_WIDTH( 64 ))
-fir_sitodp_32ns_6dEe_U3(
+fir_sitodp_32ns_64_6_1_U3(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(coeff_q0),

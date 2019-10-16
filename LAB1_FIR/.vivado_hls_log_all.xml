@@ -2,20 +2,42 @@
 <vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
   <errorLogs>
     <logs>
+      <synLog/>
       <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
-      <simLog>
-        <logs message="Warning: OPMODE Input Warning : The OPMODE 011XX11 with CARRYINSEL  000 to DSP48E1 instance is invalid.&#xD;&#xA;Time: 36275100 ps  Iteration: 10  Process: /apatb_fir_top/AESL_inst_fir/fir_dmul_64ns_64ncud_U2/fir_ap_dmul_4_max_dsp_64_u/U0/i_synth/mult/OP/R_AND_R/logic/R_AND_R/dsp48_e1/dsp48e1_add/DSP48E1_ADD/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2018.3\data/vhdl/src/unisims/primitive/DSP48E1.vhd&#xD;&#xA;// RTL Simulation : 20 / 20 [100.00%] @ &quot;36335000&quot;&#xD;&#xA;////////////////////////////////////////////////////////////////////////////////////&#xD;&#xA;$finish called at time : 36375 ns : File &quot;D:/HLS/LAB1_FIR/FIR_solution1/sim/verilog/fir.autotb.v&quot; Line 335&#xD;&#xA;## quit" projectName="LAB1_FIR" solutionName="FIR_solution1" date="2019-10-08T23:51:20.386+0200" type="Warning"/>
-        <logs message="Warning: OPMODE Input Warning : The OPMODE 011XX11 with CARRYINSEL  000 to DSP48E1 instance is invalid.&#xD;&#xA;Time: 36095100 ps  Iteration: 10  Process: /apatb_fir_top/AESL_inst_fir/fir_dmul_64ns_64ncud_U2/fir_ap_dmul_4_max_dsp_64_u/U0/i_synth/mult/OP/R_AND_R/logic/R_AND_R/dsp48_e1/dsp48e1_add/DSP48E1_ADD/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2018.3\data/vhdl/src/unisims/primitive/DSP48E1.vhd" projectName="LAB1_FIR" solutionName="FIR_solution1" date="2019-10-08T23:51:11.375+0200" type="Warning"/>
-        <logs message="Warning: OPMODE Input Warning : The OPMODE 011XX11 with CARRYINSEL  000 to DSP48E1 instance is invalid.&#xD;&#xA;Time: 35915100 ps  Iteration: 10  Process: /apatb_fir_top/AESL_inst_fir/fir_dmul_64ns_64ncud_U2/fir_ap_dmul_4_max_dsp_64_u/U0/i_synth/mult/OP/R_AND_R/logic/R_AND_R/dsp48_e1/dsp48e1_add/DSP48E1_ADD/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2018.3\data/vhdl/src/unisims/primitive/DSP48E1.vhd" projectName="LAB1_FIR" solutionName="FIR_solution1" date="2019-10-08T23:51:11.347+0200" type="Warning"/>
-        <logs message="Warning: OPMODE Input Warning : The OPMODE 011XX11 with CARRYINSEL  000 to DSP48E1 instance is invalid.&#xD;&#xA;Time: 35735100 ps  Iteration: 10  Process: /apatb_fir_top/AESL_inst_fir/fir_dmul_64ns_64ncud_U2/fir_ap_dmul_4_max_dsp_64_u/U0/i_synth/mult/OP/R_AND_R/logic/R_AND_R/dsp48_e1/dsp48e1_add/DSP48E1_ADD/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2018.3\data/vhdl/src/unisims/primitive/DSP48E1.vhd" projectName="LAB1_FIR" solutionName="FIR_solution1" date="2019-10-08T23:51:11.335+0200" type="Warning"/>
-        <logs message="Warning: OPMODE Input Warning : The OPMODE 011XX11 with CARRYINSEL  000 to DSP48E1 instance is invalid.&#xD;&#xA;Time: 35555100 ps  Iteration: 10  Process: /apatb_fir_top/AESL_inst_fir/fir_dmul_64ns_64ncud_U2/fir_ap_dmul_4_max_dsp_64_u/U0/i_synth/mult/OP/R_AND_R/logic/R_AND_R/dsp48_e1/dsp48e1_add/DSP48E1_ADD/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2018.3\data/vhdl/src/unisims/primitive/DSP48E1.vhd" projectName="LAB1_FIR" solutionName="FIR_solution1" date="2019-10-08T23:51:11.311+0200" type="Warning"/>
-        <logs message="Warning: OPMODE Input Warning : The OPMODE 011XX11 with CARRYINSEL  000 to DSP48E1 instance is invalid.&#xD;&#xA;Time: 35375100 ps  Iteration: 10  Process: /apatb_fir_top/AESL_inst_fir/fir_dmul_64ns_64ncud_U2/fir_ap_dmul_4_max_dsp_64_u/U0/i_synth/mult/OP/R_AND_R/logic/R_AND_R/dsp48_e1/dsp48e1_add/DSP48E1_ADD/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2018.3\data/vhdl/src/unisims/primitive/DSP48E1.vhd" projectName="LAB1_FIR" solutionName="FIR_solution1" date="2019-10-08T23:51:11.295+0200" type="Warning"/>
-        <logs message="Warning: OPMODE Input Warning : The OPMODE 011XX11 with CARRYINSEL  000 to DSP48E1 instance is invalid.&#xD;&#xA;Time: 35195100 ps  Iteration: 10  Process: /apatb_fir_top/AESL_inst_fir/fir_dmul_64ns_64ncud_U2/fir_ap_dmul_4_max_dsp_64_u/U0/i_synth/mult/OP/R_AND_R/logic/R_AND_R/dsp48_e1/dsp48e1_add/DSP48E1_ADD/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2018.3\data/vhdl/src/unisims/primitive/DSP48E1.vhd" projectName="LAB1_FIR" solutionName="FIR_solution1" date="2019-10-08T23:51:11.287+0200" type="Warning"/>
-      </simLog>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_0' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution3" date="2019-10-16T11:02:36.758+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_1' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution3" date="2019-10-16T11:02:36.735+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_2' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution3" date="2019-10-16T11:02:36.733+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_3' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution3" date="2019-10-16T11:02:36.730+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_4' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution3" date="2019-10-16T11:02:36.729+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_5' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution3" date="2019-10-16T11:02:36.726+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_6' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution3" date="2019-10-16T11:02:36.724+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_7' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution3" date="2019-10-16T11:02:36.722+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_8' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution3" date="2019-10-16T11:02:36.720+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'fir/out' to 'fir/out_r' to avoid the conflict with HDL keywords or other object names." projectName="LAB1_FIR" solutionName="FIR_solution3" date="2019-10-16T11:02:36.212+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_8' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution2" date="2019-10-16T10:50:58.410+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_7' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution2" date="2019-10-16T10:50:58.404+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_6' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution2" date="2019-10-16T10:50:58.401+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_5' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution2" date="2019-10-16T10:50:58.398+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_4' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution2" date="2019-10-16T10:50:58.396+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_3' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution2" date="2019-10-16T10:50:58.393+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_2' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution2" date="2019-10-16T10:50:58.391+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_1' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution2" date="2019-10-16T10:50:58.388+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_0' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution2" date="2019-10-16T10:50:58.386+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'fir/out' to 'fir/out_r' to avoid the conflict with HDL keywords or other object names." projectName="LAB1_FIR" solutionName="FIR_solution2" date="2019-10-16T10:50:58.218+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'fir/out' to 'fir/out_r' to avoid the conflict with HDL keywords or other object names." projectName="LAB1_FIR" solutionName="FIR_solution1" date="2019-10-16T10:31:59.902+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
     </logs>
   </warningLogs>
 </vivadoHLSLog:LogRoot>

@@ -1,13 +1,13 @@
-#pragma line 1 "D:/HLS/LAB1_FIR/.settings/fir.c"
-#pragma line 1 "D:/HLS/LAB1_FIR/.settings/fir.c" 1
+#pragma line 1 "/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/.settings/fir.c"
+#pragma line 1 "/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/.settings/fir.c" 1
 #pragma line 1 "<built-in>" 1
 #pragma line 1 "<built-in>" 3
-#pragma line 147 "<built-in>" 3
+#pragma line 149 "<built-in>" 3
 #pragma line 1 "<command line>" 1
 #pragma line 1 "<built-in>" 2
-#pragma line 1 "D:/HLS/LAB1_FIR/.settings/fir.c" 2
+#pragma line 1 "/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/.settings/fir.c" 2
 #pragma empty_line
-#pragma line 1 "D:/HLS/LAB1_FIR/.settings/fir.h" 1
+#pragma line 1 "/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/.settings/fir.h" 1
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
@@ -18,7 +18,7 @@ typedef double type_data;
 typedef double type_acc;
 #pragma empty_line
 void fir(type_data, type_data*, const type_coeff[10]);
-#pragma line 3 "D:/HLS/LAB1_FIR/.settings/fir.c" 2
+#pragma line 3 "/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/.settings/fir.c" 2
 #pragma empty_line
 #pragma empty_line
 void fir(type_data probe_in, type_data* out, const type_coeff coeff[10])
