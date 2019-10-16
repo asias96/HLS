@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Oct 16 10:22:01 2019
+# Process ID: 4829
+# Current directory: /home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/FIR_solution1/sim/verilog
+# Command line: wbtcv -mode batch -source /home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/FIR_solution1/sim/verilog/xsim.dir/fir/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/FIR_solution1/sim/verilog/webtalk.log
+# Journal file: /home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/FIR_solution1/sim/verilog/webtalk.jou
+#-----------------------------------------------------------
+source /home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/FIR_solution1/sim/verilog/xsim.dir/fir/webtalk/xsim_webtalk.tcl -notrace

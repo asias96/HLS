@@ -1,0 +1,12 @@
+vhdl xil_defaultlib "ip/xil_defaultlib/fir_ap_dmul_4_max_dsp_64.vhd"
+vhdl xil_defaultlib "ip/xil_defaultlib/fir_ap_dadd_3_full_dsp_64.vhd"
+vhdl xil_defaultlib "ip/xil_defaultlib/fir_ap_sitodp_4_no_dsp_32.vhd"
+sv work "glbl.v"
+sv xil_defaultlib "fir.autotb.v"
+sv xil_defaultlib "fir.v"
+sv xil_defaultlib "fir_dadd_64ns_64ns_64_5_full_dsp_1.v"
+sv xil_defaultlib "fir_dmul_64ns_64ns_64_6_max_dsp_1.v"
+sv xil_defaultlib "fir_sitodp_32ns_64_6_1.v"
+sv xil_defaultlib "fir_data_in.v"
+sv xil_defaultlib "AESL_automem_coeff.v"
+

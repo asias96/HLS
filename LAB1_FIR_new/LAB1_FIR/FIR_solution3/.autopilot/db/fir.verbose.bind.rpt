@@ -1,0 +1,1384 @@
+
+
+================================================================
+== Vivado HLS Report for 'fir'
+================================================================
+* Date:           Wed Oct 16 11:28:32 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        LAB1_FIR
+* Solution:       FIR_solution3
+* Product family: zynq
+* Target device:  xc7z010clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     9.293|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   50|   50|   50|   50|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 51
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+	19  / true
+19 --> 
+	20  / true
+20 --> 
+	21  / true
+21 --> 
+	22  / true
+22 --> 
+	23  / true
+23 --> 
+	24  / true
+24 --> 
+	25  / true
+25 --> 
+	26  / true
+26 --> 
+	27  / true
+27 --> 
+	28  / true
+28 --> 
+	29  / true
+29 --> 
+	30  / true
+30 --> 
+	31  / true
+31 --> 
+	32  / true
+32 --> 
+	33  / true
+33 --> 
+	34  / true
+34 --> 
+	35  / true
+35 --> 
+	36  / true
+36 --> 
+	37  / true
+37 --> 
+	38  / true
+38 --> 
+	39  / true
+39 --> 
+	40  / true
+40 --> 
+	41  / true
+41 --> 
+	42  / true
+42 --> 
+	43  / true
+43 --> 
+	44  / true
+44 --> 
+	45  / true
+45 --> 
+	46  / true
+46 --> 
+	47  / true
+47 --> 
+	48  / true
+48 --> 
+	49  / true
+49 --> 
+	50  / true
+50 --> 
+	51  / true
+51 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 8.97>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%data_in_7_load = load double* @data_in_7, align 8" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 52 'load' 'data_in_7_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [6/6] (8.97ns)   --->   "%tmp_5_1 = fmul double %data_in_7_load, 2.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 53 'dmul' 'tmp_5_1' <Predicate = true> <Delay = 8.97> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 9.29>
+ST_2 : Operation 54 [1/1] (0.00ns)   --->   "%data_in_8_load = load double* @data_in_8, align 16" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 54 'load' 'data_in_8_load' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 55 [5/5] (9.29ns)   --->   "%acc_1 = fadd double %data_in_8_load, 0.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 55 'dadd' 'acc_1' <Predicate = true> <Delay = 9.29> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 56 [1/1] (0.00ns)   --->   "store double %data_in_7_load, double* @data_in_8, align 16" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 56 'store' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 57 [5/6] (7.78ns)   --->   "%tmp_5_1 = fmul double %data_in_7_load, 2.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 57 'dmul' 'tmp_5_1' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 8.23>
+ST_3 : Operation 58 [4/5] (8.23ns)   --->   "%acc_1 = fadd double %data_in_8_load, 0.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 58 'dadd' 'acc_1' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 59 [4/6] (7.78ns)   --->   "%tmp_5_1 = fmul double %data_in_7_load, 2.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 59 'dmul' 'tmp_5_1' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 8.23>
+ST_4 : Operation 60 [3/5] (8.23ns)   --->   "%acc_1 = fadd double %data_in_8_load, 0.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 60 'dadd' 'acc_1' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 61 [3/6] (7.78ns)   --->   "%tmp_5_1 = fmul double %data_in_7_load, 2.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 61 'dmul' 'tmp_5_1' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 8.23>
+ST_5 : Operation 62 [2/5] (8.23ns)   --->   "%acc_1 = fadd double %data_in_8_load, 0.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 62 'dadd' 'acc_1' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 63 [2/6] (7.78ns)   --->   "%tmp_5_1 = fmul double %data_in_7_load, 2.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 63 'dmul' 'tmp_5_1' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 8.97>
+ST_6 : Operation 64 [1/5] (8.23ns)   --->   "%acc_1 = fadd double %data_in_8_load, 0.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 64 'dadd' 'acc_1' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 65 [1/6] (7.78ns)   --->   "%tmp_5_1 = fmul double %data_in_7_load, 2.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 65 'dmul' 'tmp_5_1' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 66 [1/1] (0.00ns)   --->   "%data_in_6_load = load double* @data_in_6, align 16" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 66 'load' 'data_in_6_load' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 67 [1/1] (0.00ns)   --->   "store double %data_in_6_load, double* @data_in_7, align 8" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 67 'store' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 68 [6/6] (8.97ns)   --->   "%tmp_5_2 = fmul double %data_in_6_load, 4.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 68 'dmul' 'tmp_5_2' <Predicate = true> <Delay = 8.97> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 9.29>
+ST_7 : Operation 69 [5/5] (9.29ns)   --->   "%acc_1_1 = fadd double %acc_1, %tmp_5_1" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 69 'dadd' 'acc_1_1' <Predicate = true> <Delay = 9.29> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 70 [5/6] (7.78ns)   --->   "%tmp_5_2 = fmul double %data_in_6_load, 4.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 70 'dmul' 'tmp_5_2' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 8.23>
+ST_8 : Operation 71 [4/5] (8.23ns)   --->   "%acc_1_1 = fadd double %acc_1, %tmp_5_1" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 71 'dadd' 'acc_1_1' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 72 [4/6] (7.78ns)   --->   "%tmp_5_2 = fmul double %data_in_6_load, 4.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 72 'dmul' 'tmp_5_2' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 8.23>
+ST_9 : Operation 73 [3/5] (8.23ns)   --->   "%acc_1_1 = fadd double %acc_1, %tmp_5_1" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 73 'dadd' 'acc_1_1' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 74 [3/6] (7.78ns)   --->   "%tmp_5_2 = fmul double %data_in_6_load, 4.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 74 'dmul' 'tmp_5_2' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 8.23>
+ST_10 : Operation 75 [2/5] (8.23ns)   --->   "%acc_1_1 = fadd double %acc_1, %tmp_5_1" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 75 'dadd' 'acc_1_1' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 76 [2/6] (7.78ns)   --->   "%tmp_5_2 = fmul double %data_in_6_load, 4.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 76 'dmul' 'tmp_5_2' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 8.97>
+ST_11 : Operation 77 [1/5] (8.23ns)   --->   "%acc_1_1 = fadd double %acc_1, %tmp_5_1" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 77 'dadd' 'acc_1_1' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 78 [1/6] (7.78ns)   --->   "%tmp_5_2 = fmul double %data_in_6_load, 4.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 78 'dmul' 'tmp_5_2' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 79 [1/1] (0.00ns)   --->   "%data_in_5_load = load double* @data_in_5, align 8" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 79 'load' 'data_in_5_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 80 [1/1] (0.00ns)   --->   "store double %data_in_5_load, double* @data_in_6, align 16" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 80 'store' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 81 [6/6] (8.97ns)   --->   "%tmp_5_3 = fmul double %data_in_5_load, 3.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 81 'dmul' 'tmp_5_3' <Predicate = true> <Delay = 8.97> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 9.29>
+ST_12 : Operation 82 [5/5] (9.29ns)   --->   "%acc_1_2 = fadd double %acc_1_1, %tmp_5_2" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 82 'dadd' 'acc_1_2' <Predicate = true> <Delay = 9.29> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 83 [5/6] (7.78ns)   --->   "%tmp_5_3 = fmul double %data_in_5_load, 3.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 83 'dmul' 'tmp_5_3' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 8.23>
+ST_13 : Operation 84 [4/5] (8.23ns)   --->   "%acc_1_2 = fadd double %acc_1_1, %tmp_5_2" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 84 'dadd' 'acc_1_2' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 85 [4/6] (7.78ns)   --->   "%tmp_5_3 = fmul double %data_in_5_load, 3.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 85 'dmul' 'tmp_5_3' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 8.23>
+ST_14 : Operation 86 [3/5] (8.23ns)   --->   "%acc_1_2 = fadd double %acc_1_1, %tmp_5_2" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 86 'dadd' 'acc_1_2' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 87 [3/6] (7.78ns)   --->   "%tmp_5_3 = fmul double %data_in_5_load, 3.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 87 'dmul' 'tmp_5_3' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 8.23>
+ST_15 : Operation 88 [2/5] (8.23ns)   --->   "%acc_1_2 = fadd double %acc_1_1, %tmp_5_2" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 88 'dadd' 'acc_1_2' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 89 [2/6] (7.78ns)   --->   "%tmp_5_3 = fmul double %data_in_5_load, 3.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 89 'dmul' 'tmp_5_3' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 8.23>
+ST_16 : Operation 90 [1/5] (8.23ns)   --->   "%acc_1_2 = fadd double %acc_1_1, %tmp_5_2" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 90 'dadd' 'acc_1_2' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 91 [1/6] (7.78ns)   --->   "%tmp_5_3 = fmul double %data_in_5_load, 3.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 91 'dmul' 'tmp_5_3' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 9.29>
+ST_17 : Operation 92 [5/5] (9.29ns)   --->   "%acc_1_3 = fadd double %acc_1_2, %tmp_5_3" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 92 'dadd' 'acc_1_3' <Predicate = true> <Delay = 9.29> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 8.23>
+ST_18 : Operation 93 [4/5] (8.23ns)   --->   "%acc_1_3 = fadd double %acc_1_2, %tmp_5_3" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 93 'dadd' 'acc_1_3' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 19 <SV = 18> <Delay = 8.23>
+ST_19 : Operation 94 [3/5] (8.23ns)   --->   "%acc_1_3 = fadd double %acc_1_2, %tmp_5_3" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 94 'dadd' 'acc_1_3' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 20 <SV = 19> <Delay = 8.23>
+ST_20 : Operation 95 [2/5] (8.23ns)   --->   "%acc_1_3 = fadd double %acc_1_2, %tmp_5_3" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 95 'dadd' 'acc_1_3' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 21 <SV = 20> <Delay = 8.97>
+ST_21 : Operation 96 [1/5] (8.23ns)   --->   "%acc_1_3 = fadd double %acc_1_2, %tmp_5_3" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 96 'dadd' 'acc_1_3' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 97 [1/1] (0.00ns)   --->   "%data_in_3_load = load double* @data_in_3, align 8" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 97 'load' 'data_in_3_load' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 98 [6/6] (8.97ns)   --->   "%tmp_5_5 = fmul double %data_in_3_load, 5.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 98 'dmul' 'tmp_5_5' <Predicate = true> <Delay = 8.97> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 22 <SV = 21> <Delay = 9.29>
+ST_22 : Operation 99 [1/1] (0.00ns)   --->   "%data_in_4_load = load double* @data_in_4, align 16" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 99 'load' 'data_in_4_load' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 100 [1/1] (0.00ns)   --->   "store double %data_in_4_load, double* @data_in_5, align 8" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 100 'store' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 101 [5/5] (9.29ns)   --->   "%acc_1_4 = fadd double %acc_1_3, %data_in_4_load" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 101 'dadd' 'acc_1_4' <Predicate = true> <Delay = 9.29> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 102 [1/1] (0.00ns)   --->   "store double %data_in_3_load, double* @data_in_4, align 16" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 102 'store' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 103 [5/6] (7.78ns)   --->   "%tmp_5_5 = fmul double %data_in_3_load, 5.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 103 'dmul' 'tmp_5_5' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 23 <SV = 22> <Delay = 8.23>
+ST_23 : Operation 104 [4/5] (8.23ns)   --->   "%acc_1_4 = fadd double %acc_1_3, %data_in_4_load" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 104 'dadd' 'acc_1_4' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 105 [4/6] (7.78ns)   --->   "%tmp_5_5 = fmul double %data_in_3_load, 5.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 105 'dmul' 'tmp_5_5' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 24 <SV = 23> <Delay = 8.23>
+ST_24 : Operation 106 [3/5] (8.23ns)   --->   "%acc_1_4 = fadd double %acc_1_3, %data_in_4_load" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 106 'dadd' 'acc_1_4' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 107 [3/6] (7.78ns)   --->   "%tmp_5_5 = fmul double %data_in_3_load, 5.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 107 'dmul' 'tmp_5_5' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 25 <SV = 24> <Delay = 8.23>
+ST_25 : Operation 108 [2/5] (8.23ns)   --->   "%acc_1_4 = fadd double %acc_1_3, %data_in_4_load" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 108 'dadd' 'acc_1_4' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 109 [2/6] (7.78ns)   --->   "%tmp_5_5 = fmul double %data_in_3_load, 5.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 109 'dmul' 'tmp_5_5' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 26 <SV = 25> <Delay = 8.97>
+ST_26 : Operation 110 [1/5] (8.23ns)   --->   "%acc_1_4 = fadd double %acc_1_3, %data_in_4_load" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 110 'dadd' 'acc_1_4' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 111 [1/6] (7.78ns)   --->   "%tmp_5_5 = fmul double %data_in_3_load, 5.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 111 'dmul' 'tmp_5_5' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 112 [1/1] (0.00ns)   --->   "%data_in_2_load = load double* @data_in_2, align 16" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 112 'load' 'data_in_2_load' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 113 [1/1] (0.00ns)   --->   "store double %data_in_2_load, double* @data_in_3, align 8" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 113 'store' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 114 [6/6] (8.97ns)   --->   "%tmp_5_6 = fmul double %data_in_2_load, 4.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 114 'dmul' 'tmp_5_6' <Predicate = true> <Delay = 8.97> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 27 <SV = 26> <Delay = 9.29>
+ST_27 : Operation 115 [5/5] (9.29ns)   --->   "%acc_1_5 = fadd double %acc_1_4, %tmp_5_5" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 115 'dadd' 'acc_1_5' <Predicate = true> <Delay = 9.29> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 116 [5/6] (7.78ns)   --->   "%tmp_5_6 = fmul double %data_in_2_load, 4.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 116 'dmul' 'tmp_5_6' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 28 <SV = 27> <Delay = 8.23>
+ST_28 : Operation 117 [4/5] (8.23ns)   --->   "%acc_1_5 = fadd double %acc_1_4, %tmp_5_5" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 117 'dadd' 'acc_1_5' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 118 [4/6] (7.78ns)   --->   "%tmp_5_6 = fmul double %data_in_2_load, 4.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 118 'dmul' 'tmp_5_6' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 29 <SV = 28> <Delay = 8.23>
+ST_29 : Operation 119 [3/5] (8.23ns)   --->   "%acc_1_5 = fadd double %acc_1_4, %tmp_5_5" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 119 'dadd' 'acc_1_5' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 120 [3/6] (7.78ns)   --->   "%tmp_5_6 = fmul double %data_in_2_load, 4.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 120 'dmul' 'tmp_5_6' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 30 <SV = 29> <Delay = 8.23>
+ST_30 : Operation 121 [2/5] (8.23ns)   --->   "%acc_1_5 = fadd double %acc_1_4, %tmp_5_5" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 121 'dadd' 'acc_1_5' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_30 : Operation 122 [2/6] (7.78ns)   --->   "%tmp_5_6 = fmul double %data_in_2_load, 4.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 122 'dmul' 'tmp_5_6' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 31 <SV = 30> <Delay = 8.97>
+ST_31 : Operation 123 [1/5] (8.23ns)   --->   "%acc_1_5 = fadd double %acc_1_4, %tmp_5_5" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 123 'dadd' 'acc_1_5' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_31 : Operation 124 [1/6] (7.78ns)   --->   "%tmp_5_6 = fmul double %data_in_2_load, 4.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 124 'dmul' 'tmp_5_6' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_31 : Operation 125 [1/1] (0.00ns)   --->   "%data_in_1_load = load double* @data_in_1, align 8" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 125 'load' 'data_in_1_load' <Predicate = true> <Delay = 0.00>
+ST_31 : Operation 126 [1/1] (0.00ns)   --->   "store double %data_in_1_load, double* @data_in_2, align 16" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 126 'store' <Predicate = true> <Delay = 0.00>
+ST_31 : Operation 127 [6/6] (8.97ns)   --->   "%tmp_5_7 = fmul double %data_in_1_load, 3.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 127 'dmul' 'tmp_5_7' <Predicate = true> <Delay = 8.97> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 32 <SV = 31> <Delay = 9.29>
+ST_32 : Operation 128 [5/5] (9.29ns)   --->   "%acc_1_6 = fadd double %acc_1_5, %tmp_5_6" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 128 'dadd' 'acc_1_6' <Predicate = true> <Delay = 9.29> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_32 : Operation 129 [5/6] (7.78ns)   --->   "%tmp_5_7 = fmul double %data_in_1_load, 3.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 129 'dmul' 'tmp_5_7' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 33 <SV = 32> <Delay = 8.23>
+ST_33 : Operation 130 [4/5] (8.23ns)   --->   "%acc_1_6 = fadd double %acc_1_5, %tmp_5_6" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 130 'dadd' 'acc_1_6' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_33 : Operation 131 [4/6] (7.78ns)   --->   "%tmp_5_7 = fmul double %data_in_1_load, 3.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 131 'dmul' 'tmp_5_7' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 34 <SV = 33> <Delay = 8.23>
+ST_34 : Operation 132 [3/5] (8.23ns)   --->   "%acc_1_6 = fadd double %acc_1_5, %tmp_5_6" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 132 'dadd' 'acc_1_6' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_34 : Operation 133 [3/6] (7.78ns)   --->   "%tmp_5_7 = fmul double %data_in_1_load, 3.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 133 'dmul' 'tmp_5_7' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 35 <SV = 34> <Delay = 8.23>
+ST_35 : Operation 134 [2/5] (8.23ns)   --->   "%acc_1_6 = fadd double %acc_1_5, %tmp_5_6" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 134 'dadd' 'acc_1_6' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_35 : Operation 135 [2/6] (7.78ns)   --->   "%tmp_5_7 = fmul double %data_in_1_load, 3.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 135 'dmul' 'tmp_5_7' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 36 <SV = 35> <Delay = 8.97>
+ST_36 : Operation 136 [1/5] (8.23ns)   --->   "%acc_1_6 = fadd double %acc_1_5, %tmp_5_6" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 136 'dadd' 'acc_1_6' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_36 : Operation 137 [1/6] (7.78ns)   --->   "%tmp_5_7 = fmul double %data_in_1_load, 3.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 137 'dmul' 'tmp_5_7' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_36 : Operation 138 [1/1] (0.00ns)   --->   "%data_in_0_load = load double* @data_in_0, align 16" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 138 'load' 'data_in_0_load' <Predicate = true> <Delay = 0.00>
+ST_36 : Operation 139 [1/1] (0.00ns)   --->   "store double %data_in_0_load, double* @data_in_1, align 8" [LAB1_FIR/.settings/fir.c:17]   --->   Operation 139 'store' <Predicate = true> <Delay = 0.00>
+ST_36 : Operation 140 [6/6] (8.97ns)   --->   "%tmp_5_8 = fmul double %data_in_0_load, 2.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 140 'dmul' 'tmp_5_8' <Predicate = true> <Delay = 8.97> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 37 <SV = 36> <Delay = 9.29>
+ST_37 : Operation 141 [5/5] (9.29ns)   --->   "%acc_1_7 = fadd double %acc_1_6, %tmp_5_7" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 141 'dadd' 'acc_1_7' <Predicate = true> <Delay = 9.29> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 142 [5/6] (7.78ns)   --->   "%tmp_5_8 = fmul double %data_in_0_load, 2.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 142 'dmul' 'tmp_5_8' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 38 <SV = 37> <Delay = 8.23>
+ST_38 : Operation 143 [4/5] (8.23ns)   --->   "%acc_1_7 = fadd double %acc_1_6, %tmp_5_7" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 143 'dadd' 'acc_1_7' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 144 [4/6] (7.78ns)   --->   "%tmp_5_8 = fmul double %data_in_0_load, 2.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 144 'dmul' 'tmp_5_8' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 39 <SV = 38> <Delay = 8.23>
+ST_39 : Operation 145 [3/5] (8.23ns)   --->   "%acc_1_7 = fadd double %acc_1_6, %tmp_5_7" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 145 'dadd' 'acc_1_7' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_39 : Operation 146 [3/6] (7.78ns)   --->   "%tmp_5_8 = fmul double %data_in_0_load, 2.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 146 'dmul' 'tmp_5_8' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 40 <SV = 39> <Delay = 8.23>
+ST_40 : Operation 147 [2/5] (8.23ns)   --->   "%acc_1_7 = fadd double %acc_1_6, %tmp_5_7" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 147 'dadd' 'acc_1_7' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 148 [2/6] (7.78ns)   --->   "%tmp_5_8 = fmul double %data_in_0_load, 2.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 148 'dmul' 'tmp_5_8' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 41 <SV = 40> <Delay = 8.23>
+ST_41 : Operation 149 [1/5] (8.23ns)   --->   "%acc_1_7 = fadd double %acc_1_6, %tmp_5_7" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 149 'dadd' 'acc_1_7' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_41 : Operation 150 [1/6] (7.78ns)   --->   "%tmp_5_8 = fmul double %data_in_0_load, 2.000000e+00" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 150 'dmul' 'tmp_5_8' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 42 <SV = 41> <Delay = 9.29>
+ST_42 : Operation 151 [5/5] (9.29ns)   --->   "%acc_1_8 = fadd double %acc_1_7, %tmp_5_8" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 151 'dadd' 'acc_1_8' <Predicate = true> <Delay = 9.29> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 43 <SV = 42> <Delay = 8.23>
+ST_43 : Operation 152 [4/5] (8.23ns)   --->   "%acc_1_8 = fadd double %acc_1_7, %tmp_5_8" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 152 'dadd' 'acc_1_8' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 44 <SV = 43> <Delay = 8.23>
+ST_44 : Operation 153 [3/5] (8.23ns)   --->   "%acc_1_8 = fadd double %acc_1_7, %tmp_5_8" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 153 'dadd' 'acc_1_8' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 45 <SV = 44> <Delay = 8.23>
+ST_45 : Operation 154 [2/5] (8.23ns)   --->   "%acc_1_8 = fadd double %acc_1_7, %tmp_5_8" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 154 'dadd' 'acc_1_8' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 46 <SV = 45> <Delay = 8.23>
+ST_46 : Operation 155 [1/5] (8.23ns)   --->   "%acc_1_8 = fadd double %acc_1_7, %tmp_5_8" [LAB1_FIR/.settings/fir.c:18]   --->   Operation 155 'dadd' 'acc_1_8' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 47 <SV = 46> <Delay = 9.29>
+ST_47 : Operation 156 [1/1] (0.00ns)   --->   "%probe_in_read = call double @_ssdm_op_Read.ap_vld.double(double %probe_in) nounwind" [LAB1_FIR/.settings/fir.c:5]   --->   Operation 156 'read' 'probe_in_read' <Predicate = true> <Delay = 0.00>
+ST_47 : Operation 157 [1/1] (0.00ns)   --->   "store double %probe_in_read, double* @data_in_0, align 16" [LAB1_FIR/.settings/fir.c:20]   --->   Operation 157 'store' <Predicate = true> <Delay = 0.00>
+ST_47 : Operation 158 [5/5] (9.29ns)   --->   "%acc = fadd double %acc_1_8, %probe_in_read" [LAB1_FIR/.settings/fir.c:21]   --->   Operation 158 'dadd' 'acc' <Predicate = true> <Delay = 9.29> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 48 <SV = 47> <Delay = 8.23>
+ST_48 : Operation 159 [4/5] (8.23ns)   --->   "%acc = fadd double %acc_1_8, %probe_in_read" [LAB1_FIR/.settings/fir.c:21]   --->   Operation 159 'dadd' 'acc' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 49 <SV = 48> <Delay = 8.23>
+ST_49 : Operation 160 [3/5] (8.23ns)   --->   "%acc = fadd double %acc_1_8, %probe_in_read" [LAB1_FIR/.settings/fir.c:21]   --->   Operation 160 'dadd' 'acc' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 50 <SV = 49> <Delay = 8.23>
+ST_50 : Operation 161 [2/5] (8.23ns)   --->   "%acc = fadd double %acc_1_8, %probe_in_read" [LAB1_FIR/.settings/fir.c:21]   --->   Operation 161 'dadd' 'acc' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 51 <SV = 50> <Delay = 8.23>
+ST_51 : Operation 162 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(double %probe_in) nounwind, !map !7"   --->   Operation 162 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_51 : Operation 163 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(double* %out_r) nounwind, !map !13"   --->   Operation 163 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_51 : Operation 164 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([4 x i8]* @fir_str) nounwind"   --->   Operation 164 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_51 : Operation 165 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(double* %out_r, [7 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [LAB1_FIR/.settings/fir.c:7]   --->   Operation 165 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_51 : Operation 166 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(double %probe_in, [7 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [LAB1_FIR/.settings/fir.c:8]   --->   Operation 166 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_51 : Operation 167 [1/5] (8.23ns)   --->   "%acc = fadd double %acc_1_8, %probe_in_read" [LAB1_FIR/.settings/fir.c:21]   --->   Operation 167 'dadd' 'acc' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_51 : Operation 168 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.doubleP(double* %out_r, double %acc) nounwind" [LAB1_FIR/.settings/fir.c:23]   --->   Operation 168 'write' <Predicate = true> <Delay = 0.00>
+ST_51 : Operation 169 [1/1] (0.00ns)   --->   "ret void" [LAB1_FIR/.settings/fir.c:24]   --->   Operation 169 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 1
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ probe_in]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ out_r]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ data_in_8]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ data_in_7]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ data_in_6]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ data_in_5]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ data_in_4]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ data_in_3]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ data_in_2]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ data_in_1]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ data_in_0]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+data_in_7_load (load         ) [ 0011111000000000000000000000000000000000000000000000]
+data_in_8_load (load         ) [ 0001111000000000000000000000000000000000000000000000]
+StgValue_56    (store        ) [ 0000000000000000000000000000000000000000000000000000]
+acc_1          (dadd         ) [ 0000000111110000000000000000000000000000000000000000]
+tmp_5_1        (dmul         ) [ 0000000111110000000000000000000000000000000000000000]
+data_in_6_load (load         ) [ 0000000111110000000000000000000000000000000000000000]
+StgValue_67    (store        ) [ 0000000000000000000000000000000000000000000000000000]
+acc_1_1        (dadd         ) [ 0000000000001111100000000000000000000000000000000000]
+tmp_5_2        (dmul         ) [ 0000000000001111100000000000000000000000000000000000]
+data_in_5_load (load         ) [ 0000000000001111100000000000000000000000000000000000]
+StgValue_80    (store        ) [ 0000000000000000000000000000000000000000000000000000]
+acc_1_2        (dadd         ) [ 0000000000000000011111000000000000000000000000000000]
+tmp_5_3        (dmul         ) [ 0000000000000000011111000000000000000000000000000000]
+acc_1_3        (dadd         ) [ 0000000000000000000000111110000000000000000000000000]
+data_in_3_load (load         ) [ 0000000000000000000000111110000000000000000000000000]
+data_in_4_load (load         ) [ 0000000000000000000000011110000000000000000000000000]
+StgValue_100   (store        ) [ 0000000000000000000000000000000000000000000000000000]
+StgValue_102   (store        ) [ 0000000000000000000000000000000000000000000000000000]
+acc_1_4        (dadd         ) [ 0000000000000000000000000001111100000000000000000000]
+tmp_5_5        (dmul         ) [ 0000000000000000000000000001111100000000000000000000]
+data_in_2_load (load         ) [ 0000000000000000000000000001111100000000000000000000]
+StgValue_113   (store        ) [ 0000000000000000000000000000000000000000000000000000]
+acc_1_5        (dadd         ) [ 0000000000000000000000000000000011111000000000000000]
+tmp_5_6        (dmul         ) [ 0000000000000000000000000000000011111000000000000000]
+data_in_1_load (load         ) [ 0000000000000000000000000000000011111000000000000000]
+StgValue_126   (store        ) [ 0000000000000000000000000000000000000000000000000000]
+acc_1_6        (dadd         ) [ 0000000000000000000000000000000000000111110000000000]
+tmp_5_7        (dmul         ) [ 0000000000000000000000000000000000000111110000000000]
+data_in_0_load (load         ) [ 0000000000000000000000000000000000000111110000000000]
+StgValue_139   (store        ) [ 0000000000000000000000000000000000000000000000000000]
+acc_1_7        (dadd         ) [ 0000000000000000000000000000000000000000001111100000]
+tmp_5_8        (dmul         ) [ 0000000000000000000000000000000000000000001111100000]
+acc_1_8        (dadd         ) [ 0000000000000000000000000000000000000000000000011111]
+probe_in_read  (read         ) [ 0000000000000000000000000000000000000000000000001111]
+StgValue_157   (store        ) [ 0000000000000000000000000000000000000000000000000000]
+StgValue_162   (specbitsmap  ) [ 0000000000000000000000000000000000000000000000000000]
+StgValue_163   (specbitsmap  ) [ 0000000000000000000000000000000000000000000000000000]
+StgValue_164   (spectopmodule) [ 0000000000000000000000000000000000000000000000000000]
+StgValue_165   (specinterface) [ 0000000000000000000000000000000000000000000000000000]
+StgValue_166   (specinterface) [ 0000000000000000000000000000000000000000000000000000]
+acc            (dadd         ) [ 0000000000000000000000000000000000000000000000000000]
+StgValue_168   (write        ) [ 0000000000000000000000000000000000000000000000000000]
+StgValue_169   (ret          ) [ 0000000000000000000000000000000000000000000000000000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="probe_in">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="probe_in"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="out_r">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="out_r"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="data_in_8">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="data_in_8"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="data_in_7">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="data_in_7"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="data_in_6">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="data_in_6"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="data_in_5">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="data_in_5"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1000" name="data_in_4">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="data_in_4"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1000" name="data_in_3">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="data_in_3"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1000" name="data_in_2">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="data_in_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1000" name="data_in_1">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="data_in_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1000" name="data_in_0">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="data_in_0"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_vld.double"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1001" name="const_38">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fir_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1001" name="const_40">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1001" name="const_42">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1001" name="const_44">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1001" name="const_46">
+<pin_list>
+<pin id="47" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="48" class="1001" name="const_48">
+<pin_list>
+<pin id="49" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.ap_vld.doubleP"/></StgValue>
+</bind>
+</comp>
+
+<comp id="50" class="1004" name="probe_in_read_read_fu_50">
+<pin_list>
+<pin id="51" dir="0" index="0" bw="64" slack="0"/>
+<pin id="52" dir="0" index="1" bw="64" slack="0"/>
+<pin id="53" dir="1" index="2" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="probe_in_read/47 "/>
+</bind>
+</comp>
+
+<comp id="56" class="1004" name="StgValue_168_write_fu_56">
+<pin_list>
+<pin id="57" dir="0" index="0" bw="0" slack="0"/>
+<pin id="58" dir="0" index="1" bw="64" slack="0"/>
+<pin id="59" dir="0" index="2" bw="64" slack="0"/>
+<pin id="60" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_168/51 "/>
+</bind>
+</comp>
+
+<comp id="63" class="1004" name="grp_fu_63">
+<pin_list>
+<pin id="64" dir="0" index="0" bw="64" slack="0"/>
+<pin id="65" dir="0" index="1" bw="64" slack="0"/>
+<pin id="66" dir="1" index="2" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="dadd(508) " fcode="dadd"/>
+<opset="acc_1/2 acc_1_1/7 acc_1_2/12 acc_1_3/17 acc_1_4/22 acc_1_5/27 acc_1_6/32 acc_1_7/37 acc_1_8/42 acc/47 "/>
+</bind>
+</comp>
+
+<comp id="70" class="1004" name="grp_fu_70">
+<pin_list>
+<pin id="71" dir="0" index="0" bw="64" slack="0"/>
+<pin id="72" dir="0" index="1" bw="64" slack="0"/>
+<pin id="73" dir="1" index="2" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opcode="dmul(510) " fcode="dmul"/>
+<opset="tmp_5_1/1 tmp_5_2/6 tmp_5_3/11 tmp_5_5/21 tmp_5_6/26 tmp_5_7/31 tmp_5_8/36 "/>
+</bind>
+</comp>
+
+<comp id="78" class="1005" name="reg_78">
+<pin_list>
+<pin id="79" dir="0" index="0" bw="64" slack="1"/>
+<pin id="80" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="acc_1 acc_1_1 acc_1_2 acc_1_3 acc_1_4 acc_1_5 acc_1_6 acc_1_7 acc_1_8 "/>
+</bind>
+</comp>
+
+<comp id="83" class="1005" name="reg_83">
+<pin_list>
+<pin id="84" dir="0" index="0" bw="64" slack="1"/>
+<pin id="85" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="tmp_5_1 tmp_5_2 tmp_5_3 tmp_5_5 tmp_5_6 tmp_5_7 tmp_5_8 "/>
+</bind>
+</comp>
+
+<comp id="88" class="1004" name="data_in_7_load_load_fu_88">
+<pin_list>
+<pin id="89" dir="0" index="0" bw="64" slack="0"/>
+<pin id="90" dir="1" index="1" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="data_in_7_load/1 "/>
+</bind>
+</comp>
+
+<comp id="93" class="1004" name="data_in_8_load_load_fu_93">
+<pin_list>
+<pin id="94" dir="0" index="0" bw="64" slack="0"/>
+<pin id="95" dir="1" index="1" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="data_in_8_load/2 "/>
+</bind>
+</comp>
+
+<comp id="98" class="1004" name="StgValue_56_store_fu_98">
+<pin_list>
+<pin id="99" dir="0" index="0" bw="64" slack="1"/>
+<pin id="100" dir="0" index="1" bw="64" slack="0"/>
+<pin id="101" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="StgValue_56/2 "/>
+</bind>
+</comp>
+
+<comp id="103" class="1004" name="data_in_6_load_load_fu_103">
+<pin_list>
+<pin id="104" dir="0" index="0" bw="64" slack="0"/>
+<pin id="105" dir="1" index="1" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="data_in_6_load/6 "/>
+</bind>
+</comp>
+
+<comp id="108" class="1004" name="StgValue_67_store_fu_108">
+<pin_list>
+<pin id="109" dir="0" index="0" bw="64" slack="0"/>
+<pin id="110" dir="0" index="1" bw="64" slack="0"/>
+<pin id="111" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="StgValue_67/6 "/>
+</bind>
+</comp>
+
+<comp id="114" class="1004" name="data_in_5_load_load_fu_114">
+<pin_list>
+<pin id="115" dir="0" index="0" bw="64" slack="0"/>
+<pin id="116" dir="1" index="1" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="data_in_5_load/11 "/>
+</bind>
+</comp>
+
+<comp id="119" class="1004" name="StgValue_80_store_fu_119">
+<pin_list>
+<pin id="120" dir="0" index="0" bw="64" slack="0"/>
+<pin id="121" dir="0" index="1" bw="64" slack="0"/>
+<pin id="122" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="StgValue_80/11 "/>
+</bind>
+</comp>
+
+<comp id="125" class="1004" name="data_in_3_load_load_fu_125">
+<pin_list>
+<pin id="126" dir="0" index="0" bw="64" slack="0"/>
+<pin id="127" dir="1" index="1" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="data_in_3_load/21 "/>
+</bind>
+</comp>
+
+<comp id="130" class="1004" name="data_in_4_load_load_fu_130">
+<pin_list>
+<pin id="131" dir="0" index="0" bw="64" slack="0"/>
+<pin id="132" dir="1" index="1" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="data_in_4_load/22 "/>
+</bind>
+</comp>
+
+<comp id="135" class="1004" name="StgValue_100_store_fu_135">
+<pin_list>
+<pin id="136" dir="0" index="0" bw="64" slack="0"/>
+<pin id="137" dir="0" index="1" bw="64" slack="0"/>
+<pin id="138" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="StgValue_100/22 "/>
+</bind>
+</comp>
+
+<comp id="141" class="1004" name="StgValue_102_store_fu_141">
+<pin_list>
+<pin id="142" dir="0" index="0" bw="64" slack="1"/>
+<pin id="143" dir="0" index="1" bw="64" slack="0"/>
+<pin id="144" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="StgValue_102/22 "/>
+</bind>
+</comp>
+
+<comp id="146" class="1004" name="data_in_2_load_load_fu_146">
+<pin_list>
+<pin id="147" dir="0" index="0" bw="64" slack="0"/>
+<pin id="148" dir="1" index="1" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="data_in_2_load/26 "/>
+</bind>
+</comp>
+
+<comp id="151" class="1004" name="StgValue_113_store_fu_151">
+<pin_list>
+<pin id="152" dir="0" index="0" bw="64" slack="0"/>
+<pin id="153" dir="0" index="1" bw="64" slack="0"/>
+<pin id="154" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="StgValue_113/26 "/>
+</bind>
+</comp>
+
+<comp id="157" class="1004" name="data_in_1_load_load_fu_157">
+<pin_list>
+<pin id="158" dir="0" index="0" bw="64" slack="0"/>
+<pin id="159" dir="1" index="1" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="data_in_1_load/31 "/>
+</bind>
+</comp>
+
+<comp id="162" class="1004" name="StgValue_126_store_fu_162">
+<pin_list>
+<pin id="163" dir="0" index="0" bw="64" slack="0"/>
+<pin id="164" dir="0" index="1" bw="64" slack="0"/>
+<pin id="165" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="StgValue_126/31 "/>
+</bind>
+</comp>
+
+<comp id="168" class="1004" name="data_in_0_load_load_fu_168">
+<pin_list>
+<pin id="169" dir="0" index="0" bw="64" slack="0"/>
+<pin id="170" dir="1" index="1" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="data_in_0_load/36 "/>
+</bind>
+</comp>
+
+<comp id="173" class="1004" name="StgValue_139_store_fu_173">
+<pin_list>
+<pin id="174" dir="0" index="0" bw="64" slack="0"/>
+<pin id="175" dir="0" index="1" bw="64" slack="0"/>
+<pin id="176" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="StgValue_139/36 "/>
+</bind>
+</comp>
+
+<comp id="179" class="1004" name="StgValue_157_store_fu_179">
+<pin_list>
+<pin id="180" dir="0" index="0" bw="64" slack="0"/>
+<pin id="181" dir="0" index="1" bw="64" slack="0"/>
+<pin id="182" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="StgValue_157/47 "/>
+</bind>
+</comp>
+
+<comp id="185" class="1005" name="data_in_7_load_reg_185">
+<pin_list>
+<pin id="186" dir="0" index="0" bw="64" slack="1"/>
+<pin id="187" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="data_in_7_load "/>
+</bind>
+</comp>
+
+<comp id="191" class="1005" name="data_in_8_load_reg_191">
+<pin_list>
+<pin id="192" dir="0" index="0" bw="64" slack="1"/>
+<pin id="193" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="data_in_8_load "/>
+</bind>
+</comp>
+
+<comp id="196" class="1005" name="data_in_6_load_reg_196">
+<pin_list>
+<pin id="197" dir="0" index="0" bw="64" slack="1"/>
+<pin id="198" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="data_in_6_load "/>
+</bind>
+</comp>
+
+<comp id="201" class="1005" name="data_in_5_load_reg_201">
+<pin_list>
+<pin id="202" dir="0" index="0" bw="64" slack="1"/>
+<pin id="203" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="data_in_5_load "/>
+</bind>
+</comp>
+
+<comp id="206" class="1005" name="data_in_3_load_reg_206">
+<pin_list>
+<pin id="207" dir="0" index="0" bw="64" slack="1"/>
+<pin id="208" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="data_in_3_load "/>
+</bind>
+</comp>
+
+<comp id="212" class="1005" name="data_in_4_load_reg_212">
+<pin_list>
+<pin id="213" dir="0" index="0" bw="64" slack="1"/>
+<pin id="214" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="data_in_4_load "/>
+</bind>
+</comp>
+
+<comp id="217" class="1005" name="data_in_2_load_reg_217">
+<pin_list>
+<pin id="218" dir="0" index="0" bw="64" slack="1"/>
+<pin id="219" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="data_in_2_load "/>
+</bind>
+</comp>
+
+<comp id="222" class="1005" name="data_in_1_load_reg_222">
+<pin_list>
+<pin id="223" dir="0" index="0" bw="64" slack="1"/>
+<pin id="224" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="data_in_1_load "/>
+</bind>
+</comp>
+
+<comp id="227" class="1005" name="data_in_0_load_reg_227">
+<pin_list>
+<pin id="228" dir="0" index="0" bw="64" slack="1"/>
+<pin id="229" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="data_in_0_load "/>
+</bind>
+</comp>
+
+<comp id="232" class="1005" name="probe_in_read_reg_232">
+<pin_list>
+<pin id="233" dir="0" index="0" bw="64" slack="1"/>
+<pin id="234" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="probe_in_read "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="54"><net_src comp="32" pin="0"/><net_sink comp="50" pin=0"/></net>
+
+<net id="55"><net_src comp="0" pin="0"/><net_sink comp="50" pin=1"/></net>
+
+<net id="61"><net_src comp="48" pin="0"/><net_sink comp="56" pin=0"/></net>
+
+<net id="62"><net_src comp="2" pin="0"/><net_sink comp="56" pin=1"/></net>
+
+<net id="67"><net_src comp="24" pin="0"/><net_sink comp="63" pin=1"/></net>
+
+<net id="68"><net_src comp="63" pin="2"/><net_sink comp="56" pin=2"/></net>
+
+<net id="69"><net_src comp="50" pin="2"/><net_sink comp="63" pin=1"/></net>
+
+<net id="74"><net_src comp="22" pin="0"/><net_sink comp="70" pin=1"/></net>
+
+<net id="75"><net_src comp="26" pin="0"/><net_sink comp="70" pin=1"/></net>
+
+<net id="76"><net_src comp="28" pin="0"/><net_sink comp="70" pin=1"/></net>
+
+<net id="77"><net_src comp="30" pin="0"/><net_sink comp="70" pin=1"/></net>
+
+<net id="81"><net_src comp="63" pin="2"/><net_sink comp="78" pin=0"/></net>
+
+<net id="82"><net_src comp="78" pin="1"/><net_sink comp="63" pin=0"/></net>
+
+<net id="86"><net_src comp="70" pin="2"/><net_sink comp="83" pin=0"/></net>
+
+<net id="87"><net_src comp="83" pin="1"/><net_sink comp="63" pin=1"/></net>
+
+<net id="91"><net_src comp="6" pin="0"/><net_sink comp="88" pin=0"/></net>
+
+<net id="92"><net_src comp="88" pin="1"/><net_sink comp="70" pin=0"/></net>
+
+<net id="96"><net_src comp="4" pin="0"/><net_sink comp="93" pin=0"/></net>
+
+<net id="97"><net_src comp="93" pin="1"/><net_sink comp="63" pin=0"/></net>
+
+<net id="102"><net_src comp="4" pin="0"/><net_sink comp="98" pin=1"/></net>
+
+<net id="106"><net_src comp="8" pin="0"/><net_sink comp="103" pin=0"/></net>
+
+<net id="107"><net_src comp="103" pin="1"/><net_sink comp="70" pin=0"/></net>
+
+<net id="112"><net_src comp="103" pin="1"/><net_sink comp="108" pin=0"/></net>
+
+<net id="113"><net_src comp="6" pin="0"/><net_sink comp="108" pin=1"/></net>
+
+<net id="117"><net_src comp="10" pin="0"/><net_sink comp="114" pin=0"/></net>
+
+<net id="118"><net_src comp="114" pin="1"/><net_sink comp="70" pin=0"/></net>
+
+<net id="123"><net_src comp="114" pin="1"/><net_sink comp="119" pin=0"/></net>
+
+<net id="124"><net_src comp="8" pin="0"/><net_sink comp="119" pin=1"/></net>
+
+<net id="128"><net_src comp="14" pin="0"/><net_sink comp="125" pin=0"/></net>
+
+<net id="129"><net_src comp="125" pin="1"/><net_sink comp="70" pin=0"/></net>
+
+<net id="133"><net_src comp="12" pin="0"/><net_sink comp="130" pin=0"/></net>
+
+<net id="134"><net_src comp="130" pin="1"/><net_sink comp="63" pin=1"/></net>
+
+<net id="139"><net_src comp="130" pin="1"/><net_sink comp="135" pin=0"/></net>
+
+<net id="140"><net_src comp="10" pin="0"/><net_sink comp="135" pin=1"/></net>
+
+<net id="145"><net_src comp="12" pin="0"/><net_sink comp="141" pin=1"/></net>
+
+<net id="149"><net_src comp="16" pin="0"/><net_sink comp="146" pin=0"/></net>
+
+<net id="150"><net_src comp="146" pin="1"/><net_sink comp="70" pin=0"/></net>
+
+<net id="155"><net_src comp="146" pin="1"/><net_sink comp="151" pin=0"/></net>
+
+<net id="156"><net_src comp="14" pin="0"/><net_sink comp="151" pin=1"/></net>
+
+<net id="160"><net_src comp="18" pin="0"/><net_sink comp="157" pin=0"/></net>
+
+<net id="161"><net_src comp="157" pin="1"/><net_sink comp="70" pin=0"/></net>
+
+<net id="166"><net_src comp="157" pin="1"/><net_sink comp="162" pin=0"/></net>
+
+<net id="167"><net_src comp="16" pin="0"/><net_sink comp="162" pin=1"/></net>
+
+<net id="171"><net_src comp="20" pin="0"/><net_sink comp="168" pin=0"/></net>
+
+<net id="172"><net_src comp="168" pin="1"/><net_sink comp="70" pin=0"/></net>
+
+<net id="177"><net_src comp="168" pin="1"/><net_sink comp="173" pin=0"/></net>
+
+<net id="178"><net_src comp="18" pin="0"/><net_sink comp="173" pin=1"/></net>
+
+<net id="183"><net_src comp="50" pin="2"/><net_sink comp="179" pin=0"/></net>
+
+<net id="184"><net_src comp="20" pin="0"/><net_sink comp="179" pin=1"/></net>
+
+<net id="188"><net_src comp="88" pin="1"/><net_sink comp="185" pin=0"/></net>
+
+<net id="189"><net_src comp="185" pin="1"/><net_sink comp="98" pin=0"/></net>
+
+<net id="190"><net_src comp="185" pin="1"/><net_sink comp="70" pin=0"/></net>
+
+<net id="194"><net_src comp="93" pin="1"/><net_sink comp="191" pin=0"/></net>
+
+<net id="195"><net_src comp="191" pin="1"/><net_sink comp="63" pin=0"/></net>
+
+<net id="199"><net_src comp="103" pin="1"/><net_sink comp="196" pin=0"/></net>
+
+<net id="200"><net_src comp="196" pin="1"/><net_sink comp="70" pin=0"/></net>
+
+<net id="204"><net_src comp="114" pin="1"/><net_sink comp="201" pin=0"/></net>
+
+<net id="205"><net_src comp="201" pin="1"/><net_sink comp="70" pin=0"/></net>
+
+<net id="209"><net_src comp="125" pin="1"/><net_sink comp="206" pin=0"/></net>
+
+<net id="210"><net_src comp="206" pin="1"/><net_sink comp="141" pin=0"/></net>
+
+<net id="211"><net_src comp="206" pin="1"/><net_sink comp="70" pin=0"/></net>
+
+<net id="215"><net_src comp="130" pin="1"/><net_sink comp="212" pin=0"/></net>
+
+<net id="216"><net_src comp="212" pin="1"/><net_sink comp="63" pin=1"/></net>
+
+<net id="220"><net_src comp="146" pin="1"/><net_sink comp="217" pin=0"/></net>
+
+<net id="221"><net_src comp="217" pin="1"/><net_sink comp="70" pin=0"/></net>
+
+<net id="225"><net_src comp="157" pin="1"/><net_sink comp="222" pin=0"/></net>
+
+<net id="226"><net_src comp="222" pin="1"/><net_sink comp="70" pin=0"/></net>
+
+<net id="230"><net_src comp="168" pin="1"/><net_sink comp="227" pin=0"/></net>
+
+<net id="231"><net_src comp="227" pin="1"/><net_sink comp="70" pin=0"/></net>
+
+<net id="235"><net_src comp="50" pin="2"/><net_sink comp="232" pin=0"/></net>
+
+<net id="236"><net_src comp="232" pin="1"/><net_sink comp="63" pin=1"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: out_r | {51 }
+	Port: data_in_8 | {2 }
+	Port: data_in_7 | {6 }
+	Port: data_in_6 | {11 }
+	Port: data_in_5 | {22 }
+	Port: data_in_4 | {22 }
+	Port: data_in_3 | {26 }
+	Port: data_in_2 | {31 }
+	Port: data_in_1 | {36 }
+	Port: data_in_0 | {47 }
+ - Input state : 
+	Port: fir : probe_in | {47 }
+	Port: fir : data_in_8 | {2 }
+	Port: fir : data_in_7 | {1 }
+	Port: fir : data_in_6 | {6 }
+	Port: fir : data_in_5 | {11 }
+	Port: fir : data_in_4 | {22 }
+	Port: fir : data_in_3 | {21 }
+	Port: fir : data_in_2 | {26 }
+	Port: fir : data_in_1 | {31 }
+	Port: fir : data_in_0 | {36 }
+  - Chain level:
+	State 1
+		tmp_5_1 : 1
+	State 2
+		acc_1 : 1
+	State 3
+	State 4
+	State 5
+	State 6
+		StgValue_67 : 1
+		tmp_5_2 : 1
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+		StgValue_80 : 1
+		tmp_5_3 : 1
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+		tmp_5_5 : 1
+	State 22
+		StgValue_100 : 1
+		acc_1_4 : 1
+	State 23
+	State 24
+	State 25
+	State 26
+		StgValue_113 : 1
+		tmp_5_6 : 1
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+		StgValue_126 : 1
+		tmp_5_7 : 1
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+		StgValue_139 : 1
+		tmp_5_8 : 1
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
+	State 50
+	State 51
+		StgValue_168 : 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|--------------------------|---------|---------|---------|
+| Operation|      Functional Unit     |  DSP48E |    FF   |   LUT   |
+|----------|--------------------------|---------|---------|---------|
+|   dadd   |         grp_fu_63        |    3    |   445   |   1149  |
+|----------|--------------------------|---------|---------|---------|
+|   dmul   |         grp_fu_70        |    11   |   317   |   578   |
+|----------|--------------------------|---------|---------|---------|
+|   read   | probe_in_read_read_fu_50 |    0    |    0    |    0    |
+|----------|--------------------------|---------|---------|---------|
+|   write  | StgValue_168_write_fu_56 |    0    |    0    |    0    |
+|----------|--------------------------|---------|---------|---------|
+|   Total  |                          |    14   |   762   |   1727  |
+|----------|--------------------------|---------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
++----------------------+--------+
+|                      |   FF   |
++----------------------+--------+
+|data_in_0_load_reg_227|   64   |
+|data_in_1_load_reg_222|   64   |
+|data_in_2_load_reg_217|   64   |
+|data_in_3_load_reg_206|   64   |
+|data_in_4_load_reg_212|   64   |
+|data_in_5_load_reg_201|   64   |
+|data_in_6_load_reg_196|   64   |
+|data_in_7_load_reg_185|   64   |
+|data_in_8_load_reg_191|   64   |
+| probe_in_read_reg_232|   64   |
+|        reg_78        |   64   |
+|        reg_83        |   64   |
++----------------------+--------+
+|         Total        |   768  |
++----------------------+--------+
+
+* Multiplexer (MUX) list: 
+|-----------|------|------|------|--------||---------||---------|
+|    Comp   |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
+|-----------|------|------|------|--------||---------||---------|
+| grp_fu_63 |  p0  |   3  |  64  |   192  ||    15   |
+| grp_fu_63 |  p1  |   6  |  64  |   384  ||    33   |
+| grp_fu_70 |  p0  |  14  |  64  |   896  ||    59   |
+| grp_fu_70 |  p1  |   4  |  64  |   256  ||    9    |
+|-----------|------|------|------|--------||---------||---------|
+|   Total   |      |      |      |  1728  || 7.77685 ||   116   |
+|-----------|------|------|------|--------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+
+|           | DSP48E |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+--------+
+|  Function |   14   |    -   |   762  |  1727  |
+|   Memory  |    -   |    -   |    -   |    -   |
+|Multiplexer|    -   |    7   |    -   |   116  |
+|  Register |    -   |    -   |   768  |    -   |
++-----------+--------+--------+--------+--------+
+|   Total   |   14   |    7   |  1530  |  1843  |
++-----------+--------+--------+--------+--------+
