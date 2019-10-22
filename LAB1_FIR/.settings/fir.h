@@ -3,10 +3,10 @@
 
 #define FILTR_LENGTH 10
 
-typedef int type_coeff;
+typedef const int type_coeff;
 typedef double type_data;
 typedef double type_acc;
 
-void fir(type_data, type_data*, const type_coeff[FILTR_LENGTH]);
+void fir(const type_data, type_data*, const type_coeff[FILTR_LENGTH]);
 
 #endif

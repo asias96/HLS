@@ -1,0 +1,369 @@
+==============================================================
+File generated on Wed Oct 23 00:43:36 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'LAB1_FIR/.settings/fir.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 103.141 ; gain = 20.672
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 103.141 ; gain = 20.672
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 104.398 ; gain = 21.930
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 104.656 ; gain = 22.188
+INFO: [HLS 200-489] Unrolling loop 'FILTER_LOOP' (LAB1_FIR/.settings/fir.c:15) in function 'fir' completely with a factor of 9.
+INFO: [XFORM 203-131] Reshaping array 'coeff' (LAB1_FIR/.settings/fir.c:5) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'data_in'  in dimension 1 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 125.766 ; gain = 43.297
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 125.766 ; gain = 43.297
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fir' ...
+WARNING: [SYN 201-107] Renaming port name 'fir/out' to 'fir/out_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 7.434 seconds; current allocated memory: 76.666 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 77.184 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir/probe_in' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir/out_r' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir/coeff' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fir' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'data_in_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_0' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'fir_dadd_64ns_64ns_64_5_full_dsp_1' to 'fir_dadd_64ns_64nbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fir_dmul_64ns_64ns_64_6_max_dsp_1' to 'fir_dmul_64ns_64ncud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fir_sitodp_32ns_64_6_1' to 'fir_sitodp_32ns_6dEe' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'fir_dadd_64ns_64nbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fir_dmul_64ns_64ncud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fir_sitodp_32ns_6dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir'.
+INFO: [HLS 200-111]  Elapsed time: 0.283 seconds; current allocated memory: 78.104 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 127.402 ; gain = 44.934
+INFO: [SYSC 207-301] Generating SystemC RTL for fir.
+INFO: [VHDL 208-304] Generating VHDL RTL for fir.
+INFO: [VLOG 209-307] Generating Verilog RTL for fir.
+INFO: [HLS 200-112] Total elapsed time: 9.346 seconds; peak allocated memory: 78.104 MB.
+==============================================================
+File generated on Wed Oct 23 00:47:00 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Oct 23 00:47:58 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Oct 23 00:51:09 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Oct 23 00:52:01 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'LAB1_FIR/.settings/fir.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 103.125 ; gain = 20.695
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 103.125 ; gain = 20.695
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 104.176 ; gain = 21.746
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 104.430 ; gain = 22.000
+INFO: [HLS 200-489] Unrolling loop 'FILTER_LOOP' (LAB1_FIR/.settings/fir.c:16) in function 'fir' completely with a factor of 9.
+WARNING: [XFORM 203-135] Ignore complete array reshape directive on  'coeff' (LAB1_FIR/.settings/fir.c:5) in dimension 1: conflict with memory core assignment directive.
+INFO: [XFORM 203-101] Partitioning array 'data_in'  in dimension 1 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 125.566 ; gain = 43.137
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 125.566 ; gain = 43.137
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fir' ...
+WARNING: [SYN 201-107] Renaming port name 'fir/out' to 'fir/out_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 7.381 seconds; current allocated memory: 76.787 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.176 seconds; current allocated memory: 77.317 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir/probe_in' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir/out_r' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir/coeff' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fir' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'data_in_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_0' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'fir_dadd_64ns_64ns_64_5_full_dsp_1' to 'fir_dadd_64ns_64nbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fir_dmul_64ns_64ns_64_6_max_dsp_1' to 'fir_dmul_64ns_64ncud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fir_sitodp_32ns_64_6_1' to 'fir_sitodp_32ns_6dEe' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'fir_dadd_64ns_64nbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fir_dmul_64ns_64ncud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fir_sitodp_32ns_6dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir'.
+INFO: [HLS 200-111]  Elapsed time: 0.285 seconds; current allocated memory: 78.200 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 126.805 ; gain = 44.375
+INFO: [SYSC 207-301] Generating SystemC RTL for fir.
+INFO: [VHDL 208-304] Generating VHDL RTL for fir.
+INFO: [VLOG 209-307] Generating Verilog RTL for fir.
+INFO: [HLS 200-112] Total elapsed time: 9.317 seconds; peak allocated memory: 78.200 MB.
+==============================================================
+File generated on Wed Oct 23 00:53:04 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'LAB1_FIR/.settings/fir.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 103.070 ; gain = 19.164
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 103.070 ; gain = 19.164
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 104.469 ; gain = 20.563
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 104.723 ; gain = 20.816
+INFO: [HLS 200-489] Unrolling loop 'FILTER_LOOP' (LAB1_FIR/.settings/fir.c:16) in function 'fir' completely with a factor of 9.
+WARNING: [XFORM 203-135] Ignore complete array reshape directive on  'coeff' (LAB1_FIR/.settings/fir.c:5) in dimension 1: conflict with memory core assignment directive.
+INFO: [XFORM 203-101] Partitioning array 'data_in'  in dimension 1 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 125.375 ; gain = 41.469
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 125.375 ; gain = 41.469
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fir' ...
+WARNING: [SYN 201-107] Renaming port name 'fir/out' to 'fir/out_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 7.622 seconds; current allocated memory: 76.787 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.194 seconds; current allocated memory: 77.317 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir/probe_in' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir/out_r' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir/coeff' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fir' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'data_in_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_0' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'fir_dadd_64ns_64ns_64_5_full_dsp_1' to 'fir_dadd_64ns_64nbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fir_dmul_64ns_64ns_64_6_max_dsp_1' to 'fir_dmul_64ns_64ncud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fir_sitodp_32ns_64_6_1' to 'fir_sitodp_32ns_6dEe' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'fir_dadd_64ns_64nbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fir_dmul_64ns_64ncud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fir_sitodp_32ns_6dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir'.
+INFO: [HLS 200-111]  Elapsed time: 0.301 seconds; current allocated memory: 78.200 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 127.484 ; gain = 43.578
+INFO: [SYSC 207-301] Generating SystemC RTL for fir.
+INFO: [VHDL 208-304] Generating VHDL RTL for fir.
+INFO: [VLOG 209-307] Generating Verilog RTL for fir.
+INFO: [HLS 200-112] Total elapsed time: 9.759 seconds; peak allocated memory: 78.200 MB.
+==============================================================
+File generated on Wed Oct 23 01:05:04 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'LAB1_FIR/.settings/fir.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 103.309 ; gain = 20.824
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 103.309 ; gain = 20.824
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 104.316 ; gain = 21.832
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 104.570 ; gain = 22.086
+INFO: [HLS 200-489] Unrolling loop 'FILTER_LOOP' (LAB1_FIR/.settings/fir.c:17) in function 'fir' completely with a factor of 9.
+WARNING: [XFORM 203-135] Ignore complete array reshape directive on  'coeff' (LAB1_FIR/.settings/fir.c:5) in dimension 1: conflict with memory core assignment directive.
+INFO: [XFORM 203-101] Partitioning array 'data_in'  in dimension 1 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 126.234 ; gain = 43.750
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 126.234 ; gain = 43.750
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fir' ...
+WARNING: [SYN 201-107] Renaming port name 'fir/out' to 'fir/out_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 7.605 seconds; current allocated memory: 76.788 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.186 seconds; current allocated memory: 77.302 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir/probe_in' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir/out_r' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir/coeff' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fir' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'data_in_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_0' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'fir_dadd_64ns_64ns_64_5_full_dsp_1' to 'fir_dadd_64ns_64nbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fir_dmul_64ns_64ns_64_6_max_dsp_1' to 'fir_dmul_64ns_64ncud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fir_sitodp_32ns_64_6_1' to 'fir_sitodp_32ns_6dEe' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'fir_dadd_64ns_64nbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fir_dmul_64ns_64ncud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fir_sitodp_32ns_6dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir'.
+INFO: [HLS 200-111]  Elapsed time: 0.287 seconds; current allocated memory: 78.217 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 127.793 ; gain = 45.309
+INFO: [SYSC 207-301] Generating SystemC RTL for fir.
+INFO: [VHDL 208-304] Generating VHDL RTL for fir.
+INFO: [VLOG 209-307] Generating Verilog RTL for fir.
+INFO: [HLS 200-112] Total elapsed time: 9.664 seconds; peak allocated memory: 78.217 MB.
+==============================================================
+File generated on Wed Oct 23 01:17:28 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'LAB1_FIR/.settings/fir.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 103.137 ; gain = 20.535
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 103.137 ; gain = 20.535
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 104.410 ; gain = 21.809
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 104.668 ; gain = 22.066
+INFO: [HLS 200-489] Unrolling loop 'FILTER_LOOP' (LAB1_FIR/.settings/fir.c:17) in function 'fir' completely with a factor of 9.
+WARNING: [XFORM 203-135] Ignore complete array reshape directive on  'coeff' (LAB1_FIR/.settings/fir.c:5) in dimension 1: conflict with memory core assignment directive.
+INFO: [XFORM 203-101] Partitioning array 'data_in'  in dimension 1 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 125.848 ; gain = 43.246
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 125.848 ; gain = 43.246
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fir' ...
+WARNING: [SYN 201-107] Renaming port name 'fir/out' to 'fir/out_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 7.211 seconds; current allocated memory: 76.789 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.174 seconds; current allocated memory: 77.303 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir/probe_in' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir/out_r' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir/coeff' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fir' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'data_in_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_0' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'fir_dadd_64ns_64ns_64_5_full_dsp_1' to 'fir_dadd_64ns_64nbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fir_dmul_64ns_64ns_64_6_max_dsp_1' to 'fir_dmul_64ns_64ncud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fir_sitodp_32ns_64_6_1' to 'fir_sitodp_32ns_6dEe' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'fir_dadd_64ns_64nbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fir_dmul_64ns_64ncud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fir_sitodp_32ns_6dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir'.
+INFO: [HLS 200-111]  Elapsed time: 0.31 seconds; current allocated memory: 78.217 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 127.906 ; gain = 45.305
+INFO: [SYSC 207-301] Generating SystemC RTL for fir.
+INFO: [VHDL 208-304] Generating VHDL RTL for fir.
+INFO: [VLOG 209-307] Generating Verilog RTL for fir.
+INFO: [HLS 200-112] Total elapsed time: 9.211 seconds; peak allocated memory: 78.217 MB.

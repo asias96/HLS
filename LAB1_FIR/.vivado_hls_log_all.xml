@@ -12,27 +12,17 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_0' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution3" date="2019-10-16T11:02:36.758+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_1' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution3" date="2019-10-16T11:02:36.735+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_2' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution3" date="2019-10-16T11:02:36.733+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_3' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution3" date="2019-10-16T11:02:36.730+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_4' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution3" date="2019-10-16T11:02:36.729+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_5' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution3" date="2019-10-16T11:02:36.726+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_6' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution3" date="2019-10-16T11:02:36.724+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_7' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution3" date="2019-10-16T11:02:36.722+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_8' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution3" date="2019-10-16T11:02:36.720+0200" type="Warning"/>
-        <logs message="WARNING: [SYN 201-107] Renaming port name 'fir/out' to 'fir/out_r' to avoid the conflict with HDL keywords or other object names." projectName="LAB1_FIR" solutionName="FIR_solution3" date="2019-10-16T11:02:36.212+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_8' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution2" date="2019-10-16T10:50:58.410+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_7' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution2" date="2019-10-16T10:50:58.404+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_6' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution2" date="2019-10-16T10:50:58.401+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_5' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution2" date="2019-10-16T10:50:58.398+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_4' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution2" date="2019-10-16T10:50:58.396+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_3' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution2" date="2019-10-16T10:50:58.393+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_2' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution2" date="2019-10-16T10:50:58.391+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_1' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution2" date="2019-10-16T10:50:58.388+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_0' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution2" date="2019-10-16T10:50:58.386+0200" type="Warning"/>
-        <logs message="WARNING: [SYN 201-107] Renaming port name 'fir/out' to 'fir/out_r' to avoid the conflict with HDL keywords or other object names." projectName="LAB1_FIR" solutionName="FIR_solution2" date="2019-10-16T10:50:58.218+0200" type="Warning"/>
-        <logs message="WARNING: [SYN 201-107] Renaming port name 'fir/out' to 'fir/out_r' to avoid the conflict with HDL keywords or other object names." projectName="LAB1_FIR" solutionName="FIR_solution1" date="2019-10-16T10:31:59.902+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_0' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution4" date="2019-10-23T01:17:34.982+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_1' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution4" date="2019-10-23T01:17:34.966+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_2' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution4" date="2019-10-23T01:17:34.966+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_3' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution4" date="2019-10-23T01:17:34.950+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_4' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution4" date="2019-10-23T01:17:34.950+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_5' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution4" date="2019-10-23T01:17:34.950+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_6' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution4" date="2019-10-23T01:17:34.935+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_7' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution4" date="2019-10-23T01:17:34.935+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'data_in_8' is power-on initialization." projectName="LAB1_FIR" solutionName="FIR_solution4" date="2019-10-23T01:17:34.935+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'fir/out' to 'fir/out_r' to avoid the conflict with HDL keywords or other object names." projectName="LAB1_FIR" solutionName="FIR_solution4" date="2019-10-23T01:17:34.341+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-135] Ignore complete array reshape directive on  'coeff' (LAB1_FIR/.settings/fir.c:5) in dimension 1: conflict with memory core assignment directive." projectName="LAB1_FIR" solutionName="FIR_solution4" date="2019-10-23T01:17:34.200+0200" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>

@@ -11,8 +11,8 @@
 #include "systemc.h"
 #include "AESL_pkg.h"
 
-#include "fir_dadd_64ns_64ns_64_5_full_dsp_1.h"
-#include "fir_dmul_64ns_64ns_64_6_max_dsp_1.h"
+#include "fir_dadd_64ns_64nbkb.h"
+#include "fir_dmul_64ns_64ncud.h"
 
 namespace ap_rtl {
 
@@ -41,8 +41,8 @@ struct fir : public sc_module {
 
     ofstream mHdltvinHandle;
     ofstream mHdltvoutHandle;
-    fir_dadd_64ns_64ns_64_5_full_dsp_1<1,5,64,64,64>* fir_dadd_64ns_64ns_64_5_full_dsp_1_U1;
-    fir_dmul_64ns_64ns_64_6_max_dsp_1<1,6,64,64,64>* fir_dmul_64ns_64ns_64_6_max_dsp_1_U2;
+    fir_dadd_64ns_64nbkb<1,5,64,64,64>* fir_dadd_64ns_64nbkb_U1;
+    fir_dmul_64ns_64ncud<1,6,64,64,64>* fir_dmul_64ns_64ncud_U2;
     sc_signal< sc_lv<51> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
     sc_signal< sc_lv<64> > probe_in_preg;

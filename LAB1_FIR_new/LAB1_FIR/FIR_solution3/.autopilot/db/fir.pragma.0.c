@@ -2,15 +2,16 @@
 # 1 "LAB1_FIR/.settings/fir.c" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
-# 149 "<built-in>" 3
+# 147 "<built-in>" 3
 # 1 "<command line>" 1
 
 
 
 
 
-# 1 "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
-# 300 "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/etc/autopilot_ssdm_op.h"
+
+# 1 "C:/Xilinx/Vivado/2018.3/common/technology/autopilot\\etc/autopilot_ssdm_op.h" 1
+# 300 "C:/Xilinx/Vivado/2018.3/common/technology/autopilot\\etc/autopilot_ssdm_op.h"
     void _ssdm_op_IfRead() __attribute__ ((nothrow));
     void _ssdm_op_IfWrite() __attribute__ ((nothrow));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_IfNbRead() __attribute__ ((nothrow));
@@ -128,7 +129,7 @@
 
     void _ssdm_op_SpecBitsMap() __attribute__ ((nothrow));
     void _ssdm_op_SpecLicense() __attribute__ ((nothrow));
-# 7 "<command line>" 2
+# 8 "<command line>" 2
 # 1 "<built-in>" 2
 # 1 "LAB1_FIR/.settings/fir.c" 2
 
@@ -152,6 +153,9 @@ void fir(type_data probe_in, type_data* out)
 #pragma HLS INTERFACE ap_vld port=&probe_in
 
  type_coeff coeff[10] = {1, 2, 3, 4, 5, 1, 3, 4, 2, 1};
+#pragma HLS ARRAY_RESHAPE variable=&coeff complete dim=1
+# 10 "LAB1_FIR/.settings/fir.c"
+
  static type_data data_in[10] = {0};
 #pragma HLS ARRAY_PARTITION variable=&data_in complete dim=1
 # 11 "LAB1_FIR/.settings/fir.c"

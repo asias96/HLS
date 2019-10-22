@@ -105,14 +105,14 @@
 						<id>16</id>
 						<name>probe_in_read</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>5</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -154,14 +154,14 @@
 						<id>17</id>
 						<name>coeff_addr</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>5</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -204,14 +204,14 @@
 						<id>22</id>
 						<name>data_in_8_load</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -252,14 +252,14 @@
 						<id>23</id>
 						<name>coeff_addr_1</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -302,14 +302,14 @@
 						<id>24</id>
 						<name>coeff_load</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -350,14 +350,14 @@
 						<id>25</id>
 						<name>tmp_4</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -398,14 +398,14 @@
 						<id>26</id>
 						<name>tmp_5</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -447,14 +447,14 @@
 						<id>27</id>
 						<name>acc_1</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -496,14 +496,14 @@
 						<id>28</id>
 						<name>data_in_7_load</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -544,14 +544,14 @@
 						<id>29</id>
 						<name></name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -594,14 +594,14 @@
 						<id>30</id>
 						<name>coeff_addr_2</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -644,14 +644,14 @@
 						<id>31</id>
 						<name>coeff_load_9</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -692,14 +692,14 @@
 						<id>32</id>
 						<name>tmp_4_1</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -740,14 +740,14 @@
 						<id>33</id>
 						<name>tmp_5_1</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -789,14 +789,14 @@
 						<id>34</id>
 						<name>acc_1_1</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -838,14 +838,14 @@
 						<id>35</id>
 						<name>data_in_6_load</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -886,14 +886,14 @@
 						<id>36</id>
 						<name></name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -936,14 +936,14 @@
 						<id>37</id>
 						<name>coeff_addr_3</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -986,14 +986,14 @@
 						<id>38</id>
 						<name>coeff_load_2</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1034,14 +1034,14 @@
 						<id>39</id>
 						<name>tmp_4_2</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1082,14 +1082,14 @@
 						<id>40</id>
 						<name>tmp_5_2</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1131,14 +1131,14 @@
 						<id>41</id>
 						<name>acc_1_2</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1180,14 +1180,14 @@
 						<id>42</id>
 						<name>data_in_5_load</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1228,14 +1228,14 @@
 						<id>43</id>
 						<name></name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1278,14 +1278,14 @@
 						<id>44</id>
 						<name>coeff_addr_4</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1328,14 +1328,14 @@
 						<id>45</id>
 						<name>coeff_load_3</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1376,14 +1376,14 @@
 						<id>46</id>
 						<name>tmp_4_3</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1424,14 +1424,14 @@
 						<id>47</id>
 						<name>tmp_5_3</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1473,14 +1473,14 @@
 						<id>48</id>
 						<name>acc_1_3</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1522,14 +1522,14 @@
 						<id>49</id>
 						<name>data_in_4_load</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1570,14 +1570,14 @@
 						<id>50</id>
 						<name></name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1620,14 +1620,14 @@
 						<id>51</id>
 						<name>coeff_addr_5</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1670,14 +1670,14 @@
 						<id>52</id>
 						<name>coeff_load_4</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1718,14 +1718,14 @@
 						<id>53</id>
 						<name>tmp_4_4</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1766,14 +1766,14 @@
 						<id>54</id>
 						<name>tmp_5_4</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1815,14 +1815,14 @@
 						<id>55</id>
 						<name>acc_1_4</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1864,14 +1864,14 @@
 						<id>56</id>
 						<name>data_in_3_load</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1912,14 +1912,14 @@
 						<id>57</id>
 						<name></name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1962,14 +1962,14 @@
 						<id>58</id>
 						<name>coeff_addr_6</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2012,14 +2012,14 @@
 						<id>59</id>
 						<name>coeff_load_5</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2060,14 +2060,14 @@
 						<id>60</id>
 						<name>tmp_4_5</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2108,14 +2108,14 @@
 						<id>61</id>
 						<name>tmp_5_5</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2157,14 +2157,14 @@
 						<id>62</id>
 						<name>acc_1_5</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2206,14 +2206,14 @@
 						<id>63</id>
 						<name>data_in_2_load</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2254,14 +2254,14 @@
 						<id>64</id>
 						<name></name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2304,14 +2304,14 @@
 						<id>65</id>
 						<name>coeff_addr_7</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2354,14 +2354,14 @@
 						<id>66</id>
 						<name>coeff_load_6</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2402,14 +2402,14 @@
 						<id>67</id>
 						<name>tmp_4_6</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2450,14 +2450,14 @@
 						<id>68</id>
 						<name>tmp_5_6</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2499,14 +2499,14 @@
 						<id>69</id>
 						<name>acc_1_6</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2548,14 +2548,14 @@
 						<id>70</id>
 						<name>data_in_1_load</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2596,14 +2596,14 @@
 						<id>71</id>
 						<name></name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2646,14 +2646,14 @@
 						<id>72</id>
 						<name>coeff_addr_8</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2696,14 +2696,14 @@
 						<id>73</id>
 						<name>coeff_load_7</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2744,14 +2744,14 @@
 						<id>74</id>
 						<name>tmp_4_7</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2792,14 +2792,14 @@
 						<id>75</id>
 						<name>tmp_5_7</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2841,14 +2841,14 @@
 						<id>76</id>
 						<name>acc_1_7</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2890,14 +2890,14 @@
 						<id>77</id>
 						<name>data_in_0_load</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2938,14 +2938,14 @@
 						<id>78</id>
 						<name></name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2988,14 +2988,14 @@
 						<id>79</id>
 						<name>coeff_addr_9</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3038,14 +3038,14 @@
 						<id>80</id>
 						<name>coeff_load_8</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3086,14 +3086,14 @@
 						<id>81</id>
 						<name>tmp_4_8</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3134,14 +3134,14 @@
 						<id>82</id>
 						<name>tmp_5_8</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3183,14 +3183,14 @@
 						<id>83</id>
 						<name>acc_1_8</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3232,14 +3232,14 @@
 						<id>84</id>
 						<name></name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>20</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3282,14 +3282,14 @@
 						<id>85</id>
 						<name>coeff_load_1</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>21</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3330,14 +3330,14 @@
 						<id>86</id>
 						<name>tmp_7</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>21</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3378,14 +3378,14 @@
 						<id>87</id>
 						<name>tmp_8</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>21</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3427,14 +3427,14 @@
 						<id>88</id>
 						<name>acc</name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>21</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3476,14 +3476,14 @@
 						<id>89</id>
 						<name></name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>23</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3526,14 +3526,14 @@
 						<id>90</id>
 						<name></name>
 						<fileName>LAB1_FIR/.settings/fir.c</fileName>
-						<fileDirectory>/home/lsriw/HLS_STANISZ/HLS</fileDirectory>
+						<fileDirectory>D:\HLS</fileDirectory>
 						<lineNumber>24</lineNumber>
 						<contextFuncName>fir</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/lsriw/HLS_STANISZ/HLS</first>
+								<first>D:\HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>

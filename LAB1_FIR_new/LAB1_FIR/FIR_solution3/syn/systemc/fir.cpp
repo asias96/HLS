@@ -94,20 +94,20 @@ const sc_lv<64> fir::ap_const_lv64_4014000000000000 = "1000000000101000000000000
 const bool fir::ap_const_boolean_1 = true;
 
 fir::fir(sc_module_name name) : sc_module(name), mVcdFile(0) {
-    fir_dadd_64ns_64ns_64_5_full_dsp_1_U1 = new fir_dadd_64ns_64ns_64_5_full_dsp_1<1,5,64,64,64>("fir_dadd_64ns_64ns_64_5_full_dsp_1_U1");
-    fir_dadd_64ns_64ns_64_5_full_dsp_1_U1->clk(ap_clk);
-    fir_dadd_64ns_64ns_64_5_full_dsp_1_U1->reset(ap_rst);
-    fir_dadd_64ns_64ns_64_5_full_dsp_1_U1->din0(grp_fu_63_p0);
-    fir_dadd_64ns_64ns_64_5_full_dsp_1_U1->din1(grp_fu_63_p1);
-    fir_dadd_64ns_64ns_64_5_full_dsp_1_U1->ce(grp_fu_63_ce);
-    fir_dadd_64ns_64ns_64_5_full_dsp_1_U1->dout(grp_fu_63_p2);
-    fir_dmul_64ns_64ns_64_6_max_dsp_1_U2 = new fir_dmul_64ns_64ns_64_6_max_dsp_1<1,6,64,64,64>("fir_dmul_64ns_64ns_64_6_max_dsp_1_U2");
-    fir_dmul_64ns_64ns_64_6_max_dsp_1_U2->clk(ap_clk);
-    fir_dmul_64ns_64ns_64_6_max_dsp_1_U2->reset(ap_rst);
-    fir_dmul_64ns_64ns_64_6_max_dsp_1_U2->din0(grp_fu_70_p0);
-    fir_dmul_64ns_64ns_64_6_max_dsp_1_U2->din1(grp_fu_70_p1);
-    fir_dmul_64ns_64ns_64_6_max_dsp_1_U2->ce(ap_var_for_const0);
-    fir_dmul_64ns_64ns_64_6_max_dsp_1_U2->dout(grp_fu_70_p2);
+    fir_dadd_64ns_64nbkb_U1 = new fir_dadd_64ns_64nbkb<1,5,64,64,64>("fir_dadd_64ns_64nbkb_U1");
+    fir_dadd_64ns_64nbkb_U1->clk(ap_clk);
+    fir_dadd_64ns_64nbkb_U1->reset(ap_rst);
+    fir_dadd_64ns_64nbkb_U1->din0(grp_fu_63_p0);
+    fir_dadd_64ns_64nbkb_U1->din1(grp_fu_63_p1);
+    fir_dadd_64ns_64nbkb_U1->ce(grp_fu_63_ce);
+    fir_dadd_64ns_64nbkb_U1->dout(grp_fu_63_p2);
+    fir_dmul_64ns_64ncud_U2 = new fir_dmul_64ns_64ncud<1,6,64,64,64>("fir_dmul_64ns_64ncud_U2");
+    fir_dmul_64ns_64ncud_U2->clk(ap_clk);
+    fir_dmul_64ns_64ncud_U2->reset(ap_rst);
+    fir_dmul_64ns_64ncud_U2->din0(grp_fu_70_p0);
+    fir_dmul_64ns_64ncud_U2->din1(grp_fu_70_p1);
+    fir_dmul_64ns_64ncud_U2->ce(ap_var_for_const0);
+    fir_dmul_64ns_64ncud_U2->dout(grp_fu_70_p2);
 
     SC_METHOD(thread_ap_clk_no_reset_);
     dont_initialize();
@@ -370,8 +370,8 @@ fir::~fir() {
     mHdltvoutHandle << "] " << endl;
     mHdltvinHandle.close();
     mHdltvoutHandle.close();
-    delete fir_dadd_64ns_64ns_64_5_full_dsp_1_U1;
-    delete fir_dmul_64ns_64ns_64_6_max_dsp_1_U2;
+    delete fir_dadd_64ns_64nbkb_U1;
+    delete fir_dmul_64ns_64ncud_U2;
 }
 
 void fir::thread_ap_var_for_const0() {

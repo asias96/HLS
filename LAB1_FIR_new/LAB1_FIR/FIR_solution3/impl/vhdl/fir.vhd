@@ -179,7 +179,7 @@ architecture behav of fir is
     signal grp_fu_63_ce : STD_LOGIC;
     signal ap_NS_fsm : STD_LOGIC_VECTOR (50 downto 0);
 
-    component fir_dadd_64ns_64ns_64_5_full_dsp_1 IS
+    component fir_dadd_64ns_64nbkb IS
     generic (
         ID : INTEGER;
         NUM_STAGE : INTEGER;
@@ -196,7 +196,7 @@ architecture behav of fir is
     end component;
 
 
-    component fir_dmul_64ns_64ns_64_6_max_dsp_1 IS
+    component fir_dmul_64ns_64ncud IS
     generic (
         ID : INTEGER;
         NUM_STAGE : INTEGER;
@@ -215,7 +215,7 @@ architecture behav of fir is
 
 
 begin
-    fir_dadd_64ns_64ns_64_5_full_dsp_1_U1 : component fir_dadd_64ns_64ns_64_5_full_dsp_1
+    fir_dadd_64ns_64nbkb_U1 : component fir_dadd_64ns_64nbkb
     generic map (
         ID => 1,
         NUM_STAGE => 5,
@@ -230,7 +230,7 @@ begin
         ce => grp_fu_63_ce,
         dout => grp_fu_63_p2);
 
-    fir_dmul_64ns_64ns_64_6_max_dsp_1_U2 : component fir_dmul_64ns_64ns_64_6_max_dsp_1
+    fir_dmul_64ns_64ncud_U2 : component fir_dmul_64ns_64ncud
     generic map (
         ID => 1,
         NUM_STAGE => 6,

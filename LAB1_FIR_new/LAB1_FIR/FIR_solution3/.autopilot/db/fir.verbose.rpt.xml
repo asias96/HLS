@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'fir'" level="0">
-<item name = "Date">Wed Oct 16 11:28:32 2019
+<item name = "Date">Wed Oct 23 01:06:12 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">LAB1_FIR</item>
@@ -61,8 +61,8 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
-<column name="fir_dadd_64ns_64ns_64_5_full_dsp_1_U1">fir_dadd_64ns_64ns_64_5_full_dsp_1, 0, 3, 445, 1149</column>
-<column name="fir_dmul_64ns_64ns_64_6_max_dsp_1_U2">fir_dmul_64ns_64ns_64_6_max_dsp_1, 0, 11, 317, 578</column>
+<column name="fir_dadd_64ns_64nbkb_U1">fir_dadd_64ns_64nbkb, 0, 3, 445, 1149</column>
+<column name="fir_dmul_64ns_64ncud_U2">fir_dmul_64ns_64ncud, 0, 11, 317, 578</column>
 </table>
 </item>
 <item name = "DSP48"><table name="" hasTotal="0">

@@ -2,8 +2,9 @@
 #include "fir.h"
 
 
-void fir(type_data probe_in, type_data* out, const type_coeff coeff[FILTR_LENGTH])
+void fir(const type_data probe_in, type_data* out, const type_coeff coeff[FILTR_LENGTH])
 {
+#pragma HLS ARRAY_RESHAPE variable=coeff complete dim=1
 #pragma HLS RESOURCE variable=coeff core=RAM_1P_BRAM
 #pragma HLS INTERFACE ap_vld port=out
 #pragma HLS INTERFACE ap_vld port=probe_in

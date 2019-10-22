@@ -45,15 +45,15 @@
   "Files": {
     "CSource": ["..\/.settings\/fir.c"],
     "Vhdl": [
-      "impl\/vhdl\/fir_dadd_64ns_64ns_64_5_full_dsp_1.vhd",
-      "impl\/vhdl\/fir_dmul_64ns_64ns_64_6_max_dsp_1.vhd",
-      "impl\/vhdl\/fir_sitodp_32ns_64_6_1.vhd",
+      "impl\/vhdl\/fir_dadd_64ns_64nbkb.vhd",
+      "impl\/vhdl\/fir_dmul_64ns_64ncud.vhd",
+      "impl\/vhdl\/fir_sitodp_32ns_6dEe.vhd",
       "impl\/vhdl\/fir.vhd"
     ],
     "Verilog": [
-      "impl\/verilog\/fir_dadd_64ns_64ns_64_5_full_dsp_1.v",
-      "impl\/verilog\/fir_dmul_64ns_64ns_64_6_max_dsp_1.v",
-      "impl\/verilog\/fir_sitodp_32ns_64_6_1.v",
+      "impl\/verilog\/fir_dadd_64ns_64nbkb.v",
+      "impl\/verilog\/fir_dmul_64ns_64ncud.v",
+      "impl\/verilog\/fir_sitodp_32ns_6dEe.v",
       "impl\/verilog\/fir.v"
     ],
     "Misc": ["impl\/misc\/logo.png"],
@@ -62,7 +62,7 @@
       "impl\/misc\/fir_ap_dmul_4_max_dsp_64_ip.tcl",
       "impl\/misc\/fir_ap_sitodp_4_no_dsp_32_ip.tcl"
     ],
-    "DesignXml": "\/home\/lsriw\/HLS_STANISZ\/HLS\/LAB1_FIR\/FIR_solution3\/.autopilot\/db\/fir.design.xml"
+    "DesignXml": "D:\/HLS\/LAB1_FIR\/FIR_solution3\/.autopilot\/db\/fir.design.xml"
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -258,7 +258,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-10-16 11:02:37 CEST",
+    "Time": "2019-10-22 23:49:42 +0200",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

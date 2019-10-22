@@ -72,8 +72,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "data_in_2", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "data_in_1", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "data_in_0", "Type" : "OVld", "Direction" : "IO"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fir_dadd_64ns_64ns_64_5_full_dsp_1_U1", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fir_dmul_64ns_64ns_64_6_max_dsp_1_U2", "Parent" : "0"}]}
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fir_dadd_64ns_64nbkb_U1", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fir_dmul_64ns_64ncud_U2", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {

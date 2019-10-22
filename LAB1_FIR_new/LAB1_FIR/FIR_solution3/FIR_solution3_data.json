@@ -15,11 +15,13 @@
   "HlsSolution": {
     "DirectiveTcl": [
       "set_directive_array_partition fir ",
-      "set_directive_unroll fir\/FILTER_LOOP "
+      "set_directive_unroll fir\/FILTER_LOOP ",
+      "set_directive_array_reshape fir "
     ],
     "DirectiveInfo": [
       "array_partition fir {{partition positionBooleanCmd} {variable positionBooleanTextRequireddata_in} {complete positionBoolean0type} {dim 1}} {}",
-      "unroll fir\/FILTER_LOOP {} {}"
+      "unroll fir\/FILTER_LOOP {} {}",
+      "array_reshape fir {{reshape positionBooleanCmd} {variable positionBooleanTextRequiredcoeff} {complete positionBoolean0type} {dim 1}} {}"
     ]
   },
   "ClockInfo": {
@@ -45,13 +47,13 @@
   "Files": {
     "CSource": ["..\/.settings\/fir.c"],
     "Vhdl": [
-      "impl\/vhdl\/fir_dadd_64ns_64ns_64_5_full_dsp_1.vhd",
-      "impl\/vhdl\/fir_dmul_64ns_64ns_64_6_max_dsp_1.vhd",
+      "impl\/vhdl\/fir_dadd_64ns_64nbkb.vhd",
+      "impl\/vhdl\/fir_dmul_64ns_64ncud.vhd",
       "impl\/vhdl\/fir.vhd"
     ],
     "Verilog": [
-      "impl\/verilog\/fir_dadd_64ns_64ns_64_5_full_dsp_1.v",
-      "impl\/verilog\/fir_dmul_64ns_64ns_64_6_max_dsp_1.v",
+      "impl\/verilog\/fir_dadd_64ns_64nbkb.v",
+      "impl\/verilog\/fir_dmul_64ns_64ncud.v",
       "impl\/verilog\/fir.v"
     ],
     "Misc": ["impl\/misc\/logo.png"],
@@ -59,7 +61,7 @@
       "impl\/misc\/fir_ap_dadd_3_full_dsp_64_ip.tcl",
       "impl\/misc\/fir_ap_dmul_4_max_dsp_64_ip.tcl"
     ],
-    "DesignXml": "\/home\/lsriw\/HLS_STANISZ\/HLS\/LAB1_FIR_new\/LAB1_FIR\/FIR_solution3\/.autopilot\/db\/fir.design.xml"
+    "DesignXml": "D:\/HLS\/LAB1_FIR_new\/LAB1_FIR\/FIR_solution3\/.autopilot\/db\/fir.design.xml"
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -212,7 +214,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-10-16 11:28:32 CEST",
+    "Time": "2019-10-23 01:06:13 +0200",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }
