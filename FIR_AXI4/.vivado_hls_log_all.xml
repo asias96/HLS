@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="FIR_AXI4" solutionName="Solution1" date="2019-10-23T11:48:27.095+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="FIR_AXI4" solutionName="Solution1" date="2019-10-23T11:40:59.479+0200"/>
+        <logs message="Error while opening the file@E Simulation failed: Function 'main' returns nonzero value '1'." projectName="FIR_AXI4" solutionName="Solution1" date="2019-10-23T11:40:59.474+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="FIR_AXI4" solutionName="Solution1" date="2019-10-23T11:39:57.346+0200"/>
+        <logs message="Error while opening the file@E Simulation failed: Function 'main' returns nonzero value '1'." projectName="FIR_AXI4" solutionName="Solution1" date="2019-10-23T11:39:57.328+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="FIR_AXI4" solutionName="Solution1" date="2019-10-23T11:38:33.826+0200"/>
+        <logs message="Error while opening the file@E Simulation failed: Function 'main' returns nonzero value '1'." projectName="FIR_AXI4" solutionName="Solution1" date="2019-10-23T11:38:33.820+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="FIR_AXI4" solutionName="Solution1" date="2019-10-23T11:37:09.090+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="FIR_AXI4" solutionName="Solution1" date="2019-10-23T11:33:17.800+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="FIR_AXI4" solutionName="Solution1" date="2019-10-23T11:32:15.741+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="FIR_AXI4" solutionName="Solution1" date="2019-10-23T11:31:07.882+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="FIR_AXI4" solutionName="Solution1" date="2019-10-23T11:30:44.554+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="FIR_AXI4" solutionName="Solution1" date="2019-10-23T11:29:42.472+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="FIR_AXI4" solutionName="Solution1" date="2019-10-23T11:28:15.441+0200"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
