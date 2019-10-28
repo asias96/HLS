@@ -1,0 +1,12 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="46" filename="FIR_AXI4/.settings/fir.cpp" linenumber="19" name="tmp_2" contextFuncName="fir" moduleName="fir" rtlName="tmp_2_fu_204_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="9" fileDirectory="D:\HLS"><\/item>
+<item  id="51" filename="FIR_AXI4/.settings/fir.cpp" linenumber="21" name="tmp_3" contextFuncName="fir" moduleName="fir" rtlName="tmp_3_fu_210_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="D:\HLS"><\/item>
+<item  id="52" filename="FIR_AXI4/.settings/fir.cpp" linenumber="21" name="i_1" contextFuncName="fir" moduleName="fir" rtlName="i_1_fu_215_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="13" fileDirectory="D:\HLS"><\/item>
+<item  id="53" filename="FIR_AXI4/.settings/fir.cpp" linenumber="21" name="tmp_5" contextFuncName="fir" moduleName="fir" rtlName="tmp_5_fu_221_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="D:\HLS"><\/item>
+<item  id="60" filename="FIR_AXI4/.settings/fir.cpp" linenumber="22" name="tmp" contextFuncName="fir" moduleName="fir" rtlName="tmp_fu_232_p3" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="2" fileDirectory="D:\HLS"><\/item>
+<item  id="61" filename="FIR_AXI4/.settings/fir.cpp" linenumber="22" name="p_1" contextFuncName="fir" moduleName="fir" rtlName="p_1_fu_240_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="32" fileDirectory="D:\HLS"><\/item>
+<item  id="62" filename="FIR_AXI4/.settings/fir.cpp" linenumber="22" name="acc_V" contextFuncName="fir" moduleName="fir" rtlName="acc_V_fu_246_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="39" fileDirectory="D:\HLS"><\/item>
+<item  id="66" filename="FIR_AXI4/.settings/fir.cpp" linenumber="25" name="acc_V_2" contextFuncName="fir" moduleName="fir" rtlName="acc_V_2_fu_226_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="39" fileDirectory="D:\HLS"><\/item>
+<\/annotationInfo>
+</annotationInfo>

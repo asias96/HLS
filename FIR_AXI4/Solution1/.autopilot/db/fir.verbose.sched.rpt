@@ -1,0 +1,194 @@
+
+
+================================================================
+== Vivado HLS Report for 'fir'
+================================================================
+* Date:           Mon Oct 28 22:17:18 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        FIR_AXI4
+* Solution:       Solution1
+* Product family: zynq
+* Target device:  xc7z010clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     5.806|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   20|   20|   20|   20|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------+-----+-----+----------+-----------+-----------+------+----------+
+        |               |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name   | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- FILTER_LOOP  |   18|   18|         2|          -|          -|     9|    no    |
+        +---------------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!tmp_2)
+	4  / (tmp_2)
+3 --> 
+	2  / true
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %stream_in_V_data_V), !map !44"   --->   Operation 5 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i4* %stream_in_V_keep_V), !map !50"   --->   Operation 6 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i4* %stream_in_V_strb_V), !map !54"   --->   Operation 7 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i2* %stream_in_V_user_V), !map !58"   --->   Operation 8 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %stream_in_V_last_V), !map !62"   --->   Operation 9 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i5* %stream_in_V_id_V), !map !66"   --->   Operation 10 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i6* %stream_in_V_dest_V), !map !70"   --->   Operation 11 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %stream_out_V_data_V), !map !74"   --->   Operation 12 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i4* %stream_out_V_keep_V), !map !78"   --->   Operation 13 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i4* %stream_out_V_strb_V), !map !82"   --->   Operation 14 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i2* %stream_out_V_user_V), !map !86"   --->   Operation 15 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %stream_out_V_last_V), !map !90"   --->   Operation 16 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i5* %stream_out_V_id_V), !map !94"   --->   Operation 17 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i6* %stream_out_V_dest_V), !map !98"   --->   Operation 18 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([4 x i8]* @fir_str) nounwind"   --->   Operation 19 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %stream_out_V_data_V, i4* %stream_out_V_keep_V, i4* %stream_out_V_strb_V, i2* %stream_out_V_user_V, i1* %stream_out_V_last_V, i5* %stream_out_V_id_V, i6* %stream_out_V_dest_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [FIR_AXI4/.settings/fir.cpp:6]   --->   Operation 20 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %stream_in_V_data_V, i4* %stream_in_V_keep_V, i4* %stream_in_V_strb_V, i2* %stream_in_V_user_V, i1* %stream_in_V_last_V, i5* %stream_in_V_id_V, i6* %stream_in_V_dest_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [FIR_AXI4/.settings/fir.cpp:7]   --->   Operation 21 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%empty = call { i32, i4, i4, i2, i1, i5, i6 } @_ssdm_op_Read.axis.volatile.i32P.i4P.i4P.i2P.i1P.i5P.i6P(i32* %stream_in_V_data_V, i4* %stream_in_V_keep_V, i4* %stream_in_V_strb_V, i2* %stream_in_V_user_V, i1* %stream_in_V_last_V, i5* %stream_in_V_id_V, i6* %stream_in_V_dest_V)" [FIR_AXI4/.settings/fir.cpp:12]   --->   Operation 22 'read' 'empty' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%tmp_data_V = extractvalue { i32, i4, i4, i2, i1, i5, i6 } %empty, 0" [FIR_AXI4/.settings/fir.cpp:12]   --->   Operation 23 'extractvalue' 'tmp_data_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%tmp_keep_V = extractvalue { i32, i4, i4, i2, i1, i5, i6 } %empty, 1" [FIR_AXI4/.settings/fir.cpp:12]   --->   Operation 24 'extractvalue' 'tmp_keep_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%tmp_strb_V = extractvalue { i32, i4, i4, i2, i1, i5, i6 } %empty, 2" [FIR_AXI4/.settings/fir.cpp:12]   --->   Operation 25 'extractvalue' 'tmp_strb_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%tmp_user_V = extractvalue { i32, i4, i4, i2, i1, i5, i6 } %empty, 3" [FIR_AXI4/.settings/fir.cpp:12]   --->   Operation 26 'extractvalue' 'tmp_user_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%tmp_last_V = extractvalue { i32, i4, i4, i2, i1, i5, i6 } %empty, 4" [FIR_AXI4/.settings/fir.cpp:12]   --->   Operation 27 'extractvalue' 'tmp_last_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%tmp_id_V = extractvalue { i32, i4, i4, i2, i1, i5, i6 } %empty, 5" [FIR_AXI4/.settings/fir.cpp:12]   --->   Operation 28 'extractvalue' 'tmp_id_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%tmp_dest_V = extractvalue { i32, i4, i4, i2, i1, i5, i6 } %empty, 6" [FIR_AXI4/.settings/fir.cpp:12]   --->   Operation 29 'extractvalue' 'tmp_dest_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (1.76ns)   --->   "br label %0" [FIR_AXI4/.settings/fir.cpp:19]   --->   Operation 30 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 4.05>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%p_s = phi i32 [ 0, %codeRepl ], [ %acc_V, %1 ]"   --->   Operation 31 'phi' 'p_s' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%i = phi i4 [ -7, %codeRepl ], [ %i_1, %1 ]"   --->   Operation 32 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (1.30ns)   --->   "%tmp_2 = icmp eq i4 %i, 0" [FIR_AXI4/.settings/fir.cpp:19]   --->   Operation 33 'icmp' 'tmp_2' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.30> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%empty_2 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 9, i64 9, i64 9)"   --->   Operation 34 'speclooptripcount' 'empty_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "br i1 %tmp_2, label %2, label %1" [FIR_AXI4/.settings/fir.cpp:19]   --->   Operation 35 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%tmp_3 = zext i4 %i to i64" [FIR_AXI4/.settings/fir.cpp:21]   --->   Operation 36 'zext' 'tmp_3' <Predicate = (!tmp_2)> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (1.73ns)   --->   "%i_1 = add i4 -1, %i" [FIR_AXI4/.settings/fir.cpp:21]   --->   Operation 37 'add' 'i_1' <Predicate = (!tmp_2)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%tmp_5 = zext i4 %i_1 to i64" [FIR_AXI4/.settings/fir.cpp:21]   --->   Operation 38 'zext' 'tmp_5' <Predicate = (!tmp_2)> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%data_in_V_addr = getelementptr [10 x i32]* @data_in_V, i64 0, i64 %tmp_5" [FIR_AXI4/.settings/fir.cpp:21]   --->   Operation 39 'getelementptr' 'data_in_V_addr' <Predicate = (!tmp_2)> <Delay = 0.00>
+ST_2 : Operation 40 [2/2] (2.32ns)   --->   "%data_in_V_load = load i32* %data_in_V_addr, align 4" [FIR_AXI4/.settings/fir.cpp:21]   --->   Operation 40 'load' 'data_in_V_load' <Predicate = (!tmp_2)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 10> <RAM>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%coeff_addr = getelementptr [10 x i1]* @coeff, i64 0, i64 %tmp_3" [FIR_AXI4/.settings/fir.cpp:22]   --->   Operation 41 'getelementptr' 'coeff_addr' <Predicate = (!tmp_2)> <Delay = 0.00>
+ST_2 : Operation 42 [2/2] (3.25ns)   --->   "%coeff_load = load i1* %coeff_addr, align 1" [FIR_AXI4/.settings/fir.cpp:22]   --->   Operation 42 'load' 'coeff_load' <Predicate = (!tmp_2)> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 52 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 1> <Depth = 10> <ROM>
+ST_2 : Operation 43 [1/1] (2.32ns)   --->   "store i32 %tmp_data_V, i32* getelementptr inbounds ([10 x i32]* @data_in_V, i64 0, i64 0), align 16" [FIR_AXI4/.settings/fir.cpp:24]   --->   Operation 43 'store' <Predicate = (tmp_2)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 10> <RAM>
+ST_2 : Operation 44 [1/1] (2.55ns)   --->   "%acc_V_2 = add i32 %tmp_data_V, %p_s" [FIR_AXI4/.settings/fir.cpp:25]   --->   Operation 44 'add' 'acc_V_2' <Predicate = (tmp_2)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 45 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i32P.i4P.i4P.i2P.i1P.i5P.i6P(i32* %stream_out_V_data_V, i4* %stream_out_V_keep_V, i4* %stream_out_V_strb_V, i2* %stream_out_V_user_V, i1* %stream_out_V_last_V, i5* %stream_out_V_id_V, i6* %stream_out_V_dest_V, i32 %acc_V_2, i4 %tmp_keep_V, i4 %tmp_strb_V, i2 %tmp_user_V, i1 %tmp_last_V, i5 %tmp_id_V, i6 %tmp_dest_V)" [FIR_AXI4/.settings/fir.cpp:35]   --->   Operation 45 'write' <Predicate = (tmp_2)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+State 3 <SV = 2> <Delay = 5.80>
+ST_3 : Operation 46 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([12 x i8]* @p_str3) nounwind" [FIR_AXI4/.settings/fir.cpp:20]   --->   Operation 46 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 47 [1/2] (2.32ns)   --->   "%data_in_V_load = load i32* %data_in_V_addr, align 4" [FIR_AXI4/.settings/fir.cpp:21]   --->   Operation 47 'load' 'data_in_V_load' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 10> <RAM>
+ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%data_in_V_addr_1 = getelementptr [10 x i32]* @data_in_V, i64 0, i64 %tmp_3" [FIR_AXI4/.settings/fir.cpp:21]   --->   Operation 48 'getelementptr' 'data_in_V_addr_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 49 [1/1] (2.32ns)   --->   "store i32 %data_in_V_load, i32* %data_in_V_addr_1, align 4" [FIR_AXI4/.settings/fir.cpp:21]   --->   Operation 49 'store' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 10> <RAM>
+ST_3 : Operation 50 [1/2] (3.25ns)   --->   "%coeff_load = load i1* %coeff_addr, align 1" [FIR_AXI4/.settings/fir.cpp:22]   --->   Operation 50 'load' 'coeff_load' <Predicate = true> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 52 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 1> <Depth = 10> <ROM>
+ST_3 : Operation 51 [1/1] (0.00ns) (grouped into LUT with out node acc_V)   --->   "%tmp = select i1 %coeff_load, i32 -1, i32 0" [FIR_AXI4/.settings/fir.cpp:22]   --->   Operation 51 'select' 'tmp' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 52 [1/1] (0.00ns) (grouped into LUT with out node acc_V)   --->   "%p_1 = and i32 %data_in_V_load, %tmp" [FIR_AXI4/.settings/fir.cpp:22]   --->   Operation 52 'and' 'p_1' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 53 [1/1] (2.55ns) (out node of the LUT)   --->   "%acc_V = add i32 %p_s, %p_1" [FIR_AXI4/.settings/fir.cpp:22]   --->   Operation 53 'add' 'acc_V' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 54 [1/1] (0.00ns)   --->   "br label %0" [FIR_AXI4/.settings/fir.cpp:19]   --->   Operation 54 'br' <Predicate = true> <Delay = 0.00>
+
+State 4 <SV = 2> <Delay = 0.00>
+ST_4 : Operation 55 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i32P.i4P.i4P.i2P.i1P.i5P.i6P(i32* %stream_out_V_data_V, i4* %stream_out_V_keep_V, i4* %stream_out_V_strb_V, i2* %stream_out_V_user_V, i1* %stream_out_V_last_V, i5* %stream_out_V_id_V, i6* %stream_out_V_dest_V, i32 %acc_V_2, i4 %tmp_keep_V, i4 %tmp_strb_V, i2 %tmp_user_V, i1 %tmp_last_V, i5 %tmp_id_V, i6 %tmp_dest_V)" [FIR_AXI4/.settings/fir.cpp:35]   --->   Operation 55 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_4 : Operation 56 [1/1] (0.00ns)   --->   "ret void" [FIR_AXI4/.settings/fir.cpp:36]   --->   Operation 56 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('acc.V') with incoming values : ('acc.V', FIR_AXI4/.settings/fir.cpp:22) [44]  (1.77 ns)
+
+ <State 2>: 4.06ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', FIR_AXI4/.settings/fir.cpp:21) [45]  (0 ns)
+	'add' operation ('i', FIR_AXI4/.settings/fir.cpp:21) [52]  (1.74 ns)
+	'getelementptr' operation ('data_in_V_addr', FIR_AXI4/.settings/fir.cpp:21) [54]  (0 ns)
+	'load' operation ('data_in_V_load', FIR_AXI4/.settings/fir.cpp:21) on array 'data_in_V' [55]  (2.32 ns)
+
+ <State 3>: 5.81ns
+The critical path consists of the following:
+	'load' operation ('coeff_load', FIR_AXI4/.settings/fir.cpp:22) on array 'coeff' [59]  (3.25 ns)
+	'select' operation ('tmp', FIR_AXI4/.settings/fir.cpp:22) [60]  (0 ns)
+	'and' operation ('p_1', FIR_AXI4/.settings/fir.cpp:22) [61]  (0 ns)
+	'add' operation ('acc.V', FIR_AXI4/.settings/fir.cpp:22) [62]  (2.55 ns)
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

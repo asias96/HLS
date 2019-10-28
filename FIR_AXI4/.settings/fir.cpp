@@ -1,13 +1,14 @@
 
 #include "fir.hpp"
 
-
 void fir(stream& stream_in, stream& stream_out)
 {
-#pragma HLS INTERFACE axis register both port=stream_out
-#pragma HLS INTERFACE axis register both port=stream_in
+	#pragma HLS INTERFACE axis register both port=stream_out
+	#pragma HLS INTERFACE axis register both port=stream_in
+	//#pragma HLS INTERFACE s_axilite register both port=return
 
-	type_coeff coeff[FILTR_LENGTH] = {1, 2, 3, 4, 5, 1, 3, 4, 2, 1};
+	//const type_coeff coeff[FILTR_LENGTH] = {1, 2, 3, 4, 5, 1, 3, 4, 2, 1};
+	const type_coeff coeff[FILTR_LENGTH] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
 	signal_t probe_in = stream_in.read();
 	signal_t out;
 
@@ -28,7 +29,7 @@ void fir(stream& stream_in, stream& stream_out)
 	out.strb = probe_in.strb;
 	out.user = probe_in.user;
 	out.last = probe_in.last;
-	out.id = probe_in.id;
+	out.id 	 = probe_in.id;
 	out.dest = probe_in.dest;
 
 	stream_out.write(out);

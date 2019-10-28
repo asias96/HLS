@@ -31,7 +31,7 @@
             			
             <storageModule moduleId="cdtBuildSystem" version="4.0.0">
                 				
-                <configuration artifactName="a.out" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.exe.debug.1634954660" name="Debug" parent="cdt.managedbuild.config.gnu.exe.debug">
+                <configuration artifactName="a.exe" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.exe.debug.1634954660" name="Debug" parent="cdt.managedbuild.config.gnu.exe.debug">
                     					
                     <folderInfo id="cdt.managedbuild.config.gnu.exe.debug.1634954660." name="/" resourcePath="">
                         						
@@ -51,15 +51,15 @@
                                 								
                                 <option id="gnu.cpp.compiler.option.include.paths.508963549" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/win64/tools/auto_cc/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/include/ap_sysc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/ap_sysc"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/etc"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/include/etc"/>
                                     								
                                 </option>
                                 								
@@ -85,15 +85,15 @@
                                 								
                                 <option id="gnu.c.compiler.option.include.paths.1672805979" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/win64/tools/auto_cc/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/include/ap_sysc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/ap_sysc"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/etc"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/include/etc"/>
                                     								
                                 </option>
                                 								
@@ -115,7 +115,7 @@
                                 								
                                 <option id="gnu.c.link.option.paths.1795217152" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/lnx64/tools/systemc/lib"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/win64/tools/systemc/lib"/>
                                     								
                                 </option>
                                 								
@@ -129,7 +129,7 @@
                                 								
                                 <option id="gnu.cpp.link.option.paths.1071130583" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/lnx64/tools/systemc/lib"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/win64/tools/systemc/lib"/>
                                     								
                                 </option>
                                 								
@@ -199,7 +199,7 @@
             			
             <storageModule moduleId="cdtBuildSystem" version="4.0.0">
                 				
-                <configuration artifactName="a.out" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.exe.release.796191409" name="Release" parent="cdt.managedbuild.config.gnu.exe.release">
+                <configuration artifactName="a.exe" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.exe.release.796191409" name="Release" parent="cdt.managedbuild.config.gnu.exe.release">
                     					
                     <folderInfo id="cdt.managedbuild.config.gnu.exe.release.796191409." name="/" resourcePath="">
                         						
@@ -219,15 +219,15 @@
                                 								
                                 <option id="gnu.cpp.compiler.option.include.paths.1401692495" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/win64/tools/auto_cc/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/include/ap_sysc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/ap_sysc"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/etc"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/include/etc"/>
                                     								
                                 </option>
                                 								
@@ -243,15 +243,15 @@
                                 								
                                 <option id="gnu.c.compiler.option.include.paths.1046192829" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/win64/tools/auto_cc/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/include/ap_sysc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/ap_sysc"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/etc"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/include/etc"/>
                                     								
                                 </option>
                                 								
@@ -263,7 +263,7 @@
                                 								
                                 <option id="gnu.c.link.option.paths.1308073512" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/lnx64/tools/systemc/lib"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/win64/tools/systemc/lib"/>
                                     								
                                 </option>
                                 								
@@ -277,7 +277,7 @@
                                 								
                                 <option id="gnu.cpp.link.option.paths.1548534309" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/lnx64/tools/systemc/lib"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/win64/tools/systemc/lib"/>
                                     								
                                 </option>
                                 								

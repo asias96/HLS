@@ -1,23 +1,23 @@
 obj/fir.o: ../../../.settings/fir.cpp ../../../.settings/fir.hpp \
- /opt/Xilinx/Vivado/2018.3/include/hls_stream.h \
- /opt/Xilinx/Vivado/2018.3/include/ap_axi_sdata.h \
- /opt/Xilinx/Vivado/2018.3/include/ap_int.h \
- /opt/Xilinx/Vivado/2018.3/include/ap_common.h \
- /opt/Xilinx/Vivado/2018.3/include/ap_decl.h \
- /opt/Xilinx/Vivado/2018.3/include/etc/ap_private.h \
- /opt/Xilinx/Vivado/2018.3/include/hls_half.h \
- /opt/Xilinx/Vivado/2018.3/include/hls_fpo.h \
- /opt/Xilinx/Vivado/2018.3/include/floating_point_v7_0_bitacc_cmodel.h \
- /opt/Xilinx/Vivado/2018.3/include/gmp.h \
- /opt/Xilinx/Vivado/2018.3/include/mpfr.h \
- /opt/Xilinx/Vivado/2018.3/include/gmp.h \
- /opt/Xilinx/Vivado/2018.3/include/mpfr.h \
- /opt/Xilinx/Vivado/2018.3/include/ap_decl.h \
- /opt/Xilinx/Vivado/2018.3/include/ap_int_base.h \
- /opt/Xilinx/Vivado/2018.3/include/ap_int_ref.h \
- /opt/Xilinx/Vivado/2018.3/include/ap_int_special.h \
- /opt/Xilinx/Vivado/2018.3/include/ap_fixed.h \
- /opt/Xilinx/Vivado/2018.3/include/ap_fixed_base.h \
- /opt/Xilinx/Vivado/2018.3/include/ap_int.h \
- /opt/Xilinx/Vivado/2018.3/include/ap_fixed_ref.h \
- /opt/Xilinx/Vivado/2018.3/include/ap_fixed_special.h
+ C:/Xilinx/Vivado/2018.3/include/hls_stream.h \
+ C:/Xilinx/Vivado/2018.3/include/ap_axi_sdata.h \
+ C:/Xilinx/Vivado/2018.3/include/ap_int.h \
+ C:/Xilinx/Vivado/2018.3/include/ap_common.h \
+ C:/Xilinx/Vivado/2018.3/include/ap_decl.h \
+ C:/Xilinx/Vivado/2018.3/include/etc/ap_private.h \
+ C:/Xilinx/Vivado/2018.3/include/hls_half.h \
+ C:/Xilinx/Vivado/2018.3/include/hls_fpo.h \
+ C:/Xilinx/Vivado/2018.3/include/floating_point_v7_0_bitacc_cmodel.h \
+ C:/Xilinx/Vivado/2018.3/include/gmp.h \
+ C:/Xilinx/Vivado/2018.3/include/mpfr.h \
+ C:/Xilinx/Vivado/2018.3/include/gmp.h \
+ C:/Xilinx/Vivado/2018.3/include/mpfr.h \
+ C:/Xilinx/Vivado/2018.3/include/ap_decl.h \
+ C:/Xilinx/Vivado/2018.3/include/ap_int_base.h \
+ C:/Xilinx/Vivado/2018.3/include/ap_int_ref.h \
+ C:/Xilinx/Vivado/2018.3/include/ap_int_special.h \
+ C:/Xilinx/Vivado/2018.3/include/ap_fixed.h \
+ C:/Xilinx/Vivado/2018.3/include/ap_fixed_base.h \
+ C:/Xilinx/Vivado/2018.3/include/ap_int.h \
+ C:/Xilinx/Vivado/2018.3/include/ap_fixed_ref.h \
+ C:/Xilinx/Vivado/2018.3/include/ap_fixed_special.h
