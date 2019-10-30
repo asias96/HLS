@@ -1,7 +1,7 @@
 // ==============================================================
-// File generated on Mon Oct 28 22:23:52 +0100 2019
+// File generated on Wed Oct 30 10:50:27 CET 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
-// SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+// SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
@@ -231,7 +231,7 @@ module AESL_axi_s_stream_in (
         end
     endfunction
     
-    function [159:0] read_token(input integer fp);
+    function [183:0] read_token(input integer fp);
         integer ret;
         begin
             read_token = "";
@@ -240,8 +240,8 @@ module AESL_axi_s_stream_in (
         end
     endfunction
     
-    function [159:0] rm_0x(input [159:0] token);
-        reg [159:0] token_tmp;
+    function [183:0] rm_0x(input [183:0] token);
+        reg [183:0] token_tmp;
         integer i;
         begin
             token_tmp = "";
@@ -259,11 +259,11 @@ module AESL_axi_s_stream_in (
     
     initial begin : AXI_stream_driver_stream_in_TDATA
         integer fp;
-        reg [159:0] token;
+        reg [183:0] token;
         reg [32 - 1:0] data;
-        reg [159:0] data_integer;
+        reg [183:0] data_integer;
         integer fp_ingress_status;
-        reg [159:0] token_ingress_status;
+        reg [183:0] token_ingress_status;
         reg [31:0] ingress_status;
         reg [8 * 5:1] str;
         integer ret;
@@ -340,11 +340,11 @@ module AESL_axi_s_stream_in (
     
     initial begin : AXI_stream_driver_stream_in_TKEEP
         integer fp;
-        reg [159:0] token;
+        reg [183:0] token;
         reg [4 - 1:0] data;
-        reg [159:0] data_integer;
+        reg [183:0] data_integer;
         integer fp_ingress_status;
-        reg [159:0] token_ingress_status;
+        reg [183:0] token_ingress_status;
         reg [31:0] ingress_status;
         reg [8 * 5:1] str;
         integer ret;
@@ -421,11 +421,11 @@ module AESL_axi_s_stream_in (
     
     initial begin : AXI_stream_driver_stream_in_TSTRB
         integer fp;
-        reg [159:0] token;
+        reg [183:0] token;
         reg [4 - 1:0] data;
-        reg [159:0] data_integer;
+        reg [183:0] data_integer;
         integer fp_ingress_status;
-        reg [159:0] token_ingress_status;
+        reg [183:0] token_ingress_status;
         reg [31:0] ingress_status;
         reg [8 * 5:1] str;
         integer ret;
@@ -502,11 +502,11 @@ module AESL_axi_s_stream_in (
     
     initial begin : AXI_stream_driver_stream_in_TUSER
         integer fp;
-        reg [159:0] token;
+        reg [183:0] token;
         reg [2 - 1:0] data;
-        reg [159:0] data_integer;
+        reg [183:0] data_integer;
         integer fp_ingress_status;
-        reg [159:0] token_ingress_status;
+        reg [183:0] token_ingress_status;
         reg [31:0] ingress_status;
         reg [8 * 5:1] str;
         integer ret;
@@ -583,11 +583,11 @@ module AESL_axi_s_stream_in (
     
     initial begin : AXI_stream_driver_stream_in_TLAST
         integer fp;
-        reg [159:0] token;
+        reg [183:0] token;
         reg [1 - 1:0] data;
-        reg [159:0] data_integer;
+        reg [183:0] data_integer;
         integer fp_ingress_status;
-        reg [159:0] token_ingress_status;
+        reg [183:0] token_ingress_status;
         reg [31:0] ingress_status;
         reg [8 * 5:1] str;
         integer ret;
@@ -664,11 +664,11 @@ module AESL_axi_s_stream_in (
     
     initial begin : AXI_stream_driver_stream_in_TID
         integer fp;
-        reg [159:0] token;
+        reg [183:0] token;
         reg [5 - 1:0] data;
-        reg [159:0] data_integer;
+        reg [183:0] data_integer;
         integer fp_ingress_status;
-        reg [159:0] token_ingress_status;
+        reg [183:0] token_ingress_status;
         reg [31:0] ingress_status;
         reg [8 * 5:1] str;
         integer ret;
@@ -745,11 +745,11 @@ module AESL_axi_s_stream_in (
     
     initial begin : AXI_stream_driver_stream_in_TDEST
         integer fp;
-        reg [159:0] token;
+        reg [183:0] token;
         reg [6 - 1:0] data;
-        reg [159:0] data_integer;
+        reg [183:0] data_integer;
         integer fp_ingress_status;
-        reg [159:0] token_ingress_status;
+        reg [183:0] token_ingress_status;
         reg [31:0] ingress_status;
         reg [8 * 5:1] str;
         integer ret;

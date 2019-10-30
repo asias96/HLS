@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Mon Oct 28 22:27:17 2019
-| Host         : LAPTOP-TNDE04NQ running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Oct 30 10:54:16 2019
+| Host         : lsriw running 64-bit Ubuntu 18.04.3 LTS
 | Command      : report_utilization -file bd_0_wrapper_utilization_synth.rpt -pb bd_0_wrapper_utilization_synth.pb
 | Design       : bd_0_wrapper
 | Device       : 7z010clg400-1

@@ -175,7 +175,7 @@
                                 								
                                 <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/etc"/>
                                 								
-                                <listOptionValue builtIn="false" value="/home/lsriw/HLS/HLS"/>
+                                <listOptionValue builtIn="false" value="/home/lsriw/HLS_STANISZ/HLS"/>
                                 							
                             </option>
                             							
@@ -353,7 +353,7 @@
                                 								
                                 <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/etc"/>
                                 								
-                                <listOptionValue builtIn="false" value="/home/lsriw/HLS/HLS"/>
+                                <listOptionValue builtIn="false" value="/home/lsriw/HLS_STANISZ/HLS"/>
                                 							
                             </option>
                             							

@@ -17,24 +17,24 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>9.293</EstimatedClockPeriod>
+<EstimatedClockPeriod>8.742</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>50</Best-caseLatency>
-<Average-caseLatency>50</Average-caseLatency>
-<Worst-caseLatency>50</Worst-caseLatency>
-<Interval-min>51</Interval-min>
-<Interval-max>51</Interval-max>
+<Best-caseLatency>1</Best-caseLatency>
+<Average-caseLatency>1</Average-caseLatency>
+<Worst-caseLatency>1</Worst-caseLatency>
+<Interval-min>2</Interval-min>
+<Interval-max>2</Interval-max>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<DSP48E>14</DSP48E>
-<FF>1582</FF>
-<LUT>2098</LUT>
+<FF>419</FF>
+<LUT>451</LUT>
 <BRAM_18K>0</BRAM_18K>
+<DSP48E>0</DSP48E>
 </Resources>
 <AvailableResources>
 <BRAM_18K>120</BRAM_18K>
@@ -119,9 +119,9 @@
 <IOProtocol>ap_vld</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>64</Bits>
+<Bits>32</Bits>
 <Attribute>data</Attribute>
-<CType>double</CType>
+<CType>int</CType>
 </RtlPorts>
 <RtlPorts>
 <name>probe_in_ap_vld</name>
@@ -133,7 +133,7 @@
 <Dir>in</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
-<CType>double</CType>
+<CType>int</CType>
 </RtlPorts>
 <RtlPorts>
 <name>out_r</name>
@@ -143,9 +143,9 @@
 <IOProtocol>ap_vld</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>64</Bits>
+<Bits>32</Bits>
 <Attribute>data</Attribute>
-<CType>double</CType>
+<CType>int</CType>
 </RtlPorts>
 <RtlPorts>
 <name>out_r_ap_vld</name>
@@ -157,7 +157,7 @@
 <Dir>out</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
-<CType>double</CType>
+<CType>int</CType>
 </RtlPorts>
 </InterfaceSummary>
 

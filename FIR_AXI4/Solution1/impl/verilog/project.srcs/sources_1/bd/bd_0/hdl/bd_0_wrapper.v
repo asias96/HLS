@@ -1,8 +1,8 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-//Date        : Mon Oct 28 22:25:35 2019
-//Host        : LAPTOP-TNDE04NQ running 64-bit major release  (build 9200)
+//Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+//Date        : Wed Oct 30 10:53:08 2019
+//Host        : lsriw running 64-bit Ubuntu 18.04.3 LTS
 //Command     : generate_target bd_0_wrapper.bd
 //Design      : bd_0_wrapper
 //Purpose     : IP block netlist
@@ -11,11 +11,25 @@
 
 module bd_0_wrapper
    (ap_clk,
-    ap_ctrl_done,
-    ap_ctrl_idle,
-    ap_ctrl_ready,
-    ap_ctrl_start,
     ap_rst_n,
+    interrupt,
+    s_axi_bundle_araddr,
+    s_axi_bundle_arready,
+    s_axi_bundle_arvalid,
+    s_axi_bundle_awaddr,
+    s_axi_bundle_awready,
+    s_axi_bundle_awvalid,
+    s_axi_bundle_bready,
+    s_axi_bundle_bresp,
+    s_axi_bundle_bvalid,
+    s_axi_bundle_rdata,
+    s_axi_bundle_rready,
+    s_axi_bundle_rresp,
+    s_axi_bundle_rvalid,
+    s_axi_bundle_wdata,
+    s_axi_bundle_wready,
+    s_axi_bundle_wstrb,
+    s_axi_bundle_wvalid,
     stream_in_tdata,
     stream_in_tdest,
     stream_in_tid,
@@ -35,11 +49,25 @@ module bd_0_wrapper
     stream_out_tuser,
     stream_out_tvalid);
   input ap_clk;
-  output ap_ctrl_done;
-  output ap_ctrl_idle;
-  output ap_ctrl_ready;
-  input ap_ctrl_start;
   input ap_rst_n;
+  output interrupt;
+  input [6:0]s_axi_bundle_araddr;
+  output s_axi_bundle_arready;
+  input s_axi_bundle_arvalid;
+  input [6:0]s_axi_bundle_awaddr;
+  output s_axi_bundle_awready;
+  input s_axi_bundle_awvalid;
+  input s_axi_bundle_bready;
+  output [1:0]s_axi_bundle_bresp;
+  output s_axi_bundle_bvalid;
+  output [31:0]s_axi_bundle_rdata;
+  input s_axi_bundle_rready;
+  output [1:0]s_axi_bundle_rresp;
+  output s_axi_bundle_rvalid;
+  input [31:0]s_axi_bundle_wdata;
+  output s_axi_bundle_wready;
+  input [3:0]s_axi_bundle_wstrb;
+  input s_axi_bundle_wvalid;
   input [31:0]stream_in_tdata;
   input [5:0]stream_in_tdest;
   input [4:0]stream_in_tid;
@@ -60,11 +88,25 @@ module bd_0_wrapper
   output stream_out_tvalid;
 
   wire ap_clk;
-  wire ap_ctrl_done;
-  wire ap_ctrl_idle;
-  wire ap_ctrl_ready;
-  wire ap_ctrl_start;
   wire ap_rst_n;
+  wire interrupt;
+  wire [6:0]s_axi_bundle_araddr;
+  wire s_axi_bundle_arready;
+  wire s_axi_bundle_arvalid;
+  wire [6:0]s_axi_bundle_awaddr;
+  wire s_axi_bundle_awready;
+  wire s_axi_bundle_awvalid;
+  wire s_axi_bundle_bready;
+  wire [1:0]s_axi_bundle_bresp;
+  wire s_axi_bundle_bvalid;
+  wire [31:0]s_axi_bundle_rdata;
+  wire s_axi_bundle_rready;
+  wire [1:0]s_axi_bundle_rresp;
+  wire s_axi_bundle_rvalid;
+  wire [31:0]s_axi_bundle_wdata;
+  wire s_axi_bundle_wready;
+  wire [3:0]s_axi_bundle_wstrb;
+  wire s_axi_bundle_wvalid;
   wire [31:0]stream_in_tdata;
   wire [5:0]stream_in_tdest;
   wire [4:0]stream_in_tid;
@@ -86,11 +128,25 @@ module bd_0_wrapper
 
   bd_0 bd_0_i
        (.ap_clk(ap_clk),
-        .ap_ctrl_done(ap_ctrl_done),
-        .ap_ctrl_idle(ap_ctrl_idle),
-        .ap_ctrl_ready(ap_ctrl_ready),
-        .ap_ctrl_start(ap_ctrl_start),
         .ap_rst_n(ap_rst_n),
+        .interrupt(interrupt),
+        .s_axi_bundle_araddr(s_axi_bundle_araddr),
+        .s_axi_bundle_arready(s_axi_bundle_arready),
+        .s_axi_bundle_arvalid(s_axi_bundle_arvalid),
+        .s_axi_bundle_awaddr(s_axi_bundle_awaddr),
+        .s_axi_bundle_awready(s_axi_bundle_awready),
+        .s_axi_bundle_awvalid(s_axi_bundle_awvalid),
+        .s_axi_bundle_bready(s_axi_bundle_bready),
+        .s_axi_bundle_bresp(s_axi_bundle_bresp),
+        .s_axi_bundle_bvalid(s_axi_bundle_bvalid),
+        .s_axi_bundle_rdata(s_axi_bundle_rdata),
+        .s_axi_bundle_rready(s_axi_bundle_rready),
+        .s_axi_bundle_rresp(s_axi_bundle_rresp),
+        .s_axi_bundle_rvalid(s_axi_bundle_rvalid),
+        .s_axi_bundle_wdata(s_axi_bundle_wdata),
+        .s_axi_bundle_wready(s_axi_bundle_wready),
+        .s_axi_bundle_wstrb(s_axi_bundle_wstrb),
+        .s_axi_bundle_wvalid(s_axi_bundle_wvalid),
         .stream_in_tdata(stream_in_tdata),
         .stream_in_tdest(stream_in_tdest),
         .stream_in_tid(stream_in_tid),

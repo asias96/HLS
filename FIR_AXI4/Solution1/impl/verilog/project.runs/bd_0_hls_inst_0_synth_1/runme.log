@@ -4,61 +4,77 @@
 
 
 ****** Vivado v2018.3 (64-bit)
-  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
   **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 
 source bd_0_hls_inst_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/HLS/FIR_AXI4/Solution1/impl/ip'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/Solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.3/data/ip'.
 Command: synth_design -top bd_0_hls_inst_0 -part xc7z010clg400-1 -directive sdx_optimization_effort_high -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 1780 
+INFO: Helper process launched with PID 6509 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 410.688 ; gain = 97.574
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1472.910 ; gain = 85.809 ; free physical = 6653 ; free virtual = 11890
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [d:/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'fir' [d:/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/e06d/hdl/verilog/fir.v:12]
-	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
-	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
-	Parameter ap_ST_fsm_state3 bound to: 4'b0100 
-	Parameter ap_ST_fsm_state4 bound to: 4'b1000 
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/e06d/hdl/verilog/fir.v:74]
-INFO: [Synth 8-6157] synthesizing module 'fir_data_in_V' [d:/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/e06d/hdl/verilog/fir_data_in_V.v:46]
-	Parameter DataWidth bound to: 32 - type: integer 
-	Parameter AddressRange bound to: 10 - type: integer 
-	Parameter AddressWidth bound to: 4 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'fir_data_in_V_ram' [d:/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/e06d/hdl/verilog/fir_data_in_V.v:9]
-	Parameter DWIDTH bound to: 32 - type: integer 
-	Parameter AWIDTH bound to: 4 - type: integer 
-	Parameter MEM_SIZE bound to: 10 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [d:/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/e06d/hdl/verilog/fir_data_in_V.v:22]
-INFO: [Synth 8-3876] $readmem data file './fir_data_in_V_ram.dat' is read successfully [d:/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/e06d/hdl/verilog/fir_data_in_V.v:25]
-INFO: [Synth 8-6155] done synthesizing module 'fir_data_in_V_ram' (1#1) [d:/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/e06d/hdl/verilog/fir_data_in_V.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'fir_data_in_V' (2#1) [d:/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/e06d/hdl/verilog/fir_data_in_V.v:46]
-INFO: [Synth 8-6157] synthesizing module 'fir_coeff' [d:/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/e06d/hdl/verilog/fir_coeff.v:42]
-	Parameter DataWidth bound to: 1 - type: integer 
-	Parameter AddressRange bound to: 10 - type: integer 
-	Parameter AddressWidth bound to: 4 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'fir_coeff_rom' [d:/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/e06d/hdl/verilog/fir_coeff.v:9]
-	Parameter DWIDTH bound to: 1 - type: integer 
-	Parameter AWIDTH bound to: 4 - type: integer 
-	Parameter MEM_SIZE bound to: 10 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [d:/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/e06d/hdl/verilog/fir_coeff.v:21]
-INFO: [Synth 8-3876] $readmem data file './fir_coeff_rom.dat' is read successfully [d:/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/e06d/hdl/verilog/fir_coeff.v:24]
-INFO: [Synth 8-6155] done synthesizing module 'fir_coeff_rom' (3#1) [d:/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/e06d/hdl/verilog/fir_coeff.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'fir_coeff' (4#1) [d:/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/e06d/hdl/verilog/fir_coeff.v:42]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/e06d/hdl/verilog/fir.v:1695]
-INFO: [Synth 8-6155] done synthesizing module 'fir' (5#1) [d:/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/e06d/hdl/verilog/fir.v:12]
-INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (6#1) [d:/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:58]
-WARNING: [Synth 8-3331] design fir_coeff has unconnected port reset
-WARNING: [Synth 8-3331] design fir_data_in_V has unconnected port reset
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'fir' [/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/24ce/hdl/verilog/fir.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 5'b00001 
+	Parameter ap_ST_fsm_state2 bound to: 5'b00010 
+	Parameter ap_ST_fsm_state3 bound to: 5'b00100 
+	Parameter ap_ST_fsm_state4 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state5 bound to: 5'b10000 
+	Parameter C_S_AXI_BUNDLE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_BUNDLE_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_BUNDLE_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/24ce/hdl/verilog/fir.v:108]
+INFO: [Synth 8-6157] synthesizing module 'fir_bundle_s_axi' [/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/24ce/hdl/verilog/fir_bundle_s_axi.v:9]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 7'b0000000 
+	Parameter ADDR_GIE bound to: 7'b0000100 
+	Parameter ADDR_IER bound to: 7'b0001000 
+	Parameter ADDR_ISR bound to: 7'b0001100 
+	Parameter ADDR_COEFF_0_V_DATA_0 bound to: 7'b0010000 
+	Parameter ADDR_COEFF_0_V_CTRL bound to: 7'b0010100 
+	Parameter ADDR_COEFF_1_V_DATA_0 bound to: 7'b0011000 
+	Parameter ADDR_COEFF_1_V_CTRL bound to: 7'b0011100 
+	Parameter ADDR_COEFF_2_V_DATA_0 bound to: 7'b0100000 
+	Parameter ADDR_COEFF_2_V_CTRL bound to: 7'b0100100 
+	Parameter ADDR_COEFF_3_V_DATA_0 bound to: 7'b0101000 
+	Parameter ADDR_COEFF_3_V_CTRL bound to: 7'b0101100 
+	Parameter ADDR_COEFF_4_V_DATA_0 bound to: 7'b0110000 
+	Parameter ADDR_COEFF_4_V_CTRL bound to: 7'b0110100 
+	Parameter ADDR_COEFF_5_V_DATA_0 bound to: 7'b0111000 
+	Parameter ADDR_COEFF_5_V_CTRL bound to: 7'b0111100 
+	Parameter ADDR_COEFF_6_V_DATA_0 bound to: 7'b1000000 
+	Parameter ADDR_COEFF_6_V_CTRL bound to: 7'b1000100 
+	Parameter ADDR_COEFF_7_V_DATA_0 bound to: 7'b1001000 
+	Parameter ADDR_COEFF_7_V_CTRL bound to: 7'b1001100 
+	Parameter ADDR_COEFF_8_V_DATA_0 bound to: 7'b1010000 
+	Parameter ADDR_COEFF_8_V_CTRL bound to: 7'b1010100 
+	Parameter ADDR_COEFF_9_V_DATA_0 bound to: 7'b1011000 
+	Parameter ADDR_COEFF_9_V_CTRL bound to: 7'b1011100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 7 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/24ce/hdl/verilog/fir_bundle_s_axi.v:259]
+INFO: [Synth 8-6155] done synthesizing module 'fir_bundle_s_axi' (1#1) [/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/24ce/hdl/verilog/fir_bundle_s_axi.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'fir' (2#1) [/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/24ce/hdl/verilog/fir.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (3#1) [/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:58]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 466.746 ; gain = 153.633
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1519.660 ; gain = 132.559 ; free physical = 6658 ; free virtual = 11897
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -71,50 +87,71 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 466.746 ; gain = 153.633
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1519.660 ; gain = 132.559 ; free physical = 6661 ; free virtual = 11900
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 466.746 ; gain = 153.633
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1519.660 ; gain = 132.559 ; free physical = 6661 ; free virtual = 11900
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [d:/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/fir_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [d:/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/fir_ooc.xdc] for cell 'inst'
-Parsing XDC File [D:/HLS/FIR_AXI4/Solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [D:/HLS/FIR_AXI4/Solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/fir_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/fir_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/Solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/Solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 806.652 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1889.535 ; gain = 0.000 ; free physical = 6362 ; free virtual = 11643
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 806.652 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 807.781 ; gain = 1.129
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1889.535 ; gain = 0.000 ; free physical = 6362 ; free virtual = 11642
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1889.535 ; gain = 0.000 ; free physical = 6362 ; free virtual = 11642
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 807.781 ; gain = 494.668
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1889.535 ; gain = 502.434 ; free physical = 6446 ; free virtual = 11727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 807.781 ; gain = 494.668
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1889.535 ; gain = 502.434 ; free physical = 6446 ; free virtual = 11727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/HLS/FIR_AXI4/Solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/Solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 807.781 ; gain = 494.668
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1889.535 ; gain = 502.434 ; free physical = 6448 ; free virtual = 11728
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "ram". This will be implemented in logic
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'fir_bundle_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'fir_bundle_s_axi'
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-INFO: [Synth 8-5544] ROM "tmp_2_fu_204_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'fir_bundle_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'fir_bundle_s_axi'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 807.781 ; gain = 494.668
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1889.535 ; gain = 502.434 ; free physical = 6438 ; free virtual = 11720
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -128,20 +165,28 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 2     
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
 +---Registers : 
-	               32 Bit    Registers := 6     
+	               32 Bit    Registers := 48    
+	                7 Bit    Registers := 1     
 	                6 Bit    Registers := 5     
-	                5 Bit    Registers := 5     
-	                4 Bit    Registers := 14    
-	                2 Bit    Registers := 19    
-	                1 Bit    Registers := 34    
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 10    
+	                2 Bit    Registers := 20    
+	                1 Bit    Registers := 41    
++---Multipliers : 
+	                32x32  Multipliers := 10    
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 12    
 	   2 Input      6 Bit        Muxes := 2     
-	   2 Input      5 Bit        Muxes := 2     
-	   2 Input      4 Bit        Muxes := 8     
-	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
 	   2 Input      2 Bit        Muxes := 17    
 	   4 Input      2 Bit        Muxes := 14    
 	   2 Input      1 Bit        Muxes := 17    
@@ -152,35 +197,45 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module fir_data_in_V_ram 
+Module fir_bundle_s_axi 
 Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
 +---Registers : 
-	               32 Bit    Registers := 1     
-Module fir_coeff_rom 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
+	               32 Bit    Registers := 11    
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 10    
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
 Module fir 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 2     
+	   5 Input     32 Bit       Adders := 1     
 +---Registers : 
-	               32 Bit    Registers := 5     
+	               32 Bit    Registers := 37    
 	                6 Bit    Registers := 5     
-	                5 Bit    Registers := 5     
-	                4 Bit    Registers := 14    
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 10    
 	                2 Bit    Registers := 19    
 	                1 Bit    Registers := 33    
++---Multipliers : 
+	                32x32  Multipliers := 10    
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 2     
 	   2 Input      6 Bit        Muxes := 2     
-	   2 Input      5 Bit        Muxes := 2     
-	   2 Input      4 Bit        Muxes := 8     
-	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 4     
 	   2 Input      2 Bit        Muxes := 17    
 	   4 Input      2 Bit        Muxes := 14    
-	   2 Input      1 Bit        Muxes := 17    
+	   2 Input      1 Bit        Muxes := 16    
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -197,30 +252,407 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/24ce/hdl/verilog/fir.v:1550]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/24ce/hdl/verilog/fir.v:1582]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/24ce/hdl/verilog/fir.v:1562]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/24ce/hdl/verilog/fir.v:1554]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/24ce/hdl/verilog/fir.v:1558]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/24ce/hdl/verilog/fir.v:1570]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/24ce/hdl/verilog/fir.v:1584]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/24ce/hdl/verilog/fir.v:1574]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/24ce/hdl/verilog/fir.v:1566]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/Solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/24ce/hdl/verilog/fir.v:1578]
+DSP Report: Generating DSP p_1_1_fu_244_p2, operation Mode is: A2*B''.
+DSP Report: register B is absorbed into DSP p_1_1_fu_244_p2.
+DSP Report: register B is absorbed into DSP p_1_1_fu_244_p2.
+DSP Report: register A is absorbed into DSP p_1_1_fu_244_p2.
+DSP Report: operator p_1_1_fu_244_p2 is absorbed into DSP p_1_1_fu_244_p2.
+DSP Report: operator p_1_1_fu_244_p2 is absorbed into DSP p_1_1_fu_244_p2.
+DSP Report: Generating DSP p_1_1_reg_496_reg, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP p_1_1_reg_496_reg.
+DSP Report: register A is absorbed into DSP p_1_1_reg_496_reg.
+DSP Report: register p_1_1_reg_496_reg is absorbed into DSP p_1_1_reg_496_reg.
+DSP Report: operator p_1_1_fu_244_p2 is absorbed into DSP p_1_1_reg_496_reg.
+DSP Report: operator p_1_1_fu_244_p2 is absorbed into DSP p_1_1_reg_496_reg.
+DSP Report: Generating DSP p_1_1_fu_244_p2, operation Mode is: A''*B2.
+DSP Report: register B is absorbed into DSP p_1_1_fu_244_p2.
+DSP Report: register A is absorbed into DSP p_1_1_fu_244_p2.
+DSP Report: register A is absorbed into DSP p_1_1_fu_244_p2.
+DSP Report: operator p_1_1_fu_244_p2 is absorbed into DSP p_1_1_fu_244_p2.
+DSP Report: operator p_1_1_fu_244_p2 is absorbed into DSP p_1_1_fu_244_p2.
+DSP Report: Generating DSP p_1_1_reg_496_reg, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP p_1_1_reg_496_reg.
+DSP Report: register A is absorbed into DSP p_1_1_reg_496_reg.
+DSP Report: register p_1_1_reg_496_reg is absorbed into DSP p_1_1_reg_496_reg.
+DSP Report: operator p_1_1_fu_244_p2 is absorbed into DSP p_1_1_reg_496_reg.
+DSP Report: operator p_1_1_fu_244_p2 is absorbed into DSP p_1_1_reg_496_reg.
+DSP Report: Generating DSP p_1_fu_229_p2, operation Mode is: A2*B''.
+DSP Report: register B is absorbed into DSP p_1_fu_229_p2.
+DSP Report: register B is absorbed into DSP p_1_fu_229_p2.
+DSP Report: register A is absorbed into DSP p_1_fu_229_p2.
+DSP Report: operator p_1_fu_229_p2 is absorbed into DSP p_1_fu_229_p2.
+DSP Report: operator p_1_fu_229_p2 is absorbed into DSP p_1_fu_229_p2.
+DSP Report: Generating DSP p_1_reg_491_reg, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP p_1_reg_491_reg.
+DSP Report: register A is absorbed into DSP p_1_reg_491_reg.
+DSP Report: register p_1_reg_491_reg is absorbed into DSP p_1_reg_491_reg.
+DSP Report: operator p_1_fu_229_p2 is absorbed into DSP p_1_reg_491_reg.
+DSP Report: operator p_1_fu_229_p2 is absorbed into DSP p_1_reg_491_reg.
+DSP Report: Generating DSP p_1_fu_229_p2, operation Mode is: A''*B2.
+DSP Report: register B is absorbed into DSP p_1_fu_229_p2.
+DSP Report: register A is absorbed into DSP p_1_fu_229_p2.
+DSP Report: register A is absorbed into DSP p_1_fu_229_p2.
+DSP Report: operator p_1_fu_229_p2 is absorbed into DSP p_1_fu_229_p2.
+DSP Report: operator p_1_fu_229_p2 is absorbed into DSP p_1_fu_229_p2.
+DSP Report: Generating DSP p_1_reg_491_reg, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP p_1_reg_491_reg.
+DSP Report: register A is absorbed into DSP p_1_reg_491_reg.
+DSP Report: register p_1_reg_491_reg is absorbed into DSP p_1_reg_491_reg.
+DSP Report: operator p_1_fu_229_p2 is absorbed into DSP p_1_reg_491_reg.
+DSP Report: operator p_1_fu_229_p2 is absorbed into DSP p_1_reg_491_reg.
+DSP Report: Generating DSP p_1_4_fu_289_p2, operation Mode is: A2*B''.
+DSP Report: register B is absorbed into DSP p_1_4_fu_289_p2.
+DSP Report: register B is absorbed into DSP p_1_4_fu_289_p2.
+DSP Report: register A is absorbed into DSP p_1_4_fu_289_p2.
+DSP Report: operator p_1_4_fu_289_p2 is absorbed into DSP p_1_4_fu_289_p2.
+DSP Report: operator p_1_4_fu_289_p2 is absorbed into DSP p_1_4_fu_289_p2.
+DSP Report: Generating DSP p_1_4_reg_511_reg, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP p_1_4_reg_511_reg.
+DSP Report: register A is absorbed into DSP p_1_4_reg_511_reg.
+DSP Report: register p_1_4_reg_511_reg is absorbed into DSP p_1_4_reg_511_reg.
+DSP Report: operator p_1_4_fu_289_p2 is absorbed into DSP p_1_4_reg_511_reg.
+DSP Report: operator p_1_4_fu_289_p2 is absorbed into DSP p_1_4_reg_511_reg.
+DSP Report: Generating DSP p_1_4_fu_289_p2, operation Mode is: A''*B2.
+DSP Report: register B is absorbed into DSP p_1_4_fu_289_p2.
+DSP Report: register A is absorbed into DSP p_1_4_fu_289_p2.
+DSP Report: register A is absorbed into DSP p_1_4_fu_289_p2.
+DSP Report: operator p_1_4_fu_289_p2 is absorbed into DSP p_1_4_fu_289_p2.
+DSP Report: operator p_1_4_fu_289_p2 is absorbed into DSP p_1_4_fu_289_p2.
+DSP Report: Generating DSP p_1_4_reg_511_reg, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP p_1_4_reg_511_reg.
+DSP Report: register A is absorbed into DSP p_1_4_reg_511_reg.
+DSP Report: register p_1_4_reg_511_reg is absorbed into DSP p_1_4_reg_511_reg.
+DSP Report: operator p_1_4_fu_289_p2 is absorbed into DSP p_1_4_reg_511_reg.
+DSP Report: operator p_1_4_fu_289_p2 is absorbed into DSP p_1_4_reg_511_reg.
+DSP Report: Generating DSP p_1_2_fu_259_p2, operation Mode is: A2*B''.
+DSP Report: register B is absorbed into DSP p_1_2_fu_259_p2.
+DSP Report: register B is absorbed into DSP p_1_2_fu_259_p2.
+DSP Report: register A is absorbed into DSP p_1_2_fu_259_p2.
+DSP Report: operator p_1_2_fu_259_p2 is absorbed into DSP p_1_2_fu_259_p2.
+DSP Report: operator p_1_2_fu_259_p2 is absorbed into DSP p_1_2_fu_259_p2.
+DSP Report: Generating DSP p_1_2_reg_501_reg, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP p_1_2_reg_501_reg.
+DSP Report: register A is absorbed into DSP p_1_2_reg_501_reg.
+DSP Report: register p_1_2_reg_501_reg is absorbed into DSP p_1_2_reg_501_reg.
+DSP Report: operator p_1_2_fu_259_p2 is absorbed into DSP p_1_2_reg_501_reg.
+DSP Report: operator p_1_2_fu_259_p2 is absorbed into DSP p_1_2_reg_501_reg.
+DSP Report: Generating DSP p_1_2_fu_259_p2, operation Mode is: A''*B2.
+DSP Report: register B is absorbed into DSP p_1_2_fu_259_p2.
+DSP Report: register A is absorbed into DSP p_1_2_fu_259_p2.
+DSP Report: register A is absorbed into DSP p_1_2_fu_259_p2.
+DSP Report: operator p_1_2_fu_259_p2 is absorbed into DSP p_1_2_fu_259_p2.
+DSP Report: operator p_1_2_fu_259_p2 is absorbed into DSP p_1_2_fu_259_p2.
+DSP Report: Generating DSP p_1_2_reg_501_reg, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP p_1_2_reg_501_reg.
+DSP Report: register A is absorbed into DSP p_1_2_reg_501_reg.
+DSP Report: register p_1_2_reg_501_reg is absorbed into DSP p_1_2_reg_501_reg.
+DSP Report: operator p_1_2_fu_259_p2 is absorbed into DSP p_1_2_reg_501_reg.
+DSP Report: operator p_1_2_fu_259_p2 is absorbed into DSP p_1_2_reg_501_reg.
+DSP Report: Generating DSP p_1_3_fu_274_p2, operation Mode is: A2*B''.
+DSP Report: register B is absorbed into DSP p_1_3_fu_274_p2.
+DSP Report: register B is absorbed into DSP p_1_3_fu_274_p2.
+DSP Report: register A is absorbed into DSP p_1_3_fu_274_p2.
+DSP Report: operator p_1_3_fu_274_p2 is absorbed into DSP p_1_3_fu_274_p2.
+DSP Report: operator p_1_3_fu_274_p2 is absorbed into DSP p_1_3_fu_274_p2.
+DSP Report: Generating DSP p_1_3_reg_506_reg, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP p_1_3_reg_506_reg.
+DSP Report: register A is absorbed into DSP p_1_3_reg_506_reg.
+DSP Report: register p_1_3_reg_506_reg is absorbed into DSP p_1_3_reg_506_reg.
+DSP Report: operator p_1_3_fu_274_p2 is absorbed into DSP p_1_3_reg_506_reg.
+DSP Report: operator p_1_3_fu_274_p2 is absorbed into DSP p_1_3_reg_506_reg.
+DSP Report: Generating DSP p_1_3_fu_274_p2, operation Mode is: A''*B2.
+DSP Report: register B is absorbed into DSP p_1_3_fu_274_p2.
+DSP Report: register A is absorbed into DSP p_1_3_fu_274_p2.
+DSP Report: register A is absorbed into DSP p_1_3_fu_274_p2.
+DSP Report: operator p_1_3_fu_274_p2 is absorbed into DSP p_1_3_fu_274_p2.
+DSP Report: operator p_1_3_fu_274_p2 is absorbed into DSP p_1_3_fu_274_p2.
+DSP Report: Generating DSP p_1_3_reg_506_reg, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP p_1_3_reg_506_reg.
+DSP Report: register A is absorbed into DSP p_1_3_reg_506_reg.
+DSP Report: register p_1_3_reg_506_reg is absorbed into DSP p_1_3_reg_506_reg.
+DSP Report: operator p_1_3_fu_274_p2 is absorbed into DSP p_1_3_reg_506_reg.
+DSP Report: operator p_1_3_fu_274_p2 is absorbed into DSP p_1_3_reg_506_reg.
+DSP Report: Generating DSP p_1_6_fu_319_p2, operation Mode is: A2*B''.
+DSP Report: register B is absorbed into DSP p_1_6_fu_319_p2.
+DSP Report: register B is absorbed into DSP p_1_6_fu_319_p2.
+DSP Report: register A is absorbed into DSP p_1_6_fu_319_p2.
+DSP Report: operator p_1_6_fu_319_p2 is absorbed into DSP p_1_6_fu_319_p2.
+DSP Report: operator p_1_6_fu_319_p2 is absorbed into DSP p_1_6_fu_319_p2.
+DSP Report: Generating DSP p_1_6_reg_521_reg, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP p_1_6_reg_521_reg.
+DSP Report: register A is absorbed into DSP p_1_6_reg_521_reg.
+DSP Report: register p_1_6_reg_521_reg is absorbed into DSP p_1_6_reg_521_reg.
+DSP Report: operator p_1_6_fu_319_p2 is absorbed into DSP p_1_6_reg_521_reg.
+DSP Report: operator p_1_6_fu_319_p2 is absorbed into DSP p_1_6_reg_521_reg.
+DSP Report: Generating DSP p_1_6_fu_319_p2, operation Mode is: A''*B2.
+DSP Report: register B is absorbed into DSP p_1_6_fu_319_p2.
+DSP Report: register A is absorbed into DSP p_1_6_fu_319_p2.
+DSP Report: register A is absorbed into DSP p_1_6_fu_319_p2.
+DSP Report: operator p_1_6_fu_319_p2 is absorbed into DSP p_1_6_fu_319_p2.
+DSP Report: operator p_1_6_fu_319_p2 is absorbed into DSP p_1_6_fu_319_p2.
+DSP Report: Generating DSP p_1_6_reg_521_reg, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP p_1_6_reg_521_reg.
+DSP Report: register A is absorbed into DSP p_1_6_reg_521_reg.
+DSP Report: register p_1_6_reg_521_reg is absorbed into DSP p_1_6_reg_521_reg.
+DSP Report: operator p_1_6_fu_319_p2 is absorbed into DSP p_1_6_reg_521_reg.
+DSP Report: operator p_1_6_fu_319_p2 is absorbed into DSP p_1_6_reg_521_reg.
+DSP Report: Generating DSP p_2_fu_359_p2, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP p_2_fu_359_p2.
+DSP Report: operator p_2_fu_359_p2 is absorbed into DSP p_2_fu_359_p2.
+DSP Report: operator p_2_fu_359_p2 is absorbed into DSP p_2_fu_359_p2.
+DSP Report: Generating DSP p_2_reg_536_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register B is absorbed into DSP p_2_reg_536_reg.
+DSP Report: register p_2_reg_536_reg is absorbed into DSP p_2_reg_536_reg.
+DSP Report: operator p_2_fu_359_p2 is absorbed into DSP p_2_reg_536_reg.
+DSP Report: operator p_2_fu_359_p2 is absorbed into DSP p_2_reg_536_reg.
+DSP Report: Generating DSP p_2_fu_359_p2, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP p_2_fu_359_p2.
+DSP Report: register A is absorbed into DSP p_2_fu_359_p2.
+DSP Report: operator p_2_fu_359_p2 is absorbed into DSP p_2_fu_359_p2.
+DSP Report: operator p_2_fu_359_p2 is absorbed into DSP p_2_fu_359_p2.
+DSP Report: Generating DSP p_2_reg_536_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP p_2_reg_536_reg.
+DSP Report: register A is absorbed into DSP p_2_reg_536_reg.
+DSP Report: register p_2_reg_536_reg is absorbed into DSP p_2_reg_536_reg.
+DSP Report: operator p_2_fu_359_p2 is absorbed into DSP p_2_reg_536_reg.
+DSP Report: operator p_2_fu_359_p2 is absorbed into DSP p_2_reg_536_reg.
+DSP Report: Generating DSP p_1_7_fu_334_p2, operation Mode is: A2*B''.
+DSP Report: register B is absorbed into DSP p_1_7_fu_334_p2.
+DSP Report: register B is absorbed into DSP p_1_7_fu_334_p2.
+DSP Report: register A is absorbed into DSP p_1_7_fu_334_p2.
+DSP Report: operator p_1_7_fu_334_p2 is absorbed into DSP p_1_7_fu_334_p2.
+DSP Report: operator p_1_7_fu_334_p2 is absorbed into DSP p_1_7_fu_334_p2.
+DSP Report: Generating DSP p_1_7_reg_526_reg, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP p_1_7_reg_526_reg.
+DSP Report: register A is absorbed into DSP p_1_7_reg_526_reg.
+DSP Report: register p_1_7_reg_526_reg is absorbed into DSP p_1_7_reg_526_reg.
+DSP Report: operator p_1_7_fu_334_p2 is absorbed into DSP p_1_7_reg_526_reg.
+DSP Report: operator p_1_7_fu_334_p2 is absorbed into DSP p_1_7_reg_526_reg.
+DSP Report: Generating DSP p_1_7_fu_334_p2, operation Mode is: A''*B2.
+DSP Report: register B is absorbed into DSP p_1_7_fu_334_p2.
+DSP Report: register A is absorbed into DSP p_1_7_fu_334_p2.
+DSP Report: register A is absorbed into DSP p_1_7_fu_334_p2.
+DSP Report: operator p_1_7_fu_334_p2 is absorbed into DSP p_1_7_fu_334_p2.
+DSP Report: operator p_1_7_fu_334_p2 is absorbed into DSP p_1_7_fu_334_p2.
+DSP Report: Generating DSP p_1_7_reg_526_reg, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP p_1_7_reg_526_reg.
+DSP Report: register A is absorbed into DSP p_1_7_reg_526_reg.
+DSP Report: register p_1_7_reg_526_reg is absorbed into DSP p_1_7_reg_526_reg.
+DSP Report: operator p_1_7_fu_334_p2 is absorbed into DSP p_1_7_reg_526_reg.
+DSP Report: operator p_1_7_fu_334_p2 is absorbed into DSP p_1_7_reg_526_reg.
+DSP Report: Generating DSP p_1_5_fu_304_p2, operation Mode is: A2*B''.
+DSP Report: register B is absorbed into DSP p_1_5_fu_304_p2.
+DSP Report: register B is absorbed into DSP p_1_5_fu_304_p2.
+DSP Report: register A is absorbed into DSP p_1_5_fu_304_p2.
+DSP Report: operator p_1_5_fu_304_p2 is absorbed into DSP p_1_5_fu_304_p2.
+DSP Report: operator p_1_5_fu_304_p2 is absorbed into DSP p_1_5_fu_304_p2.
+DSP Report: Generating DSP p_1_5_reg_516_reg, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP p_1_5_reg_516_reg.
+DSP Report: register A is absorbed into DSP p_1_5_reg_516_reg.
+DSP Report: register p_1_5_reg_516_reg is absorbed into DSP p_1_5_reg_516_reg.
+DSP Report: operator p_1_5_fu_304_p2 is absorbed into DSP p_1_5_reg_516_reg.
+DSP Report: operator p_1_5_fu_304_p2 is absorbed into DSP p_1_5_reg_516_reg.
+DSP Report: Generating DSP p_1_5_fu_304_p2, operation Mode is: A''*B2.
+DSP Report: register B is absorbed into DSP p_1_5_fu_304_p2.
+DSP Report: register A is absorbed into DSP p_1_5_fu_304_p2.
+DSP Report: register A is absorbed into DSP p_1_5_fu_304_p2.
+DSP Report: operator p_1_5_fu_304_p2 is absorbed into DSP p_1_5_fu_304_p2.
+DSP Report: operator p_1_5_fu_304_p2 is absorbed into DSP p_1_5_fu_304_p2.
+DSP Report: Generating DSP p_1_5_reg_516_reg, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP p_1_5_reg_516_reg.
+DSP Report: register A is absorbed into DSP p_1_5_reg_516_reg.
+DSP Report: register p_1_5_reg_516_reg is absorbed into DSP p_1_5_reg_516_reg.
+DSP Report: operator p_1_5_fu_304_p2 is absorbed into DSP p_1_5_reg_516_reg.
+DSP Report: operator p_1_5_fu_304_p2 is absorbed into DSP p_1_5_reg_516_reg.
+DSP Report: Generating DSP p_1_8_fu_349_p2, operation Mode is: A2*B''.
+DSP Report: register B is absorbed into DSP p_1_8_fu_349_p2.
+DSP Report: register B is absorbed into DSP p_1_8_fu_349_p2.
+DSP Report: register A is absorbed into DSP p_1_8_fu_349_p2.
+DSP Report: operator p_1_8_fu_349_p2 is absorbed into DSP p_1_8_fu_349_p2.
+DSP Report: operator p_1_8_fu_349_p2 is absorbed into DSP p_1_8_fu_349_p2.
+DSP Report: Generating DSP p_1_8_reg_531_reg, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP p_1_8_reg_531_reg.
+DSP Report: register A is absorbed into DSP p_1_8_reg_531_reg.
+DSP Report: register p_1_8_reg_531_reg is absorbed into DSP p_1_8_reg_531_reg.
+DSP Report: operator p_1_8_fu_349_p2 is absorbed into DSP p_1_8_reg_531_reg.
+DSP Report: operator p_1_8_fu_349_p2 is absorbed into DSP p_1_8_reg_531_reg.
+DSP Report: Generating DSP p_1_8_fu_349_p2, operation Mode is: A''*B2.
+DSP Report: register B is absorbed into DSP p_1_8_fu_349_p2.
+DSP Report: register A is absorbed into DSP p_1_8_fu_349_p2.
+DSP Report: register A is absorbed into DSP p_1_8_fu_349_p2.
+DSP Report: operator p_1_8_fu_349_p2 is absorbed into DSP p_1_8_fu_349_p2.
+DSP Report: operator p_1_8_fu_349_p2 is absorbed into DSP p_1_8_fu_349_p2.
+DSP Report: Generating DSP p_1_8_reg_531_reg, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP p_1_8_reg_531_reg.
+DSP Report: register A is absorbed into DSP p_1_8_reg_531_reg.
+DSP Report: register p_1_8_reg_531_reg is absorbed into DSP p_1_8_reg_531_reg.
+DSP Report: operator p_1_8_fu_349_p2 is absorbed into DSP p_1_8_reg_531_reg.
+DSP Report: operator p_1_8_fu_349_p2 is absorbed into DSP p_1_8_reg_531_reg.
+WARNING: [Synth 8-3332] Sequential element (fir_bundle_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (fir_bundle_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[47]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[46]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[45]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[44]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[43]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[42]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[41]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[40]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[39]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[38]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[37]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[36]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[35]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[34]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[33]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[32]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[31]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[30]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[29]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[28]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[27]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[26]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[25]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[24]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[23]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[22]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[21]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[20]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[19]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[18]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[17]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[16]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[15]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[47]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[46]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[45]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[44]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[43]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[42]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[41]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[40]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[39]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[38]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[37]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[36]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[35]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[34]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[33]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[32]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[31]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[30]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[29]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[28]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[27]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[26]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[25]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[24]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[23]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[22]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[21]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[20]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[19]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[18]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_1_reg_496_reg[17]__0) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[47]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[46]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[45]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[44]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[43]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[42]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[41]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[40]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[39]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[38]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[37]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[36]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[35]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[34]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[33]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[32]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[31]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[30]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[29]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[28]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[27]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[26]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[25]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[24]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[23]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[22]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[21]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[20]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[19]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[18]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[17]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[16]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[15]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (p_1_reg_491_reg[47]__0) is unused and will be removed from module fir.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 807.781 ; gain = 494.668
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1889.535 ; gain = 502.434 ; free physical = 6410 ; free virtual = 11697
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
-ROM:
-+--------------+------------+---------------+----------------+
-|Module Name   | RTL Object | Depth x Width | Implemented As | 
-+--------------+------------+---------------+----------------+
-|fir_coeff_rom | p_0_out    | 16x1          | LUT            | 
-|fir           | p_0_out    | 16x1          | LUT            | 
-+--------------+------------+---------------+----------------+
+DSP: Preliminary Mapping  Report (see note below)
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fir         | A2*B''           | 18     | 15     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|fir         | (PCIN>>17)+A''*B | 15     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|fir         | A''*B2           | 18     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|fir         | (PCIN>>17)+A''*B | 18     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|fir         | A2*B''           | 18     | 15     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|fir         | (PCIN>>17)+A''*B | 15     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|fir         | A''*B2           | 18     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|fir         | (PCIN>>17)+A''*B | 18     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|fir         | A2*B''           | 18     | 15     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|fir         | (PCIN>>17)+A''*B | 15     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|fir         | A''*B2           | 18     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|fir         | (PCIN>>17)+A''*B | 18     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|fir         | A2*B''           | 18     | 15     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|fir         | (PCIN>>17)+A''*B | 15     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|fir         | A''*B2           | 18     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|fir         | (PCIN>>17)+A''*B | 18     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|fir         | A2*B''           | 18     | 15     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|fir         | (PCIN>>17)+A''*B | 15     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|fir         | A''*B2           | 18     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|fir         | (PCIN>>17)+A''*B | 18     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|fir         | A2*B''           | 18     | 15     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|fir         | (PCIN>>17)+A''*B | 15     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|fir         | A''*B2           | 18     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|fir         | (PCIN>>17)+A''*B | 18     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|fir         | A2*B             | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|fir         | (PCIN>>17)+A*B2  | 15     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|fir         | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|fir         | (PCIN>>17)+A2*B2 | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|fir         | A2*B''           | 18     | 15     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|fir         | (PCIN>>17)+A''*B | 15     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|fir         | A''*B2           | 18     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|fir         | (PCIN>>17)+A''*B | 18     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|fir         | A2*B''           | 18     | 15     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|fir         | (PCIN>>17)+A''*B | 15     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|fir         | A''*B2           | 18     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|fir         | (PCIN>>17)+A''*B | 18     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|fir         | A2*B''           | 18     | 15     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|fir         | (PCIN>>17)+A''*B | 15     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|fir         | A''*B2           | 18     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|fir         | (PCIN>>17)+A''*B | 18     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
-
-Distributed RAM: Preliminary Mapping  Report (see note below)
-+------------+-----------------------------------------+----------------+----------------------+-----------------+
-|Module Name | RTL Object                              | Inference      | Size (Depth x Width) | Primitives      | 
-+------------+-----------------------------------------+----------------+----------------------+-----------------+
-|inst        | data_in_V_U/fir_data_in_V_ram_U/ram_reg | User Attribute | 16 x 32              | RAM16X1S x 32   | 
-+------------+-----------------------------------------+----------------+----------------------+-----------------+
-
-Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
@@ -234,27 +666,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 807.781 ; gain = 494.668
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1889.535 ; gain = 502.434 ; free physical = 6235 ; free virtual = 11529
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 817.840 ; gain = 504.727
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP and Shift Register Reporting
----------------------------------------------------------------------------------
-
-Distributed RAM: Final Mapping  Report
-+------------+-----------------------------------------+----------------+----------------------+-----------------+
-|Module Name | RTL Object                              | Inference      | Size (Depth x Width) | Primitives      | 
-+------------+-----------------------------------------+----------------+----------------------+-----------------+
-|inst        | data_in_V_U/fir_data_in_V_ram_U/ram_reg | User Attribute | 16 x 32              | RAM16X1S x 32   | 
-+------------+-----------------------------------------+----------------+----------------------+-----------------+
-
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP and Shift Register Reporting
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1891.535 ; gain = 504.434 ; free physical = 6229 ; free virtual = 11522
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -266,7 +684,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 819.215 ; gain = 506.102
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1906.426 ; gain = 519.324 ; free physical = 6225 ; free virtual = 11518
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -290,7 +708,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 819.215 ; gain = 506.102
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1906.426 ; gain = 519.324 ; free physical = 6224 ; free virtual = 11518
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -303,7 +721,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 819.215 ; gain = 506.102
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1906.426 ; gain = 519.324 ; free physical = 6224 ; free virtual = 11518
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -315,25 +733,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 819.215 ; gain = 506.102
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1906.426 ; gain = 519.324 ; free physical = 6224 ; free virtual = 11518
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 819.215 ; gain = 506.102
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1906.426 ; gain = 519.324 ; free physical = 6224 ; free virtual = 11518
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 819.215 ; gain = 506.102
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1906.426 ; gain = 519.324 ; free physical = 6224 ; free virtual = 11518
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 819.215 ; gain = 506.102
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1906.426 ; gain = 519.324 ; free physical = 6224 ; free virtual = 11518
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -346,61 +764,62 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+---------+------+
-|      |Cell     |Count |
-+------+---------+------+
-|1     |CARRY4   |    16|
-|2     |LUT1     |     2|
-|3     |LUT2     |    38|
-|4     |LUT3     |   217|
-|5     |LUT4     |    19|
-|6     |LUT5     |    25|
-|7     |LUT6     |    20|
-|8     |RAM16X1S |    32|
-|9     |FDRE     |   404|
-|10    |FDSE     |     3|
-+------+---------+------+
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |    80|
+|2     |DSP48E1   |     9|
+|3     |DSP48E1_1 |     9|
+|4     |DSP48E1_2 |     9|
+|5     |DSP48E1_3 |     2|
+|6     |DSP48E1_4 |     1|
+|7     |LUT1      |     1|
+|8     |LUT2      |   187|
+|9     |LUT3      |   596|
+|10    |LUT4      |   167|
+|11    |LUT5      |    85|
+|12    |LUT6      |    91|
+|13    |MUXF7     |     1|
+|14    |FDRE      |  1194|
+|15    |FDSE      |     1|
++------+----------+------+
 
 Report Instance Areas: 
-+------+--------------------------+------------------+------+
-|      |Instance                  |Module            |Cells |
-+------+--------------------------+------------------+------+
-|1     |top                       |                  |   776|
-|2     |  inst                    |fir               |   776|
-|3     |    coeff_U               |fir_coeff         |     4|
-|4     |      fir_coeff_rom_U     |fir_coeff_rom     |     4|
-|5     |    data_in_V_U           |fir_data_in_V     |   145|
-|6     |      fir_data_in_V_ram_U |fir_data_in_V_ram |   145|
-+------+--------------------------+------------------+------+
++------+-----------------------+-----------------+------+
+|      |Instance               |Module           |Cells |
++------+-----------------------+-----------------+------+
+|1     |top                    |                 |  2433|
+|2     |  inst                 |fir              |  2433|
+|3     |    fir_bundle_s_axi_U |fir_bundle_s_axi |   895|
++------+-----------------------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 819.215 ; gain = 506.102
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1906.426 ; gain = 519.324 ; free physical = 6224 ; free virtual = 11518
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 819.215 ; gain = 165.066
-Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 819.215 ; gain = 506.102
+Synthesis finished with 0 errors, 0 critical warnings and 642 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1906.426 ; gain = 149.449 ; free physical = 6294 ; free virtual = 11588
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1906.434 ; gain = 519.324 ; free physical = 6294 ; free virtual = 11588
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 48 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 111 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 819.215 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1938.441 ; gain = 0.000 ; free physical = 6234 ; free virtual = 11529
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 32 instances were transformed.
-  RAM16X1S => RAM32X1S (RAMS32): 32 instances
+No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-34 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+40 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 819.215 ; gain = 516.316
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 819.215 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1938.441 ; gain = 557.258 ; free physical = 6310 ; free virtual = 11604
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1938.441 ; gain = 0.000 ; free physical = 6310 ; free virtual = 11604
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'D:/HLS/FIR_AXI4/Solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = 61f1422887db6b5f
-INFO: [Coretcl 2-1174] Renamed 5 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 819.215 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint '/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/Solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = f60f71f822c64346
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1962.453 ; gain = 0.000 ; free physical = 6310 ; free virtual = 11607
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'D:/HLS/FIR_AXI4/Solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/Solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Oct 28 22:26:33 2019...
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 30 10:53:51 2019...

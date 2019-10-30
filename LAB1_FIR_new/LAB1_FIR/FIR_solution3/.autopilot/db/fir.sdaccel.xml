@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'fir'" level="0">
-<item name = "Date">Wed Oct 23 01:06:12 2019
+<item name = "Date">Wed Oct 30 09:52:19 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">LAB1_FIR</item>
@@ -15,14 +15,14 @@
 <section name = "" level="1">
 <item name = "Target clock period (ns)">10.00</item>
 <item name = "Clock uncertainty (ns)">1.25</item>
-<item name = "Estimated clock period (ns)">9.293</item>
+<item name = "Estimated clock period (ns)">8.742</item>
 </section>
 </item>
 <item name = "Latency (clock cycles)">
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">50, 50, 50, 50, none</column>
+<column name="">1, 1, 1, 1, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -45,22 +45,20 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
 <column name="DSP">-, -, -, -</column>
-<column name="Expression">-, -, -, -</column>
+<column name="Expression">-, -, 0, 400</column>
 <column name="FIFO">-, -, -, -</column>
-<column name="Instance">-, 14, 762, 1727</column>
+<column name="Instance">-, -, -, -</column>
 <column name="Memory">-, -, -, -</column>
-<column name="Multiplexer">-, -, -, 371</column>
-<column name="Register">-, -, 820, -</column>
+<column name="Multiplexer">-, -, -, 51</column>
+<column name="Register">-, -, 419, -</column>
 <specialColumn name="Available">120, 80, 35200, 17600</specialColumn>
-<specialColumn name="Utilization (%)">0, 17, 4, 11</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, 1, 2</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
-<column name="fir_dadd_64ns_64nbkb_U1">fir_dadd_64ns_64nbkb, 0, 3, 445, 1149</column>
-<column name="fir_dmul_64ns_64ncud_U2">fir_dmul_64ns_64ncud, 0, 11, 317, 578</column>
 </table>
 </item>
 <item name = "DSP48"><table name="" hasTotal="0">
@@ -77,37 +75,47 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="out_r">+, 0, 0, 32, 32, 32</column>
+<column name="tmp1_fu_217_p2">+, 0, 0, 39, 32, 32</column>
+<column name="tmp2_fu_229_p2">+, 0, 0, 32, 32, 32</column>
+<column name="tmp3_fu_223_p2">+, 0, 0, 32, 32, 32</column>
+<column name="tmp4_fu_246_p2">+, 0, 0, 32, 32, 32</column>
+<column name="tmp5_fu_241_p2">+, 0, 0, 32, 32, 32</column>
+<column name="tmp6_fu_127_p2">+, 0, 0, 32, 32, 32</column>
+<column name="tmp7_fu_139_p2">+, 0, 0, 32, 32, 32</column>
+<column name="tmp8_fu_133_p2">+, 0, 0, 32, 32, 32</column>
+<column name="tmp_fu_235_p2">+, 0, 0, 32, 32, 32</column>
+<column name="tmp_4_3_fu_67_p2">-, 0, 0, 32, 32, 32</column>
+<column name="tmp_4_7_fu_99_p2">-, 0, 0, 39, 32, 32</column>
+<column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">225, 52, 1, 52</column>
-<column name="grp_fu_63_p0">15, 3, 64, 192</column>
-<column name="grp_fu_63_p1">27, 5, 64, 320</column>
-<column name="grp_fu_70_p0">41, 8, 64, 512</column>
-<column name="grp_fu_70_p1">27, 5, 64, 320</column>
+<column name="ap_NS_fsm">15, 3, 1, 3</column>
 <column name="probe_in_ap_vld_in_sig">9, 2, 1, 2</column>
 <column name="probe_in_ap_vld_preg">9, 2, 1, 2</column>
 <column name="probe_in_blk_n">9, 2, 1, 2</column>
-<column name="probe_in_in_sig">9, 2, 64, 128</column>
+<column name="probe_in_in_sig">9, 2, 32, 64</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">51, 0, 51, 0</column>
-<column name="data_in_0">64, 0, 64, 0</column>
-<column name="data_in_1">64, 0, 64, 0</column>
-<column name="data_in_2">64, 0, 64, 0</column>
-<column name="data_in_3">64, 0, 64, 0</column>
-<column name="data_in_4">64, 0, 64, 0</column>
-<column name="data_in_5">64, 0, 64, 0</column>
-<column name="data_in_6">64, 0, 64, 0</column>
-<column name="data_in_7">64, 0, 64, 0</column>
-<column name="data_in_8">64, 0, 64, 0</column>
+<column name="ap_CS_fsm">2, 0, 2, 0</column>
+<column name="data_in_0">32, 0, 32, 0</column>
+<column name="data_in_1">32, 0, 32, 0</column>
+<column name="data_in_2">32, 0, 32, 0</column>
+<column name="data_in_2_load_reg_263">32, 0, 32, 0</column>
+<column name="data_in_3">32, 0, 32, 0</column>
+<column name="data_in_4">32, 0, 32, 0</column>
+<column name="data_in_5">32, 0, 32, 0</column>
+<column name="data_in_6">32, 0, 32, 0</column>
+<column name="data_in_7">32, 0, 32, 0</column>
+<column name="data_in_8">32, 0, 32, 0</column>
 <column name="probe_in_ap_vld_preg">1, 0, 1, 0</column>
-<column name="probe_in_preg">64, 0, 64, 0</column>
-<column name="reg_78">64, 0, 64, 0</column>
-<column name="reg_83">64, 0, 64, 0</column>
+<column name="probe_in_preg">32, 0, 32, 0</column>
+<column name="tmp6_reg_268">32, 0, 32, 0</column>
+<column name="tmp7_reg_273">32, 0, 32, 0</column>
 </table>
 </item>
 </section>
@@ -123,20 +131,24 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, fir, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, fir, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, fir, return value</column>
-<column name="probe_in">in, 64, ap_vld, probe_in, scalar</column>
+<column name="probe_in">in, 32, ap_vld, probe_in, scalar</column>
 <column name="probe_in_ap_vld">in, 1, ap_vld, probe_in, scalar</column>
-<column name="out_r">out, 64, ap_vld, out_r, pointer</column>
+<column name="out_r">out, 32, ap_vld, out_r, pointer</column>
 <column name="out_r_ap_vld">out, 1, ap_vld, out_r, pointer</column>
 </table>
 </item>
 </section>
 
 <section name = "Critical Path" level="0">
-<item name = "Max Delay">9.29</item>
+<item name = "Max Delay">8.74</item>
 <item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
 <keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
-<column name="'data_in_8_load', LAB1_FIR/.settings/fir.c:17">load, 0.00, 0.00, -, -, -, -, -, -, -, -, &apos;data_in_8&apos;, -, -</column>
-<column name="'acc_1', LAB1_FIR/.settings/fir.c:18">dadd, 9.29, 9.29, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'data_in_7_load', LAB1_FIR/.settings/fir.c:17">load, 0.00, 0.00, -, -, -, -, -, -, -, -, &apos;data_in_7&apos;, -, -</column>
+<column name="'tmp_1', LAB1_FIR/.settings/fir.c:18">shl, 0.00, 0.00, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp3', LAB1_FIR/.settings/fir.c:21">add, 0.00, 0.00, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp2', LAB1_FIR/.settings/fir.c:21">add, 4.37, 4.37, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp', LAB1_FIR/.settings/fir.c:21">add, 0.00, 4.37, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'acc', LAB1_FIR/.settings/fir.c:21">add, 4.37, 8.74, -, -, -, -, -, -, -, -, -, -, -</column>
 </table>
 </item>
 </section>

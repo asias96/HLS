@@ -1,7 +1,7 @@
 // ==============================================================
-// File generated on Mon Oct 28 22:23:53 +0100 2019
+// File generated on Wed Oct 30 10:50:27 CET 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
-// SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+// SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
@@ -31,6 +31,16 @@
 `define AESL_DEPTH_stream_out_V_last_V 1
 `define AESL_DEPTH_stream_out_V_id_V 1
 `define AESL_DEPTH_stream_out_V_dest_V 1
+`define AESL_DEPTH_coeff_0_V 1
+`define AESL_DEPTH_coeff_1_V 1
+`define AESL_DEPTH_coeff_2_V 1
+`define AESL_DEPTH_coeff_3_V 1
+`define AESL_DEPTH_coeff_4_V 1
+`define AESL_DEPTH_coeff_5_V 1
+`define AESL_DEPTH_coeff_6_V 1
+`define AESL_DEPTH_coeff_7_V 1
+`define AESL_DEPTH_coeff_8_V 1
+`define AESL_DEPTH_coeff_9_V 1
 `define AUTOTB_TVIN_stream_in_V_data_V  "./c.fir.autotvin_stream_in_V_data_V.dat"
 `define AUTOTB_TVIN_stream_in_V_keep_V  "./c.fir.autotvin_stream_in_V_keep_V.dat"
 `define AUTOTB_TVIN_stream_in_V_strb_V  "./c.fir.autotvin_stream_in_V_strb_V.dat"
@@ -45,6 +55,16 @@
 `define AUTOTB_TVIN_stream_out_V_last_V  "./c.fir.autotvin_stream_out_V_last_V.dat"
 `define AUTOTB_TVIN_stream_out_V_id_V  "./c.fir.autotvin_stream_out_V_id_V.dat"
 `define AUTOTB_TVIN_stream_out_V_dest_V  "./c.fir.autotvin_stream_out_V_dest_V.dat"
+`define AUTOTB_TVIN_coeff_0_V  "./c.fir.autotvin_coeff_0_V.dat"
+`define AUTOTB_TVIN_coeff_1_V  "./c.fir.autotvin_coeff_1_V.dat"
+`define AUTOTB_TVIN_coeff_2_V  "./c.fir.autotvin_coeff_2_V.dat"
+`define AUTOTB_TVIN_coeff_3_V  "./c.fir.autotvin_coeff_3_V.dat"
+`define AUTOTB_TVIN_coeff_4_V  "./c.fir.autotvin_coeff_4_V.dat"
+`define AUTOTB_TVIN_coeff_5_V  "./c.fir.autotvin_coeff_5_V.dat"
+`define AUTOTB_TVIN_coeff_6_V  "./c.fir.autotvin_coeff_6_V.dat"
+`define AUTOTB_TVIN_coeff_7_V  "./c.fir.autotvin_coeff_7_V.dat"
+`define AUTOTB_TVIN_coeff_8_V  "./c.fir.autotvin_coeff_8_V.dat"
+`define AUTOTB_TVIN_coeff_9_V  "./c.fir.autotvin_coeff_9_V.dat"
 `define AUTOTB_TVIN_stream_in_V_data_V_out_wrapc  "./rtl.fir.autotvin_stream_in_V_data_V.dat"
 `define AUTOTB_TVIN_stream_in_V_keep_V_out_wrapc  "./rtl.fir.autotvin_stream_in_V_keep_V.dat"
 `define AUTOTB_TVIN_stream_in_V_strb_V_out_wrapc  "./rtl.fir.autotvin_stream_in_V_strb_V.dat"
@@ -59,6 +79,16 @@
 `define AUTOTB_TVIN_stream_out_V_last_V_out_wrapc  "./rtl.fir.autotvin_stream_out_V_last_V.dat"
 `define AUTOTB_TVIN_stream_out_V_id_V_out_wrapc  "./rtl.fir.autotvin_stream_out_V_id_V.dat"
 `define AUTOTB_TVIN_stream_out_V_dest_V_out_wrapc  "./rtl.fir.autotvin_stream_out_V_dest_V.dat"
+`define AUTOTB_TVIN_coeff_0_V_out_wrapc  "./rtl.fir.autotvin_coeff_0_V.dat"
+`define AUTOTB_TVIN_coeff_1_V_out_wrapc  "./rtl.fir.autotvin_coeff_1_V.dat"
+`define AUTOTB_TVIN_coeff_2_V_out_wrapc  "./rtl.fir.autotvin_coeff_2_V.dat"
+`define AUTOTB_TVIN_coeff_3_V_out_wrapc  "./rtl.fir.autotvin_coeff_3_V.dat"
+`define AUTOTB_TVIN_coeff_4_V_out_wrapc  "./rtl.fir.autotvin_coeff_4_V.dat"
+`define AUTOTB_TVIN_coeff_5_V_out_wrapc  "./rtl.fir.autotvin_coeff_5_V.dat"
+`define AUTOTB_TVIN_coeff_6_V_out_wrapc  "./rtl.fir.autotvin_coeff_6_V.dat"
+`define AUTOTB_TVIN_coeff_7_V_out_wrapc  "./rtl.fir.autotvin_coeff_7_V.dat"
+`define AUTOTB_TVIN_coeff_8_V_out_wrapc  "./rtl.fir.autotvin_coeff_8_V.dat"
+`define AUTOTB_TVIN_coeff_9_V_out_wrapc  "./rtl.fir.autotvin_coeff_9_V.dat"
 `define AUTOTB_TVOUT_stream_out_V_data_V  "./c.fir.autotvout_stream_out_V_data_V.dat"
 `define AUTOTB_TVOUT_stream_out_V_keep_V  "./c.fir.autotvout_stream_out_V_keep_V.dat"
 `define AUTOTB_TVOUT_stream_out_V_strb_V  "./c.fir.autotvout_stream_out_V_strb_V.dat"
@@ -77,7 +107,7 @@ module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 10;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 20;
+parameter LATENCY_ESTIMATION = 4;
 parameter LENGTH_stream_in_V_data_V = 1;
 parameter LENGTH_stream_in_V_keep_V = 1;
 parameter LENGTH_stream_in_V_strb_V = 1;
@@ -92,10 +122,20 @@ parameter LENGTH_stream_out_V_user_V = 1;
 parameter LENGTH_stream_out_V_last_V = 1;
 parameter LENGTH_stream_out_V_id_V = 1;
 parameter LENGTH_stream_out_V_dest_V = 1;
+parameter LENGTH_coeff_0_V = 1;
+parameter LENGTH_coeff_1_V = 1;
+parameter LENGTH_coeff_2_V = 1;
+parameter LENGTH_coeff_3_V = 1;
+parameter LENGTH_coeff_4_V = 1;
+parameter LENGTH_coeff_5_V = 1;
+parameter LENGTH_coeff_6_V = 1;
+parameter LENGTH_coeff_7_V = 1;
+parameter LENGTH_coeff_8_V = 1;
+parameter LENGTH_coeff_9_V = 1;
 
 task read_token;
     input integer fp;
-    output reg [159 : 0] token;
+    output reg [183 : 0] token;
     integer ret;
     begin
         token = "";
@@ -107,10 +147,10 @@ endtask
 task post_check;
     input integer fp1;
     input integer fp2;
-    reg [159 : 0] token1;
-    reg [159 : 0] token2;
-    reg [159 : 0] golden;
-    reg [159 : 0] result;
+    reg [183 : 0] token1;
+    reg [183 : 0] token2;
+    reg [183 : 0] golden;
+    reg [183 : 0] result;
     integer ret;
     begin
         read_token(fp1, token1);
@@ -174,10 +214,24 @@ reg AESL_done_delay2 = 0;
 reg AESL_ready_delay = 0;
 wire ready;
 wire ready_wire;
-wire ap_start;
-wire ap_done;
-wire ap_idle;
-wire ap_ready;
+wire [6 : 0] bundle_AWADDR;
+wire  bundle_AWVALID;
+wire  bundle_AWREADY;
+wire  bundle_WVALID;
+wire  bundle_WREADY;
+wire [31 : 0] bundle_WDATA;
+wire [3 : 0] bundle_WSTRB;
+wire [6 : 0] bundle_ARADDR;
+wire  bundle_ARVALID;
+wire  bundle_ARREADY;
+wire  bundle_RVALID;
+wire  bundle_RREADY;
+wire [31 : 0] bundle_RDATA;
+wire [1 : 0] bundle_RRESP;
+wire  bundle_BVALID;
+wire  bundle_BREADY;
+wire [1 : 0] bundle_BRESP;
+wire  bundle_INTERRUPT;
 wire [31 : 0] stream_in_TDATA;
 wire  stream_in_TVALID;
 wire  stream_in_TREADY;
@@ -205,18 +259,45 @@ reg ready_last_n;
 reg ready_delay_last_n;
 reg done_delay_last_n;
 reg interface_done = 0;
+wire bundle_write_data_finish;
+wire AESL_slave_start;
+reg AESL_slave_start_lock = 0;
+wire AESL_slave_write_start_in;
+wire AESL_slave_write_start_finish;
+reg AESL_slave_ready;
+wire AESL_slave_output_done;
+wire AESL_slave_done;
+reg ready_rise = 0;
+reg start_rise = 0;
+reg slave_start_status = 0;
+reg slave_done_status = 0;
+reg ap_done_lock = 0;
 
 wire ap_clk;
 wire ap_rst_n;
 wire ap_rst_n_n;
 
 `AUTOTB_DUT `AUTOTB_DUT_INST(
+    .s_axi_bundle_AWADDR(bundle_AWADDR),
+    .s_axi_bundle_AWVALID(bundle_AWVALID),
+    .s_axi_bundle_AWREADY(bundle_AWREADY),
+    .s_axi_bundle_WVALID(bundle_WVALID),
+    .s_axi_bundle_WREADY(bundle_WREADY),
+    .s_axi_bundle_WDATA(bundle_WDATA),
+    .s_axi_bundle_WSTRB(bundle_WSTRB),
+    .s_axi_bundle_ARADDR(bundle_ARADDR),
+    .s_axi_bundle_ARVALID(bundle_ARVALID),
+    .s_axi_bundle_ARREADY(bundle_ARREADY),
+    .s_axi_bundle_RVALID(bundle_RVALID),
+    .s_axi_bundle_RREADY(bundle_RREADY),
+    .s_axi_bundle_RDATA(bundle_RDATA),
+    .s_axi_bundle_RRESP(bundle_RRESP),
+    .s_axi_bundle_BVALID(bundle_BVALID),
+    .s_axi_bundle_BREADY(bundle_BREADY),
+    .s_axi_bundle_BRESP(bundle_BRESP),
+    .interrupt(bundle_INTERRUPT),
     .ap_clk(ap_clk),
     .ap_rst_n(ap_rst_n),
-    .ap_start(ap_start),
-    .ap_done(ap_done),
-    .ap_idle(ap_idle),
-    .ap_ready(ap_ready),
     .stream_in_TDATA(stream_in_TDATA),
     .stream_in_TVALID(stream_in_TVALID),
     .stream_in_TREADY(stream_in_TREADY),
@@ -241,31 +322,73 @@ assign ap_clk = AESL_clock;
 assign ap_rst_n = AESL_reset;
 assign ap_rst_n_n = ~AESL_reset;
 assign AESL_reset = rst;
-assign ap_start = AESL_start;
 assign AESL_start = start;
-assign AESL_done = ap_done;
-assign AESL_idle = ap_idle;
-assign AESL_ready = ap_ready;
 assign AESL_ce = ce;
 assign AESL_continue = tb_continue;
-    always @(posedge AESL_clock) begin
-        if (AESL_reset === 0) begin
-        end else begin
-            if (AESL_done !== 1 && AESL_done !== 0) begin
-                $display("ERROR: Control signal AESL_done is invalid!");
-                $finish;
-            end
+  assign AESL_slave_write_start_in = slave_start_status  & bundle_write_data_finish;
+  assign AESL_slave_start = AESL_slave_write_start_finish;
+  assign AESL_done = slave_done_status ;
+
+always @(posedge AESL_clock)
+begin
+    if(AESL_reset === 0)
+    begin
+        slave_start_status <= 1;
+    end
+    else begin
+        if (AESL_start == 1 ) begin
+            start_rise = 1;
+        end
+        if (start_rise == 1 && AESL_done == 1 ) begin
+            slave_start_status <= 1;
+        end
+        if (AESL_slave_write_start_in == 1 && AESL_done == 0) begin 
+            slave_start_status <= 0;
+            start_rise = 0;
         end
     end
-    always @(posedge AESL_clock) begin
-        if (AESL_reset === 0) begin
-        end else begin
-            if (AESL_ready !== 1 && AESL_ready !== 0) begin
-                $display("ERROR: Control signal AESL_ready is invalid!");
-                $finish;
-            end
+end
+
+always @(posedge AESL_clock)
+begin
+    if(AESL_reset === 0)
+    begin
+        AESL_slave_ready <= 0;
+        ready_rise = 0;
+    end
+    else begin
+        if (AESL_ready == 1 ) begin
+            ready_rise = 1;
+        end
+        if (ready_rise == 1 && AESL_done_delay == 1 ) begin
+            AESL_slave_ready <= 1;
+        end
+        if (AESL_slave_ready == 1) begin 
+            AESL_slave_ready <= 0;
+            ready_rise = 0;
         end
     end
+end
+
+always @ (posedge AESL_clock)
+begin
+    if (AESL_done == 1) begin
+        slave_done_status <= 0;
+    end
+    else if (AESL_slave_output_done == 1 ) begin
+        slave_done_status <= 1;
+    end
+end
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -356,6 +479,38 @@ end
 
 
 assign stream_out_TREADY = reg_stream_out_TREADY;
+
+AESL_axi_slave_bundle AESL_AXI_SLAVE_bundle(
+    .clk   (AESL_clock),
+    .reset (AESL_reset),
+    .TRAN_s_axi_bundle_AWADDR (bundle_AWADDR),
+    .TRAN_s_axi_bundle_AWVALID (bundle_AWVALID),
+    .TRAN_s_axi_bundle_AWREADY (bundle_AWREADY),
+    .TRAN_s_axi_bundle_WVALID (bundle_WVALID),
+    .TRAN_s_axi_bundle_WREADY (bundle_WREADY),
+    .TRAN_s_axi_bundle_WDATA (bundle_WDATA),
+    .TRAN_s_axi_bundle_WSTRB (bundle_WSTRB),
+    .TRAN_s_axi_bundle_ARADDR (bundle_ARADDR),
+    .TRAN_s_axi_bundle_ARVALID (bundle_ARVALID),
+    .TRAN_s_axi_bundle_ARREADY (bundle_ARREADY),
+    .TRAN_s_axi_bundle_RVALID (bundle_RVALID),
+    .TRAN_s_axi_bundle_RREADY (bundle_RREADY),
+    .TRAN_s_axi_bundle_RDATA (bundle_RDATA),
+    .TRAN_s_axi_bundle_RRESP (bundle_RRESP),
+    .TRAN_s_axi_bundle_BVALID (bundle_BVALID),
+    .TRAN_s_axi_bundle_BREADY (bundle_BREADY),
+    .TRAN_s_axi_bundle_BRESP (bundle_BRESP),
+    .TRAN_bundle_interrupt (bundle_INTERRUPT),
+    .TRAN_bundle_write_data_finish(bundle_write_data_finish),
+    .TRAN_bundle_ready_out (AESL_ready),
+    .TRAN_bundle_ready_in (AESL_slave_ready),
+    .TRAN_bundle_done_out (AESL_slave_output_done),
+    .TRAN_bundle_idle_out (AESL_idle),
+    .TRAN_bundle_write_start_in     (AESL_slave_write_start_in),
+    .TRAN_bundle_write_start_finish (AESL_slave_write_start_finish),
+    .TRAN_bundle_transaction_done_in (AESL_done_delay),
+    .TRAN_bundle_start_in  (AESL_slave_start)
+);
 
 initial begin : generate_AESL_ready_cnt_proc
     AESL_ready_cnt = 0;
@@ -548,6 +703,36 @@ reg [31:0] size_stream_out_V_id_V_backup;
 reg end_stream_out_V_dest_V;
 reg [31:0] size_stream_out_V_dest_V;
 reg [31:0] size_stream_out_V_dest_V_backup;
+reg end_coeff_0_V;
+reg [31:0] size_coeff_0_V;
+reg [31:0] size_coeff_0_V_backup;
+reg end_coeff_1_V;
+reg [31:0] size_coeff_1_V;
+reg [31:0] size_coeff_1_V_backup;
+reg end_coeff_2_V;
+reg [31:0] size_coeff_2_V;
+reg [31:0] size_coeff_2_V_backup;
+reg end_coeff_3_V;
+reg [31:0] size_coeff_3_V;
+reg [31:0] size_coeff_3_V_backup;
+reg end_coeff_4_V;
+reg [31:0] size_coeff_4_V;
+reg [31:0] size_coeff_4_V_backup;
+reg end_coeff_5_V;
+reg [31:0] size_coeff_5_V;
+reg [31:0] size_coeff_5_V_backup;
+reg end_coeff_6_V;
+reg [31:0] size_coeff_6_V;
+reg [31:0] size_coeff_6_V_backup;
+reg end_coeff_7_V;
+reg [31:0] size_coeff_7_V;
+reg [31:0] size_coeff_7_V_backup;
+reg end_coeff_8_V;
+reg [31:0] size_coeff_8_V;
+reg [31:0] size_coeff_8_V_backup;
+reg end_coeff_9_V;
+reg [31:0] size_coeff_9_V;
+reg [31:0] size_coeff_9_V_backup;
 
 initial begin : initial_process
     integer proc_rand;

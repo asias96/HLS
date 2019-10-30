@@ -22,15 +22,15 @@ int main()
 	i = 0;
 	while(!feof(file_in) && i != BUFFER)
 	{
-		fscanf(file_in, "%lf ", &test_data[i]);
+		fscanf(file_in, "%d ", &test_data[i]);
 		i++;
 	}
 
 	type_data out;
 	for (i = 0; i < 20; i++)
 	{
-		fir(test_data[i], &out, tab_coeff);
-		fprintf(file_out, "%d %lf %lf \n",i, test_data[i], out);
+		fir(test_data[i], &out);
+		fprintf(file_out, "%d %d %d \n",i, test_data[i], out);
 	}
 
 	fclose(file_in);

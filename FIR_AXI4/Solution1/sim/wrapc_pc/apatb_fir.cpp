@@ -1,7 +1,7 @@
 // ==============================================================
-// File generated on Mon Oct 28 22:23:37 +0100 2019
+// File generated on Wed Oct 30 10:50:20 CET 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
-// SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+// SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
@@ -108,6 +108,26 @@ using namespace sc_dt;
 #define AUTOTB_TVIN_stream_out_V_dest_V  "../tv/cdatafile/c.fir.autotvin_stream_out_V_dest_V.dat"
 #define WRAPC_STREAM_SIZE_OUT_stream_out_V_dest_V  "../tv/stream_size/stream_size_out_stream_out_V_dest_V.dat"
 #define WRAPC_STREAM_EGRESS_STATUS_stream_out_V_dest_V  "../tv/stream_size/stream_egress_status_stream_out_V_dest_V.dat"
+// wrapc file define: "coeff_0_V"
+#define AUTOTB_TVIN_coeff_0_V  "../tv/cdatafile/c.fir.autotvin_coeff_0_V.dat"
+// wrapc file define: "coeff_1_V"
+#define AUTOTB_TVIN_coeff_1_V  "../tv/cdatafile/c.fir.autotvin_coeff_1_V.dat"
+// wrapc file define: "coeff_2_V"
+#define AUTOTB_TVIN_coeff_2_V  "../tv/cdatafile/c.fir.autotvin_coeff_2_V.dat"
+// wrapc file define: "coeff_3_V"
+#define AUTOTB_TVIN_coeff_3_V  "../tv/cdatafile/c.fir.autotvin_coeff_3_V.dat"
+// wrapc file define: "coeff_4_V"
+#define AUTOTB_TVIN_coeff_4_V  "../tv/cdatafile/c.fir.autotvin_coeff_4_V.dat"
+// wrapc file define: "coeff_5_V"
+#define AUTOTB_TVIN_coeff_5_V  "../tv/cdatafile/c.fir.autotvin_coeff_5_V.dat"
+// wrapc file define: "coeff_6_V"
+#define AUTOTB_TVIN_coeff_6_V  "../tv/cdatafile/c.fir.autotvin_coeff_6_V.dat"
+// wrapc file define: "coeff_7_V"
+#define AUTOTB_TVIN_coeff_7_V  "../tv/cdatafile/c.fir.autotvin_coeff_7_V.dat"
+// wrapc file define: "coeff_8_V"
+#define AUTOTB_TVIN_coeff_8_V  "../tv/cdatafile/c.fir.autotvin_coeff_8_V.dat"
+// wrapc file define: "coeff_9_V"
+#define AUTOTB_TVIN_coeff_9_V  "../tv/cdatafile/c.fir.autotvin_coeff_9_V.dat"
 
 #define INTER_TCL  "../tv/cdatafile/ref.tcl"
 
@@ -144,6 +164,16 @@ class INTER_TCL_FILE {
 			stream_out_V_last_V_depth = 0;
 			stream_out_V_id_V_depth = 0;
 			stream_out_V_dest_V_depth = 0;
+			coeff_0_V_depth = 0;
+			coeff_1_V_depth = 0;
+			coeff_2_V_depth = 0;
+			coeff_3_V_depth = 0;
+			coeff_4_V_depth = 0;
+			coeff_5_V_depth = 0;
+			coeff_6_V_depth = 0;
+			coeff_7_V_depth = 0;
+			coeff_8_V_depth = 0;
+			coeff_9_V_depth = 0;
 			trans_num =0;
 		}
 
@@ -177,6 +207,16 @@ class INTER_TCL_FILE {
 			total_list << "{stream_out_V_last_V " << stream_out_V_last_V_depth << "}\n";
 			total_list << "{stream_out_V_id_V " << stream_out_V_id_V_depth << "}\n";
 			total_list << "{stream_out_V_dest_V " << stream_out_V_dest_V_depth << "}\n";
+			total_list << "{coeff_0_V " << coeff_0_V_depth << "}\n";
+			total_list << "{coeff_1_V " << coeff_1_V_depth << "}\n";
+			total_list << "{coeff_2_V " << coeff_2_V_depth << "}\n";
+			total_list << "{coeff_3_V " << coeff_3_V_depth << "}\n";
+			total_list << "{coeff_4_V " << coeff_4_V_depth << "}\n";
+			total_list << "{coeff_5_V " << coeff_5_V_depth << "}\n";
+			total_list << "{coeff_6_V " << coeff_6_V_depth << "}\n";
+			total_list << "{coeff_7_V " << coeff_7_V_depth << "}\n";
+			total_list << "{coeff_8_V " << coeff_8_V_depth << "}\n";
+			total_list << "{coeff_9_V " << coeff_9_V_depth << "}\n";
 			return total_list.str();
 		}
 
@@ -198,6 +238,16 @@ class INTER_TCL_FILE {
 		int stream_out_V_last_V_depth;
 		int stream_out_V_id_V_depth;
 		int stream_out_V_dest_V_depth;
+		int coeff_0_V_depth;
+		int coeff_1_V_depth;
+		int coeff_2_V_depth;
+		int coeff_3_V_depth;
+		int coeff_4_V_depth;
+		int coeff_5_V_depth;
+		int coeff_6_V_depth;
+		int coeff_7_V_depth;
+		int coeff_8_V_depth;
+		int coeff_9_V_depth;
 		int trans_num;
 
 	private:
@@ -207,11 +257,13 @@ class INTER_TCL_FILE {
 
 extern void fir (
 hls::stream<ap_axis<32, 2, 5, 6 > > (&stream_in),
-hls::stream<ap_axis<32, 2, 5, 6 > > (&stream_out));
+hls::stream<ap_axis<32, 2, 5, 6 > > (&stream_out),
+const ap_int<32> coeff[10]);
 
 void AESL_WRAP_fir (
 hls::stream<ap_axis<32, 2, 5, 6 > > (&stream_in),
-hls::stream<ap_axis<32, 2, 5, 6 > > (&stream_out))
+hls::stream<ap_axis<32, 2, 5, 6 > > (&stream_out),
+const ap_int<32> coeff[10])
 {
 	refine_signal_handler();
 	fstream wrapc_switch_file_token;
@@ -1496,6 +1548,46 @@ hls::stream<ap_axis<32, 2, 5, 6 > > (&stream_out))
 		char* wrapc_stream_egress_status_stream_out_V_dest_V = new char[50];
 		aesl_fh.touch(WRAPC_STREAM_EGRESS_STATUS_stream_out_V_dest_V);
 
+		// "coeff_0_V"
+		char* tvin_coeff_0_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_coeff_0_V);
+
+		// "coeff_1_V"
+		char* tvin_coeff_1_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_coeff_1_V);
+
+		// "coeff_2_V"
+		char* tvin_coeff_2_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_coeff_2_V);
+
+		// "coeff_3_V"
+		char* tvin_coeff_3_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_coeff_3_V);
+
+		// "coeff_4_V"
+		char* tvin_coeff_4_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_coeff_4_V);
+
+		// "coeff_5_V"
+		char* tvin_coeff_5_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_coeff_5_V);
+
+		// "coeff_6_V"
+		char* tvin_coeff_6_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_coeff_6_V);
+
+		// "coeff_7_V"
+		char* tvin_coeff_7_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_coeff_7_V);
+
+		// "coeff_8_V"
+		char* tvin_coeff_8_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_coeff_8_V);
+
+		// "coeff_9_V"
+		char* tvin_coeff_9_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_coeff_9_V);
+
 		CodeState = DUMP_INPUTS;
 		static INTER_TCL_FILE tcl_file(INTER_TCL);
 		int leading_zero;
@@ -1518,6 +1610,486 @@ hls::stream<ap_axis<32, 2, 5, 6 > > (&stream_out))
 			aesl_tmp_4++;
 		}
 
+		// [[transaction]]
+		sprintf(tvin_coeff_0_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_coeff_0_V, tvin_coeff_0_V);
+
+		sc_bv<32>* coeff_0_V_tvin_wrapc_buffer = new sc_bv<32>[1];
+
+		// RTL Name: coeff_0_V
+		{
+			// bitslice(31, 0)
+			{
+				int hls_map_index = 0;
+				// celement: coeff.V(31, 0)
+				{
+					// carray: (0) => (0) @ (2)
+					for (int i_0 = 0; i_0 <= 0; i_0 += 2)
+					{
+						// sub                   : i_0
+						// ori_name              : coeff[i_0]
+						// sub_1st_elem          : 0
+						// ori_name_1st_elem     : coeff[0]
+						// regulate_c_name       : coeff_V
+						// input_type_conversion : (coeff[i_0]).to_string(2).c_str()
+						if (&(coeff[0]) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<32> coeff_V_tmp_mem;
+							coeff_V_tmp_mem = (coeff[i_0]).to_string(2).c_str();
+							coeff_0_V_tvin_wrapc_buffer[hls_map_index].range(31, 0) = coeff_V_tmp_mem.range(31, 0);
+                                 	       hls_map_index++;
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 1; i++)
+		{
+			sprintf(tvin_coeff_0_V, "%s\n", (coeff_0_V_tvin_wrapc_buffer[i]).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_coeff_0_V, tvin_coeff_0_V);
+		}
+
+		tcl_file.set_num(1, &tcl_file.coeff_0_V_depth);
+		sprintf(tvin_coeff_0_V, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_coeff_0_V, tvin_coeff_0_V);
+
+		// release memory allocation
+		delete [] coeff_0_V_tvin_wrapc_buffer;
+
+		// [[transaction]]
+		sprintf(tvin_coeff_1_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_coeff_1_V, tvin_coeff_1_V);
+
+		sc_bv<32>* coeff_1_V_tvin_wrapc_buffer = new sc_bv<32>[1];
+
+		// RTL Name: coeff_1_V
+		{
+			// bitslice(31, 0)
+			{
+				int hls_map_index = 0;
+				// celement: coeff.V(31, 0)
+				{
+					// carray: (1) => (1) @ (2)
+					for (int i_0 = 1; i_0 <= 1; i_0 += 2)
+					{
+						// sub                   : i_0
+						// ori_name              : coeff[i_0]
+						// sub_1st_elem          : 0
+						// ori_name_1st_elem     : coeff[0]
+						// regulate_c_name       : coeff_V
+						// input_type_conversion : (coeff[i_0]).to_string(2).c_str()
+						if (&(coeff[0]) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<32> coeff_V_tmp_mem;
+							coeff_V_tmp_mem = (coeff[i_0]).to_string(2).c_str();
+							coeff_1_V_tvin_wrapc_buffer[hls_map_index].range(31, 0) = coeff_V_tmp_mem.range(31, 0);
+                                 	       hls_map_index++;
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 1; i++)
+		{
+			sprintf(tvin_coeff_1_V, "%s\n", (coeff_1_V_tvin_wrapc_buffer[i]).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_coeff_1_V, tvin_coeff_1_V);
+		}
+
+		tcl_file.set_num(1, &tcl_file.coeff_1_V_depth);
+		sprintf(tvin_coeff_1_V, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_coeff_1_V, tvin_coeff_1_V);
+
+		// release memory allocation
+		delete [] coeff_1_V_tvin_wrapc_buffer;
+
+		// [[transaction]]
+		sprintf(tvin_coeff_2_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_coeff_2_V, tvin_coeff_2_V);
+
+		sc_bv<32>* coeff_2_V_tvin_wrapc_buffer = new sc_bv<32>[1];
+
+		// RTL Name: coeff_2_V
+		{
+			// bitslice(31, 0)
+			{
+				int hls_map_index = 0;
+				// celement: coeff.V(31, 0)
+				{
+					// carray: (2) => (2) @ (2)
+					for (int i_0 = 2; i_0 <= 2; i_0 += 2)
+					{
+						// sub                   : i_0
+						// ori_name              : coeff[i_0]
+						// sub_1st_elem          : 0
+						// ori_name_1st_elem     : coeff[0]
+						// regulate_c_name       : coeff_V
+						// input_type_conversion : (coeff[i_0]).to_string(2).c_str()
+						if (&(coeff[0]) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<32> coeff_V_tmp_mem;
+							coeff_V_tmp_mem = (coeff[i_0]).to_string(2).c_str();
+							coeff_2_V_tvin_wrapc_buffer[hls_map_index].range(31, 0) = coeff_V_tmp_mem.range(31, 0);
+                                 	       hls_map_index++;
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 1; i++)
+		{
+			sprintf(tvin_coeff_2_V, "%s\n", (coeff_2_V_tvin_wrapc_buffer[i]).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_coeff_2_V, tvin_coeff_2_V);
+		}
+
+		tcl_file.set_num(1, &tcl_file.coeff_2_V_depth);
+		sprintf(tvin_coeff_2_V, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_coeff_2_V, tvin_coeff_2_V);
+
+		// release memory allocation
+		delete [] coeff_2_V_tvin_wrapc_buffer;
+
+		// [[transaction]]
+		sprintf(tvin_coeff_3_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_coeff_3_V, tvin_coeff_3_V);
+
+		sc_bv<32>* coeff_3_V_tvin_wrapc_buffer = new sc_bv<32>[1];
+
+		// RTL Name: coeff_3_V
+		{
+			// bitslice(31, 0)
+			{
+				int hls_map_index = 0;
+				// celement: coeff.V(31, 0)
+				{
+					// carray: (3) => (3) @ (2)
+					for (int i_0 = 3; i_0 <= 3; i_0 += 2)
+					{
+						// sub                   : i_0
+						// ori_name              : coeff[i_0]
+						// sub_1st_elem          : 0
+						// ori_name_1st_elem     : coeff[0]
+						// regulate_c_name       : coeff_V
+						// input_type_conversion : (coeff[i_0]).to_string(2).c_str()
+						if (&(coeff[0]) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<32> coeff_V_tmp_mem;
+							coeff_V_tmp_mem = (coeff[i_0]).to_string(2).c_str();
+							coeff_3_V_tvin_wrapc_buffer[hls_map_index].range(31, 0) = coeff_V_tmp_mem.range(31, 0);
+                                 	       hls_map_index++;
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 1; i++)
+		{
+			sprintf(tvin_coeff_3_V, "%s\n", (coeff_3_V_tvin_wrapc_buffer[i]).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_coeff_3_V, tvin_coeff_3_V);
+		}
+
+		tcl_file.set_num(1, &tcl_file.coeff_3_V_depth);
+		sprintf(tvin_coeff_3_V, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_coeff_3_V, tvin_coeff_3_V);
+
+		// release memory allocation
+		delete [] coeff_3_V_tvin_wrapc_buffer;
+
+		// [[transaction]]
+		sprintf(tvin_coeff_4_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_coeff_4_V, tvin_coeff_4_V);
+
+		sc_bv<32>* coeff_4_V_tvin_wrapc_buffer = new sc_bv<32>[1];
+
+		// RTL Name: coeff_4_V
+		{
+			// bitslice(31, 0)
+			{
+				int hls_map_index = 0;
+				// celement: coeff.V(31, 0)
+				{
+					// carray: (4) => (4) @ (2)
+					for (int i_0 = 4; i_0 <= 4; i_0 += 2)
+					{
+						// sub                   : i_0
+						// ori_name              : coeff[i_0]
+						// sub_1st_elem          : 0
+						// ori_name_1st_elem     : coeff[0]
+						// regulate_c_name       : coeff_V
+						// input_type_conversion : (coeff[i_0]).to_string(2).c_str()
+						if (&(coeff[0]) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<32> coeff_V_tmp_mem;
+							coeff_V_tmp_mem = (coeff[i_0]).to_string(2).c_str();
+							coeff_4_V_tvin_wrapc_buffer[hls_map_index].range(31, 0) = coeff_V_tmp_mem.range(31, 0);
+                                 	       hls_map_index++;
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 1; i++)
+		{
+			sprintf(tvin_coeff_4_V, "%s\n", (coeff_4_V_tvin_wrapc_buffer[i]).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_coeff_4_V, tvin_coeff_4_V);
+		}
+
+		tcl_file.set_num(1, &tcl_file.coeff_4_V_depth);
+		sprintf(tvin_coeff_4_V, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_coeff_4_V, tvin_coeff_4_V);
+
+		// release memory allocation
+		delete [] coeff_4_V_tvin_wrapc_buffer;
+
+		// [[transaction]]
+		sprintf(tvin_coeff_5_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_coeff_5_V, tvin_coeff_5_V);
+
+		sc_bv<32>* coeff_5_V_tvin_wrapc_buffer = new sc_bv<32>[1];
+
+		// RTL Name: coeff_5_V
+		{
+			// bitslice(31, 0)
+			{
+				int hls_map_index = 0;
+				// celement: coeff.V(31, 0)
+				{
+					// carray: (5) => (5) @ (2)
+					for (int i_0 = 5; i_0 <= 5; i_0 += 2)
+					{
+						// sub                   : i_0
+						// ori_name              : coeff[i_0]
+						// sub_1st_elem          : 0
+						// ori_name_1st_elem     : coeff[0]
+						// regulate_c_name       : coeff_V
+						// input_type_conversion : (coeff[i_0]).to_string(2).c_str()
+						if (&(coeff[0]) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<32> coeff_V_tmp_mem;
+							coeff_V_tmp_mem = (coeff[i_0]).to_string(2).c_str();
+							coeff_5_V_tvin_wrapc_buffer[hls_map_index].range(31, 0) = coeff_V_tmp_mem.range(31, 0);
+                                 	       hls_map_index++;
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 1; i++)
+		{
+			sprintf(tvin_coeff_5_V, "%s\n", (coeff_5_V_tvin_wrapc_buffer[i]).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_coeff_5_V, tvin_coeff_5_V);
+		}
+
+		tcl_file.set_num(1, &tcl_file.coeff_5_V_depth);
+		sprintf(tvin_coeff_5_V, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_coeff_5_V, tvin_coeff_5_V);
+
+		// release memory allocation
+		delete [] coeff_5_V_tvin_wrapc_buffer;
+
+		// [[transaction]]
+		sprintf(tvin_coeff_6_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_coeff_6_V, tvin_coeff_6_V);
+
+		sc_bv<32>* coeff_6_V_tvin_wrapc_buffer = new sc_bv<32>[1];
+
+		// RTL Name: coeff_6_V
+		{
+			// bitslice(31, 0)
+			{
+				int hls_map_index = 0;
+				// celement: coeff.V(31, 0)
+				{
+					// carray: (6) => (6) @ (2)
+					for (int i_0 = 6; i_0 <= 6; i_0 += 2)
+					{
+						// sub                   : i_0
+						// ori_name              : coeff[i_0]
+						// sub_1st_elem          : 0
+						// ori_name_1st_elem     : coeff[0]
+						// regulate_c_name       : coeff_V
+						// input_type_conversion : (coeff[i_0]).to_string(2).c_str()
+						if (&(coeff[0]) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<32> coeff_V_tmp_mem;
+							coeff_V_tmp_mem = (coeff[i_0]).to_string(2).c_str();
+							coeff_6_V_tvin_wrapc_buffer[hls_map_index].range(31, 0) = coeff_V_tmp_mem.range(31, 0);
+                                 	       hls_map_index++;
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 1; i++)
+		{
+			sprintf(tvin_coeff_6_V, "%s\n", (coeff_6_V_tvin_wrapc_buffer[i]).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_coeff_6_V, tvin_coeff_6_V);
+		}
+
+		tcl_file.set_num(1, &tcl_file.coeff_6_V_depth);
+		sprintf(tvin_coeff_6_V, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_coeff_6_V, tvin_coeff_6_V);
+
+		// release memory allocation
+		delete [] coeff_6_V_tvin_wrapc_buffer;
+
+		// [[transaction]]
+		sprintf(tvin_coeff_7_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_coeff_7_V, tvin_coeff_7_V);
+
+		sc_bv<32>* coeff_7_V_tvin_wrapc_buffer = new sc_bv<32>[1];
+
+		// RTL Name: coeff_7_V
+		{
+			// bitslice(31, 0)
+			{
+				int hls_map_index = 0;
+				// celement: coeff.V(31, 0)
+				{
+					// carray: (7) => (7) @ (2)
+					for (int i_0 = 7; i_0 <= 7; i_0 += 2)
+					{
+						// sub                   : i_0
+						// ori_name              : coeff[i_0]
+						// sub_1st_elem          : 0
+						// ori_name_1st_elem     : coeff[0]
+						// regulate_c_name       : coeff_V
+						// input_type_conversion : (coeff[i_0]).to_string(2).c_str()
+						if (&(coeff[0]) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<32> coeff_V_tmp_mem;
+							coeff_V_tmp_mem = (coeff[i_0]).to_string(2).c_str();
+							coeff_7_V_tvin_wrapc_buffer[hls_map_index].range(31, 0) = coeff_V_tmp_mem.range(31, 0);
+                                 	       hls_map_index++;
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 1; i++)
+		{
+			sprintf(tvin_coeff_7_V, "%s\n", (coeff_7_V_tvin_wrapc_buffer[i]).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_coeff_7_V, tvin_coeff_7_V);
+		}
+
+		tcl_file.set_num(1, &tcl_file.coeff_7_V_depth);
+		sprintf(tvin_coeff_7_V, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_coeff_7_V, tvin_coeff_7_V);
+
+		// release memory allocation
+		delete [] coeff_7_V_tvin_wrapc_buffer;
+
+		// [[transaction]]
+		sprintf(tvin_coeff_8_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_coeff_8_V, tvin_coeff_8_V);
+
+		sc_bv<32>* coeff_8_V_tvin_wrapc_buffer = new sc_bv<32>[1];
+
+		// RTL Name: coeff_8_V
+		{
+			// bitslice(31, 0)
+			{
+				int hls_map_index = 0;
+				// celement: coeff.V(31, 0)
+				{
+					// carray: (8) => (8) @ (2)
+					for (int i_0 = 8; i_0 <= 8; i_0 += 2)
+					{
+						// sub                   : i_0
+						// ori_name              : coeff[i_0]
+						// sub_1st_elem          : 0
+						// ori_name_1st_elem     : coeff[0]
+						// regulate_c_name       : coeff_V
+						// input_type_conversion : (coeff[i_0]).to_string(2).c_str()
+						if (&(coeff[0]) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<32> coeff_V_tmp_mem;
+							coeff_V_tmp_mem = (coeff[i_0]).to_string(2).c_str();
+							coeff_8_V_tvin_wrapc_buffer[hls_map_index].range(31, 0) = coeff_V_tmp_mem.range(31, 0);
+                                 	       hls_map_index++;
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 1; i++)
+		{
+			sprintf(tvin_coeff_8_V, "%s\n", (coeff_8_V_tvin_wrapc_buffer[i]).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_coeff_8_V, tvin_coeff_8_V);
+		}
+
+		tcl_file.set_num(1, &tcl_file.coeff_8_V_depth);
+		sprintf(tvin_coeff_8_V, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_coeff_8_V, tvin_coeff_8_V);
+
+		// release memory allocation
+		delete [] coeff_8_V_tvin_wrapc_buffer;
+
+		// [[transaction]]
+		sprintf(tvin_coeff_9_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_coeff_9_V, tvin_coeff_9_V);
+
+		sc_bv<32>* coeff_9_V_tvin_wrapc_buffer = new sc_bv<32>[1];
+
+		// RTL Name: coeff_9_V
+		{
+			// bitslice(31, 0)
+			{
+				int hls_map_index = 0;
+				// celement: coeff.V(31, 0)
+				{
+					// carray: (9) => (9) @ (2)
+					for (int i_0 = 9; i_0 <= 9; i_0 += 2)
+					{
+						// sub                   : i_0
+						// ori_name              : coeff[i_0]
+						// sub_1st_elem          : 0
+						// ori_name_1st_elem     : coeff[0]
+						// regulate_c_name       : coeff_V
+						// input_type_conversion : (coeff[i_0]).to_string(2).c_str()
+						if (&(coeff[0]) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<32> coeff_V_tmp_mem;
+							coeff_V_tmp_mem = (coeff[i_0]).to_string(2).c_str();
+							coeff_9_V_tvin_wrapc_buffer[hls_map_index].range(31, 0) = coeff_V_tmp_mem.range(31, 0);
+                                 	       hls_map_index++;
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 1; i++)
+		{
+			sprintf(tvin_coeff_9_V, "%s\n", (coeff_9_V_tvin_wrapc_buffer[i]).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_coeff_9_V, tvin_coeff_9_V);
+		}
+
+		tcl_file.set_num(1, &tcl_file.coeff_9_V_depth);
+		sprintf(tvin_coeff_9_V, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_coeff_9_V, tvin_coeff_9_V);
+
+		// release memory allocation
+		delete [] coeff_9_V_tvin_wrapc_buffer;
+
 		// push back input stream: "stream_in"
 		for (int i = 0; i < aesl_tmp_1; i++)
 		{
@@ -1533,7 +2105,7 @@ hls::stream<ap_axis<32, 2, 5, 6 > > (&stream_out))
 // [call_c_dut] ---------->
 
 		CodeState = CALL_C_DUT;
-		fir(stream_in, stream_out);
+		fir(stream_in, stream_out, coeff);
 
 		CodeState = DUMP_OUTPUTS;
 		// record input size to tv3: "stream_in"
@@ -2599,6 +3171,26 @@ hls::stream<ap_axis<32, 2, 5, 6 > > (&stream_out))
 		delete [] tvout_stream_out_V_dest_V;
 		delete [] tvin_stream_out_V_dest_V;
 		delete [] wrapc_stream_size_out_stream_out_V_dest_V;
+		// release memory allocation: "coeff_0_V"
+		delete [] tvin_coeff_0_V;
+		// release memory allocation: "coeff_1_V"
+		delete [] tvin_coeff_1_V;
+		// release memory allocation: "coeff_2_V"
+		delete [] tvin_coeff_2_V;
+		// release memory allocation: "coeff_3_V"
+		delete [] tvin_coeff_3_V;
+		// release memory allocation: "coeff_4_V"
+		delete [] tvin_coeff_4_V;
+		// release memory allocation: "coeff_5_V"
+		delete [] tvin_coeff_5_V;
+		// release memory allocation: "coeff_6_V"
+		delete [] tvin_coeff_6_V;
+		// release memory allocation: "coeff_7_V"
+		delete [] tvin_coeff_7_V;
+		// release memory allocation: "coeff_8_V"
+		delete [] tvin_coeff_8_V;
+		// release memory allocation: "coeff_9_V"
+		delete [] tvin_coeff_9_V;
 
 		AESL_transaction++;
 

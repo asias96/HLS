@@ -8,7 +8,7 @@ set PipelineFlag 0
 set DataflowTaskPipelineFlag 1
 set TrivialPipelineFlag 0
 set noPortSwitchingFlag 0
-set FloatingPointFlag 1
+set FloatingPointFlag 0
 set FftOrFirFlag 0
 set NbRWValue 0
 set intNbAccess 0
@@ -42,7 +42,7 @@ set SCTraceOption all
 set TargetInfo xc7z010:clg400:-1
 set SourceFiles {sc {} c ../.settings/fir.c}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile D:/HLS/LAB1_FIR_new/LAB1_FIR/FIR_solution3/FIR_solution3.directive
+set DirectiveFile /home/lsriw/HLS_STANISZ/HLS/LAB1_FIR_new/LAB1_FIR/FIR_solution3/FIR_solution3.directive
 set TBFiles {verilog ../.settings/fir_test.c bc ../.settings/fir_test.c vhdl ../.settings/fir_test.c sc ../.settings/fir_test.c cas ../.settings/fir_test.c c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

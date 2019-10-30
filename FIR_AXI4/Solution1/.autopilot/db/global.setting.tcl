@@ -42,7 +42,7 @@ set SCTraceOption all
 set TargetInfo xc7z010:clg400:-1
 set SourceFiles {sc {} c ../.settings/fir.cpp}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile D:/HLS/FIR_AXI4/Solution1/Solution1.directive
+set DirectiveFile /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/Solution1/Solution1.directive
 set TBFiles {verilog ../.settings/fir_test.cpp bc ../.settings/fir_test.cpp vhdl ../.settings/fir_test.cpp sc ../.settings/fir_test.cpp cas ../.settings/fir_test.cpp c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

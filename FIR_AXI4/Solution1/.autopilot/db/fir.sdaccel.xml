@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'fir'" level="0">
-<item name = "Date">Mon Oct 28 22:17:18 2019
+<item name = "Date">Wed Oct 30 10:48:39 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">FIR_AXI4</item>
@@ -15,14 +15,14 @@
 <section name = "" level="1">
 <item name = "Target clock period (ns)">10.00</item>
 <item name = "Clock uncertainty (ns)">1.25</item>
-<item name = "Estimated clock period (ns)">5.806</item>
+<item name = "Estimated clock period (ns)">8.742</item>
 </section>
 </item>
 <item name = "Latency (clock cycles)">
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">20, 20, 20, 20, none</column>
+<column name="">4, 4, 4, 4, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -33,7 +33,6 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- FILTER_LOOP">18, 18, 2, -, -, 9, no</column>
 </table>
 </item>
 </section>
@@ -46,20 +45,21 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
 <column name="DSP">-, -, -, -</column>
-<column name="Expression">-, -, 0, 308</column>
+<column name="Expression">-, 30, 0, 667</column>
 <column name="FIFO">-, -, -, -</column>
-<column name="Instance">-, -, -, -</column>
-<column name="Memory">0, -, 65, 6</column>
-<column name="Multiplexer">-, -, -, 435</column>
-<column name="Register">-, -, 374, -</column>
+<column name="Instance">0, -, 416, 680</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, 387</column>
+<column name="Register">-, -, 1355, -</column>
 <specialColumn name="Available">120, 80, 35200, 17600</specialColumn>
-<specialColumn name="Utilization (%)">0, 0, 1, 4</specialColumn>
+<specialColumn name="Utilization (%)">0, 37, 5, 9</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="fir_bundle_s_axi_U">fir_bundle_s_axi, 0, 0, 416, 680</column>
 </table>
 </item>
 <item name = "DSP48"><table name="" hasTotal="0">
@@ -68,8 +68,6 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="coeff_U">fir_coeff, 0, 1, 1, 10, 1, 1, 10</column>
-<column name="data_in_V_U">fir_data_in_V, 0, 64, 5, 10, 32, 1, 320</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -78,11 +76,25 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="acc_V_2_fu_226_p2">+, 0, 0, 39, 32, 32</column>
-<column name="acc_V_fu_246_p2">+, 0, 0, 39, 32, 32</column>
-<column name="i_1_fu_215_p2">+, 0, 0, 13, 2, 4</column>
-<column name="ap_block_state2_io">and, 0, 0, 2, 1, 1</column>
-<column name="p_1_fu_240_p2">and, 0, 0, 32, 32, 32</column>
+<column name="p_1_1_fu_244_p2">*, 3, 0, 20, 32, 32</column>
+<column name="p_1_2_fu_259_p2">*, 3, 0, 20, 32, 32</column>
+<column name="p_1_3_fu_274_p2">*, 3, 0, 20, 32, 32</column>
+<column name="p_1_4_fu_289_p2">*, 3, 0, 20, 32, 32</column>
+<column name="p_1_5_fu_304_p2">*, 3, 0, 20, 32, 32</column>
+<column name="p_1_6_fu_319_p2">*, 3, 0, 20, 32, 32</column>
+<column name="p_1_7_fu_334_p2">*, 3, 0, 20, 32, 32</column>
+<column name="p_1_8_fu_349_p2">*, 3, 0, 20, 32, 32</column>
+<column name="p_1_fu_229_p2">*, 3, 0, 20, 32, 32</column>
+<column name="p_2_fu_359_p2">*, 3, 0, 20, 32, 32</column>
+<column name="acc_V_fu_399_p2">+, 0, 0, 32, 32, 32</column>
+<column name="tmp1_fu_363_p2">+, 0, 0, 39, 32, 32</column>
+<column name="tmp2_fu_371_p2">+, 0, 0, 32, 32, 32</column>
+<column name="tmp3_fu_367_p2">+, 0, 0, 32, 32, 32</column>
+<column name="tmp4_fu_389_p2">+, 0, 0, 32, 32, 32</column>
+<column name="tmp5_fu_376_p2">+, 0, 0, 32, 32, 32</column>
+<column name="tmp6_fu_384_p2">+, 0, 0, 32, 32, 32</column>
+<column name="tmp7_fu_380_p2">+, 0, 0, 32, 32, 32</column>
+<column name="tmp_fu_395_p2">+, 0, 0, 32, 32, 32</column>
 <column name="stream_in_V_data_V_0_load_A">and, 0, 0, 2, 1, 1</column>
 <column name="stream_in_V_data_V_0_load_B">and, 0, 0, 2, 1, 1</column>
 <column name="stream_in_V_dest_V_0_load_A">and, 0, 0, 2, 1, 1</column>
@@ -125,19 +137,13 @@
 <column name="stream_out_V_last_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
 <column name="stream_out_V_strb_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
 <column name="stream_out_V_user_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
-<column name="tmp_2_fu_204_p2">icmp, 0, 0, 9, 4, 1</column>
 <column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
-<column name="ap_block_state4">or, 0, 0, 2, 1, 1</column>
-<column name="tmp_fu_232_p3">select, 0, 0, 2, 1, 2</column>
+<column name="ap_block_state5">or, 0, 0, 2, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">27, 5, 1, 5</column>
-<column name="data_in_V_address0">21, 4, 4, 16</column>
-<column name="data_in_V_d0">15, 3, 32, 96</column>
-<column name="i_reg_165">9, 2, 4, 8</column>
-<column name="p_s_reg_153">9, 2, 32, 64</column>
+<column name="ap_NS_fsm">33, 6, 1, 6</column>
 <column name="stream_in_TDATA_blk_n">9, 2, 1, 2</column>
 <column name="stream_in_V_data_V_0_data_out">9, 2, 32, 64</column>
 <column name="stream_in_V_data_V_0_state">15, 3, 2, 6</column>
@@ -172,10 +178,36 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">4, 0, 4, 0</column>
-<column name="i_1_reg_296">4, 0, 4, 0</column>
-<column name="i_reg_165">4, 0, 4, 0</column>
-<column name="p_s_reg_153">32, 0, 32, 0</column>
+<column name="ap_CS_fsm">5, 0, 5, 0</column>
+<column name="coeff_0_V_read_reg_486">32, 0, 32, 0</column>
+<column name="coeff_1_V_read_reg_481">32, 0, 32, 0</column>
+<column name="coeff_2_V_read_reg_476">32, 0, 32, 0</column>
+<column name="coeff_3_V_read_reg_471">32, 0, 32, 0</column>
+<column name="coeff_4_V_read_reg_466">32, 0, 32, 0</column>
+<column name="coeff_5_V_read_reg_461">32, 0, 32, 0</column>
+<column name="coeff_6_V_read_reg_456">32, 0, 32, 0</column>
+<column name="coeff_7_V_read_reg_451">32, 0, 32, 0</column>
+<column name="coeff_8_V_read_reg_446">32, 0, 32, 0</column>
+<column name="coeff_9_V_read_reg_441">32, 0, 32, 0</column>
+<column name="data_in_V_0">32, 0, 32, 0</column>
+<column name="data_in_V_1">32, 0, 32, 0</column>
+<column name="data_in_V_2">32, 0, 32, 0</column>
+<column name="data_in_V_3">32, 0, 32, 0</column>
+<column name="data_in_V_4">32, 0, 32, 0</column>
+<column name="data_in_V_5">32, 0, 32, 0</column>
+<column name="data_in_V_6">32, 0, 32, 0</column>
+<column name="data_in_V_7">32, 0, 32, 0</column>
+<column name="data_in_V_8">32, 0, 32, 0</column>
+<column name="p_1_1_reg_496">32, 0, 32, 0</column>
+<column name="p_1_2_reg_501">32, 0, 32, 0</column>
+<column name="p_1_3_reg_506">32, 0, 32, 0</column>
+<column name="p_1_4_reg_511">32, 0, 32, 0</column>
+<column name="p_1_5_reg_516">32, 0, 32, 0</column>
+<column name="p_1_6_reg_521">32, 0, 32, 0</column>
+<column name="p_1_7_reg_526">32, 0, 32, 0</column>
+<column name="p_1_8_reg_531">32, 0, 32, 0</column>
+<column name="p_1_reg_491">32, 0, 32, 0</column>
+<column name="p_2_reg_536">32, 0, 32, 0</column>
 <column name="stream_in_V_data_V_0_payload_A">32, 0, 32, 0</column>
 <column name="stream_in_V_data_V_0_payload_B">32, 0, 32, 0</column>
 <column name="stream_in_V_data_V_0_sel_rd">1, 0, 1, 0</column>
@@ -246,14 +278,16 @@
 <column name="stream_out_V_user_V_1_sel_rd">1, 0, 1, 0</column>
 <column name="stream_out_V_user_V_1_sel_wr">1, 0, 1, 0</column>
 <column name="stream_out_V_user_V_1_state">2, 0, 2, 0</column>
-<column name="tmp_3_reg_291">4, 0, 64, 60</column>
-<column name="tmp_data_V_reg_252">32, 0, 32, 0</column>
-<column name="tmp_dest_V_reg_283">6, 0, 6, 0</column>
-<column name="tmp_id_V_reg_278">5, 0, 5, 0</column>
-<column name="tmp_keep_V_reg_258">4, 0, 4, 0</column>
-<column name="tmp_last_V_reg_273">1, 0, 1, 0</column>
-<column name="tmp_strb_V_reg_263">4, 0, 4, 0</column>
-<column name="tmp_user_V_reg_268">2, 0, 2, 0</column>
+<column name="tmp1_reg_541">32, 0, 32, 0</column>
+<column name="tmp2_reg_546">32, 0, 32, 0</column>
+<column name="tmp4_reg_551">32, 0, 32, 0</column>
+<column name="tmp_data_V_reg_405">32, 0, 32, 0</column>
+<column name="tmp_dest_V_reg_436">6, 0, 6, 0</column>
+<column name="tmp_id_V_reg_431">5, 0, 5, 0</column>
+<column name="tmp_keep_V_reg_411">4, 0, 4, 0</column>
+<column name="tmp_last_V_reg_426">1, 0, 1, 0</column>
+<column name="tmp_strb_V_reg_416">4, 0, 4, 0</column>
+<column name="tmp_user_V_reg_421">2, 0, 2, 0</column>
 </table>
 </item>
 </section>
@@ -263,12 +297,26 @@
 <section name = "Interface" level="0">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_bundle_AWVALID">in, 1, s_axi, bundle, pointer</column>
+<column name="s_axi_bundle_AWREADY">out, 1, s_axi, bundle, pointer</column>
+<column name="s_axi_bundle_AWADDR">in, 7, s_axi, bundle, pointer</column>
+<column name="s_axi_bundle_WVALID">in, 1, s_axi, bundle, pointer</column>
+<column name="s_axi_bundle_WREADY">out, 1, s_axi, bundle, pointer</column>
+<column name="s_axi_bundle_WDATA">in, 32, s_axi, bundle, pointer</column>
+<column name="s_axi_bundle_WSTRB">in, 4, s_axi, bundle, pointer</column>
+<column name="s_axi_bundle_ARVALID">in, 1, s_axi, bundle, pointer</column>
+<column name="s_axi_bundle_ARREADY">out, 1, s_axi, bundle, pointer</column>
+<column name="s_axi_bundle_ARADDR">in, 7, s_axi, bundle, pointer</column>
+<column name="s_axi_bundle_RVALID">out, 1, s_axi, bundle, pointer</column>
+<column name="s_axi_bundle_RREADY">in, 1, s_axi, bundle, pointer</column>
+<column name="s_axi_bundle_RDATA">out, 32, s_axi, bundle, pointer</column>
+<column name="s_axi_bundle_RRESP">out, 2, s_axi, bundle, pointer</column>
+<column name="s_axi_bundle_BVALID">out, 1, s_axi, bundle, pointer</column>
+<column name="s_axi_bundle_BREADY">in, 1, s_axi, bundle, pointer</column>
+<column name="s_axi_bundle_BRESP">out, 2, s_axi, bundle, pointer</column>
 <column name="ap_clk">in, 1, ap_ctrl_hs, fir, return value</column>
 <column name="ap_rst_n">in, 1, ap_ctrl_hs, fir, return value</column>
-<column name="ap_start">in, 1, ap_ctrl_hs, fir, return value</column>
-<column name="ap_done">out, 1, ap_ctrl_hs, fir, return value</column>
-<column name="ap_idle">out, 1, ap_ctrl_hs, fir, return value</column>
-<column name="ap_ready">out, 1, ap_ctrl_hs, fir, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, fir, return value</column>
 <column name="stream_in_TDATA">in, 32, axis, stream_in_V_data_V, pointer</column>
 <column name="stream_in_TVALID">in, 1, axis, stream_in_V_dest_V, pointer</column>
 <column name="stream_in_TREADY">out, 1, axis, stream_in_V_dest_V, pointer</column>
@@ -292,13 +340,12 @@
 </section>
 
 <section name = "Critical Path" level="0">
-<item name = "Max Delay">5.81</item>
+<item name = "Max Delay">8.74</item>
 <item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
 <keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
-<column name="'coeff_load', FIR_AXI4/.settings/fir.cpp:22">load, 3.25, 3.25, -, -, -, -, -, -, &apos;coeff&apos;, -, -, -, -</column>
-<column name="'tmp', FIR_AXI4/.settings/fir.cpp:22">select, 0.00, 3.25, -, -, -, -, -, -, -, -, -, -, -</column>
-<column name="'p_1', FIR_AXI4/.settings/fir.cpp:22">and, 0.00, 3.25, -, -, -, -, -, -, -, -, -, -, -</column>
-<column name="'acc.V', FIR_AXI4/.settings/fir.cpp:22">add, 2.55, 5.81, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp7', FIR_AXI4/.settings/fir.cpp:28">add, 0.00, 0.00, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp6', FIR_AXI4/.settings/fir.cpp:28">add, 4.37, 4.37, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp4', FIR_AXI4/.settings/fir.cpp:28">add, 4.37, 8.74, -, -, -, -, -, -, -, -, -, -, -</column>
 </table>
 </item>
 </section>

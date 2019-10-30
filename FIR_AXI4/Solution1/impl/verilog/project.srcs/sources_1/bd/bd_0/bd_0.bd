@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x9DAEC66E29DB86AF",
+      "boundary_crc": "0x93BCB19386BA88A",
       "device": "xc7z010clg400-1",
       "name": "bd_0",
       "synth_flow_mode": "Hierarchical",
@@ -12,9 +12,107 @@
       "hls_inst": ""
     },
     "interface_ports": {
-      "ap_ctrl": {
+      "s_axi_bundle": {
         "mode": "Slave",
-        "vlnv": "xilinx.com:interface:acc_handshake_rtl:1.0"
+        "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+        "parameters": {
+          "ADDR_WIDTH": {
+            "value": "12"
+          },
+          "ARUSER_WIDTH": {
+            "value": "0"
+          },
+          "AWUSER_WIDTH": {
+            "value": "0"
+          },
+          "BUSER_WIDTH": {
+            "value": "0"
+          },
+          "CLK_DOMAIN": {
+            "value": "bd_0_ap_clk_0",
+            "value_src": "default"
+          },
+          "DATA_WIDTH": {
+            "value": "32"
+          },
+          "FREQ_HZ": {
+            "value": "100000000.0"
+          },
+          "HAS_BRESP": {
+            "value": "1"
+          },
+          "HAS_BURST": {
+            "value": "0"
+          },
+          "HAS_CACHE": {
+            "value": "0"
+          },
+          "HAS_LOCK": {
+            "value": "0"
+          },
+          "HAS_PROT": {
+            "value": "0"
+          },
+          "HAS_QOS": {
+            "value": "0"
+          },
+          "HAS_REGION": {
+            "value": "0"
+          },
+          "HAS_RRESP": {
+            "value": "1"
+          },
+          "HAS_WSTRB": {
+            "value": "1"
+          },
+          "ID_WIDTH": {
+            "value": "0"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "MAX_BURST_LENGTH": {
+            "value": "1"
+          },
+          "NUM_READ_OUTSTANDING": {
+            "value": "1"
+          },
+          "NUM_READ_THREADS": {
+            "value": "1"
+          },
+          "NUM_WRITE_OUTSTANDING": {
+            "value": "1"
+          },
+          "NUM_WRITE_THREADS": {
+            "value": "1"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          },
+          "PROTOCOL": {
+            "value": "AXI4LITE"
+          },
+          "READ_WRITE_MODE": {
+            "value": "READ_WRITE"
+          },
+          "RUSER_BITS_PER_BYTE": {
+            "value": "0"
+          },
+          "RUSER_WIDTH": {
+            "value": "0"
+          },
+          "SUPPORTS_NARROW_BURST": {
+            "value": "0"
+          },
+          "WUSER_BITS_PER_BYTE": {
+            "value": "0"
+          },
+          "WUSER_WIDTH": {
+            "value": "0"
+          }
+        }
       },
       "stream_in": {
         "mode": "Slave",
@@ -128,7 +226,7 @@
         "direction": "I",
         "parameters": {
           "ASSOCIATED_BUSIF": {
-            "value": "stream_in:stream_out",
+            "value": "s_axi_bundle:stream_in:stream_out",
             "value_src": "default"
           },
           "ASSOCIATED_RESET": {
@@ -165,6 +263,20 @@
             "value_src": "default"
           }
         }
+      },
+      "interrupt": {
+        "type": "intr",
+        "direction": "O",
+        "parameters": {
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default"
+          },
+          "SENSITIVITY": {
+            "value": "LEVEL_HIGH",
+            "value_src": "const_prop"
+          }
+        }
       }
     },
     "components": {
@@ -174,22 +286,22 @@
       }
     },
     "interface_nets": {
-      "ap_ctrl_0_1": {
+      "s_axi_bundle_0_1": {
         "interface_ports": [
-          "ap_ctrl",
-          "hls_inst/ap_ctrl"
-        ]
-      },
-      "hls_inst_stream_out": {
-        "interface_ports": [
-          "stream_out",
-          "hls_inst/stream_out"
+          "s_axi_bundle",
+          "hls_inst/s_axi_bundle"
         ]
       },
       "stream_in_0_1": {
         "interface_ports": [
           "stream_in",
           "hls_inst/stream_in"
+        ]
+      },
+      "hls_inst_stream_out": {
+        "interface_ports": [
+          "stream_out",
+          "hls_inst/stream_out"
         ]
       }
     },
@@ -205,6 +317,29 @@
           "ap_rst_n",
           "hls_inst/ap_rst_n"
         ]
+      },
+      "hls_inst_interrupt": {
+        "ports": [
+          "hls_inst/interrupt",
+          "interrupt"
+        ]
+      }
+    },
+    "addressing": {
+      "/": {
+        "address_spaces": {
+          "s_axi_bundle": {
+            "range": "4K",
+            "width": "32",
+            "segments": {
+              "SEG_hls_inst_Reg": {
+                "address_block": "/hls_inst/s_axi_bundle/Reg",
+                "offset": "0x000",
+                "range": "4K"
+              }
+            }
+          }
+        }
       }
     }
   }

@@ -4,16 +4,16 @@ Implementation tool: Xilinx Vivado v.2018.3
 Project:             FIR_AXI4
 Solution:            Solution1
 Device target:       xc7z010clg400-1
-Report date:         Mon Oct 28 22:27:43 +0100 2019
+Report date:         Wed Oct 30 10:54:28 CET 2019
 
 #=== Post-Synthesis Resource usage ===
 SLICE:            0
-LUT:            278
-FF:             407
-DSP:              0
+LUT:            794
+FF:            1195
+DSP:             30
 BRAM:             0
 SRL:              0
 #=== Final timing ===
 CP required:    10.000
-CP achieved post-synthesis:    3.721
+CP achieved post-synthesis:    7.384
 Timing met

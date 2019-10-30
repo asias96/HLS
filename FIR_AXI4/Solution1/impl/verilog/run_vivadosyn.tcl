@@ -1,7 +1,7 @@
 # ==============================================================
-# File generated on Mon Oct 28 22:25:21 +0100 2019
+# File generated on Wed Oct 30 10:52:56 CET 2019
 # Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
-# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
 # Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 # ==============================================================
@@ -23,7 +23,7 @@ create_project $vivadoProjectName $vivadoProjectDir -part $targetPart -force
 set_property target_language $language [current_project]
 
 # setup testbench files
-set simtbs [glob -nocomplain ./sim_tbs/*.v ./sim_tbs/*.vhd ./sim_tbs/cdatafile/*.dat ./sim_tbs/rtldatafile/*.dat ./sim_tbs/stream_size/*.dat ./*.dat]
+set simtbs [glob -nocomplain ./sim_tbs/*.v ./sim_tbs/*.vhd ./sim_tbs/cdatafile/*.dat ./sim_tbs/rtldatafile/*.dat ./sim_tbs/stream_size/*.dat]
 if {$simtbs != "" } {
     add_files -fileset sim_1  -norecurse $simtbs
 }

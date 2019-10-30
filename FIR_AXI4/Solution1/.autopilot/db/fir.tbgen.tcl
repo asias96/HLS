@@ -26,6 +26,16 @@ set C_modelArgList {
 	{ stream_out_V_last_V int 1 regular {axi_s 1 volatile  { stream_out Last } }  }
 	{ stream_out_V_id_V int 5 regular {axi_s 1 volatile  { stream_out ID } }  }
 	{ stream_out_V_dest_V int 6 regular {axi_s 1 volatile  { stream_out Dest } }  }
+	{ coeff_0_V int 32 regular {axi_slave 0}  }
+	{ coeff_1_V int 32 regular {axi_slave 0}  }
+	{ coeff_2_V int 32 regular {axi_slave 0}  }
+	{ coeff_3_V int 32 regular {axi_slave 0}  }
+	{ coeff_4_V int 32 regular {axi_slave 0}  }
+	{ coeff_5_V int 32 regular {axi_slave 0}  }
+	{ coeff_6_V int 32 regular {axi_slave 0}  }
+	{ coeff_7_V int 32 regular {axi_slave 0}  }
+	{ coeff_8_V int 32 regular {axi_slave 0}  }
+	{ coeff_9_V int 32 regular {axi_slave 0}  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "stream_in_V_data_V", "interface" : "axis", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "stream_in.V.data.V","cData": "int32","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
@@ -41,16 +51,22 @@ set C_modelArgMapList {[
  	{ "Name" : "stream_out_V_user_V", "interface" : "axis", "bitwidth" : 2, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":1,"cElement": [{"cName": "stream_out.V.user.V","cData": "uint2","bit_use": { "low": 0,"up": 1},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
  	{ "Name" : "stream_out_V_last_V", "interface" : "axis", "bitwidth" : 1, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "stream_out.V.last.V","cData": "uint1","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
  	{ "Name" : "stream_out_V_id_V", "interface" : "axis", "bitwidth" : 5, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":4,"cElement": [{"cName": "stream_out.V.id.V","cData": "uint5","bit_use": { "low": 0,"up": 4},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
- 	{ "Name" : "stream_out_V_dest_V", "interface" : "axis", "bitwidth" : 6, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":5,"cElement": [{"cName": "stream_out.V.dest.V","cData": "uint6","bit_use": { "low": 0,"up": 5},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} ]}
+ 	{ "Name" : "stream_out_V_dest_V", "interface" : "axis", "bitwidth" : 6, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":5,"cElement": [{"cName": "stream_out.V.dest.V","cData": "uint6","bit_use": { "low": 0,"up": 5},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
+ 	{ "Name" : "coeff_0_V", "interface" : "axi_slave", "bundle":"bundle","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "coeff.V","cData": "int32","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 2}]}]}], "offset" : {"in":16}, "offset_end" : {"in":23}} , 
+ 	{ "Name" : "coeff_1_V", "interface" : "axi_slave", "bundle":"bundle","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "coeff.V","cData": "int32","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 1,"up" : 1,"step" : 2}]}]}], "offset" : {"in":24}, "offset_end" : {"in":31}} , 
+ 	{ "Name" : "coeff_2_V", "interface" : "axi_slave", "bundle":"bundle","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "coeff.V","cData": "int32","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 2,"up" : 2,"step" : 2}]}]}], "offset" : {"in":32}, "offset_end" : {"in":39}} , 
+ 	{ "Name" : "coeff_3_V", "interface" : "axi_slave", "bundle":"bundle","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "coeff.V","cData": "int32","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 3,"up" : 3,"step" : 2}]}]}], "offset" : {"in":40}, "offset_end" : {"in":47}} , 
+ 	{ "Name" : "coeff_4_V", "interface" : "axi_slave", "bundle":"bundle","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "coeff.V","cData": "int32","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 4,"up" : 4,"step" : 2}]}]}], "offset" : {"in":48}, "offset_end" : {"in":55}} , 
+ 	{ "Name" : "coeff_5_V", "interface" : "axi_slave", "bundle":"bundle","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "coeff.V","cData": "int32","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 5,"up" : 5,"step" : 2}]}]}], "offset" : {"in":56}, "offset_end" : {"in":63}} , 
+ 	{ "Name" : "coeff_6_V", "interface" : "axi_slave", "bundle":"bundle","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "coeff.V","cData": "int32","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 6,"up" : 6,"step" : 2}]}]}], "offset" : {"in":64}, "offset_end" : {"in":71}} , 
+ 	{ "Name" : "coeff_7_V", "interface" : "axi_slave", "bundle":"bundle","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "coeff.V","cData": "int32","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 7,"up" : 7,"step" : 2}]}]}], "offset" : {"in":72}, "offset_end" : {"in":79}} , 
+ 	{ "Name" : "coeff_8_V", "interface" : "axi_slave", "bundle":"bundle","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "coeff.V","cData": "int32","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 8,"up" : 8,"step" : 2}]}]}], "offset" : {"in":80}, "offset_end" : {"in":87}} , 
+ 	{ "Name" : "coeff_9_V", "interface" : "axi_slave", "bundle":"bundle","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "coeff.V","cData": "int32","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 9,"up" : 9,"step" : 2}]}]}], "offset" : {"in":88}, "offset_end" : {"in":95}} ]}
 # RTL Port declarations: 
-set portNum 24
+set portNum 38
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst_n sc_in sc_logic 1 reset -1 active_low_sync } 
-	{ ap_start sc_in sc_logic 1 start -1 } 
-	{ ap_done sc_out sc_logic 1 predone -1 } 
-	{ ap_idle sc_out sc_logic 1 done -1 } 
-	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ stream_in_TDATA sc_in sc_lv 32 signal 0 } 
 	{ stream_in_TVALID sc_in sc_logic 1 invld 6 } 
 	{ stream_in_TREADY sc_out sc_logic 1 inacc 6 } 
@@ -69,14 +85,46 @@ set portList {
 	{ stream_out_TLAST sc_out sc_lv 1 signal 11 } 
 	{ stream_out_TID sc_out sc_lv 5 signal 12 } 
 	{ stream_out_TDEST sc_out sc_lv 6 signal 13 } 
+	{ s_axi_bundle_AWVALID sc_in sc_logic 1 signal -1 } 
+	{ s_axi_bundle_AWREADY sc_out sc_logic 1 signal -1 } 
+	{ s_axi_bundle_AWADDR sc_in sc_lv 7 signal -1 } 
+	{ s_axi_bundle_WVALID sc_in sc_logic 1 signal -1 } 
+	{ s_axi_bundle_WREADY sc_out sc_logic 1 signal -1 } 
+	{ s_axi_bundle_WDATA sc_in sc_lv 32 signal -1 } 
+	{ s_axi_bundle_WSTRB sc_in sc_lv 4 signal -1 } 
+	{ s_axi_bundle_ARVALID sc_in sc_logic 1 signal -1 } 
+	{ s_axi_bundle_ARREADY sc_out sc_logic 1 signal -1 } 
+	{ s_axi_bundle_ARADDR sc_in sc_lv 7 signal -1 } 
+	{ s_axi_bundle_RVALID sc_out sc_logic 1 signal -1 } 
+	{ s_axi_bundle_RREADY sc_in sc_logic 1 signal -1 } 
+	{ s_axi_bundle_RDATA sc_out sc_lv 32 signal -1 } 
+	{ s_axi_bundle_RRESP sc_out sc_lv 2 signal -1 } 
+	{ s_axi_bundle_BVALID sc_out sc_logic 1 signal -1 } 
+	{ s_axi_bundle_BREADY sc_in sc_logic 1 signal -1 } 
+	{ s_axi_bundle_BRESP sc_out sc_lv 2 signal -1 } 
+	{ interrupt sc_out sc_logic 1 signal -1 } 
 }
 set NewPortList {[ 
-	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
+	{ "name": "s_axi_bundle_AWADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "bundle", "role": "AWADDR" },"address":[{"name":"fir","role":"start","value":"0","valid_bit":"0"},{"name":"fir","role":"continue","value":"0","valid_bit":"4"},{"name":"fir","role":"auto_start","value":"0","valid_bit":"7"},{"name":"coeff_0_V","role":"data","value":"16"},{"name":"coeff_1_V","role":"data","value":"24"},{"name":"coeff_2_V","role":"data","value":"32"},{"name":"coeff_3_V","role":"data","value":"40"},{"name":"coeff_4_V","role":"data","value":"48"},{"name":"coeff_5_V","role":"data","value":"56"},{"name":"coeff_6_V","role":"data","value":"64"},{"name":"coeff_7_V","role":"data","value":"72"},{"name":"coeff_8_V","role":"data","value":"80"},{"name":"coeff_9_V","role":"data","value":"88"}] },
+	{ "name": "s_axi_bundle_AWVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bundle", "role": "AWVALID" } },
+	{ "name": "s_axi_bundle_AWREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bundle", "role": "AWREADY" } },
+	{ "name": "s_axi_bundle_WVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bundle", "role": "WVALID" } },
+	{ "name": "s_axi_bundle_WREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bundle", "role": "WREADY" } },
+	{ "name": "s_axi_bundle_WDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "bundle", "role": "WDATA" } },
+	{ "name": "s_axi_bundle_WSTRB", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "bundle", "role": "WSTRB" } },
+	{ "name": "s_axi_bundle_ARADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "bundle", "role": "ARADDR" },"address":[{"name":"fir","role":"start","value":"0","valid_bit":"0"},{"name":"fir","role":"done","value":"0","valid_bit":"1"},{"name":"fir","role":"idle","value":"0","valid_bit":"2"},{"name":"fir","role":"ready","value":"0","valid_bit":"3"},{"name":"fir","role":"auto_start","value":"0","valid_bit":"7"}] },
+	{ "name": "s_axi_bundle_ARVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bundle", "role": "ARVALID" } },
+	{ "name": "s_axi_bundle_ARREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bundle", "role": "ARREADY" } },
+	{ "name": "s_axi_bundle_RVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bundle", "role": "RVALID" } },
+	{ "name": "s_axi_bundle_RREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bundle", "role": "RREADY" } },
+	{ "name": "s_axi_bundle_RDATA", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "bundle", "role": "RDATA" } },
+	{ "name": "s_axi_bundle_RRESP", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "bundle", "role": "RRESP" } },
+	{ "name": "s_axi_bundle_BVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bundle", "role": "BVALID" } },
+	{ "name": "s_axi_bundle_BREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bundle", "role": "BREADY" } },
+	{ "name": "s_axi_bundle_BRESP", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "bundle", "role": "BRESP" } },
+	{ "name": "interrupt", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bundle", "role": "interrupt" } }, 
+ 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
  	{ "name": "ap_rst_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "reset", "bundle":{"name": "ap_rst_n", "role": "default" }} , 
- 	{ "name": "ap_start", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "start", "bundle":{"name": "ap_start", "role": "default" }} , 
- 	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
- 	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
- 	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "stream_in_TDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "stream_in_V_data_V", "role": "default" }} , 
  	{ "name": "stream_in_TVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "stream_in_V_dest_V", "role": "default" }} , 
  	{ "name": "stream_in_TREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "inacc", "bundle":{"name": "stream_in_V_dest_V", "role": "default" }} , 
@@ -97,13 +145,13 @@ set NewPortList {[
  	{ "name": "stream_out_TDEST", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "stream_out_V_dest_V", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1"],
 		"CDFG" : "fir",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "20", "EstimateLatencyMax" : "20",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "4", "EstimateLatencyMax" : "4",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -129,10 +177,26 @@ set RtlHierarchyInfo {[
 			{"Name" : "stream_out_V_last_V", "Type" : "Axis", "Direction" : "O"},
 			{"Name" : "stream_out_V_id_V", "Type" : "Axis", "Direction" : "O"},
 			{"Name" : "stream_out_V_dest_V", "Type" : "Axis", "Direction" : "O"},
-			{"Name" : "data_in_V", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "coeff", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.data_in_V_U", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.coeff_U", "Parent" : "0"}]}
+			{"Name" : "coeff_0_V", "Type" : "None", "Direction" : "I"},
+			{"Name" : "coeff_1_V", "Type" : "None", "Direction" : "I"},
+			{"Name" : "coeff_2_V", "Type" : "None", "Direction" : "I"},
+			{"Name" : "coeff_3_V", "Type" : "None", "Direction" : "I"},
+			{"Name" : "coeff_4_V", "Type" : "None", "Direction" : "I"},
+			{"Name" : "coeff_5_V", "Type" : "None", "Direction" : "I"},
+			{"Name" : "coeff_6_V", "Type" : "None", "Direction" : "I"},
+			{"Name" : "coeff_7_V", "Type" : "None", "Direction" : "I"},
+			{"Name" : "coeff_8_V", "Type" : "None", "Direction" : "I"},
+			{"Name" : "coeff_9_V", "Type" : "None", "Direction" : "I"},
+			{"Name" : "data_in_V_8", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "data_in_V_7", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "data_in_V_6", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "data_in_V_5", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "data_in_V_4", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "data_in_V_3", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "data_in_V_2", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "data_in_V_1", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "data_in_V_0", "Type" : "OVld", "Direction" : "IO"}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fir_bundle_s_axi_U", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -144,21 +208,38 @@ set ArgLastReadFirstWriteLatency {
 		stream_in_V_last_V {Type I LastRead 0 FirstWrite -1}
 		stream_in_V_id_V {Type I LastRead 0 FirstWrite -1}
 		stream_in_V_dest_V {Type I LastRead 0 FirstWrite -1}
-		stream_out_V_data_V {Type O LastRead -1 FirstWrite 1}
-		stream_out_V_keep_V {Type O LastRead -1 FirstWrite 1}
-		stream_out_V_strb_V {Type O LastRead -1 FirstWrite 1}
-		stream_out_V_user_V {Type O LastRead -1 FirstWrite 1}
-		stream_out_V_last_V {Type O LastRead -1 FirstWrite 1}
-		stream_out_V_id_V {Type O LastRead -1 FirstWrite 1}
-		stream_out_V_dest_V {Type O LastRead -1 FirstWrite 1}
-		data_in_V {Type IO LastRead -1 FirstWrite -1}
-		coeff {Type I LastRead -1 FirstWrite -1}}}
+		stream_out_V_data_V {Type O LastRead -1 FirstWrite 3}
+		stream_out_V_keep_V {Type O LastRead -1 FirstWrite 3}
+		stream_out_V_strb_V {Type O LastRead -1 FirstWrite 3}
+		stream_out_V_user_V {Type O LastRead -1 FirstWrite 3}
+		stream_out_V_last_V {Type O LastRead -1 FirstWrite 3}
+		stream_out_V_id_V {Type O LastRead -1 FirstWrite 3}
+		stream_out_V_dest_V {Type O LastRead -1 FirstWrite 3}
+		coeff_0_V {Type I LastRead 0 FirstWrite -1}
+		coeff_1_V {Type I LastRead 0 FirstWrite -1}
+		coeff_2_V {Type I LastRead 0 FirstWrite -1}
+		coeff_3_V {Type I LastRead 0 FirstWrite -1}
+		coeff_4_V {Type I LastRead 0 FirstWrite -1}
+		coeff_5_V {Type I LastRead 0 FirstWrite -1}
+		coeff_6_V {Type I LastRead 0 FirstWrite -1}
+		coeff_7_V {Type I LastRead 0 FirstWrite -1}
+		coeff_8_V {Type I LastRead 0 FirstWrite -1}
+		coeff_9_V {Type I LastRead 0 FirstWrite -1}
+		data_in_V_8 {Type IO LastRead -1 FirstWrite -1}
+		data_in_V_7 {Type IO LastRead -1 FirstWrite -1}
+		data_in_V_6 {Type IO LastRead -1 FirstWrite -1}
+		data_in_V_5 {Type IO LastRead -1 FirstWrite -1}
+		data_in_V_4 {Type IO LastRead -1 FirstWrite -1}
+		data_in_V_3 {Type IO LastRead -1 FirstWrite -1}
+		data_in_V_2 {Type IO LastRead -1 FirstWrite -1}
+		data_in_V_1 {Type IO LastRead -1 FirstWrite -1}
+		data_in_V_0 {Type IO LastRead -1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "20", "Max" : "20"}
-	, {"Name" : "Interval", "Min" : "21", "Max" : "21"}
+	{"Name" : "Latency", "Min" : "4", "Max" : "4"}
+	, {"Name" : "Interval", "Min" : "5", "Max" : "5"}
 ]}
 
 set PipelineEnableSignalInfo {[

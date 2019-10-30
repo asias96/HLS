@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# xsim v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Oct 30 11:37:53 2019
+# Process ID: 9193
+# Current directory: /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/fir/xsim_script.tcl}
+# Log file: /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/sim/verilog/xsim.log
+# Journal file: /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/sim/verilog/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/fir/xsim_script.tcl
+# xsim {fir} -autoloadwcfg -tclbatch {fir.tcl}
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source fir.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "31145000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 31185 ns : File "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/sim/verilog/fir.autotb.v" Line 515
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Oct 30 11:38:01 2019...

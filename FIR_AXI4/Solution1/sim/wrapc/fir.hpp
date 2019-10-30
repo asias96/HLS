@@ -14,6 +14,6 @@ typedef const ap_int<N> type_coeff;
 typedef ap_int<N> type_data;
 typedef ap_int<N> type_acc;
 
-void fir(stream&, stream&);
+void fir(stream&, stream&, type_coeff[FILTR_LENGTH]);
 
 #endif

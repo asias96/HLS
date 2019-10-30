@@ -1,7 +1,7 @@
 # ==============================================================
-# File generated on Mon Oct 28 22:23:53 +0100 2019
+# File generated on Wed Oct 30 10:50:27 CET 2019
 # Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
-# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
 # Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 # ==============================================================
@@ -97,6 +97,16 @@ proc check_tvin_file {} {
          "c.fir.autotvin_stream_out_V_last_V.dat"
          "c.fir.autotvin_stream_out_V_id_V.dat"
          "c.fir.autotvin_stream_out_V_dest_V.dat"
+         "c.fir.autotvin_coeff_0_V.dat"
+         "c.fir.autotvin_coeff_1_V.dat"
+         "c.fir.autotvin_coeff_2_V.dat"
+         "c.fir.autotvin_coeff_3_V.dat"
+         "c.fir.autotvin_coeff_4_V.dat"
+         "c.fir.autotvin_coeff_5_V.dat"
+         "c.fir.autotvin_coeff_6_V.dat"
+         "c.fir.autotvin_coeff_7_V.dat"
+         "c.fir.autotvin_coeff_8_V.dat"
+         "c.fir.autotvin_coeff_9_V.dat"
          "c.fir.autotvout_stream_out_V_data_V.dat"
          "c.fir.autotvout_stream_out_V_keep_V.dat"
          "c.fir.autotvout_stream_out_V_strb_V.dat"

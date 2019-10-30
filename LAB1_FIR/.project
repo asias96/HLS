@@ -29,107 +29,107 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>/home/lsriw/HLS/HLS/LAB1_FIR/.apc/.src</location>
+			<location>/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>/home/lsriw/HLS/HLS/LAB1_FIR/.apc/.tb</location>
+			<location>/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/.apc/.tb</location>
 		</link>
 		<link>
 			<name>FIR_solution1/constraints</name>
 			<type>2</type>
-			<location>/home/lsriw/HLS/HLS/LAB1_FIR/FIR_solution1/.tcls</location>
+			<location>/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/FIR_solution1/.tcls</location>
 		</link>
 		<link>
 			<name>FIR_solution2/constraints</name>
 			<type>2</type>
-			<location>/home/lsriw/HLS/HLS/LAB1_FIR/FIR_solution2/.tcls</location>
+			<location>/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/FIR_solution2/.tcls</location>
 		</link>
 		<link>
 			<name>FIR_solution3/constraints</name>
 			<type>2</type>
-			<location>/home/lsriw/HLS/HLS/LAB1_FIR/FIR_solution3/.tcls</location>
+			<location>/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/FIR_solution3/.tcls</location>
 		</link>
 		<link>
 			<name>FIR_solution4/constraints</name>
 			<type>2</type>
-			<location>/home/lsriw/HLS/HLS/LAB1_FIR/FIR_solution4/.tcls</location>
+			<location>/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/FIR_solution4/.tcls</location>
 		</link>
 		<link>
 			<name>source/fir.c</name>
 			<type>1</type>
-			<location>/home/lsriw/HLS/HLS/LAB1_FIR/.settings/fir.c</location>
+			<location>/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/.settings/fir.c</location>
 		</link>
 		<link>
 			<name>source/fir.h</name>
 			<type>1</type>
-			<location>/home/lsriw/HLS/HLS/LAB1_FIR/.settings/fir.h</location>
+			<location>/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/.settings/fir.h</location>
 		</link>
 		<link>
 			<name>testbench/fir_test.c</name>
 			<type>1</type>
-			<location>/home/lsriw/HLS/HLS/LAB1_FIR/.settings/fir_test.c</location>
+			<location>/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/.settings/fir_test.c</location>
 		</link>
 		<link>
 			<name>FIR_solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>/home/lsriw/HLS/HLS/LAB1_FIR/FIR_solution1/FIR_solution1.directive</location>
+			<location>/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/FIR_solution1/FIR_solution1.directive</location>
 		</link>
 		<link>
 			<name>FIR_solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>/home/lsriw/HLS/HLS/LAB1_FIR/FIR_solution1/directives.tcl</location>
+			<location>/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/FIR_solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>FIR_solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>/home/lsriw/HLS/HLS/LAB1_FIR/FIR_solution1/script.tcl</location>
+			<location>/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/FIR_solution1/script.tcl</location>
 		</link>
 		<link>
 			<name>FIR_solution2/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>/home/lsriw/HLS/HLS/LAB1_FIR/FIR_solution2/FIR_solution2.directive</location>
+			<location>/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/FIR_solution2/FIR_solution2.directive</location>
 		</link>
 		<link>
 			<name>FIR_solution2/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>/home/lsriw/HLS/HLS/LAB1_FIR/FIR_solution2/directives.tcl</location>
+			<location>/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/FIR_solution2/directives.tcl</location>
 		</link>
 		<link>
 			<name>FIR_solution2/constraints/script.tcl</name>
 			<type>1</type>
-			<location>/home/lsriw/HLS/HLS/LAB1_FIR/FIR_solution2/script.tcl</location>
+			<location>/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/FIR_solution2/script.tcl</location>
 		</link>
 		<link>
 			<name>FIR_solution3/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>/home/lsriw/HLS/HLS/LAB1_FIR/FIR_solution3/FIR_solution3.directive</location>
+			<location>/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/FIR_solution3/FIR_solution3.directive</location>
 		</link>
 		<link>
 			<name>FIR_solution3/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>/home/lsriw/HLS/HLS/LAB1_FIR/FIR_solution3/directives.tcl</location>
+			<location>/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/FIR_solution3/directives.tcl</location>
 		</link>
 		<link>
 			<name>FIR_solution3/constraints/script.tcl</name>
 			<type>1</type>
-			<location>/home/lsriw/HLS/HLS/LAB1_FIR/FIR_solution3/script.tcl</location>
+			<location>/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/FIR_solution3/script.tcl</location>
 		</link>
 		<link>
 			<name>FIR_solution4/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>/home/lsriw/HLS/HLS/LAB1_FIR/FIR_solution4/FIR_solution4.directive</location>
+			<location>/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/FIR_solution4/FIR_solution4.directive</location>
 		</link>
 		<link>
 			<name>FIR_solution4/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>/home/lsriw/HLS/HLS/LAB1_FIR/FIR_solution4/directives.tcl</location>
+			<location>/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/FIR_solution4/directives.tcl</location>
 		</link>
 		<link>
 			<name>FIR_solution4/constraints/script.tcl</name>
 			<type>1</type>
-			<location>/home/lsriw/HLS/HLS/LAB1_FIR/FIR_solution4/script.tcl</location>
+			<location>/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/FIR_solution4/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

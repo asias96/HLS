@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="fir.c" path="/home/lsriw/HLS/HLS/LAB1_FIR_new/LAB1_FIR/.settings/fir.c"/>
-    <originFiles name="fir.h" path="/home/lsriw/HLS/HLS/LAB1_FIR_new/LAB1_FIR/.settings/fir.h"/>
+    <originFiles name="fir.c" path="/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR_new/LAB1_FIR/.settings/fir.c"/>
+    <originFiles name="fir.h" path="/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR_new/LAB1_FIR/.settings/fir.h"/>
   </source>
   <testbench>
-    <originFiles name="fir_test.c" path="/home/lsriw/HLS/HLS/LAB1_FIR_new/LAB1_FIR/.settings/fir_test.c"/>
+    <originFiles name="fir_test.c" path="/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR_new/LAB1_FIR/.settings/fir_test.c"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

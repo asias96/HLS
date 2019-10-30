@@ -2,16 +2,15 @@
 # 1 "LAB1_FIR/.settings/fir.c" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
-# 147 "<built-in>" 3
+# 149 "<built-in>" 3
 # 1 "<command line>" 1
 
 
 
 
 
-
-# 1 "C:/Xilinx/Vivado/2018.3/common/technology/autopilot\\etc/autopilot_ssdm_op.h" 1
-# 300 "C:/Xilinx/Vivado/2018.3/common/technology/autopilot\\etc/autopilot_ssdm_op.h"
+# 1 "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
+# 300 "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/etc/autopilot_ssdm_op.h"
     void _ssdm_op_IfRead() __attribute__ ((nothrow));
     void _ssdm_op_IfWrite() __attribute__ ((nothrow));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_IfNbRead() __attribute__ ((nothrow));
@@ -129,7 +128,7 @@
 
     void _ssdm_op_SpecBitsMap() __attribute__ ((nothrow));
     void _ssdm_op_SpecLicense() __attribute__ ((nothrow));
-# 8 "<command line>" 2
+# 7 "<command line>" 2
 # 1 "<built-in>" 2
 # 1 "LAB1_FIR/.settings/fir.c" 2
 
@@ -140,8 +139,8 @@
 
 
 typedef int type_coeff;
-typedef double type_data;
-typedef double type_acc;
+typedef int type_data;
+typedef int type_acc;
 
 void fir(type_data, type_data*);
 # 3 "LAB1_FIR/.settings/fir.c" 2
@@ -153,9 +152,6 @@ _ssdm_op_SpecInterface(out, "ap_vld", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, ""
 _ssdm_op_SpecInterface(probe_in, "ap_vld", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 
  type_coeff coeff[10] = {1, 2, 3, 4, 5, 1, 3, 4, 2, 1};
-_ssdm_SpecArrayReshape( coeff, 1,  "COMPLETE",  0, "");
-# 10 "LAB1_FIR/.settings/fir.c"
-
  static type_data data_in[10] = {0};
 _ssdm_SpecArrayPartition( &data_in, 1, "COMPLETE", 0, "");
 # 11 "LAB1_FIR/.settings/fir.c"

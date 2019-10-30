@@ -19,15 +19,17 @@ int main()
 	signal_in.id   = 0;
 	signal_in.dest = 0;
 
+	type_coeff coeff[FILTR_LENGTH] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
+
 	type_data test_data[BUFFER];
-	//ofstream file_out ("/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/FIR_solution1/csim/build/result.txt");
-	ofstream file_out ("D:/HLS/FIR_AXI4/Solution1/csim/build/result.txt");
+	ofstream file_out ("/home/lsriw/HLS_STANISZ/HLS/LAB1_FIR/FIR_solution1/csim/build/result.txt");
+	//ofstream file_out ("D:/HLS/FIR_AXI4/Solution1/csim/build/result.txt");
 
 	if(file_out.is_open()){
 		for (int i = 0; i < FILTR_LENGTH; i++) {
 			signal_in.data = i;
 			in << signal_in;
-			fir(in, out);
+			fir(in, out, coeff);
 			file_out << out.read().data << endl;
 		}
 	}

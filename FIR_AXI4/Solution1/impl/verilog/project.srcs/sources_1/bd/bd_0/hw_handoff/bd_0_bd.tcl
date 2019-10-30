@@ -155,7 +155,37 @@ proc create_root_design { parentCell } {
 
 
   # Create interface ports
-  set ap_ctrl [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:acc_handshake_rtl:1.0 ap_ctrl ]
+  set s_axi_bundle [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:aximm_rtl:1.0 s_axi_bundle ]
+  set_property -dict [ list \
+   CONFIG.ADDR_WIDTH {12} \
+   CONFIG.ARUSER_WIDTH {0} \
+   CONFIG.AWUSER_WIDTH {0} \
+   CONFIG.BUSER_WIDTH {0} \
+   CONFIG.DATA_WIDTH {32} \
+   CONFIG.FREQ_HZ {100000000.0} \
+   CONFIG.HAS_BRESP {1} \
+   CONFIG.HAS_BURST {0} \
+   CONFIG.HAS_CACHE {0} \
+   CONFIG.HAS_LOCK {0} \
+   CONFIG.HAS_PROT {0} \
+   CONFIG.HAS_QOS {0} \
+   CONFIG.HAS_REGION {0} \
+   CONFIG.HAS_RRESP {1} \
+   CONFIG.HAS_WSTRB {1} \
+   CONFIG.ID_WIDTH {0} \
+   CONFIG.MAX_BURST_LENGTH {1} \
+   CONFIG.NUM_READ_OUTSTANDING {1} \
+   CONFIG.NUM_READ_THREADS {1} \
+   CONFIG.NUM_WRITE_OUTSTANDING {1} \
+   CONFIG.NUM_WRITE_THREADS {1} \
+   CONFIG.PROTOCOL {AXI4LITE} \
+   CONFIG.READ_WRITE_MODE {READ_WRITE} \
+   CONFIG.RUSER_BITS_PER_BYTE {0} \
+   CONFIG.RUSER_WIDTH {0} \
+   CONFIG.SUPPORTS_NARROW_BURST {0} \
+   CONFIG.WUSER_BITS_PER_BYTE {0} \
+   CONFIG.WUSER_WIDTH {0} \
+   ] $s_axi_bundle
   set stream_in [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:axis_rtl:1.0 stream_in ]
   set_property -dict [ list \
    CONFIG.FREQ_HZ {100000000.0} \
@@ -180,20 +210,23 @@ proc create_root_design { parentCell } {
    CONFIG.FREQ_HZ {100000000.0} \
  ] $ap_clk
   set ap_rst_n [ create_bd_port -dir I -type rst ap_rst_n ]
+  set interrupt [ create_bd_port -dir O -type intr interrupt ]
 
   # Create instance: hls_inst, and set properties
   set hls_inst [ create_bd_cell -type ip -vlnv xilinx.com:hls:fir:1.0 hls_inst ]
 
   # Create interface connections
-  connect_bd_intf_net -intf_net ap_ctrl_0_1 [get_bd_intf_ports ap_ctrl] [get_bd_intf_pins hls_inst/ap_ctrl]
   connect_bd_intf_net -intf_net hls_inst_stream_out [get_bd_intf_ports stream_out] [get_bd_intf_pins hls_inst/stream_out]
+  connect_bd_intf_net -intf_net s_axi_bundle_0_1 [get_bd_intf_ports s_axi_bundle] [get_bd_intf_pins hls_inst/s_axi_bundle]
   connect_bd_intf_net -intf_net stream_in_0_1 [get_bd_intf_ports stream_in] [get_bd_intf_pins hls_inst/stream_in]
 
   # Create port connections
   connect_bd_net -net ap_clk_0_1 [get_bd_ports ap_clk] [get_bd_pins hls_inst/ap_clk]
   connect_bd_net -net ap_rst_n_0_1 [get_bd_ports ap_rst_n] [get_bd_pins hls_inst/ap_rst_n]
+  connect_bd_net -net hls_inst_interrupt [get_bd_ports interrupt] [get_bd_pins hls_inst/interrupt]
 
   # Create address segments
+  create_bd_addr_seg -range 0x00001000 -offset 0x00000000 [get_bd_addr_spaces s_axi_bundle] [get_bd_addr_segs hls_inst/s_axi_bundle/Reg] SEG_hls_inst_Reg
 
 
   # Restore current instance
