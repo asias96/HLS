@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Wed Oct 30 11:37:38 CET 2019
+// File generated on Wed Nov 06 10:45:11 CET 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -75514,7 +75514,8 @@ void fir(stream& stream_in, stream& stream_out, type_coeff coeff[10])
  type_acc acc = 0;
 
  int i,j;
- for(j = 0; j < 600; j++) {
+ STREAM_LOOP: for(j = 0; j < 600; j++) {
+#pragma HLS PIPELINE
 
   probe_in = stream_in.read();
   acc = 0;

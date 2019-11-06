@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'fir'" level="0">
-<item name = "Date">Wed Oct 30 11:40:53 2019
+<item name = "Date">Wed Nov  6 10:43:21 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">FIR_AXI4_new</item>
@@ -24,18 +24,18 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">606, 606, 606, 606, none</column>
+<column name="">604, 604, 605, 605, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_Loop_STREAM_LOOP_pro_fu_94">Loop_STREAM_LOOP_pro, 604, 604, 604, 604, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- STREAM_LOOP">604, 604, 6, 1, 1, 600, yes</column>
 </table>
 </item>
 </section>

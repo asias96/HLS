@@ -26,6 +26,8 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS_STANISZ/HLS/F
 INFO: [VRFC 10-311] analyzing module fifo
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/sim/verilog/fir.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fir
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/sim/verilog/Loop_STREAM_LOOP_pro.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Loop_STREAM_LOOP_pro
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/sim/verilog/AESL_axi_s_stream_out.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_axi_s_stream_out
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/sim/verilog/AESL_axi_s_stream_in.v" into library xil_defaultlib
@@ -40,6 +42,7 @@ Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.fir_bundle_s_axi
+Compiling module xil_defaultlib.Loop_STREAM_LOOP_pro
 Compiling module xil_defaultlib.fir
 Compiling module xil_defaultlib.fifo(DEPTH=600,WIDTH=32)
 Compiling module xil_defaultlib.fifo(DEPTH=600,WIDTH=4)
@@ -60,8 +63,8 @@ Built simulation snapshot fir
     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 
 source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/sim/verilog/xsim.dir/fir/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] '/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/sim/verilog/xsim.dir/fir/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Oct 30 11:37:52 2019. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Wed Oct 30 11:37:52 2019...
+INFO: [Common 17-186] '/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/sim/verilog/xsim.dir/fir/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Nov  6 10:45:26 2019. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Nov  6 10:45:26 2019...
 
 ****** xsim v2018.3 (64-bit)
   **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
@@ -81,10 +84,10 @@ source fir.tcl
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [0.00%] @ "125000"
-// RTL Simulation : 1 / 1 [100.00%] @ "31145000"
+// RTL Simulation : 1 / 1 [100.00%] @ "7145000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 31185 ns : File "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/sim/verilog/fir.autotb.v" Line 515
+$finish called at time : 7185 ns : File "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/sim/verilog/fir.autotb.v" Line 515
 ## quit
-INFO: [Common 17-206] Exiting xsim at Wed Oct 30 11:38:01 2019...
+INFO: [Common 17-206] Exiting xsim at Wed Nov  6 10:45:34 2019...
 INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***
 INFO: [COSIM-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.

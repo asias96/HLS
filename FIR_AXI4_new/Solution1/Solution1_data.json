@@ -12,7 +12,8 @@
     "Package": "clg400",
     "Speed": "-1"
   },
-  "HlsSolution": {"Config": [
+  "HlsSolution": {
+    "Config": [
       "config_sdx -optimization_level=none",
       "config_sdx -target=none",
       "config_schedule -effort=medium",
@@ -20,13 +21,16 @@
       "config_bind -effort=medium",
       "config_export -format=ip_catalog",
       "config_export -rtl=verilog"
-    ]},
+    ],
+    "DirectiveTcl": ["set_directive_dataflow fir "],
+    "DirectiveInfo": ["dataflow fir {} {}"]
+  },
   "ClockInfo": {
     "ClockName": "ap_clk",
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "606",
+    "Latency": "604",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -45,10 +49,12 @@
     "CSource": ["..\/..\/FIR_AXI4\/.settings\/fir.cpp"],
     "Vhdl": [
       "impl\/vhdl\/fir_bundle_s_axi.vhd",
+      "impl\/vhdl\/Loop_STREAM_LOOP_pro.vhd",
       "impl\/vhdl\/fir.vhd"
     ],
     "Verilog": [
       "impl\/verilog\/fir_bundle_s_axi.v",
+      "impl\/verilog\/Loop_STREAM_LOOP_pro.v",
       "impl\/verilog\/fir.v"
     ],
     "SwDriver": [
@@ -460,12 +466,6 @@
           "Type": "integer signed",
           "Width": "32"
         },
-        "TVALID": {"Type": "bool"},
-        "TREADY": {"Type": "bool"},
-        "TDEST": {
-          "Type": "integer unsigned",
-          "Width": "6"
-        },
         "TKEEP": {
           "Type": "integer unsigned",
           "Width": "4"
@@ -485,7 +485,13 @@
         "TID": {
           "Type": "integer unsigned",
           "Width": "5"
-        }
+        },
+        "TDEST": {
+          "Type": "integer unsigned",
+          "Width": "6"
+        },
+        "TVALID": {"Type": "bool"},
+        "TREADY": {"Type": "bool"}
       },
       "port_width": {
         "TDATA": "32",
@@ -507,12 +513,6 @@
           "Type": "integer signed",
           "Width": "32"
         },
-        "TREADY": {"Type": "bool"},
-        "TVALID": {"Type": "bool"},
-        "TDEST": {
-          "Type": "integer unsigned",
-          "Width": "6"
-        },
         "TKEEP": {
           "Type": "integer unsigned",
           "Width": "4"
@@ -532,7 +532,13 @@
         "TID": {
           "Type": "integer unsigned",
           "Width": "5"
-        }
+        },
+        "TDEST": {
+          "Type": "integer unsigned",
+          "Width": "6"
+        },
+        "TVALID": {"Type": "bool"},
+        "TREADY": {"Type": "bool"}
       },
       "port_width": {
         "TDATA": "32",
@@ -631,18 +637,6 @@
       "dir": "in",
       "width": "32"
     },
-    "stream_in_TVALID": {
-      "dir": "in",
-      "width": "1"
-    },
-    "stream_in_TREADY": {
-      "dir": "out",
-      "width": "1"
-    },
-    "stream_in_TDEST": {
-      "dir": "in",
-      "width": "6"
-    },
     "stream_in_TKEEP": {
       "dir": "in",
       "width": "4"
@@ -664,21 +658,21 @@
       "dir": "in",
       "width": "5"
     },
-    "stream_out_TDATA": {
-      "dir": "out",
-      "width": "32"
+    "stream_in_TDEST": {
+      "dir": "in",
+      "width": "6"
     },
-    "stream_out_TREADY": {
+    "stream_in_TVALID": {
       "dir": "in",
       "width": "1"
     },
-    "stream_out_TVALID": {
+    "stream_in_TREADY": {
       "dir": "out",
       "width": "1"
     },
-    "stream_out_TDEST": {
+    "stream_out_TDATA": {
       "dir": "out",
-      "width": "6"
+      "width": "32"
     },
     "stream_out_TKEEP": {
       "dir": "out",
@@ -700,6 +694,18 @@
     "stream_out_TID": {
       "dir": "out",
       "width": "5"
+    },
+    "stream_out_TDEST": {
+      "dir": "out",
+      "width": "6"
+    },
+    "stream_out_TVALID": {
+      "dir": "out",
+      "width": "1"
+    },
+    "stream_out_TREADY": {
+      "dir": "in",
+      "width": "1"
     }
   },
   "CPorts": {
@@ -792,10 +798,6 @@
       "interfaceRef": "stream_in",
       "dir": "in"
     },
-    "stream_in_V_dest_V": {
-      "interfaceRef": "stream_in",
-      "dir": "in"
-    },
     "stream_in_V_keep_V": {
       "interfaceRef": "stream_in",
       "dir": "in"
@@ -816,50 +818,61 @@
       "interfaceRef": "stream_in",
       "dir": "in"
     },
+    "stream_in_V_dest_V": {
+      "interfaceRef": "stream_in",
+      "dir": "in"
+    },
     "stream_out_V_data_V": {
       "interfaceRef": "stream_out",
       "dir": "out",
-      "firstOutLatency": "5"
-    },
-    "stream_out_V_dest_V": {
-      "interfaceRef": "stream_out",
-      "dir": "out",
-      "firstOutLatency": "5"
+      "firstOutLatency": "3"
     },
     "stream_out_V_keep_V": {
       "interfaceRef": "stream_out",
       "dir": "out",
-      "firstOutLatency": "5"
+      "firstOutLatency": "3"
     },
     "stream_out_V_strb_V": {
       "interfaceRef": "stream_out",
       "dir": "out",
-      "firstOutLatency": "5"
+      "firstOutLatency": "3"
     },
     "stream_out_V_user_V": {
       "interfaceRef": "stream_out",
       "dir": "out",
-      "firstOutLatency": "5"
+      "firstOutLatency": "3"
     },
     "stream_out_V_last_V": {
       "interfaceRef": "stream_out",
       "dir": "out",
-      "firstOutLatency": "5"
+      "firstOutLatency": "3"
     },
     "stream_out_V_id_V": {
       "interfaceRef": "stream_out",
       "dir": "out",
-      "firstOutLatency": "5"
+      "firstOutLatency": "3"
+    },
+    "stream_out_V_dest_V": {
+      "interfaceRef": "stream_out",
+      "dir": "out",
+      "firstOutLatency": "3"
     }
   },
   "ModuleInfo": {
-    "Hierarchy": {"ModuleName": "fir"},
-    "Metrics": {"fir": {
+    "Hierarchy": {
+      "ModuleName": "fir",
+      "Instances": [{
+          "ModuleName": "Loop_STREAM_LOOP_pro",
+          "InstanceName": "Loop_STREAM_LOOP_pro_U0"
+        }]
+    },
+    "Metrics": {
+      "Loop_STREAM_LOOP_pro": {
         "Latency": {
-          "LatencyBest": "606",
-          "LatencyAvg": "606",
-          "LatencyWorst": "606",
-          "PipelineII": "607",
+          "LatencyBest": "604",
+          "LatencyAvg": "604",
+          "LatencyWorst": "604",
+          "PipelineII": "604",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -871,17 +884,39 @@
         "Loops": [{
             "Name": "STREAM_LOOP",
             "TripCount": "600",
-            "Latency": "604",
+            "Latency": "602",
             "PipelineII": "1",
-            "PipelineDepth": "6"
+            "PipelineDepth": "4"
           }],
         "Area": {
           "BRAM_18K": "0",
           "DSP48E": "30",
-          "FF": "2266",
-          "LUT": "2012"
+          "FF": "1465",
+          "LUT": "1343"
         }
-      }}
+      },
+      "fir": {
+        "Latency": {
+          "LatencyBest": "604",
+          "LatencyAvg": "604",
+          "LatencyWorst": "604",
+          "PipelineII": "605",
+          "PipelineDepth": "",
+          "PipelineType": "dataflow"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.742"
+        },
+        "Area": {
+          "BRAM_18K": "0",
+          "DSP48E": "30",
+          "FF": "1881",
+          "LUT": "2023"
+        }
+      }
+    }
   },
   "Sdx": {
     "Target": "none",
@@ -893,7 +928,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-10-30 11:40:55 CET",
+    "Time": "2019-11-06 10:43:23 CET",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

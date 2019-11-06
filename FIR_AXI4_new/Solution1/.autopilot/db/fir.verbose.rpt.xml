@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'fir'" level="0">
-<item name = "Date">Wed Oct 30 11:40:54 2019
+<item name = "Date">Wed Nov  6 10:43:22 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">FIR_AXI4_new</item>
@@ -24,18 +24,18 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">606, 606, 606, 606, none</column>
+<column name="">604, 604, 605, 605, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="Loop_STREAM_LOOP_pro_U0">Loop_STREAM_LOOP_pro, 604, 604, 604, 604, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- STREAM_LOOP">604, 604, 6, 1, 1, 600, yes</column>
 </table>
 </item>
 </section>
@@ -48,20 +48,21 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
 <column name="DSP">-, -, -, -</column>
-<column name="Expression">-, 30, 0, 706</column>
+<column name="Expression">-, -, -, -</column>
 <column name="FIFO">-, -, -, -</column>
-<column name="Instance">0, -, 416, 680</column>
+<column name="Instance">0, 30, 1881, 2023</column>
 <column name="Memory">-, -, -, -</column>
-<column name="Multiplexer">-, -, -, 402</column>
-<column name="Register">0, -, 1850, 224</column>
+<column name="Multiplexer">-, -, -, -</column>
+<column name="Register">-, -, -, -</column>
 <specialColumn name="Available">120, 80, 35200, 17600</specialColumn>
-<specialColumn name="Utilization (%)">0, 37, 6, 11</specialColumn>
+<specialColumn name="Utilization (%)">0, 37, 5, 11</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="Loop_STREAM_LOOP_pro_U0">Loop_STREAM_LOOP_pro, 0, 30, 1465, 1343</column>
 <column name="fir_bundle_s_axi_U">fir_bundle_s_axi, 0, 0, 416, 680</column>
 </table>
 </item>
@@ -79,245 +80,14 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="p_1_1_fu_289_p2">*, 3, 0, 20, 32, 32</column>
-<column name="p_1_2_fu_304_p2">*, 3, 0, 20, 32, 32</column>
-<column name="p_1_3_fu_319_p2">*, 3, 0, 20, 32, 32</column>
-<column name="p_1_4_fu_334_p2">*, 3, 0, 20, 32, 32</column>
-<column name="p_1_5_fu_349_p2">*, 3, 0, 20, 32, 32</column>
-<column name="p_1_6_fu_364_p2">*, 3, 0, 20, 32, 32</column>
-<column name="p_1_7_fu_379_p2">*, 3, 0, 20, 32, 32</column>
-<column name="p_1_8_fu_394_p2">*, 3, 0, 20, 32, 32</column>
-<column name="p_1_fu_274_p2">*, 3, 0, 20, 32, 32</column>
-<column name="p_2_fu_404_p2">*, 3, 0, 20, 32, 32</column>
-<column name="acc_V_fu_444_p2">+, 0, 0, 32, 32, 32</column>
-<column name="j_1_fu_236_p2">+, 0, 0, 14, 10, 1</column>
-<column name="tmp1_fu_440_p2">+, 0, 0, 32, 32, 32</column>
-<column name="tmp2_fu_408_p2">+, 0, 0, 39, 32, 32</column>
-<column name="tmp3_fu_416_p2">+, 0, 0, 32, 32, 32</column>
-<column name="tmp4_fu_412_p2">+, 0, 0, 32, 32, 32</column>
-<column name="tmp5_fu_434_p2">+, 0, 0, 32, 32, 32</column>
-<column name="tmp6_fu_421_p2">+, 0, 0, 32, 32, 32</column>
-<column name="tmp7_fu_429_p2">+, 0, 0, 32, 32, 32</column>
-<column name="tmp8_fu_425_p2">+, 0, 0, 32, 32, 32</column>
-<column name="ap_block_pp0_stage0_01001">and, 0, 0, 2, 1, 1</column>
-<column name="ap_block_state2_pp0_stage0_iter0">and, 0, 0, 2, 1, 1</column>
-<column name="ap_block_state6_io">and, 0, 0, 2, 1, 1</column>
-<column name="ap_block_state7_io">and, 0, 0, 2, 1, 1</column>
-<column name="stream_in_V_data_V_0_load_A">and, 0, 0, 2, 1, 1</column>
-<column name="stream_in_V_data_V_0_load_B">and, 0, 0, 2, 1, 1</column>
-<column name="stream_in_V_dest_V_0_load_A">and, 0, 0, 2, 1, 1</column>
-<column name="stream_in_V_dest_V_0_load_B">and, 0, 0, 2, 1, 1</column>
-<column name="stream_in_V_id_V_0_load_A">and, 0, 0, 2, 1, 1</column>
-<column name="stream_in_V_id_V_0_load_B">and, 0, 0, 2, 1, 1</column>
-<column name="stream_in_V_keep_V_0_load_A">and, 0, 0, 2, 1, 1</column>
-<column name="stream_in_V_keep_V_0_load_B">and, 0, 0, 2, 1, 1</column>
-<column name="stream_in_V_last_V_0_load_A">and, 0, 0, 2, 1, 1</column>
-<column name="stream_in_V_last_V_0_load_B">and, 0, 0, 2, 1, 1</column>
-<column name="stream_in_V_strb_V_0_load_A">and, 0, 0, 2, 1, 1</column>
-<column name="stream_in_V_strb_V_0_load_B">and, 0, 0, 2, 1, 1</column>
-<column name="stream_in_V_user_V_0_load_A">and, 0, 0, 2, 1, 1</column>
-<column name="stream_in_V_user_V_0_load_B">and, 0, 0, 2, 1, 1</column>
-<column name="stream_out_V_data_V_1_load_A">and, 0, 0, 2, 1, 1</column>
-<column name="stream_out_V_data_V_1_load_B">and, 0, 0, 2, 1, 1</column>
-<column name="stream_out_V_dest_V_1_load_A">and, 0, 0, 2, 1, 1</column>
-<column name="stream_out_V_dest_V_1_load_B">and, 0, 0, 2, 1, 1</column>
-<column name="stream_out_V_id_V_1_load_A">and, 0, 0, 2, 1, 1</column>
-<column name="stream_out_V_id_V_1_load_B">and, 0, 0, 2, 1, 1</column>
-<column name="stream_out_V_keep_V_1_load_A">and, 0, 0, 2, 1, 1</column>
-<column name="stream_out_V_keep_V_1_load_B">and, 0, 0, 2, 1, 1</column>
-<column name="stream_out_V_last_V_1_load_A">and, 0, 0, 2, 1, 1</column>
-<column name="stream_out_V_last_V_1_load_B">and, 0, 0, 2, 1, 1</column>
-<column name="stream_out_V_strb_V_1_load_A">and, 0, 0, 2, 1, 1</column>
-<column name="stream_out_V_strb_V_1_load_B">and, 0, 0, 2, 1, 1</column>
-<column name="stream_out_V_user_V_1_load_A">and, 0, 0, 2, 1, 1</column>
-<column name="stream_out_V_user_V_1_load_B">and, 0, 0, 2, 1, 1</column>
-<column name="exitcond_fu_230_p2">icmp, 0, 0, 13, 10, 10</column>
-<column name="stream_in_V_data_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
-<column name="stream_in_V_dest_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
-<column name="stream_in_V_id_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
-<column name="stream_in_V_keep_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
-<column name="stream_in_V_last_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
-<column name="stream_in_V_strb_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
-<column name="stream_in_V_user_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
-<column name="stream_out_V_data_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
-<column name="stream_out_V_dest_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
-<column name="stream_out_V_id_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
-<column name="stream_out_V_keep_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
-<column name="stream_out_V_last_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
-<column name="stream_out_V_strb_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
-<column name="stream_out_V_user_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
-<column name="ap_block_pp0_stage0_11001">or, 0, 0, 2, 1, 1</column>
-<column name="ap_block_state8">or, 0, 0, 2, 1, 1</column>
-<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
-<column name="ap_enable_reg_pp0_iter1">xor, 0, 0, 2, 2, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">21, 4, 1, 4</column>
-<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
-<column name="ap_enable_reg_pp0_iter5">9, 2, 1, 2</column>
-<column name="j_reg_219">9, 2, 10, 20</column>
-<column name="stream_in_TDATA_blk_n">9, 2, 1, 2</column>
-<column name="stream_in_V_data_V_0_data_out">9, 2, 32, 64</column>
-<column name="stream_in_V_data_V_0_state">15, 3, 2, 6</column>
-<column name="stream_in_V_dest_V_0_data_out">9, 2, 6, 12</column>
-<column name="stream_in_V_dest_V_0_state">15, 3, 2, 6</column>
-<column name="stream_in_V_id_V_0_data_out">9, 2, 5, 10</column>
-<column name="stream_in_V_id_V_0_state">15, 3, 2, 6</column>
-<column name="stream_in_V_keep_V_0_data_out">9, 2, 4, 8</column>
-<column name="stream_in_V_keep_V_0_state">15, 3, 2, 6</column>
-<column name="stream_in_V_last_V_0_data_out">9, 2, 1, 2</column>
-<column name="stream_in_V_last_V_0_state">15, 3, 2, 6</column>
-<column name="stream_in_V_strb_V_0_data_out">9, 2, 4, 8</column>
-<column name="stream_in_V_strb_V_0_state">15, 3, 2, 6</column>
-<column name="stream_in_V_user_V_0_data_out">9, 2, 2, 4</column>
-<column name="stream_in_V_user_V_0_state">15, 3, 2, 6</column>
-<column name="stream_out_TDATA_blk_n">9, 2, 1, 2</column>
-<column name="stream_out_V_data_V_1_data_out">9, 2, 32, 64</column>
-<column name="stream_out_V_data_V_1_state">15, 3, 2, 6</column>
-<column name="stream_out_V_dest_V_1_data_out">9, 2, 6, 12</column>
-<column name="stream_out_V_dest_V_1_state">15, 3, 2, 6</column>
-<column name="stream_out_V_id_V_1_data_out">9, 2, 5, 10</column>
-<column name="stream_out_V_id_V_1_state">15, 3, 2, 6</column>
-<column name="stream_out_V_keep_V_1_data_out">9, 2, 4, 8</column>
-<column name="stream_out_V_keep_V_1_state">15, 3, 2, 6</column>
-<column name="stream_out_V_last_V_1_data_out">9, 2, 1, 2</column>
-<column name="stream_out_V_last_V_1_state">15, 3, 2, 6</column>
-<column name="stream_out_V_strb_V_1_data_out">9, 2, 4, 8</column>
-<column name="stream_out_V_strb_V_1_state">15, 3, 2, 6</column>
-<column name="stream_out_V_user_V_1_data_out">9, 2, 2, 4</column>
-<column name="stream_out_V_user_V_1_state">15, 3, 2, 6</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">3, 0, 3, 0</column>
-<column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter4">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter5">1, 0, 1, 0</column>
-<column name="coeff_0_V_read_reg_540">32, 0, 32, 0</column>
-<column name="coeff_1_V_read_reg_535">32, 0, 32, 0</column>
-<column name="coeff_2_V_read_reg_530">32, 0, 32, 0</column>
-<column name="coeff_3_V_read_reg_525">32, 0, 32, 0</column>
-<column name="coeff_4_V_read_reg_520">32, 0, 32, 0</column>
-<column name="coeff_5_V_read_reg_515">32, 0, 32, 0</column>
-<column name="coeff_6_V_read_reg_510">32, 0, 32, 0</column>
-<column name="coeff_7_V_read_reg_505">32, 0, 32, 0</column>
-<column name="coeff_8_V_read_reg_500">32, 0, 32, 0</column>
-<column name="coeff_9_V_read_reg_495">32, 0, 32, 0</column>
-<column name="data_in_V_0">32, 0, 32, 0</column>
-<column name="data_in_V_1">32, 0, 32, 0</column>
-<column name="data_in_V_2">32, 0, 32, 0</column>
-<column name="data_in_V_3">32, 0, 32, 0</column>
-<column name="data_in_V_4">32, 0, 32, 0</column>
-<column name="data_in_V_5">32, 0, 32, 0</column>
-<column name="data_in_V_6">32, 0, 32, 0</column>
-<column name="data_in_V_7">32, 0, 32, 0</column>
-<column name="data_in_V_8">32, 0, 32, 0</column>
-<column name="exitcond_reg_450">1, 0, 1, 0</column>
-<column name="j_reg_219">10, 0, 10, 0</column>
-<column name="p_1_1_reg_550">32, 0, 32, 0</column>
-<column name="p_1_2_reg_555">32, 0, 32, 0</column>
-<column name="p_1_3_reg_560">32, 0, 32, 0</column>
-<column name="p_1_4_reg_565">32, 0, 32, 0</column>
-<column name="p_1_5_reg_570">32, 0, 32, 0</column>
-<column name="p_1_6_reg_575">32, 0, 32, 0</column>
-<column name="p_1_7_reg_580">32, 0, 32, 0</column>
-<column name="p_1_8_reg_585">32, 0, 32, 0</column>
-<column name="p_1_reg_545">32, 0, 32, 0</column>
-<column name="p_2_reg_590">32, 0, 32, 0</column>
-<column name="stream_in_V_data_V_0_payload_A">32, 0, 32, 0</column>
-<column name="stream_in_V_data_V_0_payload_B">32, 0, 32, 0</column>
-<column name="stream_in_V_data_V_0_sel_rd">1, 0, 1, 0</column>
-<column name="stream_in_V_data_V_0_sel_wr">1, 0, 1, 0</column>
-<column name="stream_in_V_data_V_0_state">2, 0, 2, 0</column>
-<column name="stream_in_V_dest_V_0_payload_A">6, 0, 6, 0</column>
-<column name="stream_in_V_dest_V_0_payload_B">6, 0, 6, 0</column>
-<column name="stream_in_V_dest_V_0_sel_rd">1, 0, 1, 0</column>
-<column name="stream_in_V_dest_V_0_sel_wr">1, 0, 1, 0</column>
-<column name="stream_in_V_dest_V_0_state">2, 0, 2, 0</column>
-<column name="stream_in_V_id_V_0_payload_A">5, 0, 5, 0</column>
-<column name="stream_in_V_id_V_0_payload_B">5, 0, 5, 0</column>
-<column name="stream_in_V_id_V_0_sel_rd">1, 0, 1, 0</column>
-<column name="stream_in_V_id_V_0_sel_wr">1, 0, 1, 0</column>
-<column name="stream_in_V_id_V_0_state">2, 0, 2, 0</column>
-<column name="stream_in_V_keep_V_0_payload_A">4, 0, 4, 0</column>
-<column name="stream_in_V_keep_V_0_payload_B">4, 0, 4, 0</column>
-<column name="stream_in_V_keep_V_0_sel_rd">1, 0, 1, 0</column>
-<column name="stream_in_V_keep_V_0_sel_wr">1, 0, 1, 0</column>
-<column name="stream_in_V_keep_V_0_state">2, 0, 2, 0</column>
-<column name="stream_in_V_last_V_0_payload_A">1, 0, 1, 0</column>
-<column name="stream_in_V_last_V_0_payload_B">1, 0, 1, 0</column>
-<column name="stream_in_V_last_V_0_sel_rd">1, 0, 1, 0</column>
-<column name="stream_in_V_last_V_0_sel_wr">1, 0, 1, 0</column>
-<column name="stream_in_V_last_V_0_state">2, 0, 2, 0</column>
-<column name="stream_in_V_strb_V_0_payload_A">4, 0, 4, 0</column>
-<column name="stream_in_V_strb_V_0_payload_B">4, 0, 4, 0</column>
-<column name="stream_in_V_strb_V_0_sel_rd">1, 0, 1, 0</column>
-<column name="stream_in_V_strb_V_0_sel_wr">1, 0, 1, 0</column>
-<column name="stream_in_V_strb_V_0_state">2, 0, 2, 0</column>
-<column name="stream_in_V_user_V_0_payload_A">2, 0, 2, 0</column>
-<column name="stream_in_V_user_V_0_payload_B">2, 0, 2, 0</column>
-<column name="stream_in_V_user_V_0_sel_rd">1, 0, 1, 0</column>
-<column name="stream_in_V_user_V_0_sel_wr">1, 0, 1, 0</column>
-<column name="stream_in_V_user_V_0_state">2, 0, 2, 0</column>
-<column name="stream_out_V_data_V_1_payload_A">32, 0, 32, 0</column>
-<column name="stream_out_V_data_V_1_payload_B">32, 0, 32, 0</column>
-<column name="stream_out_V_data_V_1_sel_rd">1, 0, 1, 0</column>
-<column name="stream_out_V_data_V_1_sel_wr">1, 0, 1, 0</column>
-<column name="stream_out_V_data_V_1_state">2, 0, 2, 0</column>
-<column name="stream_out_V_dest_V_1_payload_A">6, 0, 6, 0</column>
-<column name="stream_out_V_dest_V_1_payload_B">6, 0, 6, 0</column>
-<column name="stream_out_V_dest_V_1_sel_rd">1, 0, 1, 0</column>
-<column name="stream_out_V_dest_V_1_sel_wr">1, 0, 1, 0</column>
-<column name="stream_out_V_dest_V_1_state">2, 0, 2, 0</column>
-<column name="stream_out_V_id_V_1_payload_A">5, 0, 5, 0</column>
-<column name="stream_out_V_id_V_1_payload_B">5, 0, 5, 0</column>
-<column name="stream_out_V_id_V_1_sel_rd">1, 0, 1, 0</column>
-<column name="stream_out_V_id_V_1_sel_wr">1, 0, 1, 0</column>
-<column name="stream_out_V_id_V_1_state">2, 0, 2, 0</column>
-<column name="stream_out_V_keep_V_1_payload_A">4, 0, 4, 0</column>
-<column name="stream_out_V_keep_V_1_payload_B">4, 0, 4, 0</column>
-<column name="stream_out_V_keep_V_1_sel_rd">1, 0, 1, 0</column>
-<column name="stream_out_V_keep_V_1_sel_wr">1, 0, 1, 0</column>
-<column name="stream_out_V_keep_V_1_state">2, 0, 2, 0</column>
-<column name="stream_out_V_last_V_1_payload_A">1, 0, 1, 0</column>
-<column name="stream_out_V_last_V_1_payload_B">1, 0, 1, 0</column>
-<column name="stream_out_V_last_V_1_sel_rd">1, 0, 1, 0</column>
-<column name="stream_out_V_last_V_1_sel_wr">1, 0, 1, 0</column>
-<column name="stream_out_V_last_V_1_state">2, 0, 2, 0</column>
-<column name="stream_out_V_strb_V_1_payload_A">4, 0, 4, 0</column>
-<column name="stream_out_V_strb_V_1_payload_B">4, 0, 4, 0</column>
-<column name="stream_out_V_strb_V_1_sel_rd">1, 0, 1, 0</column>
-<column name="stream_out_V_strb_V_1_sel_wr">1, 0, 1, 0</column>
-<column name="stream_out_V_strb_V_1_state">2, 0, 2, 0</column>
-<column name="stream_out_V_user_V_1_payload_A">2, 0, 2, 0</column>
-<column name="stream_out_V_user_V_1_payload_B">2, 0, 2, 0</column>
-<column name="stream_out_V_user_V_1_sel_rd">1, 0, 1, 0</column>
-<column name="stream_out_V_user_V_1_sel_wr">1, 0, 1, 0</column>
-<column name="stream_out_V_user_V_1_state">2, 0, 2, 0</column>
-<column name="tmp2_reg_595">32, 0, 32, 0</column>
-<column name="tmp3_reg_600">32, 0, 32, 0</column>
-<column name="tmp5_reg_605">32, 0, 32, 0</column>
-<column name="tmp_data_V_reg_459">32, 0, 32, 0</column>
-<column name="tmp_data_V_reg_459_pp0_iter1_reg">32, 0, 32, 0</column>
-<column name="tmp_dest_V_reg_490">6, 0, 6, 0</column>
-<column name="tmp_id_V_reg_485">5, 0, 5, 0</column>
-<column name="tmp_keep_V_reg_465">4, 0, 4, 0</column>
-<column name="tmp_last_V_reg_480">1, 0, 1, 0</column>
-<column name="tmp_strb_V_reg_470">4, 0, 4, 0</column>
-<column name="tmp_user_V_reg_475">2, 0, 2, 0</column>
-<column name="exitcond_reg_450">64, 32, 1, 0</column>
-<column name="tmp_dest_V_reg_490">64, 32, 6, 0</column>
-<column name="tmp_id_V_reg_485">64, 32, 5, 0</column>
-<column name="tmp_keep_V_reg_465">64, 32, 4, 0</column>
-<column name="tmp_last_V_reg_480">64, 32, 1, 0</column>
-<column name="tmp_strb_V_reg_470">64, 32, 4, 0</column>
-<column name="tmp_user_V_reg_475">64, 32, 2, 0</column>
 </table>
 </item>
 </section>
@@ -348,23 +118,23 @@
 <column name="ap_rst_n">in, 1, ap_ctrl_hs, fir, return value</column>
 <column name="interrupt">out, 1, ap_ctrl_hs, fir, return value</column>
 <column name="stream_in_TDATA">in, 32, axis, stream_in_V_data_V, pointer</column>
-<column name="stream_in_TVALID">in, 1, axis, stream_in_V_dest_V, pointer</column>
-<column name="stream_in_TREADY">out, 1, axis, stream_in_V_dest_V, pointer</column>
-<column name="stream_in_TDEST">in, 6, axis, stream_in_V_dest_V, pointer</column>
 <column name="stream_in_TKEEP">in, 4, axis, stream_in_V_keep_V, pointer</column>
 <column name="stream_in_TSTRB">in, 4, axis, stream_in_V_strb_V, pointer</column>
 <column name="stream_in_TUSER">in, 2, axis, stream_in_V_user_V, pointer</column>
 <column name="stream_in_TLAST">in, 1, axis, stream_in_V_last_V, pointer</column>
 <column name="stream_in_TID">in, 5, axis, stream_in_V_id_V, pointer</column>
+<column name="stream_in_TDEST">in, 6, axis, stream_in_V_dest_V, pointer</column>
+<column name="stream_in_TVALID">in, 1, axis, stream_in_V_dest_V, pointer</column>
+<column name="stream_in_TREADY">out, 1, axis, stream_in_V_dest_V, pointer</column>
 <column name="stream_out_TDATA">out, 32, axis, stream_out_V_data_V, pointer</column>
-<column name="stream_out_TREADY">in, 1, axis, stream_out_V_data_V, pointer</column>
-<column name="stream_out_TVALID">out, 1, axis, stream_out_V_dest_V, pointer</column>
-<column name="stream_out_TDEST">out, 6, axis, stream_out_V_dest_V, pointer</column>
 <column name="stream_out_TKEEP">out, 4, axis, stream_out_V_keep_V, pointer</column>
 <column name="stream_out_TSTRB">out, 4, axis, stream_out_V_strb_V, pointer</column>
 <column name="stream_out_TUSER">out, 2, axis, stream_out_V_user_V, pointer</column>
 <column name="stream_out_TLAST">out, 1, axis, stream_out_V_last_V, pointer</column>
 <column name="stream_out_TID">out, 5, axis, stream_out_V_id_V, pointer</column>
+<column name="stream_out_TDEST">out, 6, axis, stream_out_V_dest_V, pointer</column>
+<column name="stream_out_TVALID">out, 1, axis, stream_out_V_dest_V, pointer</column>
+<column name="stream_out_TREADY">in, 1, axis, stream_out_V_dest_V, pointer</column>
 </table>
 </item>
 </section>

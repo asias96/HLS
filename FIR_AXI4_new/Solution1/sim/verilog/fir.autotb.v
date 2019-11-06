@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Wed Oct 30 11:37:45 CET 2019
+// File generated on Wed Nov 06 10:45:19 CET 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -107,7 +107,7 @@ module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 3001;
+parameter LATENCY_ESTIMATION = 604;
 parameter LENGTH_stream_in_V_data_V = 600;
 parameter LENGTH_stream_in_V_keep_V = 600;
 parameter LENGTH_stream_in_V_strb_V = 600;
@@ -180,8 +180,6 @@ wire  bundle_BREADY;
 wire [1 : 0] bundle_BRESP;
 wire  bundle_INTERRUPT;
 wire [31 : 0] stream_in_TDATA;
-wire  stream_in_TVALID;
-wire  stream_in_TREADY;
 wire [3 : 0] stream_in_TKEEP;
 wire [3 : 0] stream_in_TSTRB;
 wire [1 : 0] stream_in_TUSER;
@@ -189,14 +187,16 @@ wire [0 : 0] stream_in_TLAST;
 wire [4 : 0] stream_in_TID;
 wire [5 : 0] stream_in_TDEST;
 wire [31 : 0] stream_out_TDATA;
-wire  stream_out_TVALID;
-wire  stream_out_TREADY;
 wire [3 : 0] stream_out_TKEEP;
 wire [3 : 0] stream_out_TSTRB;
 wire [1 : 0] stream_out_TUSER;
 wire [0 : 0] stream_out_TLAST;
 wire [4 : 0] stream_out_TID;
 wire [5 : 0] stream_out_TDEST;
+wire  stream_in_TVALID;
+wire  stream_in_TREADY;
+wire  stream_out_TVALID;
+wire  stream_out_TREADY;
 integer done_cnt = 0;
 integer AESL_ready_cnt = 0;
 integer ready_cnt = 0;
@@ -246,8 +246,6 @@ wire ap_rst_n_n;
     .ap_clk(ap_clk),
     .ap_rst_n(ap_rst_n),
     .stream_in_TDATA(stream_in_TDATA),
-    .stream_in_TVALID(stream_in_TVALID),
-    .stream_in_TREADY(stream_in_TREADY),
     .stream_in_TKEEP(stream_in_TKEEP),
     .stream_in_TSTRB(stream_in_TSTRB),
     .stream_in_TUSER(stream_in_TUSER),
@@ -255,14 +253,16 @@ wire ap_rst_n_n;
     .stream_in_TID(stream_in_TID),
     .stream_in_TDEST(stream_in_TDEST),
     .stream_out_TDATA(stream_out_TDATA),
-    .stream_out_TVALID(stream_out_TVALID),
-    .stream_out_TREADY(stream_out_TREADY),
     .stream_out_TKEEP(stream_out_TKEEP),
     .stream_out_TSTRB(stream_out_TSTRB),
     .stream_out_TUSER(stream_out_TUSER),
     .stream_out_TLAST(stream_out_TLAST),
     .stream_out_TID(stream_out_TID),
-    .stream_out_TDEST(stream_out_TDEST));
+    .stream_out_TDEST(stream_out_TDEST),
+    .stream_in_TVALID(stream_in_TVALID),
+    .stream_in_TREADY(stream_in_TREADY),
+    .stream_out_TVALID(stream_out_TVALID),
+    .stream_out_TREADY(stream_out_TREADY));
 
 // Assignment for control signal
 assign ap_clk = AESL_clock;
@@ -1160,7 +1160,7 @@ task calculate_performance();
                 interval_min = 0;
                 interval_total = 0;
             end else if (i < AUTOTB_TRANSACTION_NUM - 1) begin
-                interval[i] = finish_timestamp[i] - start_timestamp[i]+1;
+                interval[i] = start_timestamp[i + 1] - start_timestamp[i];
                 if (interval[i] > interval_max) interval_max = interval[i];
                 if (interval[i] < interval_min) interval_min = interval[i];
                 interval_total = interval_total + interval[i];

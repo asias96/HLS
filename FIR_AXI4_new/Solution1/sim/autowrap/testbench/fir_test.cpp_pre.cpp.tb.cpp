@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Wed Oct 30 11:37:21 CET 2019
+// File generated on Wed Nov 06 10:44:55 CET 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -77374,8 +77374,12 @@ int main()
 
 
  if(file_out.is_open()){
-  for (int i = 0; i < 600; i++) {
-   signal_in.data = i;
+  for (int i = 0; i < 300; i++) {
+   signal_in.data = 0;
+   in << signal_in;
+  }
+  for (int i = 0; i < 300; i++) {
+   signal_in.data = 1;
    in << signal_in;
   }
  }
@@ -77389,19 +77393,19 @@ int main()
 #define fir AESL_WRAP_fir
 #endif
 
-#39 "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/.settings/fir_test.cpp"
+#43 "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/.settings/fir_test.cpp"
 
 #ifndef HLS_FASTSIM
 #define fir AESL_WRAP_fir
 #endif
 
-#39 "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/.settings/fir_test.cpp"
+#43 "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/.settings/fir_test.cpp"
 fir
 #undef fir
-#39 "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/.settings/fir_test.cpp"
+#43 "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/.settings/fir_test.cpp"
 
 #undef fir
-#39 "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/.settings/fir_test.cpp"
+#43 "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/.settings/fir_test.cpp"
 (in, out, coeff);
 
  if(file_out.is_open()){
@@ -77419,4 +77423,4 @@ fir
  return 0;
 }
 #endif
-#54 "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/.settings/fir_test.cpp"
+#58 "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/.settings/fir_test.cpp"

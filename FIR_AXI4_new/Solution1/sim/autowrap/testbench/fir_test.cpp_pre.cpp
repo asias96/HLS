@@ -77358,8 +77358,12 @@ int main()
 
 
  if(file_out.is_open()){
-  for (int i = 0; i < 600; i++) {
-   signal_in.data = i;
+  for (int i = 0; i < 300; i++) {
+   signal_in.data = 0;
+   in << signal_in;
+  }
+  for (int i = 0; i < 300; i++) {
+   signal_in.data = 1;
    in << signal_in;
   }
  }

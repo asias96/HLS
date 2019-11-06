@@ -77367,8 +77367,12 @@ int main()
 #pragma empty_line
 #pragma empty_line
  if(file_out.is_open()){
-  for (int i = 0; i < 600; i++) {
-   signal_in.data = i;
+  for (int i = 0; i < 300; i++) {
+   signal_in.data = 0;
+   in << signal_in;
+  }
+  for (int i = 0; i < 300; i++) {
+   signal_in.data = 1;
    in << signal_in;
   }
  }
@@ -77382,19 +77386,19 @@ int main()
 #define fir AESL_WRAP_fir
 #endif
 
-#pragma line 39 "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/.settings/fir_test.cpp"
+#pragma line 43 "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/.settings/fir_test.cpp"
 
 #ifndef HLS_FASTSIM
 #define fir AESL_WRAP_fir
 #endif
 
-#pragma line 39 "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/.settings/fir_test.cpp"
+#pragma line 43 "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/.settings/fir_test.cpp"
 fir
 #undef fir
-#pragma line 39 "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/.settings/fir_test.cpp"
+#pragma line 43 "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/.settings/fir_test.cpp"
 
 #undef fir
-#pragma line 39 "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/.settings/fir_test.cpp"
+#pragma line 43 "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/.settings/fir_test.cpp"
 (in, out, coeff);
 #pragma empty_line
  if(file_out.is_open()){
@@ -77412,4 +77416,4 @@ fir
  return 0;
 }
 #endif
-#pragma line 54 "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/.settings/fir_test.cpp"
+#pragma line 58 "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/.settings/fir_test.cpp"

@@ -75507,7 +75507,8 @@ void fir(stream& stream_in, stream& stream_out, type_coeff coeff[10])
  type_acc acc = 0;
 
  int i,j;
- for(j = 0; j < 600; j++) {
+ STREAM_LOOP: for(j = 0; j < 600; j++) {
+#pragma HLS PIPELINE
 
   probe_in = stream_in.read();
   acc = 0;

@@ -6718,6 +6718,9 @@ void fir(stream&, stream&, type_coeff[10]);
 
 void fir(stream& stream_in, stream& stream_out, type_coeff coeff[10])
 {_ssdm_SpecArrayDimSize(coeff, 10);
+_ssdm_op_SpecDataflowPipeline(-1, 0, "");
+# 5 "FIR_AXI4/.settings/fir.cpp"
+
 _ssdm_SpecArrayPartition( coeff, 1, "COMPLETE", 0, "");
 _ssdm_op_SpecInterface(0, "s_axilite", 0, 0, "", 0, 0, "bundle", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(coeff, "s_axilite", 0, 0, "", 0, 0, "bundle", "", "", 0, 0, 0, 0, "", "");

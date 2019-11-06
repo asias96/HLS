@@ -12,6 +12,8 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS_STANISZ/HLS/F
 INFO: [VRFC 10-311] analyzing module fifo
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/sim/verilog/fir.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fir
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/sim/verilog/Loop_STREAM_LOOP_pro.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Loop_STREAM_LOOP_pro
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/sim/verilog/AESL_axi_s_stream_out.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_axi_s_stream_out
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/sim/verilog/AESL_axi_s_stream_in.v" into library xil_defaultlib
@@ -26,6 +28,7 @@ Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.fir_bundle_s_axi
+Compiling module xil_defaultlib.Loop_STREAM_LOOP_pro
 Compiling module xil_defaultlib.fir
 Compiling module xil_defaultlib.fifo(DEPTH=600,WIDTH=32)
 Compiling module xil_defaultlib.fifo(DEPTH=600,WIDTH=4)

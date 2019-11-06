@@ -6718,6 +6718,9 @@ void fir(stream&, stream&, type_coeff[10]);
 
 void fir(stream& stream_in, stream& stream_out, type_coeff coeff[10])
 {_ssdm_SpecArrayDimSize(coeff, 10);
+#pragma HLS DATAFLOW
+# 5 "FIR_AXI4/.settings/fir.cpp"
+
 #pragma HLS ARRAY_PARTITION variable=&coeff complete dim=1
 #pragma HLS INTERFACE s_axilite port=return bundle=bundle
 #pragma HLS INTERFACE s_axilite port=&coeff bundle=bundle

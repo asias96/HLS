@@ -1,4 +1,4 @@
-INFO-FLOW: Workspace /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1 opened at Wed Oct 30 11:40:41 CET 2019
+INFO-FLOW: Workspace /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1 opened at Wed Nov 06 10:43:09 CET 2019
 Execute     config_clock -quiet -name default -period 10 -unit ns -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     config_clock -quiet -name default -uncertainty 1.25 -unit % 
@@ -125,8 +125,6 @@ Execute     add_library xilinx/zynq/zynq_fpv6
 Execute       get_default_platform 
 Execute     get_default_platform 
 Execute   create_clock -period 100MHz -name default 
-Execute     config_clock -quiet -name default -period 10 -unit ns -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute   config_sdx -optimization_level none -target none 
 Execute     get_config_export -vivado_synth_design_args 
 Execute     get_config_export -vivado_impl_strategy 
@@ -149,6 +147,9 @@ Execute   config_schedule -effort medium -relax_ii_for_timing=0
 Execute   config_bind -effort medium 
 Execute   config_export -format ip_catalog -rtl verilog 
 Execute   set_clock_uncertainty 12.5% 
+Execute   source ./FIR_AXI4_new/Solution1/directives.tcl 
+Execute     set_directive_dataflow fir 
+INFO-FLOW: Setting directive 'DATAFLOW' 
 Execute   csynth_design 
 Execute     get_config_compile -effort 
 Execute     get_config_compile -enable_clang39 
@@ -178,60 +179,65 @@ INFO-FLOW: exec /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit
 Command       clang done; 1.13 sec.
 Execute       tidy_31 xilinx-xfmat-array-geometry /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.pp.0.cpp std=gnu++98 
 INFO-FLOW: exec /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 0.67 sec.
+Command       tidy_31 done; 0.66 sec.
 INFO-FLOW: Syntax Checking before pre-processing...
 Execute       clang -syntaxcheck -src /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado/2018.3/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.pp.0.cpp"  -o "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/useless.bc"  
 INFO-FLOW: exec /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vivado/2018.3/common/technology/autopilot -I /opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.pp.0.cpp -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/useless.bc
 Command       clang done; 1.56 sec.
 INFO-FLOW: Done: GCC PP time: 3.4 seconds per iteration
+INFO-FLOW: Setting directive 'DATAFLOW' 
+INFO-FLOW: Setting directive 'DATAFLOW' 
 Execute       list_core -type functional_unit 
 Execute       tidy_31 xilinx-systemc-detector /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.pp.0.cpp std=gnu++98 -directive=/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/.systemc_flag -quiet -fix-errors /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 0.62 sec.
+Command       tidy_31 done; 0.61 sec.
 INFO-FLOW: Running: tidy-3.1 CDT preprocess
 Execute       tidy_31 xilinx-directive2pragma /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.pp.0.cpp std=gnu++98 -directive=/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/all.directive.json 
 INFO-FLOW: exec /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/all.directive.json -quiet -fix-errors /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 0.6 sec.
+Command       tidy_31 done; 0.87 sec.
 Execute       get_config_dataflow -strict_mode 
 Execute       ap_eval exec -ignorestderr /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/xilinx-dataflow-lawyer.fir.pp.0.cpp.diag.yml /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/xilinx-dataflow-lawyer.fir.pp.0.cpp.out.log 2> /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/xilinx-dataflow-lawyer.fir.pp.0.cpp.err.log 
-Command       ap_eval done; 0.6 sec.
+Command       ap_eval done; 0.59 sec.
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: FIR_AXI4/.settings/fir.cpp:17:19
+Execute       send_msg_by_id WARNING @200-471@%s%s 1 FIR_AXI4/.settings/fir.cpp 
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file FIR_AXI4/.settings/fir.cpp
 Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.pp.0.cpp std=gnu++98 
 Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/tidy-3.1.fir.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/tidy-3.1.fir.pp.0.cpp.out.log 2> /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/tidy-3.1.fir.pp.0.cpp.err.log 
-Command         ap_eval done; 1.02 sec.
+Command         ap_eval done; 1.01 sec.
 Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/xilinx-legacy-rewriter.fir.pp.0.cpp.out.log 2> /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/xilinx-legacy-rewriter.fir.pp.0.cpp.err.log 
-Command         ap_eval done; 0.79 sec.
-Command       tidy_31 done; 1.82 sec.
-INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 3 seconds per iteration
+Command         ap_eval done; 0.76 sec.
+Command       tidy_31 done; 1.79 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 3.3 seconds per iteration
 INFO-FLOW: Pragma Handling...
 Execute       tidy_31 xilinx-ssdm-intrinsics-arguments /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.pragma.1.cpp std=gnu++98 
 INFO-FLOW: exec /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 1.03 sec.
+Command       tidy_31 done; 1.04 sec.
 Execute       get_default_platform 
 INFO-FLOW: Processing labels
 Execute       clang -src /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.bc" 
 INFO-FLOW: exec /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vivado/2018.3/common/technology/autopilot -I /opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.bc
-Command       clang done; 1.6 sec.
+Command       clang done; 1.58 sec.
 INFO-FLOW: Linking Debug ...
 Execute       llvm-ld /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.g.bc -hls-opt -except-internalize fir -L/opt/Xilinx/Vivado/2018.3/lnx64/lib -lhlsm -lhlsmc++ -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/a.g 
-Command       llvm-ld done; 0.6 sec.
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 446.199 ; gain = 0.191 ; free physical = 10445 ; free virtual = 15686
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 446.199 ; gain = 0.191 ; free physical = 10445 ; free virtual = 15686
+Command       llvm-ld done; 0.58 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 446.199 ; gain = 0.191 ; free physical = 9016 ; free virtual = 14308
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 446.199 ; gain = 0.191 ; free physical = 9016 ; free virtual = 14308
 Execute       get_config_sdx -target 
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 Execute         transform -promote-dbg-pointer /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/a.pp.bc -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/a.pp.0.bc -f 
 Execute         llvm-ld /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/a.pp.0.bc -disable-opt -L/opt/Xilinx/Vivado/2018.3/lnx64/lib -lfloatconversion -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/a.g.0 
-Command         llvm-ld done; 0.63 sec.
+Command         llvm-ld done; 0.57 sec.
 INFO-FLOW: Running Standard Transforms...
 Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -lower-blackbox -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top fir -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/a.g.0.bc -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 446.199 ; gain = 0.191 ; free physical = 10456 ; free virtual = 15680
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 446.199 ; gain = 0.191 ; free physical = 9009 ; free virtual = 14303
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/a.g.1.bc -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/a.g.2.prechk.bc -f 
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute         transform -syn-check /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/a.g.2.prechk.bc -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 446.199 ; gain = 0.191 ; free physical = 10453 ; free virtual = 15677
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 446.199 ; gain = 0.191 ; free physical = 9006 ; free virtual = 14301
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/a.g.1.bc to /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
@@ -240,18 +246,22 @@ INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'STREAM_LOOP' (FIR_AXI
 INFO: [HLS 200-489] Unrolling loop 'FILTER_LOOP' (FIR_AXI4/.settings/fir.cpp:28) in function 'fir' completely with a factor of 9.
 INFO: [XFORM 203-102] Partitioning array 'data_in.V' automatically.
 INFO: [XFORM 203-101] Partitioning array 'coeff.V' (FIR_AXI4/.settings/fir.cpp:4) in dimension 1 completely.
+INFO: [XFORM 203-721] Changing loop 'Loop_STREAM_LOOP_proc' (FIR_AXI4/.settings/fir.cpp:21) to a process function for dataflow in function 'fir'.
+INFO: [XFORM 203-712] Applying dataflow to function 'fir', detected/extracted 1 process function(s): 
+	 'Loop_STREAM_LOOP_proc20'.
 Command         transform done; 0.15 sec.
 INFO-FLOW: Presyn 2...
 Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/a.o.1.tmp.bc -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
-INFO: [XFORM 203-11] Balancing expressions in function 'fir' (FIR_AXI4/.settings/fir.cpp:4)...9 expression(s) balanced.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 574.008 ; gain = 128.000 ; free physical = 10427 ; free virtual = 15654
+INFO: [XFORM 203-11] Balancing expressions in function 'Loop_STREAM_LOOP_proc20' (FIR_AXI4/.settings/fir.cpp:21:35)...9 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 574.008 ; gain = 128.000 ; free physical = 8981 ; free virtual = 14278
 INFO-FLOW: Building ssdm...
 Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -cdfg-build /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/a.o.2.bc -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
-Command         transform done; 0.11 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 574.008 ; gain = 128.000 ; free physical = 10426 ; free virtual = 15653
+WARNING: [XFORM 203-631] Renaming function 'Loop_STREAM_LOOP_proc20' to 'Loop_STREAM_LOOP_pro' (FIR_AXI4/.settings/fir.cpp:21:35)
+Command         transform done; 0.14 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 574.008 ; gain = 128.000 ; free physical = 8979 ; free virtual = 14276
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 1.1 sec.
-Command     elaborate done; 11.42 sec.
+Command       opt_and_import_c done; 1.07 sec.
+Command     elaborate done; 11.59 sec.
 Execute     autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO-FLOW: Synthesizing C/C++ design ...
@@ -259,27 +269,61 @@ INFO: [HLS 200-10] Synthesizing 'fir' ...
 Execute       ap_set_top_model fir 
 Execute       get_model_list fir -filter all-wo-channel -topdown 
 Execute       preproc_iomode -model fir 
+Execute       preproc_iomode -model Loop_STREAM_LOOP_pro 
 Execute       get_model_list fir -filter all-wo-channel 
-INFO-FLOW: Model list for configure: fir
+INFO-FLOW: Model list for configure: Loop_STREAM_LOOP_pro fir
+INFO-FLOW: Configuring Module : Loop_STREAM_LOOP_pro ...
+Execute       set_default_model Loop_STREAM_LOOP_pro 
+Execute       apply_spec_resource_limit Loop_STREAM_LOOP_pro 
 INFO-FLOW: Configuring Module : fir ...
 Execute       set_default_model fir 
 Execute       apply_spec_resource_limit fir 
-INFO-FLOW: Model list for preprocess: fir
+INFO-FLOW: Model list for preprocess: Loop_STREAM_LOOP_pro fir
+INFO-FLOW: Preprocessing Module: Loop_STREAM_LOOP_pro ...
+Execute       set_default_model Loop_STREAM_LOOP_pro 
+Execute       cdfg_preprocess -model Loop_STREAM_LOOP_pro 
+Execute       rtl_gen_preprocess Loop_STREAM_LOOP_pro 
 INFO-FLOW: Preprocessing Module: fir ...
 Execute       set_default_model fir 
 Execute       cdfg_preprocess -model fir 
 Execute       rtl_gen_preprocess fir 
-INFO-FLOW: Model list for synthesis: fir
+INFO-FLOW: Model list for synthesis: Loop_STREAM_LOOP_pro fir
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_STREAM_LOOP_pro' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Loop_STREAM_LOOP_pro 
+Execute       schedule -model Loop_STREAM_LOOP_pro 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'STREAM_LOOP'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 12.14 seconds; current allocated memory: 87.717 MB.
+Execute       report -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/Loop_STREAM_LOOP_pro.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/Loop_STREAM_LOOP_pro.sched.adb -f 
+INFO-FLOW: Finish scheduling Loop_STREAM_LOOP_pro.
+Execute       set_default_model Loop_STREAM_LOOP_pro 
+Execute       bind -model Loop_STREAM_LOOP_pro 
+BIND OPTION: effort=medium
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=Loop_STREAM_LOOP_pro
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 88.077 MB.
+Execute       report -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/Loop_STREAM_LOOP_pro.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/Loop_STREAM_LOOP_pro.bind.adb -f 
+INFO-FLOW: Finish binding Loop_STREAM_LOOP_pro.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'fir' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute       set_default_model fir 
 Execute       schedule -model fir 
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'STREAM_LOOP'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 6.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 11.98 seconds; current allocated memory: 77.683 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 88.264 MB.
 Execute       report -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.verbose.sched.rpt -verbose -f 
 Execute       db_write -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.sched.adb -f 
 INFO-FLOW: Finish scheduling fir.
@@ -294,14 +338,41 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 78.129 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 88.424 MB.
 Execute       report -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.verbose.bind.rpt -verbose -f 
 Execute       db_write -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.bind.adb -f 
 INFO-FLOW: Finish binding fir.
 Execute       get_model_list fir -filter all-wo-channel 
 INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess Loop_STREAM_LOOP_pro 
 Execute       rtl_gen_preprocess fir 
-INFO-FLOW: Model list for RTL generation: fir
+INFO-FLOW: Model list for RTL generation: Loop_STREAM_LOOP_pro fir
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_STREAM_LOOP_pro' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model Loop_STREAM_LOOP_pro -vendor xilinx -mg_file /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/Loop_STREAM_LOOP_pro.compgen.tcl 
+WARNING: [RTGEN 206-101] Register 'data_in_V_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_V_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_V_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_V_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_V_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_V_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_V_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_V_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'data_in_V_0' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_STREAM_LOOP_pro'.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 89.999 MB.
+Execute       source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Loop_STREAM_LOOP_pro -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/syn/systemc/Loop_STREAM_LOOP_pro -synmodules Loop_STREAM_LOOP_pro fir 
+Execute       gen_rtl Loop_STREAM_LOOP_pro -style xilinx -f -lang vhdl -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/syn/vhdl/Loop_STREAM_LOOP_pro 
+Execute       gen_rtl Loop_STREAM_LOOP_pro -style xilinx -f -lang vlog -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/syn/verilog/Loop_STREAM_LOOP_pro 
+Execute       gen_tb_info Loop_STREAM_LOOP_pro -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/Loop_STREAM_LOOP_pro -p /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db 
+Execute       report -model Loop_STREAM_LOOP_pro -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/syn/report/Loop_STREAM_LOOP_pro_csynth.rpt -f 
+Execute       report -model Loop_STREAM_LOOP_pro -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/syn/report/Loop_STREAM_LOOP_pro_csynth.xml -f -x 
+Execute       report -model Loop_STREAM_LOOP_pro -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/Loop_STREAM_LOOP_pro.verbose.rpt -verbose -f 
+Execute       db_write -model Loop_STREAM_LOOP_pro -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/Loop_STREAM_LOOP_pro.adb -f 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'fir' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -333,46 +404,38 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'fir/coeff_7_V' to 's_axili
 INFO: [RTGEN 206-500] Setting interface mode on port 'fir/coeff_8_V' to 's_axilite & ap_none'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'fir/coeff_9_V' to 's_axilite & ap_none'.
 INFO: [RTGEN 206-500] Setting interface mode on function 'fir' to 's_axilite & ap_ctrl_hs'.
-WARNING: [RTGEN 206-101] Register 'data_in_V_8' is power-on initialization.
-WARNING: [RTGEN 206-101] Register 'data_in_V_7' is power-on initialization.
-WARNING: [RTGEN 206-101] Register 'data_in_V_6' is power-on initialization.
-WARNING: [RTGEN 206-101] Register 'data_in_V_5' is power-on initialization.
-WARNING: [RTGEN 206-101] Register 'data_in_V_4' is power-on initialization.
-WARNING: [RTGEN 206-101] Register 'data_in_V_3' is power-on initialization.
-WARNING: [RTGEN 206-101] Register 'data_in_V_2' is power-on initialization.
-WARNING: [RTGEN 206-101] Register 'data_in_V_1' is power-on initialization.
-WARNING: [RTGEN 206-101] Register 'data_in_V_0' is power-on initialization.
 INFO: [RTGEN 206-100] Bundling port 'return', 'coeff_0_V', 'coeff_1_V', 'coeff_2_V', 'coeff_3_V', 'coeff_4_V', 'coeff_5_V', 'coeff_6_V', 'coeff_7_V', 'coeff_8_V' and 'coeff_9_V' to AXI-Lite port bundle.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'fir'.
-INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 79.914 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 91.958 MB.
 Execute       source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.rtl_wrap.cfg.tcl 
-Execute       gen_rtl fir -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/syn/systemc/fir -synmodules fir 
+Execute       gen_rtl fir -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/syn/systemc/fir -synmodules Loop_STREAM_LOOP_pro fir 
 Execute       gen_rtl fir -istop -style xilinx -f -lang vhdl -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/syn/vhdl/fir 
-Command       gen_rtl done; 0.13 sec.
 Execute       gen_rtl fir -istop -style xilinx -f -lang vlog -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/syn/verilog/fir 
 Execute       export_constraint_db -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.constraint.tcl -f -tool general 
 Execute       report -model fir -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.design.xml -verbose -f -dv 
 Command       report done; 0.11 sec.
 Execute       report -model fir -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.sdaccel.xml -verbose -f -sdaccel 
-Command       report done; 0.17 sec.
 Execute       gen_tb_info fir -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir -p /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db 
 Execute       report -model fir -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/syn/report/fir_csynth.rpt -f 
 Execute       report -model fir -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/syn/report/fir_csynth.xml -f -x 
 Execute       report -model fir -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.verbose.rpt -verbose -f 
-Command       report done; 0.11 sec.
 Execute       db_write -model fir -o /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.adb -f 
 Execute       sc_get_clocks fir 
 Execute       get_config_export -vivado_clock 
 Execute       sc_get_portdomain fir 
-INFO-FLOW: Model list for RTL component generation: fir
+INFO-FLOW: Model list for RTL component generation: Loop_STREAM_LOOP_pro fir
+INFO-FLOW: Handling components in module [Loop_STREAM_LOOP_pro] ... 
+Execute       source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/Loop_STREAM_LOOP_pro.compgen.tcl 
 INFO-FLOW: Handling components in module [fir] ... 
 Execute       source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.compgen.tcl 
 INFO-FLOW: Found component fir_bundle_s_axi.
 INFO-FLOW: Append model fir_bundle_s_axi
+INFO-FLOW: Append model Loop_STREAM_LOOP_pro
 INFO-FLOW: Append model fir
 INFO-FLOW: Generating RTL model list ...
-INFO-FLOW: All models in this session: fir_bundle_s_axi fir
+INFO-FLOW: All models in this session: fir_bundle_s_axi Loop_STREAM_LOOP_pro fir
 INFO-FLOW: To file: write model fir_bundle_s_axi
+INFO-FLOW: To file: write model Loop_STREAM_LOOP_pro
 INFO-FLOW: To file: write model fir
 INFO-FLOW: Finished generating RTL model list.
 
@@ -413,6 +476,7 @@ INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=
 Execute       source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
 Execute       source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
 Execute       source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/Loop_STREAM_LOOP_pro.compgen.tcl 
 Execute       source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.compgen.tcl 
 Execute         source ./bundle.slave.tcl 
 Execute         is_m_axi_addr64 
@@ -452,19 +516,22 @@ Execute       source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopil
 INFO-FLOW: DBG:CMD:       export_impl_rtl
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
 Execute       source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/Loop_STREAM_LOOP_pro.compgen.tcl 
 Execute       source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.compgen.tcl 
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
 Execute       source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/Loop_STREAM_LOOP_pro.compgen.tcl 
 Execute       source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.compgen.tcl 
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
 Execute       source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/Loop_STREAM_LOOP_pro.compgen.tcl 
 Execute       source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.compgen.tcl 
 Execute       source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
 Execute       source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.constraint.tcl 
 Execute       source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
 INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=28
 INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=24
-INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=1 #modelList=2 #gSsdmPorts=28
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=1 #modelList=3 #gSsdmPorts=28
 Execute       source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
 Execute       source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
 Execute       source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
@@ -486,13 +553,654 @@ Execute       get_config_sdx -profile
 Execute       ::config_rtl 
 INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist: /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/kernel.internal.xml
 INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 574.008 ; gain = 128.000 ; free physical = 10422 ; free virtual = 15648
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 574.008 ; gain = 128.000 ; free physical = 8971 ; free virtual = 14264
 INFO: [SYSC 207-301] Generating SystemC RTL for fir.
 INFO: [VHDL 208-304] Generating VHDL RTL for fir.
 INFO: [VLOG 209-307] Generating Verilog RTL for fir.
-Command     autosyn done; 1.56 sec.
+Command     autosyn done; 1.31 sec.
 Execute     get_part 
 Execute     get_config_export -sdx_tcl 
-Command   csynth_design done; 12.99 sec.
-Command ap_source done; 13.24 sec.
+Command   csynth_design done; 12.91 sec.
+Command ap_source done; 13.15 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1 opened at Wed Nov 06 10:44:38 CET 2019
+Execute     config_clock -quiet -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     config_clock -quiet -name default -uncertainty 1.25 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.11 sec.
+Command     ap_source done; 0.11 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z010clg400-1 
+Execute       add_library xilinx/zynq/zynq:xc7z010:clg400:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z010 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_sdx -optimization_level=none 
+Execute       get_config_export -vivado_synth_design_args 
+Execute       get_config_export -vivado_impl_strategy 
+Execute       get_config_export -vivado_synth_strategy 
+Execute       get_config_export -vivado_phys_opt 
+Execute       get_config_bind -effort 
+Execute       get_config_schedule -effort 
+Execute     config_sdx -target=none 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' config_sdx -optimization_level=none 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+Execute       config_sdx -optimization_level=none 
+Execute         get_config_export -vivado_synth_design_args 
+Execute         get_config_export -vivado_impl_strategy 
+Execute         get_config_export -vivado_synth_strategy 
+Execute         get_config_export -vivado_phys_opt 
+Execute         get_config_bind -effort 
+Execute         get_config_schedule -effort 
+Execute       get_config_compile -pipeline_loops 
+Execute       get_config_compile -name_max_length 
+Execute       get_config_schedule -relax_ii_for_timing 
+Execute       get_config_schedule -enable_dsp_full_reg 
+Execute       get_config_rtl -register_reset_num 
+Execute       get_config_rtl -auto_prefix 
+Execute       get_config_rtl -enable_maxiConservative 
+Execute       get_config_interface -m_axi_addr64 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' set_clock_uncertainty default 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+Execute       set_clock_uncertainty default 
+Execute     config_schedule -effort=medium 
+Execute     config_schedule -relax_ii_for_timing=0 
+Execute     config_bind -effort=medium 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 0.24 sec.
+Execute   cosim_design 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.rtl_wrap.cfg.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/.settings/fir_test.cpp 
+Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/.settings/fir.cpp 
+Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/.settings/fir.hpp 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     get_default_platform 
+INFO-FLOW: TB processing: /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/.settings/fir_test.cpp /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/./sim/autowrap/testbench/fir_test.cpp_pre.cpp
+Execute     tidy_31 xilinx-tb-xfmat /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/./sim/autowrap/testbench/fir_test.cpp_pre.cpp std=c++11 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/./sim/autowrap/testbench/fir_test.cpp_pre.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     tidy_31 done; 1.59 sec.
+INFO-FLOW: Marker-Pragma convertor: /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/./sim/autowrap/testbench/fir_test.cpp_pre.cpp /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/./sim/autowrap/testbench/fir_test.cpp_pre.cpp.line.cpp ./sim/autowrap/testbench/line.tmp 1
+INFO-FLOW: Converting Markers to Pragmas...
+INFO-FLOW: Marker-Pragma convertor: /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/./sim/autowrap/testbench/fir_test.cpp_pre.cpp.tb.cpp.line /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/./sim/autowrap/testbench/fir_test.cpp_pre.cpp.tb.cpp ./sim/autowrap/testbench/line.tmp 0
+INFO-FLOW: Converting Pragmas to Markers...
+Execute     get_default_platform 
+INFO-FLOW: TB processing: /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/.settings/fir.cpp /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/./sim/autowrap/testbench/fir.cpp_pre.cpp
+Execute     tidy_31 xilinx-tb-xfmat /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/./sim/autowrap/testbench/fir.cpp_pre.cpp std=c++11 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/./sim/autowrap/testbench/fir.cpp_pre.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     tidy_31 done; 1.5 sec.
+INFO-FLOW: Marker-Pragma convertor: /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/./sim/autowrap/testbench/fir.cpp_pre.cpp /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/./sim/autowrap/testbench/fir.cpp_pre.cpp.line.cpp ./sim/autowrap/testbench/line.tmp 1
+INFO-FLOW: Converting Markers to Pragmas...
+INFO-FLOW: Marker-Pragma convertor: /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/./sim/autowrap/testbench/fir.cpp_pre.cpp.tb.cpp.line /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/./sim/autowrap/testbench/fir.cpp_pre.cpp.tb.cpp ./sim/autowrap/testbench/line.tmp 0
+INFO-FLOW: Converting Pragmas to Markers...
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/./sim/autowrap/testbench/tb.status.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.rtl_wrap.cfg.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.rtl_wrap.cfg.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.rtl_wrap.cfg.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     get_default_platform 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 0.17 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+Execute     get_default_platform 
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command     ap_source done; 15.78 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+Command   cosim_design done; 56.48 sec.
+Command ap_source done; 56.72 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1 opened at Wed Nov 06 10:45:40 CET 2019
+Execute     config_clock -quiet -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     config_clock -quiet -name default -uncertainty 1.25 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z010clg400-1 
+Execute       add_library xilinx/zynq/zynq:xc7z010:clg400:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z010 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_sdx -optimization_level=none 
+Execute       get_config_export -vivado_synth_design_args 
+Execute       get_config_export -vivado_impl_strategy 
+Execute       get_config_export -vivado_synth_strategy 
+Execute       get_config_export -vivado_phys_opt 
+Execute       get_config_bind -effort 
+Execute       get_config_schedule -effort 
+Execute     config_sdx -target=none 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' config_sdx -optimization_level=none 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+Execute       config_sdx -optimization_level=none 
+Execute         get_config_export -vivado_synth_design_args 
+Execute         get_config_export -vivado_impl_strategy 
+Execute         get_config_export -vivado_synth_strategy 
+Execute         get_config_export -vivado_phys_opt 
+Execute         get_config_bind -effort 
+Execute         get_config_schedule -effort 
+Execute       get_config_compile -pipeline_loops 
+Execute       get_config_compile -name_max_length 
+Execute       get_config_schedule -relax_ii_for_timing 
+Execute       get_config_schedule -enable_dsp_full_reg 
+Execute       get_config_rtl -register_reset_num 
+Execute       get_config_rtl -auto_prefix 
+Execute       get_config_rtl -enable_maxiConservative 
+Execute       get_config_interface -m_axi_addr64 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' set_clock_uncertainty default 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+Execute       set_clock_uncertainty default 
+Execute     config_schedule -effort=medium 
+Execute     config_schedule -relax_ii_for_timing=0 
+Execute     config_bind -effort=medium 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 0.23 sec.
+Execute   export_design -flow syn -rtl verilog -format ip_catalog 
+Execute     get_config_export -acc 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -description 
+Execute     get_config_export -display_name 
+Execute     get_config_export -driver_input_dir 
+Execute     get_config_export -ipname 
+Execute     get_config_export -kernel_drc 
+Execute     get_config_export -library 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -sdaccel 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -vendor 
+Execute     get_config_export -version 
+Execute     get_config_export -xo 
+Execute     config_export -format=ip_catalog -rtl=verilog 
+INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -flow syn -rtl verilog
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_sdx -target 
+Execute     get_config_rtl -auto_prefix 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -tool vivado -rtl verilog -sdx-target none
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.11 sec.
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.11 sec.
+Command     ap_source done; 0.11 sec.
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.11 sec.
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.12 sec.
+Command     ap_source done; 0.12 sec.
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=fir xml_exists=1
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.rtl_wrap.cfg.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.rtl_wrap.cfg.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.rtl_wrap.cfg.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/Loop_STREAM_LOOP_pro.compgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/Loop_STREAM_LOOP_pro.compgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/Loop_STREAM_LOOP_pro.compgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.compgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.constraint.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=28
+INFO-FLOW: DBG:CMD:       copy ip_driver_dir 1_0 /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/driver
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=28
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=fir
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.rtl_wrap.cfg.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.rtl_wrap.cfg.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.rtl_wrap.cfg.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_top_info
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=fir
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.rtl_wrap.cfg.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.rtl_wrap.cfg.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.rtl_wrap.cfg.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_bd_script
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.constraint.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.constraint.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       copy-tb-rtl-files
+INFO-FLOW: DBG:CMD:       copy-tb-data-files
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO-FLOW: DBG:CMD: read_platform_lib /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:     exec /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/impl/ip/pack.sh
+INFO-FLOW: DBG:CMD:   auto_impl: eval: -tool vivado -flow syn -rtl verilog
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -rtl vlog -tool Vivado -impltomg_flag
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/verilog
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/Loop_STREAM_LOOP_pro.compgen.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.constraint.tcl 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/fir.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       copy-tb-rtl-files
+INFO-FLOW: DBG:CMD:       copy-tb-data-files
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO-FLOW: DBG:CMD: read_platform_lib /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     get_config_export -vivado_report_level 
+Execute     get_config_export -vivado_ip_cache 
+Execute     get_config_export -vivado_enable_slr_assignment 
+Execute     get_config_export -vivado_bd_cell_properties 
+Execute     get_config_export -vivado_synth_design_args 
+Execute     source /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_synth_strategy 
+Execute     get_config_export -vivado_synth_run_properties 
+INFO-FLOW: DBG:CMD: auto_impl: vlog syn exec /home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/Solution1/impl/verilog/implsyn.sh
+Command   export_design done; 102.46 sec.
+Command ap_source done; 102.69 sec.
 Execute cleanup_all 
