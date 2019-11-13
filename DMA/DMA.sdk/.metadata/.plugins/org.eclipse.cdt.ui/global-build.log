@@ -1,0 +1,3024 @@
+10:23:47 **** Build of project standalone_bsp_0 ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/axidma_v9_8/src
+make -C ps7_cortexa9_0/libsrc/axidma_v9_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/fir_v1_0/src
+make -C ps7_cortexa9_0/libsrc/fir_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ddrps
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling standalone
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/axidma_v9_8/src
+make -C ps7_cortexa9_0/libsrc/axidma_v9_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling axidma
+Running Make libs in ps7_cortexa9_0/libsrc/fir_v1_0/src
+make -C ps7_cortexa9_0/libsrc/fir_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling fir
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scutimer
+Finished building libraries
+10:24:55 **** Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19024	   1144	  22576	  42744	   a6f8	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:24:57 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:26:15 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19024	   1144	  22576	  42744	   a6f8	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:26:41 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:10:8: error: no macro name given in #define directive
+ #define
+        ^
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+10:26:50 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19024	   1144	  22576	  42744	   a6f8	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:26:52 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19024	   1144	  22576	  42744	   a6f8	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:26:58 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19024	   1144	  22576	  42744	   a6f8	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:28:10 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19024	   1144	  22592	  42760	   a708	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:28:42 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19024	   1144	  24464	  44632	   ae58	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:29:11 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19024	   1144	  24464	  44632	   ae58	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:29:28 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:20:1: error: expected initializer before 'int'
+ int main()
+ ^~~
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+10:29:32 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19024	   1144	  24464	  44632	   ae58	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:29:53 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19024	   1144	  24464	  44632	   ae58	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:29:57 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19024	   1144	  24464	  44632	   ae58	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:30:18 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19048	   1144	  24464	  44656	   ae70	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:30:39 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30984	   2184	  24528	  57696	   e160	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:30:45 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30984	   2184	  24528	  57696	   e160	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:31:15 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void init_pheriferial()':
+../src/main.cc:21:31: error: too few arguments to function 'XFir_Config* XFir_LookupConfig(u16)'
+  Fir_conf = XFir_LookupConfig();
+                               ^
+In file included from ../src/main.cc:7:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xfir.h:76:14: note: declared here
+ XFir_Config* XFir_LookupConfig(u16 DeviceId);
+              ^~~~~~~~~~~~~~~~~
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+10:32:06 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void init_pheriferial()':
+../src/main.cc:21:31: error: 'XPAR_FIR_LEFT_DEVICE_ID' was not declared in this scope
+  Fir_conf = XFir_LookupConfig(XPAR_FIR_LEFT_DEVICE_ID);
+                               ^~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:21:31: note: suggested alternative: 'XPAR_FIR_0_DEVICE_ID'
+  Fir_conf = XFir_LookupConfig(XPAR_FIR_LEFT_DEVICE_ID);
+                               ^~~~~~~~~~~~~~~~~~~~~~~
+                               XPAR_FIR_0_DEVICE_ID
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+10:34:10 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void init_pheriferial()':
+../src/main.cc:21:31: error: too few arguments to function 'XFir_Config* XFir_LookupConfig(u16)'
+  Fir_conf = XFir_LookupConfig();
+                               ^
+In file included from ../src/main.cc:7:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xfir.h:76:14: note: declared here
+ XFir_Config* XFir_LookupConfig(u16 DeviceId);
+              ^~~~~~~~~~~~~~~~~
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+10:36:04 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35680	   2192	  24528	  62400	   f3c0	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:36:31 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35680	   2192	  24528	  62400	   f3c0	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:36:49 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35700	   2192	  24536	  62428	   f3dc	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:37:22 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35724	   2192	  24536	  62452	   f3f4	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:37:25 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35724	   2192	  24536	  62452	   f3f4	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:38:37 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void init_pheriferial()':
+../src/main.cc:23:3: error: 'Fir_nadle' was not declared in this scope
+   Fir_nadle = XFir_CfgInitialize();
+   ^~~~~~~~~
+../src/main.cc:23:3: note: suggested alternative: 'Fir_handle'
+   Fir_nadle = XFir_CfgInitialize();
+   ^~~~~~~~~
+   Fir_handle
+../src/main.cc:23:34: error: too few arguments to function 'int XFir_CfgInitialize(XFir*, XFir_Config*)'
+   Fir_nadle = XFir_CfgInitialize();
+                                  ^
+In file included from ../src/main.cc:7:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xfir.h:77:5: note: declared here
+ int XFir_CfgInitialize(XFir *InstancePtr, XFir_Config *ConfigPtr);
+     ^~~~~~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+10:39:56 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void init_pheriferial()':
+../src/main.cc:31:3: error: 'Fir_nadle' was not declared in this scope
+   Fir_nadle = XFir_CfgInitialize();
+   ^~~~~~~~~
+../src/main.cc:31:3: note: suggested alternative: 'Fir_handle'
+   Fir_nadle = XFir_CfgInitialize();
+   ^~~~~~~~~
+   Fir_handle
+../src/main.cc:31:34: error: too few arguments to function 'int XFir_CfgInitialize(XFir*, XFir_Config*)'
+   Fir_nadle = XFir_CfgInitialize();
+                                  ^
+In file included from ../src/main.cc:7:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xfir.h:77:5: note: declared here
+ int XFir_CfgInitialize(XFir *InstancePtr, XFir_Config *ConfigPtr);
+     ^~~~~~~~~~~~~~~~~~
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+10:40:10 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void init_pheriferial()':
+../src/main.cc:23:3: error: 'Fir_nadle' was not declared in this scope
+   Fir_nadle = XFir_CfgInitialize();
+   ^~~~~~~~~
+../src/main.cc:23:3: note: suggested alternative: 'Fir_handle'
+   Fir_nadle = XFir_CfgInitialize();
+   ^~~~~~~~~
+   Fir_handle
+../src/main.cc:23:34: error: too few arguments to function 'int XFir_CfgInitialize(XFir*, XFir_Config*)'
+   Fir_nadle = XFir_CfgInitialize();
+                                  ^
+In file included from ../src/main.cc:7:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xfir.h:77:5: note: declared here
+ int XFir_CfgInitialize(XFir *InstancePtr, XFir_Config *ConfigPtr);
+     ^~~~~~~~~~~~~~~~~~
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+10:40:37 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void init_pheriferial()':
+../src/main.cc:23:3: error: 'Fir_hadle' was not declared in this scope
+   Fir_hadle = XFir_CfgInitialize();
+   ^~~~~~~~~
+../src/main.cc:23:3: note: suggested alternative: 'Fir_handle'
+   Fir_hadle = XFir_CfgInitialize();
+   ^~~~~~~~~
+   Fir_handle
+../src/main.cc:23:34: error: too few arguments to function 'int XFir_CfgInitialize(XFir*, XFir_Config*)'
+   Fir_hadle = XFir_CfgInitialize();
+                                  ^
+In file included from ../src/main.cc:7:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xfir.h:77:5: note: declared here
+ int XFir_CfgInitialize(XFir *InstancePtr, XFir_Config *ConfigPtr);
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+     ^~~~~~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+10:40:43 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void init_pheriferial()':
+../src/main.cc:23:3: error: 'Fir_hadle' was not declared in this scope
+   Fir_hadle = XFir_CfgInitialize(, Fir_conf);
+   ^~~~~~~~~
+../src/main.cc:23:3: note: suggested alternative: 'Fir_handle'
+   Fir_hadle = XFir_CfgInitialize(, Fir_conf);
+   ^~~~~~~~~
+   Fir_handle
+../src/main.cc:23:34: error: expected primary-expression before ',' token
+   Fir_hadle = XFir_CfgInitialize(, Fir_conf);
+                                  ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+10:41:30 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void init_pheriferial()':
+../src/main.cc:23:3: error: 'Fir_hadle' was not declared in this scope
+   Fir_hadle = XFir_CfgInitialize(Fir_hadle, Fir_conf);
+   ^~~~~~~~~
+../src/main.cc:23:3: note: suggested alternative: 'Fir_handle'
+   Fir_hadle = XFir_CfgInitialize(Fir_hadle, Fir_conf);
+   ^~~~~~~~~
+   Fir_handle
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+10:41:33 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void init_pheriferial()':
+../src/main.cc:23:4: error: expected primary-expression before '=' token
+    = XFir_CfgInitialize(Fir_hadle, Fir_conf);
+    ^
+../src/main.cc:23:25: error: 'Fir_hadle' was not declared in this scope
+    = XFir_CfgInitialize(Fir_hadle, Fir_conf);
+                         ^~~~~~~~~
+../src/main.cc:23:25: note: suggested alternative: 'Fir_handle'
+    = XFir_CfgInitialize(Fir_hadle, Fir_conf);
+                         ^~~~~~~~~
+                         Fir_handle
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+10:41:59 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void init_pheriferial()':
+../src/main.cc:23:33: error: 'Fir_hadle' was not declared in this scope
+   int init = XFir_CfgInitialize(Fir_hadle, Fir_conf);
+                                 ^~~~~~~~~
+../src/main.cc:23:33: note: suggested alternative: 'Fir_handle'
+   int init = XFir_CfgInitialize(Fir_hadle, Fir_conf);
+                                 ^~~~~~~~~
+                                 Fir_handle
+../src/main.cc:23:7: warning: unused variable 'init' [-Wunused-variable]
+   int init = XFir_CfgInitialize(Fir_hadle, Fir_conf);
+       ^~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+10:42:18 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void init_pheriferial()':
+../src/main.cc:23:53: error: cannot convert 'XFir' to 'XFir*' for argument '1' to 'int XFir_CfgInitialize(XFir*, XFir_Config*)'
+   int init = XFir_CfgInitialize(Fir_handle, Fir_conf);
+                                                     ^
+../src/main.cc:23:7: warning: unused variable 'init' [-Wunused-variable]
+   int init = XFir_CfgInitialize(Fir_handle, Fir_conf);
+       ^~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+10:42:36 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void init_pheriferial()':
+../src/main.cc:23:7: warning: unused variable 'init' [-Wunused-variable]
+   int init = XFir_CfgInitialize(&Fir_handle, Fir_conf);
+       ^~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35788	   2192	  24536	  62516	   f434	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:42:39 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void init_pheriferial()':
+../src/main.cc:23:7: warning: unused variable 'init' [-Wunused-variable]
+   int init = XFir_CfgInitialize(&Fir_handle, Fir_conf);
+       ^~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35788	   2192	  24536	  62516	   f434	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:43:22 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35788	   2192	  24536	  62516	   f434	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:43:53 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35788	   2192	  24536	  62516	   f434	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:44:05 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35844	   2192	  24536	  62572	   f46c	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:44:16 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35876	   2192	  24536	  62604	   f48c	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:44:28 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35876	   2192	  24536	  62604	   f48c	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:44:32 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35876	   2192	  24536	  62604	   f48c	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:44:35 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35876	   2192	  24536	  62604	   f48c	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:45:03 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void init_pheriferial()':
+../src/main.cc:25:15: error: 'XAxiDmaLookupConfig' was not declared in this scope
+    Dma_conf = XAxiDmaLookupConfig();
+               ^~~~~~~~~~~~~~~~~~~
+../src/main.cc:25:15: note: suggested alternative: 'XAxiDma_LookupConfig'
+    Dma_conf = XAxiDmaLookupConfig();
+               ^~~~~~~~~~~~~~~~~~~
+               XAxiDma_LookupConfig
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+10:45:26 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void init_pheriferial()':
+../src/main.cc:25:36: error: too few arguments to function 'XAxiDma_Config* XAxiDma_LookupConfig(u32)'
+    Dma_conf = XAxiDma_LookupConfig();
+                                    ^
+In file included from ../src/main.cc:8:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xaxidma.h:743:17: note: declared here
+ XAxiDma_Config *XAxiDma_LookupConfig(u32 DeviceId);
+                 ^~~~~~~~~~~~~~~~~~~~
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+10:47:07 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36004	   2264	  24536	  62804	   f554	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:47:09 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36004	   2264	  24536	  62804	   f554	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:47:11 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36004	   2264	  24536	  62804	   f554	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:47:38 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36004	   2264	  24536	  62804	   f554	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:48:14 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36064	   2264	  24536	  62864	   f590	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:48:16 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36064	   2264	  24536	  62864	   f590	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:49:20 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47712	   2264	  24536	  74512	  12310	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:49:26 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47712	   2264	  24536	  74512	  12310	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:50:03 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47772	   2264	  24536	  74572	  1234c	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:50:41 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void init_pheriferial()':
+../src/main.cc:29:6: error: 'XAxiDma_IntrDisable' was not declared in this scope
+      XAxiDma_IntrDisable
+      ^~~~~~~~~~~~~~~~~~~
+../src/main.cc:29:6: note: suggested alternative: 'XAxiDma_Resume'
+      XAxiDma_IntrDisable
+      ^~~~~~~~~~~~~~~~~~~
+      XAxiDma_Resume
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+10:50:43 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:29:26: error: macro "XAxiDma_IntrDisable" requires 3 arguments, but only 1 given
+      XAxiDma_IntrDisable();
+                          ^
+../src/main.cc: In function 'void init_pheriferial()':
+../src/main.cc:29:6: error: 'XAxiDma_IntrDisable' was not declared in this scope
+      XAxiDma_IntrDisable();
+      ^~~~~~~~~~~~~~~~~~~
+../src/main.cc:29:6: note: suggested alternative: 'XAxiDma_Resume'
+      XAxiDma_IntrDisable();
+      ^~~~~~~~~~~~~~~~~~~
+      XAxiDma_Resume
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+10:52:16 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:29:39: error: macro "XAxiDma_IntrDisable" requires 3 arguments, but only 2 given
+      XAxiDma_IntrDisable(&Dma_handle, );
+                                       ^
+../src/main.cc: In function 'void init_pheriferial()':
+../src/main.cc:29:6: error: 'XAxiDma_IntrDisable' was not declared in this scope
+      XAxiDma_IntrDisable(&Dma_handle, );
+      ^~~~~~~~~~~~~~~~~~~
+../src/main.cc:29:6: note: suggested alternative: 'XAxiDma_Resume'
+      XAxiDma_IntrDisable(&Dma_handle, );
+      ^~~~~~~~~~~~~~~~~~~
+      XAxiDma_Resume
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+10:53:05 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47972	   2264	  24528	  74764	  1240c	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:53:27 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  48036	   2264	  24528	  74828	  1244c	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:53:53 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  48036	   2264	  24528	  74828	  1244c	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:55:07 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  48036	   2264	  24528	  74828	  1244c	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:55:39 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:51:12: warning: unused variable 'Dma_buffer_in' [-Wunused-variable]
+  data_type Dma_buffer_in[SIZE];
+            ^~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  48036	   2264	  24528	  74828	  1244c	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:55:43 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:51:12: warning: unused variable 'Dma_buffer_in' [-Wunused-variable]
+  data_type Dma_buffer_in[SIZE];
+            ^~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  48036	   2264	  24528	  74828	  1244c	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:57:31 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:57:3: error: 'signal_in' was not declared in this scope
+   signal_in.data = 0;
+   ^~~~~~~~~
+../src/main.cc:58:3: error: 'in' was not declared in this scope
+   in << signal_in;
+   ^~
+../src/main.cc:58:3: note: suggested alternative: 'i'
+   in << signal_in;
+   ^~
+   i
+../src/main.cc:61:3: error: 'signal_in' was not declared in this scope
+   signal_in.data = 1;
+   ^~~~~~~~~
+../src/main.cc:62:3: error: 'in' was not declared in this scope
+   in << signal_in;
+   ^~
+../src/main.cc:62:3: note: suggested alternative: 'i'
+   in << signal_in;
+   ^~
+   i
+../src/main.cc:51:12: warning: unused variable 'Dma_buffer_in' [-Wunused-variable]
+  data_type Dma_buffer_in[SIZE];
+            ^~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+10:58:45 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:57:3: error: 'signal_in' was not declared in this scope
+   signal_in.data = 0;
+   ^~~~~~~~~
+../src/main.cc:60:3: error: 'signal_in' was not declared in this scope
+   signal_in.data = 1;
+   ^~~~~~~~~
+../src/main.cc:51:12: warning: unused variable 'Dma_buffer_in' [-Wunused-variable]
+  data_type Dma_buffer_in[SIZE];
+            ^~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+10:58:55 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:57:3: error: 'signal_in' was not declared in this scope
+   signal_in.data = 0;
+   ^~~~~~~~~
+../src/main.cc:60:3: error: 'signal_in' was not declared in this scope
+   signal_in.data = 1;
+   ^~~~~~~~~
+../src/main.cc:51:12: warning: unused variable 'Dma_buffer_in' [-Wunused-variable]
+  data_type Dma_buffer_in[SIZE];
+            ^~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+10:59:06 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:57:3: error: 'Dma_buffer' was not declared in this scope
+   Dma_buffer[i] = 0;
+   ^~~~~~~~~~
+../src/main.cc:57:3: note: suggested alternative: 'Dma_buffer_in'
+   Dma_buffer[i] = 0;
+   ^~~~~~~~~~
+   Dma_buffer_in
+../src/main.cc:60:3: error: 'signal_in' was not declared in this scope
+   signal_in.data = 1;
+   ^~~~~~~~~
+../src/main.cc:51:12: warning: unused variable 'Dma_buffer_in' [-Wunused-variable]
+  data_type Dma_buffer_in[SIZE];
+            ^~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+10:59:20 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:60:3: error: 'signal_in' was not declared in this scope
+   signal_in.data = 1;
+   ^~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+10:59:27 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:51:12: warning: variable 'Dma_buffer_in' set but not used [-Wunused-but-set-variable]
+  data_type Dma_buffer_in[SIZE];
+            ^~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  48164	   2264	  24528	  74956	  124cc	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:59:48 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:51:12: warning: variable 'Dma_buffer_in' set but not used [-Wunused-but-set-variable]
+  data_type Dma_buffer_in[SIZE];
+            ^~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  48164	   2264	  24528	  74956	  124cc	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:00:52 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:63:2: error: 'XFir_Set_c' was not declared in this scope
+  XFir_Set_c<i>_V
+  ^~~~~~~~~~
+../src/main.cc:63:2: note: suggested alternative: 'XFir_Start'
+  XFir_Set_c<i>_V
+  ^~~~~~~~~~
+  XFir_Start
+../src/main.cc:63:13: error: 'i' was not declared in this scope
+  XFir_Set_c<i>_V
+             ^
+../src/main.cc:63:15: error: '_V' was not declared in this scope
+  XFir_Set_c<i>_V
+               ^~
+../src/main.cc:63:15: note: suggested alternative: '_L'
+  XFir_Set_c<i>_V
+               ^~
+               _L
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+11:00:54 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:63:2: error: 'XFir_Set_c' was not declared in this scope
+  XFir_Set_c<i>_V;
+  ^~~~~~~~~~
+../src/main.cc:63:2: note: suggested alternative: 'XFir_Start'
+  XFir_Set_c<i>_V;
+  ^~~~~~~~~~
+  XFir_Start
+../src/main.cc:63:13: error: 'i' was not declared in this scope
+  XFir_Set_c<i>_V;
+             ^
+../src/main.cc:63:15: error: '_V' was not declared in this scope
+  XFir_Set_c<i>_V;
+               ^~
+../src/main.cc:63:15: note: suggested alternative: '_L'
+  XFir_Set_c<i>_V;
+               ^~
+               _L
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:02:34 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:63:2: error: 'XFir_Set_coeff' was not declared in this scope
+  XFir_Set_coeff<i>_V;
+  ^~~~~~~~~~~~~~
+../src/main.cc:63:2: note: suggested alternative: 'XFir_Set_coeff_9_V'
+  XFir_Set_coeff<i>_V;
+  ^~~~~~~~~~~~~~
+  XFir_Set_coeff_9_V
+../src/main.cc:63:17: error: 'i' was not declared in this scope
+  XFir_Set_coeff<i>_V;
+                 ^
+../src/main.cc:63:19: error: '_V' was not declared in this scope
+  XFir_Set_coeff<i>_V;
+                   ^~
+../src/main.cc:63:19: note: suggested alternative: '_L'
+  XFir_Set_coeff<i>_V;
+                   ^~
+                   _L
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+11:02:41 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:63:20: warning: statement is a reference, not call, to function 'XFir_Set_coeff_0_V' [-Waddress]
+  XFir_Set_coeff_0_V;
+                    ^
+../src/main.cc:63:20: warning: statement has no effect [-Wunused-value]
+../src/main.cc:51:12: warning: variable 'Dma_buffer_in' set but not used [-Wunused-but-set-variable]
+  data_type Dma_buffer_in[SIZE];
+            ^~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  48164	   2264	  24528	  74956	  124cc	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:03:39 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:51:12: warning: variable 'Dma_buffer_in' set but not used [-Wunused-but-set-variable]
+  data_type Dma_buffer_in[SIZE];
+            ^~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  48164	   2264	  24528	  74956	  124cc	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:04:07 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:51:12: warning: variable 'Dma_buffer_in' set but not used [-Wunused-but-set-variable]
+  data_type Dma_buffer_in[SIZE];
+            ^~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  48164	   2264	  24528	  74956	  124cc	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:04:10 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:51:12: warning: variable 'Dma_buffer_in' set but not used [-Wunused-but-set-variable]
+  data_type Dma_buffer_in[SIZE];
+            ^~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  48164	   2264	  24528	  74956	  124cc	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:04:36 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:51:12: warning: variable 'Dma_buffer_in' set but not used [-Wunused-but-set-variable]
+  data_type Dma_buffer_in[SIZE];
+            ^~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  48292	   2264	  24528	  75084	  1254c	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:05:15 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:77:2: error: 'XFirEnableAutoRestart' was not declared in this scope
+  XFirEnableAutoRestart
+  ^~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:77:2: note: suggested alternative: 'XFir_EnableAutoRestart'
+  XFirEnableAutoRestart
+  ^~~~~~~~~~~~~~~~~~~~~
+  XFir_EnableAutoRestart
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+11:05:18 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:77:2: error: 'XFirEnableAutoRestart' was not declared in this scope
+  XFirEnableAutoRestart();
+  ^~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:77:2: note: suggested alternative: 'XFir_EnableAutoRestart'
+  XFirEnableAutoRestart();
+  ^~~~~~~~~~~~~~~~~~~~~
+  XFir_EnableAutoRestart
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+11:05:27 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:77:25: error: too few arguments to function 'void XFir_EnableAutoRestart(XFir*)'
+  XFir_EnableAutoRestart();
+                         ^
+In file included from ../src/main.cc:7:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xfir.h:87:6: note: declared here
+ void XFir_EnableAutoRestart(XFir *InstancePtr);
+      ^~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:05:47 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:51:12: warning: variable 'Dma_buffer_in' set but not used [-Wunused-but-set-variable]
+  data_type Dma_buffer_in[SIZE];
+            ^~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  48292	   2264	  24528	  75084	  1254c	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:05:49 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:51:12: warning: variable 'Dma_buffer_in' set but not used [-Wunused-but-set-variable]
+  data_type Dma_buffer_in[SIZE];
+            ^~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  48292	   2264	  24528	  75084	  1254c	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:06:11 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:51:12: warning: variable 'Dma_buffer_in' set but not used [-Wunused-but-set-variable]
+  data_type Dma_buffer_in[SIZE];
+            ^~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  48292	   2264	  24528	  75084	  1254c	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:06:23 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:80:13: error: too few arguments to function 'void XFir_Start(XFir*)'
+  XFir_Start();
+             ^
+In file included from ../src/main.cc:7:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xfir.h:83:6: note: declared here
+ void XFir_Start(XFir *InstancePtr);
+      ^~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+11:06:43 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:51:12: warning: variable 'Dma_buffer_in' set but not used [-Wunused-but-set-variable]
+  data_type Dma_buffer_in[SIZE];
+            ^~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  48356	   2264	  24528	  75148	  1258c	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:08:06 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:85:3: error: 'cin' was not declared in this scope
+   cin >> decision;
+   ^~~
+../src/main.cc:85:3: note: suggested alternative: 'main'
+   cin >> decision;
+   ^~~
+   main
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+11:08:14 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:85:7: error: 'cin' was not declared in this scope
+   std:cin >> decision;
+       ^~~
+../src/main.cc:85:7: note: suggested alternative: 'main'
+   std:cin >> decision;
+       ^~~
+       main
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+../src/main.cc:85:3: warning: label 'std' defined but not used [-Wunused-label]
+   std:cin >> decision;
+   ^~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+11:08:17 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:85:8: error: 'cin' is not a member of 'std'
+   std::cin >> decision;
+        ^~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+11:08:55 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:85:8: error: 'cin' is not a member of 'std'
+   std::cin >> decision;
+        ^~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+11:09:14 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:85:8: error: 'cin' is not a member of 'std'
+   std::cin >> decision;
+        ^~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:09:39 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:52:12: warning: variable 'Dma_buffer_in' set but not used [-Wunused-but-set-variable]
+  data_type Dma_buffer_in[SIZE];
+            ^~~~~~~~~~~~~
+../src/main.cc:53:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 796769	   2904	  31940	 831613	  cb07d	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:10:05 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:85:23: warning: format '%d' expects argument of type 'int*', but argument 2 has type 'int' [-Wformat=]
+   scanf("%d", decision);
+                       ^
+../src/main.cc:51:12: warning: variable 'Dma_buffer_in' set but not used [-Wunused-but-set-variable]
+  data_type Dma_buffer_in[SIZE];
+            ^~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+../src/main.cc:85:8: warning: 'decision' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   scanf("%d", decision);
+   ~~~~~^~~~~~~~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142256	   2656	  25232	 170144	  298a0	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:10:10 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:51:12: warning: variable 'Dma_buffer_in' set but not used [-Wunused-but-set-variable]
+  data_type Dma_buffer_in[SIZE];
+            ^~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142256	   2656	  25232	 170144	  298a0	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:10:19 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:88:2: error: expected primary-expression before '}' token
+  }
+  ^
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:10:34 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:51:12: warning: variable 'Dma_buffer_in' set but not used [-Wunused-but-set-variable]
+  data_type Dma_buffer_in[SIZE];
+            ^~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142320	   2656	  25232	 170208	  298e0	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:13:04 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:51:12: warning: variable 'Dma_buffer_in' set but not used [-Wunused-but-set-variable]
+  data_type Dma_buffer_in[SIZE];
+            ^~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142320	   2656	  25232	 170208	  298e0	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:15:27 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:51:12: warning: variable 'Dma_buffer_in' set but not used [-Wunused-but-set-variable]
+  data_type Dma_buffer_in[SIZE];
+            ^~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142320	   2656	  25232	 170208	  298e0	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:15:30 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:51:12: warning: variable 'Dma_buffer_in' set but not used [-Wunused-but-set-variable]
+  data_type Dma_buffer_in[SIZE];
+            ^~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142320	   2656	  25232	 170208	  298e0	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:15:34 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:51:12: warning: variable 'Dma_buffer_in' set but not used [-Wunused-but-set-variable]
+  data_type Dma_buffer_in[SIZE];
+            ^~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142320	   2656	  25232	 170208	  298e0	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:17:19 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:85:39: error: expected primary-expression before ',' token
+   XAxiDma_SimpleTransfer(&Dma_handle, , SIZE, XAXIDMA_DMA_TO_DEVICE);
+                                       ^
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:17:59 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:85:39: error: invalid conversion from 'data_type (*)[600] {aka int (*)[600]}' to 'UINTPTR {aka unsigned int}' [-fpermissive]
+   XAxiDma_SimpleTransfer(&Dma_handle, &Dma_buffer_in, SIZE, XAXIDMA_DMA_TO_DEVICE);
+                                       ^~~~~~~~~~~~~~
+In file included from ../src/main.cc:8:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xaxidma.h:751:5: note:   initializing argument 2 of 'u32 XAxiDma_SimpleTransfer(XAxiDma*, UINTPTR, u32, int)'
+ u32 XAxiDma_SimpleTransfer(XAxiDma *InstancePtr, UINTPTR BuffAddr, u32 Length,
+     ^~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:18:22 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:85:39: error: invalid conversion from 'data_type (*)[600] {aka unsigned int (*)[600]}' to 'UINTPTR {aka unsigned int}' [-fpermissive]
+   XAxiDma_SimpleTransfer(&Dma_handle, &Dma_buffer_in, SIZE, XAXIDMA_DMA_TO_DEVICE);
+                                       ^~~~~~~~~~~~~~
+In file included from ../src/main.cc:8:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xaxidma.h:751:5: note:   initializing argument 2 of 'u32 XAxiDma_SimpleTransfer(XAxiDma*, UINTPTR, u32, int)'
+ u32 XAxiDma_SimpleTransfer(XAxiDma *InstancePtr, UINTPTR BuffAddr, u32 Length,
+     ^~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:18:27 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:85:39: error: invalid conversion from 'data_type (*)[600] {aka int (*)[600]}' to 'UINTPTR {aka unsigned int}' [-fpermissive]
+   XAxiDma_SimpleTransfer(&Dma_handle, &Dma_buffer_in, SIZE, XAXIDMA_DMA_TO_DEVICE);
+                                       ^~~~~~~~~~~~~~
+In file included from ../src/main.cc:8:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xaxidma.h:751:5: note:   initializing argument 2 of 'u32 XAxiDma_SimpleTransfer(XAxiDma*, UINTPTR, u32, int)'
+ u32 XAxiDma_SimpleTransfer(XAxiDma *InstancePtr, UINTPTR BuffAddr, u32 Length,
+     ^~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:18:36 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142384	   2656	  25232	 170272	  29920	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:18:52 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142384	   2656	  25232	 170272	  29920	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:18:54 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142384	   2656	  25232	 170272	  29920	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:19:00 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142384	   2656	  25232	 170272	  29920	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:19:23 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:52:12: warning: unused variable 'Dma_buffer_out' [-Wunused-variable]
+  data_type Dma_buffer_out[SIZE];
+            ^~~~~~~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142384	   2656	  25232	 170272	  29920	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:19:32 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142384	   2656	  25232	 170272	  29920	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:19:42 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:85:7: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+   int r;
+       ^
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142384	   2656	  25232	 170272	  29920	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:20:18 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142480	   2656	  25232	 170368	  29980	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:20:51 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142528	   2656	  25232	 170416	  299b0	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:21:22 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:90:11: warning: the address of 'u32 XAxiDma_Busy(XAxiDma*, int)' will never be NULL [-Waddress]
+     while(XAxiDma_Busy)
+           ^~~~~~~~~~~~
+../src/main.cc:91:4: error: expected primary-expression before '}' token
+    }
+    ^
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:22:02 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:91:4: error: expected primary-expression before '}' token
+    }
+    ^
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:22:17 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142592	   2656	  25232	 170480	  299f0	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:22:47 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:91:6: error: 'pass' was not declared in this scope
+      pass;
+      ^~~~
+../src/main.cc:91:6: note: suggested alternative: 'labs'
+      pass;
+      ^~~~
+      labs
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:22:51 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142592	   2656	  25232	 170480	  299f0	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:24:08 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:100:8: error: 'i' was not declared in this scope
+   for (i = 0; i<SIZE; i++){
+        ^
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:24:42 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:100:8: error: 'i' was not declared in this scope
+   for (i = 0; i<SIZE; i++){
+        ^
+../src/main.cc:101:11: error: too few arguments to function 'int printf(const char*, ...)'
+    printf();
+           ^
+In file included from /opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/stdio.h:29:0,
+                 from ../src/main.cc:5:
+/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/stdio.h:181:5: note: declared here
+ int _EXFUN(printf, (const char *__restrict, ...)
+     ^
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:24:52 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:60:7: error: 'i' was not declared in this scope
+  for (i = SIZE/2; i < SIZE; i++) {
+       ^
+../src/main.cc:100:8: error: 'i' was not declared in this scope
+   for (i = 0; i<SIZE; i++){
+        ^
+../src/main.cc:101:11: error: too few arguments to function 'int printf(const char*, ...)'
+    printf();
+           ^
+In file included from /opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/stdio.h:29:0,
+                 from ../src/main.cc:5:
+/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/stdio.h:181:5: note: declared here
+ int _EXFUN(printf, (const char *__restrict, ...)
+     ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+11:24:59 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:102:11: error: too few arguments to function 'int printf(const char*, ...)'
+    printf();
+           ^
+In file included from /opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/stdio.h:29:0,
+                 from ../src/main.cc:5:
+/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/stdio.h:181:5: note: declared here
+ int _EXFUN(printf, (const char *__restrict, ...)
+     ^
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:25:12 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:102:11: error: too few arguments to function 'int printf(const char*, ...)'
+    printf();
+           ^
+In file included from /opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/stdio.h:29:0,
+                 from ../src/main.cc:5:
+/opt/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/stdio.h:181:5: note: declared here
+ int _EXFUN(printf, (const char *__restrict, ...)
+     ^
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:26:05 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142736	   2656	  25232	 170624	  29a80	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:26:17 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142736	   2656	  25232	 170624	  29a80	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:28:12 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142736	   2656	  25232	 170624	  29a80	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:31:53 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:34:52 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142936	   2656	  25232	 170824	  29b48	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:35:14 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142936	   2656	  25232	 170824	  29b48	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:36:34 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:39:06 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:39:56 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:40:41 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142936	   2656	  25232	 170824	  29b48	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:41:02 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142936	   2656	  25232	 170824	  29b48	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:41:17 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:42:47 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142976	   2656	  25232	 170864	  29b70	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:42:51 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:43:19 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142960	   2656	  25232	 170848	  29b60	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:43:23 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:43:52 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142976	   2656	  25232	 170864	  29b70	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:44:01 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142952	   2656	  25232	 170840	  29b58	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:44:08 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:44:32 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142944	   2656	  25232	 170832	  29b50	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:44:37 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:45:03 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:45:53 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:47:06 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142952	   2656	  25232	 170840	  29b58	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 

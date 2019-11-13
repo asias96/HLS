@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-// Date        : Wed Nov  6 11:31:31 2019
+// Date        : Wed Nov 13 10:07:11 2019
 // Host        : lsriw running 64-bit Ubuntu 18.04.3 LTS
-// Command     : write_verilog -force -mode synth_stub -rename_top design_1_auto_pc_1 -prefix
-//               design_1_auto_pc_1_ design_1_auto_pc_1_stub.v
+// Command     : write_verilog -force -mode synth_stub
+//               /home/lsriw/HLS_STANISZ/HLS/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_stub.v
 // Design      : design_1_auto_pc_1
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1

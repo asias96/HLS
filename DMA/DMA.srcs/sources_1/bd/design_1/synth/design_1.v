@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-//Date        : Wed Nov  6 11:33:45 2019
+//Date        : Wed Nov 13 10:05:48 2019
 //Host        : lsriw running 64-bit Ubuntu 18.04.3 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -54,7 +54,6 @@ module design_1
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB" *) inout FIXED_IO_ps_porb;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *) inout FIXED_IO_ps_srstb;
 
-  wire [0:0]VCC_dout;
   (* CONN_BUS_INFO = "axi_dma_0_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TDATA" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]axi_dma_0_M_AXIS_MM2S_TDATA;
   (* CONN_BUS_INFO = "axi_dma_0_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TKEEP" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [3:0]axi_dma_0_M_AXIS_MM2S_TKEEP;
   (* CONN_BUS_INFO = "axi_dma_0_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TLAST" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire axi_dma_0_M_AXIS_MM2S_TLAST;
@@ -235,9 +234,10 @@ module design_1
   wire ps7_0_axi_periph_M01_AXI_WVALID;
   wire [0:0]rst_ps7_0_49M_peripheral_aresetn;
   wire [2:0]xlconcat_0_dout;
+  wire [0:0]xlconstant_0_dout;
 
-  design_1_xlconstant_0_1 VCC
-       (.dout(VCC_dout));
+  design_1_xlconstant_0_0 GND
+       (.dout(xlconstant_0_dout));
   design_1_axi_dma_0_0 axi_dma_0
        (.axi_resetn(rst_ps7_0_49M_peripheral_aresetn),
         .m_axi_mm2s_aclk(processing_system7_0_FCLK_CLK0),
@@ -607,23 +607,23 @@ module design_1
         .mb_debug_sys_rst(1'b0),
         .peripheral_aresetn(rst_ps7_0_49M_peripheral_aresetn),
         .slowest_sync_clk(processing_system7_0_FCLK_CLK0));
-  design_1_system_ila_0_0 system_ila_0
-       (.SLOT_0_AXIS_tdata(axi_dma_0_M_AXIS_MM2S_TDATA),
-        .SLOT_0_AXIS_tkeep(axi_dma_0_M_AXIS_MM2S_TKEEP),
-        .SLOT_0_AXIS_tlast(axi_dma_0_M_AXIS_MM2S_TLAST),
-        .SLOT_0_AXIS_tready(axi_dma_0_M_AXIS_MM2S_TREADY),
-        .SLOT_0_AXIS_tvalid(axi_dma_0_M_AXIS_MM2S_TVALID),
-        .SLOT_1_AXIS_tdata(fir_0_stream_out_TDATA),
-        .SLOT_1_AXIS_tdest(fir_0_stream_out_TDEST),
-        .SLOT_1_AXIS_tid(fir_0_stream_out_TID),
-        .SLOT_1_AXIS_tkeep(fir_0_stream_out_TKEEP),
-        .SLOT_1_AXIS_tlast(fir_0_stream_out_TLAST),
-        .SLOT_1_AXIS_tready(fir_0_stream_out_TREADY),
-        .SLOT_1_AXIS_tstrb(fir_0_stream_out_TSTRB),
-        .SLOT_1_AXIS_tuser(fir_0_stream_out_TUSER),
-        .SLOT_1_AXIS_tvalid(fir_0_stream_out_TVALID),
+  design_1_system_ila_0_1 system_ila_0
+       (.SLOT_0_AXIS_tdata(fir_0_stream_out_TDATA),
+        .SLOT_0_AXIS_tdest(fir_0_stream_out_TDEST),
+        .SLOT_0_AXIS_tid(fir_0_stream_out_TID),
+        .SLOT_0_AXIS_tkeep(fir_0_stream_out_TKEEP),
+        .SLOT_0_AXIS_tlast(fir_0_stream_out_TLAST),
+        .SLOT_0_AXIS_tready(fir_0_stream_out_TREADY),
+        .SLOT_0_AXIS_tstrb(fir_0_stream_out_TSTRB),
+        .SLOT_0_AXIS_tuser(fir_0_stream_out_TUSER),
+        .SLOT_0_AXIS_tvalid(fir_0_stream_out_TVALID),
+        .SLOT_1_AXIS_tdata(axi_dma_0_M_AXIS_MM2S_TDATA),
+        .SLOT_1_AXIS_tkeep(axi_dma_0_M_AXIS_MM2S_TKEEP),
+        .SLOT_1_AXIS_tlast(axi_dma_0_M_AXIS_MM2S_TLAST),
+        .SLOT_1_AXIS_tready(axi_dma_0_M_AXIS_MM2S_TREADY),
+        .SLOT_1_AXIS_tvalid(axi_dma_0_M_AXIS_MM2S_TVALID),
         .clk(processing_system7_0_FCLK_CLK0),
-        .resetn(VCC_dout));
+        .resetn(xlconstant_0_dout));
   design_1_xlconcat_0_0 xlconcat_0
        (.In0(axi_dma_0_mm2s_introut),
         .In1(axi_dma_0_s2mm_introut),

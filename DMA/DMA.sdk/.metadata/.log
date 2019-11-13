@@ -1,0 +1,1842 @@
+!SESSION 2019-11-13 10:22:10.767 -----------------------------------------------
+eclipse.buildId=2018.3
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/lsriw/HLS_STANISZ/HLS/DMA/DMA.sdk
+
+This is a continuation of log file /home/lsriw/HLS_STANISZ/HLS/DMA/DMA.sdk/.metadata/.bak_3.log
+Created Time: 2019-11-13 11:49:03.595
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:03.595
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:03.594
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:03.645
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:03.645
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:03.696
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:03.695
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:03.746
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:03.746
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:03.797
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:03.796
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:03.847
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:03.847
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:03.898
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:03.898
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:03.949
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:03.948
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:03.998
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:03.998
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:04.049
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:04.048
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:04.099
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:04.099
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:04.150
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:04.150
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:04.200
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:04.200
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:04.251
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:04.251
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:04.302
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:04.301
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:04.352
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:04.352
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:04.403
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:04.403
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:04.454
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:04.453
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:04.504
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:04.504
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:04.555
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:04.554
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:04.605
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:04.605
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:04.656
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:04.656
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:04.707
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:04.706
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:04.757
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:04.757
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:04.808
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:04.808
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:04.858
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:04.858
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:04.909
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:04.909
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:04.960
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:04.959
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:05.010
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:05.010
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:05.061
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:05.061
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:05.112
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:05.111
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:05.162
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:05.162
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:05.213
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:05.213
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:05.264
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:05.263
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:05.314
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:05.314
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:05.365
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:05.365
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:05.415
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:05.415
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:05.466
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:05.466
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:05.517
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:05.516
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:05.566
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:05.566
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:05.617
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:05.616
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:05.667
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:05.667
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:05.718
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:05.717
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:05.768
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:05.768
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:05.819
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:05.818
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:05.869
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:05.869
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:05.920
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:05.920
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:05.970
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:05.970
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:06.021
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:06.021
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:06.071
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:06.071
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:06.122
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:06.122
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:06.172
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:06.172
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:06.223
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:06.223
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:06.273
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:06.273
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:06.324
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:06.323
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:06.374
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:06.374
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:06.425
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:06.425
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:06.475
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:06.475
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:06.526
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:06.526
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:06.576
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:06.576
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:06.627
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:06.627
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:06.678
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:06.677
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:06.728
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:06.728
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:06.779
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:06.779
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:06.829
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:06.829
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:06.880
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:06.880
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:06.931
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:06.930
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:06.981
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:06.981
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:07.032
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:07.031
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:07.082
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:07.082
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:07.133
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:07.133
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:07.184
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:07.183
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:07.234
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:07.234
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:07.285
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:07.285
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:07.335
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:07.335
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:07.386
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:07.386
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:07.437
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:07.436
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:07.487
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:07.487
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:07.538
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:07.537
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:07.588
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:07.588
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:07.639
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:07.639
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:07.690
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:07.689
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:07.740
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:07.740
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:07.791
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:07.790
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:07.842
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:07.841
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:07.891
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:07.891
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:07.942
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:07.942
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:07.993
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:07.992
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:08.043
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:08.043
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:08.094
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:08.093
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:08.144
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:08.144
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:08.195
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:08.195
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:08.246
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:08.246
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:08.297
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:08.296
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:08.348
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:08.347
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2019-11-13 11:49:08.398
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+org.eclipse.tcf.core.ErrorReport: TCF error report:
+  Command: Profiler read "JTAG-jsn-Zybo-210279786350A-4ba00477-0"
+  Time: 2019-11-13 11:49:08.398
+  Error text: Invalid context
+  Error code: 16
+
+	at org.eclipse.tcf.core.Command.toError(Command.java:266)
+	at org.eclipse.tcf.core.Command.toError(Command.java:251)
+	at org.eclipse.tcf.internal.services.remote.ProfilerProxy$3.done(ProfilerProxy.java:73)
+	at org.eclipse.tcf.core.Command.result(Command.java:121)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1116)
+	at org.eclipse.tcf.core.AbstractChannel.access$0(AbstractChannel.java:1058)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:369)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-11-13 11:49:08.447
+!MESSAGE Executed Webtalk command
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-13 11:49:08.451
+!MESSAGE XSCT Command: [disconnect tcfchan#9], Thread: Thread-1786
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-13 11:49:08.453
+!MESSAGE XSCT command with result: [disconnect tcfchan#9], Result: [{Format=channel "tcfchan#9" closed, Time=1573642148452, Code=1}, ]. Thread: Thread-1786

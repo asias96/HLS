@@ -5,8 +5,8 @@
 ############################################################
 open_project FIR_AXI4_new
 set_top fir
-add_files FIR_AXI4/.settings/fir.hpp
 add_files FIR_AXI4/.settings/fir.cpp
+add_files FIR_AXI4/.settings/fir.hpp
 add_files -tb FIR_AXI4_new/.settings/fir_test.cpp -cflags "-Wno-unknown-pragmas"
 open_solution "Solution1"
 set_part {xc7z010clg400-1}

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="fir.hpp" path="/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/.settings/fir.hpp"/>
     <originFiles name="fir.cpp" path="/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/.settings/fir.cpp"/>
+    <originFiles name="fir.hpp" path="/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4/.settings/fir.hpp"/>
   </source>
   <testbench>
     <originFiles name="fir_test.cpp" path="/home/lsriw/HLS_STANISZ/HLS/FIR_AXI4_new/.settings/fir_test.cpp"/>
