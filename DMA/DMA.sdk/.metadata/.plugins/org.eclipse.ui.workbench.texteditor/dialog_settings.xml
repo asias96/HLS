@@ -2,29 +2,29 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="XAxiDma_Busy" key="selection"/>
+		<item value="UINTPTR" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="UINTPTR"/>
+			<item value="XAxiDma_SimpleTransfer"/>
 			<item value="printf"/>
 			<item value="XAxiDma_Busy"/>
-			<item value="XAxiDma_SimpleTransfer"/>
 			<item value="XFir_Start"/>
 			<item value="XFir_EnableAutoRestart"/>
 			<item value="XFir_Set_c"/>
 			<item value="XAxiDma_IntrDisable"/>
-			<item value="XAxiDma_CfgInitialize"/>
 		</list>
 		<list key="replacehistory">
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="1853" key="DIALOG_WIDTH"/>
+		<item value="353" key="DIALOG_WIDTH"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-		<item value="1055" key="DIALOG_HEIGHT"/>
-		<item value="0" key="DIALOG_X_ORIGIN"/>
-		<item value="0" key="DIALOG_Y_ORIGIN"/>
+		<item value="789" key="DIALOG_HEIGHT"/>
+		<item value="85" key="DIALOG_X_ORIGIN"/>
+		<item value="69" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

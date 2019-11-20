@@ -3022,3 +3022,914 @@ arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
  142952	   2656	  25232	 170840	  29b58	DMA_sdk.elf
 Finished building: DMA_sdk.elf.size
  
+09:41:53 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+09:46:36 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:106:1: error: expected '}' at end of input
+ }
+ ^
+../src/main.cc:106:1: error: expected '}' at end of input
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+09:47:06 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142800	   2656	  25232	 170688	  29ac0	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+09:47:32 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+09:48:01 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142800	   2656	  25232	 170688	  29ac0	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+09:48:44 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142728	   2656	  25232	 170616	  29a78	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+09:49:02 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+09:50:51 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142808	   2656	  25232	 170696	  29ac8	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+09:51:07 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+09:51:40 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142728	   2656	  25232	 170616	  29a78	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+09:54:16 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+09:56:52 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142880	   2656	  25232	 170768	  29b10	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+09:56:56 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142816	   2656	  25232	 170704	  29ad0	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+09:57:08 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+09:58:38 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142896	   2656	  25232	 170784	  29b20	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+09:58:43 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:00:27 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142896	   2656	  25232	 170784	  29b20	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:00:34 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:01:21 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142896	   2656	  25232	 170784	  29b20	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:01:38 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142816	   2656	  25232	 170704	  29ad0	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:01:44 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:02:27 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:03:29 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142816	   2656	  25232	 170704	  29ad0	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:03:35 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:04:14 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:04:32 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142832	   2656	  25232	 170720	  29ae0	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:04:55 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:05:55 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142832	   2656	  25232	 170720	  29ae0	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:07:20 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142896	   2656	  25232	 170784	  29b20	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:08:19 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142896	   2656	  25232	 170784	  29b20	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:08:26 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142896	   2656	  25232	 170784	  29b20	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:08:30 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:08:59 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142896	   2656	  25232	 170784	  29b20	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:09:04 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:09:28 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 143216	   2656	  25232	 171104	  29c60	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:09:38 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142896	   2656	  25232	 170784	  29b20	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:09:49 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:10:25 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142904	   2656	  25232	 170792	  29b28	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:10:35 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:12:37 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 143048	   2656	  25232	 170936	  29bb8	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:12:57 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:13:28 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142904	   2656	  25232	 170792	  29b28	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:17:29 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142904	   2656	  25232	 170792	  29b28	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:17:32 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:29:52 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:31:33 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:32:53 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:33:28 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:34:57 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:35:15 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:45:10 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142904	   2656	  25232	 170792	  29b28	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:45:32 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:46:25 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142968	   2656	  25232	 170856	  29b68	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:46:32 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:48:15 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142968	   2656	  25232	 170856	  29b68	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+10:50:02 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:51:04 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:51:51 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:53:42 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:54:30 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:55:07 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:02:04 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:02:46 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:05:29 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:05:59 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:07:14 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:07:47 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:14:43 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:56:3: error: 'Dma_buffer_in' was not declared in this scope
+   Dma_buffer_in[i] = 0;
+   ^~~~~~~~~~~~~
+../src/main.cc:59:3: error: 'Dma_buffer_in' was not declared in this scope
+   Dma_buffer_in[i] = 1;
+   ^~~~~~~~~~~~~
+../src/main.cc:83:48: error: 'Dma_buffer_in' was not declared in this scope
+   XAxiDma_SimpleTransfer(&Dma_handle, (UINTPTR)Dma_buffer_in, SIZE, XAXIDMA_DMA_TO_DEVICE);
+                                                ^~~~~~~~~~~~~
+../src/main.cc:85:48: error: 'Dma_buffer_out' was not declared in this scope
+   XAxiDma_SimpleTransfer(&Dma_handle, (UINTPTR)Dma_buffer_out, SIZE, XAXIDMA_DEVICE_TO_DMA);
+                                                ^~~~~~~~~~~~~~
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:14:48 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142904	   2656	  30032	 175592	  2ade8	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:14:53 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142904	   2656	  30032	 175592	  2ade8	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:14:57 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142904	   2656	  30032	 175592	  2ade8	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:15:19 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:16:53 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:17:54 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142904	   2656	  26032	 171592	  29e48	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:24:49 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:26:03 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:38:30 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:39:05 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:42:20 **** Auto Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: DMA_sdk.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DMA_sdk.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: DMA_sdk.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size DMA_sdk.elf  |tee "DMA_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142904	   2656	  26032	 171592	  29e48	DMA_sdk.elf
+Finished building: DMA_sdk.elf.size
+ 
+11:42:27 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:42:45 **** Incremental Build of configuration Debug for project DMA_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.

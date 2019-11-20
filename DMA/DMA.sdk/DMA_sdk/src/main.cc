@@ -7,14 +7,16 @@
 #include "xfir.h"
 #include "xaxidma.h"
 
-#define SIZE 600
+#define SIZE 100
 
 XFir Fir_handle;
 XFir_Config* Fir_conf;
 XAxiDma Dma_handle;
 XAxiDma_Config* Dma_conf;
 
-typedef int data_type;
+typedef uint data_type;
+volatile data_type Dma_buffer_in[SIZE];
+volatile data_type Dma_buffer_out[SIZE];
 
 void init_pheriferial()
 {
@@ -48,9 +50,6 @@ void init_pheriferial()
 
 int main()
 {
-	data_type Dma_buffer_in[SIZE];
-	data_type Dma_buffer_out[SIZE];
-
 	init_pheriferial();
 
 	// Input buffer
@@ -82,31 +81,24 @@ int main()
 
 	int decision = 1;
 	while(decision){
+		printf("Transmit data from Device to DMA\n");
+		XAxiDma_SimpleTransfer(&Dma_handle, (UINTPTR)Dma_buffer_out, SIZE, XAXIDMA_DEVICE_TO_DMA);
+		printf("Transmit data from DMA to Device\n");
+		XAxiDma_SimpleTransfer(&Dma_handle, (UINTPTR)Dma_buffer_in, SIZE, XAXIDMA_DMA_TO_DEVICE);
 
-		int r;
-		r = XAxiDma_SimpleTransfer(&Dma_handle, (UINTPTR)Dma_buffer_in, SIZE, XAXIDMA_DMA_TO_DEVICE);
-		if (r == 0){
-			printf("tutaj4\n");
-			r = XAxiDma_SimpleTransfer(&Dma_handle, (UINTPTR)Dma_buffer_out, SIZE, XAXIDMA_DEVICE_TO_DMA);
-			if (r == 0){
-				printf("tutaj5\n");
-				while(XAxiDma_Busy(&Dma_handle, XAXIDMA_DEVICE_TO_DMA)){
-					continue;
-				}
-			}
-			else
-				printf("Error while transfer data from PL to PS \n");
+		printf("Wait1\n");
+		while(XAxiDma_Busy(&Dma_handle, XAXIDMA_DEVICE_TO_DMA)){
+			printf("1\n");
+			continue;
 		}
-		else
-			printf("Error while transfer data from PS to PL\n");
-
+		printf("Wait2\n");
 		for (i = 0; i<SIZE; i++){
 			printf("Recv[%d] = %d \n", i, Dma_buffer_out[i]);
 		}
 
-		printf("Wykonać ponownie (1) czy przerwac przetwarzanie (0)?\n");
+		printf("Wykonac ponownie (1) czy przerwac przetwarzanie (0)?\n");
 		scanf("%d", &decision);
 	}
-
+	printf("Koniec przetwarzania\n");
 	return 0;
 }
