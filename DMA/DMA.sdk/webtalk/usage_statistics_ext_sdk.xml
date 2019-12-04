@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<webTalkData  fileName='usage_statistics_ext_sdk.xml'  majorVersion='1' minorVersion='0' timeStamp='Wed Nov 13 11:49:09 2019'>
+<webTalkData  fileName='usage_statistics_ext_sdk.xml'  majorVersion='1' minorVersion='0' timeStamp='Wed Dec  4 11:14:32 2019'>
 <section name="__ROOT__" level="0" order="1" description="">
  <section name="software_version_and_target_device" level="1" order="1" description="">
   <keyValuePair key="beta" value="false" description="" />
   <keyValuePair key="build_version" value="2018.3" description="" />
-  <keyValuePair key="date_generated" value="2019-11-13 11:49:08" description="" />
+  <keyValuePair key="date_generated" value="2019-12-04 11:14:30" description="" />
   <keyValuePair key="os_platform" value="amd64" description="" />
   <keyValuePair key="product_version" value="SDK v2018.3" description="" />
-  <keyValuePair key="project_id" value="2018.3_1" description="" />
-  <keyValuePair key="project_iteration" value="1" description="" />
-  <keyValuePair key="random_id" value="j65n1sgpat3p5vurfh0o85bi6e" description="" />
+  <keyValuePair key="project_id" value="2018.3_2" description="" />
+  <keyValuePair key="project_iteration" value="2" description="" />
+  <keyValuePair key="random_id" value="vg4tdq0t8gu4ajkjgp80vm790e" description="" />
   <keyValuePair key="registration_id" value="176760252_1777531300_210672892_546" description="" />
   <keyValuePair key="route_design" value="NA" description="" />
   <keyValuePair key="target_device" value="NA" description="" />
@@ -20,43 +20,43 @@
  </section>
  <section name="user_environment" level="1" order="2" description="">
   <keyValuePair key="cpu_name" value="Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz" description="" />
-  <keyValuePair key="cpu_speed" value="1886.015 MHz" description="" />
+  <keyValuePair key="cpu_speed" value="2131.463 MHz" description="" />
   <keyValuePair key="os_name" value="Ubuntu" description="" />
   <keyValuePair key="os_release" value="Ubuntu 18.04.3 LTS" description="" />
   <keyValuePair key="system_ram" value="16.702 GB" description="" />
   <keyValuePair key="total_processors" value="1" description="" />
  </section>
  <section name="sdk" level="1" order="3" description="">
-  <section name="application/1573637094000" level="2" order="1" description="">
+  <section name="application/1575449282000" level="2" order="1" description="">
    <keyValuePair key="apptemplate" value="empty_application" description="" />
-   <keyValuePair key="bspid" value="1573637016000" description="" />
-   <keyValuePair key="hwid" value="1573636955000" description="" />
+   <keyValuePair key="bspid" value="1575449278000" description="" />
+   <keyValuePair key="hwid" value="1575449186000" description="" />
    <keyValuePair key="langused" value="CPP" description="" />
-   <keyValuePair key="newbsp" value="false" description="" />
+   <keyValuePair key="newbsp" value="true" description="" />
    <keyValuePair key="os" value="standalone" description="" />
    <keyValuePair key="procused" value="ps7_cortexa9" description="" />
-   <keyValuePair key="projsize" value="475.6015625" description="" />
+   <keyValuePair key="projsize" value="475.60546875" description="" />
    <keyValuePair key="recordtype" value="APPCreation" description="" />
-   <keyValuePair key="uid" value="1573637094000" description="" />
+   <keyValuePair key="uid" value="1575449282000" description="" />
   </section>
-  <section name="bsp/1573637016000" level="2" order="2" description="">
-   <keyValuePair key="apptemplate" value="null" description="" />
-   <keyValuePair key="hwid" value="1573636955000" description="" />
+  <section name="bsp/1575449278000" level="2" order="2" description="">
+   <keyValuePair key="apptemplate" value="empty_application" description="" />
+   <keyValuePair key="hwid" value="1575449186000" description="" />
    <keyValuePair key="os" value="standalone" description="" />
    <keyValuePair key="recordtype" value="BSPCreation" description="" />
-   <keyValuePair key="uid" value="1573637016000" description="" />
+   <keyValuePair key="uid" value="1575449278000" description="" />
   </section>
-  <section name="bsp/1573642148409" level="2" order="3" description="">
+  <section name="bsp/1575454470712" level="2" order="3" description="">
    <keyValuePair key="bootgencount" value="0" description="" />
    <keyValuePair key="crosstriggcount" value="0" description="" />
-   <keyValuePair key="debugcount" value="11" description="" />
+   <keyValuePair key="debugcount" value="4" description="" />
    <keyValuePair key="flashcount" value="0" description="" />
-   <keyValuePair key="perfcount" value="1" description="" />
+   <keyValuePair key="perfcount" value="0" description="" />
    <keyValuePair key="qemudebugcount" value="0" description="" />
    <keyValuePair key="recordtype" value="ToolUsage" description="" />
    <keyValuePair key="uid" value="NA" description="" />
   </section>
-  <section name="hardware/1573636955000" level="2" order="4" description="">
+  <section name="hardware/1575449186000" level="2" order="4" description="">
    <keyValuePair key="apptemplate" value="NA" description="" />
    <keyValuePair key="arch" value="zynq" description="" />
    <keyValuePair key="device" value="7z010" description="" />
@@ -66,7 +66,7 @@
    <keyValuePair key="os" value="NA" description="" />
    <keyValuePair key="processors" value="2" description="" />
    <keyValuePair key="recordtype" value="HWCreation" description="" />
-   <keyValuePair key="uid" value="1573636955000" description="" />
+   <keyValuePair key="uid" value="1575449186000" description="" />
    <keyValuePair key="vivadoversion" value="2018.3" description="" />
   </section>
  </section>

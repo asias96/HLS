@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="filtrGauss.h" path="/home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h"/>
     <originFiles name="filtrGauss.cpp" path="/home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp"/>
+    <originFiles name="filtrGauss.h" path="/home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h"/>
   </source>
   <testbench>
     <originFiles name="test_Gauss.cpp" path="/home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp"/>
