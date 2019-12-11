@@ -39,15 +39,45 @@ void rozmycie (img_gray& img_in, img_gray& img_out){
 			int tmp1, tmp2;
 			pixel_gray new_pixel, value;
 
-			if (j < IMG_WIDTH){
+			if (j < IMG_WIDTH+1){
 				buffer.shift_down(j);
 				tmp1 = buffer.getval(1, j);
-				//TODO
+				tmp2 = buffer.getval(2, j);
+				if (i < IMG_HEIGHT+1){
+					img_in >> new_pixel;
+					buffer.insert_top_row(new_pixel.val[0], j);
+				}
 			}
+			okno.shift_right();
+			if (j < IMG_WIDTH+1){
+					okno.insert(tmp2, 2, 0);
+					okno.insert(tmp1, 1, 0);
+					okno.insert(new_pixel.val[0], 0, 0);
+			}
+
+			if (i > 2 && j > 2 && i < IMG_HEIGHT-2 && j < IMG_WIDTH-2)
+				value = operator_Gauss(&okno);
+			else
+				value.val[0] = 0;
+
+			if (i > 0 && j > 0)
+				img_out << value;
 		}
 	}
-
 }
+
+pixel_gray operator_Gauss (okno_3x3* okno){
+
+	pixel_gray acc;
+	acc.val[0] = 0;
+	for(int i=0; i<SIZE; i++){
+		for (int j=0; j<SIZE; j++){
+			acc.val[0] += coeff_tab[i][j] * okno->getval(i,j);
+		}
+	}
+	return acc;		//[TODO] - pamietaj o zmianie szerokosci
+}
+
 
 void filtr_Gauss (dane& in, dane& out){
 #pragma HLS DATAFLOW

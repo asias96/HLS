@@ -60,8 +60,6 @@
                                     <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/ap_sysc"/>
                                     									
                                     <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/etc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/home/lsriw/HLS_STANISZ/HLS"/>
                                     								
                                 </option>
                                 								
@@ -96,8 +94,6 @@
                                     <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/ap_sysc"/>
                                     									
                                     <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/etc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/home/lsriw/HLS_STANISZ/HLS"/>
                                     								
                                 </option>
                                 								
@@ -160,6 +156,36 @@
                         </toolChain>
                         					
                     </folderInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1746565381.906926966" name="test_Gauss.cpp" rcbsApplicability="disable" resourcePath="testbench/test_Gauss.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1976746537.1041337319">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1976746537.1041337319" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1976746537">
+                            							
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.1941606391" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            							
+                            <option id="gnu.cpp.compiler.option.include.paths.2033698107" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/lsriw/HLS_STANISZ/HLS"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.cpp.compiler.option.other.other.1968952786" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.196989740" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
                     					
                     <sourceEntries>
                         						
@@ -232,8 +258,6 @@
                                     <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/ap_sysc"/>
                                     									
                                     <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/etc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/home/lsriw/HLS_STANISZ/HLS"/>
                                     								
                                 </option>
                                 								
@@ -258,8 +282,6 @@
                                     <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/ap_sysc"/>
                                     									
                                     <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/etc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/home/lsriw/HLS_STANISZ/HLS"/>
                                     								
                                 </option>
                                 								
@@ -312,6 +334,36 @@
                         </toolChain>
                         					
                     </folderInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1471423937.1426965990" name="test_Gauss.cpp" rcbsApplicability="disable" resourcePath="testbench/test_Gauss.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.1471203092.1705949870">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.1471203092.1705949870" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.1471203092">
+                            							
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.230683481" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            							
+                            <option id="gnu.cpp.compiler.option.include.paths.891171340" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/lsriw/HLS_STANISZ/HLS"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.cpp.compiler.option.other.other.358015559" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1141605503" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
                     					
                     <sourceEntries>
                         						

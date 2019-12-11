@@ -28,6 +28,6 @@ typedef ap_int<FRAC> wsp_Gauss;
 void filtr_Gauss (dane& in, dane& out);
 pixel_gray operator_Gauss (okno_3x3* okno);
 void rozmycie (img_gray& img_in, img_gray& img_out);
-static void init_wsp(wsp_Gauss coeff[][]);
+static void init_wsp(wsp_Gauss coeff[SIZE][SIZE]);
 //conwert();
 int compare(const char* img_ref, const char* img_out);

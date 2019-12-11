@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Rozmycie_Gaussa" solutionName="solution1" date="2019-12-11T11:09:46.769+0100"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Rozmycie_Gaussa" solutionName="solution1" date="2019-12-11T11:01:05.350+0100"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Rozmycie_Gaussa" solutionName="solution1" date="2019-12-11T10:46:51.884+0100"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Rozmycie_Gaussa" solutionName="solution1" date="2019-12-11T10:45:14.357+0100"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Rozmycie_Gaussa" solutionName="solution1" date="2019-12-11T10:43:19.619+0100"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Rozmycie_Gaussa" solutionName="solution1" date="2019-12-11T10:40:19.332+0100"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

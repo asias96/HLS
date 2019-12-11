@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="com.autoesl.autopilot.project" top="filtr_Gauss">
-  <files>
-    <file name="Rozmycie_Gaussa/.settings/filtrGauss.cpp" sc="0" tb="false" cflags=""/>
-    <file name="Rozmycie_Gaussa/.settings/filtrGauss.h" sc="0" tb="false" cflags=""/>
-    <file name="../.settings/test_Gauss.cpp" sc="0" tb="1" cflags=""/>
-  </files>
-  <solutions>
-    <solution name="solution1" status="active"/>
-  </solutions>
-  <includePaths/>
-  <libraryPaths/>
-  <Simulation>
-    <SimFlow name="csim"/>
-  </Simulation>
+<project xmlns="com.autoesl.autopilot.project" name="Rozmycie_Gaussa" top="filtr_Gauss">
+    <files>
+        <file name="../.settings/test_Gauss.cpp" sc="0" tb="1" cflags=" -Wno-unknown-pragmas"/>
+        <file name="Rozmycie_Gaussa/.settings/filtrGauss.h" sc="0" tb="false" cflags=""/>
+        <file name="Rozmycie_Gaussa/.settings/filtrGauss.cpp" sc="0" tb="false" cflags=""/>
+    </files>
+    <includePaths/>
+    <libraryPaths/>
+    <Simulation>
+        <SimFlow name="csim" csimMode="0" lastCsimMode="0"/>
+    </Simulation>
+    <solutions xmlns="">
+        <solution name="solution1" status="active"/>
+    </solutions>
 </project>
+
