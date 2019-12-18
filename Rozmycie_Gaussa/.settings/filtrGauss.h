@@ -1,8 +1,8 @@
 
 #include "hls_video.h"
 
-#define IMG_WIDTH 720
-#define IMG_HEIGHT 1280
+#define IMG_WIDTH 1280
+#define IMG_HEIGHT 720
 
 #define SIZE 3
 #define FRAC 8
@@ -16,7 +16,7 @@
 #define OUT_IMG nazwa2
 #define REF_IMG nazwa3
 
-typedef hls::stream<ap_axiu<8,1,1,1>> dane;
+typedef hls::stream<ap_axiu <8,1,1,1> > dane;
 typedef hls::Scalar<1, unsigned char> pixel_gray;
 typedef hls::Mat<IMG_HEIGHT, IMG_WIDTH, HLS_8UC1> img_gray;
 typedef hls::Scalar<SIZE, unsigned char> pixel_RGB;
@@ -29,5 +29,3 @@ void filtr_Gauss (dane& in, dane& out);
 pixel_gray operator_Gauss (okno_3x3* okno);
 void rozmycie (img_gray& img_in, img_gray& img_out);
 static void init_wsp(wsp_Gauss coeff[SIZE][SIZE]);
-//conwert();
-int compare(const char* img_ref, const char* img_out);

@@ -33817,7 +33817,7 @@ typedef ap_int<8> wsp_Gauss;
 void filtr_Gauss (dane& in, dane& out);
 pixel_gray operator_Gauss (okno_3x3* okno);
 void rozmycie (img_gray& img_in, img_gray& img_out);
-static void init_wsp(wsp_Gauss coeff[][]);
+static void init_wsp(wsp_Gauss coeff[3][3]);
 
 int compare(const char* img_ref, const char* img_out);
 # 3 "Rozmycie_Gaussa/.settings/filtrGauss.cpp" 2
@@ -33876,8 +33876,8 @@ void rozmycie (img_gray& img_in, img_gray& img_out){
      okno.insert(new_pixel.val[0], 0, 0);
    }
 
-   if (i > 0 && j > 0 && i < 1280 && j < 720)
-    value.val[0] = operator_Gauss(&okno);
+   if (i > 2 && j > 2 && i < 1280 -2 && j < 720 -2)
+    value = operator_Gauss(&okno);
    else
     value.val[0] = 0;
 
@@ -33889,13 +33889,14 @@ void rozmycie (img_gray& img_in, img_gray& img_out){
 
 pixel_gray operator_Gauss (okno_3x3* okno){
 
- pixel_gray acc = 0;
+ pixel_gray acc;
+ acc.val[0] = 0;
  for(int i=0; i<3; i++){
   for (int j=0; j<3; j++){
-   acc += coeff_tab[i,j] * okno->getval(i,j);
+   acc.val[0] += coeff_tab[i][j] * okno->getval(i,j);
   }
  }
- return acc.val[0];
+ return acc;
 }
 
 

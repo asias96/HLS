@@ -7,8 +7,26 @@
 using namespace cv;
 using namespace std;
 
+void hls_image_filter(Mat& in, Mat& out)
+{
+	dane dane_in, dane_out;
+	cvMat2AXIvideo(in, dane_in);
+	filtr_Gauss(dane_in, dane_out);
+	AXIvideo2cvMat(dane_out, out);
+}
+
+bool compare_images(Mat& gray1, Mat& gray2)
+{
+	Mat dst;
+	bitwise_xor(gray1, gray2, dst);
+	if(countNonZero(dst) > 0)   //do stuff in case cv::Mat are not the same
+		return false;
+	else
+		return true;
+}
+
 int main(){
-	Mat img = imread("/home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/cameraman.png", CV_LOAD_IMAGE_COLOR);
+	Mat img = imread("/home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/1.png", CV_LOAD_IMAGE_COLOR);
 
 	if (img.data == NULL){
 		cout << "Niepoprawnie wczytany obraz. Wychodze!" <<endl;
@@ -19,16 +37,17 @@ int main(){
 	Mat img_gauss = Mat(img.rows, img.cols, CV_8UC1);
 	Mat img_out = Mat(img.rows, img.cols, CV_8UC1);
 	Mat img_rbg = Mat(img.rows, img.cols, CV_8UC3);
+	Mat img_rbg_cv = Mat(img.rows, img.cols, CV_8UC3);
 	cvtColor(img, img_gray, CV_BGR2GRAY);
 
-	IplImage ipl_gray_in = img_gray;
-	IplImage ipl_gray_out = img_gauss;
-
-	//ipl_gray_in.hls_image_filter();						yyyy 9?
+	hls_image_filter(img_gray, img_out);
 
 	cvtColor(img_out, img_rbg, CV_GRAY2BGR);
-	imwrite("/home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/Image_before_process.png", img_out);
+	imwrite("/home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/Out_image.png", img_rbg);
 
-	GaussianBlur(img_gray, img_gauss, [3,3]);
+	GaussianBlur(img_gray, img_gauss, Size(3,3), 1);
+	cvtColor(img_gauss, img_rbg_cv, CV_GRAY2BGR);
+	imwrite("/home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/Out_image_cv.png", img_rbg_cv);
 
+	return compare_images(img_out, img_gauss);
 }

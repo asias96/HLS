@@ -39,22 +39,23 @@ void rozmycie (img_gray& img_in, img_gray& img_out){
 			int tmp1, tmp2;
 			pixel_gray new_pixel, value;
 
-			if (j < IMG_WIDTH+1){
+			if (j < IMG_WIDTH){
 				buffer.shift_down(j);
 				tmp1 = buffer.getval(1, j);
-				tmp2 = buffer.getval(2, j);
-				if (i < IMG_HEIGHT+1){
+				tmp2 = buffer.getval(2, j);	//Michal ma 0,j
+				if (i < IMG_HEIGHT){
 					img_in >> new_pixel;
 					buffer.insert_top_row(new_pixel.val[0], j);
 				}
 			}
 			okno.shift_right();
-			if (j < IMG_WIDTH+1){
+			if (j < IMG_WIDTH){
 					okno.insert(tmp2, 2, 0);
 					okno.insert(tmp1, 1, 0);
 					okno.insert(new_pixel.val[0], 0, 0);
 			}
 
+			//if context is valid
 			if (i > 2 && j > 2 && i < IMG_HEIGHT-2 && j < IMG_WIDTH-2)
 				value = operator_Gauss(&okno);
 			else
@@ -75,9 +76,8 @@ pixel_gray operator_Gauss (okno_3x3* okno){
 			acc.val[0] += coeff_tab[i][j] * okno->getval(i,j);
 		}
 	}
-	return acc;		//[TODO] - pamietaj o zmianie szerokosci
+	return acc;		//[TODO] - pamietaj o zmianie szerokosci?
 }
-
 
 void filtr_Gauss (dane& in, dane& out){
 #pragma HLS DATAFLOW
@@ -89,8 +89,6 @@ void filtr_Gauss (dane& in, dane& out){
 	img_gray instance_out;
 
 	hls::AXIvideo2Mat(in, instance_in);
-
 	rozmycie(instance_in, instance_out);
-
 	hls::Mat2AXIvideo(instance_out, out);
 }
