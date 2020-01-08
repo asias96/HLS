@@ -1,59 +1,15 @@
 INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'lsriw' on host 'lsriw' (Linux_x86_64 version 4.15.0-72-generic) on Wed Dec 11 11:09:46 CET 2019
+INFO: [HLS 200-10] For user 'lsriw' on host 'lsriw' (Linux_x86_64 version 4.15.0-74-generic) on Wed Jan 08 11:43:09 CET 2020
 INFO: [HLS 200-10] On os Ubuntu 18.04.3 LTS
-INFO: [HLS 200-10] In directory '/home/lsriw/HLS_STANISZ/HLS'
-INFO: [HLS 200-10] Opening project '/home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa'.
-INFO: [HLS 200-10] Opening solution '/home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/solution1'.
+INFO: [HLS 200-10] In directory '/home/lsriw/HLS/HLS'
+INFO: [HLS 200-10] Opening project '/home/lsriw/HLS/HLS/Rozmycie_Gaussa'.
+INFO: [HLS 200-10] Opening solution '/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
 INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../.settings/test_Gauss.cpp in debug mode
    Generating csim.exe
-Makefile.rules:399: recipe for target 'csim.exe' failed
-/opt/Xilinx/Vivado/2018.3/tps/lnx64/binutils-2.26/bin/ld: warning: libpng12.so.0, needed by /opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so, not found (try using -rpath or -rpath-link)
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_read_info@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_set_packing@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_set_IHDR@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_read_update_info@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_set_write_fn@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_write_end@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_create_read_struct@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_read_image@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_set_strip_alpha@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_set_gray_to_rgb@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_get_IHDR@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_set_strip_16@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_create_write_struct@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_init_io@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_set_swap@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_set_compression_strategy@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_write_info@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_destroy_write_struct@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_get_io_ptr@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_set_palette_to_rgb@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_set_compression_level@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_destroy_read_struct@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_read_end@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_set_rgb_to_gray@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_error@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_write_image@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_set_read_fn@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_create_info_struct@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_set_expand_gray_1_2_4_to_8@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_set_filter@PNG12_0'
-/opt/Xilinx/Vivado/2018.3/lnx64/tools/opencv/opencv_gcc/libopencv_highgui.so: undefined reference to `png_set_bgr@PNG12_0'
-collect2: error: ld returned 1 exit status
-make: *** [csim.exe] Error 1
-ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+Obrazki inne.
+INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-4
-    while executing
-"source /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/solution1/csim.tcl"
-    invoked from within
-"hls::main /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/solution1/csim.tcl"
-    ("uplevel" body line 1)
-    invoked from within
-"uplevel 1 hls::main {*}$args"
-    (procedure "hls_proc" line 5)
-    invoked from within
-"hls_proc $argv"

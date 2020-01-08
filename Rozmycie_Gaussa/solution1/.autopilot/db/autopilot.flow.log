@@ -1,4 +1,4 @@
-INFO-FLOW: Workspace /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/solution1 opened at Wed Dec 18 10:24:00 CET 2019
+INFO-FLOW: Workspace /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1 opened at Wed Jan 08 11:39:50 CET 2020
 Execute     config_clock -quiet -name default -period 10 -unit ns -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     open_platform DefaultPlatform 
@@ -48,8 +48,6 @@ Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/u
 Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
 Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
 Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.11 sec.
-Command     ap_source done; 0.11 sec.
 Execute     open_platform DefaultPlatform 
 Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
 Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
@@ -79,7 +77,7 @@ Execute       get_default_platform
 Execute     get_default_platform 
 Execute     config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
 Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.19 sec.
+Command   open_solution done; 0.2 sec.
 Execute   set_part xc7z010clg400-1 -tool vivado 
 Execute     add_library xilinx/zynq/zynq:xc7z010:clg400:-1 
 Execute       get_default_platform 
@@ -117,1033 +115,607 @@ Execute       is_encrypted Rozmycie_Gaussa/.settings/filtrGauss.cpp
 Execute       get_default_platform 
 INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
-Execute       clang  -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado/2018.3/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "Rozmycie_Gaussa/.settings/filtrGauss.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.pp.0.cpp" 
-INFO-FLOW: exec /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E Rozmycie_Gaussa/.settings/filtrGauss.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vivado/2018.3/common/technology/autopilot -I /opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.pp.0.cpp
-Command       clang done; 1.97 sec.
-Execute       tidy_31 xilinx-xfmat-array-geometry /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.pp.0.cpp std=gnu++98 
-INFO-FLOW: exec /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 5.32 sec.
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado/2018.3/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "Rozmycie_Gaussa/.settings/filtrGauss.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.pp.0.cpp" 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E Rozmycie_Gaussa/.settings/filtrGauss.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vivado/2018.3/common/technology/autopilot -I /opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.pp.0.cpp
+Command       clang done; 1.93 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 5.21 sec.
 INFO-FLOW: Syntax Checking before pre-processing...
-Execute       clang -syntaxcheck -src /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado/2018.3/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.pp.0.cpp"  -o "/home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/useless.bc"  
-INFO-FLOW: exec /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vivado/2018.3/common/technology/autopilot -I /opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.pp.0.cpp -o /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/useless.bc
-ERROR: [HLS 200-70] Compilation errors found: In file included from Rozmycie_Gaussa/.settings/filtrGauss.cpp:1:
-In file included from Rozmycie_Gaussa/.settings/filtrGauss.cpp:2:
-Rozmycie_Gaussa/.settings/filtrGauss.h:19:39: error: use of undeclared identifier 'dane'
-typedef hls::stream<ap_axiu<8,1,1,1>> dane;
-                                      ^
-Rozmycie_Gaussa/.settings/filtrGauss.h:19:43: error: type name requires a specifier or qualifier
-typedef hls::stream<ap_axiu<8,1,1,1>> dane;
-                                          ^
-Rozmycie_Gaussa/.settings/filtrGauss.h:28:6: error: variable has incomplete type 'void'
-void filtr_Gauss (dane& in, dane& out);
-     ^
-Rozmycie_Gaussa/.settings/filtrGauss.h:28:19: error: use of undeclared identifier 'dane'
-void filtr_Gauss (dane& in, dane& out);
-                  ^
-Rozmycie_Gaussa/.settings/filtrGauss.h:28:25: error: use of undeclared identifier 'in'
-void filtr_Gauss (dane& in, dane& out);
-                        ^
-In file included from Rozmycie_Gaussa/.settings/filtrGauss.cpp:1:
-Rozmycie_Gaussa/.settings/filtrGauss.cpp:82:6: error: variable has incomplete type 'void'
-void filtr_Gauss (dane& in, dane& out){
-     ^
-Rozmycie_Gaussa/.settings/filtrGauss.cpp:82:19: error: use of undeclared identifier 'dane'
-void filtr_Gauss (dane& in, dane& out){
-                  ^
-Rozmycie_Gaussa/.settings/filtrGauss.cpp:82:25: error: use of undeclared identifier 'in'
-void filtr_Gauss (dane& in, dane& out){
-                        ^
-Rozmycie_Gaussa/.settings/filtrGauss.cpp:82:39: error: expected ';' after top level declarator
-void filtr_Gauss (dane& in, dane& out){
-                                      ^
-                                      ;
-9 errors generated.
-Command       clang done; error code: 2; 4.36 sec.
-Command     elaborate done; error code: 2; 11.66 sec.
-Command   csynth_design done; error code: 2; 11.68 sec.
-Command ap_source done; error code: 1; 11.94 sec.
+Execute       clang -syntaxcheck -src /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado/2018.3/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.pp.0.cpp"  -o "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vivado/2018.3/common/technology/autopilot -I /opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.pp.0.cpp -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/useless.bc
+Command       clang done; 4.4 sec.
+INFO-FLOW: Done: GCC PP time: 11.5 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.pp.0.cpp std=gnu++98 -directive=/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 4.23 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.pp.0.cpp std=gnu++98 -directive=/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/all.directive.json -quiet -fix-errors /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 4.16 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/xilinx-dataflow-lawyer.filtrGauss.pp.0.cpp.diag.yml /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/xilinx-dataflow-lawyer.filtrGauss.pp.0.cpp.out.log 2> /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/xilinx-dataflow-lawyer.filtrGauss.pp.0.cpp.err.log 
+Command       ap_eval done; 4.3 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/tidy-3.1.filtrGauss.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/tidy-3.1.filtrGauss.pp.0.cpp.out.log 2> /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/tidy-3.1.filtrGauss.pp.0.cpp.err.log 
+Command         ap_eval done; 7.33 sec.
+Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/xilinx-legacy-rewriter.filtrGauss.pp.0.cpp.out.log 2> /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/xilinx-legacy-rewriter.filtrGauss.pp.0.cpp.err.log 
+Command         ap_eval done; 6.18 sec.
+Command       tidy_31 done; 13.89 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 22.4 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 6.44 sec.
+Execute       get_default_platform 
+INFO-FLOW: Processing labels
+Execute       clang -src /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.bc" 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vivado/2018.3/common/technology/autopilot -I /opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.bc
+Command       clang done; 4.46 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtrGauss.g.bc -hls-opt -except-internalize filtr_Gauss -L/opt/Xilinx/Vivado/2018.3/lnx64/lib -lhlsm -lhlsmc++ -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 1.08 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 446.188 ; gain = 0.191 ; free physical = 8511 ; free virtual = 13939
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 446.188 ; gain = 0.191 ; free physical = 8511 ; free virtual = 13939
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/a.pp.bc -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/a.pp.0.bc -f 
+Command         transform done; 0.29 sec.
+Execute         llvm-ld /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/a.pp.0.bc -disable-opt -L/opt/Xilinx/Vivado/2018.3/lnx64/lib -lfloatconversion -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 0.83 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -lower-blackbox -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top filtr_Gauss -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/a.g.0.bc -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:701) in function 'hls::Mat<720, 1280, 0>::write(hls::Scalar<1, unsigned char>)' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:677) in function 'hls::Mat<720, 1280, 0>::read()' completely with a factor of 1.
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 0>::init' into 'hls::Mat<720, 1280, 0>::Mat.1' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:636).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<8, unsigned char>.1' into 'hls::AXIGetBitFields<8, unsigned char>' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_axi_io.h:71).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<8, unsigned char>' into 'hls::AXIvideo2Mat<8, 720, 1280, 0>' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:92).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 0>::write' into 'hls::Mat<720, 1280, 0>::operator<<' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 0>::operator<<' into 'hls::AXIvideo2Mat<8, 720, 1280, 0>' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:94).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 0>::operator<<' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:65).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 1280, unsigned char, 0>::shift_pixels_down' into 'hls::LineBuffer<3, 1280, unsigned char, 0>::shift_down' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:853).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 1280, unsigned char, 0>::shift_down' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:43).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 1280, unsigned char, 0>::getval' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:45).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 1280, unsigned char, 0>::getval' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:44).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 0>::read' into 'hls::Mat<720, 1280, 0>::operator>>' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 0>::operator>>' into 'hls::Mat2AXIvideo<8, 720, 1280, 0>' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:140).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 0>::operator>>' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:47).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 1280, unsigned char, 0>::insert_top_row' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:48).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::shift_pixels_right' into 'hls::Window<3, 3, unsigned char>::shift_right' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:543).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::shift_right' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:51).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::insert_pixel' into 'hls::Window<3, 3, unsigned char>::insert' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:573).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::insert' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:53).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::insert' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:54).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::insert' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:55).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::getval' into 'operator_Gauss' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:76).
+INFO: [XFORM 203-603] Inlining function 'hls::AXISetBitFields<8, unsigned char>.1' into 'hls::AXISetBitFields<8, unsigned char>' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_axi_io.h:100).
+INFO: [XFORM 203-603] Inlining function 'hls::AXISetBitFields<8, unsigned char>' into 'hls::Mat2AXIvideo<8, 720, 1280, 0>' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:143).
+Command         transform done; 0.33 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 576.160 ; gain = 130.164 ; free physical = 8451 ; free virtual = 13896
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/a.g.1.bc -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+Command         transform done; 0.28 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/a.g.2.prechk.bc -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+Command         transform done; 0.14 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 637.996 ; gain = 192.000 ; free physical = 8413 ; free virtual = 13864
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/a.g.1.bc to /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/a.o.1.bc -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'instance_out.data_stream.V' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:89).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'instance_in.data_stream.V' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:88).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'IN_LOOP' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:34) in function 'rozmycie' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'operator_Gauss' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:70).
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:687) in function 'rozmycie' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:161) in function 'rozmycie' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2.1' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:163) in function 'rozmycie' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:74) in function 'operator_Gauss' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:75) in function 'operator_Gauss' completely with a factor of 3.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'instance_in.data_stream.V' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:88) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'instance_out.data_stream.V' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:89) .
+INFO: [XFORM 203-101] Partitioning array 'okno.val' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:29) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'buffer.val' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:30) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'new_pixel.val' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:40) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'value.val' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:40) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:115) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:56) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'instance_in.data_stream.V' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:88) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'instance_out.data_stream.V' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:89) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'okno.val' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:29) in dimension 2 completely.
+INFO: [XFORM 203-602] Inlining function 'operator_Gauss' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:60) automatically.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 1280 for loop 'loop_width' in function 'hls::Mat2AXIvideo<8, 720, 1280, 0>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 720 for loop 'loop_height' in function 'hls::Mat2AXIvideo<8, 720, 1280, 0>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 1280 for loop 'loop_channels' in function 'hls::AXIvideo2Mat<8, 720, 1280, 0>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 720 for loop 'loop_height' in function 'hls::AXIvideo2Mat<8, 720, 1280, 0>'.
+INFO: [XFORM 203-712] Applying dataflow to function 'filtr_Gauss', detected/extracted 3 process function(s): 
+	 'hls::AXIvideo2Mat<8, 720, 1280, 0>'
+	 'rozmycie'
+	 'hls::Mat2AXIvideo<8, 720, 1280, 0>'.
+Command         transform done; 0.6 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/a.o.1.tmp.bc -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:165:17) to (Rozmycie_Gaussa/.settings/filtrGauss.cpp:64:4) in function 'rozmycie'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (Rozmycie_Gaussa/.settings/filtrGauss.cpp:20:4) to (Rozmycie_Gaussa/.settings/filtrGauss.cpp:19:22) in function 'init_wsp'... converting 8 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:27)...11 expression(s) balanced.
+Command         transform done; 0.31 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 639.918 ; gain = 193.922 ; free physical = 8340 ; free virtual = 13805
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -cdfg-build /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/a.o.2.bc -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [XFORM 203-541] Flattening a loop nest 'OUT_LOOP' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:33:41) in function 'rozmycie'.
+WARNING: [XFORM 203-631] Renaming function 'hls::Mat2AXIvideo<8, 720, 1280, 0>' to 'Mat2AXIvideo' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:125:50)
+WARNING: [XFORM 203-631] Renaming function 'hls::AXIvideo2Mat<8, 720, 1280, 0>' to 'AXIvideo2Mat' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:63:9)
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'buffer.val[1]' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:30).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'buffer.val[0]' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:30).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'buffer.val[1]' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:30).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'buffer.val[0]' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:30).
+INFO: [ANALYSIS 214-51] Found inter dependency for variable 'buffer.val[1]' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:30) (distance = 1).
+INFO: [ANALYSIS 214-51] Found inter dependency for variable 'buffer.val[0]' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:30) (distance = 1).
+Command         transform done; 0.47 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 640.055 ; gain = 194.059 ; free physical = 8305 ; free virtual = 13772
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 3.25 sec.
+Command     elaborate done; 53.77 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'filtr_Gauss' ...
+Execute       ap_set_top_model filtr_Gauss 
+Execute       get_model_list filtr_Gauss -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model filtr_Gauss 
+Execute       preproc_iomode -model Mat2AXIvideo 
+Execute       preproc_iomode -model rozmycie 
+Execute       preproc_iomode -model AXIvideo2Mat 
+Execute       get_model_list filtr_Gauss -filter all-wo-channel 
+INFO-FLOW: Model list for configure: AXIvideo2Mat rozmycie Mat2AXIvideo filtr_Gauss
+INFO-FLOW: Configuring Module : AXIvideo2Mat ...
+Execute       set_default_model AXIvideo2Mat 
+Execute       apply_spec_resource_limit AXIvideo2Mat 
+INFO-FLOW: Configuring Module : rozmycie ...
+Execute       set_default_model rozmycie 
+Execute       apply_spec_resource_limit rozmycie 
+INFO-FLOW: Configuring Module : Mat2AXIvideo ...
+Execute       set_default_model Mat2AXIvideo 
+Execute       apply_spec_resource_limit Mat2AXIvideo 
+INFO-FLOW: Configuring Module : filtr_Gauss ...
+Execute       set_default_model filtr_Gauss 
+Execute       apply_spec_resource_limit filtr_Gauss 
+INFO-FLOW: Model list for preprocess: AXIvideo2Mat rozmycie Mat2AXIvideo filtr_Gauss
+INFO-FLOW: Preprocessing Module: AXIvideo2Mat ...
+Execute       set_default_model AXIvideo2Mat 
+Execute       cdfg_preprocess -model AXIvideo2Mat 
+Execute       rtl_gen_preprocess AXIvideo2Mat 
+INFO-FLOW: Preprocessing Module: rozmycie ...
+Execute       set_default_model rozmycie 
+Execute       cdfg_preprocess -model rozmycie 
+Execute       rtl_gen_preprocess rozmycie 
+INFO-FLOW: Preprocessing Module: Mat2AXIvideo ...
+Execute       set_default_model Mat2AXIvideo 
+Execute       cdfg_preprocess -model Mat2AXIvideo 
+Execute       rtl_gen_preprocess Mat2AXIvideo 
+INFO-FLOW: Preprocessing Module: filtr_Gauss ...
+Execute       set_default_model filtr_Gauss 
+Execute       cdfg_preprocess -model filtr_Gauss 
+Execute       rtl_gen_preprocess filtr_Gauss 
+INFO-FLOW: Model list for synthesis: AXIvideo2Mat rozmycie Mat2AXIvideo filtr_Gauss
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIvideo2Mat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model AXIvideo2Mat 
+Execute       schedule -model AXIvideo2Mat 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_start'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_eol'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.27 sec.
+INFO: [HLS 200-111]  Elapsed time: 54.54 seconds; current allocated memory: 217.525 MB.
+Execute       report -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/AXIvideo2Mat.verbose.sched.rpt -verbose -f 
+INFO: [HLS 200-434] Only 3 loops out of a total 4 loops have been pipelined in this design.
+Execute       db_write -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/AXIvideo2Mat.sched.adb -f 
+INFO-FLOW: Finish scheduling AXIvideo2Mat.
+Execute       set_default_model AXIvideo2Mat 
+Execute       bind -model AXIvideo2Mat 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=AXIvideo2Mat
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 217.815 MB.
+Execute       report -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/AXIvideo2Mat.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/AXIvideo2Mat.bind.adb -f 
+INFO-FLOW: Finish binding AXIvideo2Mat.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'rozmycie' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model rozmycie 
+Execute       schedule -model rozmycie 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'OUT_LOOP_IN_LOOP'.
+WARNING: [SCHED 204-68] The II Violation in module 'rozmycie': Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'store' operation (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:797->Rozmycie_Gaussa/.settings/filtrGauss.cpp:48) of variable 'tmp', /opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:679->/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711->Rozmycie_Gaussa/.settings/filtrGauss.cpp:47 on array 'buffer.val[0]', Rozmycie_Gaussa/.settings/filtrGauss.cpp:30 and 'load' operation ('buffer_val_0_load', /opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:689->/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:853->Rozmycie_Gaussa/.settings/filtrGauss.cpp:43) on array 'buffer.val[0]', Rozmycie_Gaussa/.settings/filtrGauss.cpp:30.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('coeff_tab_V_load_2', Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60) on array 'coeff_tab_V' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'coeff_tab_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 5, Depth = 11.
+WARNING: [SCHED 204-21] Estimated clock period (10.283ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'rozmycie' consists of the following:
+	'mul' operation of DSP[135] ('ret_V_2_i', Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60) [121]  (3.36 ns)
+	'add' operation of DSP[135] ('tmp10', Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60) [135]  (3.02 ns)
+	'add' operation ('tmp8', Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60) [136]  (0 ns)
+	'add' operation ('acc_V_2_2_i', Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60) [137]  (3.9 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.19 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 218.434 MB.
+Execute       report -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/rozmycie.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/rozmycie.sched.adb -f 
+INFO-FLOW: Finish scheduling rozmycie.
+Execute       set_default_model rozmycie 
+Execute       bind -model rozmycie 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=rozmycie
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 218.974 MB.
+Execute       report -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/rozmycie.verbose.bind.rpt -verbose -f 
+Command       report done; 0.11 sec.
+Execute       db_write -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/rozmycie.bind.adb -f 
+INFO-FLOW: Finish binding rozmycie.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Mat2AXIvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Mat2AXIvideo 
+Execute       schedule -model Mat2AXIvideo 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 219.182 MB.
+Execute       report -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/Mat2AXIvideo.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/Mat2AXIvideo.sched.adb -f 
+INFO-FLOW: Finish scheduling Mat2AXIvideo.
+Execute       set_default_model Mat2AXIvideo 
+Execute       bind -model Mat2AXIvideo 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=Mat2AXIvideo
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 219.357 MB.
+Execute       report -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/Mat2AXIvideo.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/Mat2AXIvideo.bind.adb -f 
+INFO-FLOW: Finish binding Mat2AXIvideo.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'filtr_Gauss' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model filtr_Gauss 
+Execute       schedule -model filtr_Gauss 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 219.514 MB.
+Execute       report -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.sched.adb -f 
+INFO-FLOW: Finish scheduling filtr_Gauss.
+Execute       set_default_model filtr_Gauss 
+Execute       bind -model filtr_Gauss 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=filtr_Gauss
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 219.683 MB.
+Execute       report -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.bind.adb -f 
+INFO-FLOW: Finish binding filtr_Gauss.
+Execute       get_model_list filtr_Gauss -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess AXIvideo2Mat 
+Execute       rtl_gen_preprocess rozmycie 
+Execute       rtl_gen_preprocess Mat2AXIvideo 
+Execute       rtl_gen_preprocess filtr_Gauss 
+INFO-FLOW: Model list for RTL generation: AXIvideo2Mat rozmycie Mat2AXIvideo filtr_Gauss
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2Mat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model AXIvideo2Mat -vendor xilinx -mg_file /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2Mat'.
+INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 220.614 MB.
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.rtl_wrap.cfg.tcl 
+Execute       gen_rtl AXIvideo2Mat -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/syn/systemc/AXIvideo2Mat -synmodules AXIvideo2Mat rozmycie Mat2AXIvideo filtr_Gauss 
+Execute       gen_rtl AXIvideo2Mat -style xilinx -f -lang vhdl -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/syn/vhdl/AXIvideo2Mat 
+Execute       gen_rtl AXIvideo2Mat -style xilinx -f -lang vlog -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/syn/verilog/AXIvideo2Mat 
+Execute       gen_tb_info AXIvideo2Mat -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/AXIvideo2Mat -p /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db 
+Execute       report -model AXIvideo2Mat -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/syn/report/AXIvideo2Mat_csynth.rpt -f 
+Execute       report -model AXIvideo2Mat -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/syn/report/AXIvideo2Mat_csynth.xml -f -x 
+Execute       report -model AXIvideo2Mat -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/AXIvideo2Mat.verbose.rpt -verbose -f 
+Execute       db_write -model AXIvideo2Mat -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/AXIvideo2Mat.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'rozmycie' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model rozmycie -vendor xilinx -mg_file /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/rozmycie.compgen.tcl 
+INFO: [RTGEN 206-100] Generating core module 'filtr_Gauss_mac_muladd_8ns_8s_16ns_16_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'filtr_Gauss_mac_muladd_8ns_8s_16s_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'rozmycie'.
+INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 222.752 MB.
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.rtl_wrap.cfg.tcl 
+Execute       gen_rtl rozmycie -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/syn/systemc/rozmycie -synmodules AXIvideo2Mat rozmycie Mat2AXIvideo filtr_Gauss 
+Execute       gen_rtl rozmycie -style xilinx -f -lang vhdl -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/syn/vhdl/rozmycie 
+Execute       gen_rtl rozmycie -style xilinx -f -lang vlog -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/syn/verilog/rozmycie 
+Execute       gen_tb_info rozmycie -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/rozmycie -p /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db 
+Execute       report -model rozmycie -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/syn/report/rozmycie_csynth.rpt -f 
+Execute       report -model rozmycie -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/syn/report/rozmycie_csynth.xml -f -x 
+Execute       report -model rozmycie -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/rozmycie.verbose.rpt -verbose -f 
+Command       report done; 0.17 sec.
+Execute       db_write -model rozmycie -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/rozmycie.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Mat2AXIvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model Mat2AXIvideo -vendor xilinx -mg_file /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Mat2AXIvideo'.
+INFO: [HLS 200-111]  Elapsed time: 0.38 seconds; current allocated memory: 225.702 MB.
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Mat2AXIvideo -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/syn/systemc/Mat2AXIvideo -synmodules AXIvideo2Mat rozmycie Mat2AXIvideo filtr_Gauss 
+Execute       gen_rtl Mat2AXIvideo -style xilinx -f -lang vhdl -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/syn/vhdl/Mat2AXIvideo 
+Execute       gen_rtl Mat2AXIvideo -style xilinx -f -lang vlog -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/syn/verilog/Mat2AXIvideo 
+Execute       gen_tb_info Mat2AXIvideo -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/Mat2AXIvideo -p /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db 
+Execute       report -model Mat2AXIvideo -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/syn/report/Mat2AXIvideo_csynth.rpt -f 
+Execute       report -model Mat2AXIvideo -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/syn/report/Mat2AXIvideo_csynth.xml -f -x 
+Execute       report -model Mat2AXIvideo -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/Mat2AXIvideo.verbose.rpt -verbose -f 
+Execute       db_write -model Mat2AXIvideo -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/Mat2AXIvideo.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'filtr_Gauss' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model filtr_Gauss -vendor xilinx -mg_file /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'filtr_Gauss/in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'filtr_Gauss/in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'filtr_Gauss/in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'filtr_Gauss/in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'filtr_Gauss/in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'filtr_Gauss/in_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'filtr_Gauss/in_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'filtr_Gauss/out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'filtr_Gauss/out_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'filtr_Gauss/out_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'filtr_Gauss/out_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'filtr_Gauss/out_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'filtr_Gauss/out_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'filtr_Gauss/out_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'filtr_Gauss' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port bun_1.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'filtr_Gauss'.
+INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 226.812 MB.
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.rtl_wrap.cfg.tcl 
+Execute       gen_rtl filtr_Gauss -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/syn/systemc/filtr_Gauss -synmodules AXIvideo2Mat rozmycie Mat2AXIvideo filtr_Gauss 
+Execute       gen_rtl filtr_Gauss -istop -style xilinx -f -lang vhdl -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/syn/vhdl/filtr_Gauss 
+Execute       gen_rtl filtr_Gauss -istop -style xilinx -f -lang vlog -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/syn/verilog/filtr_Gauss 
+Execute       export_constraint_db -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.constraint.tcl -f -tool general 
+Execute       report -model filtr_Gauss -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.design.xml -verbose -f -dv 
+Command       report done; 0.15 sec.
+Execute       report -model filtr_Gauss -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.sdaccel.xml -verbose -f -sdaccel 
+Execute       gen_tb_info filtr_Gauss -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss -p /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db 
+Execute       report -model filtr_Gauss -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/syn/report/filtr_Gauss_csynth.rpt -f 
+Execute       report -model filtr_Gauss -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/syn/report/filtr_Gauss_csynth.xml -f -x 
+Execute       report -model filtr_Gauss -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.verbose.rpt -verbose -f 
+Execute       db_write -model filtr_Gauss -o /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.adb -f 
+Execute       sc_get_clocks filtr_Gauss 
+Execute       get_config_export -vivado_clock 
+Execute       sc_get_portdomain filtr_Gauss 
+INFO-FLOW: Model list for RTL component generation: AXIvideo2Mat rozmycie Mat2AXIvideo filtr_Gauss
+INFO-FLOW: Handling components in module [AXIvideo2Mat] ... 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+INFO-FLOW: Handling components in module [rozmycie] ... 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/rozmycie.compgen.tcl 
+INFO-FLOW: Found component filtr_Gauss_mac_muladd_8ns_8s_16ns_16_1_1.
+INFO-FLOW: Append model filtr_Gauss_mac_muladd_8ns_8s_16ns_16_1_1
+INFO-FLOW: Found component filtr_Gauss_mac_muladd_8ns_8s_16s_16_1_1.
+INFO-FLOW: Append model filtr_Gauss_mac_muladd_8ns_8s_16s_16_1_1
+INFO-FLOW: Found component rozmycie_coeff_tab_V.
+INFO-FLOW: Append model rozmycie_coeff_tab_V
+INFO-FLOW: Found component rozmycie_buffer_val_0.
+INFO-FLOW: Append model rozmycie_buffer_val_0
+INFO-FLOW: Handling components in module [Mat2AXIvideo] ... 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+INFO-FLOW: Handling components in module [filtr_Gauss] ... 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.compgen.tcl 
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component start_for_rozmycie_U0.
+INFO-FLOW: Append model start_for_rozmycie_U0
+INFO-FLOW: Found component start_for_Mat2AXIvideo_U0.
+INFO-FLOW: Append model start_for_Mat2AXIvideo_U0
+INFO-FLOW: Found component filtr_Gauss_bun_1_s_axi.
+INFO-FLOW: Append model filtr_Gauss_bun_1_s_axi
+INFO-FLOW: Append model AXIvideo2Mat
+INFO-FLOW: Append model rozmycie
+INFO-FLOW: Append model Mat2AXIvideo
+INFO-FLOW: Append model filtr_Gauss
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: filtr_Gauss_mac_muladd_8ns_8s_16ns_16_1_1 filtr_Gauss_mac_muladd_8ns_8s_16s_16_1_1 rozmycie_coeff_tab_V rozmycie_buffer_val_0 fifo_w8_d2_A fifo_w8_d2_A start_for_rozmycie_U0 start_for_Mat2AXIvideo_U0 filtr_Gauss_bun_1_s_axi AXIvideo2Mat rozmycie Mat2AXIvideo filtr_Gauss
+INFO-FLOW: To file: write model filtr_Gauss_mac_muladd_8ns_8s_16ns_16_1_1
+INFO-FLOW: To file: write model filtr_Gauss_mac_muladd_8ns_8s_16s_16_1_1
+INFO-FLOW: To file: write model rozmycie_coeff_tab_V
+INFO-FLOW: To file: write model rozmycie_buffer_val_0
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model start_for_rozmycie_U0
+INFO-FLOW: To file: write model start_for_Mat2AXIvideo_U0
+INFO-FLOW: To file: write model filtr_Gauss_bun_1_s_axi
+INFO-FLOW: To file: write model AXIvideo2Mat
+INFO-FLOW: To file: write model rozmycie
+INFO-FLOW: To file: write model Mat2AXIvideo
+INFO-FLOW: To file: write model filtr_Gauss
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/global.setting.tcl
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/rozmycie.compgen.tcl 
+WARNING: [RTMG 210-274] Memory 'rozmycie_coeff_tab_V' is read-only, switch it to a ROM.
+INFO: [RTMG 210-279] Implementing memory 'rozmycie_coeff_tab_V_rom' using distributed ROMs.
+INFO: [RTMG 210-278] Implementing memory 'rozmycie_buffer_val_0_ram (RAM)' using block RAMs.
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.compgen.tcl 
+INFO: [RTMG 210-285] Implementing FIFO 'instance_in_data_str_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'instance_out_data_st_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_rozmycie_U0_U(start_for_rozmycie_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Mat2AXIvideo_U0_U(start_for_Mat2AXIvideo_U0)' using Shift Registers.
+Execute         source ./bun_1.slave.tcl 
+Execute         is_m_axi_addr64 
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/global.setting.tcl
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=filtr_Gauss xml_exists=0
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.rtl_wrap.cfg.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.rtl_wrap.cfg.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.rtl_wrap.cfg.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.tbgen.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/rozmycie.compgen.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/rozmycie.compgen.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/rozmycie.compgen.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.compgen.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.constraint.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=28
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=14
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=1 #modelList=13 #gSsdmPorts=28
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.tbgen.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.tbgen.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.tbgen.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.tbgen.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.tbgen.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.tbgen.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.tbgen.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_export -xo 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/filtr_Gauss.constraint.tcl 
+Execute       sc_get_clocks filtr_Gauss 
+Execute       source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       ::config_rtl 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist: /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 640.055 ; gain = 194.059 ; free physical = 8285 ; free virtual = 13758
+INFO: [SYSC 207-301] Generating SystemC RTL for filtr_Gauss.
+INFO: [VHDL 208-304] Generating VHDL RTL for filtr_Gauss.
+INFO: [VLOG 209-307] Generating Verilog RTL for filtr_Gauss.
+Command     autosyn done; 2.89 sec.
+Execute     get_part 
+Execute     get_config_export -sdx_tcl 
+Command   csynth_design done; 56.67 sec.
+Command ap_source done; 56.92 sec.
 Execute cleanup_all 
-INFO-FLOW: Workspace /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/solution1 opened at Wed Dec 18 10:33:08 CET 2019
-Execute     config_clock -quiet -name default -period 10 -unit ns -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.13 sec.
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.17 sec.
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.17 sec.
-Command     ap_source done; 0.17 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z010clg400-1 
-Execute       add_library xilinx/zynq/zynq:xc7z010:clg400:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z010 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
-Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.31 sec.
-Execute   csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
-Execute     get_default_platform 
-Execute     source run_sim.tcl 
-Command     ap_source done; error code: 1; 0.39 sec.
-ERROR: [SIM 211-100] CSim failed with errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; error code: 2; 17.35 sec.
-Command ap_source done; error code: 1; 17.66 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/solution1 opened at Wed Dec 18 10:34:55 CET 2019
-Execute     config_clock -quiet -name default -period 10 -unit ns -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z010clg400-1 
-Execute       add_library xilinx/zynq/zynq:xc7z010:clg400:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z010 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
-Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.19 sec.
-Execute   csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
-Execute     get_default_platform 
-Execute     source run_sim.tcl 
-Command     ap_source done; 0.16 sec.
-INFO: [SIM 211-1] CSim done with 0 errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; 8.3 sec.
-Command ap_source done; 8.49 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/solution1 opened at Wed Dec 18 10:36:42 CET 2019
-Execute     config_clock -quiet -name default -period 10 -unit ns -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z010clg400-1 
-Execute       add_library xilinx/zynq/zynq:xc7z010:clg400:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z010 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
-Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.17 sec.
-Execute   csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
-Execute     get_default_platform 
-Execute     source run_sim.tcl 
-INFO-FLOW: Workspace /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/solution1 opened at Wed Dec 18 10:48:17 CET 2019
-Execute     config_clock -quiet -name default -period 10 -unit ns -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.15 sec.
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.19 sec.
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.19 sec.
-Command     ap_source done; 0.19 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z010clg400-1 
-Execute       add_library xilinx/zynq/zynq:xc7z010:clg400:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z010 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
-Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.34 sec.
-Execute   csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
-Execute     get_default_platform 
-Execute     source run_sim.tcl 
-Command     ap_source done; 0.17 sec.
-INFO: [SIM 211-1] CSim done with 0 errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; 17.09 sec.
-Command ap_source done; 17.44 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/solution1 opened at Wed Dec 18 11:01:30 CET 2019
-Execute     config_clock -quiet -name default -period 10 -unit ns -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z010clg400-1 
-Execute       add_library xilinx/zynq/zynq:xc7z010:clg400:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z010 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
-Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.19 sec.
-Execute   csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
-Execute     get_default_platform 
-Execute     source run_sim.tcl 
-INFO-FLOW: Workspace /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/solution1 opened at Wed Dec 18 11:03:08 CET 2019
-Execute     config_clock -quiet -name default -period 10 -unit ns -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.11 sec.
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.12 sec.
-Command     ap_source done; 0.12 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z010clg400-1 
-Execute       add_library xilinx/zynq/zynq:xc7z010:clg400:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z010 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
-Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.21 sec.
-Execute   csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
-Execute     get_default_platform 
-Execute     source run_sim.tcl 
-Command     ap_source done; 0.17 sec.
-INFO: [SIM 211-1] CSim done with 0 errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; 9.63 sec.
-Command ap_source done; 9.85 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/solution1 opened at Wed Dec 18 11:06:19 CET 2019
-Execute     config_clock -quiet -name default -period 10 -unit ns -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.11 sec.
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.11 sec.
-Command     ap_source done; 0.11 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z010clg400-1 
-Execute       add_library xilinx/zynq/zynq:xc7z010:clg400:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z010 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
-Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.2 sec.
-Execute   csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
-Execute     get_default_platform 
-Execute     source run_sim.tcl 
-Command     ap_source done; 0.42 sec.
-INFO: [SIM 211-1] CSim done with 0 errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; 8.55 sec.
-Command ap_source done; 8.76 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/solution1 opened at Wed Dec 18 11:08:20 CET 2019
-Execute     config_clock -quiet -name default -period 10 -unit ns -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z010clg400-1 
-Execute       add_library xilinx/zynq/zynq:xc7z010:clg400:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z010 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
-Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.19 sec.
-Execute   csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
-Execute     get_default_platform 
-Execute     source run_sim.tcl 
-Command     ap_source done; 0.43 sec.
-INFO: [SIM 211-1] CSim done with 0 errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; 8.44 sec.
-Command ap_source done; 8.63 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/solution1 opened at Wed Dec 18 11:10:00 CET 2019
-Execute     config_clock -quiet -name default -period 10 -unit ns -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.12 sec.
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.12 sec.
-Command     ap_source done; 0.12 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z010clg400-1 
-Execute       add_library xilinx/zynq/zynq:xc7z010:clg400:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z010 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
-Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.2 sec.
-Execute   csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
-Execute     get_default_platform 
-Execute     source run_sim.tcl 
-INFO-FLOW: Workspace /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/solution1 opened at Wed Dec 18 11:23:25 CET 2019
-Execute     config_clock -quiet -name default -period 10 -unit ns -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.12 sec.
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.12 sec.
-Command     ap_source done; 0.12 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z010clg400-1 
-Execute       add_library xilinx/zynq/zynq:xc7z010:clg400:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z010 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
-Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.21 sec.
-Execute   csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
-Execute     get_default_platform 
-ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; error code: 2; 7.3 sec.
-Command ap_source done; error code: 1; 7.51 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/solution1 opened at Wed Dec 18 11:23:55 CET 2019
+INFO-FLOW: Workspace /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1 opened at Wed Jan 08 11:43:09 CET 2020
 Execute     config_clock -quiet -name default -period 10 -unit ns -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     open_platform DefaultPlatform 
@@ -1224,312 +796,21 @@ Execute     config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {F
 Execute     config_chip_info -quiet -speed slow 
 Command   open_solution done; 0.18 sec.
 Execute   csim_design -quiet 
+Execute     source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/.autopilot/db/global.setting.tcl 
 INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
 Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
+Execute     is_encrypted /home/lsriw/HLS/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
+Execute     is_xip /home/lsriw/HLS/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
+Execute     is_encrypted /home/lsriw/HLS/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
+Execute     is_xip /home/lsriw/HLS/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
+Execute     is_encrypted /home/lsriw/HLS/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
+Execute     is_xip /home/lsriw/HLS/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
 Execute     get_default_platform 
 Execute     source run_sim.tcl 
-INFO-FLOW: Workspace /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/solution1 opened at Wed Dec 18 11:39:12 CET 2019
-Execute     config_clock -quiet -name default -period 10 -unit ns -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Command       ap_source done; 0.16 sec.
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Command     import_lib done; 0.63 sec.
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Command           ap_source done; 0.13 sec.
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Command           ap_source done; 0.12 sec.
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.12 sec.
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.64 sec.
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.64 sec.
-Command     ap_source done; 0.68 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Command     import_lib done; 0.54 sec.
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z010clg400-1 
-Execute       add_library xilinx/zynq/zynq:xc7z010:clg400:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z010 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
-Execute         config_chip_info -quiet -speed slow 
-Command       add_library done; 0.44 sec.
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-Command       add_library done; 1.22 sec.
-INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
-Execute       get_default_platform 
-Command     set_part done; 1.86 sec.
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
-Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 5.17 sec.
-Execute   csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Command     ap_source done; 0.61 sec.
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
-Execute     get_default_platform 
-Execute     source run_sim.tcl 
-Command     ap_source done; 5.82 sec.
-INFO-FLOW: Workspace /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/solution1 opened at Wed Dec 18 11:41:48 CET 2019
-Execute     config_clock -quiet -name default -period 10 -unit ns -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.2 sec.
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.21 sec.
-Command     ap_source done; 0.21 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z010clg400-1 
-Execute       add_library xilinx/zynq/zynq:xc7z010:clg400:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z010 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
-Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.42 sec.
-Execute   csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
-Execute     get_default_platform 
-Execute     source run_sim.tcl 
-Command     ap_source done; error code: 1; 7.4 sec.
-INFO-FLOW: Workspace /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/solution1 opened at Wed Dec 18 11:44:36 CET 2019
-Execute     config_clock -quiet -name default -period 10 -unit ns -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.16 sec.
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.16 sec.
-Command     ap_source done; 0.16 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z010clg400-1 
-Execute       add_library xilinx/zynq/zynq:xc7z010:clg400:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z010 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
-Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.34 sec.
-Execute   csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/test_Gauss.cpp 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.h 
-Execute     is_encrypted /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
-Execute     is_xip /home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/.settings/filtrGauss.cpp 
-Execute     get_default_platform 
-Execute     source run_sim.tcl 
-Command     ap_source done; 29.12 sec.
+Command     ap_source done; 10.88 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 19 sec.
+Command ap_source done; 19.19 sec.
+Execute cleanup_all 

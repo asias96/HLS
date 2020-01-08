@@ -8,9 +8,9 @@ static void init_wsp(wsp_Gauss coeff[SIZE][SIZE]){
 	float coeff_float[SIZE][SIZE];
 	float sum = 0;
 	for (int i=-(SIZE-1)/2; i<=(SIZE-1)/2; i++){
-		for (int j=-(SIZE-1)/2; j<(SIZE-1)/2; j++){
-			sum += 1/(2*PI*VAR)*exp((-(i*i + (j*j))/(2*VAR)));
-			coeff_float[i+(SIZE-1)/2][j+(SIZE-1)/2] = 1/(2*PI*VAR)*exp((-(i*i + (j*j))/(2*VAR)));
+		for (int j=-(SIZE-1)/2; j<=(SIZE-1)/2; j++){
+			sum += 1/((float)(2*PI*VAR))*exp((-(i*i + (j*j))/((float)(2*VAR))));
+			coeff_float[i+(SIZE-1)/2][j+(SIZE-1)/2] = 1/((float)(2*PI*VAR))*exp((-(i*i + j*j)/((float)(2*VAR))));
 		}
 	}
 
@@ -19,7 +19,7 @@ static void init_wsp(wsp_Gauss coeff[SIZE][SIZE]){
 		for (int j=0; j<SIZE; j++){
 			coeff_float[i][j] /= sum;
 			coeff_float[i][j] *= SCAL;
-			coeff[i][j] = wsp_Gauss(coeff_float);
+			coeff[i][j] = wsp_Gauss(coeff_float[i][j]);
 		}
 	}
 }
@@ -42,7 +42,7 @@ void rozmycie (img_gray& img_in, img_gray& img_out){
 			if (j < IMG_WIDTH){
 				buffer.shift_down(j);
 				tmp1 = buffer.getval(1, j);
-				tmp2 = buffer.getval(2, j);	//Michal ma 0,j
+				tmp2 = buffer.getval(2, j);
 				if (i < IMG_HEIGHT){
 					img_in >> new_pixel;
 					buffer.insert_top_row(new_pixel.val[0], j);
@@ -50,13 +50,13 @@ void rozmycie (img_gray& img_in, img_gray& img_out){
 			}
 			okno.shift_right();
 			if (j < IMG_WIDTH){
-					okno.insert(tmp2, 2, 0);
-					okno.insert(tmp1, 1, 0);
-					okno.insert(new_pixel.val[0], 0, 0);
+				okno.insert(tmp2, 2, 0);
+				okno.insert(tmp1, 1, 0);
+				okno.insert(new_pixel.val[0], 0, 0);
 			}
 
 			//if context is valid
-			if (i > 2 && j > 2 && i < IMG_HEIGHT-2 && j < IMG_WIDTH-2)
+			if (i > 1 && j > 1 && i < IMG_HEIGHT && j < IMG_WIDTH)
 				value = operator_Gauss(&okno);
 			else
 				value.val[0] = 0;
@@ -69,14 +69,14 @@ void rozmycie (img_gray& img_in, img_gray& img_out){
 
 pixel_gray operator_Gauss (okno_3x3* okno){
 
-	pixel_gray acc;
-	acc.val[0] = 0;
+	ap_int<16> acc;
+	acc = 0;
 	for(int i=0; i<SIZE; i++){
 		for (int j=0; j<SIZE; j++){
-			acc.val[0] += coeff_tab[i][j] * okno->getval(i,j);
+			acc += coeff_tab[i][j] * okno->getval(i,j);
 		}
 	}
-	return acc;		//[TODO] - pamietaj o zmianie szerokosci?
+	return (pixel_gray)(acc >> 8);
 }
 
 void filtr_Gauss (dane& in, dane& out){

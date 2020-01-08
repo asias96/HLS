@@ -26,7 +26,7 @@ bool compare_images(Mat& gray1, Mat& gray2)
 }
 
 int main(){
-	Mat img = imread("/home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/1.png", CV_LOAD_IMAGE_COLOR);
+	Mat img = imread("/home/lsriw/HLS/HLS/Rozmycie_Gaussa/1.png", CV_LOAD_IMAGE_COLOR);
 
 	if (img.data == NULL){
 		cout << "Niepoprawnie wczytany obraz. Wychodze!" <<endl;
@@ -43,11 +43,17 @@ int main(){
 	hls_image_filter(img_gray, img_out);
 
 	cvtColor(img_out, img_rbg, CV_GRAY2BGR);
-	imwrite("/home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/Out_image.png", img_rbg);
+	imwrite("/home/lsriw/HLS/HLS/Rozmycie_Gaussa/Out_image.png", img_rbg);
 
 	GaussianBlur(img_gray, img_gauss, Size(3,3), 1);
 	cvtColor(img_gauss, img_rbg_cv, CV_GRAY2BGR);
-	imwrite("/home/lsriw/HLS_STANISZ/HLS/Rozmycie_Gaussa/Out_image_cv.png", img_rbg_cv);
+	imwrite("/home/lsriw/HLS/HLS/Rozmycie_Gaussa/Out_image_cv.png", img_rbg_cv);
 
-	return compare_images(img_out, img_gauss);
+	bool same = compare_images(img_out, img_gauss);
+	if (same == true)
+		printf("Obrazki takie same.\n");
+	else
+		printf("Obrazki inne.\n");
+
+	return 0;
 }

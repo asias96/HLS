@@ -1,0 +1,13 @@
+filtr_Gauss_mac_muladd_8ns_8s_16ns_16_1_1
+filtr_Gauss_mac_muladd_8ns_8s_16s_16_1_1
+rozmycie_coeff_tab_V
+rozmycie_buffer_val_0
+fifo_w8_d2_A
+fifo_w8_d2_A
+start_for_rozmycie_U0
+start_for_Mat2AXIvideo_U0
+filtr_Gauss_bun_1_s_axi
+AXIvideo2Mat
+rozmycie
+Mat2AXIvideo
+filtr_Gauss

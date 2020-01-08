@@ -1,0 +1,398 @@
+
+
+================================================================
+== Vivado HLS Report for 'rozmycie'
+================================================================
+* Date:           Wed Jan  8 11:40:44 2020
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        Rozmycie_Gaussa
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z010clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|    10.283|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +---------+---------+---------+---------+---------+
+    |      Latency      |      Interval     | Pipeline|
+    |   min   |   max   |   min   |   max   |   Type  |
+    +---------+---------+---------+---------+---------+
+    |  4618012|  4618012|  4618012|  4618012|   none  |
+    +---------+---------+---------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+--------+----------+
+        |                    |      Latency      | Iteration|  Initiation Interval  |  Trip  |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  |  Count | Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+--------+----------+
+        |- OUT_LOOP_IN_LOOP  |  4618010|  4618010|        11|          5|          1|  923601|    yes   |
+        +--------------------+---------+---------+----------+-----------+-----------+--------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 5, depth = 11
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 13
+* Pipeline : 1
+  Pipeline-0 : II = 5, D = 11, States = { 2 3 4 5 6 7 8 9 10 11 12 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	13  / (exitcond_flatten)
+	3  / (!exitcond_flatten)
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	2  / true
+13 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%okno_val_0_1 = alloca i8"   --->   Operation 14 'alloca' 'okno_val_0_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%okno_val_0_2 = alloca i8"   --->   Operation 15 'alloca' 'okno_val_0_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%okno_val_1_1 = alloca i8"   --->   Operation 16 'alloca' 'okno_val_1_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%okno_val_1_2 = alloca i8"   --->   Operation 17 'alloca' 'okno_val_1_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%okno_val_2_1 = alloca i8"   --->   Operation 18 'alloca' 'okno_val_2_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%okno_val_2_2 = alloca i8"   --->   Operation 19 'alloca' 'okno_val_2_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%okno_val_0_0_1 = alloca i8"   --->   Operation 20 'alloca' 'okno_val_0_0_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%tmp2_1 = alloca i32"   --->   Operation 21 'alloca' 'tmp2_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%tmp1_1 = alloca i32"   --->   Operation 22 'alloca' 'tmp1_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %img_out_data_stream_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str60, i32 0, i32 0, [1 x i8]* @p_str61, [1 x i8]* @p_str62, [1 x i8]* @p_str63, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str64, [1 x i8]* @p_str65)"   --->   Operation 23 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %img_in_data_stream_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str53, i32 0, i32 0, [1 x i8]* @p_str54, [1 x i8]* @p_str55, [1 x i8]* @p_str56, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str57, [1 x i8]* @p_str58)"   --->   Operation 24 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%buffer_val_0 = alloca [1280 x i8], align 1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:30]   --->   Operation 25 'alloca' 'buffer_val_0' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%buffer_val_1 = alloca [1280 x i8], align 1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:30]   --->   Operation 26 'alloca' 'buffer_val_1' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%rbegin_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([64 x i8]* @hls_KD_KD_LineBuffe) nounwind" [/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:627->Rozmycie_Gaussa/.settings/filtrGauss.cpp:30]   --->   Operation 27 'specregionbegin' 'rbegin_i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%rend_i = call i32 (...)* @_ssdm_op_SpecRegionEnd([64 x i8]* @hls_KD_KD_LineBuffe, i32 %rbegin_i) nounwind" [/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:627->Rozmycie_Gaussa/.settings/filtrGauss.cpp:30]   --->   Operation 28 'specregionend' 'rend_i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (1.76ns)   --->   "br label %1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:33]   --->   Operation 29 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 6.40>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%indvar_flatten = phi i20 [ 0, %0 ], [ %indvar_flatten_next, %._crit_edge9 ]"   --->   Operation 30 'phi' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%i = phi i10 [ 0, %0 ], [ %i_mid2, %._crit_edge9 ]" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:34]   --->   Operation 31 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%col_assign = phi i11 [ 0, %0 ], [ %j, %._crit_edge9 ]"   --->   Operation 32 'phi' 'col_assign' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%okno_val_0_1_load = load i8* %okno_val_0_1"   --->   Operation 33 'load' 'okno_val_0_1_load' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%okno_val_0_2_load = load i8* %okno_val_0_2" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 34 'load' 'okno_val_0_2_load' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%okno_val_1_1_load = load i8* %okno_val_1_1"   --->   Operation 35 'load' 'okno_val_1_1_load' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%okno_val_1_2_load = load i8* %okno_val_1_2" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 36 'load' 'okno_val_1_2_load' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%okno_val_2_1_load = load i8* %okno_val_2_1"   --->   Operation 37 'load' 'okno_val_2_1_load' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%okno_val_2_2_load = load i8* %okno_val_2_2" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 38 'load' 'okno_val_2_2_load' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (2.44ns)   --->   "%exitcond_flatten = icmp eq i20 %indvar_flatten, -124975"   --->   Operation 39 'icmp' 'exitcond_flatten' <Predicate = true> <Delay = 2.44> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 40 [1/1] (2.19ns)   --->   "%indvar_flatten_next = add i20 %indvar_flatten, 1"   --->   Operation 40 'add' 'indvar_flatten_next' <Predicate = true> <Delay = 2.19> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "store i8 %okno_val_2_1_load, i8* %okno_val_2_2"   --->   Operation 41 'store' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] (0.00ns)   --->   "store i8 %okno_val_1_1_load, i8* %okno_val_1_2"   --->   Operation 42 'store' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "store i8 %okno_val_0_1_load, i8* %okno_val_0_2"   --->   Operation 43 'store' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "br i1 %exitcond_flatten, label %3, label %.reset"   --->   Operation 44 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 45 [1/1] (1.73ns)   --->   "%i_1 = add i10 %i, 1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:33]   --->   Operation 45 'add' 'i_1' <Predicate = (!exitcond_flatten)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 46 [1/1] (1.88ns)   --->   "%exitcond = icmp eq i11 %col_assign, -767" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:34]   --->   Operation 46 'icmp' 'exitcond' <Predicate = (!exitcond_flatten)> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 47 [1/1] (0.69ns)   --->   "%col_assign_mid2 = select i1 %exitcond, i11 0, i11 %col_assign" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:34]   --->   Operation 47 'select' 'col_assign_mid2' <Predicate = (!exitcond_flatten)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 48 [1/1] (1.77ns)   --->   "%tmp_mid1 = icmp ult i10 %i_1, -304" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:46]   --->   Operation 48 'icmp' 'tmp_mid1' <Predicate = (!exitcond_flatten)> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 49 [1/1] (1.77ns)   --->   "%tmp = icmp ult i10 %i, -304" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:46]   --->   Operation 49 'icmp' 'tmp' <Predicate = (!exitcond_flatten)> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 50 [1/1] (0.99ns)   --->   "%tmp_mid2 = select i1 %exitcond, i1 %tmp_mid1, i1 %tmp" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:46]   --->   Operation 50 'select' 'tmp_mid2' <Predicate = (!exitcond_flatten)> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%tmp_1 = call i9 @_ssdm_op_PartSelect.i9.i10.i32.i32(i10 %i_1, i32 1, i32 9)" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:59]   --->   Operation 51 'partselect' 'tmp_1' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_2 : Operation 52 [1/1] (1.66ns)   --->   "%icmp1 = icmp ne i9 %tmp_1, 0" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:59]   --->   Operation 52 'icmp' 'icmp1' <Predicate = (!exitcond_flatten)> <Delay = 1.66> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 53 [1/1] (0.00ns)   --->   "%tmp_2 = call i9 @_ssdm_op_PartSelect.i9.i10.i32.i32(i10 %i, i32 1, i32 9)" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:59]   --->   Operation 53 'partselect' 'tmp_2' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_2 : Operation 54 [1/1] (1.66ns)   --->   "%icmp2 = icmp ne i9 %tmp_2, 0" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:59]   --->   Operation 54 'icmp' 'icmp2' <Predicate = (!exitcond_flatten)> <Delay = 1.66> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 55 [1/1] (0.99ns)   --->   "%tmp_1_mid2 = select i1 %exitcond, i1 %icmp1, i1 %icmp2" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:59]   --->   Operation 55 'select' 'tmp_1_mid2' <Predicate = (!exitcond_flatten)> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 56 [1/1] (1.77ns)   --->   "%tmp_2_mid1 = icmp ne i10 %i_1, 0" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:64]   --->   Operation 56 'icmp' 'tmp_2_mid1' <Predicate = (!exitcond_flatten)> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 57 [1/1] (1.77ns)   --->   "%tmp_s = icmp ne i10 %i, 0" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:64]   --->   Operation 57 'icmp' 'tmp_s' <Predicate = (!exitcond_flatten)> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 58 [1/1] (0.99ns)   --->   "%tmp_2_mid2 = select i1 %exitcond, i1 %tmp_2_mid1, i1 %tmp_s" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:64]   --->   Operation 58 'select' 'tmp_2_mid2' <Predicate = (!exitcond_flatten)> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 59 [1/1] (0.68ns)   --->   "%i_mid2 = select i1 %exitcond, i10 %i_1, i10 %i" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:34]   --->   Operation 59 'select' 'i_mid2' <Predicate = (!exitcond_flatten)> <Delay = 0.68> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 60 [1/1] (1.88ns)   --->   "%tmp_4 = icmp ult i11 %col_assign_mid2, -768" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:42]   --->   Operation 60 'icmp' 'tmp_4' <Predicate = (!exitcond_flatten)> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 61 [1/1] (0.00ns)   --->   "%tmp_6 = zext i11 %col_assign_mid2 to i64" [/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:689->/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:853->Rozmycie_Gaussa/.settings/filtrGauss.cpp:43]   --->   Operation 61 'zext' 'tmp_6' <Predicate = (!exitcond_flatten & tmp_4)> <Delay = 0.00>
+ST_2 : Operation 62 [1/1] (0.00ns)   --->   "%buffer_val_1_addr = getelementptr [1280 x i8]* %buffer_val_1, i64 0, i64 %tmp_6" [/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:689->/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:853->Rozmycie_Gaussa/.settings/filtrGauss.cpp:43]   --->   Operation 62 'getelementptr' 'buffer_val_1_addr' <Predicate = (!exitcond_flatten & tmp_4)> <Delay = 0.00>
+ST_2 : Operation 63 [2/2] (3.25ns)   --->   "%buffer_val_1_load = load i8* %buffer_val_1_addr, align 1" [/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:689->/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:853->Rozmycie_Gaussa/.settings/filtrGauss.cpp:43]   --->   Operation 63 'load' 'buffer_val_1_load' <Predicate = (!exitcond_flatten & tmp_4)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+ST_2 : Operation 64 [1/1] (0.00ns)   --->   "%buffer_val_0_addr = getelementptr [1280 x i8]* %buffer_val_0, i64 0, i64 %tmp_6" [/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:689->/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:853->Rozmycie_Gaussa/.settings/filtrGauss.cpp:43]   --->   Operation 64 'getelementptr' 'buffer_val_0_addr' <Predicate = (!exitcond_flatten & tmp_4)> <Delay = 0.00>
+ST_2 : Operation 65 [2/2] (3.25ns)   --->   "%buffer_val_0_load = load i8* %buffer_val_0_addr, align 1" [/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:689->/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:853->Rozmycie_Gaussa/.settings/filtrGauss.cpp:43]   --->   Operation 65 'load' 'buffer_val_0_load' <Predicate = (!exitcond_flatten & tmp_4)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+ST_2 : Operation 66 [2/2] (2.32ns)   --->   "%coeff_tab_V_load = load i8* getelementptr inbounds ([9 x i8]* @coeff_tab_V, i64 0, i64 0), align 1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 66 'load' 'coeff_tab_V_load' <Predicate = (!exitcond_flatten)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+ST_2 : Operation 67 [2/2] (2.32ns)   --->   "%coeff_tab_V_load_3 = load i8* getelementptr inbounds ([9 x i8]* @coeff_tab_V, i64 0, i64 3), align 1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 67 'load' 'coeff_tab_V_load_3' <Predicate = (!exitcond_flatten)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+ST_2 : Operation 68 [1/1] (1.88ns)   --->   "%tmp_8 = icmp ne i11 %col_assign_mid2, 0" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:64]   --->   Operation 68 'icmp' 'tmp_8' <Predicate = (!exitcond_flatten)> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 69 [1/1] (0.97ns)   --->   "%or_cond6 = and i1 %tmp_2_mid2, %tmp_8" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:64]   --->   Operation 69 'and' 'or_cond6' <Predicate = (!exitcond_flatten)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 70 [1/1] (0.00ns)   --->   "br i1 %or_cond6, label %2, label %._crit_edge9" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:64]   --->   Operation 70 'br' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 6.88>
+ST_3 : Operation 71 [1/2] (3.25ns)   --->   "%buffer_val_1_load = load i8* %buffer_val_1_addr, align 1" [/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:689->/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:853->Rozmycie_Gaussa/.settings/filtrGauss.cpp:43]   --->   Operation 71 'load' 'buffer_val_1_load' <Predicate = (!exitcond_flatten & tmp_4)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+ST_3 : Operation 72 [1/2] (3.25ns)   --->   "%buffer_val_0_load = load i8* %buffer_val_0_addr, align 1" [/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:689->/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:853->Rozmycie_Gaussa/.settings/filtrGauss.cpp:43]   --->   Operation 72 'load' 'buffer_val_0_load' <Predicate = (!exitcond_flatten & tmp_4)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+ST_3 : Operation 73 [1/1] (3.25ns)   --->   "store i8 %buffer_val_0_load, i8* %buffer_val_1_addr, align 1" [/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:689->/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:853->Rozmycie_Gaussa/.settings/filtrGauss.cpp:43]   --->   Operation 73 'store' <Predicate = (!exitcond_flatten & tmp_4)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+ST_3 : Operation 74 [1/1] (0.00ns)   --->   "%tmp1 = zext i8 %buffer_val_0_load to i32" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:44]   --->   Operation 74 'zext' 'tmp1' <Predicate = (!exitcond_flatten & tmp_4)> <Delay = 0.00>
+ST_3 : Operation 75 [1/1] (0.00ns)   --->   "%tmp2 = zext i8 %buffer_val_1_load to i32" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:45]   --->   Operation 75 'zext' 'tmp2' <Predicate = (!exitcond_flatten & tmp_4)> <Delay = 0.00>
+ST_3 : Operation 76 [1/1] (0.00ns)   --->   "store i32 %tmp1, i32* %tmp1_1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:44]   --->   Operation 76 'store' <Predicate = (!exitcond_flatten & tmp_4)> <Delay = 0.00>
+ST_3 : Operation 77 [1/1] (0.00ns)   --->   "store i32 %tmp2, i32* %tmp2_1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:45]   --->   Operation 77 'store' <Predicate = (!exitcond_flatten & tmp_4)> <Delay = 0.00>
+ST_3 : Operation 78 [1/1] (0.00ns)   --->   "br i1 %tmp_mid2, label %insert_top_row.exit, label %._crit_edge_ifconv" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:46]   --->   Operation 78 'br' <Predicate = (!exitcond_flatten & tmp_4)> <Delay = 0.00>
+ST_3 : Operation 79 [1/1] (0.00ns)   --->   "%tmp_7 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str31)" [/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:672->/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711->Rozmycie_Gaussa/.settings/filtrGauss.cpp:47]   --->   Operation 79 'specregionbegin' 'tmp_7' <Predicate = (!exitcond_flatten & tmp_4 & tmp_mid2)> <Delay = 0.00>
+ST_3 : Operation 80 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProtocol(i32 0, [1 x i8]* @p_str3) nounwind" [/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:676->/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711->Rozmycie_Gaussa/.settings/filtrGauss.cpp:47]   --->   Operation 80 'specprotocol' <Predicate = (!exitcond_flatten & tmp_4 & tmp_mid2)> <Delay = 0.00>
+ST_3 : Operation 81 [1/1] (3.63ns)   --->   "%tmp_14 = call i8 @_ssdm_op_Read.ap_fifo.volatile.i8P(i8* %img_in_data_stream_V)" [/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:679->/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711->Rozmycie_Gaussa/.settings/filtrGauss.cpp:47]   --->   Operation 81 'read' 'tmp_14' <Predicate = (!exitcond_flatten & tmp_4 & tmp_mid2)> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_3 : Operation 82 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str31, i32 %tmp_7)" [/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:681->/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711->Rozmycie_Gaussa/.settings/filtrGauss.cpp:47]   --->   Operation 82 'specregionend' 'empty' <Predicate = (!exitcond_flatten & tmp_4 & tmp_mid2)> <Delay = 0.00>
+ST_3 : Operation 83 [1/1] (3.25ns)   --->   "store i8 %tmp_14, i8* %buffer_val_0_addr, align 1" [/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:797->Rozmycie_Gaussa/.settings/filtrGauss.cpp:48]   --->   Operation 83 'store' <Predicate = (!exitcond_flatten & tmp_4 & tmp_mid2)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+ST_3 : Operation 84 [1/1] (0.00ns)   --->   "store i8 %tmp_14, i8* %okno_val_0_0_1" [/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:679->/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711->Rozmycie_Gaussa/.settings/filtrGauss.cpp:47]   --->   Operation 84 'store' <Predicate = (!exitcond_flatten & tmp_4 & tmp_mid2)> <Delay = 0.00>
+ST_3 : Operation 85 [1/1] (0.00ns)   --->   "br label %._crit_edge_ifconv" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:49]   --->   Operation 85 'br' <Predicate = (!exitcond_flatten & tmp_4 & tmp_mid2)> <Delay = 0.00>
+ST_3 : Operation 86 [1/2] (2.32ns)   --->   "%coeff_tab_V_load = load i8* getelementptr inbounds ([9 x i8]* @coeff_tab_V, i64 0, i64 0), align 1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 86 'load' 'coeff_tab_V_load' <Predicate = (!exitcond_flatten)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+ST_3 : Operation 87 [2/2] (2.32ns)   --->   "%coeff_tab_V_load_1 = load i8* getelementptr inbounds ([9 x i8]* @coeff_tab_V, i64 0, i64 1), align 1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 87 'load' 'coeff_tab_V_load_1' <Predicate = (!exitcond_flatten)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+ST_3 : Operation 88 [1/2] (2.32ns)   --->   "%coeff_tab_V_load_3 = load i8* getelementptr inbounds ([9 x i8]* @coeff_tab_V, i64 0, i64 3), align 1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 88 'load' 'coeff_tab_V_load_3' <Predicate = (!exitcond_flatten)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+ST_3 : Operation 89 [2/2] (2.32ns)   --->   "%coeff_tab_V_load_8 = load i8* getelementptr inbounds ([9 x i8]* @coeff_tab_V, i64 0, i64 8), align 1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 89 'load' 'coeff_tab_V_load_8' <Predicate = (!exitcond_flatten)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+
+State 4 <SV = 3> <Delay = 6.49>
+ST_4 : Operation 90 [1/2] (2.32ns)   --->   "%coeff_tab_V_load_1 = load i8* getelementptr inbounds ([9 x i8]* @coeff_tab_V, i64 0, i64 1), align 1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 90 'load' 'coeff_tab_V_load_1' <Predicate = (!exitcond_flatten)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+ST_4 : Operation 91 [2/2] (2.32ns)   --->   "%coeff_tab_V_load_2 = load i8* getelementptr inbounds ([9 x i8]* @coeff_tab_V, i64 0, i64 2), align 1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 91 'load' 'coeff_tab_V_load_2' <Predicate = (!exitcond_flatten)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+ST_4 : Operation 92 [2/2] (2.32ns)   --->   "%coeff_tab_V_load_4 = load i8* getelementptr inbounds ([9 x i8]* @coeff_tab_V, i64 0, i64 4), align 1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 92 'load' 'coeff_tab_V_load_4' <Predicate = (!exitcond_flatten)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+ST_4 : Operation 93 [1/2] (2.32ns)   --->   "%coeff_tab_V_load_8 = load i8* getelementptr inbounds ([9 x i8]* @coeff_tab_V, i64 0, i64 8), align 1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 93 'load' 'coeff_tab_V_load_8' <Predicate = (!exitcond_flatten)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+ST_4 : Operation 94 [1/1] (0.00ns)   --->   "%lhs_V_2_2_i = sext i8 %coeff_tab_V_load_8 to i16" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 94 'sext' 'lhs_V_2_2_i' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_4 : Operation 95 [1/1] (0.00ns)   --->   "%rhs_V_2_2_i = zext i8 %okno_val_2_2_load to i16" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 95 'zext' 'rhs_V_2_2_i' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_4 : Operation 96 [1/1] (4.17ns)   --->   "%ret_V_2_2_i = mul i16 %rhs_V_2_2_i, %lhs_V_2_2_i" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 96 'mul' 'ret_V_2_2_i' <Predicate = (!exitcond_flatten)> <Delay = 4.17> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 4.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 8.43>
+ST_5 : Operation 97 [1/1] (0.00ns)   --->   "%okno_val_0_1_load_1 = load i8* %okno_val_0_1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 97 'load' 'okno_val_0_1_load_1' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_5 : Operation 98 [1/1] (0.00ns)   --->   "%okno_val_0_0_2 = load i8* %okno_val_0_0_1"   --->   Operation 98 'load' 'okno_val_0_0_2' <Predicate = (!exitcond_flatten & tmp_4)> <Delay = 0.00>
+ST_5 : Operation 99 [1/1] (1.24ns)   --->   "%okno_val_0_0 = select i1 %tmp_4, i8 %okno_val_0_0_2, i8 %okno_val_0_1_load_1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:42]   --->   Operation 99 'select' 'okno_val_0_0' <Predicate = (!exitcond_flatten)> <Delay = 1.24> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 100 [1/1] (0.00ns)   --->   "%lhs_V_0_i = sext i8 %coeff_tab_V_load to i16" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 100 'sext' 'lhs_V_0_i' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_5 : Operation 101 [1/1] (0.00ns)   --->   "%rhs_V_0_i = zext i8 %okno_val_0_0 to i16" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 101 'zext' 'rhs_V_0_i' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_5 : Operation 102 [1/1] (4.17ns)   --->   "%ret_V_0_i = mul i16 %rhs_V_0_i, %lhs_V_0_i" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 102 'mul' 'ret_V_0_i' <Predicate = (!exitcond_flatten)> <Delay = 4.17> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 4.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 103 [1/1] (0.00ns)   --->   "%lhs_V_0_1_i = sext i8 %coeff_tab_V_load_1 to i16" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 103 'sext' 'lhs_V_0_1_i' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_5 : Operation 104 [1/1] (0.00ns)   --->   "%rhs_V_0_1_i = zext i8 %okno_val_0_1_load_1 to i16" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 104 'zext' 'rhs_V_0_1_i' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_5 : Operation 105 [1/1] (3.36ns) (grouped into DSP with root node tmp6)   --->   "%ret_V_0_1_i = mul i16 %rhs_V_0_1_i, %lhs_V_0_1_i" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 105 'mul' 'ret_V_0_1_i' <Predicate = (!exitcond_flatten)> <Delay = 3.36> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 106 [1/2] (2.32ns)   --->   "%coeff_tab_V_load_2 = load i8* getelementptr inbounds ([9 x i8]* @coeff_tab_V, i64 0, i64 2), align 1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 106 'load' 'coeff_tab_V_load_2' <Predicate = (!exitcond_flatten)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+ST_5 : Operation 107 [1/2] (2.32ns)   --->   "%coeff_tab_V_load_4 = load i8* getelementptr inbounds ([9 x i8]* @coeff_tab_V, i64 0, i64 4), align 1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 107 'load' 'coeff_tab_V_load_4' <Predicate = (!exitcond_flatten)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+ST_5 : Operation 108 [2/2] (2.32ns)   --->   "%coeff_tab_V_load_5 = load i8* getelementptr inbounds ([9 x i8]* @coeff_tab_V, i64 0, i64 5), align 1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 108 'load' 'coeff_tab_V_load_5' <Predicate = (!exitcond_flatten)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+ST_5 : Operation 109 [2/2] (2.32ns)   --->   "%coeff_tab_V_load_6 = load i8* getelementptr inbounds ([9 x i8]* @coeff_tab_V, i64 0, i64 6), align 1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 109 'load' 'coeff_tab_V_load_6' <Predicate = (!exitcond_flatten)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+ST_5 : Operation 110 [1/1] (3.02ns) (root node of the DSP)   --->   "%tmp6 = add i16 %ret_V_0_i, %ret_V_0_1_i" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 110 'add' 'tmp6' <Predicate = (!exitcond_flatten)> <Delay = 3.02> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 111 [1/1] (0.00ns)   --->   "store i8 %okno_val_0_0, i8* %okno_val_0_1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:42]   --->   Operation 111 'store' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+
+State 6 <SV = 5> <Delay = 6.49>
+ST_6 : Operation 112 [1/1] (0.00ns)   --->   "%okno_val_1_1_load_1 = load i8* %okno_val_1_1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 112 'load' 'okno_val_1_1_load_1' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_6 : Operation 113 [1/1] (0.00ns)   --->   "%okno_val_2_1_load_1 = load i8* %okno_val_2_1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 113 'load' 'okno_val_2_1_load_1' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_6 : Operation 114 [1/1] (0.00ns)   --->   "%tmp2_1_load = load i32* %tmp2_1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:53]   --->   Operation 114 'load' 'tmp2_1_load' <Predicate = (!exitcond_flatten & tmp_4)> <Delay = 0.00>
+ST_6 : Operation 115 [1/1] (0.00ns)   --->   "%tmp1_1_load = load i32* %tmp1_1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:54]   --->   Operation 115 'load' 'tmp1_1_load' <Predicate = (!exitcond_flatten & tmp_4)> <Delay = 0.00>
+ST_6 : Operation 116 [1/1] (0.00ns)   --->   "%okno_val_2_0_1 = trunc i32 %tmp2_1_load to i8" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:53]   --->   Operation 116 'trunc' 'okno_val_2_0_1' <Predicate = (!exitcond_flatten & tmp_4)> <Delay = 0.00>
+ST_6 : Operation 117 [1/1] (0.00ns)   --->   "%okno_val_1_0_1 = trunc i32 %tmp1_1_load to i8" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:54]   --->   Operation 117 'trunc' 'okno_val_1_0_1' <Predicate = (!exitcond_flatten & tmp_4)> <Delay = 0.00>
+ST_6 : Operation 118 [1/1] (1.24ns)   --->   "%okno_val_2_0 = select i1 %tmp_4, i8 %okno_val_2_0_1, i8 %okno_val_2_1_load_1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:42]   --->   Operation 118 'select' 'okno_val_2_0' <Predicate = (!exitcond_flatten)> <Delay = 1.24> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 119 [1/1] (1.24ns)   --->   "%okno_val_1_0 = select i1 %tmp_4, i8 %okno_val_1_0_1, i8 %okno_val_1_1_load_1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:42]   --->   Operation 119 'select' 'okno_val_1_0' <Predicate = (!exitcond_flatten)> <Delay = 1.24> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 120 [1/1] (0.00ns)   --->   "%tmp_12 = call i10 @_ssdm_op_PartSelect.i10.i11.i32.i32(i11 %col_assign_mid2, i32 1, i32 10)" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:59]   --->   Operation 120 'partselect' 'tmp_12' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_6 : Operation 121 [1/1] (1.77ns)   --->   "%icmp = icmp ne i10 %tmp_12, 0" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:59]   --->   Operation 121 'icmp' 'icmp' <Predicate = (!exitcond_flatten)> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 122 [1/2] (2.32ns)   --->   "%coeff_tab_V_load_5 = load i8* getelementptr inbounds ([9 x i8]* @coeff_tab_V, i64 0, i64 5), align 1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 122 'load' 'coeff_tab_V_load_5' <Predicate = (!exitcond_flatten)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+ST_6 : Operation 123 [1/1] (0.00ns)   --->   "%lhs_V_1_2_i = sext i8 %coeff_tab_V_load_5 to i16" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 123 'sext' 'lhs_V_1_2_i' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_6 : Operation 124 [1/1] (0.00ns)   --->   "%rhs_V_1_2_i = zext i8 %okno_val_1_2_load to i16" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 124 'zext' 'rhs_V_1_2_i' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_6 : Operation 125 [1/1] (4.17ns)   --->   "%ret_V_1_2_i = mul i16 %rhs_V_1_2_i, %lhs_V_1_2_i" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 125 'mul' 'ret_V_1_2_i' <Predicate = (!exitcond_flatten)> <Delay = 4.17> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 4.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 126 [1/2] (2.32ns)   --->   "%coeff_tab_V_load_6 = load i8* getelementptr inbounds ([9 x i8]* @coeff_tab_V, i64 0, i64 6), align 1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 126 'load' 'coeff_tab_V_load_6' <Predicate = (!exitcond_flatten)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+ST_6 : Operation 127 [2/2] (2.32ns)   --->   "%coeff_tab_V_load_7 = load i8* getelementptr inbounds ([9 x i8]* @coeff_tab_V, i64 0, i64 7), align 1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 127 'load' 'coeff_tab_V_load_7' <Predicate = (!exitcond_flatten)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+ST_6 : Operation 128 [1/1] (0.00ns)   --->   "store i8 %okno_val_2_0, i8* %okno_val_2_1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:42]   --->   Operation 128 'store' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_6 : Operation 129 [1/1] (0.00ns)   --->   "store i8 %okno_val_1_0, i8* %okno_val_1_1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:42]   --->   Operation 129 'store' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_6 : Operation 130 [1/1] (1.63ns)   --->   "%j = add i11 %col_assign_mid2, 1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:34]   --->   Operation 130 'add' 'j' <Predicate = (!exitcond_flatten)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 7.19>
+ST_7 : Operation 131 [1/1] (0.00ns)   --->   "%lhs_V_0_2_i = sext i8 %coeff_tab_V_load_2 to i16" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 131 'sext' 'lhs_V_0_2_i' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 132 [1/1] (0.00ns)   --->   "%rhs_V_0_2_i = zext i8 %okno_val_0_2_load to i16" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 132 'zext' 'rhs_V_0_2_i' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 133 [1/1] (3.36ns) (grouped into DSP with root node tmp7)   --->   "%ret_V_0_2_i = mul i16 %rhs_V_0_2_i, %lhs_V_0_2_i" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 133 'mul' 'ret_V_0_2_i' <Predicate = true> <Delay = 3.36> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 134 [1/1] (0.00ns)   --->   "%lhs_V_1_i = sext i8 %coeff_tab_V_load_3 to i16" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 134 'sext' 'lhs_V_1_i' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 135 [1/1] (0.00ns)   --->   "%rhs_V_1_i = zext i8 %okno_val_1_0 to i16" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 135 'zext' 'rhs_V_1_i' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 136 [1/1] (4.17ns)   --->   "%ret_V_1_i = mul i16 %rhs_V_1_i, %lhs_V_1_i" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 136 'mul' 'ret_V_1_i' <Predicate = true> <Delay = 4.17> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 4.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 137 [1/2] (2.32ns)   --->   "%coeff_tab_V_load_7 = load i8* getelementptr inbounds ([9 x i8]* @coeff_tab_V, i64 0, i64 7), align 1" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 137 'load' 'coeff_tab_V_load_7' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 9> <RAM>
+ST_7 : Operation 138 [1/1] (3.02ns) (root node of the DSP)   --->   "%tmp7 = add i16 %ret_V_1_i, %ret_V_0_2_i" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 138 'add' 'tmp7' <Predicate = true> <Delay = 3.02> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 8 <SV = 7> <Delay = 6.38>
+ST_8 : Operation 139 [1/1] (0.00ns)   --->   "%lhs_V_2_1_i = sext i8 %coeff_tab_V_load_7 to i16" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 139 'sext' 'lhs_V_2_1_i' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 140 [1/1] (0.00ns)   --->   "%rhs_V_2_1_i = zext i8 %okno_val_2_1_load_1 to i16" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 140 'zext' 'rhs_V_2_1_i' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 141 [1/1] (3.36ns) (grouped into DSP with root node tmp11)   --->   "%ret_V_2_1_i = mul i16 %rhs_V_2_1_i, %lhs_V_2_1_i" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 141 'mul' 'ret_V_2_1_i' <Predicate = true> <Delay = 3.36> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 142 [1/1] (2.07ns)   --->   "%tmp5 = add i16 %tmp6, %tmp7" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 142 'add' 'tmp5' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 143 [1/1] (3.02ns) (root node of the DSP)   --->   "%tmp11 = add i16 %ret_V_2_2_i, %ret_V_2_1_i" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 143 'add' 'tmp11' <Predicate = true> <Delay = 3.02> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 9 <SV = 8> <Delay = 6.38>
+ST_9 : Operation 144 [1/1] (0.00ns)   --->   "%lhs_V_1_1_i = sext i8 %coeff_tab_V_load_4 to i16" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 144 'sext' 'lhs_V_1_1_i' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 145 [1/1] (0.00ns)   --->   "%rhs_V_1_1_i = zext i8 %okno_val_1_1_load_1 to i16" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 145 'zext' 'rhs_V_1_1_i' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 146 [1/1] (3.36ns) (grouped into DSP with root node tmp9)   --->   "%ret_V_1_1_i = mul i16 %rhs_V_1_1_i, %lhs_V_1_1_i" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 146 'mul' 'ret_V_1_1_i' <Predicate = true> <Delay = 3.36> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_9 : Operation 147 [1/1] (3.02ns) (root node of the DSP)   --->   "%tmp9 = add i16 %ret_V_1_2_i, %ret_V_1_1_i" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 147 'add' 'tmp9' <Predicate = true> <Delay = 3.02> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 10 <SV = 9> <Delay = 0.00>
+
+State 11 <SV = 10> <Delay = 10.2>
+ST_11 : Operation 148 [1/1] (0.00ns)   --->   "%lhs_V_2_i = sext i8 %coeff_tab_V_load_6 to i16" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 148 'sext' 'lhs_V_2_i' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 149 [1/1] (0.00ns)   --->   "%rhs_V_2_i = zext i8 %okno_val_2_0 to i16" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 149 'zext' 'rhs_V_2_i' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 150 [1/1] (3.36ns) (grouped into DSP with root node tmp10)   --->   "%ret_V_2_i = mul i16 %rhs_V_2_i, %lhs_V_2_i" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 150 'mul' 'ret_V_2_i' <Predicate = true> <Delay = 3.36> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_11 : Operation 151 [1/1] (3.02ns) (root node of the DSP)   --->   "%tmp10 = add i16 %ret_V_2_i, %tmp11" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 151 'add' 'tmp10' <Predicate = true> <Delay = 3.02> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_11 : Operation 152 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%tmp8 = add i16 %tmp9, %tmp10" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 152 'add' 'tmp8' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 84 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.95> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_11 : Operation 153 [1/1] (3.90ns) (root node of TernaryAdder)   --->   "%acc_V_2_2_i = add i16 %tmp5, %tmp8" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 153 'add' 'acc_V_2_2_i' <Predicate = true> <Delay = 3.90> <Core = "TAddSub">   --->   Core 84 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.95> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+
+State 12 <SV = 11> <Delay = 4.88>
+ST_12 : Operation 154 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([17 x i8]* @OUT_LOOP_IN_LOOP_str)"   --->   Operation 154 'specloopname' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_12 : Operation 155 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([8 x i8]* @p_str2) nounwind" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:34]   --->   Operation 155 'specloopname' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_12 : Operation 156 [1/1] (0.00ns)   --->   "%tmp_5 = call i32 (...)* @_ssdm_op_SpecRegionBegin([8 x i8]* @p_str2)" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:34]   --->   Operation 156 'specregionbegin' 'tmp_5' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_12 : Operation 157 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str3) nounwind" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:36]   --->   Operation 157 'specpipeline' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_12 : Operation 158 [1/1] (0.00ns)   --->   "br i1 %tmp_4, label %.preheader.preheader.i.i, label %._crit_edge_ifconv" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:42]   --->   Operation 158 'br' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_12 : Operation 159 [1/1] (0.00ns) (grouped into LUT with out node tmp_13)   --->   "%tmp3 = and i1 %tmp_1_mid2, %icmp" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:59]   --->   Operation 159 'and' 'tmp3' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 160 [1/1] (0.00ns) (grouped into LUT with out node tmp_13)   --->   "%tmp4 = and i1 %tmp_mid2, %tmp_4" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:59]   --->   Operation 160 'and' 'tmp4' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 161 [1/1] (0.00ns) (grouped into LUT with out node tmp_13)   --->   "%or_cond5 = and i1 %tmp4, %tmp3" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:59]   --->   Operation 161 'and' 'or_cond5' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 162 [1/1] (0.00ns) (grouped into LUT with out node tmp_13)   --->   "%v0_assign = call i8 @_ssdm_op_PartSelect.i8.i16.i32.i32(i16 %acc_V_2_2_i, i32 8, i32 15)" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:79->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60]   --->   Operation 162 'partselect' 'v0_assign' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 163 [1/1] (1.24ns) (out node of the LUT)   --->   "%tmp_13 = select i1 %or_cond5, i8 %v0_assign, i8 0" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:59]   --->   Operation 163 'select' 'tmp_13' <Predicate = true> <Delay = 1.24> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_12 : Operation 164 [1/1] (0.00ns)   --->   "%tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str26)" [/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:696->/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717->Rozmycie_Gaussa/.settings/filtrGauss.cpp:65]   --->   Operation 164 'specregionbegin' 'tmp_3' <Predicate = (or_cond6)> <Delay = 0.00>
+ST_12 : Operation 165 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProtocol(i32 0, [1 x i8]* @p_str3) nounwind" [/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:700->/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717->Rozmycie_Gaussa/.settings/filtrGauss.cpp:65]   --->   Operation 165 'specprotocol' <Predicate = (or_cond6)> <Delay = 0.00>
+ST_12 : Operation 166 [1/1] (3.63ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %img_out_data_stream_V, i8 %tmp_13)" [/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:703->/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717->Rozmycie_Gaussa/.settings/filtrGauss.cpp:65]   --->   Operation 166 'write' <Predicate = (or_cond6)> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_12 : Operation 167 [1/1] (0.00ns)   --->   "%empty_10 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str26, i32 %tmp_3)" [/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:705->/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717->Rozmycie_Gaussa/.settings/filtrGauss.cpp:65]   --->   Operation 167 'specregionend' 'empty_10' <Predicate = (or_cond6)> <Delay = 0.00>
+ST_12 : Operation 168 [1/1] (0.00ns)   --->   "br label %._crit_edge9" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:65]   --->   Operation 168 'br' <Predicate = (or_cond6)> <Delay = 0.00>
+ST_12 : Operation 169 [1/1] (0.00ns)   --->   "%empty_11 = call i32 (...)* @_ssdm_op_SpecRegionEnd([8 x i8]* @p_str2, i32 %tmp_5)" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:66]   --->   Operation 169 'specregionend' 'empty_11' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_12 : Operation 170 [1/1] (0.00ns)   --->   "br label %1"   --->   Operation 170 'br' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+
+State 13 <SV = 2> <Delay = 0.00>
+ST_13 : Operation 171 [1/1] (0.00ns)   --->   "ret void" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:68]   --->   Operation 171 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('indvar_flatten') with incoming values : ('indvar_flatten_next') [20]  (1.77 ns)
+
+ <State 2>: 6.41ns
+The critical path consists of the following:
+	'phi' operation ('j') with incoming values : ('j', Rozmycie_Gaussa/.settings/filtrGauss.cpp:34) [22]  (0 ns)
+	'icmp' operation ('exitcond', Rozmycie_Gaussa/.settings/filtrGauss.cpp:34) [38]  (1.88 ns)
+	'select' operation ('col_assign_mid2', Rozmycie_Gaussa/.settings/filtrGauss.cpp:34) [39]  (0.692 ns)
+	'getelementptr' operation ('buffer_val_1_addr', /opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:689->/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:853->Rozmycie_Gaussa/.settings/filtrGauss.cpp:43) [59]  (0 ns)
+	'load' operation ('buffer_val_1_load', /opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:689->/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:853->Rozmycie_Gaussa/.settings/filtrGauss.cpp:43) on array 'buffer.val[1]', Rozmycie_Gaussa/.settings/filtrGauss.cpp:30 [60]  (3.25 ns)
+	blocking operation 0.582 ns on control path)
+
+ <State 3>: 6.89ns
+The critical path consists of the following:
+	fifo read on port 'img_in_data_stream_V' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:679->/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711->Rozmycie_Gaussa/.settings/filtrGauss.cpp:47) [72]  (3.63 ns)
+	'store' operation (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:797->Rozmycie_Gaussa/.settings/filtrGauss.cpp:48) of variable 'tmp', /opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:679->/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711->Rozmycie_Gaussa/.settings/filtrGauss.cpp:47 on array 'buffer.val[0]', Rozmycie_Gaussa/.settings/filtrGauss.cpp:30 [74]  (3.25 ns)
+
+ <State 4>: 6.49ns
+The critical path consists of the following:
+	'load' operation ('coeff_tab_V_load_8', Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60) on array 'coeff_tab_V' [126]  (2.32 ns)
+	'mul' operation ('ret_V_2_2_i', Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60) [129]  (4.17 ns)
+
+ <State 5>: 8.44ns
+The critical path consists of the following:
+	'load' operation ('okno_val_0_1_load_1', Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60) on local variable 'Window<3, 3, unsigned char>.val[0][1]' [78]  (0 ns)
+	'select' operation ('okno.val[0][0]', Rozmycie_Gaussa/.settings/filtrGauss.cpp:42) [88]  (1.25 ns)
+	'mul' operation ('ret_V_0_i', Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60) [97]  (4.17 ns)
+	'add' operation of DSP[130] ('tmp6', Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60) [130]  (3.02 ns)
+
+ <State 6>: 6.49ns
+The critical path consists of the following:
+	'load' operation ('coeff_tab_V_load_5', Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60) on array 'coeff_tab_V' [114]  (2.32 ns)
+	'mul' operation ('ret_V_1_2_i', Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60) [117]  (4.17 ns)
+
+ <State 7>: 7.19ns
+The critical path consists of the following:
+	'mul' operation ('ret_V_1_i', Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60) [109]  (4.17 ns)
+	'add' operation of DSP[131] ('tmp7', Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60) [131]  (3.02 ns)
+
+ <State 8>: 6.38ns
+The critical path consists of the following:
+	'mul' operation of DSP[134] ('ret_V_2_1_i', Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60) [125]  (3.36 ns)
+	'add' operation of DSP[134] ('tmp11', Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60) [134]  (3.02 ns)
+
+ <State 9>: 6.38ns
+The critical path consists of the following:
+	'mul' operation of DSP[133] ('ret_V_1_1_i', Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60) [113]  (3.36 ns)
+	'add' operation of DSP[133] ('tmp9', Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60) [133]  (3.02 ns)
+
+ <State 10>: 0ns
+The critical path consists of the following:
+
+ <State 11>: 10.3ns
+The critical path consists of the following:
+	'mul' operation of DSP[135] ('ret_V_2_i', Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60) [121]  (3.36 ns)
+	'add' operation of DSP[135] ('tmp10', Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60) [135]  (3.02 ns)
+	'add' operation ('tmp8', Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60) [136]  (0 ns)
+	'add' operation ('acc_V_2_2_i', Rozmycie_Gaussa/.settings/filtrGauss.cpp:76->Rozmycie_Gaussa/.settings/filtrGauss.cpp:60) [137]  (3.9 ns)
+
+ <State 12>: 4.88ns
+The critical path consists of the following:
+	'and' operation ('tmp3', Rozmycie_Gaussa/.settings/filtrGauss.cpp:59) [91]  (0 ns)
+	'and' operation ('or_cond5', Rozmycie_Gaussa/.settings/filtrGauss.cpp:59) [93]  (0 ns)
+	'select' operation ('tmp', Rozmycie_Gaussa/.settings/filtrGauss.cpp:59) [139]  (1.25 ns)
+	fifo write on port 'img_out_data_stream_V' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:703->/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717->Rozmycie_Gaussa/.settings/filtrGauss.cpp:65) [149]  (3.63 ns)
+
+ <State 13>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
