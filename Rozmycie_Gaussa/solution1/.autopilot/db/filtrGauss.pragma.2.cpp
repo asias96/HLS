@@ -34222,6 +34222,7 @@ static void init_wsp(wsp_Gauss coeff[3][3]){_ssdm_SpecArrayDimSize(coeff, 3);
 }
 
 void rozmycie (img_gray& img_in, img_gray& img_out){
+_ssdm_SpecArrayPartition( &coeff_tab, 1, "COMPLETE", 0, "");
 
  okno_3x3 okno;
  kontekst_buffer buffer;
@@ -34229,9 +34230,9 @@ void rozmycie (img_gray& img_in, img_gray& img_out){
 
  OUT_LOOP: for (int i=0; i<720 +1; i++){
   IN_LOOP: for(int j=0; j<1280 +1; j++){
-_ssdm_SpecDependence( &buffer, 0, 1, -1, 1, 1);
+_ssdm_SpecDependence( &buffer, 0, 0, -1, 0, 1);
 _ssdm_op_SpecPipeline(1, 1, 1, 0, "");
-_ssdm_SpecLoopFlatten(0, "");
+_ssdm_SpecLoopFlatten(1, "");
 
  int tmp1, tmp2;
    pixel_gray new_pixel, value;
@@ -34247,9 +34248,9 @@ _ssdm_SpecLoopFlatten(0, "");
    }
    okno.shift_right();
    if (j < 1280){
-     okno.insert(tmp2, 2, 0);
-     okno.insert(tmp1, 1, 0);
-     okno.insert(new_pixel.val[0], 0, 0);
+    okno.insert(tmp2, 2, 0);
+    okno.insert(tmp1, 1, 0);
+    okno.insert(new_pixel.val[0], 0, 0);
    }
 
 
@@ -34265,11 +34266,11 @@ _ssdm_SpecLoopFlatten(0, "");
 }
 
 pixel_gray operator_Gauss (okno_3x3* okno){
+_ssdm_SpecArrayPartition( &coeff_tab, 1, "COMPLETE", 0, "");
 
- ap_int<16> acc;
- acc = 0;
- for(int i=0; i<3; i++){
-  for (int j=0; j<3; j++){
+ ap_int<8+8> acc = 0;
+ OUT_LOOP_OPERATOR:for(int i=0; i<3; i++){
+  IN_LOOP_OPERATOR:for (int j=0; j<3; j++){
    acc += coeff_tab[i][j] * okno->getval(i,j);
   }
  }

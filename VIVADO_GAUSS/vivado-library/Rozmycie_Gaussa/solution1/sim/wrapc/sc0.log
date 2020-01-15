@@ -1,0 +1,5 @@
+   Build using "/opt/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling filtrGauss.cpp_pre.cpp.tb.cpp
+   Compiling apatb_filtr_Gauss.cpp
+   Compiling test_Gauss.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

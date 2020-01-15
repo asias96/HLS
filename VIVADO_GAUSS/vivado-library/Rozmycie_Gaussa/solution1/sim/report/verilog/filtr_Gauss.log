@@ -1,0 +1,144 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "/opt/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling filtrGauss.cpp_pre.cpp.tb.cpp
+   Compiling apatb_filtr_Gauss.cpp
+   Compiling test_Gauss.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+Obrazki inne.
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/opt/Xilinx/Vivado/2018.3/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_filtr_Gauss_top glbl -prj filtr_Gauss.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /opt/Xilinx/Vivado/2018.3/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s filtr_Gauss 
+Multi-threading is on. Using 6 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/filtr_Gauss.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module filtr_Gauss
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/fifo_w8_d2_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w8_d2_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w8_d2_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/filtr_Gauss_mac_muladd_6ns_8ns_14ns_15_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module filtr_Gauss_mac_muladd_6ns_8ns_14ns_15_1_1_DSP48_2
+INFO: [VRFC 10-311] analyzing module filtr_Gauss_mac_muladd_6ns_8ns_14ns_15_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/AXIvideo2Mat.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXIvideo2Mat
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/rozmycie.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rozmycie
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/start_for_rozmycie_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_rozmycie_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_rozmycie_U0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/start_for_Mat2AXIvideo_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_Mat2AXIvideo_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_Mat2AXIvideo_U0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/rozmycie_buffer_val_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rozmycie_buffer_val_0_ram
+INFO: [VRFC 10-311] analyzing module rozmycie_buffer_val_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/filtr_Gauss.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_filtr_Gauss_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/AESL_axi_s_out_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_out_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/filtr_Gauss_mac_muladd_7ns_8ns_14ns_15_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module filtr_Gauss_mac_muladd_7ns_8ns_14ns_15_1_1_DSP48_1
+INFO: [VRFC 10-311] analyzing module filtr_Gauss_mac_muladd_7ns_8ns_14ns_15_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/Mat2AXIvideo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mat2AXIvideo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/AESL_axi_s_in_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_in_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/filtr_Gauss_bun_1_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module filtr_Gauss_bun_1_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/AESL_axi_slave_bun_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_bun_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.filtr_Gauss_bun_1_s_axi
+Compiling module xil_defaultlib.AXIvideo2Mat
+Compiling module xil_defaultlib.rozmycie_buffer_val_0_ram
+Compiling module xil_defaultlib.rozmycie_buffer_val_0(DataWidth=...
+Compiling module xil_defaultlib.filtr_Gauss_mac_muladd_6ns_8ns_1...
+Compiling module xil_defaultlib.filtr_Gauss_mac_muladd_6ns_8ns_1...
+Compiling module xil_defaultlib.filtr_Gauss_mac_muladd_7ns_8ns_1...
+Compiling module xil_defaultlib.filtr_Gauss_mac_muladd_7ns_8ns_1...
+Compiling module xil_defaultlib.filtr_Gauss_mac_muladd_6ns_8ns_1...
+Compiling module xil_defaultlib.filtr_Gauss_mac_muladd_6ns_8ns_1...
+Compiling module xil_defaultlib.rozmycie
+Compiling module xil_defaultlib.Mat2AXIvideo
+Compiling module xil_defaultlib.fifo_w8_d2_A_shiftReg
+Compiling module xil_defaultlib.fifo_w8_d2_A
+Compiling module xil_defaultlib.start_for_rozmycie_U0_shiftReg
+Compiling module xil_defaultlib.start_for_rozmycie_U0
+Compiling module xil_defaultlib.start_for_Mat2AXIvideo_U0_shiftR...
+Compiling module xil_defaultlib.start_for_Mat2AXIvideo_U0
+Compiling module xil_defaultlib.filtr_Gauss
+Compiling module xil_defaultlib.fifo(DEPTH=921600)
+Compiling module xil_defaultlib.fifo(DEPTH=921600,WIDTH=1)
+Compiling module xil_defaultlib.AESL_axi_s_in_r
+Compiling module xil_defaultlib.AESL_axi_s_out_r
+Compiling module xil_defaultlib.AESL_axi_slave_bun_1
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_report_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detector_1
+Compiling module xil_defaultlib.apatb_filtr_Gauss_top
+Compiling module work.glbl
+Built simulation snapshot filtr_Gauss
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/xsim.dir/filtr_Gauss/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/xsim.dir/filtr_Gauss/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jan 15 10:52:08 2020. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Jan 15 10:52:08 2020...
+
+****** xsim v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/filtr_Gauss/xsim_script.tcl
+# xsim {filtr_Gauss} -autoloadwcfg -tclbatch {filtr_Gauss.tcl}
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source filtr_Gauss.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "9279605000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 9279645 ns : File "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/filtr_Gauss.autotb.v" Line 463
+run: Time (s): cpu = 00:00:00.02 ; elapsed = 00:01:22 . Memory (MB): peak = 1335.379 ; gain = 0.000 ; free physical = 6818 ; free virtual = 12856
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Jan 15 10:53:40 2020...
+Obrazki inne.
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.

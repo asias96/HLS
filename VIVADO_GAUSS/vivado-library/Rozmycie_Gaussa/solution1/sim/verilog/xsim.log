@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# xsim v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jan 15 10:52:09 2020
+# Process ID: 7195
+# Current directory: /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/filtr_Gauss/xsim_script.tcl}
+# Log file: /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/xsim.log
+# Journal file: /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/filtr_Gauss/xsim_script.tcl
+# xsim {filtr_Gauss} -autoloadwcfg -tclbatch {filtr_Gauss.tcl}
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source filtr_Gauss.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "9279605000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 9279645 ns : File "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/filtr_Gauss.autotb.v" Line 463
+run: Time (s): cpu = 00:00:00.02 ; elapsed = 00:01:22 . Memory (MB): peak = 1335.379 ; gain = 0.000 ; free physical = 6818 ; free virtual = 12856
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Jan 15 10:53:40 2020...
