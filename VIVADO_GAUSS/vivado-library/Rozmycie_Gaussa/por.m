@@ -24,3 +24,16 @@ figure();
 imshow(img_diff);
 
 max(img_diff(:))
+
+w1 = 0.2126;
+w2 = 0.7152;
+w3 = 0.0722;
+s = 0;
+f = 8;
+c = 0;
+w = s + f + c;
+w1_fi = fi(w1,s,w,f);
+w2_fi = fi(w2,s,w,f);
+w3_fi = fi(w3,s,w,f);
+bin(w1_fi)
+

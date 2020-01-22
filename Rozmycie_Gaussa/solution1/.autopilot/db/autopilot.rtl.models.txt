@@ -6,7 +6,6 @@ fifo_w8_d2_A
 fifo_w8_d2_A
 start_for_rozmycie_U0
 start_for_Mat2AXIvideo_U0
-filtr_Gauss_bun_1_s_axi
 AXIvideo2Mat
 rozmycie
 Mat2AXIvideo

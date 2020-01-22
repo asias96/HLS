@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'filtr_Gauss'
 ================================================================
-* Date:           Wed Jan 15 10:46:56 2020
+* Date:           Wed Jan 22 10:55:49 2020
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        Rozmycie_Gaussa
@@ -112,7 +112,7 @@ State 7 <SV = 6> <Delay = 0.00>
 ST_7 : Operation 16 [1/2] (0.00ns)   --->   "call fastcc void @Mat2AXIvideo(i8* %instance_out_data_st, i8* %out_V_data_V, i1* %out_V_keep_V, i1* %out_V_strb_V, i1* %out_V_user_V, i1* %out_V_last_V, i1* %out_V_id_V, i1* %out_V_dest_V)" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:94]   --->   Operation 16 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 8 <SV = 7> <Delay = 0.00>
-ST_8 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str2) nounwind" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:84]   --->   Operation 17 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str2) nounwind" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:85]   --->   Operation 17 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %in_V_data_V), !map !182"   --->   Operation 18 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %in_V_keep_V), !map !186"   --->   Operation 19 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %in_V_strb_V), !map !190"   --->   Operation 20 'specbitsmap' <Predicate = true> <Delay = 0.00>
@@ -132,10 +132,9 @@ ST_8 : Operation 33 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_
 ST_8 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %instance_in_data_str, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 34 'specinterface' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 35 [1/1] (0.00ns)   --->   "%empty_13 = call i32 (...)* @_ssdm_op_SpecChannel([30 x i8]* @instance_out_OC_data, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i8* %instance_out_data_st, i8* %instance_out_data_st)"   --->   Operation 35 'specchannel' 'empty_13' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 36 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %instance_out_data_st, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 36 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 37 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %out_V_data_V, i1* %out_V_keep_V, i1* %out_V_strb_V, i1* %out_V_user_V, i1* %out_V_last_V, i1* %out_V_id_V, i1* %out_V_dest_V, [5 x i8]* @p_str7, i32 1, i32 1, [5 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:85]   --->   Operation 37 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 38 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %in_V_data_V, i1* %in_V_keep_V, i1* %in_V_strb_V, i1* %in_V_user_V, i1* %in_V_last_V, i1* %in_V_id_V, i1* %in_V_dest_V, [5 x i8]* @p_str7, i32 1, i32 1, [5 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:86]   --->   Operation 38 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 39 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str9, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [6 x i8]* @p_str10, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:87]   --->   Operation 39 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 40 [1/1] (0.00ns)   --->   "ret void" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:95]   --->   Operation 40 'ret' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 37 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %out_V_data_V, i1* %out_V_keep_V, i1* %out_V_strb_V, i1* %out_V_user_V, i1* %out_V_last_V, i1* %out_V_id_V, i1* %out_V_dest_V, [5 x i8]* @p_str7, i32 1, i32 1, [5 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:86]   --->   Operation 37 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 38 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %in_V_data_V, i1* %in_V_keep_V, i1* %in_V_strb_V, i1* %in_V_user_V, i1* %in_V_last_V, i1* %in_V_id_V, i1* %in_V_dest_V, [5 x i8]* @p_str7, i32 1, i32 1, [5 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:87]   --->   Operation 38 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 39 [1/1] (0.00ns)   --->   "ret void" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:95]   --->   Operation 39 'ret' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================

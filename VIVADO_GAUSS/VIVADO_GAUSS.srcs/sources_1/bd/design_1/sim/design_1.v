@@ -1,8 +1,8 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-//Date        : Fri Jan 17 22:58:31 2020
-//Host        : LAPTOP-TNDE04NQ running 64-bit major release  (build 9200)
+//Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+//Date        : Wed Jan 22 11:06:23 2020
+//Host        : lsriw running 64-bit Ubuntu 18.04.3 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
 //Purpose     : IP block netlist
@@ -87,11 +87,11 @@ module design_1
   wire v_axi4s_vid_out_0_vid_io_out_ACTIVE_VIDEO;
   wire v_axi4s_vid_out_0_vid_vsync;
   wire v_axi4s_vid_out_0_vtg_ce;
-  wire v_tc_0_vtiming_out_ACTIVE_VIDEO;
-  wire v_tc_0_vtiming_out_HBLANK;
-  wire v_tc_0_vtiming_out_HSYNC;
-  wire v_tc_0_vtiming_out_VBLANK;
-  wire v_tc_0_vtiming_out_VSYNC;
+  wire v_tc_0_active_video_out;
+  wire v_tc_0_hblank_out;
+  wire v_tc_0_hsync_out;
+  wire v_tc_0_vblank_out;
+  wire v_tc_0_vsync_out;
   wire [23:0]v_vid_in_axi4s_0_m_axis_video_tdata;
   wire v_vid_in_axi4s_0_m_axis_video_tlast;
   wire v_vid_in_axi4s_0_m_axis_video_tuser;
@@ -148,9 +148,10 @@ module design_1
         .vid_pHSync(dvi2rgb_0_vid_pHSync),
         .vid_pVDE(dvi2rgb_0_vid_pVDE),
         .vid_pVSync(dvi2rgb_0_vid_pVSync));
-  design_1_filtr_Gauss_0_0 filtr_Gauss_0
+  design_1_filtr_Gauss_0_1 filtr_Gauss_0
        (.ap_clk(dvi2rgb_0_PixelClk),
         .ap_rst_n(VCC_dout),
+        .ap_start(VCC_dout),
         .in_r_TDATA(xlslice_0_Dout),
         .in_r_TDEST(1'b0),
         .in_r_TID(1'b0),
@@ -164,16 +165,7 @@ module design_1
         .out_r_TLAST(filtr_Gauss_0_out_r_TLAST),
         .out_r_TREADY(v_axi4s_vid_out_0_s_axis_video_tready),
         .out_r_TUSER(filtr_Gauss_0_out_r_TUSER),
-        .out_r_TVALID(filtr_Gauss_0_out_r_TVALID),
-        .s_axi_bun_1_ARADDR({1'b0,1'b0,1'b0,1'b0}),
-        .s_axi_bun_1_ARVALID(1'b0),
-        .s_axi_bun_1_AWADDR({1'b0,1'b0,1'b0,1'b0}),
-        .s_axi_bun_1_AWVALID(1'b0),
-        .s_axi_bun_1_BREADY(1'b0),
-        .s_axi_bun_1_RREADY(1'b0),
-        .s_axi_bun_1_WDATA({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .s_axi_bun_1_WSTRB({1'b1,1'b1,1'b1,1'b1}),
-        .s_axi_bun_1_WVALID(1'b0));
+        .out_r_TVALID(filtr_Gauss_0_out_r_TVALID));
   design_1_rgb2gray_0_0 rgb2gray_0
        (.clk(dvi2rgb_0_PixelClk),
         .de_in(dvi2rgb_0_vid_pVDE),
@@ -210,29 +202,29 @@ module design_1
         .vid_hsync(v_axi4s_vid_out_0_vid_hsync),
         .vid_io_out_ce(VCC_dout),
         .vid_vsync(v_axi4s_vid_out_0_vid_vsync),
-        .vtg_active_video(v_tc_0_vtiming_out_ACTIVE_VIDEO),
+        .vtg_active_video(v_tc_0_active_video_out),
         .vtg_ce(v_axi4s_vid_out_0_vtg_ce),
         .vtg_field_id(1'b0),
-        .vtg_hblank(v_tc_0_vtiming_out_HBLANK),
-        .vtg_hsync(v_tc_0_vtiming_out_HSYNC),
-        .vtg_vblank(v_tc_0_vtiming_out_VBLANK),
-        .vtg_vsync(v_tc_0_vtiming_out_VSYNC));
+        .vtg_hblank(v_tc_0_hblank_out),
+        .vtg_hsync(v_tc_0_hsync_out),
+        .vtg_vblank(v_tc_0_vblank_out),
+        .vtg_vsync(v_tc_0_vsync_out));
   design_1_v_tc_0_0 v_tc_0
        (.active_video_in(v_vid_in_axi4s_0_vtiming_out_ACTIVE_VIDEO),
-        .active_video_out(v_tc_0_vtiming_out_ACTIVE_VIDEO),
+        .active_video_out(v_tc_0_active_video_out),
         .clk(dvi2rgb_0_PixelClk),
         .clken(VCC_dout),
         .det_clken(VCC_dout),
         .gen_clken(v_axi4s_vid_out_0_vtg_ce),
         .hblank_in(v_vid_in_axi4s_0_vtiming_out_HBLANK),
-        .hblank_out(v_tc_0_vtiming_out_HBLANK),
+        .hblank_out(v_tc_0_hblank_out),
         .hsync_in(v_vid_in_axi4s_0_vtiming_out_HSYNC),
-        .hsync_out(v_tc_0_vtiming_out_HSYNC),
+        .hsync_out(v_tc_0_hsync_out),
         .resetn(VCC_dout),
         .vblank_in(v_vid_in_axi4s_0_vtiming_out_VBLANK),
-        .vblank_out(v_tc_0_vtiming_out_VBLANK),
+        .vblank_out(v_tc_0_vblank_out),
         .vsync_in(v_vid_in_axi4s_0_vtiming_out_VSYNC),
-        .vsync_out(v_tc_0_vtiming_out_VSYNC));
+        .vsync_out(v_tc_0_vsync_out));
   design_1_v_vid_in_axi4s_0_0 v_vid_in_axi4s_0
        (.aclk(dvi2rgb_0_PixelClk),
         .aclken(VCC_dout),

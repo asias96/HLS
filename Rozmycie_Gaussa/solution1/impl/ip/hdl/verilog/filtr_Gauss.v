@@ -7,29 +7,9 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="filtr_Gauss,hls_ip_2018_3,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=9.400000,HLS_SYN_LAT=927931,HLS_SYN_TPT=927929,HLS_SYN_MEM=2,HLS_SYN_DSP=5,HLS_SYN_FF=724,HLS_SYN_LUT=1403,HLS_VERSION=2018_3}" *)
+(* CORE_GENERATION_INFO="filtr_Gauss,hls_ip_2018_3,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=9.400000,HLS_SYN_LAT=927931,HLS_SYN_TPT=927929,HLS_SYN_MEM=2,HLS_SYN_DSP=5,HLS_SYN_FF=688,HLS_SYN_LUT=1363,HLS_VERSION=2018_3}" *)
 
 module filtr_Gauss (
-        s_axi_bun_1_AWVALID,
-        s_axi_bun_1_AWREADY,
-        s_axi_bun_1_AWADDR,
-        s_axi_bun_1_WVALID,
-        s_axi_bun_1_WREADY,
-        s_axi_bun_1_WDATA,
-        s_axi_bun_1_WSTRB,
-        s_axi_bun_1_ARVALID,
-        s_axi_bun_1_ARREADY,
-        s_axi_bun_1_ARADDR,
-        s_axi_bun_1_RVALID,
-        s_axi_bun_1_RREADY,
-        s_axi_bun_1_RDATA,
-        s_axi_bun_1_RRESP,
-        s_axi_bun_1_BVALID,
-        s_axi_bun_1_BREADY,
-        s_axi_bun_1_BRESP,
-        ap_clk,
-        ap_rst_n,
-        interrupt,
         in_r_TDATA,
         in_r_TKEEP,
         in_r_TSTRB,
@@ -44,40 +24,19 @@ module filtr_Gauss (
         out_r_TLAST,
         out_r_TID,
         out_r_TDEST,
+        ap_clk,
+        ap_rst_n,
         in_r_TVALID,
         in_r_TREADY,
+        ap_start,
         out_r_TVALID,
-        out_r_TREADY
+        out_r_TREADY,
+        ap_done,
+        ap_ready,
+        ap_idle
 );
 
-parameter    C_S_AXI_BUN_1_DATA_WIDTH = 32;
-parameter    C_S_AXI_BUN_1_ADDR_WIDTH = 4;
-parameter    C_S_AXI_DATA_WIDTH = 32;
-parameter    C_S_AXI_ADDR_WIDTH = 32;
 
-parameter C_S_AXI_BUN_1_WSTRB_WIDTH = (32 / 8);
-parameter C_S_AXI_WSTRB_WIDTH = (32 / 8);
-
-input   s_axi_bun_1_AWVALID;
-output   s_axi_bun_1_AWREADY;
-input  [C_S_AXI_BUN_1_ADDR_WIDTH - 1:0] s_axi_bun_1_AWADDR;
-input   s_axi_bun_1_WVALID;
-output   s_axi_bun_1_WREADY;
-input  [C_S_AXI_BUN_1_DATA_WIDTH - 1:0] s_axi_bun_1_WDATA;
-input  [C_S_AXI_BUN_1_WSTRB_WIDTH - 1:0] s_axi_bun_1_WSTRB;
-input   s_axi_bun_1_ARVALID;
-output   s_axi_bun_1_ARREADY;
-input  [C_S_AXI_BUN_1_ADDR_WIDTH - 1:0] s_axi_bun_1_ARADDR;
-output   s_axi_bun_1_RVALID;
-input   s_axi_bun_1_RREADY;
-output  [C_S_AXI_BUN_1_DATA_WIDTH - 1:0] s_axi_bun_1_RDATA;
-output  [1:0] s_axi_bun_1_RRESP;
-output   s_axi_bun_1_BVALID;
-input   s_axi_bun_1_BREADY;
-output  [1:0] s_axi_bun_1_BRESP;
-input   ap_clk;
-input   ap_rst_n;
-output   interrupt;
 input  [7:0] in_r_TDATA;
 input  [0:0] in_r_TKEEP;
 input  [0:0] in_r_TSTRB;
@@ -92,16 +51,18 @@ output  [0:0] out_r_TUSER;
 output  [0:0] out_r_TLAST;
 output  [0:0] out_r_TID;
 output  [0:0] out_r_TDEST;
+input   ap_clk;
+input   ap_rst_n;
 input   in_r_TVALID;
 output   in_r_TREADY;
+input   ap_start;
 output   out_r_TVALID;
 input   out_r_TREADY;
+output   ap_done;
+output   ap_ready;
+output   ap_idle;
 
  reg    ap_rst_n_inv;
-wire    ap_start;
-wire    ap_ready;
-wire    ap_done;
-wire    ap_idle;
 wire    AXIvideo2Mat_U0_ap_start;
 wire    AXIvideo2Mat_U0_ap_done;
 wire    AXIvideo2Mat_U0_ap_continue;
@@ -155,37 +116,6 @@ wire   [0:0] start_for_Mat2AXIvideo_U0_dout;
 wire    start_for_Mat2AXIvideo_U0_empty_n;
 wire    Mat2AXIvideo_U0_start_full_n;
 wire    Mat2AXIvideo_U0_start_write;
-
-filtr_Gauss_bun_1_s_axi #(
-    .C_S_AXI_ADDR_WIDTH( C_S_AXI_BUN_1_ADDR_WIDTH ),
-    .C_S_AXI_DATA_WIDTH( C_S_AXI_BUN_1_DATA_WIDTH ))
-filtr_Gauss_bun_1_s_axi_U(
-    .AWVALID(s_axi_bun_1_AWVALID),
-    .AWREADY(s_axi_bun_1_AWREADY),
-    .AWADDR(s_axi_bun_1_AWADDR),
-    .WVALID(s_axi_bun_1_WVALID),
-    .WREADY(s_axi_bun_1_WREADY),
-    .WDATA(s_axi_bun_1_WDATA),
-    .WSTRB(s_axi_bun_1_WSTRB),
-    .ARVALID(s_axi_bun_1_ARVALID),
-    .ARREADY(s_axi_bun_1_ARREADY),
-    .ARADDR(s_axi_bun_1_ARADDR),
-    .RVALID(s_axi_bun_1_RVALID),
-    .RREADY(s_axi_bun_1_RREADY),
-    .RDATA(s_axi_bun_1_RDATA),
-    .RRESP(s_axi_bun_1_RRESP),
-    .BVALID(s_axi_bun_1_BVALID),
-    .BREADY(s_axi_bun_1_BREADY),
-    .BRESP(s_axi_bun_1_BRESP),
-    .ACLK(ap_clk),
-    .ARESET(ap_rst_n_inv),
-    .ACLK_EN(1'b1),
-    .ap_start(ap_start),
-    .interrupt(interrupt),
-    .ap_ready(ap_ready),
-    .ap_done(ap_done),
-    .ap_idle(ap_idle)
-);
 
 AXIvideo2Mat AXIvideo2Mat_U0(
     .ap_clk(ap_clk),

@@ -1,5 +1,5 @@
 ## ==============================================================
-## File generated on Wed Jan 15 10:57:10 CET 2020
+## File generated on Wed Jan 22 11:02:10 CET 2020
 ## Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 ## SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 ## IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -16,7 +16,6 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.3/data/ip'.
 Wrote  : </home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/bd_0.bd> 
-</hls_inst/s_axi_bun_1/Reg> is being mapped into </s_axi_bun_1> at <0x00000000 [ 4K ]>
 Wrote  : </home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/bd_0.bd> 
 VHDL Output written to : /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/synth/bd_0.v
 VHDL Output written to : /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/sim/bd_0.v
@@ -30,11 +29,11 @@ INFO: [BD 41-1029] Generation completed for the IP Integrator block hls_inst .
 Exporting to file /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/hw_handoff/bd_0.hwh
 Generated Block Design Tcl file /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/hw_handoff/bd_0_bd.tcl
 Generated Hardware Definition File /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/synth/bd_0.hwdef
-[Wed Jan 15 10:55:56 2020] Launched bd_0_hls_inst_0_synth_1...
+[Wed Jan 22 11:01:02 2020] Launched bd_0_hls_inst_0_synth_1...
 Run output will be captured here: /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/runme.log
-[Wed Jan 15 10:55:57 2020] Launched synth_1...
+[Wed Jan 22 11:01:02 2020] Launched synth_1...
 Run output will be captured here: /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/verilog/project.runs/synth_1/runme.log
-[Wed Jan 15 10:55:57 2020] Waiting for synth_1 to finish...
+[Wed Jan 22 11:01:02 2020] Waiting for synth_1 to finish...
 
 *** Running vivado
     with args -log bd_0_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_wrapper.tcl
@@ -54,18 +53,18 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 8171 
+INFO: Helper process launched with PID 10127 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1471.910 ; gain = 84.809 ; free physical = 6285 ; free virtual = 12511
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1471.906 ; gain = 84.809 ; free physical = 5056 ; free virtual = 11475
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'bd_0_wrapper' [/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/hdl/bd_0_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'bd_0' [/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/synth/bd_0.v:13]
-INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/verilog/project.runs/synth_1/.Xil/Vivado-8149-lsriw/realtime/bd_0_hls_inst_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (1#1) [/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/verilog/project.runs/synth_1/.Xil/Vivado-8149-lsriw/realtime/bd_0_hls_inst_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/verilog/project.runs/synth_1/.Xil/Vivado-10109-lsriw/realtime/bd_0_hls_inst_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (1#1) [/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/verilog/project.runs/synth_1/.Xil/Vivado-10109-lsriw/realtime/bd_0_hls_inst_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'bd_0' (2#1) [/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/synth/bd_0.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'bd_0_wrapper' (3#1) [/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/hdl/bd_0_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1517.660 ; gain = 130.559 ; free physical = 6285 ; free virtual = 12517
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1517.656 ; gain = 130.559 ; free physical = 5075 ; free virtual = 11493
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -78,10 +77,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1517.660 ; gain = 130.559 ; free physical = 6285 ; free virtual = 12517
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1517.656 ; gain = 130.559 ; free physical = 5074 ; free virtual = 11493
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1517.660 ; gain = 130.559 ; free physical = 6285 ; free virtual = 12517
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1517.656 ; gain = 130.559 ; free physical = 5074 ; free virtual = 11493
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -96,21 +95,21 @@ Parsing XDC File [/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/verilog/pro
 Finished Parsing XDC File [/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/verilog/project.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1794.496 ; gain = 0.000 ; free physical = 6002 ; free virtual = 12233
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1794.492 ; gain = 0.000 ; free physical = 4826 ; free virtual = 11245
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1794.496 ; gain = 0.000 ; free physical = 6002 ; free virtual = 12233
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1794.496 ; gain = 0.000 ; free physical = 5999 ; free virtual = 12232
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1794.492 ; gain = 0.000 ; free physical = 4826 ; free virtual = 11245
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1794.492 ; gain = 0.000 ; free physical = 4826 ; free virtual = 11244
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1794.496 ; gain = 407.395 ; free physical = 6081 ; free virtual = 12309
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1794.492 ; gain = 407.395 ; free physical = 4869 ; free virtual = 11297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1794.496 ; gain = 407.395 ; free physical = 6081 ; free virtual = 12309
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1794.492 ; gain = 407.395 ; free physical = 4869 ; free virtual = 11297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -118,10 +117,10 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property DONT_TOUCH = true for bd_0_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for bd_0_i/hls_inst. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1794.496 ; gain = 407.395 ; free physical = 6083 ; free virtual = 12311
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1794.492 ; gain = 407.395 ; free physical = 4871 ; free virtual = 11299
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1794.496 ; gain = 407.395 ; free physical = 6082 ; free virtual = 12310
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1794.492 ; gain = 407.395 ; free physical = 4870 ; free virtual = 11299
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -157,7 +156,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1794.496 ; gain = 407.395 ; free physical = 6071 ; free virtual = 12301
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1794.492 ; gain = 407.395 ; free physical = 4855 ; free virtual = 11285
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -169,13 +168,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1807.480 ; gain = 420.379 ; free physical = 5845 ; free virtual = 12117
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1808.477 ; gain = 421.379 ; free physical = 4762 ; free virtual = 11185
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1807.480 ; gain = 420.379 ; free physical = 5845 ; free virtual = 12117
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1808.477 ; gain = 421.379 ; free physical = 4762 ; free virtual = 11185
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -187,7 +186,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1816.496 ; gain = 429.395 ; free physical = 5844 ; free virtual = 12116
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1817.492 ; gain = 430.395 ; free physical = 4761 ; free virtual = 11184
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -211,7 +210,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1816.496 ; gain = 429.395 ; free physical = 5838 ; free virtual = 12117
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1817.492 ; gain = 430.395 ; free physical = 4761 ; free virtual = 11184
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -224,7 +223,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1816.496 ; gain = 429.395 ; free physical = 5838 ; free virtual = 12117
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1817.492 ; gain = 430.395 ; free physical = 4761 ; free virtual = 11184
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -236,25 +235,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1816.496 ; gain = 429.395 ; free physical = 5838 ; free virtual = 12117
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1817.492 ; gain = 430.395 ; free physical = 4761 ; free virtual = 11184
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1816.496 ; gain = 429.395 ; free physical = 5838 ; free virtual = 12117
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1817.492 ; gain = 430.395 ; free physical = 4761 ; free virtual = 11184
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1816.496 ; gain = 429.395 ; free physical = 5838 ; free virtual = 12117
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1817.492 ; gain = 430.395 ; free physical = 4761 ; free virtual = 11184
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1816.496 ; gain = 429.395 ; free physical = 5838 ; free virtual = 12117
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1817.492 ; gain = 430.395 ; free physical = 4761 ; free virtual = 11184
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -278,34 +277,34 @@ Report Instance Areas:
 +------+---------+-------+------+
 |      |Instance |Module |Cells |
 +------+---------+-------+------+
-|1     |top      |       |    58|
-|2     |  bd_0_i |bd_0   |    58|
+|1     |top      |       |    19|
+|2     |  bd_0_i |bd_0   |    19|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1816.496 ; gain = 429.395 ; free physical = 5838 ; free virtual = 12117
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1817.492 ; gain = 430.395 ; free physical = 4761 ; free virtual = 11184
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1816.496 ; gain = 152.559 ; free physical = 5897 ; free virtual = 12174
-Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1816.504 ; gain = 429.395 ; free physical = 5897 ; free virtual = 12174
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1817.492 ; gain = 153.559 ; free physical = 4820 ; free virtual = 11242
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1817.500 ; gain = 430.395 ; free physical = 4820 ; free virtual = 11242
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1823.496 ; gain = 0.000 ; free physical = 5835 ; free virtual = 12112
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1823.492 ; gain = 0.000 ; free physical = 4761 ; free virtual = 11181
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 18 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1823.496 ; gain = 442.312 ; free physical = 5883 ; free virtual = 12160
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1823.496 ; gain = 0.000 ; free physical = 5883 ; free virtual = 12160
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1823.492 ; gain = 442.312 ; free physical = 4809 ; free virtual = 11230
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1823.492 ; gain = 0.000 ; free physical = 4809 ; free virtual = 11230
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/verilog/project.runs/synth_1/bd_0_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file bd_0_wrapper_utilization_synth.rpt -pb bd_0_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Jan 15 10:56:59 2020...
-[Wed Jan 15 10:56:59 2020] synth_1 finished
-wait_on_run: Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 2100.289 ; gain = 0.000 ; free physical = 6547 ; free virtual = 12822
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 22 11:01:59 2020...
+[Wed Jan 22 11:02:00 2020] synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 2093.289 ; gain = 0.000 ; free physical = 5450 ; free virtual = 11868
 Design is defaulting to impl run constrset: constrs_1
 Design is defaulting to synth run part: xc7z010clg400-1
 INFO: [Project 1-454] Reading design checkpoint '/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0.dcp' for cell 'bd_0_i/hls_inst'
@@ -317,7 +316,7 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 Parsing XDC File [/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/verilog/filtr_Gauss.xdc]
 Finished Parsing XDC File [/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/verilog/filtr_Gauss.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2100.289 ; gain = 0.000 ; free physical = 6326 ; free virtual = 12599
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2093.289 ; gain = 0.000 ; free physical = 5236 ; free virtual = 11656
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -326,7 +325,7 @@ Contents of report file './report/filtr_Gauss_utilization_synth.rpt' is as follo
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Wed Jan 15 10:57:03 2020
+| Date         : Wed Jan 22 11:02:03 2020
 | Host         : lsriw running 64-bit Ubuntu 18.04.3 LTS
 | Command      : report_utilization -file ./report/filtr_Gauss_utilization_synth.rpt
 | Design       : bd_0_wrapper
@@ -355,11 +354,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  399 |     0 |     17600 |  2.27 |
-|   LUT as Logic          |  399 |     0 |     17600 |  2.27 |
+| Slice LUTs*             |  377 |     0 |     17600 |  2.14 |
+|   LUT as Logic          |  377 |     0 |     17600 |  2.14 |
 |   LUT as Memory         |    0 |     0 |      6000 |  0.00 |
-| Slice Registers         |  402 |     0 |     35200 |  1.14 |
-|   Register as Flip Flop |  402 |     0 |     35200 |  1.14 |
+| Slice Registers         |  378 |     0 |     35200 |  1.07 |
+|   Register as Flip Flop |  378 |     0 |     35200 |  1.07 |
 |   Register as Latch     |    0 |     0 |     35200 |  0.00 |
 | F7 Muxes                |    0 |     0 |      8800 |  0.00 |
 | F8 Muxes                |    0 |     0 |      4400 |  0.00 |
@@ -382,7 +381,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 11    |          Yes |         Set |            - |
-| 391   |          Yes |       Reset |            - |
+| 367   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -473,13 +472,13 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  391 |        Flop & Latch |
-| LUT3     |  130 |                 LUT |
-| LUT5     |  108 |                 LUT |
-| LUT4     |   81 |                 LUT |
-| LUT6     |   77 |                 LUT |
-| LUT2     |   41 |                 LUT |
+| FDRE     |  367 |        Flop & Latch |
+| LUT3     |  127 |                 LUT |
+| LUT5     |   96 |                 LUT |
+| LUT6     |   74 |                 LUT |
+| LUT4     |   74 |                 LUT |
 | LUT1     |   39 |                 LUT |
+| LUT2     |   37 |                 LUT |
 | CARRY4   |   20 |          CarryLogic |
 | FDSE     |   11 |        Flop & Latch |
 | DSP48E1  |    5 |    Block Arithmetic |
@@ -512,12 +511,12 @@ INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
 WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
 Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
-report_timing_summary: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2340.840 ; gain = 240.551 ; free physical = 5951 ; free virtual = 12234
+report_timing_summary: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2333.824 ; gain = 240.535 ; free physical = 4862 ; free virtual = 11286
 Contents of report file './report/filtr_Gauss_timing_synth.rpt' is as follows:
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Wed Jan 15 10:57:10 2020
+| Date         : Wed Jan 22 11:02:10 2020
 | Host         : lsriw running 64-bit Ubuntu 18.04.3 LTS
 | Command      : report_timing_summary -file ./report/filtr_Gauss_timing_synth.rpt
 | Design       : bd_0_wrapper
@@ -590,14 +589,14 @@ Table of Contents
 
 5. checking no_input_delay
 --------------------------
- There are 30 input ports with no input delay specified. (HIGH)
+ There are 14 input ports with no input delay specified. (HIGH)
 
  There are 0 input ports with no input delay but user has a false path constraint.
 
 
 6. checking no_output_delay
 ---------------------------
- There are 23 ports with no output delay specified. (HIGH)
+ There are 15 ports with no output delay specified. (HIGH)
 
  There are 0 ports with no output delay but user has a false path constraint
 
@@ -642,7 +641,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      2.112        0.000                      0                  981        0.254        0.000                      0                  981        4.500        0.000                       0                   411  
+      2.112        0.000                      0                  952        0.254        0.000                      0                  952        4.500        0.000                       0                   387  
 
 
 All user specified timing constraints are met.
@@ -665,7 +664,7 @@ ap_clk  {0.000 5.000}      10.000          100.000
 
 Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-ap_clk              2.112        0.000                      0                  981        0.254        0.000                      0                  981        4.500        0.000                       0                   411  
+ap_clk              2.112        0.000                      0                  952        0.254        0.000                      0                  952        4.500        0.000                       0                   387  
 
 
 ------------------------------------------------------------------------------------------------
@@ -728,7 +727,7 @@ Slack (MET) :             2.112ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=410, unset)          0.973     0.973    bd_0_i/hls_inst/inst/rozmycie_U0/ap_clk
+                         net (fo=386, unset)          0.973     0.973    bd_0_i/hls_inst/inst/rozmycie_U0/ap_clk
                          FDRE                                         r  bd_0_i/hls_inst/inst/rozmycie_U0/okno_val_2_0_s_fu_124_reg[0]/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_fdre_C_Q)         0.496     1.469 f  bd_0_i/hls_inst/inst/rozmycie_U0/okno_val_2_0_s_fu_124_reg[0]/Q
@@ -752,7 +751,7 @@ Slack (MET) :             2.112ns  (required time - arrival time)
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=410, unset)          0.924    10.924    bd_0_i/hls_inst/inst/rozmycie_U0/ap_clk
+                         net (fo=386, unset)          0.924    10.924    bd_0_i/hls_inst/inst/rozmycie_U0/ap_clk
                          DSP48E1                                      r  bd_0_i/hls_inst/inst/rozmycie_U0/tmp10_reg_774_reg/CLK
                          clock pessimism              0.000    10.924    
                          clock uncertainty           -0.035    10.889    
@@ -789,7 +788,7 @@ Slack (MET) :             0.254ns  (arrival time - required time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=410, unset)          0.410     0.410    bd_0_i/hls_inst/inst/AXIvideo2Mat_U0/ap_clk
+                         net (fo=386, unset)          0.410     0.410    bd_0_i/hls_inst/inst/AXIvideo2Mat_U0/ap_clk
                          FDRE                                         r  bd_0_i/hls_inst/inst/AXIvideo2Mat_U0/axi_data_V_3_reg_227_reg[0]/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_fdre_C_Q)         0.158     0.568 r  bd_0_i/hls_inst/inst/AXIvideo2Mat_U0/axi_data_V_3_reg_227_reg[0]/Q
@@ -801,7 +800,7 @@ Slack (MET) :             0.254ns  (arrival time - required time)
 
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=410, unset)          0.432     0.432    bd_0_i/hls_inst/inst/AXIvideo2Mat_U0/ap_clk
+                         net (fo=386, unset)          0.432     0.432    bd_0_i/hls_inst/inst/AXIvideo2Mat_U0/ap_clk
                          FDRE                                         r  bd_0_i/hls_inst/inst/AXIvideo2Mat_U0/axi_data_V1_reg_123_reg[0]/C
                          clock pessimism              0.000     0.432    
                          FDRE (Hold_fdre_C_D)         0.112     0.544    bd_0_i/hls_inst/inst/AXIvideo2Mat_U0/axi_data_V1_reg_123_reg[0]
@@ -832,7 +831,7 @@ High Pulse Width  Slow    FDRE/C       n/a            0.500         5.000       
 
 HLS EXTRACTION: calculating BRAM count: (2 bram18) + 2 * (0 bram36)
 HLS EXTRACTION: synth area_totals:  0 17600 35200 80 120 0 0
-HLS EXTRACTION: synth area_current: 0 399 402 5 2 0 0 0 0 0
+HLS EXTRACTION: synth area_current: 0 377 378 5 2 0 0 0 0 0
 HLS EXTRACTION: generated /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/report/verilog/filtr_Gauss_export.xml
 
 
@@ -840,12 +839,12 @@ Implementation tool: Xilinx Vivado v.2018.3
 Project:             Rozmycie_Gaussa
 Solution:            solution1
 Device target:       xc7z010clg400-1
-Report date:         Wed Jan 15 10:57:10 CET 2020
+Report date:         Wed Jan 22 11:02:10 CET 2020
 
 #=== Post-Synthesis Resource usage ===
 SLICE:            0
-LUT:            399
-FF:             402
+LUT:            377
+FF:             378
 DSP:              5
 BRAM:             2
 SRL:              0
@@ -855,4 +854,4 @@ CP achieved post-synthesis:    7.888
 Timing met
 
 HLS EXTRACTION: generated /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/report/verilog/filtr_Gauss_export.rpt
-INFO: [Common 17-206] Exiting Vivado at Wed Jan 15 10:57:10 2020...
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 22 11:02:10 2020...

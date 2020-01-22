@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x96E22A298A90DC84",
+      "boundary_crc": "0x9854988D2D8C4038",
       "device": "xc7z010clg400-1",
       "name": "bd_0",
       "synth_flow_mode": "Hierarchical",
@@ -12,6 +12,10 @@
       "hls_inst": ""
     },
     "interface_ports": {
+      "ap_ctrl": {
+        "mode": "Slave",
+        "vlnv": "xilinx.com:interface:acc_handshake_rtl:1.0"
+      },
       "in_r": {
         "mode": "Slave",
         "vlnv": "xilinx.com:interface:axis_rtl:1.0",
@@ -116,108 +120,6 @@
             "value_src": "const_prop"
           }
         }
-      },
-      "s_axi_bun_1": {
-        "mode": "Slave",
-        "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
-        "parameters": {
-          "ADDR_WIDTH": {
-            "value": "12"
-          },
-          "ARUSER_WIDTH": {
-            "value": "0"
-          },
-          "AWUSER_WIDTH": {
-            "value": "0"
-          },
-          "BUSER_WIDTH": {
-            "value": "0"
-          },
-          "CLK_DOMAIN": {
-            "value": "bd_0_ap_clk_0",
-            "value_src": "default"
-          },
-          "DATA_WIDTH": {
-            "value": "32"
-          },
-          "FREQ_HZ": {
-            "value": "100000000.0"
-          },
-          "HAS_BRESP": {
-            "value": "1"
-          },
-          "HAS_BURST": {
-            "value": "0"
-          },
-          "HAS_CACHE": {
-            "value": "0"
-          },
-          "HAS_LOCK": {
-            "value": "0"
-          },
-          "HAS_PROT": {
-            "value": "0"
-          },
-          "HAS_QOS": {
-            "value": "0"
-          },
-          "HAS_REGION": {
-            "value": "0"
-          },
-          "HAS_RRESP": {
-            "value": "1"
-          },
-          "HAS_WSTRB": {
-            "value": "1"
-          },
-          "ID_WIDTH": {
-            "value": "0"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "MAX_BURST_LENGTH": {
-            "value": "1"
-          },
-          "NUM_READ_OUTSTANDING": {
-            "value": "1"
-          },
-          "NUM_READ_THREADS": {
-            "value": "1"
-          },
-          "NUM_WRITE_OUTSTANDING": {
-            "value": "1"
-          },
-          "NUM_WRITE_THREADS": {
-            "value": "1"
-          },
-          "PHASE": {
-            "value": "0.000",
-            "value_src": "default"
-          },
-          "PROTOCOL": {
-            "value": "AXI4LITE"
-          },
-          "READ_WRITE_MODE": {
-            "value": "READ_WRITE"
-          },
-          "RUSER_BITS_PER_BYTE": {
-            "value": "0"
-          },
-          "RUSER_WIDTH": {
-            "value": "0"
-          },
-          "SUPPORTS_NARROW_BURST": {
-            "value": "0"
-          },
-          "WUSER_BITS_PER_BYTE": {
-            "value": "0"
-          },
-          "WUSER_WIDTH": {
-            "value": "0"
-          }
-        }
       }
     },
     "ports": {
@@ -226,7 +128,7 @@
         "direction": "I",
         "parameters": {
           "ASSOCIATED_BUSIF": {
-            "value": "in_r:out_r:s_axi_bun_1",
+            "value": "in_r:out_r",
             "value_src": "default"
           },
           "ASSOCIATED_RESET": {
@@ -263,20 +165,6 @@
             "value_src": "default"
           }
         }
-      },
-      "interrupt": {
-        "type": "intr",
-        "direction": "O",
-        "parameters": {
-          "PortWidth": {
-            "value": "1",
-            "value_src": "default"
-          },
-          "SENSITIVITY": {
-            "value": "LEVEL_HIGH",
-            "value_src": "const_prop"
-          }
-        }
       }
     },
     "components": {
@@ -286,6 +174,12 @@
       }
     },
     "interface_nets": {
+      "ap_ctrl_0_1": {
+        "interface_ports": [
+          "ap_ctrl",
+          "hls_inst/ap_ctrl"
+        ]
+      },
       "in_r_0_1": {
         "interface_ports": [
           "in_r",
@@ -296,12 +190,6 @@
         "interface_ports": [
           "out_r",
           "hls_inst/out_r"
-        ]
-      },
-      "s_axi_bun_1_0_1": {
-        "interface_ports": [
-          "s_axi_bun_1",
-          "hls_inst/s_axi_bun_1"
         ]
       }
     },
@@ -317,29 +205,6 @@
           "ap_rst_n",
           "hls_inst/ap_rst_n"
         ]
-      },
-      "hls_inst_interrupt": {
-        "ports": [
-          "hls_inst/interrupt",
-          "interrupt"
-        ]
-      }
-    },
-    "addressing": {
-      "/": {
-        "address_spaces": {
-          "s_axi_bun_1": {
-            "range": "4K",
-            "width": "32",
-            "segments": {
-              "SEG_hls_inst_Reg": {
-                "address_block": "/hls_inst/s_axi_bun_1/Reg",
-                "offset": "0x000",
-                "range": "4K"
-              }
-            }
-          }
-        }
       }
     }
   }

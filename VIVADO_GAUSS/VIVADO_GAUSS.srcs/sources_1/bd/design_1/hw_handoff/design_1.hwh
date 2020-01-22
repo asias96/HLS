@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Jan 17 22:58:32 2020" VIVADOVERSION="2018.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Jan 22 11:06:23 2020" VIVADOVERSION="2018.3">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo:part0:1.0" DEVICE="7z010" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -152,6 +152,7 @@
             <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vid_io_out_ce"/>
             <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="aresetn"/>
             <CONNECTION INSTANCE="filtr_Gauss_0" PORT="ap_rst_n"/>
+            <CONNECTION INSTANCE="filtr_Gauss_0" PORT="ap_start"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -742,7 +743,7 @@
     </MODULE>
     <MODULE COREREVISION="5" FULLNAME="/dvi2rgb_0" HWVERSION="1.8" INSTANCE="dvi2rgb_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dvi2rgb" VLNV="digilentinc.com:ip:dvi2rgb:1.8">
       <DOCUMENTS>
-        <DOCUMENT SOURCE="d:/HLS/VIVADO_GAUSS/vivado-library/ip/dvi2rgb/docs/dvi2rgb.pdf"/>
+        <DOCUMENT SOURCE="/home/lsriw/HLS/HLS/VIVADO_GAUSS/vivado-library/ip/dvi2rgb/docs/dvi2rgb.pdf"/>
       </DOCUMENTS>
       <PARAMETERS>
         <PARAMETER NAME="kEmulateDDC" VALUE="true"/>
@@ -885,12 +886,10 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2001151055" FULLNAME="/filtr_Gauss_0" HWVERSION="1.0" INSTANCE="filtr_Gauss_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="filtr_Gauss" VLNV="xilinx.com:hls:filtr_Gauss:1.0">
+    <MODULE COREREVISION="2001221100" FULLNAME="/filtr_Gauss_0" HWVERSION="1.0" INSTANCE="filtr_Gauss_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="filtr_Gauss" VLNV="xilinx.com:hls:filtr_Gauss:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="C_S_AXI_BUN_1_ADDR_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="C_S_AXI_BUN_1_DATA_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="Component_Name" VALUE="design_1_filtr_Gauss_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_filtr_Gauss_0_1"/>
         <PARAMETER NAME="clk_period" VALUE="10"/>
         <PARAMETER NAME="machine" VALUE="64"/>
         <PARAMETER NAME="combinational" VALUE="0"/>
@@ -899,34 +898,6 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="3" NAME="s_axi_bun_1_AWADDR" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" NAME="s_axi_bun_1_AWVALID" SIGIS="undef"/>
-        <PORT DIR="O" NAME="s_axi_bun_1_AWREADY" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="31" NAME="s_axi_bun_1_WDATA" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="3" NAME="s_axi_bun_1_WSTRB" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" NAME="s_axi_bun_1_WVALID" SIGIS="undef"/>
-        <PORT DIR="O" NAME="s_axi_bun_1_WREADY" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="1" NAME="s_axi_bun_1_BRESP" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" NAME="s_axi_bun_1_BVALID" SIGIS="undef"/>
-        <PORT DIR="I" NAME="s_axi_bun_1_BREADY" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="3" NAME="s_axi_bun_1_ARADDR" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" NAME="s_axi_bun_1_ARVALID" SIGIS="undef"/>
-        <PORT DIR="O" NAME="s_axi_bun_1_ARREADY" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="31" NAME="s_axi_bun_1_RDATA" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="1" NAME="s_axi_bun_1_RRESP" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" NAME="s_axi_bun_1_RVALID" SIGIS="undef"/>
-        <PORT DIR="I" NAME="s_axi_bun_1_RREADY" SIGIS="undef"/>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="ap_clk" SIGIS="clk" SIGNAME="dvi2rgb_0_PixelClk">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="dvi2rgb_0" PORT="PixelClk"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="ap_rst_n" SIGIS="rst" SIGNAME="VCC_dout">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="VCC" PORT="dout"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="interrupt" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT"/>
         <PORT DIR="I" NAME="in_r_TVALID" SIGIS="undef" SIGNAME="v_vid_in_axi4s_0_m_axis_video_tvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="v_vid_in_axi4s_0" PORT="m_axis_video_tvalid"/>
@@ -987,61 +958,26 @@
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="out_r_TID" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" LEFT="0" NAME="out_r_TDEST" RIGHT="0" SIGIS="undef"/>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="ap_clk" SIGIS="clk" SIGNAME="dvi2rgb_0_PixelClk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dvi2rgb_0" PORT="PixelClk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ap_rst_n" SIGIS="rst" SIGNAME="VCC_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="VCC" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ap_start" SIGIS="undef" SIGNAME="VCC_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="VCC" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ap_done" SIGIS="undef"/>
+        <PORT DIR="O" NAME="ap_ready" SIGIS="undef"/>
+        <PORT DIR="O" NAME="ap_idle" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="__NOC__" DATAWIDTH="32" NAME="s_axi_bun_1" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
-          <PARAMETER NAME="ADDR_WIDTH" VALUE="4"/>
-          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
-          <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
-          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
-          <PARAMETER NAME="LAYERED_METADATA" VALUE="xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
-          <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
-          <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
-          <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
-          <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
-          <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
-          <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
-          <PARAMETER NAME="HAS_BURST" VALUE="0"/>
-          <PARAMETER NAME="HAS_LOCK" VALUE="0"/>
-          <PARAMETER NAME="HAS_PROT" VALUE="0"/>
-          <PARAMETER NAME="HAS_CACHE" VALUE="0"/>
-          <PARAMETER NAME="HAS_QOS" VALUE="0"/>
-          <PARAMETER NAME="HAS_REGION" VALUE="0"/>
-          <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
-          <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
-          <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
-          <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
-          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="1"/>
-          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="1"/>
-          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
-          <PARAMETER NAME="PHASE" VALUE="0.000"/>
-          <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_dvi2rgb_0_0_PixelClk"/>
-          <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
-          <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
-          <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
-          <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
-          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
-          <PORTMAPS>
-            <PORTMAP LOGICAL="AWADDR" PHYSICAL="s_axi_bun_1_AWADDR"/>
-            <PORTMAP LOGICAL="AWVALID" PHYSICAL="s_axi_bun_1_AWVALID"/>
-            <PORTMAP LOGICAL="AWREADY" PHYSICAL="s_axi_bun_1_AWREADY"/>
-            <PORTMAP LOGICAL="WDATA" PHYSICAL="s_axi_bun_1_WDATA"/>
-            <PORTMAP LOGICAL="WSTRB" PHYSICAL="s_axi_bun_1_WSTRB"/>
-            <PORTMAP LOGICAL="WVALID" PHYSICAL="s_axi_bun_1_WVALID"/>
-            <PORTMAP LOGICAL="WREADY" PHYSICAL="s_axi_bun_1_WREADY"/>
-            <PORTMAP LOGICAL="BRESP" PHYSICAL="s_axi_bun_1_BRESP"/>
-            <PORTMAP LOGICAL="BVALID" PHYSICAL="s_axi_bun_1_BVALID"/>
-            <PORTMAP LOGICAL="BREADY" PHYSICAL="s_axi_bun_1_BREADY"/>
-            <PORTMAP LOGICAL="ARADDR" PHYSICAL="s_axi_bun_1_ARADDR"/>
-            <PORTMAP LOGICAL="ARVALID" PHYSICAL="s_axi_bun_1_ARVALID"/>
-            <PORTMAP LOGICAL="ARREADY" PHYSICAL="s_axi_bun_1_ARREADY"/>
-            <PORTMAP LOGICAL="RDATA" PHYSICAL="s_axi_bun_1_RDATA"/>
-            <PORTMAP LOGICAL="RRESP" PHYSICAL="s_axi_bun_1_RRESP"/>
-            <PORTMAP LOGICAL="RVALID" PHYSICAL="s_axi_bun_1_RVALID"/>
-            <PORTMAP LOGICAL="RREADY" PHYSICAL="s_axi_bun_1_RREADY"/>
-          </PORTMAPS>
-        </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="__NOC__" NAME="in_r" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="1"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="1"/>
@@ -1092,6 +1028,15 @@
             <PORTMAP LOGICAL="TLAST" PHYSICAL="out_r_TLAST"/>
             <PORTMAP LOGICAL="TID" PHYSICAL="out_r_TID"/>
             <PORTMAP LOGICAL="TDEST" PHYSICAL="out_r_TDEST"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="ap_ctrl" TYPE="TARGET" VLNV="xilinx.com:interface:acc_handshake:1.0">
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="xilinx.com:interface:datatypes:1.0 {start {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} done {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} ready {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} idle {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="start" PHYSICAL="ap_start"/>
+            <PORTMAP LOGICAL="done" PHYSICAL="ap_done"/>
+            <PORTMAP LOGICAL="ready" PHYSICAL="ap_ready"/>
+            <PORTMAP LOGICAL="idle" PHYSICAL="ap_idle"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
@@ -1153,7 +1098,7 @@
     </MODULE>
     <MODULE COREREVISION="3" FULLNAME="/rgb2vga_0" HWVERSION="1.0" INSTANCE="rgb2vga_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="rgb2vga" VLNV="digilentinc.com:ip:rgb2vga:1.0">
       <DOCUMENTS>
-        <DOCUMENT SOURCE="d:/HLS/VIVADO_GAUSS/vivado-library/ip/rgb2vga_v1_0/docs/rgb2vga_v1_0.pdf"/>
+        <DOCUMENT SOURCE="/home/lsriw/HLS/HLS/VIVADO_GAUSS/vivado-library/ip/rgb2vga_v1_0/docs/rgb2vga_v1_0.pdf"/>
       </DOCUMENTS>
       <PARAMETERS>
         <PARAMETER NAME="VID_IN_DATA_WIDTH" VALUE="24"/>
@@ -1327,27 +1272,27 @@
             <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pData"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="vtg_vsync" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_vtg_vsync">
+        <PORT DIR="I" NAME="vtg_vsync" SIGIS="undef" SIGNAME="v_tc_0_vsync_out">
           <CONNECTIONS>
             <CONNECTION INSTANCE="v_tc_0" PORT="vsync_out"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="vtg_hsync" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_vtg_hsync">
+        <PORT DIR="I" NAME="vtg_hsync" SIGIS="undef" SIGNAME="v_tc_0_hsync_out">
           <CONNECTIONS>
             <CONNECTION INSTANCE="v_tc_0" PORT="hsync_out"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="vtg_vblank" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_vtg_vblank">
+        <PORT DIR="I" NAME="vtg_vblank" SIGIS="undef" SIGNAME="v_tc_0_vblank_out">
           <CONNECTIONS>
             <CONNECTION INSTANCE="v_tc_0" PORT="vblank_out"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="vtg_hblank" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_vtg_hblank">
+        <PORT DIR="I" NAME="vtg_hblank" SIGIS="undef" SIGNAME="v_tc_0_hblank_out">
           <CONNECTIONS>
             <CONNECTION INSTANCE="v_tc_0" PORT="hblank_out"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="vtg_active_video" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_vtg_active_video">
+        <PORT DIR="I" NAME="vtg_active_video" SIGIS="undef" SIGNAME="v_tc_0_active_video_out">
           <CONNECTIONS>
             <CONNECTION INSTANCE="v_tc_0" PORT="active_video_out"/>
           </CONNECTIONS>
@@ -1387,7 +1332,7 @@
             <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_video_tvalid"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="v_tc_0_vtiming_out" NAME="vtiming_in" TYPE="TARGET" VLNV="xilinx.com:interface:video_timing:2.0">
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="vtiming_in" TYPE="TARGET" VLNV="xilinx.com:interface:video_timing:2.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="ACTIVE_VIDEO" PHYSICAL="vtg_active_video"/>
             <PORTMAP LOGICAL="FIELD" PHYSICAL="vtg_field_id"/>
@@ -1636,27 +1581,27 @@
             <CONNECTION INSTANCE="v_vid_in_axi4s_0" PORT="vtd_active_video"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="hsync_out" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_vtg_hsync">
+        <PORT DIR="O" NAME="hsync_out" SIGIS="undef" SIGNAME="v_tc_0_hsync_out">
           <CONNECTIONS>
             <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vtg_hsync"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="hblank_out" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_vtg_hblank">
+        <PORT DIR="O" NAME="hblank_out" SIGIS="undef" SIGNAME="v_tc_0_hblank_out">
           <CONNECTIONS>
             <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vtg_hblank"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="vsync_out" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_vtg_vsync">
+        <PORT DIR="O" NAME="vsync_out" SIGIS="undef" SIGNAME="v_tc_0_vsync_out">
           <CONNECTIONS>
             <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vtg_vsync"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="vblank_out" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_vtg_vblank">
+        <PORT DIR="O" NAME="vblank_out" SIGIS="undef" SIGNAME="v_tc_0_vblank_out">
           <CONNECTIONS>
             <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vtg_vblank"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="active_video_out" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_vtg_active_video">
+        <PORT DIR="O" NAME="active_video_out" SIGIS="undef" SIGNAME="v_tc_0_active_video_out">
           <CONNECTIONS>
             <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vtg_active_video"/>
           </CONNECTIONS>
@@ -1678,7 +1623,7 @@
             <PORTMAP LOGICAL="VSYNC" PHYSICAL="vsync_in"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="v_tc_0_vtiming_out" NAME="vtiming_out" TYPE="INITIATOR" VLNV="xilinx.com:interface:video_timing:2.0">
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="vtiming_out" TYPE="INITIATOR" VLNV="xilinx.com:interface:video_timing:2.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="ACTIVE_VIDEO" PHYSICAL="active_video_out"/>
             <PORTMAP LOGICAL="HBLANK" PHYSICAL="hblank_out"/>

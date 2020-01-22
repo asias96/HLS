@@ -48,33 +48,13 @@
 
 
 // IP VLNV: xilinx.com:hls:filtr_Gauss:1.0
-// IP Revision: 2001151055
+// IP Revision: 2001221100
 
 `timescale 1ns/1ps
 
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module bd_0_hls_inst_0 (
-  s_axi_bun_1_AWADDR,
-  s_axi_bun_1_AWVALID,
-  s_axi_bun_1_AWREADY,
-  s_axi_bun_1_WDATA,
-  s_axi_bun_1_WSTRB,
-  s_axi_bun_1_WVALID,
-  s_axi_bun_1_WREADY,
-  s_axi_bun_1_BRESP,
-  s_axi_bun_1_BVALID,
-  s_axi_bun_1_BREADY,
-  s_axi_bun_1_ARADDR,
-  s_axi_bun_1_ARVALID,
-  s_axi_bun_1_ARREADY,
-  s_axi_bun_1_RDATA,
-  s_axi_bun_1_RRESP,
-  s_axi_bun_1_RVALID,
-  s_axi_bun_1_RREADY,
-  ap_clk,
-  ap_rst_n,
-  interrupt,
   in_r_TVALID,
   in_r_TREADY,
   in_r_TDATA,
@@ -92,55 +72,15 @@ module bd_0_hls_inst_0 (
   out_r_TUSER,
   out_r_TLAST,
   out_r_TID,
-  out_r_TDEST
+  out_r_TDEST,
+  ap_clk,
+  ap_rst_n,
+  ap_start,
+  ap_done,
+  ap_ready,
+  ap_idle
 );
 
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 AWADDR" *)
-input wire [3 : 0] s_axi_bun_1_AWADDR;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 AWVALID" *)
-input wire s_axi_bun_1_AWVALID;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 AWREADY" *)
-output wire s_axi_bun_1_AWREADY;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 WDATA" *)
-input wire [31 : 0] s_axi_bun_1_WDATA;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 WSTRB" *)
-input wire [3 : 0] s_axi_bun_1_WSTRB;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 WVALID" *)
-input wire s_axi_bun_1_WVALID;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 WREADY" *)
-output wire s_axi_bun_1_WREADY;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 BRESP" *)
-output wire [1 : 0] s_axi_bun_1_BRESP;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 BVALID" *)
-output wire s_axi_bun_1_BVALID;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 BREADY" *)
-input wire s_axi_bun_1_BREADY;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 ARADDR" *)
-input wire [3 : 0] s_axi_bun_1_ARADDR;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 ARVALID" *)
-input wire s_axi_bun_1_ARVALID;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 ARREADY" *)
-output wire s_axi_bun_1_ARREADY;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 RDATA" *)
-output wire [31 : 0] s_axi_bun_1_RDATA;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 RRESP" *)
-output wire [1 : 0] s_axi_bun_1_RRESP;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 RVALID" *)
-output wire s_axi_bun_1_RVALID;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axi_bun_1, ADDR_WIDTH 4, DATA_WIDTH 32, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}, FREQ_HZ 100000000.0, \
-ID_WIDTH 0, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN bd_0_ap_clk_0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 RREADY" *)
-input wire s_axi_bun_1_RREADY;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF s_axi_bun_1:in_r:out_r, ASSOCIATED_RESET ap_rst_n, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}, FREQ_HZ 100000000.0, PHASE 0.000, \
-CLK_DOMAIN bd_0_ap_clk_0, INSERT_VIP 0" *)
-(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ap_clk CLK" *)
-input wire ap_clk;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_rst_n, POLARITY ACTIVE_LOW, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {RST {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}, INSERT_VIP 0" *)
-(* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 ap_rst_n RST" *)
-input wire ap_rst_n;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME interrupt, SENSITIVITY LEVEL_HIGH, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {INTERRUPT {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}, PortWidth 1" *)
-(* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 interrupt INTERRUPT" *)
-output wire interrupt;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 in_r TVALID" *)
 input wire in_r_TVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 in_r TREADY" *)
@@ -183,31 +123,26 @@ e immediate dependency {} format string minimum {} maximum {}} value {}} bitwidt
 mum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} TUSER_WIDTH 1}, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000.0, PHASE 0.000, CLK_DOMAIN bd_0_ap_clk_0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 out_r TDEST" *)
 output wire [0 : 0] out_r_TDEST;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF in_r:out_r, ASSOCIATED_RESET ap_rst_n, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}, FREQ_HZ 100000000.0, PHASE 0.000, CLK_DOMAIN b\
+d_0_ap_clk_0, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ap_clk CLK" *)
+input wire ap_clk;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_rst_n, POLARITY ACTIVE_LOW, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {RST {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 ap_rst_n RST" *)
+input wire ap_rst_n;
+(* X_INTERFACE_INFO = "xilinx.com:interface:acc_handshake:1.0 ap_ctrl start" *)
+input wire ap_start;
+(* X_INTERFACE_INFO = "xilinx.com:interface:acc_handshake:1.0 ap_ctrl done" *)
+output wire ap_done;
+(* X_INTERFACE_INFO = "xilinx.com:interface:acc_handshake:1.0 ap_ctrl ready" *)
+output wire ap_ready;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_ctrl, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {start {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} done {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum \
+{}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} ready {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format lon\
+g minimum {} maximum {}} value 0}}} idle {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}" *)
+(* X_INTERFACE_INFO = "xilinx.com:interface:acc_handshake:1.0 ap_ctrl idle" *)
+output wire ap_idle;
 
-  filtr_Gauss #(
-    .C_S_AXI_BUN_1_ADDR_WIDTH(4),
-    .C_S_AXI_BUN_1_DATA_WIDTH(32)
-  ) inst (
-    .s_axi_bun_1_AWADDR(s_axi_bun_1_AWADDR),
-    .s_axi_bun_1_AWVALID(s_axi_bun_1_AWVALID),
-    .s_axi_bun_1_AWREADY(s_axi_bun_1_AWREADY),
-    .s_axi_bun_1_WDATA(s_axi_bun_1_WDATA),
-    .s_axi_bun_1_WSTRB(s_axi_bun_1_WSTRB),
-    .s_axi_bun_1_WVALID(s_axi_bun_1_WVALID),
-    .s_axi_bun_1_WREADY(s_axi_bun_1_WREADY),
-    .s_axi_bun_1_BRESP(s_axi_bun_1_BRESP),
-    .s_axi_bun_1_BVALID(s_axi_bun_1_BVALID),
-    .s_axi_bun_1_BREADY(s_axi_bun_1_BREADY),
-    .s_axi_bun_1_ARADDR(s_axi_bun_1_ARADDR),
-    .s_axi_bun_1_ARVALID(s_axi_bun_1_ARVALID),
-    .s_axi_bun_1_ARREADY(s_axi_bun_1_ARREADY),
-    .s_axi_bun_1_RDATA(s_axi_bun_1_RDATA),
-    .s_axi_bun_1_RRESP(s_axi_bun_1_RRESP),
-    .s_axi_bun_1_RVALID(s_axi_bun_1_RVALID),
-    .s_axi_bun_1_RREADY(s_axi_bun_1_RREADY),
-    .ap_clk(ap_clk),
-    .ap_rst_n(ap_rst_n),
-    .interrupt(interrupt),
+  filtr_Gauss inst (
     .in_r_TVALID(in_r_TVALID),
     .in_r_TREADY(in_r_TREADY),
     .in_r_TDATA(in_r_TDATA),
@@ -225,6 +160,12 @@ output wire [0 : 0] out_r_TDEST;
     .out_r_TUSER(out_r_TUSER),
     .out_r_TLAST(out_r_TLAST),
     .out_r_TID(out_r_TID),
-    .out_r_TDEST(out_r_TDEST)
+    .out_r_TDEST(out_r_TDEST),
+    .ap_clk(ap_clk),
+    .ap_rst_n(ap_rst_n),
+    .ap_start(ap_start),
+    .ap_done(ap_done),
+    .ap_ready(ap_ready),
+    .ap_idle(ap_idle)
   );
 endmodule

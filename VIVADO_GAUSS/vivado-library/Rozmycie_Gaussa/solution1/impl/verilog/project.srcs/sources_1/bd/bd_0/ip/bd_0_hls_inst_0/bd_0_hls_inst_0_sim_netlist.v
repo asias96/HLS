@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-// Date        : Wed Jan 15 10:56:32 2020
+// Date        : Wed Jan 22 11:01:34 2020
 // Host        : lsriw running 64-bit Ubuntu 18.04.3 LTS
 // Command     : write_verilog -force -mode funcsim
 //               /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0_sim_netlist.v
@@ -16,27 +16,7 @@
 (* X_CORE_INFO = "filtr_Gauss,Vivado 2018.3" *) (* hls_module = "yes" *) 
 (* NotValidForBitStream *)
 module bd_0_hls_inst_0
-   (s_axi_bun_1_AWADDR,
-    s_axi_bun_1_AWVALID,
-    s_axi_bun_1_AWREADY,
-    s_axi_bun_1_WDATA,
-    s_axi_bun_1_WSTRB,
-    s_axi_bun_1_WVALID,
-    s_axi_bun_1_WREADY,
-    s_axi_bun_1_BRESP,
-    s_axi_bun_1_BVALID,
-    s_axi_bun_1_BREADY,
-    s_axi_bun_1_ARADDR,
-    s_axi_bun_1_ARVALID,
-    s_axi_bun_1_ARREADY,
-    s_axi_bun_1_RDATA,
-    s_axi_bun_1_RRESP,
-    s_axi_bun_1_RVALID,
-    s_axi_bun_1_RREADY,
-    ap_clk,
-    ap_rst_n,
-    interrupt,
-    in_r_TVALID,
+   (in_r_TVALID,
     in_r_TREADY,
     in_r_TDATA,
     in_r_TKEEP,
@@ -53,27 +33,13 @@ module bd_0_hls_inst_0
     out_r_TUSER,
     out_r_TLAST,
     out_r_TID,
-    out_r_TDEST);
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 AWADDR" *) input [3:0]s_axi_bun_1_AWADDR;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 AWVALID" *) input s_axi_bun_1_AWVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 AWREADY" *) output s_axi_bun_1_AWREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 WDATA" *) input [31:0]s_axi_bun_1_WDATA;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 WSTRB" *) input [3:0]s_axi_bun_1_WSTRB;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 WVALID" *) input s_axi_bun_1_WVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 WREADY" *) output s_axi_bun_1_WREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 BRESP" *) output [1:0]s_axi_bun_1_BRESP;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 BVALID" *) output s_axi_bun_1_BVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 BREADY" *) input s_axi_bun_1_BREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 ARADDR" *) input [3:0]s_axi_bun_1_ARADDR;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 ARVALID" *) input s_axi_bun_1_ARVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 ARREADY" *) output s_axi_bun_1_ARREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 RDATA" *) output [31:0]s_axi_bun_1_RDATA;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 RRESP" *) output [1:0]s_axi_bun_1_RRESP;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 RVALID" *) output s_axi_bun_1_RVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_bun_1 RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axi_bun_1, ADDR_WIDTH 4, DATA_WIDTH 32, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}, FREQ_HZ 100000000.0, ID_WIDTH 0, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN bd_0_ap_clk_0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input s_axi_bun_1_RREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ap_clk CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF s_axi_bun_1:in_r:out_r, ASSOCIATED_RESET ap_rst_n, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}, FREQ_HZ 100000000.0, PHASE 0.000, CLK_DOMAIN bd_0_ap_clk_0, INSERT_VIP 0" *) input ap_clk;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 ap_rst_n RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_rst_n, POLARITY ACTIVE_LOW, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {RST {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}, INSERT_VIP 0" *) input ap_rst_n;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 interrupt INTERRUPT" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME interrupt, SENSITIVITY LEVEL_HIGH, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {INTERRUPT {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}, PortWidth 1" *) output interrupt;
+    out_r_TDEST,
+    ap_clk,
+    ap_rst_n,
+    ap_start,
+    ap_done,
+    ap_ready,
+    ap_idle);
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 in_r TVALID" *) input in_r_TVALID;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 in_r TREADY" *) output in_r_TREADY;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 in_r TDATA" *) input [7:0]in_r_TDATA;
@@ -92,9 +58,19 @@ module bd_0_hls_inst_0
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 out_r TLAST" *) output [0:0]out_r_TLAST;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 out_r TID" *) output [0:0]out_r_TID;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 out_r TDEST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME out_r, TDATA_NUM_BYTES 1, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} TDATA_WIDTH 8 TUSER {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} TUSER_WIDTH 1}, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000.0, PHASE 0.000, CLK_DOMAIN bd_0_ap_clk_0, INSERT_VIP 0" *) output [0:0]out_r_TDEST;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ap_clk CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF in_r:out_r, ASSOCIATED_RESET ap_rst_n, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}, FREQ_HZ 100000000.0, PHASE 0.000, CLK_DOMAIN bd_0_ap_clk_0, INSERT_VIP 0" *) input ap_clk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 ap_rst_n RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_rst_n, POLARITY ACTIVE_LOW, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {RST {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}, INSERT_VIP 0" *) input ap_rst_n;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:acc_handshake:1.0 ap_ctrl start" *) input ap_start;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:acc_handshake:1.0 ap_ctrl done" *) output ap_done;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:acc_handshake:1.0 ap_ctrl ready" *) output ap_ready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:acc_handshake:1.0 ap_ctrl idle" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_ctrl, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {start {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} done {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} ready {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} idle {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}" *) output ap_idle;
 
   wire ap_clk;
+  wire ap_done;
+  wire ap_idle;
+  wire ap_ready;
   wire ap_rst_n;
+  wire ap_start;
   wire [7:0]in_r_TDATA;
   wire [0:0]in_r_TDEST;
   wire [0:0]in_r_TID;
@@ -104,7 +80,6 @@ module bd_0_hls_inst_0
   wire [0:0]in_r_TSTRB;
   wire [0:0]in_r_TUSER;
   wire in_r_TVALID;
-  wire interrupt;
   wire [7:0]out_r_TDATA;
   wire [0:0]out_r_TDEST;
   wire [0:0]out_r_TID;
@@ -114,33 +89,14 @@ module bd_0_hls_inst_0
   wire [0:0]out_r_TSTRB;
   wire [0:0]out_r_TUSER;
   wire out_r_TVALID;
-  wire [3:0]s_axi_bun_1_ARADDR;
-  wire s_axi_bun_1_ARREADY;
-  wire s_axi_bun_1_ARVALID;
-  wire [3:0]s_axi_bun_1_AWADDR;
-  wire s_axi_bun_1_AWREADY;
-  wire s_axi_bun_1_AWVALID;
-  wire s_axi_bun_1_BREADY;
-  wire [1:0]s_axi_bun_1_BRESP;
-  wire s_axi_bun_1_BVALID;
-  wire [31:0]s_axi_bun_1_RDATA;
-  wire s_axi_bun_1_RREADY;
-  wire [1:0]s_axi_bun_1_RRESP;
-  wire s_axi_bun_1_RVALID;
-  wire [31:0]s_axi_bun_1_WDATA;
-  wire s_axi_bun_1_WREADY;
-  wire [3:0]s_axi_bun_1_WSTRB;
-  wire s_axi_bun_1_WVALID;
 
-  (* C_S_AXI_ADDR_WIDTH = "32" *) 
-  (* C_S_AXI_BUN_1_ADDR_WIDTH = "4" *) 
-  (* C_S_AXI_BUN_1_DATA_WIDTH = "32" *) 
-  (* C_S_AXI_BUN_1_WSTRB_WIDTH = "4" *) 
-  (* C_S_AXI_DATA_WIDTH = "32" *) 
-  (* C_S_AXI_WSTRB_WIDTH = "4" *) 
   bd_0_hls_inst_0_filtr_Gauss inst
        (.ap_clk(ap_clk),
+        .ap_done(ap_done),
+        .ap_idle(ap_idle),
+        .ap_ready(ap_ready),
         .ap_rst_n(ap_rst_n),
+        .ap_start(ap_start),
         .in_r_TDATA(in_r_TDATA),
         .in_r_TDEST(in_r_TDEST),
         .in_r_TID(in_r_TID),
@@ -150,7 +106,6 @@ module bd_0_hls_inst_0
         .in_r_TSTRB(in_r_TSTRB),
         .in_r_TUSER(in_r_TUSER),
         .in_r_TVALID(in_r_TVALID),
-        .interrupt(interrupt),
         .out_r_TDATA(out_r_TDATA),
         .out_r_TDEST(out_r_TDEST),
         .out_r_TID(out_r_TID),
@@ -159,24 +114,7 @@ module bd_0_hls_inst_0
         .out_r_TREADY(out_r_TREADY),
         .out_r_TSTRB(out_r_TSTRB),
         .out_r_TUSER(out_r_TUSER),
-        .out_r_TVALID(out_r_TVALID),
-        .s_axi_bun_1_ARADDR(s_axi_bun_1_ARADDR),
-        .s_axi_bun_1_ARREADY(s_axi_bun_1_ARREADY),
-        .s_axi_bun_1_ARVALID(s_axi_bun_1_ARVALID),
-        .s_axi_bun_1_AWADDR(s_axi_bun_1_AWADDR),
-        .s_axi_bun_1_AWREADY(s_axi_bun_1_AWREADY),
-        .s_axi_bun_1_AWVALID(s_axi_bun_1_AWVALID),
-        .s_axi_bun_1_BREADY(s_axi_bun_1_BREADY),
-        .s_axi_bun_1_BRESP(s_axi_bun_1_BRESP),
-        .s_axi_bun_1_BVALID(s_axi_bun_1_BVALID),
-        .s_axi_bun_1_RDATA(s_axi_bun_1_RDATA),
-        .s_axi_bun_1_RREADY(s_axi_bun_1_RREADY),
-        .s_axi_bun_1_RRESP(s_axi_bun_1_RRESP),
-        .s_axi_bun_1_RVALID(s_axi_bun_1_RVALID),
-        .s_axi_bun_1_WDATA(s_axi_bun_1_WDATA),
-        .s_axi_bun_1_WREADY(s_axi_bun_1_WREADY),
-        .s_axi_bun_1_WSTRB(s_axi_bun_1_WSTRB),
-        .s_axi_bun_1_WVALID(s_axi_bun_1_WVALID));
+        .out_r_TVALID(out_r_TVALID));
 endmodule
 
 (* ORIG_REF_NAME = "AXIvideo2Mat" *) 
@@ -186,14 +124,13 @@ module bd_0_hls_inst_0_AXIvideo2Mat
     start_once_reg,
     AXIvideo2Mat_U0_img_data_stream_V_write,
     Q,
-    \ap_CS_fsm_reg[3]_0 ,
-    AXIvideo2Mat_U0_ap_ready,
+    ap_ready,
     \exitcond_reg_335_reg[0]_0 ,
     \p_Val2_s_reg_202_reg[7]_0 ,
     ap_clk,
     ap_rst_n,
     start_for_rozmycie_U0_full_n,
-    AXIvideo2Mat_U0_ap_start,
+    ap_start,
     instance_in_data_str_full_n,
     in_r_TVALID,
     in_r_TLAST,
@@ -204,14 +141,13 @@ module bd_0_hls_inst_0_AXIvideo2Mat
   output start_once_reg;
   output AXIvideo2Mat_U0_img_data_stream_V_write;
   output [0:0]Q;
-  output \ap_CS_fsm_reg[3]_0 ;
-  output AXIvideo2Mat_U0_ap_ready;
+  output ap_ready;
   output \exitcond_reg_335_reg[0]_0 ;
   output [7:0]\p_Val2_s_reg_202_reg[7]_0 ;
   input ap_clk;
   input ap_rst_n;
   input start_for_rozmycie_U0_full_n;
-  input AXIvideo2Mat_U0_ap_start;
+  input ap_start;
   input instance_in_data_str_full_n;
   input in_r_TVALID;
   input [0:0]in_r_TLAST;
@@ -235,8 +171,8 @@ module bd_0_hls_inst_0_AXIvideo2Mat
   wire \AXI_video_strm_V_data_V_0_state_reg_n_2_[0] ;
   wire [1:1]AXI_video_strm_V_dest_V_0_state;
   wire \AXI_video_strm_V_dest_V_0_state[0]_i_1_n_2 ;
-  wire \AXI_video_strm_V_dest_V_0_state[1]_i_3_n_2 ;
   wire \AXI_video_strm_V_dest_V_0_state[1]_i_4_n_2 ;
+  wire \AXI_video_strm_V_dest_V_0_state[1]_i_5_n_2 ;
   wire \AXI_video_strm_V_dest_V_0_state_reg_n_2_[0] ;
   wire AXI_video_strm_V_last_V_0_ack_in;
   wire AXI_video_strm_V_last_V_0_data_out;
@@ -263,8 +199,6 @@ module bd_0_hls_inst_0_AXIvideo2Mat
   wire [1:1]AXI_video_strm_V_user_V_0_state;
   wire \AXI_video_strm_V_user_V_0_state[0]_i_1_n_2 ;
   wire \AXI_video_strm_V_user_V_0_state_reg_n_2_[0] ;
-  wire AXIvideo2Mat_U0_ap_ready;
-  wire AXIvideo2Mat_U0_ap_start;
   wire AXIvideo2Mat_U0_img_data_stream_V_write;
   wire [0:0]Q;
   wire \ap_CS_fsm[1]_i_2_n_2 ;
@@ -275,7 +209,6 @@ module bd_0_hls_inst_0_AXIvideo2Mat
   wire \ap_CS_fsm[5]_i_7_n_2 ;
   wire \ap_CS_fsm[5]_i_8_n_2 ;
   wire ap_CS_fsm_pp1_stage0;
-  wire \ap_CS_fsm_reg[3]_0 ;
   wire ap_CS_fsm_state2;
   wire ap_CS_fsm_state3;
   wire ap_CS_fsm_state4;
@@ -289,8 +222,12 @@ module bd_0_hls_inst_0_AXIvideo2Mat
   wire ap_enable_reg_pp1_iter0_i_1_n_2;
   wire ap_enable_reg_pp1_iter1_i_1_n_2;
   wire ap_enable_reg_pp1_iter1_reg_n_2;
+  wire ap_ready;
+  wire ap_ready_INST_0_i_1_n_2;
+  wire ap_ready_INST_0_i_2_n_2;
   wire ap_rst_n;
   wire ap_rst_n_inv;
+  wire ap_start;
   wire [7:0]axi_data_V1_reg_123;
   wire \axi_data_V1_reg_123[0]_i_1_n_2 ;
   wire \axi_data_V1_reg_123[1]_i_1_n_2 ;
@@ -339,7 +276,6 @@ module bd_0_hls_inst_0_AXIvideo2Mat
   wire [0:0]in_r_TUSER;
   wire in_r_TVALID;
   wire instance_in_data_str_full_n;
-  wire int_ap_start_i_4_n_2;
   wire [10:0]j_V_fu_286_p2;
   wire [7:0]p_1_in;
   wire \p_Val2_s_reg_202[0]_i_1_n_2 ;
@@ -474,7 +410,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .D(in_r_TDATA[7]),
         .Q(AXI_video_strm_V_data_V_0_payload_B[7]),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
   LUT3 #(
     .INIT(8'h78)) 
     AXI_video_strm_V_data_V_0_sel_rd_i_1
@@ -549,9 +485,14 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I3(AXI_video_strm_V_data_V_0_ack_out),
         .I4(ap_rst_n),
         .O(\AXI_video_strm_V_dest_V_0_state[0]_i_1_n_2 ));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \AXI_video_strm_V_dest_V_0_state[1]_i_1 
+       (.I0(ap_rst_n),
+        .O(ap_rst_n_inv));
   LUT4 #(
     .INIT(16'hFF2F)) 
-    \AXI_video_strm_V_dest_V_0_state[1]_i_1 
+    \AXI_video_strm_V_dest_V_0_state[1]_i_2 
        (.I0(in_r_TREADY),
         .I1(in_r_TVALID),
         .I2(\AXI_video_strm_V_dest_V_0_state_reg_n_2_[0] ),
@@ -559,33 +500,33 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .O(AXI_video_strm_V_dest_V_0_state));
   LUT6 #(
     .INIT(64'hAAAAAAAAAABAAAAA)) 
-    \AXI_video_strm_V_dest_V_0_state[1]_i_2 
-       (.I0(\AXI_video_strm_V_dest_V_0_state[1]_i_3_n_2 ),
-        .I1(\AXI_video_strm_V_dest_V_0_state[1]_i_4_n_2 ),
+    \AXI_video_strm_V_dest_V_0_state[1]_i_3 
+       (.I0(\AXI_video_strm_V_dest_V_0_state[1]_i_4_n_2 ),
+        .I1(\AXI_video_strm_V_dest_V_0_state[1]_i_5_n_2 ),
         .I2(ap_enable_reg_pp1_iter0),
         .I3(ap_block_pp1_stage0_subdone),
         .I4(ap_CS_fsm_pp1_stage0),
         .I5(exitcond_fu_280_p2),
         .O(AXI_video_strm_V_data_V_0_ack_out));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT4 #(
     .INIT(16'hF020)) 
-    \AXI_video_strm_V_dest_V_0_state[1]_i_3 
+    \AXI_video_strm_V_dest_V_0_state[1]_i_4 
        (.I0(ap_CS_fsm_state8),
         .I1(\eol_2_reg_239_reg_n_2_[0] ),
         .I2(\AXI_video_strm_V_data_V_0_state_reg_n_2_[0] ),
         .I3(ap_CS_fsm_state2),
-        .O(\AXI_video_strm_V_dest_V_0_state[1]_i_3_n_2 ));
+        .O(\AXI_video_strm_V_dest_V_0_state[1]_i_4_n_2 ));
   LUT6 #(
     .INIT(64'hEEEEFEEEEEEEAEEE)) 
-    \AXI_video_strm_V_dest_V_0_state[1]_i_4 
+    \AXI_video_strm_V_dest_V_0_state[1]_i_5 
        (.I0(sof_1_fu_84),
         .I1(\eol_reg_177_reg_n_2_[0] ),
         .I2(ap_enable_reg_pp1_iter1_reg_n_2),
         .I3(ap_CS_fsm_pp1_stage0),
         .I4(\exitcond_reg_335_reg_n_2_[0] ),
         .I5(\axi_last_V_2_reg_189_reg_n_2_[0] ),
-        .O(\AXI_video_strm_V_dest_V_0_state[1]_i_4_n_2 ));
+        .O(\AXI_video_strm_V_dest_V_0_state[1]_i_5_n_2 ));
   FDRE #(
     .INIT(1'b0)) 
     \AXI_video_strm_V_dest_V_0_state_reg[0] 
@@ -632,7 +573,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .D(\AXI_video_strm_V_last_V_0_payload_B[0]_i_1_n_2 ),
         .Q(AXI_video_strm_V_last_V_0_payload_B),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
   LUT3 #(
     .INIT(8'h78)) 
     AXI_video_strm_V_last_V_0_sel_rd_i_1
@@ -648,7 +589,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .D(AXI_video_strm_V_last_V_0_sel_rd_i_1_n_2),
         .Q(AXI_video_strm_V_last_V_0_sel),
         .R(ap_rst_n_inv));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT3 #(
     .INIT(8'h78)) 
     AXI_video_strm_V_last_V_0_sel_wr_i_1
@@ -673,7 +614,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I3(in_r_TVALID),
         .I4(ap_rst_n),
         .O(\AXI_video_strm_V_last_V_0_state[0]_i_1_n_2 ));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT4 #(
     .INIT(16'hFF2F)) 
     \AXI_video_strm_V_last_V_0_state[1]_i_1 
@@ -743,7 +684,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .D(AXI_video_strm_V_user_V_0_sel_rd_i_1_n_2),
         .Q(AXI_video_strm_V_user_V_0_sel),
         .R(ap_rst_n_inv));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT3 #(
     .INIT(8'h78)) 
     AXI_video_strm_V_user_V_0_sel_wr_i_1
@@ -768,7 +709,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I3(in_r_TVALID),
         .I4(ap_rst_n),
         .O(\AXI_video_strm_V_user_V_0_state[0]_i_1_n_2 ));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT4 #(
     .INIT(16'hFF2F)) 
     \AXI_video_strm_V_user_V_0_state[1]_i_1 
@@ -793,27 +734,22 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .D(AXI_video_strm_V_user_V_0_state),
         .Q(AXI_video_strm_V_user_V_0_ack_in),
         .R(ap_rst_n_inv));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \FSM_onehot_wstate[1]_i_1 
-       (.I0(ap_rst_n),
-        .O(ap_rst_n_inv));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT5 #(
     .INIT(32'h1F00FFFF)) 
-    \ap_CS_fsm[0]_i_1__0 
+    \ap_CS_fsm[0]_i_1 
        (.I0(start_for_rozmycie_U0_full_n),
         .I1(start_once_reg),
-        .I2(AXIvideo2Mat_U0_ap_start),
+        .I2(ap_start),
         .I3(Q),
-        .I4(\ap_CS_fsm_reg[3]_0 ),
+        .I4(ap_ready_INST_0_i_1_n_2),
         .O(ap_NS_fsm[0]));
   LUT6 #(
     .INIT(64'hFFFFE000E000E000)) 
-    \ap_CS_fsm[1]_i_1__0 
+    \ap_CS_fsm[1]_i_1 
        (.I0(start_for_rozmycie_U0_full_n),
         .I1(start_once_reg),
-        .I2(AXIvideo2Mat_U0_ap_start),
+        .I2(ap_start),
         .I3(Q),
         .I4(ap_CS_fsm_state2),
         .I5(\ap_CS_fsm[1]_i_2_n_2 ),
@@ -860,7 +796,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I1(t_V_reg_133[0]),
         .I2(t_V_reg_133[3]),
         .I3(t_V_reg_133[2]),
-        .I4(int_ap_start_i_4_n_2),
+        .I4(ap_ready_INST_0_i_2_n_2),
         .I5(ap_CS_fsm_state4),
         .O(\ap_CS_fsm[4]_i_2_n_2 ));
   (* SOFT_HLUTNM = "soft_lutpair6" *) 
@@ -879,7 +815,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I1(\ap_CS_fsm[5]_i_5_n_2 ),
         .I2(\ap_CS_fsm[5]_i_6_n_2 ),
         .I3(\ap_CS_fsm[5]_i_7_n_2 ),
-        .I4(\AXI_video_strm_V_dest_V_0_state[1]_i_4_n_2 ),
+        .I4(\AXI_video_strm_V_dest_V_0_state[1]_i_5_n_2 ),
         .I5(\ap_CS_fsm[5]_i_8_n_2 ),
         .O(ap_block_pp1_stage0_subdone));
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
@@ -892,7 +828,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I3(t_V_2_reg_166_reg__0[1]),
         .I4(t_V_2_reg_166_reg__0[2]),
         .O(exitcond_fu_280_p2));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT4 #(
     .INIT(16'h0001)) 
     \ap_CS_fsm[5]_i_4 
@@ -930,7 +866,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I1(ap_enable_reg_pp1_iter1_reg_n_2),
         .I2(instance_in_data_str_full_n),
         .O(\ap_CS_fsm[5]_i_8_n_2 ));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT3 #(
     .INIT(8'hF4)) 
     \ap_CS_fsm[6]_i_1 
@@ -1052,7 +988,32 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .D(ap_enable_reg_pp1_iter1_i_1_n_2),
         .Q(ap_enable_reg_pp1_iter1_reg_n_2),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair29" *) 
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  LUT1 #(
+    .INIT(2'h1)) 
+    ap_ready_INST_0
+       (.I0(ap_ready_INST_0_i_1_n_2),
+        .O(ap_ready));
+  LUT6 #(
+    .INIT(64'hFFFFFFFDFFFFFFFF)) 
+    ap_ready_INST_0_i_1
+       (.I0(ap_CS_fsm_state4),
+        .I1(t_V_reg_133[1]),
+        .I2(t_V_reg_133[0]),
+        .I3(t_V_reg_133[3]),
+        .I4(t_V_reg_133[2]),
+        .I5(ap_ready_INST_0_i_2_n_2),
+        .O(ap_ready_INST_0_i_1_n_2));
+  LUT6 #(
+    .INIT(64'h0000200000000000)) 
+    ap_ready_INST_0_i_2
+       (.I0(t_V_reg_133[4]),
+        .I1(t_V_reg_133[5]),
+        .I2(t_V_reg_133[6]),
+        .I3(t_V_reg_133[7]),
+        .I4(t_V_reg_133[8]),
+        .I5(t_V_reg_133[9]),
+        .O(ap_ready_INST_0_i_2_n_2));
   LUT3 #(
     .INIT(8'hB8)) 
     \axi_data_V1_reg_123[0]_i_1 
@@ -1060,6 +1021,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I1(ap_CS_fsm_state3),
         .I2(axi_data_V_3_reg_227[0]),
         .O(\axi_data_V1_reg_123[0]_i_1_n_2 ));
+  (* SOFT_HLUTNM = "soft_lutpair30" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \axi_data_V1_reg_123[1]_i_1 
@@ -1075,7 +1037,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I1(ap_CS_fsm_state3),
         .I2(axi_data_V_3_reg_227[2]),
         .O(\axi_data_V1_reg_123[2]_i_1_n_2 ));
-  (* SOFT_HLUTNM = "soft_lutpair30" *) 
+  (* SOFT_HLUTNM = "soft_lutpair29" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \axi_data_V1_reg_123[3]_i_1 
@@ -1107,7 +1069,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I1(ap_CS_fsm_state3),
         .I2(axi_data_V_3_reg_227[6]),
         .O(\axi_data_V1_reg_123[6]_i_1_n_2 ));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \axi_data_V1_reg_123[7]_i_1 
@@ -1163,7 +1125,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .D(\axi_data_V1_reg_123[7]_i_1_n_2 ),
         .Q(axi_data_V1_reg_123[7]),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair24" *) 
+  (* SOFT_HLUTNM = "soft_lutpair23" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \axi_data_V_1_reg_155[0]_i_1 
@@ -1186,7 +1148,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I1(AXIvideo2Mat_U0_img_data_stream_V_write),
         .I2(axi_data_V1_reg_123[2]),
         .O(\axi_data_V_1_reg_155[2]_i_1_n_2 ));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+  (* SOFT_HLUTNM = "soft_lutpair25" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \axi_data_V_1_reg_155[3]_i_1 
@@ -1194,7 +1156,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I1(AXIvideo2Mat_U0_img_data_stream_V_write),
         .I2(axi_data_V1_reg_123[3]),
         .O(\axi_data_V_1_reg_155[3]_i_1_n_2 ));
-  (* SOFT_HLUTNM = "soft_lutpair25" *) 
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \axi_data_V_1_reg_155[4]_i_1 
@@ -1202,7 +1164,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I1(AXIvideo2Mat_U0_img_data_stream_V_write),
         .I2(axi_data_V1_reg_123[4]),
         .O(\axi_data_V_1_reg_155[4]_i_1_n_2 ));
-  (* SOFT_HLUTNM = "soft_lutpair24" *) 
+  (* SOFT_HLUTNM = "soft_lutpair23" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \axi_data_V_1_reg_155[5]_i_1 
@@ -1210,7 +1172,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I1(AXIvideo2Mat_U0_img_data_stream_V_write),
         .I2(axi_data_V1_reg_123[5]),
         .O(\axi_data_V_1_reg_155[5]_i_1_n_2 ));
-  (* SOFT_HLUTNM = "soft_lutpair21" *) 
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \axi_data_V_1_reg_155[6]_i_1 
@@ -1224,7 +1186,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
        (.I0(AXIvideo2Mat_U0_img_data_stream_V_write),
         .I1(\ap_CS_fsm[4]_i_2_n_2 ),
         .O(\axi_data_V_1_reg_155[7]_i_1_n_2 ));
-  (* SOFT_HLUTNM = "soft_lutpair21" *) 
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \axi_data_V_1_reg_155[7]_i_2 
@@ -1400,7 +1362,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .D(p_1_in[7]),
         .Q(axi_data_V_3_reg_227[7]),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \axi_last_V1_reg_113[0]_i_1 
@@ -1515,14 +1477,14 @@ module bd_0_hls_inst_0_AXIvideo2Mat
     \i_V_reg_330[0]_i_1 
        (.I0(t_V_reg_133[0]),
         .O(i_V_fu_274_p2[0]));
-  (* SOFT_HLUTNM = "soft_lutpair23" *) 
+  (* SOFT_HLUTNM = "soft_lutpair22" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \i_V_reg_330[1]_i_1 
        (.I0(t_V_reg_133[0]),
         .I1(t_V_reg_133[1]),
         .O(i_V_fu_274_p2[1]));
-  (* SOFT_HLUTNM = "soft_lutpair23" *) 
+  (* SOFT_HLUTNM = "soft_lutpair22" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \i_V_reg_330[2]_i_1 
@@ -1559,14 +1521,14 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I4(t_V_reg_133[4]),
         .I5(t_V_reg_133[5]),
         .O(i_V_fu_274_p2[5]));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
   LUT2 #(
     .INIT(4'h9)) 
     \i_V_reg_330[6]_i_1 
        (.I0(\i_V_reg_330[9]_i_2_n_2 ),
         .I1(t_V_reg_133[6]),
         .O(i_V_fu_274_p2[6]));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
   LUT3 #(
     .INIT(8'hD2)) 
     \i_V_reg_330[7]_i_1 
@@ -1574,7 +1536,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I1(\i_V_reg_330[9]_i_2_n_2 ),
         .I2(t_V_reg_133[7]),
         .O(i_V_fu_274_p2[7]));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT4 #(
     .INIT(16'hDF20)) 
     \i_V_reg_330[8]_i_1 
@@ -1583,7 +1545,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I2(t_V_reg_133[6]),
         .I3(t_V_reg_133[8]),
         .O(i_V_fu_274_p2[8]));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT5 #(
     .INIT(32'hF7FF0800)) 
     \i_V_reg_330[9]_i_1 
@@ -1663,33 +1625,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .D(i_V_fu_274_p2[9]),
         .Q(i_V_reg_330[9]),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
-  LUT1 #(
-    .INIT(2'h1)) 
-    int_ap_ready_i_1
-       (.I0(\ap_CS_fsm_reg[3]_0 ),
-        .O(AXIvideo2Mat_U0_ap_ready));
-  LUT6 #(
-    .INIT(64'hFFFFFFFDFFFFFFFF)) 
-    int_ap_start_i_3
-       (.I0(ap_CS_fsm_state4),
-        .I1(t_V_reg_133[1]),
-        .I2(t_V_reg_133[0]),
-        .I3(t_V_reg_133[3]),
-        .I4(t_V_reg_133[2]),
-        .I5(int_ap_start_i_4_n_2),
-        .O(\ap_CS_fsm_reg[3]_0 ));
-  LUT6 #(
-    .INIT(64'h0000200000000000)) 
-    int_ap_start_i_4
-       (.I0(t_V_reg_133[4]),
-        .I1(t_V_reg_133[5]),
-        .I2(t_V_reg_133[6]),
-        .I3(t_V_reg_133[7]),
-        .I4(t_V_reg_133[8]),
-        .I5(t_V_reg_133[9]),
-        .O(int_ap_start_i_4_n_2));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT5 #(
     .INIT(32'hEFFFFFFF)) 
     internal_empty_n_i_2
@@ -1699,7 +1635,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I3(ap_enable_reg_pp1_iter1_reg_n_2),
         .I4(instance_in_data_str_full_n),
         .O(\exitcond_reg_335_reg[0]_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT4 #(
     .INIT(16'h0008)) 
     \mOutPtr[1]_i_2__0 
@@ -1794,7 +1730,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
   LUT2 #(
     .INIT(4'h2)) 
     \p_Val2_s_reg_202[7]_i_3 
-       (.I0(\AXI_video_strm_V_dest_V_0_state[1]_i_4_n_2 ),
+       (.I0(\AXI_video_strm_V_dest_V_0_state[1]_i_5_n_2 ),
         .I1(exitcond_fu_280_p2),
         .O(axi_last_V_2_reg_1891__0));
   FDRE \p_Val2_s_reg_202_reg[0] 
@@ -1864,10 +1800,10 @@ module bd_0_hls_inst_0_AXIvideo2Mat
   LUT4 #(
     .INIT(16'hEC00)) 
     start_once_reg_i_1
-       (.I0(AXIvideo2Mat_U0_ap_start),
+       (.I0(ap_start),
         .I1(start_once_reg),
         .I2(start_for_rozmycie_U0_full_n),
-        .I3(\ap_CS_fsm_reg[3]_0 ),
+        .I3(ap_ready_INST_0_i_1_n_2),
         .O(start_once_reg_i_1_n_2));
   FDRE #(
     .INIT(1'b0)) 
@@ -1919,14 +1855,14 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I4(t_V_2_reg_166_reg__0[4]),
         .I5(t_V_2_reg_166_reg__0[5]),
         .O(\t_V_2_reg_166[10]_i_4_n_2 ));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \t_V_2_reg_166[1]_i_1 
        (.I0(t_V_2_reg_166_reg__0[0]),
         .I1(t_V_2_reg_166_reg__0[1]),
         .O(j_V_fu_286_p2[1]));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \t_V_2_reg_166[2]_i_1 
@@ -1934,7 +1870,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I1(t_V_2_reg_166_reg__0[0]),
         .I2(t_V_2_reg_166_reg__0[2]),
         .O(j_V_fu_286_p2[2]));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \t_V_2_reg_166[3]_i_1 
@@ -1943,7 +1879,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I2(t_V_2_reg_166_reg__0[1]),
         .I3(t_V_2_reg_166_reg__0[3]),
         .O(j_V_fu_286_p2[3]));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT5 #(
     .INIT(32'h7FFF8000)) 
     \t_V_2_reg_166[4]_i_1 
@@ -1963,7 +1899,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I4(t_V_2_reg_166_reg__0[4]),
         .I5(t_V_2_reg_166_reg__0[5]),
         .O(j_V_fu_286_p2[5]));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT2 #(
     .INIT(4'h9)) 
     \t_V_2_reg_166[6]_i_1 
@@ -1977,7 +1913,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I1(\t_V_2_reg_166[10]_i_4_n_2 ),
         .I2(t_V_2_reg_166_reg__0[7]),
         .O(j_V_fu_286_p2[7]));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT4 #(
     .INIT(16'hDF20)) 
     \t_V_2_reg_166[8]_i_1 
@@ -1986,7 +1922,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I2(t_V_2_reg_166_reg__0[6]),
         .I3(t_V_2_reg_166_reg__0[8]),
         .O(j_V_fu_286_p2[8]));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT5 #(
     .INIT(32'hF7FF0800)) 
     \t_V_2_reg_166[9]_i_1 
@@ -2130,7 +2066,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I1(AXI_video_strm_V_data_V_0_sel),
         .I2(AXI_video_strm_V_data_V_0_payload_A[0]),
         .O(AXI_video_strm_V_data_V_0_data_out[0]));
-  (* SOFT_HLUTNM = "soft_lutpair27" *) 
+  (* SOFT_HLUTNM = "soft_lutpair24" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \tmp_data_V_reg_306[1]_i_1 
@@ -2138,7 +2074,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I1(AXI_video_strm_V_data_V_0_sel),
         .I2(AXI_video_strm_V_data_V_0_payload_A[1]),
         .O(AXI_video_strm_V_data_V_0_data_out[1]));
-  (* SOFT_HLUTNM = "soft_lutpair22" *) 
+  (* SOFT_HLUTNM = "soft_lutpair21" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \tmp_data_V_reg_306[2]_i_1 
@@ -2146,7 +2082,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I1(AXI_video_strm_V_data_V_0_sel),
         .I2(AXI_video_strm_V_data_V_0_payload_A[2]),
         .O(AXI_video_strm_V_data_V_0_data_out[2]));
-  (* SOFT_HLUTNM = "soft_lutpair19" *) 
+  (* SOFT_HLUTNM = "soft_lutpair27" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \tmp_data_V_reg_306[3]_i_1 
@@ -2170,7 +2106,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I1(AXI_video_strm_V_data_V_0_sel),
         .I2(AXI_video_strm_V_data_V_0_payload_A[5]),
         .O(AXI_video_strm_V_data_V_0_data_out[5]));
-  (* SOFT_HLUTNM = "soft_lutpair22" *) 
+  (* SOFT_HLUTNM = "soft_lutpair24" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \tmp_data_V_reg_306[6]_i_1 
@@ -2178,7 +2114,7 @@ module bd_0_hls_inst_0_AXIvideo2Mat
         .I1(AXI_video_strm_V_data_V_0_sel),
         .I2(AXI_video_strm_V_data_V_0_payload_A[6]),
         .O(AXI_video_strm_V_data_V_0_data_out[6]));
-  (* SOFT_HLUTNM = "soft_lutpair19" *) 
+  (* SOFT_HLUTNM = "soft_lutpair21" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \tmp_data_V_reg_306[7]_i_1 
@@ -2259,7 +2195,7 @@ endmodule
 module bd_0_hls_inst_0_Mat2AXIvideo
    (out_r_TVALID,
     Q,
-    Mat2AXIvideo_U0_ap_ready,
+    \t_V_reg_124_reg[2]_0 ,
     Mat2AXIvideo_U0_img_data_stream_V_read,
     internal_empty_n_reg,
     out_r_TUSER,
@@ -2274,7 +2210,7 @@ module bd_0_hls_inst_0_Mat2AXIvideo
     D);
   output out_r_TVALID;
   output [0:0]Q;
-  output Mat2AXIvideo_U0_ap_ready;
+  output \t_V_reg_124_reg[2]_0 ;
   output Mat2AXIvideo_U0_img_data_stream_V_read;
   output internal_empty_n_reg;
   output [0:0]out_r_TUSER;
@@ -2340,7 +2276,6 @@ module bd_0_hls_inst_0_Mat2AXIvideo
   wire \AXI_video_strm_V_user_V_1_state[0]_i_1_n_2 ;
   wire \AXI_video_strm_V_user_V_1_state_reg_n_2_[0] ;
   wire [7:0]D;
-  wire Mat2AXIvideo_U0_ap_ready;
   wire Mat2AXIvideo_U0_ap_start;
   wire Mat2AXIvideo_U0_img_data_stream_V_read;
   wire [0:0]Q;
@@ -2355,8 +2290,10 @@ module bd_0_hls_inst_0_Mat2AXIvideo
   wire ap_NS_fsm112_out;
   wire ap_block_pp0_stage0_subdone;
   wire ap_clk;
+  wire ap_done_INST_0_i_1_n_2;
+  wire ap_done_INST_0_i_3_n_2;
   wire ap_enable_reg_pp0_iter0;
-  wire ap_enable_reg_pp0_iter0_i_1_n_2;
+  wire ap_enable_reg_pp0_iter0_i_1__0_n_2;
   wire ap_enable_reg_pp0_iter1_i_1__0_n_2;
   wire ap_enable_reg_pp0_iter1_reg_n_2;
   wire ap_enable_reg_pp0_iter2_i_1_n_2;
@@ -2375,10 +2312,8 @@ module bd_0_hls_inst_0_Mat2AXIvideo
   wire [9:0]i_V_fu_157_p2;
   wire [9:0]i_V_reg_201;
   wire i_V_reg_2010;
-  wire \i_V_reg_201[9]_i_3_n_2 ;
-  wire \i_V_reg_201[9]_i_4_n_2 ;
+  wire \i_V_reg_201[9]_i_2_n_2 ;
   wire instance_out_data_st_empty_n;
-  wire \int_isr[0]_i_4_n_2 ;
   wire internal_empty_n_reg;
   wire [10:0]j_V_fu_169_p2;
   wire [7:0]out_r_TDATA;
@@ -2392,6 +2327,7 @@ module bd_0_hls_inst_0_Mat2AXIvideo
   wire \t_V_1_reg_135[8]_i_2_n_2 ;
   wire [10:0]t_V_1_reg_135_reg__0;
   wire [9:0]t_V_reg_124;
+  wire \t_V_reg_124_reg[2]_0 ;
   wire tmp_user_V_fu_84;
   wire \tmp_user_V_fu_84[0]_i_1_n_2 ;
 
@@ -2907,36 +2843,36 @@ module bd_0_hls_inst_0_Mat2AXIvideo
         .R(ap_rst_n_inv));
   LUT4 #(
     .INIT(16'h8F88)) 
-    \ap_CS_fsm[0]_i_1 
-       (.I0(Mat2AXIvideo_U0_ap_ready),
+    \ap_CS_fsm[0]_i_1__1 
+       (.I0(\t_V_reg_124_reg[2]_0 ),
         .I1(ap_CS_fsm_state2),
         .I2(Mat2AXIvideo_U0_ap_start),
         .I3(Q),
         .O(ap_NS_fsm[0]));
   LUT6 #(
-    .INIT(64'hEAEAEAEAFFEAEAEA)) 
-    \ap_CS_fsm[1]_i_1 
+    .INIT(64'hEAFFEAEAEAEAEAEA)) 
+    \ap_CS_fsm[1]_i_1__1 
        (.I0(ap_CS_fsm_state6),
         .I1(Q),
         .I2(Mat2AXIvideo_U0_ap_start),
-        .I3(\ap_CS_fsm[2]_i_2__0_n_2 ),
-        .I4(ap_CS_fsm_state2),
-        .I5(Mat2AXIvideo_U0_ap_ready),
+        .I3(\t_V_reg_124_reg[2]_0 ),
+        .I4(\ap_CS_fsm[2]_i_2__0_n_2 ),
+        .I5(ap_CS_fsm_state2),
         .O(ap_NS_fsm[1]));
   LUT6 #(
     .INIT(64'hFFFF0030AABA0030)) 
-    \ap_CS_fsm[2]_i_1 
+    \ap_CS_fsm[2]_i_1__0 
        (.I0(ap_block_pp0_stage0_subdone),
-        .I1(Mat2AXIvideo_U0_ap_ready),
+        .I1(\ap_CS_fsm[2]_i_2__0_n_2 ),
         .I2(ap_CS_fsm_state2),
-        .I3(\ap_CS_fsm[2]_i_2__0_n_2 ),
+        .I3(\t_V_reg_124_reg[2]_0 ),
         .I4(ap_CS_fsm_pp0_stage0),
         .I5(\ap_CS_fsm[2]_i_3__0_n_2 ),
         .O(ap_NS_fsm[2]));
   LUT6 #(
     .INIT(64'h00000002FFFFFFFF)) 
     \ap_CS_fsm[2]_i_2__0 
-       (.I0(\int_isr[0]_i_4_n_2 ),
+       (.I0(ap_done_INST_0_i_1_n_2),
         .I1(t_V_reg_124[2]),
         .I2(t_V_reg_124[3]),
         .I3(t_V_reg_124[0]),
@@ -3035,21 +2971,58 @@ module bd_0_hls_inst_0_Mat2AXIvideo
         .Q(ap_CS_fsm_state6),
         .R(ap_rst_n_inv));
   LUT6 #(
+    .INIT(64'h0000000200000000)) 
+    ap_done_INST_0
+       (.I0(ap_done_INST_0_i_1_n_2),
+        .I1(t_V_reg_124[2]),
+        .I2(t_V_reg_124[3]),
+        .I3(t_V_reg_124[0]),
+        .I4(t_V_reg_124[1]),
+        .I5(i_V_reg_2010),
+        .O(\t_V_reg_124_reg[2]_0 ));
+  LUT6 #(
+    .INIT(64'h0000200000000000)) 
+    ap_done_INST_0_i_1
+       (.I0(t_V_reg_124[4]),
+        .I1(t_V_reg_124[5]),
+        .I2(t_V_reg_124[6]),
+        .I3(t_V_reg_124[7]),
+        .I4(t_V_reg_124[8]),
+        .I5(t_V_reg_124[9]),
+        .O(ap_done_INST_0_i_1_n_2));
+  LUT5 #(
+    .INIT(32'h80000000)) 
+    ap_done_INST_0_i_2
+       (.I0(\AXI_video_strm_V_id_V_1_state_reg_n_2_[1] ),
+        .I1(\AXI_video_strm_V_dest_V_1_state_reg_n_2_[1] ),
+        .I2(AXI_video_strm_V_data_V_1_ack_in),
+        .I3(ap_CS_fsm_state2),
+        .I4(ap_done_INST_0_i_3_n_2),
+        .O(i_V_reg_2010));
+  LUT4 #(
+    .INIT(16'h8000)) 
+    ap_done_INST_0_i_3
+       (.I0(\AXI_video_strm_V_strb_V_1_state_reg_n_2_[1] ),
+        .I1(\AXI_video_strm_V_keep_V_1_state_reg_n_2_[1] ),
+        .I2(AXI_video_strm_V_last_V_1_ack_in),
+        .I3(AXI_video_strm_V_user_V_1_ack_in),
+        .O(ap_done_INST_0_i_3_n_2));
+  LUT6 #(
     .INIT(64'h8A8A008A8A8A8A8A)) 
-    ap_enable_reg_pp0_iter0_i_1
+    ap_enable_reg_pp0_iter0_i_1__0
        (.I0(ap_rst_n),
         .I1(ap_enable_reg_pp0_iter0),
         .I2(\ap_CS_fsm[2]_i_2__0_n_2 ),
         .I3(exitcond_fu_163_p2),
         .I4(ap_block_pp0_stage0_subdone),
         .I5(ap_CS_fsm_pp0_stage0),
-        .O(ap_enable_reg_pp0_iter0_i_1_n_2));
+        .O(ap_enable_reg_pp0_iter0_i_1__0_n_2));
   FDRE #(
     .INIT(1'b0)) 
     ap_enable_reg_pp0_iter0_reg
        (.C(ap_clk),
         .CE(1'b1),
-        .D(ap_enable_reg_pp0_iter0_i_1_n_2),
+        .D(ap_enable_reg_pp0_iter0_i_1__0_n_2),
         .Q(ap_enable_reg_pp0_iter0),
         .R(1'b0));
   LUT5 #(
@@ -3201,7 +3174,7 @@ module bd_0_hls_inst_0_Mat2AXIvideo
   LUT2 #(
     .INIT(4'h9)) 
     \i_V_reg_201[6]_i_1 
-       (.I0(\i_V_reg_201[9]_i_4_n_2 ),
+       (.I0(\i_V_reg_201[9]_i_2_n_2 ),
         .I1(t_V_reg_124[6]),
         .O(i_V_fu_157_p2[6]));
   (* SOFT_HLUTNM = "soft_lutpair43" *) 
@@ -3209,7 +3182,7 @@ module bd_0_hls_inst_0_Mat2AXIvideo
     .INIT(8'hD2)) 
     \i_V_reg_201[7]_i_1 
        (.I0(t_V_reg_124[6]),
-        .I1(\i_V_reg_201[9]_i_4_n_2 ),
+        .I1(\i_V_reg_201[9]_i_2_n_2 ),
         .I2(t_V_reg_124[7]),
         .O(i_V_fu_157_p2[7]));
   (* SOFT_HLUTNM = "soft_lutpair32" *) 
@@ -3217,47 +3190,30 @@ module bd_0_hls_inst_0_Mat2AXIvideo
     .INIT(16'hDF20)) 
     \i_V_reg_201[8]_i_1 
        (.I0(t_V_reg_124[7]),
-        .I1(\i_V_reg_201[9]_i_4_n_2 ),
+        .I1(\i_V_reg_201[9]_i_2_n_2 ),
         .I2(t_V_reg_124[6]),
         .I3(t_V_reg_124[8]),
         .O(i_V_fu_157_p2[8]));
-  LUT5 #(
-    .INIT(32'h80000000)) 
-    \i_V_reg_201[9]_i_1 
-       (.I0(\AXI_video_strm_V_id_V_1_state_reg_n_2_[1] ),
-        .I1(\AXI_video_strm_V_dest_V_1_state_reg_n_2_[1] ),
-        .I2(AXI_video_strm_V_data_V_1_ack_in),
-        .I3(ap_CS_fsm_state2),
-        .I4(\i_V_reg_201[9]_i_3_n_2 ),
-        .O(i_V_reg_2010));
   (* SOFT_HLUTNM = "soft_lutpair32" *) 
   LUT5 #(
     .INIT(32'hF7FF0800)) 
-    \i_V_reg_201[9]_i_2 
+    \i_V_reg_201[9]_i_1 
        (.I0(t_V_reg_124[8]),
         .I1(t_V_reg_124[6]),
-        .I2(\i_V_reg_201[9]_i_4_n_2 ),
+        .I2(\i_V_reg_201[9]_i_2_n_2 ),
         .I3(t_V_reg_124[7]),
         .I4(t_V_reg_124[9]),
         .O(i_V_fu_157_p2[9]));
-  LUT4 #(
-    .INIT(16'h8000)) 
-    \i_V_reg_201[9]_i_3 
-       (.I0(\AXI_video_strm_V_strb_V_1_state_reg_n_2_[1] ),
-        .I1(\AXI_video_strm_V_keep_V_1_state_reg_n_2_[1] ),
-        .I2(AXI_video_strm_V_last_V_1_ack_in),
-        .I3(AXI_video_strm_V_user_V_1_ack_in),
-        .O(\i_V_reg_201[9]_i_3_n_2 ));
   LUT6 #(
     .INIT(64'h7FFFFFFFFFFFFFFF)) 
-    \i_V_reg_201[9]_i_4 
+    \i_V_reg_201[9]_i_2 
        (.I0(t_V_reg_124[2]),
         .I1(t_V_reg_124[0]),
         .I2(t_V_reg_124[1]),
         .I3(t_V_reg_124[3]),
         .I4(t_V_reg_124[4]),
         .I5(t_V_reg_124[5]),
-        .O(\i_V_reg_201[9]_i_4_n_2 ));
+        .O(\i_V_reg_201[9]_i_2_n_2 ));
   FDRE \i_V_reg_201_reg[0] 
        (.C(ap_clk),
         .CE(i_V_reg_2010),
@@ -3318,26 +3274,6 @@ module bd_0_hls_inst_0_Mat2AXIvideo
         .D(i_V_fu_157_p2[9]),
         .Q(i_V_reg_201[9]),
         .R(1'b0));
-  LUT6 #(
-    .INIT(64'h0000000200000000)) 
-    \int_isr[0]_i_3 
-       (.I0(\int_isr[0]_i_4_n_2 ),
-        .I1(t_V_reg_124[2]),
-        .I2(t_V_reg_124[3]),
-        .I3(t_V_reg_124[0]),
-        .I4(t_V_reg_124[1]),
-        .I5(i_V_reg_2010),
-        .O(Mat2AXIvideo_U0_ap_ready));
-  LUT6 #(
-    .INIT(64'h0000200000000000)) 
-    \int_isr[0]_i_4 
-       (.I0(t_V_reg_124[4]),
-        .I1(t_V_reg_124[5]),
-        .I2(t_V_reg_124[6]),
-        .I3(t_V_reg_124[7]),
-        .I4(t_V_reg_124[8]),
-        .I5(t_V_reg_124[9]),
-        .O(\int_isr[0]_i_4_n_2 ));
   (* SOFT_HLUTNM = "soft_lutpair37" *) 
   LUT2 #(
     .INIT(4'h7)) 
@@ -3736,9 +3672,9 @@ module bd_0_hls_inst_0_fifo_w8_d2_A
   wire ap_rst_n_inv;
   wire instance_in_data_str_empty_n;
   wire instance_in_data_str_full_n;
-  wire internal_empty_n_i_1__1_n_2;
+  wire internal_empty_n_i_1__0_n_2;
   wire internal_empty_n_reg_0;
-  wire internal_full_n_i_1__1_n_2;
+  wire internal_full_n_i_1__0_n_2;
   wire internal_full_n_reg_0;
   wire \mOutPtr[0]_i_1_n_2 ;
   wire \mOutPtr[1]_i_1_n_2 ;
@@ -3756,38 +3692,38 @@ module bd_0_hls_inst_0_fifo_w8_d2_A
         .ram_reg_0(\mOutPtr_reg_n_2_[0] ));
   LUT6 #(
     .INIT(64'hA2A2A2A2A2A222A2)) 
-    internal_empty_n_i_1__1
+    internal_empty_n_i_1__0
        (.I0(ap_rst_n),
         .I1(internal_empty_n_reg_0),
         .I2(instance_in_data_str_empty_n),
         .I3(rozmycie_U0_img_in_data_stream_V_read),
         .I4(\mOutPtr_reg_n_2_[0] ),
         .I5(\mOutPtr_reg_n_2_[1] ),
-        .O(internal_empty_n_i_1__1_n_2));
+        .O(internal_empty_n_i_1__0_n_2));
   FDRE #(
     .INIT(1'b0)) 
     internal_empty_n_reg
        (.C(ap_clk),
         .CE(1'b1),
-        .D(internal_empty_n_i_1__1_n_2),
+        .D(internal_empty_n_i_1__0_n_2),
         .Q(instance_in_data_str_empty_n),
         .R(1'b0));
   LUT6 #(
     .INIT(64'hFDFFFFFF55FF55FF)) 
-    internal_full_n_i_1__1
+    internal_full_n_i_1__0
        (.I0(ap_rst_n),
         .I1(\mOutPtr_reg_n_2_[1] ),
         .I2(\mOutPtr_reg_n_2_[0] ),
         .I3(internal_full_n_reg_0),
         .I4(AXIvideo2Mat_U0_img_data_stream_V_write),
         .I5(instance_in_data_str_full_n),
-        .O(internal_full_n_i_1__1_n_2));
+        .O(internal_full_n_i_1__0_n_2));
   FDRE #(
     .INIT(1'b1)) 
     internal_full_n_reg
        (.C(ap_clk),
         .CE(1'b1),
-        .D(internal_full_n_i_1__1_n_2),
+        .D(internal_full_n_i_1__0_n_2),
         .Q(instance_in_data_str_full_n),
         .R(1'b0));
   LUT5 #(
@@ -3910,7 +3846,7 @@ module bd_0_hls_inst_0_fifo_w8_d2_A_0
         .D(internal_full_n_i_1__2_n_2),
         .Q(instance_out_data_st_full_n),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair57" *) 
+  (* SOFT_HLUTNM = "soft_lutpair50" *) 
   LUT4 #(
     .INIT(16'h8778)) 
     \mOutPtr[0]_i_1 
@@ -3919,7 +3855,7 @@ module bd_0_hls_inst_0_fifo_w8_d2_A_0
         .I2(shiftReg_ce),
         .I3(\mOutPtr_reg_n_2_[0] ),
         .O(\mOutPtr[0]_i_1_n_2 ));
-  (* SOFT_HLUTNM = "soft_lutpair57" *) 
+  (* SOFT_HLUTNM = "soft_lutpair50" *) 
   LUT5 #(
     .INIT(32'hE7771888)) 
     \mOutPtr[1]_i_1 
@@ -4343,31 +4279,9 @@ module bd_0_hls_inst_0_fifo_w8_d2_A_shiftReg_3
         .O(D[1]));
 endmodule
 
-(* C_S_AXI_ADDR_WIDTH = "32" *) (* C_S_AXI_BUN_1_ADDR_WIDTH = "4" *) (* C_S_AXI_BUN_1_DATA_WIDTH = "32" *) 
-(* C_S_AXI_BUN_1_WSTRB_WIDTH = "4" *) (* C_S_AXI_DATA_WIDTH = "32" *) (* C_S_AXI_WSTRB_WIDTH = "4" *) 
 (* ORIG_REF_NAME = "filtr_Gauss" *) (* hls_module = "yes" *) 
 module bd_0_hls_inst_0_filtr_Gauss
-   (s_axi_bun_1_AWVALID,
-    s_axi_bun_1_AWREADY,
-    s_axi_bun_1_AWADDR,
-    s_axi_bun_1_WVALID,
-    s_axi_bun_1_WREADY,
-    s_axi_bun_1_WDATA,
-    s_axi_bun_1_WSTRB,
-    s_axi_bun_1_ARVALID,
-    s_axi_bun_1_ARREADY,
-    s_axi_bun_1_ARADDR,
-    s_axi_bun_1_RVALID,
-    s_axi_bun_1_RREADY,
-    s_axi_bun_1_RDATA,
-    s_axi_bun_1_RRESP,
-    s_axi_bun_1_BVALID,
-    s_axi_bun_1_BREADY,
-    s_axi_bun_1_BRESP,
-    ap_clk,
-    ap_rst_n,
-    interrupt,
-    in_r_TDATA,
+   (in_r_TDATA,
     in_r_TKEEP,
     in_r_TSTRB,
     in_r_TUSER,
@@ -4381,30 +4295,16 @@ module bd_0_hls_inst_0_filtr_Gauss
     out_r_TLAST,
     out_r_TID,
     out_r_TDEST,
+    ap_clk,
+    ap_rst_n,
     in_r_TVALID,
     in_r_TREADY,
+    ap_start,
     out_r_TVALID,
-    out_r_TREADY);
-  input s_axi_bun_1_AWVALID;
-  output s_axi_bun_1_AWREADY;
-  input [3:0]s_axi_bun_1_AWADDR;
-  input s_axi_bun_1_WVALID;
-  output s_axi_bun_1_WREADY;
-  input [31:0]s_axi_bun_1_WDATA;
-  input [3:0]s_axi_bun_1_WSTRB;
-  input s_axi_bun_1_ARVALID;
-  output s_axi_bun_1_ARREADY;
-  input [3:0]s_axi_bun_1_ARADDR;
-  output s_axi_bun_1_RVALID;
-  input s_axi_bun_1_RREADY;
-  output [31:0]s_axi_bun_1_RDATA;
-  output [1:0]s_axi_bun_1_RRESP;
-  output s_axi_bun_1_BVALID;
-  input s_axi_bun_1_BREADY;
-  output [1:0]s_axi_bun_1_BRESP;
-  input ap_clk;
-  input ap_rst_n;
-  output interrupt;
+    out_r_TREADY,
+    ap_done,
+    ap_ready,
+    ap_idle);
   input [7:0]in_r_TDATA;
   input [0:0]in_r_TKEEP;
   input [0:0]in_r_TSTRB;
@@ -4419,28 +4319,33 @@ module bd_0_hls_inst_0_filtr_Gauss
   output [0:0]out_r_TLAST;
   output [0:0]out_r_TID;
   output [0:0]out_r_TDEST;
+  input ap_clk;
+  input ap_rst_n;
   input in_r_TVALID;
   output in_r_TREADY;
+  input ap_start;
   output out_r_TVALID;
   input out_r_TREADY;
+  output ap_done;
+  output ap_ready;
+  output ap_idle;
 
   wire \<const0> ;
   wire \<const1> ;
-  wire AXIvideo2Mat_U0_ap_ready;
-  wire AXIvideo2Mat_U0_ap_start;
   wire AXIvideo2Mat_U0_img_data_stream_V_write;
   wire AXIvideo2Mat_U0_n_6;
-  wire AXIvideo2Mat_U0_n_7;
-  wire AXIvideo2Mat_U0_n_9;
-  wire Mat2AXIvideo_U0_ap_ready;
+  wire AXIvideo2Mat_U0_n_8;
   wire Mat2AXIvideo_U0_ap_start;
   wire Mat2AXIvideo_U0_img_data_stream_V_read;
   wire Mat2AXIvideo_U0_n_3;
   wire Mat2AXIvideo_U0_n_6;
   wire ap_clk;
+  wire ap_done;
   wire ap_idle;
+  wire ap_ready;
   wire ap_rst_n;
   wire ap_rst_n_inv;
+  wire ap_start;
   wire [7:0]in_r_TDATA;
   wire [0:0]in_r_TLAST;
   wire in_r_TREADY;
@@ -4459,7 +4364,6 @@ module bd_0_hls_inst_0_filtr_Gauss
   wire instance_out_data_st_U_n_9;
   wire instance_out_data_st_empty_n;
   wire instance_out_data_st_full_n;
-  wire interrupt;
   wire [7:0]out_r_TDATA;
   wire [0:0]out_r_TLAST;
   wire out_r_TREADY;
@@ -4472,21 +4376,6 @@ module bd_0_hls_inst_0_filtr_Gauss
   wire rozmycie_U0_n_4;
   wire rozmycie_U0_n_5;
   wire rozmycie_U0_n_7;
-  wire [3:0]s_axi_bun_1_ARADDR;
-  wire s_axi_bun_1_ARREADY;
-  wire s_axi_bun_1_ARVALID;
-  wire [3:0]s_axi_bun_1_AWADDR;
-  wire s_axi_bun_1_AWREADY;
-  wire s_axi_bun_1_AWVALID;
-  wire s_axi_bun_1_BREADY;
-  wire s_axi_bun_1_BVALID;
-  wire [7:0]\^s_axi_bun_1_RDATA ;
-  wire s_axi_bun_1_RREADY;
-  wire s_axi_bun_1_RVALID;
-  wire [31:0]s_axi_bun_1_WDATA;
-  wire s_axi_bun_1_WREADY;
-  wire [3:0]s_axi_bun_1_WSTRB;
-  wire s_axi_bun_1_WVALID;
   wire shiftReg_ce;
   wire start_for_Mat2AXIvideo_U0_full_n;
   wire start_for_rozmycie_U0_U_n_4;
@@ -4499,49 +4388,15 @@ module bd_0_hls_inst_0_filtr_Gauss
   assign out_r_TID[0] = \<const0> ;
   assign out_r_TKEEP[0] = \<const1> ;
   assign out_r_TSTRB[0] = \<const0> ;
-  assign s_axi_bun_1_BRESP[1] = \<const0> ;
-  assign s_axi_bun_1_BRESP[0] = \<const0> ;
-  assign s_axi_bun_1_RDATA[31] = \<const0> ;
-  assign s_axi_bun_1_RDATA[30] = \<const0> ;
-  assign s_axi_bun_1_RDATA[29] = \<const0> ;
-  assign s_axi_bun_1_RDATA[28] = \<const0> ;
-  assign s_axi_bun_1_RDATA[27] = \<const0> ;
-  assign s_axi_bun_1_RDATA[26] = \<const0> ;
-  assign s_axi_bun_1_RDATA[25] = \<const0> ;
-  assign s_axi_bun_1_RDATA[24] = \<const0> ;
-  assign s_axi_bun_1_RDATA[23] = \<const0> ;
-  assign s_axi_bun_1_RDATA[22] = \<const0> ;
-  assign s_axi_bun_1_RDATA[21] = \<const0> ;
-  assign s_axi_bun_1_RDATA[20] = \<const0> ;
-  assign s_axi_bun_1_RDATA[19] = \<const0> ;
-  assign s_axi_bun_1_RDATA[18] = \<const0> ;
-  assign s_axi_bun_1_RDATA[17] = \<const0> ;
-  assign s_axi_bun_1_RDATA[16] = \<const0> ;
-  assign s_axi_bun_1_RDATA[15] = \<const0> ;
-  assign s_axi_bun_1_RDATA[14] = \<const0> ;
-  assign s_axi_bun_1_RDATA[13] = \<const0> ;
-  assign s_axi_bun_1_RDATA[12] = \<const0> ;
-  assign s_axi_bun_1_RDATA[11] = \<const0> ;
-  assign s_axi_bun_1_RDATA[10] = \<const0> ;
-  assign s_axi_bun_1_RDATA[9] = \<const0> ;
-  assign s_axi_bun_1_RDATA[8] = \<const0> ;
-  assign s_axi_bun_1_RDATA[7] = \^s_axi_bun_1_RDATA [7];
-  assign s_axi_bun_1_RDATA[6] = \<const0> ;
-  assign s_axi_bun_1_RDATA[5] = \<const0> ;
-  assign s_axi_bun_1_RDATA[4] = \<const0> ;
-  assign s_axi_bun_1_RDATA[3:0] = \^s_axi_bun_1_RDATA [3:0];
-  assign s_axi_bun_1_RRESP[1] = \<const0> ;
-  assign s_axi_bun_1_RRESP[0] = \<const0> ;
   bd_0_hls_inst_0_AXIvideo2Mat AXIvideo2Mat_U0
-       (.AXIvideo2Mat_U0_ap_ready(AXIvideo2Mat_U0_ap_ready),
-        .AXIvideo2Mat_U0_ap_start(AXIvideo2Mat_U0_ap_start),
-        .AXIvideo2Mat_U0_img_data_stream_V_write(AXIvideo2Mat_U0_img_data_stream_V_write),
+       (.AXIvideo2Mat_U0_img_data_stream_V_write(AXIvideo2Mat_U0_img_data_stream_V_write),
         .Q(AXIvideo2Mat_U0_n_6),
-        .\ap_CS_fsm_reg[3]_0 (AXIvideo2Mat_U0_n_7),
         .ap_clk(ap_clk),
+        .ap_ready(ap_ready),
         .ap_rst_n(ap_rst_n),
         .ap_rst_n_inv(ap_rst_n_inv),
-        .\exitcond_reg_335_reg[0]_0 (AXIvideo2Mat_U0_n_9),
+        .ap_start(ap_start),
+        .\exitcond_reg_335_reg[0]_0 (AXIvideo2Mat_U0_n_8),
         .in_r_TDATA(in_r_TDATA),
         .in_r_TLAST(in_r_TLAST),
         .in_r_TREADY(in_r_TREADY),
@@ -4555,7 +4410,6 @@ module bd_0_hls_inst_0_filtr_Gauss
        (.G(\<const0> ));
   bd_0_hls_inst_0_Mat2AXIvideo Mat2AXIvideo_U0
        (.D({instance_out_data_st_U_n_4,instance_out_data_st_U_n_5,instance_out_data_st_U_n_6,instance_out_data_st_U_n_7,instance_out_data_st_U_n_8,instance_out_data_st_U_n_9,instance_out_data_st_U_n_10,instance_out_data_st_U_n_11}),
-        .Mat2AXIvideo_U0_ap_ready(Mat2AXIvideo_U0_ap_ready),
         .Mat2AXIvideo_U0_ap_start(Mat2AXIvideo_U0_ap_start),
         .Mat2AXIvideo_U0_img_data_stream_V_read(Mat2AXIvideo_U0_img_data_stream_V_read),
         .Q(Mat2AXIvideo_U0_n_3),
@@ -4568,33 +4422,10 @@ module bd_0_hls_inst_0_filtr_Gauss
         .out_r_TLAST(out_r_TLAST),
         .out_r_TREADY(out_r_TREADY),
         .out_r_TUSER(out_r_TUSER),
-        .out_r_TVALID(out_r_TVALID));
+        .out_r_TVALID(out_r_TVALID),
+        .\t_V_reg_124_reg[2]_0 (ap_done));
   VCC VCC
        (.P(\<const1> ));
-  bd_0_hls_inst_0_filtr_Gauss_bun_1_s_axi filtr_Gauss_bun_1_s_axi_U
-       (.AXIvideo2Mat_U0_ap_ready(AXIvideo2Mat_U0_ap_ready),
-        .AXIvideo2Mat_U0_ap_start(AXIvideo2Mat_U0_ap_start),
-        .\FSM_onehot_rstate_reg[1]_0 (s_axi_bun_1_ARREADY),
-        .\FSM_onehot_wstate_reg[1]_0 (s_axi_bun_1_AWREADY),
-        .\FSM_onehot_wstate_reg[2]_0 (s_axi_bun_1_WREADY),
-        .Mat2AXIvideo_U0_ap_ready(Mat2AXIvideo_U0_ap_ready),
-        .ap_clk(ap_clk),
-        .ap_idle(ap_idle),
-        .ap_rst_n_inv(ap_rst_n_inv),
-        .int_ap_start_reg_0(AXIvideo2Mat_U0_n_7),
-        .interrupt(interrupt),
-        .s_axi_bun_1_ARADDR(s_axi_bun_1_ARADDR),
-        .s_axi_bun_1_ARVALID(s_axi_bun_1_ARVALID),
-        .s_axi_bun_1_AWADDR(s_axi_bun_1_AWADDR),
-        .s_axi_bun_1_AWVALID(s_axi_bun_1_AWVALID),
-        .s_axi_bun_1_BREADY(s_axi_bun_1_BREADY),
-        .s_axi_bun_1_BVALID(s_axi_bun_1_BVALID),
-        .s_axi_bun_1_RDATA({\^s_axi_bun_1_RDATA [7],\^s_axi_bun_1_RDATA [3:0]}),
-        .s_axi_bun_1_RREADY(s_axi_bun_1_RREADY),
-        .s_axi_bun_1_RVALID(s_axi_bun_1_RVALID),
-        .s_axi_bun_1_WDATA({s_axi_bun_1_WDATA[7],s_axi_bun_1_WDATA[1:0]}),
-        .s_axi_bun_1_WSTRB(s_axi_bun_1_WSTRB[0]),
-        .s_axi_bun_1_WVALID(s_axi_bun_1_WVALID));
   bd_0_hls_inst_0_fifo_w8_d2_A instance_in_data_str_U
        (.AXIvideo2Mat_U0_img_data_stream_V_write(AXIvideo2Mat_U0_img_data_stream_V_write),
         .D(instance_in_data_str_dout),
@@ -4604,7 +4435,7 @@ module bd_0_hls_inst_0_filtr_Gauss
         .ap_rst_n_inv(ap_rst_n_inv),
         .instance_in_data_str_empty_n(instance_in_data_str_empty_n),
         .instance_in_data_str_full_n(instance_in_data_str_full_n),
-        .internal_empty_n_reg_0(AXIvideo2Mat_U0_n_9),
+        .internal_empty_n_reg_0(AXIvideo2Mat_U0_n_8),
         .internal_full_n_reg_0(rozmycie_U0_n_7),
         .rozmycie_U0_img_in_data_stream_V_read(rozmycie_U0_img_in_data_stream_V_read));
   bd_0_hls_inst_0_fifo_w8_d2_A_0 instance_out_data_st_U
@@ -4635,25 +4466,25 @@ module bd_0_hls_inst_0_filtr_Gauss
         .start_once_reg_reg_0(rozmycie_U0_n_3),
         .\tmp_12_reg_779_reg[7]_0 (tmp_12_reg_779));
   bd_0_hls_inst_0_start_for_Mat2AXIvideo_U0 start_for_Mat2AXIvideo_U0_U
-       (.Mat2AXIvideo_U0_ap_ready(Mat2AXIvideo_U0_ap_ready),
-        .Mat2AXIvideo_U0_ap_start(Mat2AXIvideo_U0_ap_start),
+       (.Mat2AXIvideo_U0_ap_start(Mat2AXIvideo_U0_ap_start),
         .Q(Mat2AXIvideo_U0_n_3),
         .ap_clk(ap_clk),
         .ap_idle(ap_idle),
+        .ap_idle_0(start_for_rozmycie_U0_U_n_4),
+        .ap_idle_1(AXIvideo2Mat_U0_n_6),
+        .ap_idle_2(rozmycie_U0_n_4),
         .ap_rst_n(ap_rst_n),
         .ap_rst_n_inv(ap_rst_n_inv),
-        .int_ap_idle_reg(start_for_rozmycie_U0_U_n_4),
-        .int_ap_idle_reg_0(AXIvideo2Mat_U0_n_6),
-        .int_ap_idle_reg_1(rozmycie_U0_n_4),
         .\mOutPtr_reg[0]_0 (rozmycie_U0_n_3),
         .\mOutPtr_reg[1]_0 (start_for_rozmycie_U0_U_n_5),
+        .\mOutPtr_reg[1]_1 (ap_done),
         .rozmycie_U0_ap_start(rozmycie_U0_ap_start),
         .start_for_Mat2AXIvideo_U0_full_n(start_for_Mat2AXIvideo_U0_full_n));
   bd_0_hls_inst_0_start_for_rozmycie_U0 start_for_rozmycie_U0_U
-       (.AXIvideo2Mat_U0_ap_start(AXIvideo2Mat_U0_ap_start),
-        .ap_clk(ap_clk),
+       (.ap_clk(ap_clk),
         .ap_rst_n(ap_rst_n),
         .ap_rst_n_inv(ap_rst_n_inv),
+        .ap_start(ap_start),
         .internal_empty_n_reg_0(start_for_rozmycie_U0_U_n_5),
         .internal_full_n_reg_0(start_for_rozmycie_U0_U_n_4),
         .\mOutPtr_reg[0]_0 (rozmycie_U0_n_5),
@@ -4662,546 +4493,6 @@ module bd_0_hls_inst_0_filtr_Gauss
         .start_for_Mat2AXIvideo_U0_full_n(start_for_Mat2AXIvideo_U0_full_n),
         .start_for_rozmycie_U0_full_n(start_for_rozmycie_U0_full_n),
         .start_once_reg(start_once_reg));
-endmodule
-
-(* ORIG_REF_NAME = "filtr_Gauss_bun_1_s_axi" *) 
-module bd_0_hls_inst_0_filtr_Gauss_bun_1_s_axi
-   (\FSM_onehot_wstate_reg[1]_0 ,
-    \FSM_onehot_wstate_reg[2]_0 ,
-    s_axi_bun_1_BVALID,
-    AXIvideo2Mat_U0_ap_start,
-    interrupt,
-    \FSM_onehot_rstate_reg[1]_0 ,
-    s_axi_bun_1_RVALID,
-    s_axi_bun_1_RDATA,
-    ap_rst_n_inv,
-    ap_idle,
-    ap_clk,
-    AXIvideo2Mat_U0_ap_ready,
-    s_axi_bun_1_AWVALID,
-    s_axi_bun_1_WDATA,
-    s_axi_bun_1_WVALID,
-    s_axi_bun_1_WSTRB,
-    s_axi_bun_1_BREADY,
-    s_axi_bun_1_ARADDR,
-    int_ap_start_reg_0,
-    s_axi_bun_1_ARVALID,
-    s_axi_bun_1_RREADY,
-    Mat2AXIvideo_U0_ap_ready,
-    s_axi_bun_1_AWADDR);
-  output \FSM_onehot_wstate_reg[1]_0 ;
-  output \FSM_onehot_wstate_reg[2]_0 ;
-  output s_axi_bun_1_BVALID;
-  output AXIvideo2Mat_U0_ap_start;
-  output interrupt;
-  output \FSM_onehot_rstate_reg[1]_0 ;
-  output s_axi_bun_1_RVALID;
-  output [4:0]s_axi_bun_1_RDATA;
-  input ap_rst_n_inv;
-  input ap_idle;
-  input ap_clk;
-  input AXIvideo2Mat_U0_ap_ready;
-  input s_axi_bun_1_AWVALID;
-  input [2:0]s_axi_bun_1_WDATA;
-  input s_axi_bun_1_WVALID;
-  input [0:0]s_axi_bun_1_WSTRB;
-  input s_axi_bun_1_BREADY;
-  input [3:0]s_axi_bun_1_ARADDR;
-  input int_ap_start_reg_0;
-  input s_axi_bun_1_ARVALID;
-  input s_axi_bun_1_RREADY;
-  input Mat2AXIvideo_U0_ap_ready;
-  input [3:0]s_axi_bun_1_AWADDR;
-
-  wire AXIvideo2Mat_U0_ap_ready;
-  wire AXIvideo2Mat_U0_ap_start;
-  wire \FSM_onehot_rstate[1]_i_1_n_2 ;
-  wire \FSM_onehot_rstate[2]_i_1_n_2 ;
-  wire \FSM_onehot_rstate_reg[1]_0 ;
-  wire \FSM_onehot_wstate[1]_i_2_n_2 ;
-  wire \FSM_onehot_wstate[2]_i_1_n_2 ;
-  wire \FSM_onehot_wstate[3]_i_1_n_2 ;
-  wire \FSM_onehot_wstate_reg[1]_0 ;
-  wire \FSM_onehot_wstate_reg[2]_0 ;
-  wire Mat2AXIvideo_U0_ap_ready;
-  wire ap_clk;
-  wire ap_idle;
-  wire ap_rst_n_inv;
-  wire ar_hs;
-  wire int_ap_done;
-  wire int_ap_done_i_1_n_2;
-  wire int_ap_done_i_2_n_2;
-  wire int_ap_idle;
-  wire int_ap_ready;
-  wire int_ap_start3_out;
-  wire int_ap_start_i_1_n_2;
-  wire int_ap_start_reg_0;
-  wire int_auto_restart;
-  wire int_auto_restart_i_1_n_2;
-  wire int_gie_i_1_n_2;
-  wire int_gie_reg_n_2;
-  wire \int_ier[0]_i_1_n_2 ;
-  wire \int_ier[1]_i_1_n_2 ;
-  wire \int_ier[1]_i_2_n_2 ;
-  wire \int_ier_reg_n_2_[0] ;
-  wire int_isr;
-  wire int_isr6_out;
-  wire \int_isr[0]_i_1_n_2 ;
-  wire \int_isr[1]_i_1_n_2 ;
-  wire \int_isr_reg_n_2_[0] ;
-  wire interrupt;
-  wire p_0_in__0;
-  wire p_1_in;
-  wire [7:0]rdata;
-  wire \rdata[0]_i_2_n_2 ;
-  wire \rdata[0]_i_3_n_2 ;
-  wire \rdata[1]_i_2_n_2 ;
-  wire [3:0]s_axi_bun_1_ARADDR;
-  wire s_axi_bun_1_ARVALID;
-  wire [3:0]s_axi_bun_1_AWADDR;
-  wire s_axi_bun_1_AWVALID;
-  wire s_axi_bun_1_BREADY;
-  wire s_axi_bun_1_BVALID;
-  wire [4:0]s_axi_bun_1_RDATA;
-  wire s_axi_bun_1_RREADY;
-  wire s_axi_bun_1_RVALID;
-  wire [2:0]s_axi_bun_1_WDATA;
-  wire [0:0]s_axi_bun_1_WSTRB;
-  wire s_axi_bun_1_WVALID;
-  wire waddr;
-  wire \waddr_reg_n_2_[0] ;
-  wire \waddr_reg_n_2_[1] ;
-  wire \waddr_reg_n_2_[2] ;
-  wire \waddr_reg_n_2_[3] ;
-
-  (* SOFT_HLUTNM = "soft_lutpair56" *) 
-  LUT4 #(
-    .INIT(16'hF277)) 
-    \FSM_onehot_rstate[1]_i_1 
-       (.I0(\FSM_onehot_rstate_reg[1]_0 ),
-        .I1(s_axi_bun_1_ARVALID),
-        .I2(s_axi_bun_1_RREADY),
-        .I3(s_axi_bun_1_RVALID),
-        .O(\FSM_onehot_rstate[1]_i_1_n_2 ));
-  (* SOFT_HLUTNM = "soft_lutpair56" *) 
-  LUT4 #(
-    .INIT(16'h8F88)) 
-    \FSM_onehot_rstate[2]_i_1 
-       (.I0(s_axi_bun_1_ARVALID),
-        .I1(\FSM_onehot_rstate_reg[1]_0 ),
-        .I2(s_axi_bun_1_RREADY),
-        .I3(s_axi_bun_1_RVALID),
-        .O(\FSM_onehot_rstate[2]_i_1_n_2 ));
-  (* FSM_ENCODED_STATES = "RDIDLE:010,RDDATA:100,iSTATE:001" *) 
-  FDRE #(
-    .INIT(1'b0)) 
-    \FSM_onehot_rstate_reg[1] 
-       (.C(ap_clk),
-        .CE(1'b1),
-        .D(\FSM_onehot_rstate[1]_i_1_n_2 ),
-        .Q(\FSM_onehot_rstate_reg[1]_0 ),
-        .R(ap_rst_n_inv));
-  (* FSM_ENCODED_STATES = "RDIDLE:010,RDDATA:100,iSTATE:001" *) 
-  FDRE #(
-    .INIT(1'b0)) 
-    \FSM_onehot_rstate_reg[2] 
-       (.C(ap_clk),
-        .CE(1'b1),
-        .D(\FSM_onehot_rstate[2]_i_1_n_2 ),
-        .Q(s_axi_bun_1_RVALID),
-        .R(ap_rst_n_inv));
-  LUT5 #(
-    .INIT(32'hFF0C1D1D)) 
-    \FSM_onehot_wstate[1]_i_2 
-       (.I0(\FSM_onehot_wstate_reg[2]_0 ),
-        .I1(\FSM_onehot_wstate_reg[1]_0 ),
-        .I2(s_axi_bun_1_AWVALID),
-        .I3(s_axi_bun_1_BREADY),
-        .I4(s_axi_bun_1_BVALID),
-        .O(\FSM_onehot_wstate[1]_i_2_n_2 ));
-  LUT4 #(
-    .INIT(16'hF444)) 
-    \FSM_onehot_wstate[2]_i_1 
-       (.I0(s_axi_bun_1_WVALID),
-        .I1(\FSM_onehot_wstate_reg[2]_0 ),
-        .I2(s_axi_bun_1_AWVALID),
-        .I3(\FSM_onehot_wstate_reg[1]_0 ),
-        .O(\FSM_onehot_wstate[2]_i_1_n_2 ));
-  LUT4 #(
-    .INIT(16'hF444)) 
-    \FSM_onehot_wstate[3]_i_1 
-       (.I0(s_axi_bun_1_BREADY),
-        .I1(s_axi_bun_1_BVALID),
-        .I2(s_axi_bun_1_WVALID),
-        .I3(\FSM_onehot_wstate_reg[2]_0 ),
-        .O(\FSM_onehot_wstate[3]_i_1_n_2 ));
-  (* FSM_ENCODED_STATES = "WRDATA:0100,WRRESP:1000,WRIDLE:0010,iSTATE:0001" *) 
-  FDRE #(
-    .INIT(1'b0)) 
-    \FSM_onehot_wstate_reg[1] 
-       (.C(ap_clk),
-        .CE(1'b1),
-        .D(\FSM_onehot_wstate[1]_i_2_n_2 ),
-        .Q(\FSM_onehot_wstate_reg[1]_0 ),
-        .R(ap_rst_n_inv));
-  (* FSM_ENCODED_STATES = "WRDATA:0100,WRRESP:1000,WRIDLE:0010,iSTATE:0001" *) 
-  FDRE #(
-    .INIT(1'b0)) 
-    \FSM_onehot_wstate_reg[2] 
-       (.C(ap_clk),
-        .CE(1'b1),
-        .D(\FSM_onehot_wstate[2]_i_1_n_2 ),
-        .Q(\FSM_onehot_wstate_reg[2]_0 ),
-        .R(ap_rst_n_inv));
-  (* FSM_ENCODED_STATES = "WRDATA:0100,WRRESP:1000,WRIDLE:0010,iSTATE:0001" *) 
-  FDRE #(
-    .INIT(1'b0)) 
-    \FSM_onehot_wstate_reg[3] 
-       (.C(ap_clk),
-        .CE(1'b1),
-        .D(\FSM_onehot_wstate[3]_i_1_n_2 ),
-        .Q(s_axi_bun_1_BVALID),
-        .R(ap_rst_n_inv));
-  LUT5 #(
-    .INIT(32'hFF7FFF00)) 
-    int_ap_done_i_1
-       (.I0(int_ap_done_i_2_n_2),
-        .I1(s_axi_bun_1_ARVALID),
-        .I2(\FSM_onehot_rstate_reg[1]_0 ),
-        .I3(Mat2AXIvideo_U0_ap_ready),
-        .I4(int_ap_done),
-        .O(int_ap_done_i_1_n_2));
-  (* SOFT_HLUTNM = "soft_lutpair50" *) 
-  LUT4 #(
-    .INIT(16'h0001)) 
-    int_ap_done_i_2
-       (.I0(s_axi_bun_1_ARADDR[2]),
-        .I1(s_axi_bun_1_ARADDR[1]),
-        .I2(s_axi_bun_1_ARADDR[0]),
-        .I3(s_axi_bun_1_ARADDR[3]),
-        .O(int_ap_done_i_2_n_2));
-  FDRE #(
-    .INIT(1'b0)) 
-    int_ap_done_reg
-       (.C(ap_clk),
-        .CE(1'b1),
-        .D(int_ap_done_i_1_n_2),
-        .Q(int_ap_done),
-        .R(ap_rst_n_inv));
-  FDRE int_ap_idle_reg
-       (.C(ap_clk),
-        .CE(1'b1),
-        .D(ap_idle),
-        .Q(int_ap_idle),
-        .R(ap_rst_n_inv));
-  FDRE int_ap_ready_reg
-       (.C(ap_clk),
-        .CE(1'b1),
-        .D(AXIvideo2Mat_U0_ap_ready),
-        .Q(int_ap_ready),
-        .R(ap_rst_n_inv));
-  (* SOFT_HLUTNM = "soft_lutpair55" *) 
-  LUT4 #(
-    .INIT(16'hFECE)) 
-    int_ap_start_i_1
-       (.I0(int_auto_restart),
-        .I1(int_ap_start3_out),
-        .I2(int_ap_start_reg_0),
-        .I3(AXIvideo2Mat_U0_ap_start),
-        .O(int_ap_start_i_1_n_2));
-  (* SOFT_HLUTNM = "soft_lutpair52" *) 
-  LUT4 #(
-    .INIT(16'h0400)) 
-    int_ap_start_i_2
-       (.I0(\waddr_reg_n_2_[2] ),
-        .I1(s_axi_bun_1_WDATA[0]),
-        .I2(\waddr_reg_n_2_[3] ),
-        .I3(\int_ier[1]_i_2_n_2 ),
-        .O(int_ap_start3_out));
-  FDRE #(
-    .INIT(1'b0)) 
-    int_ap_start_reg
-       (.C(ap_clk),
-        .CE(1'b1),
-        .D(int_ap_start_i_1_n_2),
-        .Q(AXIvideo2Mat_U0_ap_start),
-        .R(ap_rst_n_inv));
-  (* SOFT_HLUTNM = "soft_lutpair51" *) 
-  LUT5 #(
-    .INIT(32'hFEFF0200)) 
-    int_auto_restart_i_1
-       (.I0(s_axi_bun_1_WDATA[2]),
-        .I1(\waddr_reg_n_2_[3] ),
-        .I2(\waddr_reg_n_2_[2] ),
-        .I3(\int_ier[1]_i_2_n_2 ),
-        .I4(int_auto_restart),
-        .O(int_auto_restart_i_1_n_2));
-  FDRE #(
-    .INIT(1'b0)) 
-    int_auto_restart_reg
-       (.C(ap_clk),
-        .CE(1'b1),
-        .D(int_auto_restart_i_1_n_2),
-        .Q(int_auto_restart),
-        .R(ap_rst_n_inv));
-  (* SOFT_HLUTNM = "soft_lutpair52" *) 
-  LUT5 #(
-    .INIT(32'hEFFF2000)) 
-    int_gie_i_1
-       (.I0(s_axi_bun_1_WDATA[0]),
-        .I1(\waddr_reg_n_2_[3] ),
-        .I2(\waddr_reg_n_2_[2] ),
-        .I3(\int_ier[1]_i_2_n_2 ),
-        .I4(int_gie_reg_n_2),
-        .O(int_gie_i_1_n_2));
-  FDRE #(
-    .INIT(1'b0)) 
-    int_gie_reg
-       (.C(ap_clk),
-        .CE(1'b1),
-        .D(int_gie_i_1_n_2),
-        .Q(int_gie_reg_n_2),
-        .R(ap_rst_n_inv));
-  LUT5 #(
-    .INIT(32'hEFFF2000)) 
-    \int_ier[0]_i_1 
-       (.I0(s_axi_bun_1_WDATA[0]),
-        .I1(\waddr_reg_n_2_[2] ),
-        .I2(\waddr_reg_n_2_[3] ),
-        .I3(\int_ier[1]_i_2_n_2 ),
-        .I4(\int_ier_reg_n_2_[0] ),
-        .O(\int_ier[0]_i_1_n_2 ));
-  LUT5 #(
-    .INIT(32'hEFFF2000)) 
-    \int_ier[1]_i_1 
-       (.I0(s_axi_bun_1_WDATA[1]),
-        .I1(\waddr_reg_n_2_[2] ),
-        .I2(\waddr_reg_n_2_[3] ),
-        .I3(\int_ier[1]_i_2_n_2 ),
-        .I4(p_0_in__0),
-        .O(\int_ier[1]_i_1_n_2 ));
-  LUT5 #(
-    .INIT(32'h00400000)) 
-    \int_ier[1]_i_2 
-       (.I0(\waddr_reg_n_2_[0] ),
-        .I1(\FSM_onehot_wstate_reg[2]_0 ),
-        .I2(s_axi_bun_1_WVALID),
-        .I3(\waddr_reg_n_2_[1] ),
-        .I4(s_axi_bun_1_WSTRB),
-        .O(\int_ier[1]_i_2_n_2 ));
-  FDRE #(
-    .INIT(1'b0)) 
-    \int_ier_reg[0] 
-       (.C(ap_clk),
-        .CE(1'b1),
-        .D(\int_ier[0]_i_1_n_2 ),
-        .Q(\int_ier_reg_n_2_[0] ),
-        .R(ap_rst_n_inv));
-  FDRE #(
-    .INIT(1'b0)) 
-    \int_ier_reg[1] 
-       (.C(ap_clk),
-        .CE(1'b1),
-        .D(\int_ier[1]_i_1_n_2 ),
-        .Q(p_0_in__0),
-        .R(ap_rst_n_inv));
-  LUT5 #(
-    .INIT(32'hF777F888)) 
-    \int_isr[0]_i_1 
-       (.I0(s_axi_bun_1_WDATA[0]),
-        .I1(int_isr6_out),
-        .I2(\int_ier_reg_n_2_[0] ),
-        .I3(Mat2AXIvideo_U0_ap_ready),
-        .I4(\int_isr_reg_n_2_[0] ),
-        .O(\int_isr[0]_i_1_n_2 ));
-  (* SOFT_HLUTNM = "soft_lutpair51" *) 
-  LUT3 #(
-    .INIT(8'h80)) 
-    \int_isr[0]_i_2 
-       (.I0(\waddr_reg_n_2_[3] ),
-        .I1(\waddr_reg_n_2_[2] ),
-        .I2(\int_ier[1]_i_2_n_2 ),
-        .O(int_isr6_out));
-  LUT6 #(
-    .INIT(64'hFFFF7FFFFFFF8000)) 
-    \int_isr[1]_i_1 
-       (.I0(s_axi_bun_1_WDATA[1]),
-        .I1(\int_ier[1]_i_2_n_2 ),
-        .I2(\waddr_reg_n_2_[2] ),
-        .I3(\waddr_reg_n_2_[3] ),
-        .I4(int_isr),
-        .I5(p_1_in),
-        .O(\int_isr[1]_i_1_n_2 ));
-  (* SOFT_HLUTNM = "soft_lutpair55" *) 
-  LUT2 #(
-    .INIT(4'h2)) 
-    \int_isr[1]_i_2 
-       (.I0(p_0_in__0),
-        .I1(int_ap_start_reg_0),
-        .O(int_isr));
-  FDRE #(
-    .INIT(1'b0)) 
-    \int_isr_reg[0] 
-       (.C(ap_clk),
-        .CE(1'b1),
-        .D(\int_isr[0]_i_1_n_2 ),
-        .Q(\int_isr_reg_n_2_[0] ),
-        .R(ap_rst_n_inv));
-  FDRE #(
-    .INIT(1'b0)) 
-    \int_isr_reg[1] 
-       (.C(ap_clk),
-        .CE(1'b1),
-        .D(\int_isr[1]_i_1_n_2 ),
-        .Q(p_1_in),
-        .R(ap_rst_n_inv));
-  LUT3 #(
-    .INIT(8'hE0)) 
-    interrupt_INST_0
-       (.I0(\int_isr_reg_n_2_[0] ),
-        .I1(p_1_in),
-        .I2(int_gie_reg_n_2),
-        .O(interrupt));
-  LUT5 #(
-    .INIT(32'hFFFFC840)) 
-    \rdata[0]_i_1 
-       (.I0(s_axi_bun_1_ARADDR[3]),
-        .I1(\rdata[0]_i_2_n_2 ),
-        .I2(AXIvideo2Mat_U0_ap_start),
-        .I3(\int_ier_reg_n_2_[0] ),
-        .I4(\rdata[0]_i_3_n_2 ),
-        .O(rdata[0]));
-  (* SOFT_HLUTNM = "soft_lutpair53" *) 
-  LUT3 #(
-    .INIT(8'h01)) 
-    \rdata[0]_i_2 
-       (.I0(s_axi_bun_1_ARADDR[0]),
-        .I1(s_axi_bun_1_ARADDR[1]),
-        .I2(s_axi_bun_1_ARADDR[2]),
-        .O(\rdata[0]_i_2_n_2 ));
-  LUT6 #(
-    .INIT(64'h0202020000000200)) 
-    \rdata[0]_i_3 
-       (.I0(s_axi_bun_1_ARADDR[2]),
-        .I1(s_axi_bun_1_ARADDR[1]),
-        .I2(s_axi_bun_1_ARADDR[0]),
-        .I3(int_gie_reg_n_2),
-        .I4(s_axi_bun_1_ARADDR[3]),
-        .I5(\int_isr_reg_n_2_[0] ),
-        .O(\rdata[0]_i_3_n_2 ));
-  LUT6 #(
-    .INIT(64'hF000C0C00000A0A0)) 
-    \rdata[1]_i_1 
-       (.I0(int_ap_done),
-        .I1(p_0_in__0),
-        .I2(\rdata[1]_i_2_n_2 ),
-        .I3(p_1_in),
-        .I4(s_axi_bun_1_ARADDR[2]),
-        .I5(s_axi_bun_1_ARADDR[3]),
-        .O(rdata[1]));
-  (* SOFT_HLUTNM = "soft_lutpair54" *) 
-  LUT2 #(
-    .INIT(4'h1)) 
-    \rdata[1]_i_2 
-       (.I0(s_axi_bun_1_ARADDR[1]),
-        .I1(s_axi_bun_1_ARADDR[0]),
-        .O(\rdata[1]_i_2_n_2 ));
-  (* SOFT_HLUTNM = "soft_lutpair50" *) 
-  LUT5 #(
-    .INIT(32'h00010000)) 
-    \rdata[2]_i_1 
-       (.I0(s_axi_bun_1_ARADDR[3]),
-        .I1(s_axi_bun_1_ARADDR[0]),
-        .I2(s_axi_bun_1_ARADDR[1]),
-        .I3(s_axi_bun_1_ARADDR[2]),
-        .I4(int_ap_idle),
-        .O(rdata[2]));
-  (* SOFT_HLUTNM = "soft_lutpair54" *) 
-  LUT5 #(
-    .INIT(32'h00010000)) 
-    \rdata[3]_i_1 
-       (.I0(s_axi_bun_1_ARADDR[3]),
-        .I1(s_axi_bun_1_ARADDR[0]),
-        .I2(s_axi_bun_1_ARADDR[1]),
-        .I3(s_axi_bun_1_ARADDR[2]),
-        .I4(int_ap_ready),
-        .O(rdata[3]));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \rdata[7]_i_1 
-       (.I0(\FSM_onehot_rstate_reg[1]_0 ),
-        .I1(s_axi_bun_1_ARVALID),
-        .O(ar_hs));
-  (* SOFT_HLUTNM = "soft_lutpair53" *) 
-  LUT5 #(
-    .INIT(32'h00010000)) 
-    \rdata[7]_i_2 
-       (.I0(s_axi_bun_1_ARADDR[3]),
-        .I1(s_axi_bun_1_ARADDR[0]),
-        .I2(s_axi_bun_1_ARADDR[1]),
-        .I3(s_axi_bun_1_ARADDR[2]),
-        .I4(int_auto_restart),
-        .O(rdata[7]));
-  FDRE \rdata_reg[0] 
-       (.C(ap_clk),
-        .CE(ar_hs),
-        .D(rdata[0]),
-        .Q(s_axi_bun_1_RDATA[0]),
-        .R(1'b0));
-  FDRE \rdata_reg[1] 
-       (.C(ap_clk),
-        .CE(ar_hs),
-        .D(rdata[1]),
-        .Q(s_axi_bun_1_RDATA[1]),
-        .R(1'b0));
-  FDRE \rdata_reg[2] 
-       (.C(ap_clk),
-        .CE(ar_hs),
-        .D(rdata[2]),
-        .Q(s_axi_bun_1_RDATA[2]),
-        .R(1'b0));
-  FDRE \rdata_reg[3] 
-       (.C(ap_clk),
-        .CE(ar_hs),
-        .D(rdata[3]),
-        .Q(s_axi_bun_1_RDATA[3]),
-        .R(1'b0));
-  FDRE \rdata_reg[7] 
-       (.C(ap_clk),
-        .CE(ar_hs),
-        .D(rdata[7]),
-        .Q(s_axi_bun_1_RDATA[4]),
-        .R(1'b0));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \waddr[3]_i_1 
-       (.I0(s_axi_bun_1_AWVALID),
-        .I1(\FSM_onehot_wstate_reg[1]_0 ),
-        .O(waddr));
-  FDRE \waddr_reg[0] 
-       (.C(ap_clk),
-        .CE(waddr),
-        .D(s_axi_bun_1_AWADDR[0]),
-        .Q(\waddr_reg_n_2_[0] ),
-        .R(1'b0));
-  FDRE \waddr_reg[1] 
-       (.C(ap_clk),
-        .CE(waddr),
-        .D(s_axi_bun_1_AWADDR[1]),
-        .Q(\waddr_reg_n_2_[1] ),
-        .R(1'b0));
-  FDRE \waddr_reg[2] 
-       (.C(ap_clk),
-        .CE(waddr),
-        .D(s_axi_bun_1_AWADDR[2]),
-        .Q(\waddr_reg_n_2_[2] ),
-        .R(1'b0));
-  FDRE \waddr_reg[3] 
-       (.C(ap_clk),
-        .CE(waddr),
-        .D(s_axi_bun_1_AWADDR[3]),
-        .Q(\waddr_reg_n_2_[3] ),
-        .R(1'b0));
 endmodule
 
 (* ORIG_REF_NAME = "filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1" *) 
@@ -5523,7 +4814,7 @@ module bd_0_hls_inst_0_rozmycie
   wire ap_block_pp0_stage0_subdone4_in;
   wire ap_clk;
   wire ap_enable_reg_pp0_iter0;
-  wire ap_enable_reg_pp0_iter0_i_1__0_n_2;
+  wire ap_enable_reg_pp0_iter0_i_1_n_2;
   wire ap_enable_reg_pp0_iter1_i_1_n_2;
   wire ap_enable_reg_pp0_iter1_reg_n_2;
   wire ap_enable_reg_pp0_iter2;
@@ -5912,7 +5203,7 @@ module bd_0_hls_inst_0_rozmycie
         .O(shiftReg_ce));
   LUT5 #(
     .INIT(32'h1F00FFFF)) 
-    \ap_CS_fsm[0]_i_1__1 
+    \ap_CS_fsm[0]_i_1__0 
        (.I0(start_for_Mat2AXIvideo_U0_full_n),
         .I1(start_once_reg_reg_0),
         .I2(rozmycie_U0_ap_start),
@@ -5931,7 +5222,7 @@ module bd_0_hls_inst_0_rozmycie
         .O(\ap_CS_fsm_reg[1]_0 ));
   LUT5 #(
     .INIT(32'hFFFFE000)) 
-    \ap_CS_fsm[1]_i_1__1 
+    \ap_CS_fsm[1]_i_1__0 
        (.I0(start_for_Mat2AXIvideo_U0_full_n),
         .I1(start_once_reg_reg_0),
         .I2(rozmycie_U0_ap_start),
@@ -5940,7 +5231,7 @@ module bd_0_hls_inst_0_rozmycie
         .O(ap_NS_fsm[1]));
   LUT6 #(
     .INIT(64'hFFBF0000FFFFFFFF)) 
-    \ap_CS_fsm[2]_i_1__0 
+    \ap_CS_fsm[2]_i_1 
        (.I0(ap_enable_reg_pp0_iter1_reg_n_2),
         .I1(ap_enable_reg_pp0_iter0),
         .I2(exitcond_fu_249_p2),
@@ -5948,7 +5239,7 @@ module bd_0_hls_inst_0_rozmycie
         .I4(\ap_CS_fsm[2]_i_2_n_2 ),
         .I5(\ap_CS_fsm[2]_i_3_n_2 ),
         .O(ap_NS_fsm[2]));
-  (* SOFT_HLUTNM = "soft_lutpair66" *) 
+  (* SOFT_HLUTNM = "soft_lutpair59" *) 
   LUT4 #(
     .INIT(16'hEF00)) 
     \ap_CS_fsm[2]_i_2 
@@ -5976,7 +5267,7 @@ module bd_0_hls_inst_0_rozmycie
         .I3(i_reg_187[3]),
         .I4(i_reg_187[1]),
         .O(\ap_CS_fsm[2]_i_4_n_2 ));
-  (* SOFT_HLUTNM = "soft_lutpair62" *) 
+  (* SOFT_HLUTNM = "soft_lutpair55" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \ap_CS_fsm[2]_i_5 
@@ -5993,7 +5284,7 @@ module bd_0_hls_inst_0_rozmycie
         .I4(exitcond_fu_249_p2),
         .I5(ap_block_pp0_stage0_subdone),
         .O(ap_NS_fsm[3]));
-  (* SOFT_HLUTNM = "soft_lutpair60" *) 
+  (* SOFT_HLUTNM = "soft_lutpair53" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \ap_CS_fsm[3]_i_2__0 
@@ -6038,23 +5329,23 @@ module bd_0_hls_inst_0_rozmycie
         .R(ap_rst_n_inv));
   LUT6 #(
     .INIT(64'h8A8A008A8A8A8A8A)) 
-    ap_enable_reg_pp0_iter0_i_1__0
+    ap_enable_reg_pp0_iter0_i_1
        (.I0(ap_rst_n),
         .I1(ap_enable_reg_pp0_iter0),
         .I2(\ap_CS_fsm[2]_i_3_n_2 ),
         .I3(exitcond_fu_249_p2),
         .I4(ap_block_pp0_stage0_subdone),
         .I5(ap_CS_fsm_pp0_stage0),
-        .O(ap_enable_reg_pp0_iter0_i_1__0_n_2));
+        .O(ap_enable_reg_pp0_iter0_i_1_n_2));
   FDRE #(
     .INIT(1'b0)) 
     ap_enable_reg_pp0_iter0_reg
        (.C(ap_clk),
         .CE(1'b1),
-        .D(ap_enable_reg_pp0_iter0_i_1__0_n_2),
+        .D(ap_enable_reg_pp0_iter0_i_1_n_2),
         .Q(ap_enable_reg_pp0_iter0),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair60" *) 
+  (* SOFT_HLUTNM = "soft_lutpair53" *) 
   LUT5 #(
     .INIT(32'h888800A0)) 
     ap_enable_reg_pp0_iter1_i_1
@@ -6087,7 +5378,7 @@ module bd_0_hls_inst_0_rozmycie
         .D(ap_enable_reg_pp0_iter2_i_1__0_n_2),
         .Q(ap_enable_reg_pp0_iter2),
         .R(ap_rst_n_inv));
-  (* SOFT_HLUTNM = "soft_lutpair66" *) 
+  (* SOFT_HLUTNM = "soft_lutpair59" *) 
   LUT3 #(
     .INIT(8'hE4)) 
     ap_enable_reg_pp0_iter3_i_1
@@ -6271,14 +5562,14 @@ module bd_0_hls_inst_0_rozmycie
         .I4(col_assign_reg_198_reg__0[4]),
         .I5(col_assign_reg_198_reg__0[5]),
         .O(\col_assign_reg_198[10]_i_4_n_2 ));
-  (* SOFT_HLUTNM = "soft_lutpair70" *) 
+  (* SOFT_HLUTNM = "soft_lutpair63" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \col_assign_reg_198[1]_i_1 
        (.I0(col_assign_reg_198_reg__0[0]),
         .I1(col_assign_reg_198_reg__0[1]),
         .O(j_fu_255_p2[1]));
-  (* SOFT_HLUTNM = "soft_lutpair70" *) 
+  (* SOFT_HLUTNM = "soft_lutpair63" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \col_assign_reg_198[2]_i_1 
@@ -6286,7 +5577,7 @@ module bd_0_hls_inst_0_rozmycie
         .I1(col_assign_reg_198_reg__0[1]),
         .I2(col_assign_reg_198_reg__0[2]),
         .O(j_fu_255_p2[2]));
-  (* SOFT_HLUTNM = "soft_lutpair59" *) 
+  (* SOFT_HLUTNM = "soft_lutpair52" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \col_assign_reg_198[3]_i_1 
@@ -6295,7 +5586,7 @@ module bd_0_hls_inst_0_rozmycie
         .I2(col_assign_reg_198_reg__0[0]),
         .I3(col_assign_reg_198_reg__0[3]),
         .O(j_fu_255_p2[3]));
-  (* SOFT_HLUTNM = "soft_lutpair59" *) 
+  (* SOFT_HLUTNM = "soft_lutpair52" *) 
   LUT5 #(
     .INIT(32'h7FFF8000)) 
     \col_assign_reg_198[4]_i_1 
@@ -6315,7 +5606,7 @@ module bd_0_hls_inst_0_rozmycie
         .I4(col_assign_reg_198_reg__0[4]),
         .I5(col_assign_reg_198_reg__0[5]),
         .O(j_fu_255_p2[5]));
-  (* SOFT_HLUTNM = "soft_lutpair67" *) 
+  (* SOFT_HLUTNM = "soft_lutpair60" *) 
   LUT2 #(
     .INIT(4'h9)) 
     \col_assign_reg_198[6]_i_1 
@@ -6329,7 +5620,7 @@ module bd_0_hls_inst_0_rozmycie
         .I1(\col_assign_reg_198[10]_i_4_n_2 ),
         .I2(col_assign_reg_198_reg__0[7]),
         .O(j_fu_255_p2[7]));
-  (* SOFT_HLUTNM = "soft_lutpair61" *) 
+  (* SOFT_HLUTNM = "soft_lutpair54" *) 
   LUT4 #(
     .INIT(16'hDF20)) 
     \col_assign_reg_198[8]_i_1 
@@ -6338,7 +5629,7 @@ module bd_0_hls_inst_0_rozmycie
         .I2(col_assign_reg_198_reg__0[6]),
         .I3(col_assign_reg_198_reg__0[8]),
         .O(j_fu_255_p2[8]));
-  (* SOFT_HLUTNM = "soft_lutpair61" *) 
+  (* SOFT_HLUTNM = "soft_lutpair54" *) 
   LUT5 #(
     .INIT(32'hF7FF0800)) 
     \col_assign_reg_198[9]_i_1 
@@ -6414,7 +5705,7 @@ module bd_0_hls_inst_0_rozmycie
         .D(j_fu_255_p2[9]),
         .Q(col_assign_reg_198_reg__0[9]),
         .R(col_assign_reg_198));
-  (* SOFT_HLUTNM = "soft_lutpair58" *) 
+  (* SOFT_HLUTNM = "soft_lutpair51" *) 
   LUT5 #(
     .INIT(32'h00002000)) 
     \exitcond_reg_721[0]_i_1 
@@ -6432,7 +5723,7 @@ module bd_0_hls_inst_0_rozmycie
         .I2(col_assign_reg_198_reg__0[7]),
         .I3(col_assign_reg_198_reg__0[2]),
         .O(\exitcond_reg_721[0]_i_2_n_2 ));
-  (* SOFT_HLUTNM = "soft_lutpair67" *) 
+  (* SOFT_HLUTNM = "soft_lutpair60" *) 
   LUT4 #(
     .INIT(16'hFFFE)) 
     \exitcond_reg_721[0]_i_3 
@@ -6742,14 +6033,14 @@ module bd_0_hls_inst_0_rozmycie
     \i_1_reg_701[0]_i_1 
        (.I0(i_reg_187[0]),
         .O(i_1_fu_215_p2[0]));
-  (* SOFT_HLUTNM = "soft_lutpair71" *) 
+  (* SOFT_HLUTNM = "soft_lutpair64" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \i_1_reg_701[1]_i_1 
        (.I0(i_reg_187[0]),
         .I1(i_reg_187[1]),
         .O(i_1_fu_215_p2[1]));
-  (* SOFT_HLUTNM = "soft_lutpair71" *) 
+  (* SOFT_HLUTNM = "soft_lutpair64" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \i_1_reg_701[2]_i_1 
@@ -6757,7 +6048,7 @@ module bd_0_hls_inst_0_rozmycie
         .I1(i_reg_187[0]),
         .I2(i_reg_187[2]),
         .O(i_1_fu_215_p2[2]));
-  (* SOFT_HLUTNM = "soft_lutpair64" *) 
+  (* SOFT_HLUTNM = "soft_lutpair57" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \i_1_reg_701[3]_i_1 
@@ -6766,7 +6057,7 @@ module bd_0_hls_inst_0_rozmycie
         .I2(i_reg_187[1]),
         .I3(i_reg_187[3]),
         .O(i_1_fu_215_p2[3]));
-  (* SOFT_HLUTNM = "soft_lutpair64" *) 
+  (* SOFT_HLUTNM = "soft_lutpair57" *) 
   LUT5 #(
     .INIT(32'h7FFF8000)) 
     \i_1_reg_701[4]_i_1 
@@ -6786,14 +6077,14 @@ module bd_0_hls_inst_0_rozmycie
         .I4(i_reg_187[4]),
         .I5(i_reg_187[5]),
         .O(i_1_fu_215_p2[5]));
-  (* SOFT_HLUTNM = "soft_lutpair69" *) 
+  (* SOFT_HLUTNM = "soft_lutpair62" *) 
   LUT2 #(
     .INIT(4'h9)) 
     \i_1_reg_701[6]_i_1 
        (.I0(\i_1_reg_701[9]_i_2_n_2 ),
         .I1(i_reg_187[6]),
         .O(i_1_fu_215_p2[6]));
-  (* SOFT_HLUTNM = "soft_lutpair69" *) 
+  (* SOFT_HLUTNM = "soft_lutpair62" *) 
   LUT3 #(
     .INIT(8'hD2)) 
     \i_1_reg_701[7]_i_1 
@@ -6801,7 +6092,7 @@ module bd_0_hls_inst_0_rozmycie
         .I1(\i_1_reg_701[9]_i_2_n_2 ),
         .I2(i_reg_187[7]),
         .O(i_1_fu_215_p2[7]));
-  (* SOFT_HLUTNM = "soft_lutpair63" *) 
+  (* SOFT_HLUTNM = "soft_lutpair56" *) 
   LUT4 #(
     .INIT(16'hBF40)) 
     \i_1_reg_701[8]_i_1 
@@ -6810,7 +6101,7 @@ module bd_0_hls_inst_0_rozmycie
         .I2(i_reg_187[6]),
         .I3(i_reg_187[8]),
         .O(i_1_fu_215_p2[8]));
-  (* SOFT_HLUTNM = "soft_lutpair63" *) 
+  (* SOFT_HLUTNM = "soft_lutpair56" *) 
   LUT5 #(
     .INIT(32'hFF7F0080)) 
     \i_1_reg_701[9]_i_1 
@@ -6959,7 +6250,7 @@ module bd_0_hls_inst_0_rozmycie
         .D(i_1_reg_701[9]),
         .Q(i_reg_187[9]),
         .R(i_reg_187_0));
-  (* SOFT_HLUTNM = "soft_lutpair65" *) 
+  (* SOFT_HLUTNM = "soft_lutpair58" *) 
   LUT5 #(
     .INIT(32'hFEFF0200)) 
     \icmp1_reg_750[0]_i_1 
@@ -6987,7 +6278,7 @@ module bd_0_hls_inst_0_rozmycie
         .D(\icmp1_reg_750[0]_i_1_n_2 ),
         .Q(icmp1_reg_750),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair68" *) 
+  (* SOFT_HLUTNM = "soft_lutpair61" *) 
   LUT3 #(
     .INIT(8'hE2)) 
     \icmp_reg_711[0]_i_1 
@@ -6995,7 +6286,7 @@ module bd_0_hls_inst_0_rozmycie
         .I1(\ap_CS_fsm[2]_i_3_n_2 ),
         .I2(icmp_reg_711),
         .O(\icmp_reg_711[0]_i_1_n_2 ));
-  (* SOFT_HLUTNM = "soft_lutpair62" *) 
+  (* SOFT_HLUTNM = "soft_lutpair55" *) 
   LUT5 #(
     .INIT(32'hFFFFFFFE)) 
     \icmp_reg_711[0]_i_2 
@@ -7439,7 +6730,7 @@ module bd_0_hls_inst_0_rozmycie
         .I4(\tmp_4_reg_730[0]_i_2_n_2 ),
         .I5(or_cond6_reg_755),
         .O(\or_cond6_reg_755[0]_i_1_n_2 ));
-  (* SOFT_HLUTNM = "soft_lutpair58" *) 
+  (* SOFT_HLUTNM = "soft_lutpair51" *) 
   LUT4 #(
     .INIT(16'hFFFE)) 
     \or_cond6_reg_755[0]_i_2 
@@ -8404,7 +7695,7 @@ module bd_0_hls_inst_0_rozmycie
         .DI({1'b0,\tmp_12_reg_779[7]_i_3_n_2 ,\tmp_12_reg_779[7]_i_4_n_2 ,\tmp_12_reg_779[7]_i_5_n_2 }),
         .O(v0_assign_fu_581_p4[7:4]),
         .S({\tmp_12_reg_779[7]_i_6_n_2 ,\tmp_12_reg_779[7]_i_7_n_2 ,\tmp_12_reg_779[7]_i_8_n_2 ,\tmp_12_reg_779[7]_i_9_n_2 }));
-  (* SOFT_HLUTNM = "soft_lutpair68" *) 
+  (* SOFT_HLUTNM = "soft_lutpair61" *) 
   LUT3 #(
     .INIT(8'hE2)) 
     \tmp_2_reg_716[0]_i_1 
@@ -8438,7 +7729,7 @@ module bd_0_hls_inst_0_rozmycie
         .I4(\tmp_4_reg_730[0]_i_2_n_2 ),
         .I5(tmp_4_reg_730),
         .O(\tmp_4_reg_730[0]_i_1_n_2 ));
-  (* SOFT_HLUTNM = "soft_lutpair65" *) 
+  (* SOFT_HLUTNM = "soft_lutpair58" *) 
   LUT2 #(
     .INIT(4'hB)) 
     \tmp_4_reg_730[0]_i_2 
@@ -8903,13 +8194,13 @@ module bd_0_hls_inst_0_start_for_Mat2AXIvideo_U0
     Mat2AXIvideo_U0_ap_start,
     ap_idle,
     ap_clk,
+    ap_idle_0,
+    Q,
+    ap_idle_1,
+    ap_idle_2,
     ap_rst_n,
     \mOutPtr_reg[1]_0 ,
-    Mat2AXIvideo_U0_ap_ready,
-    int_ap_idle_reg,
-    Q,
-    int_ap_idle_reg_0,
-    int_ap_idle_reg_1,
+    \mOutPtr_reg[1]_1 ,
     \mOutPtr_reg[0]_0 ,
     rozmycie_U0_ap_start,
     ap_rst_n_inv);
@@ -8917,35 +8208,35 @@ module bd_0_hls_inst_0_start_for_Mat2AXIvideo_U0
   output Mat2AXIvideo_U0_ap_start;
   output ap_idle;
   input ap_clk;
+  input ap_idle_0;
+  input [0:0]Q;
+  input [0:0]ap_idle_1;
+  input [0:0]ap_idle_2;
   input ap_rst_n;
   input \mOutPtr_reg[1]_0 ;
-  input Mat2AXIvideo_U0_ap_ready;
-  input int_ap_idle_reg;
-  input [0:0]Q;
-  input [0:0]int_ap_idle_reg_0;
-  input [0:0]int_ap_idle_reg_1;
+  input \mOutPtr_reg[1]_1 ;
   input \mOutPtr_reg[0]_0 ;
   input rozmycie_U0_ap_start;
   input ap_rst_n_inv;
 
-  wire Mat2AXIvideo_U0_ap_ready;
   wire Mat2AXIvideo_U0_ap_start;
   wire [0:0]Q;
   wire ap_clk;
   wire ap_idle;
+  wire ap_idle_0;
+  wire [0:0]ap_idle_1;
+  wire [0:0]ap_idle_2;
+  wire ap_idle_INST_0_i_2_n_2;
   wire ap_rst_n;
   wire ap_rst_n_inv;
-  wire int_ap_idle_i_3_n_2;
-  wire int_ap_idle_reg;
-  wire [0:0]int_ap_idle_reg_0;
-  wire [0:0]int_ap_idle_reg_1;
-  wire internal_empty_n_i_1_n_2;
-  wire internal_full_n_i_1_n_2;
+  wire internal_empty_n_i_1__1_n_2;
+  wire internal_full_n_i_1__1_n_2;
   wire internal_full_n_i_2__1_n_2;
   wire \mOutPtr[0]_i_1_n_2 ;
   wire \mOutPtr[1]_i_1_n_2 ;
   wire \mOutPtr_reg[0]_0 ;
   wire \mOutPtr_reg[1]_0 ;
+  wire \mOutPtr_reg[1]_1 ;
   wire \mOutPtr_reg_n_2_[0] ;
   wire \mOutPtr_reg_n_2_[1] ;
   wire rozmycie_U0_ap_start;
@@ -8953,50 +8244,50 @@ module bd_0_hls_inst_0_start_for_Mat2AXIvideo_U0
 
   LUT6 #(
     .INIT(64'h0000000010000000)) 
-    int_ap_idle_i_1
-       (.I0(int_ap_idle_reg),
+    ap_idle_INST_0
+       (.I0(ap_idle_0),
         .I1(Mat2AXIvideo_U0_ap_start),
         .I2(Q),
-        .I3(int_ap_idle_reg_0),
-        .I4(int_ap_idle_reg_1),
-        .I5(int_ap_idle_i_3_n_2),
+        .I3(ap_idle_1),
+        .I4(ap_idle_2),
+        .I5(ap_idle_INST_0_i_2_n_2),
         .O(ap_idle));
   LUT3 #(
     .INIT(8'hE0)) 
-    int_ap_idle_i_3
+    ap_idle_INST_0_i_2
        (.I0(start_for_Mat2AXIvideo_U0_full_n),
         .I1(\mOutPtr_reg[0]_0 ),
         .I2(rozmycie_U0_ap_start),
-        .O(int_ap_idle_i_3_n_2));
+        .O(ap_idle_INST_0_i_2_n_2));
   LUT6 #(
-    .INIT(64'hAA22AA22AA222A22)) 
-    internal_empty_n_i_1
+    .INIT(64'hA2A2A2A2A2A222A2)) 
+    internal_empty_n_i_1__1
        (.I0(ap_rst_n),
         .I1(\mOutPtr_reg[1]_0 ),
-        .I2(Mat2AXIvideo_U0_ap_ready),
-        .I3(Mat2AXIvideo_U0_ap_start),
+        .I2(Mat2AXIvideo_U0_ap_start),
+        .I3(\mOutPtr_reg[1]_1 ),
         .I4(\mOutPtr_reg_n_2_[0] ),
         .I5(\mOutPtr_reg_n_2_[1] ),
-        .O(internal_empty_n_i_1_n_2));
+        .O(internal_empty_n_i_1__1_n_2));
   FDRE #(
     .INIT(1'b0)) 
     internal_empty_n_reg
        (.C(ap_clk),
         .CE(1'b1),
-        .D(internal_empty_n_i_1_n_2),
+        .D(internal_empty_n_i_1__1_n_2),
         .Q(Mat2AXIvideo_U0_ap_start),
         .R(1'b0));
   LUT6 #(
     .INIT(64'hFFDDDDDDDDD5D5D5)) 
-    internal_full_n_i_1
+    internal_full_n_i_1__1
        (.I0(ap_rst_n),
         .I1(start_for_Mat2AXIvideo_U0_full_n),
         .I2(internal_full_n_i_2__1_n_2),
-        .I3(Mat2AXIvideo_U0_ap_start),
-        .I4(Mat2AXIvideo_U0_ap_ready),
+        .I3(\mOutPtr_reg[1]_1 ),
+        .I4(Mat2AXIvideo_U0_ap_start),
         .I5(\mOutPtr_reg[1]_0 ),
-        .O(internal_full_n_i_1_n_2));
-  (* SOFT_HLUTNM = "soft_lutpair72" *) 
+        .O(internal_full_n_i_1__1_n_2));
+  (* SOFT_HLUTNM = "soft_lutpair65" *) 
   LUT2 #(
     .INIT(4'hE)) 
     internal_full_n_i_2__1
@@ -9008,7 +8299,7 @@ module bd_0_hls_inst_0_start_for_Mat2AXIvideo_U0
     internal_full_n_reg
        (.C(ap_clk),
         .CE(1'b1),
-        .D(internal_full_n_i_1_n_2),
+        .D(internal_full_n_i_1__1_n_2),
         .Q(start_for_Mat2AXIvideo_U0_full_n),
         .R(1'b0));
   LUT6 #(
@@ -9017,17 +8308,17 @@ module bd_0_hls_inst_0_start_for_Mat2AXIvideo_U0
        (.I0(start_for_Mat2AXIvideo_U0_full_n),
         .I1(\mOutPtr_reg[0]_0 ),
         .I2(rozmycie_U0_ap_start),
-        .I3(Mat2AXIvideo_U0_ap_ready),
-        .I4(Mat2AXIvideo_U0_ap_start),
+        .I3(Mat2AXIvideo_U0_ap_start),
+        .I4(\mOutPtr_reg[1]_1 ),
         .I5(\mOutPtr_reg_n_2_[0] ),
         .O(\mOutPtr[0]_i_1_n_2 ));
-  (* SOFT_HLUTNM = "soft_lutpair72" *) 
+  (* SOFT_HLUTNM = "soft_lutpair65" *) 
   LUT5 #(
     .INIT(32'hBFD5402A)) 
     \mOutPtr[1]_i_1 
        (.I0(\mOutPtr_reg_n_2_[0] ),
-        .I1(Mat2AXIvideo_U0_ap_start),
-        .I2(Mat2AXIvideo_U0_ap_ready),
+        .I1(\mOutPtr_reg[1]_1 ),
+        .I2(Mat2AXIvideo_U0_ap_start),
         .I3(\mOutPtr_reg[1]_0 ),
         .I4(\mOutPtr_reg_n_2_[1] ),
         .O(\mOutPtr[1]_i_1_n_2 ));
@@ -9058,7 +8349,7 @@ module bd_0_hls_inst_0_start_for_rozmycie_U0
     ap_clk,
     ap_rst_n,
     start_once_reg,
-    AXIvideo2Mat_U0_ap_start,
+    ap_start,
     \mOutPtr_reg[0]_0 ,
     \mOutPtr_reg[1]_0 ,
     start_for_Mat2AXIvideo_U0_full_n,
@@ -9070,19 +8361,19 @@ module bd_0_hls_inst_0_start_for_rozmycie_U0
   input ap_clk;
   input ap_rst_n;
   input start_once_reg;
-  input AXIvideo2Mat_U0_ap_start;
+  input ap_start;
   input \mOutPtr_reg[0]_0 ;
   input \mOutPtr_reg[1]_0 ;
   input start_for_Mat2AXIvideo_U0_full_n;
   input ap_rst_n_inv;
 
-  wire AXIvideo2Mat_U0_ap_start;
   wire ap_clk;
   wire ap_rst_n;
   wire ap_rst_n_inv;
-  wire internal_empty_n_i_1__0_n_2;
+  wire ap_start;
+  wire internal_empty_n_i_1_n_2;
   wire internal_empty_n_reg_0;
-  wire internal_full_n_i_1__0_n_2;
+  wire internal_full_n_i_1_n_2;
   wire internal_full_n_reg_0;
   wire mOutPtr0__4;
   wire mOutPtr110_out;
@@ -9099,45 +8390,45 @@ module bd_0_hls_inst_0_start_for_rozmycie_U0
 
   LUT3 #(
     .INIT(8'hE0)) 
-    int_ap_idle_i_2
+    ap_idle_INST_0_i_1
        (.I0(start_for_rozmycie_U0_full_n),
         .I1(start_once_reg),
-        .I2(AXIvideo2Mat_U0_ap_start),
+        .I2(ap_start),
         .O(internal_full_n_reg_0));
   LUT6 #(
     .INIT(64'hA0A8A0A8A0A800A8)) 
-    internal_empty_n_i_1__0
+    internal_empty_n_i_1
        (.I0(ap_rst_n),
         .I1(mOutPtr0__4),
         .I2(rozmycie_U0_ap_start),
         .I3(mOutPtr110_out),
         .I4(\mOutPtr_reg_n_2_[0] ),
         .I5(\mOutPtr_reg_n_2_[1] ),
-        .O(internal_empty_n_i_1__0_n_2));
+        .O(internal_empty_n_i_1_n_2));
   FDRE #(
     .INIT(1'b0)) 
     internal_empty_n_reg
        (.C(ap_clk),
         .CE(1'b1),
-        .D(internal_empty_n_i_1__0_n_2),
+        .D(internal_empty_n_i_1_n_2),
         .Q(rozmycie_U0_ap_start),
         .R(1'b0));
   LUT6 #(
     .INIT(64'hFFFFFFFFDDD5DDDD)) 
-    internal_full_n_i_1__0
+    internal_full_n_i_1
        (.I0(ap_rst_n),
         .I1(start_for_rozmycie_U0_full_n),
         .I2(\mOutPtr_reg_n_2_[0] ),
         .I3(\mOutPtr_reg_n_2_[1] ),
         .I4(mOutPtr0__4),
         .I5(mOutPtr110_out),
-        .O(internal_full_n_i_1__0_n_2));
+        .O(internal_full_n_i_1_n_2));
   FDRE #(
     .INIT(1'b1)) 
     internal_full_n_reg
        (.C(ap_clk),
         .CE(1'b1),
-        .D(internal_full_n_i_1__0_n_2),
+        .D(internal_full_n_i_1_n_2),
         .Q(start_for_rozmycie_U0_full_n),
         .R(1'b0));
   LUT6 #(
@@ -9147,7 +8438,7 @@ module bd_0_hls_inst_0_start_for_rozmycie_U0
         .I1(\mOutPtr_reg[0]_0 ),
         .I2(start_for_rozmycie_U0_full_n),
         .I3(start_once_reg),
-        .I4(AXIvideo2Mat_U0_ap_start),
+        .I4(ap_start),
         .I5(\mOutPtr_reg_n_2_[0] ),
         .O(\mOutPtr[0]_i_1_n_2 ));
   LUT4 #(
@@ -9158,13 +8449,13 @@ module bd_0_hls_inst_0_start_for_rozmycie_U0
         .I2(mOutPtr0__4),
         .I3(\mOutPtr_reg_n_2_[1] ),
         .O(\mOutPtr[1]_i_1_n_2 ));
-  (* SOFT_HLUTNM = "soft_lutpair73" *) 
+  (* SOFT_HLUTNM = "soft_lutpair66" *) 
   LUT5 #(
     .INIT(32'h0000DF00)) 
     \mOutPtr[1]_i_2 
        (.I0(start_for_rozmycie_U0_full_n),
         .I1(start_once_reg),
-        .I2(AXIvideo2Mat_U0_ap_start),
+        .I2(ap_start),
         .I3(rozmycie_U0_ap_start),
         .I4(\mOutPtr_reg[0]_0 ),
         .O(mOutPtr110_out));
@@ -9175,7 +8466,7 @@ module bd_0_hls_inst_0_start_for_rozmycie_U0
         .I1(\mOutPtr_reg[1]_0 ),
         .I2(start_for_Mat2AXIvideo_U0_full_n),
         .O(internal_empty_n_reg_0));
-  (* SOFT_HLUTNM = "soft_lutpair73" *) 
+  (* SOFT_HLUTNM = "soft_lutpair66" *) 
   LUT5 #(
     .INIT(32'h00D00000)) 
     \mOutPtr[1]_i_3 
@@ -9183,7 +8474,7 @@ module bd_0_hls_inst_0_start_for_rozmycie_U0
         .I1(\mOutPtr_reg[0]_0 ),
         .I2(start_for_rozmycie_U0_full_n),
         .I3(start_once_reg),
-        .I4(AXIvideo2Mat_U0_ap_start),
+        .I4(ap_start),
         .O(mOutPtr0__4));
   FDSE #(
     .INIT(1'b1)) 

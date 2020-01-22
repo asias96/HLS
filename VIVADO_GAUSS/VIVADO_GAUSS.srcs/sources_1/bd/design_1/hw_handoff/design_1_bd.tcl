@@ -250,12 +250,11 @@ proc create_root_design { parentCell } {
   # Create interface connections
   connect_bd_intf_net -intf_net dvi2rgb_0_DDC [get_bd_intf_ports hdmi_in_ddc] [get_bd_intf_pins dvi2rgb_0/DDC]
   connect_bd_intf_net -intf_net v_axi4s_vid_out_0_vid_io_out [get_bd_intf_pins rgb2vga_0/vid_in] [get_bd_intf_pins v_axi4s_vid_out_0/vid_io_out]
-  connect_bd_intf_net -intf_net v_tc_0_vtiming_out [get_bd_intf_pins v_axi4s_vid_out_0/vtiming_in] [get_bd_intf_pins v_tc_0/vtiming_out]
   connect_bd_intf_net -intf_net v_vid_in_axi4s_0_vtiming_out [get_bd_intf_pins v_tc_0/vtiming_in] [get_bd_intf_pins v_vid_in_axi4s_0/vtiming_out]
 
   # Create port connections
   connect_bd_net -net GND_dout [get_bd_ports hdmi_out_en] [get_bd_pins GND/dout] [get_bd_pins dvi2rgb_0/aRst] [get_bd_pins dvi2rgb_0/pRst]
-  connect_bd_net -net VCC_dout [get_bd_ports hdmi_hpd] [get_bd_pins VCC/dout] [get_bd_pins filtr_Gauss_0/ap_rst_n] [get_bd_pins v_axi4s_vid_out_0/aclken] [get_bd_pins v_axi4s_vid_out_0/aresetn] [get_bd_pins v_axi4s_vid_out_0/vid_io_out_ce] [get_bd_pins v_tc_0/clken] [get_bd_pins v_tc_0/det_clken] [get_bd_pins v_tc_0/resetn] [get_bd_pins v_vid_in_axi4s_0/aclken] [get_bd_pins v_vid_in_axi4s_0/aresetn] [get_bd_pins v_vid_in_axi4s_0/axis_enable] [get_bd_pins v_vid_in_axi4s_0/vid_io_in_ce]
+  connect_bd_net -net VCC_dout [get_bd_ports hdmi_hpd] [get_bd_pins VCC/dout] [get_bd_pins filtr_Gauss_0/ap_rst_n] [get_bd_pins filtr_Gauss_0/ap_start] [get_bd_pins v_axi4s_vid_out_0/aclken] [get_bd_pins v_axi4s_vid_out_0/aresetn] [get_bd_pins v_axi4s_vid_out_0/vid_io_out_ce] [get_bd_pins v_tc_0/clken] [get_bd_pins v_tc_0/det_clken] [get_bd_pins v_tc_0/resetn] [get_bd_pins v_vid_in_axi4s_0/aclken] [get_bd_pins v_vid_in_axi4s_0/aresetn] [get_bd_pins v_vid_in_axi4s_0/axis_enable] [get_bd_pins v_vid_in_axi4s_0/vid_io_in_ce]
   connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins dvi2rgb_0/RefClk]
   connect_bd_net -net dvi2rgb_0_PixelClk [get_bd_pins dvi2rgb_0/PixelClk] [get_bd_pins filtr_Gauss_0/ap_clk] [get_bd_pins rgb2gray_0/clk] [get_bd_pins rgb2vga_0/PixelClk] [get_bd_pins v_axi4s_vid_out_0/aclk] [get_bd_pins v_tc_0/clk] [get_bd_pins v_vid_in_axi4s_0/aclk]
   connect_bd_net -net dvi2rgb_0_vid_pData [get_bd_pins dvi2rgb_0/vid_pData] [get_bd_pins rgb2gray_0/pixel_in]
@@ -286,6 +285,11 @@ proc create_root_design { parentCell } {
   connect_bd_net -net v_axi4s_vid_out_0_vid_hsync [get_bd_pins rgb2vga_0/rgb_pHSync] [get_bd_pins v_axi4s_vid_out_0/vid_hsync]
   connect_bd_net -net v_axi4s_vid_out_0_vid_vsync [get_bd_pins rgb2vga_0/rgb_pVSync] [get_bd_pins v_axi4s_vid_out_0/vid_vsync]
   connect_bd_net -net v_axi4s_vid_out_0_vtg_ce [get_bd_pins v_axi4s_vid_out_0/vtg_ce] [get_bd_pins v_tc_0/gen_clken]
+  connect_bd_net -net v_tc_0_active_video_out [get_bd_pins v_axi4s_vid_out_0/vtg_active_video] [get_bd_pins v_tc_0/active_video_out]
+  connect_bd_net -net v_tc_0_hblank_out [get_bd_pins v_axi4s_vid_out_0/vtg_hblank] [get_bd_pins v_tc_0/hblank_out]
+  connect_bd_net -net v_tc_0_hsync_out [get_bd_pins v_axi4s_vid_out_0/vtg_hsync] [get_bd_pins v_tc_0/hsync_out]
+  connect_bd_net -net v_tc_0_vblank_out [get_bd_pins v_axi4s_vid_out_0/vtg_vblank] [get_bd_pins v_tc_0/vblank_out]
+  connect_bd_net -net v_tc_0_vsync_out [get_bd_pins v_axi4s_vid_out_0/vtg_vsync] [get_bd_pins v_tc_0/vsync_out]
   connect_bd_net -net v_vid_in_axi4s_0_m_axis_video_tdata [get_bd_pins v_vid_in_axi4s_0/m_axis_video_tdata] [get_bd_pins xlslice_0/Din]
   connect_bd_net -net v_vid_in_axi4s_0_m_axis_video_tlast [get_bd_pins filtr_Gauss_0/in_r_TLAST] [get_bd_pins v_vid_in_axi4s_0/m_axis_video_tlast]
   connect_bd_net -net v_vid_in_axi4s_0_m_axis_video_tuser [get_bd_pins filtr_Gauss_0/in_r_TUSER] [get_bd_pins v_vid_in_axi4s_0/m_axis_video_tuser]

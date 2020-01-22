@@ -34201,6 +34201,7 @@ static void init_wsp(wsp_Gauss coeff[3][3]);
 static wsp_Gauss coeff_tab[3][3];
 
 static void init_wsp(wsp_Gauss coeff[3][3]){_ssdm_SpecArrayDimSize(coeff, 3);
+_ssdm_SpecArrayPartition( &coeff_tab, 1, "COMPLETE", 0, "");
 
  float coeff_float[3][3];
  float sum = 0;
@@ -34281,7 +34282,6 @@ void filtr_Gauss (dane& in, dane& out){
 _ssdm_op_SpecDataflowPipeline(-1, 0, "");
 _ssdm_op_SpecInterface(&out, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(&in, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-_ssdm_op_SpecInterface(0, "s_axilite", 0, 0, "", 0, 0, "bun_1", "", "", 0, 0, 0, 0, "", "");
 
  img_gray instance_in;
  img_gray instance_out;

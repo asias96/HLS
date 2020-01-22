@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'filtr_Gauss'
 ================================================================
-* Date:           Wed Jan 15 10:46:57 2020
+* Date:           Wed Jan 22 10:55:50 2020
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        Rozmycie_Gaussa
@@ -58,30 +58,29 @@
 |DSP              |        -|      -|      -|      -|
 |Expression       |        -|      -|      0|      2|
 |FIFO             |        0|      -|     10|     40|
-|Instance         |        2|      5|    714|   1361|
+|Instance         |        2|      5|    678|   1321|
 |Memory           |        -|      -|      -|      -|
 |Multiplexer      |        -|      -|      -|      -|
 |Register         |        -|      -|      -|      -|
 +-----------------+---------+-------+-------+-------+
-|Total            |        2|      5|    724|   1403|
+|Total            |        2|      5|    688|   1363|
 +-----------------+---------+-------+-------+-------+
 |Available        |      120|     80|  35200|  17600|
 +-----------------+---------+-------+-------+-------+
-|Utilization (%)  |        1|      6|      2|      7|
+|Utilization (%)  |        1|      6|      1|      7|
 +-----------------+---------+-------+-------+-------+
 
 + Detail: 
     * Instance: 
-    +---------------------------+-------------------------+---------+-------+-----+-----+
-    |          Instance         |          Module         | BRAM_18K| DSP48E|  FF | LUT |
-    +---------------------------+-------------------------+---------+-------+-----+-----+
-    |AXIvideo2Mat_U0            |AXIvideo2Mat             |        0|      0|  126|  438|
-    |Mat2AXIvideo_U0            |Mat2AXIvideo             |        0|      0|   87|  342|
-    |filtr_Gauss_bun_1_s_axi_U  |filtr_Gauss_bun_1_s_axi  |        0|      0|   36|   40|
-    |rozmycie_U0                |rozmycie                 |        2|      5|  465|  541|
-    +---------------------------+-------------------------+---------+-------+-----+-----+
-    |Total                      |                         |        2|      5|  714| 1361|
-    +---------------------------+-------------------------+---------+-------+-----+-----+
+    +-----------------+--------------+---------+-------+-----+-----+
+    |     Instance    |    Module    | BRAM_18K| DSP48E|  FF | LUT |
+    +-----------------+--------------+---------+-------+-----+-----+
+    |AXIvideo2Mat_U0  |AXIvideo2Mat  |        0|      0|  126|  438|
+    |Mat2AXIvideo_U0  |Mat2AXIvideo  |        0|      0|   87|  342|
+    |rozmycie_U0      |rozmycie      |        2|      5|  465|  541|
+    +-----------------+--------------+---------+-------+-----+-----+
+    |Total            |              |        2|      5|  678| 1321|
+    +-----------------+--------------+---------+-------+-----+-----+
 
     * DSP48: 
     N/A
@@ -120,48 +119,34 @@
 == Interface
 ================================================================
 * Summary: 
-+---------------------+-----+-----+------------+--------------+--------------+
-|      RTL Ports      | Dir | Bits|  Protocol  | Source Object|    C Type    |
-+---------------------+-----+-----+------------+--------------+--------------+
-|s_axi_bun_1_AWVALID  |  in |    1|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_AWREADY  | out |    1|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_AWADDR   |  in |    4|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_WVALID   |  in |    1|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_WREADY   | out |    1|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_WDATA    |  in |   32|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_WSTRB    |  in |    4|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_ARVALID  |  in |    1|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_ARREADY  | out |    1|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_ARADDR   |  in |    4|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_RVALID   | out |    1|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_RREADY   |  in |    1|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_RDATA    | out |   32|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_RRESP    | out |    2|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_BVALID   | out |    1|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_BREADY   |  in |    1|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_BRESP    | out |    2|    s_axi   |     bun_1    |  return void |
-|ap_clk               |  in |    1| ap_ctrl_hs |  filtr_Gauss | return value |
-|ap_rst_n             |  in |    1| ap_ctrl_hs |  filtr_Gauss | return value |
-|interrupt            | out |    1| ap_ctrl_hs |  filtr_Gauss | return value |
-|in_r_TDATA           |  in |    8|    axis    |  in_V_data_V |    pointer   |
-|in_r_TKEEP           |  in |    1|    axis    |  in_V_keep_V |    pointer   |
-|in_r_TSTRB           |  in |    1|    axis    |  in_V_strb_V |    pointer   |
-|in_r_TUSER           |  in |    1|    axis    |  in_V_user_V |    pointer   |
-|in_r_TLAST           |  in |    1|    axis    |  in_V_last_V |    pointer   |
-|in_r_TID             |  in |    1|    axis    |   in_V_id_V  |    pointer   |
-|in_r_TDEST           |  in |    1|    axis    |  in_V_dest_V |    pointer   |
-|in_r_TVALID          |  in |    1|    axis    |  in_V_dest_V |    pointer   |
-|in_r_TREADY          | out |    1|    axis    |  in_V_dest_V |    pointer   |
-|out_r_TDATA          | out |    8|    axis    | out_V_data_V |    pointer   |
-|out_r_TKEEP          | out |    1|    axis    | out_V_keep_V |    pointer   |
-|out_r_TSTRB          | out |    1|    axis    | out_V_strb_V |    pointer   |
-|out_r_TUSER          | out |    1|    axis    | out_V_user_V |    pointer   |
-|out_r_TLAST          | out |    1|    axis    | out_V_last_V |    pointer   |
-|out_r_TID            | out |    1|    axis    |  out_V_id_V  |    pointer   |
-|out_r_TDEST          | out |    1|    axis    | out_V_dest_V |    pointer   |
-|out_r_TVALID         | out |    1|    axis    | out_V_dest_V |    pointer   |
-|out_r_TREADY         |  in |    1|    axis    | out_V_dest_V |    pointer   |
-+---------------------+-----+-----+------------+--------------+--------------+
++--------------+-----+-----+------------+--------------+--------------+
+|   RTL Ports  | Dir | Bits|  Protocol  | Source Object|    C Type    |
++--------------+-----+-----+------------+--------------+--------------+
+|in_r_TDATA    |  in |    8|    axis    |  in_V_data_V |    pointer   |
+|in_r_TKEEP    |  in |    1|    axis    |  in_V_keep_V |    pointer   |
+|in_r_TSTRB    |  in |    1|    axis    |  in_V_strb_V |    pointer   |
+|in_r_TUSER    |  in |    1|    axis    |  in_V_user_V |    pointer   |
+|in_r_TLAST    |  in |    1|    axis    |  in_V_last_V |    pointer   |
+|in_r_TID      |  in |    1|    axis    |   in_V_id_V  |    pointer   |
+|in_r_TDEST    |  in |    1|    axis    |  in_V_dest_V |    pointer   |
+|in_r_TVALID   |  in |    1|    axis    |  in_V_dest_V |    pointer   |
+|in_r_TREADY   | out |    1|    axis    |  in_V_dest_V |    pointer   |
+|out_r_TDATA   | out |    8|    axis    | out_V_data_V |    pointer   |
+|out_r_TKEEP   | out |    1|    axis    | out_V_keep_V |    pointer   |
+|out_r_TSTRB   | out |    1|    axis    | out_V_strb_V |    pointer   |
+|out_r_TUSER   | out |    1|    axis    | out_V_user_V |    pointer   |
+|out_r_TLAST   | out |    1|    axis    | out_V_last_V |    pointer   |
+|out_r_TID     | out |    1|    axis    |  out_V_id_V  |    pointer   |
+|out_r_TDEST   | out |    1|    axis    | out_V_dest_V |    pointer   |
+|out_r_TVALID  | out |    1|    axis    | out_V_dest_V |    pointer   |
+|out_r_TREADY  |  in |    1|    axis    | out_V_dest_V |    pointer   |
+|ap_clk        |  in |    1| ap_ctrl_hs |  filtr_Gauss | return value |
+|ap_rst_n      |  in |    1| ap_ctrl_hs |  filtr_Gauss | return value |
+|ap_start      |  in |    1| ap_ctrl_hs |  filtr_Gauss | return value |
+|ap_done       | out |    1| ap_ctrl_hs |  filtr_Gauss | return value |
+|ap_ready      | out |    1| ap_ctrl_hs |  filtr_Gauss | return value |
+|ap_idle       | out |    1| ap_ctrl_hs |  filtr_Gauss | return value |
++--------------+-----+-----+------------+--------------+--------------+
 
 ============================================================
 + Verbose Summary: Synthesis Manager
@@ -236,7 +221,7 @@ State 7 <SV = 6> <Delay = 0.00>
 ST_7 : Operation 16 [1/2] (0.00ns)   --->   "call fastcc void @Mat2AXIvideo(i8* %instance_out_data_st, i8* %out_V_data_V, i1* %out_V_keep_V, i1* %out_V_strb_V, i1* %out_V_user_V, i1* %out_V_last_V, i1* %out_V_id_V, i1* %out_V_dest_V)" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:94]   --->   Operation 16 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 8 <SV = 7> <Delay = 0.00>
-ST_8 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str2) nounwind" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:84]   --->   Operation 17 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str2) nounwind" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:85]   --->   Operation 17 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %in_V_data_V), !map !182"   --->   Operation 18 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %in_V_keep_V), !map !186"   --->   Operation 19 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %in_V_strb_V), !map !190"   --->   Operation 20 'specbitsmap' <Predicate = true> <Delay = 0.00>
@@ -256,10 +241,9 @@ ST_8 : Operation 33 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_
 ST_8 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %instance_in_data_str, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 34 'specinterface' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 35 [1/1] (0.00ns)   --->   "%empty_13 = call i32 (...)* @_ssdm_op_SpecChannel([30 x i8]* @instance_out_OC_data, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i8* %instance_out_data_st, i8* %instance_out_data_st)"   --->   Operation 35 'specchannel' 'empty_13' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 36 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %instance_out_data_st, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 36 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 37 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %out_V_data_V, i1* %out_V_keep_V, i1* %out_V_strb_V, i1* %out_V_user_V, i1* %out_V_last_V, i1* %out_V_id_V, i1* %out_V_dest_V, [5 x i8]* @p_str7, i32 1, i32 1, [5 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:85]   --->   Operation 37 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 38 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %in_V_data_V, i1* %in_V_keep_V, i1* %in_V_strb_V, i1* %in_V_user_V, i1* %in_V_last_V, i1* %in_V_id_V, i1* %in_V_dest_V, [5 x i8]* @p_str7, i32 1, i32 1, [5 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:86]   --->   Operation 38 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 39 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str9, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [6 x i8]* @p_str10, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:87]   --->   Operation 39 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 40 [1/1] (0.00ns)   --->   "ret void" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:95]   --->   Operation 40 'ret' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 37 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %out_V_data_V, i1* %out_V_keep_V, i1* %out_V_strb_V, i1* %out_V_user_V, i1* %out_V_last_V, i1* %out_V_id_V, i1* %out_V_dest_V, [5 x i8]* @p_str7, i32 1, i32 1, [5 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:86]   --->   Operation 37 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 38 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %in_V_data_V, i1* %in_V_keep_V, i1* %in_V_strb_V, i1* %in_V_user_V, i1* %in_V_last_V, i1* %in_V_id_V, i1* %in_V_dest_V, [5 x i8]* @p_str7, i32 1, i32 1, [5 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:87]   --->   Operation 38 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 39 [1/1] (0.00ns)   --->   "ret void" [Rozmycie_Gaussa/.settings/filtrGauss.cpp:95]   --->   Operation 39 'ret' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -320,8 +304,7 @@ empty_13             (specchannel         ) [ 000000000]
 StgValue_36          (specinterface       ) [ 000000000]
 StgValue_37          (specinterface       ) [ 000000000]
 StgValue_38          (specinterface       ) [ 000000000]
-StgValue_39          (specinterface       ) [ 000000000]
-StgValue_40          (ret                 ) [ 000000000]
+StgValue_39          (ret                 ) [ 000000000]
 </LifeTime>
 
 <model>
@@ -651,28 +634,10 @@ StgValue_40          (ret                 ) [ 000000000]
 </bind>
 </comp>
 
-<comp id="72" class="1001" name="const_72">
+<comp id="72" class="1004" name="instance_in_data_str_fu_72">
 <pin_list>
-<pin id="73" dir="1" index="0" bw="1" slack="2147483647"/>
-</pin_list>
-<bind>
-<StgValue><ssdm name="p_str9"/></StgValue>
-</bind>
-</comp>
-
-<comp id="74" class="1001" name="const_74">
-<pin_list>
-<pin id="75" dir="1" index="0" bw="1" slack="2147483647"/>
-</pin_list>
-<bind>
-<StgValue><ssdm name="p_str10"/></StgValue>
-</bind>
-</comp>
-
-<comp id="76" class="1004" name="instance_in_data_str_fu_76">
-<pin_list>
-<pin id="77" dir="0" index="0" bw="1" slack="0"/>
-<pin id="78" dir="1" index="1" bw="8" slack="1"/>
+<pin id="73" dir="0" index="0" bw="1" slack="0"/>
+<pin id="74" dir="1" index="1" bw="8" slack="1"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -680,10 +645,10 @@ StgValue_40          (ret                 ) [ 000000000]
 </bind>
 </comp>
 
-<comp id="80" class="1004" name="instance_out_data_st_fu_80">
+<comp id="76" class="1004" name="instance_out_data_st_fu_76">
 <pin_list>
-<pin id="81" dir="0" index="0" bw="1" slack="0"/>
-<pin id="82" dir="1" index="1" bw="8" slack="3"/>
+<pin id="77" dir="0" index="0" bw="1" slack="0"/>
+<pin id="78" dir="1" index="1" bw="8" slack="3"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -691,12 +656,12 @@ StgValue_40          (ret                 ) [ 000000000]
 </bind>
 </comp>
 
-<comp id="84" class="1004" name="grp_rozmycie_fu_84">
+<comp id="80" class="1004" name="grp_rozmycie_fu_80">
 <pin_list>
-<pin id="85" dir="0" index="0" bw="0" slack="0"/>
-<pin id="86" dir="0" index="1" bw="8" slack="3"/>
-<pin id="87" dir="0" index="2" bw="8" slack="3"/>
-<pin id="88" dir="1" index="3" bw="0" slack="2147483647"/>
+<pin id="81" dir="0" index="0" bw="0" slack="0"/>
+<pin id="82" dir="0" index="1" bw="8" slack="3"/>
+<pin id="83" dir="0" index="2" bw="8" slack="3"/>
+<pin id="84" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -704,18 +669,18 @@ StgValue_40          (ret                 ) [ 000000000]
 </bind>
 </comp>
 
-<comp id="90" class="1004" name="grp_AXIvideo2Mat_fu_90">
+<comp id="86" class="1004" name="grp_AXIvideo2Mat_fu_86">
 <pin_list>
-<pin id="91" dir="0" index="0" bw="0" slack="0"/>
-<pin id="92" dir="0" index="1" bw="8" slack="0"/>
-<pin id="93" dir="0" index="2" bw="1" slack="0"/>
-<pin id="94" dir="0" index="3" bw="1" slack="0"/>
-<pin id="95" dir="0" index="4" bw="1" slack="0"/>
-<pin id="96" dir="0" index="5" bw="1" slack="0"/>
-<pin id="97" dir="0" index="6" bw="1" slack="0"/>
-<pin id="98" dir="0" index="7" bw="1" slack="0"/>
-<pin id="99" dir="0" index="8" bw="8" slack="1"/>
-<pin id="100" dir="1" index="9" bw="0" slack="2147483647"/>
+<pin id="87" dir="0" index="0" bw="0" slack="0"/>
+<pin id="88" dir="0" index="1" bw="8" slack="0"/>
+<pin id="89" dir="0" index="2" bw="1" slack="0"/>
+<pin id="90" dir="0" index="3" bw="1" slack="0"/>
+<pin id="91" dir="0" index="4" bw="1" slack="0"/>
+<pin id="92" dir="0" index="5" bw="1" slack="0"/>
+<pin id="93" dir="0" index="6" bw="1" slack="0"/>
+<pin id="94" dir="0" index="7" bw="1" slack="0"/>
+<pin id="95" dir="0" index="8" bw="8" slack="1"/>
+<pin id="96" dir="1" index="9" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -723,18 +688,18 @@ StgValue_40          (ret                 ) [ 000000000]
 </bind>
 </comp>
 
-<comp id="109" class="1004" name="grp_Mat2AXIvideo_fu_109">
+<comp id="105" class="1004" name="grp_Mat2AXIvideo_fu_105">
 <pin_list>
-<pin id="110" dir="0" index="0" bw="0" slack="0"/>
-<pin id="111" dir="0" index="1" bw="8" slack="5"/>
-<pin id="112" dir="0" index="2" bw="8" slack="0"/>
-<pin id="113" dir="0" index="3" bw="1" slack="0"/>
-<pin id="114" dir="0" index="4" bw="1" slack="0"/>
-<pin id="115" dir="0" index="5" bw="1" slack="0"/>
-<pin id="116" dir="0" index="6" bw="1" slack="0"/>
-<pin id="117" dir="0" index="7" bw="1" slack="0"/>
-<pin id="118" dir="0" index="8" bw="1" slack="0"/>
-<pin id="119" dir="1" index="9" bw="0" slack="2147483647"/>
+<pin id="106" dir="0" index="0" bw="0" slack="0"/>
+<pin id="107" dir="0" index="1" bw="8" slack="5"/>
+<pin id="108" dir="0" index="2" bw="8" slack="0"/>
+<pin id="109" dir="0" index="3" bw="1" slack="0"/>
+<pin id="110" dir="0" index="4" bw="1" slack="0"/>
+<pin id="111" dir="0" index="5" bw="1" slack="0"/>
+<pin id="112" dir="0" index="6" bw="1" slack="0"/>
+<pin id="113" dir="0" index="7" bw="1" slack="0"/>
+<pin id="114" dir="0" index="8" bw="1" slack="0"/>
+<pin id="115" dir="1" index="9" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -742,20 +707,20 @@ StgValue_40          (ret                 ) [ 000000000]
 </bind>
 </comp>
 
-<comp id="128" class="1005" name="instance_in_data_str_reg_128">
+<comp id="124" class="1005" name="instance_in_data_str_reg_124">
 <pin_list>
-<pin id="129" dir="0" index="0" bw="8" slack="1"/>
-<pin id="130" dir="1" index="1" bw="8" slack="1"/>
+<pin id="125" dir="0" index="0" bw="8" slack="1"/>
+<pin id="126" dir="1" index="1" bw="8" slack="1"/>
 </pin_list>
 <bind>
 <opset="instance_in_data_str "/>
 </bind>
 </comp>
 
-<comp id="134" class="1005" name="instance_out_data_st_reg_134">
+<comp id="130" class="1005" name="instance_out_data_st_reg_130">
 <pin_list>
-<pin id="135" dir="0" index="0" bw="8" slack="3"/>
-<pin id="136" dir="1" index="1" bw="8" slack="3"/>
+<pin id="131" dir="0" index="0" bw="8" slack="3"/>
+<pin id="132" dir="1" index="1" bw="8" slack="3"/>
 </pin_list>
 <bind>
 <opset="instance_out_data_st "/>
@@ -765,55 +730,55 @@ StgValue_40          (ret                 ) [ 000000000]
 </comp_list>
 
 <net_list>
+<net id="75"><net_src comp="28" pin="0"/><net_sink comp="72" pin=0"/></net>
+
 <net id="79"><net_src comp="28" pin="0"/><net_sink comp="76" pin=0"/></net>
 
-<net id="83"><net_src comp="28" pin="0"/><net_sink comp="80" pin=0"/></net>
+<net id="85"><net_src comp="32" pin="0"/><net_sink comp="80" pin=0"/></net>
 
-<net id="89"><net_src comp="32" pin="0"/><net_sink comp="84" pin=0"/></net>
+<net id="97"><net_src comp="30" pin="0"/><net_sink comp="86" pin=0"/></net>
 
-<net id="101"><net_src comp="30" pin="0"/><net_sink comp="90" pin=0"/></net>
+<net id="98"><net_src comp="0" pin="0"/><net_sink comp="86" pin=1"/></net>
 
-<net id="102"><net_src comp="0" pin="0"/><net_sink comp="90" pin=1"/></net>
+<net id="99"><net_src comp="2" pin="0"/><net_sink comp="86" pin=2"/></net>
 
-<net id="103"><net_src comp="2" pin="0"/><net_sink comp="90" pin=2"/></net>
+<net id="100"><net_src comp="4" pin="0"/><net_sink comp="86" pin=3"/></net>
 
-<net id="104"><net_src comp="4" pin="0"/><net_sink comp="90" pin=3"/></net>
+<net id="101"><net_src comp="6" pin="0"/><net_sink comp="86" pin=4"/></net>
 
-<net id="105"><net_src comp="6" pin="0"/><net_sink comp="90" pin=4"/></net>
+<net id="102"><net_src comp="8" pin="0"/><net_sink comp="86" pin=5"/></net>
 
-<net id="106"><net_src comp="8" pin="0"/><net_sink comp="90" pin=5"/></net>
+<net id="103"><net_src comp="10" pin="0"/><net_sink comp="86" pin=6"/></net>
 
-<net id="107"><net_src comp="10" pin="0"/><net_sink comp="90" pin=6"/></net>
+<net id="104"><net_src comp="12" pin="0"/><net_sink comp="86" pin=7"/></net>
 
-<net id="108"><net_src comp="12" pin="0"/><net_sink comp="90" pin=7"/></net>
+<net id="116"><net_src comp="34" pin="0"/><net_sink comp="105" pin=0"/></net>
 
-<net id="120"><net_src comp="34" pin="0"/><net_sink comp="109" pin=0"/></net>
+<net id="117"><net_src comp="14" pin="0"/><net_sink comp="105" pin=2"/></net>
 
-<net id="121"><net_src comp="14" pin="0"/><net_sink comp="109" pin=2"/></net>
+<net id="118"><net_src comp="16" pin="0"/><net_sink comp="105" pin=3"/></net>
 
-<net id="122"><net_src comp="16" pin="0"/><net_sink comp="109" pin=3"/></net>
+<net id="119"><net_src comp="18" pin="0"/><net_sink comp="105" pin=4"/></net>
 
-<net id="123"><net_src comp="18" pin="0"/><net_sink comp="109" pin=4"/></net>
+<net id="120"><net_src comp="20" pin="0"/><net_sink comp="105" pin=5"/></net>
 
-<net id="124"><net_src comp="20" pin="0"/><net_sink comp="109" pin=5"/></net>
+<net id="121"><net_src comp="22" pin="0"/><net_sink comp="105" pin=6"/></net>
 
-<net id="125"><net_src comp="22" pin="0"/><net_sink comp="109" pin=6"/></net>
+<net id="122"><net_src comp="24" pin="0"/><net_sink comp="105" pin=7"/></net>
 
-<net id="126"><net_src comp="24" pin="0"/><net_sink comp="109" pin=7"/></net>
+<net id="123"><net_src comp="26" pin="0"/><net_sink comp="105" pin=8"/></net>
 
-<net id="127"><net_src comp="26" pin="0"/><net_sink comp="109" pin=8"/></net>
+<net id="127"><net_src comp="72" pin="1"/><net_sink comp="124" pin=0"/></net>
 
-<net id="131"><net_src comp="76" pin="1"/><net_sink comp="128" pin=0"/></net>
+<net id="128"><net_src comp="124" pin="1"/><net_sink comp="86" pin=8"/></net>
 
-<net id="132"><net_src comp="128" pin="1"/><net_sink comp="90" pin=8"/></net>
+<net id="129"><net_src comp="124" pin="1"/><net_sink comp="80" pin=1"/></net>
 
-<net id="133"><net_src comp="128" pin="1"/><net_sink comp="84" pin=1"/></net>
+<net id="133"><net_src comp="76" pin="1"/><net_sink comp="130" pin=0"/></net>
 
-<net id="137"><net_src comp="80" pin="1"/><net_sink comp="134" pin=0"/></net>
+<net id="134"><net_src comp="130" pin="1"/><net_sink comp="80" pin=2"/></net>
 
-<net id="138"><net_src comp="134" pin="1"/><net_sink comp="84" pin=2"/></net>
-
-<net id="139"><net_src comp="134" pin="1"/><net_sink comp="109" pin=1"/></net>
+<net id="135"><net_src comp="130" pin="1"/><net_sink comp="105" pin=1"/></net>
 
 </net_list>
 
@@ -856,9 +821,9 @@ StgValue_40          (ret                 ) [ 000000000]
 |----------|-------------------------|---------|---------|---------|---------|---------|
 | Operation|     Functional Unit     |   BRAM  |  DSP48E |  Delay  |    FF   |   LUT   |
 |----------|-------------------------|---------|---------|---------|---------|---------|
-|          |    grp_rozmycie_fu_84   |    2    |    5    |  3.538  |   258   |   308   |
-|   call   |  grp_AXIvideo2Mat_fu_90 |    0    |    0    |  1.769  |   102   |    64   |
-|          | grp_Mat2AXIvideo_fu_109 |    0    |    0    |  3.538  |    55   |    84   |
+|          |    grp_rozmycie_fu_80   |    2    |    5    |  3.538  |   258   |   308   |
+|   call   |  grp_AXIvideo2Mat_fu_86 |    0    |    0    |  1.769  |   102   |    64   |
+|          | grp_Mat2AXIvideo_fu_105 |    0    |    0    |  3.538  |    55   |    84   |
 |----------|-------------------------|---------|---------|---------|---------|---------|
 |   Total  |                         |    2    |    5    |  8.845  |   415   |   456   |
 |----------|-------------------------|---------|---------|---------|---------|---------|
@@ -870,8 +835,8 @@ N/A
 +----------------------------+--------+
 |                            |   FF   |
 +----------------------------+--------+
-|instance_in_data_str_reg_128|    8   |
-|instance_out_data_st_reg_134|    8   |
+|instance_in_data_str_reg_124|    8   |
+|instance_out_data_st_reg_130|    8   |
 +----------------------------+--------+
 |            Total           |   16   |
 +----------------------------+--------+

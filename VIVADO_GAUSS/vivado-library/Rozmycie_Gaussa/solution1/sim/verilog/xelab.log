@@ -47,10 +47,6 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_
 INFO: [VRFC 10-311] analyzing module Mat2AXIvideo
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/AESL_axi_s_in_r.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_axi_s_in_r
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/filtr_Gauss_bun_1_s_axi.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module filtr_Gauss_bun_1_s_axi
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/AESL_axi_slave_bun_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_axi_slave_bun_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
 Starting static elaboration
@@ -58,7 +54,6 @@ Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.filtr_Gauss_bun_1_s_axi
 Compiling module xil_defaultlib.AXIvideo2Mat
 Compiling module xil_defaultlib.rozmycie_buffer_val_0_ram
 Compiling module xil_defaultlib.rozmycie_buffer_val_0(DataWidth=...
@@ -81,7 +76,6 @@ Compiling module xil_defaultlib.fifo(DEPTH=921600)
 Compiling module xil_defaultlib.fifo(DEPTH=921600,WIDTH=1)
 Compiling module xil_defaultlib.AESL_axi_s_in_r
 Compiling module xil_defaultlib.AESL_axi_s_out_r
-Compiling module xil_defaultlib.AESL_axi_slave_bun_1
 Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
 Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
 Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...

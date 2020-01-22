@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="gauss.cpp" path="/home/lsriw/HLS/LisKonrad/GAUSS/src/gauss.cpp"/>
+    <originFiles name="gauss.hpp" path="/home/lsriw/HLS/LisKonrad/GAUSS/src/gauss.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="test_gauss.cpp" path="/home/lsriw/HLS/LisKonrad/GAUSS/test/test_gauss.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

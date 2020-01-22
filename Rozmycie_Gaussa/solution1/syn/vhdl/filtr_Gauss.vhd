@@ -10,30 +10,7 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
 entity filtr_Gauss is
-generic (
-    C_S_AXI_BUN_1_ADDR_WIDTH : INTEGER := 4;
-    C_S_AXI_BUN_1_DATA_WIDTH : INTEGER := 32 );
 port (
-    s_axi_bun_1_AWVALID : IN STD_LOGIC;
-    s_axi_bun_1_AWREADY : OUT STD_LOGIC;
-    s_axi_bun_1_AWADDR : IN STD_LOGIC_VECTOR (C_S_AXI_BUN_1_ADDR_WIDTH-1 downto 0);
-    s_axi_bun_1_WVALID : IN STD_LOGIC;
-    s_axi_bun_1_WREADY : OUT STD_LOGIC;
-    s_axi_bun_1_WDATA : IN STD_LOGIC_VECTOR (C_S_AXI_BUN_1_DATA_WIDTH-1 downto 0);
-    s_axi_bun_1_WSTRB : IN STD_LOGIC_VECTOR (C_S_AXI_BUN_1_DATA_WIDTH/8-1 downto 0);
-    s_axi_bun_1_ARVALID : IN STD_LOGIC;
-    s_axi_bun_1_ARREADY : OUT STD_LOGIC;
-    s_axi_bun_1_ARADDR : IN STD_LOGIC_VECTOR (C_S_AXI_BUN_1_ADDR_WIDTH-1 downto 0);
-    s_axi_bun_1_RVALID : OUT STD_LOGIC;
-    s_axi_bun_1_RREADY : IN STD_LOGIC;
-    s_axi_bun_1_RDATA : OUT STD_LOGIC_VECTOR (C_S_AXI_BUN_1_DATA_WIDTH-1 downto 0);
-    s_axi_bun_1_RRESP : OUT STD_LOGIC_VECTOR (1 downto 0);
-    s_axi_bun_1_BVALID : OUT STD_LOGIC;
-    s_axi_bun_1_BREADY : IN STD_LOGIC;
-    s_axi_bun_1_BRESP : OUT STD_LOGIC_VECTOR (1 downto 0);
-    ap_clk : IN STD_LOGIC;
-    ap_rst_n : IN STD_LOGIC;
-    interrupt : OUT STD_LOGIC;
     in_r_TDATA : IN STD_LOGIC_VECTOR (7 downto 0);
     in_r_TKEEP : IN STD_LOGIC_VECTOR (0 downto 0);
     in_r_TSTRB : IN STD_LOGIC_VECTOR (0 downto 0);
@@ -48,30 +25,29 @@ port (
     out_r_TLAST : OUT STD_LOGIC_VECTOR (0 downto 0);
     out_r_TID : OUT STD_LOGIC_VECTOR (0 downto 0);
     out_r_TDEST : OUT STD_LOGIC_VECTOR (0 downto 0);
+    ap_clk : IN STD_LOGIC;
+    ap_rst_n : IN STD_LOGIC;
     in_r_TVALID : IN STD_LOGIC;
     in_r_TREADY : OUT STD_LOGIC;
+    ap_start : IN STD_LOGIC;
     out_r_TVALID : OUT STD_LOGIC;
-    out_r_TREADY : IN STD_LOGIC );
+    out_r_TREADY : IN STD_LOGIC;
+    ap_done : OUT STD_LOGIC;
+    ap_ready : OUT STD_LOGIC;
+    ap_idle : OUT STD_LOGIC );
 end;
 
 
 architecture behav of filtr_Gauss is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "filtr_Gauss,hls_ip_2018_3,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=9.400000,HLS_SYN_LAT=927931,HLS_SYN_TPT=927929,HLS_SYN_MEM=2,HLS_SYN_DSP=5,HLS_SYN_FF=724,HLS_SYN_LUT=1403,HLS_VERSION=2018_3}";
-    constant C_S_AXI_DATA_WIDTH : INTEGER range 63 downto 0 := 20;
-    constant C_S_AXI_WSTRB_WIDTH : INTEGER range 63 downto 0 := 4;
-    constant C_S_AXI_ADDR_WIDTH : INTEGER range 63 downto 0 := 20;
-    constant ap_const_logic_1 : STD_LOGIC := '1';
+    "filtr_Gauss,hls_ip_2018_3,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=9.400000,HLS_SYN_LAT=927931,HLS_SYN_TPT=927929,HLS_SYN_MEM=2,HLS_SYN_DSP=5,HLS_SYN_FF=688,HLS_SYN_LUT=1363,HLS_VERSION=2018_3}";
     constant ap_const_lv8_0 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
     constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
+    constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
 
     signal ap_rst_n_inv : STD_LOGIC;
-    signal ap_start : STD_LOGIC;
-    signal ap_ready : STD_LOGIC;
-    signal ap_done : STD_LOGIC;
-    signal ap_idle : STD_LOGIC;
     signal AXIvideo2Mat_U0_ap_start : STD_LOGIC;
     signal AXIvideo2Mat_U0_ap_done : STD_LOGIC;
     signal AXIvideo2Mat_U0_ap_continue : STD_LOGIC;
@@ -243,72 +219,8 @@ architecture behav of filtr_Gauss is
     end component;
 
 
-    component filtr_Gauss_bun_1_s_axi IS
-    generic (
-        C_S_AXI_ADDR_WIDTH : INTEGER;
-        C_S_AXI_DATA_WIDTH : INTEGER );
-    port (
-        AWVALID : IN STD_LOGIC;
-        AWREADY : OUT STD_LOGIC;
-        AWADDR : IN STD_LOGIC_VECTOR (C_S_AXI_ADDR_WIDTH-1 downto 0);
-        WVALID : IN STD_LOGIC;
-        WREADY : OUT STD_LOGIC;
-        WDATA : IN STD_LOGIC_VECTOR (C_S_AXI_DATA_WIDTH-1 downto 0);
-        WSTRB : IN STD_LOGIC_VECTOR (C_S_AXI_DATA_WIDTH/8-1 downto 0);
-        ARVALID : IN STD_LOGIC;
-        ARREADY : OUT STD_LOGIC;
-        ARADDR : IN STD_LOGIC_VECTOR (C_S_AXI_ADDR_WIDTH-1 downto 0);
-        RVALID : OUT STD_LOGIC;
-        RREADY : IN STD_LOGIC;
-        RDATA : OUT STD_LOGIC_VECTOR (C_S_AXI_DATA_WIDTH-1 downto 0);
-        RRESP : OUT STD_LOGIC_VECTOR (1 downto 0);
-        BVALID : OUT STD_LOGIC;
-        BREADY : IN STD_LOGIC;
-        BRESP : OUT STD_LOGIC_VECTOR (1 downto 0);
-        ACLK : IN STD_LOGIC;
-        ARESET : IN STD_LOGIC;
-        ACLK_EN : IN STD_LOGIC;
-        ap_start : OUT STD_LOGIC;
-        interrupt : OUT STD_LOGIC;
-        ap_ready : IN STD_LOGIC;
-        ap_done : IN STD_LOGIC;
-        ap_idle : IN STD_LOGIC );
-    end component;
-
-
 
 begin
-    filtr_Gauss_bun_1_s_axi_U : component filtr_Gauss_bun_1_s_axi
-    generic map (
-        C_S_AXI_ADDR_WIDTH => C_S_AXI_BUN_1_ADDR_WIDTH,
-        C_S_AXI_DATA_WIDTH => C_S_AXI_BUN_1_DATA_WIDTH)
-    port map (
-        AWVALID => s_axi_bun_1_AWVALID,
-        AWREADY => s_axi_bun_1_AWREADY,
-        AWADDR => s_axi_bun_1_AWADDR,
-        WVALID => s_axi_bun_1_WVALID,
-        WREADY => s_axi_bun_1_WREADY,
-        WDATA => s_axi_bun_1_WDATA,
-        WSTRB => s_axi_bun_1_WSTRB,
-        ARVALID => s_axi_bun_1_ARVALID,
-        ARREADY => s_axi_bun_1_ARREADY,
-        ARADDR => s_axi_bun_1_ARADDR,
-        RVALID => s_axi_bun_1_RVALID,
-        RREADY => s_axi_bun_1_RREADY,
-        RDATA => s_axi_bun_1_RDATA,
-        RRESP => s_axi_bun_1_RRESP,
-        BVALID => s_axi_bun_1_BVALID,
-        BREADY => s_axi_bun_1_BREADY,
-        BRESP => s_axi_bun_1_BRESP,
-        ACLK => ap_clk,
-        ARESET => ap_rst_n_inv,
-        ACLK_EN => ap_const_logic_1,
-        ap_start => ap_start,
-        interrupt => interrupt,
-        ap_ready => ap_ready,
-        ap_done => ap_done,
-        ap_idle => ap_idle);
-
     AXIvideo2Mat_U0 : component AXIvideo2Mat
     port map (
         ap_clk => ap_clk,

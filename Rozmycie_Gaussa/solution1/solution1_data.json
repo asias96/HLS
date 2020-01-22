@@ -12,9 +12,10 @@
     "Package": "clg400",
     "Speed": "-1"
   },
-  "HlsSolution": {
-    
-  },
+  "HlsSolution": {"Config": [
+      "config_export -format=ip_catalog",
+      "config_export -rtl=verilog"
+    ]},
   "ClockInfo": {
     "ClockName": "ap_clk",
     "ClockPeriod": "10",
@@ -40,7 +41,6 @@
     "Vhdl": [
       "impl\/vhdl\/AXIvideo2Mat.vhd",
       "impl\/vhdl\/fifo_w8_d2_A.vhd",
-      "impl\/vhdl\/filtr_Gauss_bun_1_s_axi.vhd",
       "impl\/vhdl\/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1.vhd",
       "impl\/vhdl\/filtr_Gauss_mac_muladd_6ns_8ns_14ns_15_1_1.vhd",
       "impl\/vhdl\/filtr_Gauss_mac_muladd_7ns_8ns_14ns_15_1_1.vhd",
@@ -54,7 +54,6 @@
     "Verilog": [
       "impl\/verilog\/AXIvideo2Mat.v",
       "impl\/verilog\/fifo_w8_d2_A.v",
-      "impl\/verilog\/filtr_Gauss_bun_1_s_axi.v",
       "impl\/verilog\/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1.v",
       "impl\/verilog\/filtr_Gauss_mac_muladd_6ns_8ns_14ns_15_1_1.v",
       "impl\/verilog\/filtr_Gauss_mac_muladd_7ns_8ns_14ns_15_1_1.v",
@@ -64,16 +63,6 @@
       "impl\/verilog\/start_for_Mat2AXIvideo_U0.v",
       "impl\/verilog\/start_for_rozmycie_U0.v",
       "impl\/verilog\/filtr_Gauss.v"
-    ],
-    "SwDriver": [
-      "impl\/misc\/drivers\/filtr_Gauss_v1_0\/data\/filtr_Gauss.mdd",
-      "impl\/misc\/drivers\/filtr_Gauss_v1_0\/data\/filtr_Gauss.tcl",
-      "impl\/misc\/drivers\/filtr_Gauss_v1_0\/src\/Makefile",
-      "impl\/misc\/drivers\/filtr_Gauss_v1_0\/src\/xfiltr_gauss.c",
-      "impl\/misc\/drivers\/filtr_Gauss_v1_0\/src\/xfiltr_gauss.h",
-      "impl\/misc\/drivers\/filtr_Gauss_v1_0\/src\/xfiltr_gauss_hw.h",
-      "impl\/misc\/drivers\/filtr_Gauss_v1_0\/src\/xfiltr_gauss_linux.c",
-      "impl\/misc\/drivers\/filtr_Gauss_v1_0\/src\/xfiltr_gauss_sinit.c"
     ],
     "Misc": ["impl\/misc\/logo.png"],
     "DesignXml": "\/home\/lsriw\/HLS\/HLS\/Rozmycie_Gaussa\/solution1\/.autopilot\/db\/filtr_Gauss.design.xml"
@@ -87,8 +76,18 @@
     "ap_clk": {
       "type": "clock",
       "ctype": {"CLK": {"Type": "bool"}},
-      "buses": "s_axi_bun_1 in_r out_r",
+      "buses": "in_r out_r",
       "reset": "ap_rst_n"
+    },
+    "ap_ctrl": {
+      "type": "ap_ctrl",
+      "ctrl_ports": "ap_start ap_done ap_ready ap_idle",
+      "ctype": {
+        "start": {"Type": "bool"},
+        "done": {"Type": "bool"},
+        "ready": {"Type": "bool"},
+        "idle": {"Type": "bool"}
+      }
     },
     "ap_rst_n": {
       "type": "reset",
@@ -142,10 +141,6 @@
         "TUSER": "1"
       }
     },
-    "interrupt": {
-      "type": "interrupt",
-      "ctype": {"INTERRUPT": {"Type": "bool"}}
-    },
     "out_r": {
       "type": "axi4stream",
       "mode": "master",
@@ -192,305 +187,9 @@
         "TSTRB": "1",
         "TUSER": "1"
       }
-    },
-    "s_axi_bun_1": {
-      "type": "axi4lite",
-      "is_adaptor": "true",
-      "mode": "slave",
-      "port_prefix": "s_axi_bun_1",
-      "param_prefix": "C_S_AXI_BUN_1",
-      "addr_bits": "4",
-      "registers": [
-        {
-          "offset": "0x00",
-          "name": "CTRL",
-          "access": "RW",
-          "reset_value": "0x0",
-          "description": "Control signals",
-          "fields": [
-            {
-              "offset": "0",
-              "width": "1",
-              "name": "AP_START",
-              "access": "RW",
-              "reset_value": "0",
-              "description": "Control signal Register for 'ap_start'."
-            },
-            {
-              "offset": "1",
-              "width": "1",
-              "name": "AP_DONE",
-              "access": "R",
-              "reset_value": "0",
-              "description": "Control signal Register for 'ap_done'."
-            },
-            {
-              "offset": "2",
-              "width": "1",
-              "name": "AP_IDLE",
-              "access": "R",
-              "reset_value": "0",
-              "description": "Control signal Register for 'ap_idle'."
-            },
-            {
-              "offset": "3",
-              "width": "1",
-              "name": "AP_READY",
-              "access": "R",
-              "reset_value": "0",
-              "description": "Control signal Register for 'ap_ready'."
-            },
-            {
-              "offset": "4",
-              "width": "3",
-              "name": "RESERVED_1",
-              "access": "R",
-              "reset_value": "0",
-              "description": "Reserved.  0s on read."
-            },
-            {
-              "offset": "7",
-              "width": "1",
-              "name": "AUTO_RESTART",
-              "access": "RW",
-              "reset_value": "0",
-              "description": "Control signal Register for 'auto_restart'."
-            },
-            {
-              "offset": "8",
-              "width": "24",
-              "name": "RESERVED_2",
-              "access": "R",
-              "reset_value": "0",
-              "description": "Reserved.  0s on read."
-            }
-          ]
-        },
-        {
-          "offset": "0x04",
-          "name": "GIER",
-          "access": "RW",
-          "reset_value": "0x0",
-          "description": "Global Interrupt Enable Register",
-          "fields": [
-            {
-              "offset": "0",
-              "width": "1",
-              "name": "Enable",
-              "access": "RW",
-              "reset_value": "0",
-              "description": "Master enable for the device interrupt output to the system interrupt controller: 0 = Disabled, 1 = Enabled"
-            },
-            {
-              "offset": "1",
-              "width": "31",
-              "name": "RESERVED",
-              "access": "R",
-              "reset_value": "0",
-              "description": "Reserved.  0s on read."
-            }
-          ]
-        },
-        {
-          "offset": "0x08",
-          "name": "IP_IER",
-          "access": "RW",
-          "reset_value": "0x0",
-          "description": "IP Interrupt Enable Register",
-          "fields": [
-            {
-              "offset": "0",
-              "width": "1",
-              "name": "CHAN0_INT_EN",
-              "access": "RW",
-              "reset_value": "0",
-              "description": "Enable Channel 0 (ap_done) Interrupt.  0 = Disabled, 1 = Enabled."
-            },
-            {
-              "offset": "1",
-              "width": "1",
-              "name": "CHAN1_INT_EN",
-              "access": "RW",
-              "reset_value": "0",
-              "description": "Enable Channel 1 (ap_ready) Interrupt.  0 = Disabled, 1 = Enabled."
-            },
-            {
-              "offset": "2",
-              "width": "30",
-              "name": "RESERVED",
-              "access": "R",
-              "reset_value": "0",
-              "description": "Reserved.  0s on read."
-            }
-          ]
-        },
-        {
-          "offset": "0x0c",
-          "name": "IP_ISR",
-          "access": "RW",
-          "reset_value": "0x0",
-          "description": "IP Interrupt Status Register",
-          "fields": [
-            {
-              "offset": "0",
-              "width": "1",
-              "name": "CHAN0_INT_ST",
-              "access": "RTOW",
-              "reset_value": "0",
-              "description": "Channel 0 (ap_done) Interrupt Status. 0 = No Channel 0 input interrupt, 1 = Channel 0 input interrup"
-            },
-            {
-              "offset": "1",
-              "width": "1",
-              "name": "CHAN1_INT_ST",
-              "access": "RTOW",
-              "reset_value": "0",
-              "description": "Channel 1 (ap_ready) Interrupt Status. 0 = No Channel 1 input interrupt, 1 = Channel 1 input interrup"
-            },
-            {
-              "offset": "2",
-              "width": "30",
-              "name": "RESERVED",
-              "access": "R",
-              "reset_value": "0",
-              "description": "Reserved.  0s on read."
-            }
-          ]
-        }
-      ],
-      "memories": "",
-      "ctype": {
-        "AWVALID": {"Type": "bool"},
-        "AWREADY": {"Type": "bool"},
-        "WVALID": {"Type": "bool"},
-        "WREADY": {"Type": "bool"},
-        "BVALID": {"Type": "bool"},
-        "BREADY": {"Type": "bool"},
-        "BRESP": {
-          "Type": "integer unsigned",
-          "Width": "2"
-        },
-        "ARVALID": {"Type": "bool"},
-        "ARREADY": {"Type": "bool"},
-        "RVALID": {"Type": "bool"},
-        "RREADY": {"Type": "bool"},
-        "RRESP": {
-          "Type": "integer unsigned",
-          "Width": "2"
-        },
-        "AWADDR": {
-          "Type": "integer unsigned",
-          "Width": "4"
-        },
-        "WDATA": {
-          "Type": "null",
-          "Width": "32"
-        },
-        "WSTRB": {
-          "Type": "integer unsigned",
-          "Width": "4"
-        },
-        "ARADDR": {
-          "Type": "integer unsigned",
-          "Width": "4"
-        },
-        "RDATA": {
-          "Type": "null",
-          "Width": "32"
-        }
-      },
-      "data_width": "32",
-      "port_width": {
-        "ARADDR": "4",
-        "AWADDR": "4",
-        "RDATA": "32",
-        "WDATA": "32",
-        "WSTRB": "4"
-      }
     }
   },
   "RtlPorts": {
-    "s_axi_bun_1_AWVALID": {
-      "dir": "in",
-      "width": "1"
-    },
-    "s_axi_bun_1_AWREADY": {
-      "dir": "out",
-      "width": "1"
-    },
-    "s_axi_bun_1_AWADDR": {
-      "dir": "in",
-      "width": "4"
-    },
-    "s_axi_bun_1_WVALID": {
-      "dir": "in",
-      "width": "1"
-    },
-    "s_axi_bun_1_WREADY": {
-      "dir": "out",
-      "width": "1"
-    },
-    "s_axi_bun_1_WDATA": {
-      "dir": "in",
-      "width": "32"
-    },
-    "s_axi_bun_1_WSTRB": {
-      "dir": "in",
-      "width": "4"
-    },
-    "s_axi_bun_1_ARVALID": {
-      "dir": "in",
-      "width": "1"
-    },
-    "s_axi_bun_1_ARREADY": {
-      "dir": "out",
-      "width": "1"
-    },
-    "s_axi_bun_1_ARADDR": {
-      "dir": "in",
-      "width": "4"
-    },
-    "s_axi_bun_1_RVALID": {
-      "dir": "out",
-      "width": "1"
-    },
-    "s_axi_bun_1_RREADY": {
-      "dir": "in",
-      "width": "1"
-    },
-    "s_axi_bun_1_RDATA": {
-      "dir": "out",
-      "width": "32"
-    },
-    "s_axi_bun_1_RRESP": {
-      "dir": "out",
-      "width": "2"
-    },
-    "s_axi_bun_1_BVALID": {
-      "dir": "out",
-      "width": "1"
-    },
-    "s_axi_bun_1_BREADY": {
-      "dir": "in",
-      "width": "1"
-    },
-    "s_axi_bun_1_BRESP": {
-      "dir": "out",
-      "width": "2"
-    },
-    "ap_clk": {
-      "dir": "in",
-      "width": "1"
-    },
-    "ap_rst_n": {
-      "dir": "in",
-      "width": "1"
-    },
-    "interrupt": {
-      "dir": "out",
-      "width": "1",
-      "isVector": "true"
-    },
     "in_r_TDATA": {
       "dir": "in",
       "width": "8"
@@ -574,14 +273,33 @@
     "out_r_TREADY": {
       "dir": "in",
       "width": "1"
+    },
+    "ap_clk": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_rst_n": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_start": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_done": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_ready": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_idle": {
+      "dir": "out",
+      "width": "1"
     }
   },
   "CPorts": {
-    "ap_ctrl": {
-      "interfaceRef": "s_axi_bun_1",
-      "dir": "in",
-      "offset": "0"
-    },
     "in_V_data_V": {
       "interfaceRef": "in_r",
       "dir": "in"
@@ -644,6 +362,10 @@
       "interfaceRef": "out_r",
       "dir": "out",
       "firstOutLatency": "3"
+    },
+    "ap_ctrl": {
+      "interfaceRef": "ap_ctrl",
+      "dir": "out"
     }
   },
   "ModuleInfo": {
@@ -805,8 +527,8 @@
         "Area": {
           "BRAM_18K": "2",
           "DSP48E": "5",
-          "FF": "724",
-          "LUT": "1403"
+          "FF": "688",
+          "LUT": "1363"
         }
       }
     }
@@ -821,7 +543,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2020-01-15 10:46:58 CET",
+    "Time": "2020-01-22 10:55:51 CET",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

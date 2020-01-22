@@ -6,7 +6,7 @@
 <Project Version="7" Minor="39" Path="/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/verilog/project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="2a754b0c70bc44289bb535c7d71deb0a"/>
+    <Option Name="Id" Val="82dc75db07d1458a8b8142b4044e4e53"/>
     <Option Name="Part" Val="xc7z010clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -105,13 +105,6 @@
         </FileInfo>
       </File>
       <File Path="$PPRDIR/sim_tbs/AESL_axi_s_out_r.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/sim_tbs/AESL_axi_slave_bun_1.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

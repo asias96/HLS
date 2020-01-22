@@ -4,6 +4,7 @@
 static wsp_Gauss coeff_tab[SIZE][SIZE];
 
 static void init_wsp(wsp_Gauss coeff[SIZE][SIZE]){
+#pragma HLS ARRAY_PARTITION variable=coeff_tab complete dim=1
 
 	float coeff_float[SIZE][SIZE];
 	float sum = 0;
@@ -84,7 +85,6 @@ void filtr_Gauss (dane& in, dane& out){
 #pragma HLS DATAFLOW
 #pragma HLS INTERFACE axis register both port=out
 #pragma HLS INTERFACE axis register both port=in
-#pragma HLS INTERFACE s_axilite port=return bundle=bun_1
 
 	img_gray instance_in;
 	img_gray instance_out;

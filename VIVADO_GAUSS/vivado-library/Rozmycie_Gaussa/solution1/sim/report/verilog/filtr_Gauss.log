@@ -62,10 +62,6 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_
 INFO: [VRFC 10-311] analyzing module Mat2AXIvideo
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/AESL_axi_s_in_r.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_axi_s_in_r
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/filtr_Gauss_bun_1_s_axi.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module filtr_Gauss_bun_1_s_axi
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/AESL_axi_slave_bun_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_axi_slave_bun_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
 Starting static elaboration
@@ -73,7 +69,6 @@ Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.filtr_Gauss_bun_1_s_axi
 Compiling module xil_defaultlib.AXIvideo2Mat
 Compiling module xil_defaultlib.rozmycie_buffer_val_0_ram
 Compiling module xil_defaultlib.rozmycie_buffer_val_0(DataWidth=...
@@ -96,7 +91,6 @@ Compiling module xil_defaultlib.fifo(DEPTH=921600)
 Compiling module xil_defaultlib.fifo(DEPTH=921600,WIDTH=1)
 Compiling module xil_defaultlib.AESL_axi_s_in_r
 Compiling module xil_defaultlib.AESL_axi_s_out_r
-Compiling module xil_defaultlib.AESL_axi_slave_bun_1
 Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
 Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
 Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
@@ -112,8 +106,8 @@ Built simulation snapshot filtr_Gauss
     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 
 source /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/xsim.dir/filtr_Gauss/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] '/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/xsim.dir/filtr_Gauss/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jan 15 10:52:08 2020. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Wed Jan 15 10:52:08 2020...
+INFO: [Common 17-186] '/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/xsim.dir/filtr_Gauss/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jan 22 10:58:28 2020. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Jan 22 10:58:28 2020...
 
 ****** xsim v2018.3 (64-bit)
   **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
@@ -133,12 +127,12 @@ source filtr_Gauss.tcl
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [0.00%] @ "125000"
-// RTL Simulation : 1 / 1 [100.00%] @ "9279605000"
+// RTL Simulation : 1 / 1 [100.00%] @ "9279475000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 9279645 ns : File "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/filtr_Gauss.autotb.v" Line 463
-run: Time (s): cpu = 00:00:00.02 ; elapsed = 00:01:22 . Memory (MB): peak = 1335.379 ; gain = 0.000 ; free physical = 6818 ; free virtual = 12856
+$finish called at time : 9279515 ns : File "/home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/sim/verilog/filtr_Gauss.autotb.v" Line 360
+run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:01:18 . Memory (MB): peak = 1335.379 ; gain = 0.000 ; free physical = 5554 ; free virtual = 11814
 ## quit
-INFO: [Common 17-206] Exiting xsim at Wed Jan 15 10:53:40 2020...
+INFO: [Common 17-206] Exiting xsim at Wed Jan 22 10:59:55 2020...
 Obrazki inne.
 INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***
 INFO: [COSIM-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.

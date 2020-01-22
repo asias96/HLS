@@ -2,8 +2,8 @@
 <Messages>
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_631" tag="SCHEDULE" content="Option &apos;relax_ii_for_timing&apos; is enabled, will increase II to preserve clock frequency constraints."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;Rozmycie_Gaussa/.settings/filtrGauss.cpp&apos; ..."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 446.191 ; gain = 0.191 ; free physical = 7893 ; free virtual = 12982"/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 446.191 ; gain = 0.191 ; free physical = 7893 ; free virtual = 12982"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 446.191 ; gain = 0.191 ; free physical = 6721 ; free virtual = 12557"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 446.191 ; gain = 0.191 ; free physical = 6721 ; free virtual = 12557"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1467" tag="" content="Starting code transformations ..."/>
 	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1&apos; (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:701) in function &apos;hls::Mat&lt;720, 1280, 0&gt;::write(hls::Scalar&lt;1, unsigned char&gt;)&apos; completely with a factor of 1."/>
 	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1&apos; (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:677) in function &apos;hls::Mat&lt;720, 1280, 0&gt;::read()&apos; completely with a factor of 1."/>
@@ -12,51 +12,51 @@
 	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::AXIGetBitFields&lt;8, unsigned char&gt;&apos; into &apos;hls::AXIvideo2Mat&lt;8, 720, 1280, 0&gt;&apos; (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:92)."/>
 	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::Mat&lt;720, 1280, 0&gt;::write&apos; into &apos;hls::Mat&lt;720, 1280, 0&gt;::operator&lt;&lt;&apos; (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717)."/>
 	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::Mat&lt;720, 1280, 0&gt;::operator&lt;&lt;&apos; into &apos;hls::AXIvideo2Mat&lt;8, 720, 1280, 0&gt;&apos; (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:94)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::Mat&lt;720, 1280, 0&gt;::operator&lt;&lt;&apos; into &apos;rozmycie&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:66)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::Mat&lt;720, 1280, 0&gt;::operator&lt;&lt;&apos; into &apos;rozmycie&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:67)."/>
 	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::LineBuffer&lt;3, 1280, unsigned char, 0&gt;::shift_pixels_down&apos; into &apos;hls::LineBuffer&lt;3, 1280, unsigned char, 0&gt;::shift_down&apos; (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:853)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::LineBuffer&lt;3, 1280, unsigned char, 0&gt;::shift_down&apos; into &apos;rozmycie&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:44)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::LineBuffer&lt;3, 1280, unsigned char, 0&gt;::shift_down&apos; into &apos;rozmycie&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:45)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::LineBuffer&lt;3, 1280, unsigned char, 0&gt;::getval&apos; into &apos;rozmycie&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:47)."/>
 	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::LineBuffer&lt;3, 1280, unsigned char, 0&gt;::getval&apos; into &apos;rozmycie&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:46)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::LineBuffer&lt;3, 1280, unsigned char, 0&gt;::getval&apos; into &apos;rozmycie&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:45)."/>
 	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::Mat&lt;720, 1280, 0&gt;::read&apos; into &apos;hls::Mat&lt;720, 1280, 0&gt;::operator&gt;&gt;&apos; (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711)."/>
 	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::Mat&lt;720, 1280, 0&gt;::operator&gt;&gt;&apos; into &apos;hls::Mat2AXIvideo&lt;8, 720, 1280, 0&gt;&apos; (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:140)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::Mat&lt;720, 1280, 0&gt;::operator&gt;&gt;&apos; into &apos;rozmycie&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:48)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::LineBuffer&lt;3, 1280, unsigned char, 0&gt;::insert_top_row&apos; into &apos;rozmycie&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:49)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::Mat&lt;720, 1280, 0&gt;::operator&gt;&gt;&apos; into &apos;rozmycie&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:49)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::LineBuffer&lt;3, 1280, unsigned char, 0&gt;::insert_top_row&apos; into &apos;rozmycie&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:50)."/>
 	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::Window&lt;3, 3, unsigned char&gt;::shift_pixels_right&apos; into &apos;hls::Window&lt;3, 3, unsigned char&gt;::shift_right&apos; (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:543)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::Window&lt;3, 3, unsigned char&gt;::shift_right&apos; into &apos;rozmycie&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:52)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::Window&lt;3, 3, unsigned char&gt;::shift_right&apos; into &apos;rozmycie&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:53)."/>
 	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::Window&lt;3, 3, unsigned char&gt;::insert_pixel&apos; into &apos;hls::Window&lt;3, 3, unsigned char&gt;::insert&apos; (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:573)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::Window&lt;3, 3, unsigned char&gt;::insert&apos; into &apos;rozmycie&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:54)."/>
 	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::Window&lt;3, 3, unsigned char&gt;::insert&apos; into &apos;rozmycie&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:55)."/>
 	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::Window&lt;3, 3, unsigned char&gt;::insert&apos; into &apos;rozmycie&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:56)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::Window&lt;3, 3, unsigned char&gt;::getval&apos; into &apos;operator_Gauss&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:77)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::Window&lt;3, 3, unsigned char&gt;::insert&apos; into &apos;rozmycie&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:57)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::Window&lt;3, 3, unsigned char&gt;::getval&apos; into &apos;operator_Gauss&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:78)."/>
 	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::AXISetBitFields&lt;8, unsigned char&gt;.1&apos; into &apos;hls::AXISetBitFields&lt;8, unsigned char&gt;&apos; (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_axi_io.h:100)."/>
 	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::AXISetBitFields&lt;8, unsigned char&gt;&apos; into &apos;hls::Mat2AXIvideo&lt;8, 720, 1280, 0&gt;&apos; (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:143)."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 576.160 ; gain = 130.160 ; free physical = 7839 ; free virtual = 12938"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 576.160 ; gain = 130.160 ; free physical = 6664 ; free virtual = 12510"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1472" tag="" content="Checking synthesizability ..."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 638.000 ; gain = 192.000 ; free physical = 7801 ; free virtual = 12906"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 638.000 ; gain = 192.000 ; free physical = 6627 ; free virtual = 12478"/>
 	<Message severity="WARNING" prefix="[XFORM 203-1103]" key="XFORM_DATA_PACK_INVALID_346" tag="" content="Ignored data pack directive on non-struct variable &apos;instance_out.data_stream.V&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:90)."/>
 	<Message severity="WARNING" prefix="[XFORM 203-1103]" key="XFORM_DATA_PACK_INVALID_346" tag="" content="Ignored data pack directive on non-struct variable &apos;instance_in.data_stream.V&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:89)."/>
-	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;IN_LOOP&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:35) in function &apos;rozmycie&apos; for pipelining."/>
-	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_250" tag="" content="Unrolling all loops for pipelining in function &apos;operator_Gauss&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:71)."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;IN_LOOP&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:36) in function &apos;rozmycie&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_250" tag="" content="Unrolling all loops for pipelining in function &apos;operator_Gauss&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:72)."/>
 	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.1&apos; (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:687) in function &apos;rozmycie&apos; completely with a factor of 2."/>
 	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.2&apos; (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:161) in function &apos;rozmycie&apos; completely with a factor of 3."/>
 	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.2.1&apos; (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:163) in function &apos;rozmycie&apos; completely with a factor of 2."/>
-	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;OUT_LOOP_OPERATOR&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:75) in function &apos;operator_Gauss&apos; completely with a factor of 3."/>
-	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;IN_LOOP_OPERATOR&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:76) in function &apos;operator_Gauss&apos; completely with a factor of 3."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;OUT_LOOP_OPERATOR&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:76) in function &apos;operator_Gauss&apos; completely with a factor of 3."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;IN_LOOP_OPERATOR&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:77) in function &apos;operator_Gauss&apos; completely with a factor of 3."/>
 	<Message severity="INFO" prefix="[XFORM 203-102]" key="XFORM_AUTO_PARTITION_STATUS_112" tag="" content="Automatically partitioning streamed array &apos;instance_in.data_stream.V&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:89) ."/>
 	<Message severity="INFO" prefix="[XFORM 203-102]" key="XFORM_AUTO_PARTITION_STATUS_112" tag="" content="Automatically partitioning streamed array &apos;instance_out.data_stream.V&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:90) ."/>
 	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;coeff_tab.V&apos;  in dimension 1 completely."/>
-	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;okno.val&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:30) in dimension 1 completely."/>
-	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;buffer.val&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:31) in dimension 1 completely."/>
-	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;new_pixel.val&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:41) in dimension 1 completely."/>
-	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;value.val&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:41) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;okno.val&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:31) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;buffer.val&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:32) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;new_pixel.val&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:42) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;value.val&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:42) in dimension 1 completely."/>
 	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;scl.val&apos; (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely."/>
 	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;pix.val&apos; (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:115) in dimension 1 completely."/>
 	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;scl.val&apos; (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely."/>
 	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;pix.val&apos; (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:56) in dimension 1 completely."/>
 	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;instance_in.data_stream.V&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:89) in dimension 1 completely."/>
 	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;instance_out.data_stream.V&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:90) in dimension 1 completely."/>
-	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;okno.val&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:30) in dimension 2 completely."/>
-	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;operator_Gauss&apos; into &apos;rozmycie&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:61) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;okno.val&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:31) in dimension 2 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;operator_Gauss&apos; into &apos;rozmycie&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:62) automatically."/>
 	<Message severity="WARNING" prefix="[XFORM 203-561]" key="XFORM_LOOPBOUND_INVALID_405" tag="" content="Updating loop lower bound from 0 to 1280 for loop &apos;loop_width&apos; in function &apos;hls::Mat2AXIvideo&lt;8, 720, 1280, 0&gt;&apos;."/>
 	<Message severity="WARNING" prefix="[XFORM 203-561]" key="XFORM_LOOPBOUND_INVALID_405" tag="" content="Updating loop lower bound from 0 to 720 for loop &apos;loop_height&apos; in function &apos;hls::Mat2AXIvideo&lt;8, 720, 1280, 0&gt;&apos;."/>
 	<Message severity="WARNING" prefix="[XFORM 203-561]" key="XFORM_LOOPBOUND_INVALID_405" tag="" content="Updating loop lower bound from 0 to 1280 for loop &apos;loop_channels&apos; in function &apos;hls::AXIvideo2Mat&lt;8, 720, 1280, 0&gt;&apos;."/>
@@ -65,19 +65,19 @@
 	 &apos;hls::AXIvideo2Mat&lt;8, 720, 1280, 0&gt;&apos;
 	 &apos;rozmycie&apos;
 	 &apos;hls::Mat2AXIvideo&lt;8, 720, 1280, 0&gt;&apos;."/>
-	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:165:17) to (Rozmycie_Gaussa/.settings/filtrGauss.cpp:65:4) in function &apos;rozmycie&apos;... converting 5 basic blocks."/>
-	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (Rozmycie_Gaussa/.settings/filtrGauss.cpp:20:4) to (Rozmycie_Gaussa/.settings/filtrGauss.cpp:22:4) in function &apos;init_wsp&apos;... converting 8 basic blocks."/>
-	<Message severity="INFO" prefix="[XFORM 203-11]" key="XFORM_EXPR_BALANCE_STATUS_178" tag="" content="Balancing expressions in function &apos;rozmycie&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:27)...11 expression(s) balanced."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 639.922 ; gain = 193.922 ; free physical = 7738 ; free virtual = 12848"/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:165:17) to (Rozmycie_Gaussa/.settings/filtrGauss.cpp:66:4) in function &apos;rozmycie&apos;... converting 5 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (Rozmycie_Gaussa/.settings/filtrGauss.cpp:21:4) to (Rozmycie_Gaussa/.settings/filtrGauss.cpp:23:4) in function &apos;init_wsp&apos;... converting 8 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-11]" key="XFORM_EXPR_BALANCE_STATUS_178" tag="" content="Balancing expressions in function &apos;rozmycie&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:28)...11 expression(s) balanced."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 639.922 ; gain = 193.922 ; free physical = 6514 ; free virtual = 12372"/>
 	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;hls::Mat2AXIvideo&lt;8, 720, 1280, 0&gt;&apos; to &apos;Mat2AXIvideo&apos; (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:125:50)"/>
 	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;hls::AXIvideo2Mat&lt;8, 720, 1280, 0&gt;&apos; to &apos;AXIvideo2Mat&apos; (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:63:9)"/>
-	<Message severity="WARNING" prefix="[ANALYSIS 214-52]" key="ANALYSIS_USER_SET_DEP_242" tag="" content="Found false inter dependency for variable &apos;buffer.val[0]&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:31)."/>
-	<Message severity="WARNING" prefix="[ANALYSIS 214-52]" key="ANALYSIS_USER_SET_DEP_242" tag="" content="Found false inter dependency for variable &apos;buffer.val[1]&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:31)."/>
-	<Message severity="WARNING" prefix="[ANALYSIS 214-52]" key="ANALYSIS_USER_SET_DEP_242" tag="" content="Found false intra dependency for variable &apos;buffer.val[0]&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:31)."/>
-	<Message severity="WARNING" prefix="[ANALYSIS 214-52]" key="ANALYSIS_USER_SET_DEP_242" tag="" content="Found false intra dependency for variable &apos;buffer.val[1]&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:31)."/>
-	<Message severity="WARNING" prefix="[ANALYSIS 214-52]" key="ANALYSIS_USER_SET_DEP_242" tag="" content="Found false inter dependency for variable &apos;buffer.val[0]&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:31)."/>
-	<Message severity="WARNING" prefix="[ANALYSIS 214-52]" key="ANALYSIS_USER_SET_DEP_242" tag="" content="Found false inter dependency for variable &apos;buffer.val[1]&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:31)."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 640.020 ; gain = 194.020 ; free physical = 7698 ; free virtual = 12810"/>
+	<Message severity="WARNING" prefix="[ANALYSIS 214-52]" key="ANALYSIS_USER_SET_DEP_242" tag="" content="Found false inter dependency for variable &apos;buffer.val[1]&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:32)."/>
+	<Message severity="WARNING" prefix="[ANALYSIS 214-52]" key="ANALYSIS_USER_SET_DEP_242" tag="" content="Found false inter dependency for variable &apos;buffer.val[0]&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:32)."/>
+	<Message severity="WARNING" prefix="[ANALYSIS 214-52]" key="ANALYSIS_USER_SET_DEP_242" tag="" content="Found false intra dependency for variable &apos;buffer.val[1]&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:32)."/>
+	<Message severity="WARNING" prefix="[ANALYSIS 214-52]" key="ANALYSIS_USER_SET_DEP_242" tag="" content="Found false intra dependency for variable &apos;buffer.val[0]&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:32)."/>
+	<Message severity="WARNING" prefix="[ANALYSIS 214-52]" key="ANALYSIS_USER_SET_DEP_242" tag="" content="Found false inter dependency for variable &apos;buffer.val[1]&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:32)."/>
+	<Message severity="WARNING" prefix="[ANALYSIS 214-52]" key="ANALYSIS_USER_SET_DEP_242" tag="" content="Found false inter dependency for variable &apos;buffer.val[0]&apos; (Rozmycie_Gaussa/.settings/filtrGauss.cpp:32)."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 640.020 ; gain = 194.020 ; free physical = 6421 ; free virtual = 12281"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1317" tag="" content="Starting hardware synthesis ..."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1385" tag="" content="Synthesizing &apos;filtr_Gauss&apos; ..."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
@@ -91,14 +91,14 @@
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;loop_wait_for_eol&apos;."/>
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 1."/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 53.36 seconds; current allocated memory: 218.188 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 54.42 seconds; current allocated memory: 218.280 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-434]" key="HLS 200-434" tag="SDX" content="Only 3 loops out of a total 4 loops have been pipelined in this design."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.07 seconds; current allocated memory: 218.474 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.05 seconds; current allocated memory: 218.566 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;rozmycie&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
@@ -107,18 +107,18 @@
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 5."/>
 	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_76" tag="SDX_KERNEL,SCHEDULE" content="Estimated clock period (9.4ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns)."/>
 	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_74" tag="SDX_KERNEL,SCHEDULE" content="The critical path in module &apos;rozmycie&apos; consists of the following:
-	&apos;load&apos; operation (&apos;okno_val_2_1_load&apos;, Rozmycie_Gaussa/.settings/filtrGauss.cpp:77-&gt;Rozmycie_Gaussa/.settings/filtrGauss.cpp:61) on local variable &apos;Window&lt;3, 3, unsigned char&gt;.val[2][2]&apos; [74]  (0 ns)
-	&apos;mul&apos; operation of DSP[121] (&apos;ret_V_2_2_i&apos;, Rozmycie_Gaussa/.settings/filtrGauss.cpp:77-&gt;Rozmycie_Gaussa/.settings/filtrGauss.cpp:61) [112]  (3.36 ns)
-	&apos;add&apos; operation of DSP[121] (&apos;tmp11&apos;, Rozmycie_Gaussa/.settings/filtrGauss.cpp:77-&gt;Rozmycie_Gaussa/.settings/filtrGauss.cpp:61) [121]  (3.02 ns)
-	&apos;add&apos; operation of DSP[123] (&apos;tmp10&apos;, Rozmycie_Gaussa/.settings/filtrGauss.cpp:77-&gt;Rozmycie_Gaussa/.settings/filtrGauss.cpp:61) [123]  (3.02 ns)"/>
+	&apos;load&apos; operation (&apos;okno_val_2_1_load&apos;, Rozmycie_Gaussa/.settings/filtrGauss.cpp:78-&gt;Rozmycie_Gaussa/.settings/filtrGauss.cpp:62) on local variable &apos;Window&lt;3, 3, unsigned char&gt;.val[2][2]&apos; [74]  (0 ns)
+	&apos;mul&apos; operation of DSP[121] (&apos;ret_V_2_2_i&apos;, Rozmycie_Gaussa/.settings/filtrGauss.cpp:78-&gt;Rozmycie_Gaussa/.settings/filtrGauss.cpp:62) [112]  (3.36 ns)
+	&apos;add&apos; operation of DSP[121] (&apos;tmp11&apos;, Rozmycie_Gaussa/.settings/filtrGauss.cpp:78-&gt;Rozmycie_Gaussa/.settings/filtrGauss.cpp:62) [121]  (3.02 ns)
+	&apos;add&apos; operation of DSP[123] (&apos;tmp10&apos;, Rozmycie_Gaussa/.settings/filtrGauss.cpp:78-&gt;Rozmycie_Gaussa/.settings/filtrGauss.cpp:62) [123]  (3.02 ns)"/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.16 seconds; current allocated memory: 218.951 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.16 seconds; current allocated memory: 219.073 MB."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.09 seconds; current allocated memory: 219.430 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.11 seconds; current allocated memory: 219.551 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;Mat2AXIvideo&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
@@ -126,30 +126,30 @@
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;loop_width&apos;."/>
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 3."/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.14 seconds; current allocated memory: 219.580 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.14 seconds; current allocated memory: 219.701 MB."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.03 seconds; current allocated memory: 219.789 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.03 seconds; current allocated memory: 219.909 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;filtr_Gauss&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.04 seconds; current allocated memory: 219.926 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.03 seconds; current allocated memory: 220.029 MB."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.07 seconds; current allocated memory: 220.080 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.08 seconds; current allocated memory: 220.178 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;AXIvideo2Mat&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;AXIvideo2Mat&apos;."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.11 seconds; current allocated memory: 221.013 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.11 seconds; current allocated memory: 221.154 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;rozmycie&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
@@ -157,12 +157,12 @@
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;filtr_Gauss_mac_muladd_6ns_8ns_14ns_15_1_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;filtr_Gauss_mac_muladd_7ns_8ns_14ns_15_1_1&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;rozmycie&apos;."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.18 seconds; current allocated memory: 222.918 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.18 seconds; current allocated memory: 223.044 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;Mat2AXIvideo&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;Mat2AXIvideo&apos;."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.3 seconds; current allocated memory: 225.584 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.29 seconds; current allocated memory: 225.697 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;filtr_Gauss&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
@@ -180,18 +180,17 @@
 	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;filtr_Gauss/out_V_last_V&apos; to &apos;axis&apos; (register, both mode)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;filtr_Gauss/out_V_id_V&apos; to &apos;axis&apos; (register, both mode)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;filtr_Gauss/out_V_dest_V&apos; to &apos;axis&apos; (register, both mode)."/>
-	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on function &apos;filtr_Gauss&apos; to &apos;s_axilite &amp; ap_ctrl_hs&apos;."/>
-	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_851" tag="" content="Bundling port &apos;return&apos; to AXI-Lite port bun_1."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on function &apos;filtr_Gauss&apos; to &apos;ap_ctrl_hs&apos;."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;filtr_Gauss&apos;."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.17 seconds; current allocated memory: 226.684 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.17 seconds; current allocated memory: 226.703 MB."/>
 	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;rozmycie_buffer_val_0_ram (RAM)&apos; using block RAMs."/>
 	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;instance_in_data_str_U(fifo_w8_d2_A)&apos; using Shift Registers."/>
 	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;instance_out_data_st_U(fifo_w8_d2_A)&apos; using Shift Registers."/>
 	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_rozmycie_U0_U(start_for_rozmycie_U0)&apos; using Shift Registers."/>
 	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_Mat2AXIvideo_U0_U(start_for_Mat2AXIvideo_U0)&apos; using Shift Registers."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 640.020 ; gain = 194.020 ; free physical = 7682 ; free virtual = 12799"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 640.020 ; gain = 194.020 ; free physical = 6352 ; free virtual = 12218"/>
 	<Message severity="INFO" prefix="[SYSC 207-301]" key="SYSC_301_1065" tag="" content="Generating SystemC RTL for filtr_Gauss."/>
 	<Message severity="INFO" prefix="[VHDL 208-304]" key="VHDL_304_1066" tag="" content="Generating VHDL RTL for filtr_Gauss."/>
 	<Message severity="INFO" prefix="[VLOG 209-307]" key="VLOG_307_1067" tag="" content="Generating Verilog RTL for filtr_Gauss."/>
-	<Message severity="INFO" prefix="[HLS 200-112]" key="HLS_112_964" tag="" content="Total elapsed time: 55.5 seconds; peak allocated memory: 226.684 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-112]" key="HLS_112_964" tag="" content="Total elapsed time: 56.5 seconds; peak allocated memory: 226.703 MB."/>
 </Messages>

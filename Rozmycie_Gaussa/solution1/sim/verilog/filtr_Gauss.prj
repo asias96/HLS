@@ -16,7 +16,5 @@ sv xil_defaultlib "AESL_axi_s_out_r.v"
 sv xil_defaultlib "filtr_Gauss_mac_muladd_7ns_8ns_14ns_15_1_1.v"
 sv xil_defaultlib "Mat2AXIvideo.v"
 sv xil_defaultlib "AESL_axi_s_in_r.v"
-sv xil_defaultlib "filtr_Gauss_bun_1_s_axi.v"
-sv xil_defaultlib "AESL_axi_slave_bun_1.v"
 sv xil_defaultlib "AESL_deadlock_detector.v"
 

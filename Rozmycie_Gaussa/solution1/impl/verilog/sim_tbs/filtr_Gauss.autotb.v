@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Wed Jan 15 10:51:57 CET 2020
+// File generated on Wed Jan 22 10:58:20 CET 2020
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -95,7 +95,7 @@ parameter LENGTH_out_V_dest_V = 921600;
 
 task read_token;
     input integer fp;
-    output reg [175 : 0] token;
+    output reg [127 : 0] token;
     integer ret;
     begin
         token = "";
@@ -107,10 +107,10 @@ endtask
 task post_check;
     input integer fp1;
     input integer fp2;
-    reg [175 : 0] token1;
-    reg [175 : 0] token2;
-    reg [175 : 0] golden;
-    reg [175 : 0] result;
+    reg [127 : 0] token1;
+    reg [127 : 0] token2;
+    reg [127 : 0] golden;
+    reg [127 : 0] result;
     integer ret;
     begin
         read_token(fp1, token1);
@@ -174,24 +174,6 @@ reg AESL_done_delay2 = 0;
 reg AESL_ready_delay = 0;
 wire ready;
 wire ready_wire;
-wire [3 : 0] bun_1_AWADDR;
-wire  bun_1_AWVALID;
-wire  bun_1_AWREADY;
-wire  bun_1_WVALID;
-wire  bun_1_WREADY;
-wire [31 : 0] bun_1_WDATA;
-wire [3 : 0] bun_1_WSTRB;
-wire [3 : 0] bun_1_ARADDR;
-wire  bun_1_ARVALID;
-wire  bun_1_ARREADY;
-wire  bun_1_RVALID;
-wire  bun_1_RREADY;
-wire [31 : 0] bun_1_RDATA;
-wire [1 : 0] bun_1_RRESP;
-wire  bun_1_BVALID;
-wire  bun_1_BREADY;
-wire [1 : 0] bun_1_BRESP;
-wire  bun_1_INTERRUPT;
 wire [7 : 0] in_r_TDATA;
 wire [0 : 0] in_r_TKEEP;
 wire [0 : 0] in_r_TSTRB;
@@ -208,8 +190,12 @@ wire [0 : 0] out_r_TID;
 wire [0 : 0] out_r_TDEST;
 wire  in_r_TVALID;
 wire  in_r_TREADY;
+wire ap_start;
 wire  out_r_TVALID;
 wire  out_r_TREADY;
+wire ap_done;
+wire ap_ready;
+wire ap_idle;
 integer done_cnt = 0;
 integer AESL_ready_cnt = 0;
 integer ready_cnt = 0;
@@ -219,44 +205,12 @@ reg ready_last_n;
 reg ready_delay_last_n;
 reg done_delay_last_n;
 reg interface_done = 0;
-wire AESL_slave_start;
-reg AESL_slave_start_lock = 0;
-wire AESL_slave_write_start_in;
-wire AESL_slave_write_start_finish;
-reg AESL_slave_ready;
-wire AESL_slave_output_done;
-wire AESL_slave_done;
-reg ready_rise = 0;
-reg start_rise = 0;
-reg slave_start_status = 0;
-reg slave_done_status = 0;
-reg ap_done_lock = 0;
 
 wire ap_clk;
 wire ap_rst_n;
 wire ap_rst_n_n;
 
 `AUTOTB_DUT `AUTOTB_DUT_INST(
-    .s_axi_bun_1_AWADDR(bun_1_AWADDR),
-    .s_axi_bun_1_AWVALID(bun_1_AWVALID),
-    .s_axi_bun_1_AWREADY(bun_1_AWREADY),
-    .s_axi_bun_1_WVALID(bun_1_WVALID),
-    .s_axi_bun_1_WREADY(bun_1_WREADY),
-    .s_axi_bun_1_WDATA(bun_1_WDATA),
-    .s_axi_bun_1_WSTRB(bun_1_WSTRB),
-    .s_axi_bun_1_ARADDR(bun_1_ARADDR),
-    .s_axi_bun_1_ARVALID(bun_1_ARVALID),
-    .s_axi_bun_1_ARREADY(bun_1_ARREADY),
-    .s_axi_bun_1_RVALID(bun_1_RVALID),
-    .s_axi_bun_1_RREADY(bun_1_RREADY),
-    .s_axi_bun_1_RDATA(bun_1_RDATA),
-    .s_axi_bun_1_RRESP(bun_1_RRESP),
-    .s_axi_bun_1_BVALID(bun_1_BVALID),
-    .s_axi_bun_1_BREADY(bun_1_BREADY),
-    .s_axi_bun_1_BRESP(bun_1_BRESP),
-    .interrupt(bun_1_INTERRUPT),
-    .ap_clk(ap_clk),
-    .ap_rst_n(ap_rst_n),
     .in_r_TDATA(in_r_TDATA),
     .in_r_TKEEP(in_r_TKEEP),
     .in_r_TSTRB(in_r_TSTRB),
@@ -271,73 +225,47 @@ wire ap_rst_n_n;
     .out_r_TLAST(out_r_TLAST),
     .out_r_TID(out_r_TID),
     .out_r_TDEST(out_r_TDEST),
+    .ap_clk(ap_clk),
+    .ap_rst_n(ap_rst_n),
     .in_r_TVALID(in_r_TVALID),
     .in_r_TREADY(in_r_TREADY),
+    .ap_start(ap_start),
     .out_r_TVALID(out_r_TVALID),
-    .out_r_TREADY(out_r_TREADY));
+    .out_r_TREADY(out_r_TREADY),
+    .ap_done(ap_done),
+    .ap_ready(ap_ready),
+    .ap_idle(ap_idle));
 
 // Assignment for control signal
 assign ap_clk = AESL_clock;
 assign ap_rst_n = AESL_reset;
 assign ap_rst_n_n = ~AESL_reset;
 assign AESL_reset = rst;
+assign ap_start = AESL_start;
 assign AESL_start = start;
+assign AESL_done = ap_done;
+assign AESL_ready = ap_ready;
+assign AESL_idle = ap_idle;
 assign AESL_ce = ce;
 assign AESL_continue = tb_continue;
-  assign AESL_slave_write_start_in = slave_start_status ;
-  assign AESL_slave_start = AESL_slave_write_start_finish;
-  assign AESL_done = slave_done_status ;
-
-always @(posedge AESL_clock)
-begin
-    if(AESL_reset === 0)
-    begin
-        slave_start_status <= 1;
-    end
-    else begin
-        if (AESL_start == 1 ) begin
-            start_rise = 1;
-        end
-        if (start_rise == 1 && AESL_done == 1 ) begin
-            slave_start_status <= 1;
-        end
-        if (AESL_slave_write_start_in == 1 && AESL_done == 0) begin 
-            slave_start_status <= 0;
-            start_rise = 0;
+    always @(posedge AESL_clock) begin
+        if (AESL_reset === 0) begin
+        end else begin
+            if (AESL_done !== 1 && AESL_done !== 0) begin
+                $display("ERROR: Control signal AESL_done is invalid!");
+                $finish;
+            end
         end
     end
-end
-
-always @(posedge AESL_clock)
-begin
-    if(AESL_reset === 0)
-    begin
-        AESL_slave_ready <= 0;
-        ready_rise = 0;
-    end
-    else begin
-        if (AESL_ready == 1 ) begin
-            ready_rise = 1;
-        end
-        if (ready_rise == 1 && AESL_done_delay == 1 ) begin
-            AESL_slave_ready <= 1;
-        end
-        if (AESL_slave_ready == 1) begin 
-            AESL_slave_ready <= 0;
-            ready_rise = 0;
+    always @(posedge AESL_clock) begin
+        if (AESL_reset === 0) begin
+        end else begin
+            if (AESL_ready !== 1 && AESL_ready !== 0) begin
+                $display("ERROR: Control signal AESL_ready is invalid!");
+                $finish;
+            end
         end
     end
-end
-
-always @ (posedge AESL_clock)
-begin
-    if (AESL_done == 1) begin
-        slave_done_status <= 0;
-    end
-    else if (AESL_slave_output_done == 1 ) begin
-        slave_done_status <= 1;
-    end
-end
 
 
 
@@ -428,37 +356,6 @@ end
 
 
 assign out_r_TREADY = reg_out_r_TREADY;
-
-AESL_axi_slave_bun_1 AESL_AXI_SLAVE_bun_1(
-    .clk   (AESL_clock),
-    .reset (AESL_reset),
-    .TRAN_s_axi_bun_1_AWADDR (bun_1_AWADDR),
-    .TRAN_s_axi_bun_1_AWVALID (bun_1_AWVALID),
-    .TRAN_s_axi_bun_1_AWREADY (bun_1_AWREADY),
-    .TRAN_s_axi_bun_1_WVALID (bun_1_WVALID),
-    .TRAN_s_axi_bun_1_WREADY (bun_1_WREADY),
-    .TRAN_s_axi_bun_1_WDATA (bun_1_WDATA),
-    .TRAN_s_axi_bun_1_WSTRB (bun_1_WSTRB),
-    .TRAN_s_axi_bun_1_ARADDR (bun_1_ARADDR),
-    .TRAN_s_axi_bun_1_ARVALID (bun_1_ARVALID),
-    .TRAN_s_axi_bun_1_ARREADY (bun_1_ARREADY),
-    .TRAN_s_axi_bun_1_RVALID (bun_1_RVALID),
-    .TRAN_s_axi_bun_1_RREADY (bun_1_RREADY),
-    .TRAN_s_axi_bun_1_RDATA (bun_1_RDATA),
-    .TRAN_s_axi_bun_1_RRESP (bun_1_RRESP),
-    .TRAN_s_axi_bun_1_BVALID (bun_1_BVALID),
-    .TRAN_s_axi_bun_1_BREADY (bun_1_BREADY),
-    .TRAN_s_axi_bun_1_BRESP (bun_1_BRESP),
-    .TRAN_bun_1_interrupt (bun_1_INTERRUPT),
-    .TRAN_bun_1_ready_out (AESL_ready),
-    .TRAN_bun_1_ready_in (AESL_slave_ready),
-    .TRAN_bun_1_done_out (AESL_slave_output_done),
-    .TRAN_bun_1_idle_out (AESL_idle),
-    .TRAN_bun_1_write_start_in     (AESL_slave_write_start_in),
-    .TRAN_bun_1_write_start_finish (AESL_slave_write_start_finish),
-    .TRAN_bun_1_transaction_done_in (AESL_done_delay),
-    .TRAN_bun_1_start_in  (AESL_slave_start)
-);
 
 initial begin : generate_AESL_ready_cnt_proc
     AESL_ready_cnt = 0;

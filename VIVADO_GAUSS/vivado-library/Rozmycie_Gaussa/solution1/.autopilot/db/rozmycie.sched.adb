@@ -384,7 +384,7 @@
 						<name>buffer_val_0</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -399,7 +399,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -432,7 +432,7 @@
 						<name>buffer_val_1</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -447,7 +447,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -480,7 +480,7 @@
 						<name></name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -495,7 +495,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -565,7 +565,7 @@
 						<name>exitcond3</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -580,7 +580,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -614,7 +614,7 @@
 						<name>i_1</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -629,7 +629,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -663,7 +663,7 @@
 						<name></name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -678,7 +678,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -713,7 +713,7 @@
 						<name>tmp</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>47</lineNumber>
+						<lineNumber>48</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -728,7 +728,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>47</second>
+										<second>48</second>
 									</item>
 								</second>
 							</item>
@@ -762,7 +762,7 @@
 						<name>tmp_1</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>60</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -777,7 +777,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>60</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -813,7 +813,7 @@
 						<name>icmp</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>60</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -828,7 +828,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>60</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -862,7 +862,7 @@
 						<name>tmp_2</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>65</lineNumber>
+						<lineNumber>66</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -877,7 +877,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>65</second>
+										<second>66</second>
 									</item>
 								</second>
 							</item>
@@ -911,7 +911,7 @@
 						<name></name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>35</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -926,7 +926,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>35</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -996,7 +996,7 @@
 						<name>exitcond</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>35</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1011,7 +1011,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>35</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1045,7 +1045,7 @@
 						<name>j</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>35</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1060,7 +1060,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>35</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1094,7 +1094,7 @@
 						<name></name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>35</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1109,7 +1109,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>35</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1144,7 +1144,7 @@
 						<name>tmp_4</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>43</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1159,7 +1159,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -1193,7 +1193,7 @@
 						<name></name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>43</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1208,7 +1208,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -1272,7 +1272,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>44</second>
+										<second>45</second>
 									</item>
 								</second>
 							</item>
@@ -1334,7 +1334,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>44</second>
+										<second>45</second>
 									</item>
 								</second>
 							</item>
@@ -1398,7 +1398,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>44</second>
+										<second>45</second>
 									</item>
 								</second>
 							</item>
@@ -1460,7 +1460,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>44</second>
+										<second>45</second>
 									</item>
 								</second>
 							</item>
@@ -1524,7 +1524,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>44</second>
+										<second>45</second>
 									</item>
 								</second>
 							</item>
@@ -1586,7 +1586,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>44</second>
+										<second>45</second>
 									</item>
 								</second>
 							</item>
@@ -1621,7 +1621,7 @@
 						<name>tmp1</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1636,7 +1636,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>45</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -1669,7 +1669,7 @@
 						<name>tmp2</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1684,7 +1684,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>46</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -1717,7 +1717,7 @@
 						<name></name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1732,7 +1732,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>45</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -1766,7 +1766,7 @@
 						<name></name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1781,7 +1781,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>46</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -1815,7 +1815,7 @@
 						<name></name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>47</lineNumber>
+						<lineNumber>48</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1830,7 +1830,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>47</second>
+										<second>48</second>
 									</item>
 								</second>
 							</item>
@@ -1894,7 +1894,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>48</second>
+										<second>49</second>
 									</item>
 								</second>
 							</item>
@@ -1950,7 +1950,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>49</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -2014,7 +2014,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>48</second>
+										<second>49</second>
 									</item>
 								</second>
 							</item>
@@ -2048,7 +2048,7 @@
 						<name></name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>50</lineNumber>
+						<lineNumber>51</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2063,7 +2063,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>50</second>
+										<second>51</second>
 									</item>
 								</second>
 							</item>
@@ -2096,7 +2096,7 @@
 						<name>tmp2_1_load</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>54</lineNumber>
+						<lineNumber>55</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2111,7 +2111,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>54</second>
+										<second>55</second>
 									</item>
 								</second>
 							</item>
@@ -2145,7 +2145,7 @@
 						<name>tmp1_1_load</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>55</lineNumber>
+						<lineNumber>56</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2160,7 +2160,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>55</second>
+										<second>56</second>
 									</item>
 								</second>
 							</item>
@@ -2228,7 +2228,7 @@
 						<name>okno_val_0_1_load</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2243,14 +2243,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -2283,7 +2283,7 @@
 						<name>okno_val_1_0_load_1</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2298,14 +2298,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -2441,7 +2441,7 @@
 						<name>okno_val_2_1_load</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2456,14 +2456,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -2496,7 +2496,7 @@
 						<name>okno_val_2_0_1</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>54</lineNumber>
+						<lineNumber>55</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2511,7 +2511,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>54</second>
+										<second>55</second>
 									</item>
 								</second>
 							</item>
@@ -2544,7 +2544,7 @@
 						<name>okno_val_1_0_1</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>55</lineNumber>
+						<lineNumber>56</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2559,7 +2559,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>55</second>
+										<second>56</second>
 									</item>
 								</second>
 							</item>
@@ -2592,7 +2592,7 @@
 						<name>okno_val_2_0</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>43</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2607,7 +2607,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -2642,7 +2642,7 @@
 						<name>okno_val_1_0</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>43</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2657,7 +2657,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -2692,7 +2692,7 @@
 						<name>okno_val_0_0</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>43</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2707,7 +2707,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -2742,7 +2742,7 @@
 						<name>tmp_13</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>60</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2757,7 +2757,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>60</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -2793,7 +2793,7 @@
 						<name>icmp1</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>60</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2808,7 +2808,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>60</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -2842,7 +2842,7 @@
 						<name>tmp3</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>60</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2857,7 +2857,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>60</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -2891,7 +2891,7 @@
 						<name>tmp4</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>60</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2906,7 +2906,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>60</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -2940,7 +2940,7 @@
 						<name>or_cond5</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>60</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2955,7 +2955,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>60</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -2989,7 +2989,7 @@
 						<name>rhs_V_0_i_cast</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3004,14 +3004,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -3044,7 +3044,7 @@
 						<name>ret_V_0_i</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3059,14 +3059,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -3100,7 +3100,7 @@
 						<name>rhs_V_0_1_i_cast</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3115,14 +3115,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -3191,7 +3191,7 @@
 						<name>p_shl1</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3206,14 +3206,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -3246,7 +3246,7 @@
 						<name>ret_V_0_1_i</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3261,14 +3261,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -3302,7 +3302,7 @@
 						<name>rhs_V_0_2_i_cast</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3317,14 +3317,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -3357,7 +3357,7 @@
 						<name>ret_V_0_2_i</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3372,14 +3372,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -3413,7 +3413,7 @@
 						<name>rhs_V_1_i_cast</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3428,14 +3428,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -3468,7 +3468,7 @@
 						<name>tmp_15</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>43</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3483,7 +3483,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -3518,7 +3518,7 @@
 						<name>p_shl2</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3533,14 +3533,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -3573,7 +3573,7 @@
 						<name>ret_V_1_i</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3588,14 +3588,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -3629,7 +3629,7 @@
 						<name>rhs_V_1_1_i_cast</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3644,14 +3644,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -3684,7 +3684,7 @@
 						<name>ret_V_1_1_i</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3699,14 +3699,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -3740,7 +3740,7 @@
 						<name>rhs_V_1_2_i_cast</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3755,14 +3755,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -3831,7 +3831,7 @@
 						<name>p_shl3</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3846,14 +3846,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -3886,7 +3886,7 @@
 						<name>ret_V_1_2_i</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3901,14 +3901,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -3942,7 +3942,7 @@
 						<name>ret_V_1_2_i_cast</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3957,14 +3957,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -3997,7 +3997,7 @@
 						<name>rhs_V_2_i_cast</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4012,14 +4012,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -4052,7 +4052,7 @@
 						<name>ret_V_2_i</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4067,14 +4067,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -4108,7 +4108,7 @@
 						<name>ret_V_2_i_cast</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4123,14 +4123,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -4163,7 +4163,7 @@
 						<name>rhs_V_2_1_i_cast</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4178,14 +4178,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -4254,7 +4254,7 @@
 						<name>p_shl</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4269,14 +4269,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -4309,7 +4309,7 @@
 						<name>ret_V_2_1_i</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4324,14 +4324,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -4365,7 +4365,7 @@
 						<name>rhs_V_2_2_i_cast</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4380,14 +4380,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -4420,7 +4420,7 @@
 						<name>ret_V_2_2_i</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4435,14 +4435,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -4476,7 +4476,7 @@
 						<name>tmp6</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4491,14 +4491,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -4532,7 +4532,7 @@
 						<name>tmp6_cast</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4547,14 +4547,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -4587,7 +4587,7 @@
 						<name>tmp7</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4602,14 +4602,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -4643,7 +4643,7 @@
 						<name>tmp7_cast</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4658,14 +4658,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -4698,7 +4698,7 @@
 						<name>tmp5</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4713,14 +4713,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -4754,7 +4754,7 @@
 						<name>tmp5_cast</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4769,14 +4769,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -4809,7 +4809,7 @@
 						<name>tmp9</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4824,14 +4824,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -4865,7 +4865,7 @@
 						<name>tmp9_cast</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4880,14 +4880,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -4920,7 +4920,7 @@
 						<name>tmp11</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4935,14 +4935,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -4976,7 +4976,7 @@
 						<name>tmp11_cast</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4991,14 +4991,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -5031,7 +5031,7 @@
 						<name>tmp10</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5046,14 +5046,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -5087,7 +5087,7 @@
 						<name>tmp10_cast</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5102,14 +5102,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -5142,7 +5142,7 @@
 						<name>tmp8</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5157,14 +5157,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -5198,7 +5198,7 @@
 						<name>acc_V_2_2_i</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5213,14 +5213,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -5254,7 +5254,7 @@
 						<name>v0_assign</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>80</lineNumber>
+						<lineNumber>81</lineNumber>
 						<contextFuncName>operator_Gauss</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5269,14 +5269,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>80</second>
+										<second>81</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -5312,7 +5312,7 @@
 						<name>tmp_12</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>60</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5327,7 +5327,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>60</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -5362,7 +5362,7 @@
 						<name>tmp_s</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>65</lineNumber>
+						<lineNumber>66</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5377,7 +5377,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>65</second>
+										<second>66</second>
 									</item>
 								</second>
 							</item>
@@ -5411,7 +5411,7 @@
 						<name>or_cond6</name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>65</lineNumber>
+						<lineNumber>66</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5426,7 +5426,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>65</second>
+										<second>66</second>
 									</item>
 								</second>
 							</item>
@@ -5460,7 +5460,7 @@
 						<name></name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>65</lineNumber>
+						<lineNumber>66</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5475,7 +5475,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>65</second>
+										<second>66</second>
 									</item>
 								</second>
 							</item>
@@ -5539,7 +5539,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>66</second>
+										<second>67</second>
 									</item>
 								</second>
 							</item>
@@ -5574,7 +5574,7 @@
 						<name></name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>66</lineNumber>
+						<lineNumber>67</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5589,7 +5589,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>66</second>
+										<second>67</second>
 									</item>
 								</second>
 							</item>
@@ -5644,14 +5644,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -5706,14 +5706,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -5768,14 +5768,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -5830,14 +5830,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -5894,14 +5894,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -5959,14 +5959,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -6023,14 +6023,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -6088,14 +6088,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -6152,14 +6152,14 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>operator_Gauss</second>
 										</first>
-										<second>77</second>
+										<second>78</second>
 									</item>
 									<item>
 										<first>
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>61</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -6195,7 +6195,7 @@
 						<name></name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>35</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6210,7 +6210,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>35</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -6243,7 +6243,7 @@
 						<name></name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6258,7 +6258,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>34</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -6291,7 +6291,7 @@
 						<name></name>
 						<fileName>Rozmycie_Gaussa/.settings/filtrGauss.cpp</fileName>
 						<fileDirectory>/home/lsriw/HLS/HLS</fileDirectory>
-						<lineNumber>69</lineNumber>
+						<lineNumber>70</lineNumber>
 						<contextFuncName>rozmycie</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6306,7 +6306,7 @@
 											<first>Rozmycie_Gaussa/.settings/filtrGauss.cpp</first>
 											<second>rozmycie</second>
 										</first>
-										<second>69</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>

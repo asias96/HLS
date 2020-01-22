@@ -3,43 +3,43 @@
 
 <trans_list>
 
-<trans id="41" from="1" to="2">
+<trans id="40" from="1" to="2">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="42" from="2" to="3">
+<trans id="41" from="2" to="3">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="43" from="3" to="4">
+<trans id="42" from="3" to="4">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="44" from="4" to="5">
+<trans id="43" from="4" to="5">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="45" from="5" to="6">
+<trans id="44" from="5" to="6">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="46" from="6" to="7">
+<trans id="45" from="6" to="7">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="47" from="7" to="8">
+<trans id="46" from="7" to="8">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
@@ -92,9 +92,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="40" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="1" op_3_bw="1" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="8">
+<Node id="39" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="1" op_3_bw="1" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="8">
 <![CDATA[
-:25  call fastcc void @AXIvideo2Mat(i8* %in_V_data_V, i1* %in_V_keep_V, i1* %in_V_strb_V, i1* %in_V_user_V, i1* %in_V_last_V, i1* %in_V_id_V, i1* %in_V_dest_V, i8* %instance_in_data_str)
+:24  call fastcc void @AXIvideo2Mat(i8* %in_V_data_V, i1* %in_V_keep_V, i1* %in_V_strb_V, i1* %in_V_user_V, i1* %in_V_last_V, i1* %in_V_id_V, i1* %in_V_dest_V, i8* %instance_in_data_str)
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -110,9 +110,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="40" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="1" op_3_bw="1" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="8">
+<Node id="39" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="1" op_3_bw="1" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="8">
 <![CDATA[
-:25  call fastcc void @AXIvideo2Mat(i8* %in_V_data_V, i1* %in_V_keep_V, i1* %in_V_strb_V, i1* %in_V_user_V, i1* %in_V_last_V, i1* %in_V_id_V, i1* %in_V_dest_V, i8* %instance_in_data_str)
+:24  call fastcc void @AXIvideo2Mat(i8* %in_V_data_V, i1* %in_V_keep_V, i1* %in_V_strb_V, i1* %in_V_user_V, i1* %in_V_last_V, i1* %in_V_id_V, i1* %in_V_dest_V, i8* %instance_in_data_str)
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -128,9 +128,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="41" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8">
+<Node id="40" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8">
 <![CDATA[
-:26  call fastcc void @rozmycie(i8* %instance_in_data_str, i8* %instance_out_data_st)
+:25  call fastcc void @rozmycie(i8* %instance_in_data_str, i8* %instance_out_data_st)
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -146,9 +146,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="41" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8">
+<Node id="40" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8">
 <![CDATA[
-:26  call fastcc void @rozmycie(i8* %instance_in_data_str, i8* %instance_out_data_st)
+:25  call fastcc void @rozmycie(i8* %instance_in_data_str, i8* %instance_out_data_st)
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -164,9 +164,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="42" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="1" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="1">
+<Node id="41" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="1" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="1">
 <![CDATA[
-:27  call fastcc void @Mat2AXIvideo(i8* %instance_out_data_st, i8* %out_V_data_V, i1* %out_V_keep_V, i1* %out_V_strb_V, i1* %out_V_user_V, i1* %out_V_last_V, i1* %out_V_id_V, i1* %out_V_dest_V)
+:26  call fastcc void @Mat2AXIvideo(i8* %instance_out_data_st, i8* %out_V_data_V, i1* %out_V_keep_V, i1* %out_V_strb_V, i1* %out_V_user_V, i1* %out_V_last_V, i1* %out_V_id_V, i1* %out_V_dest_V)
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -182,9 +182,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="42" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="1" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="1">
+<Node id="41" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="1" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="1">
 <![CDATA[
-:27  call fastcc void @Mat2AXIvideo(i8* %instance_out_data_st, i8* %out_V_data_V, i1* %out_V_keep_V, i1* %out_V_strb_V, i1* %out_V_user_V, i1* %out_V_last_V, i1* %out_V_id_V, i1* %out_V_dest_V)
+:26  call fastcc void @Mat2AXIvideo(i8* %instance_out_data_st, i8* %out_V_data_V, i1* %out_V_keep_V, i1* %out_V_strb_V, i1* %out_V_user_V, i1* %out_V_last_V, i1* %out_V_id_V, i1* %out_V_dest_V)
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -530,24 +530,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="39" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
+<Node id="42" bw="0">
 <![CDATA[
-:24  call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str9, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [6 x i8]* @p_str10, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind
-
-]]></Node>
-<StgValue><ssdm name=""/></StgValue>
-</operation>
-
-<operation id="40" st_id="8" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="43" bw="0">
-<![CDATA[
-:28  ret void
+:27  ret void
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>

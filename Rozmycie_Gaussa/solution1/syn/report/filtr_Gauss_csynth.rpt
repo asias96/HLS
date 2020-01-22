@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'filtr_Gauss'
 ================================================================
-* Date:           Wed Jan 15 10:46:57 2020
+* Date:           Wed Jan 22 10:55:50 2020
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        Rozmycie_Gaussa
@@ -58,30 +58,29 @@
 |DSP              |        -|      -|      -|      -|
 |Expression       |        -|      -|      0|      2|
 |FIFO             |        0|      -|     10|     40|
-|Instance         |        2|      5|    714|   1361|
+|Instance         |        2|      5|    678|   1321|
 |Memory           |        -|      -|      -|      -|
 |Multiplexer      |        -|      -|      -|      -|
 |Register         |        -|      -|      -|      -|
 +-----------------+---------+-------+-------+-------+
-|Total            |        2|      5|    724|   1403|
+|Total            |        2|      5|    688|   1363|
 +-----------------+---------+-------+-------+-------+
 |Available        |      120|     80|  35200|  17600|
 +-----------------+---------+-------+-------+-------+
-|Utilization (%)  |        1|      6|      2|      7|
+|Utilization (%)  |        1|      6|      1|      7|
 +-----------------+---------+-------+-------+-------+
 
 + Detail: 
     * Instance: 
-    +---------------------------+-------------------------+---------+-------+-----+-----+
-    |          Instance         |          Module         | BRAM_18K| DSP48E|  FF | LUT |
-    +---------------------------+-------------------------+---------+-------+-----+-----+
-    |AXIvideo2Mat_U0            |AXIvideo2Mat             |        0|      0|  126|  438|
-    |Mat2AXIvideo_U0            |Mat2AXIvideo             |        0|      0|   87|  342|
-    |filtr_Gauss_bun_1_s_axi_U  |filtr_Gauss_bun_1_s_axi  |        0|      0|   36|   40|
-    |rozmycie_U0                |rozmycie                 |        2|      5|  465|  541|
-    +---------------------------+-------------------------+---------+-------+-----+-----+
-    |Total                      |                         |        2|      5|  714| 1361|
-    +---------------------------+-------------------------+---------+-------+-----+-----+
+    +-----------------+--------------+---------+-------+-----+-----+
+    |     Instance    |    Module    | BRAM_18K| DSP48E|  FF | LUT |
+    +-----------------+--------------+---------+-------+-----+-----+
+    |AXIvideo2Mat_U0  |AXIvideo2Mat  |        0|      0|  126|  438|
+    |Mat2AXIvideo_U0  |Mat2AXIvideo  |        0|      0|   87|  342|
+    |rozmycie_U0      |rozmycie      |        2|      5|  465|  541|
+    +-----------------+--------------+---------+-------+-----+-----+
+    |Total            |              |        2|      5|  678| 1321|
+    +-----------------+--------------+---------+-------+-----+-----+
 
     * DSP48: 
     N/A
@@ -120,46 +119,32 @@
 == Interface
 ================================================================
 * Summary: 
-+---------------------+-----+-----+------------+--------------+--------------+
-|      RTL Ports      | Dir | Bits|  Protocol  | Source Object|    C Type    |
-+---------------------+-----+-----+------------+--------------+--------------+
-|s_axi_bun_1_AWVALID  |  in |    1|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_AWREADY  | out |    1|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_AWADDR   |  in |    4|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_WVALID   |  in |    1|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_WREADY   | out |    1|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_WDATA    |  in |   32|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_WSTRB    |  in |    4|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_ARVALID  |  in |    1|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_ARREADY  | out |    1|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_ARADDR   |  in |    4|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_RVALID   | out |    1|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_RREADY   |  in |    1|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_RDATA    | out |   32|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_RRESP    | out |    2|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_BVALID   | out |    1|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_BREADY   |  in |    1|    s_axi   |     bun_1    |  return void |
-|s_axi_bun_1_BRESP    | out |    2|    s_axi   |     bun_1    |  return void |
-|ap_clk               |  in |    1| ap_ctrl_hs |  filtr_Gauss | return value |
-|ap_rst_n             |  in |    1| ap_ctrl_hs |  filtr_Gauss | return value |
-|interrupt            | out |    1| ap_ctrl_hs |  filtr_Gauss | return value |
-|in_r_TDATA           |  in |    8|    axis    |  in_V_data_V |    pointer   |
-|in_r_TKEEP           |  in |    1|    axis    |  in_V_keep_V |    pointer   |
-|in_r_TSTRB           |  in |    1|    axis    |  in_V_strb_V |    pointer   |
-|in_r_TUSER           |  in |    1|    axis    |  in_V_user_V |    pointer   |
-|in_r_TLAST           |  in |    1|    axis    |  in_V_last_V |    pointer   |
-|in_r_TID             |  in |    1|    axis    |   in_V_id_V  |    pointer   |
-|in_r_TDEST           |  in |    1|    axis    |  in_V_dest_V |    pointer   |
-|in_r_TVALID          |  in |    1|    axis    |  in_V_dest_V |    pointer   |
-|in_r_TREADY          | out |    1|    axis    |  in_V_dest_V |    pointer   |
-|out_r_TDATA          | out |    8|    axis    | out_V_data_V |    pointer   |
-|out_r_TKEEP          | out |    1|    axis    | out_V_keep_V |    pointer   |
-|out_r_TSTRB          | out |    1|    axis    | out_V_strb_V |    pointer   |
-|out_r_TUSER          | out |    1|    axis    | out_V_user_V |    pointer   |
-|out_r_TLAST          | out |    1|    axis    | out_V_last_V |    pointer   |
-|out_r_TID            | out |    1|    axis    |  out_V_id_V  |    pointer   |
-|out_r_TDEST          | out |    1|    axis    | out_V_dest_V |    pointer   |
-|out_r_TVALID         | out |    1|    axis    | out_V_dest_V |    pointer   |
-|out_r_TREADY         |  in |    1|    axis    | out_V_dest_V |    pointer   |
-+---------------------+-----+-----+------------+--------------+--------------+
++--------------+-----+-----+------------+--------------+--------------+
+|   RTL Ports  | Dir | Bits|  Protocol  | Source Object|    C Type    |
++--------------+-----+-----+------------+--------------+--------------+
+|in_r_TDATA    |  in |    8|    axis    |  in_V_data_V |    pointer   |
+|in_r_TKEEP    |  in |    1|    axis    |  in_V_keep_V |    pointer   |
+|in_r_TSTRB    |  in |    1|    axis    |  in_V_strb_V |    pointer   |
+|in_r_TUSER    |  in |    1|    axis    |  in_V_user_V |    pointer   |
+|in_r_TLAST    |  in |    1|    axis    |  in_V_last_V |    pointer   |
+|in_r_TID      |  in |    1|    axis    |   in_V_id_V  |    pointer   |
+|in_r_TDEST    |  in |    1|    axis    |  in_V_dest_V |    pointer   |
+|in_r_TVALID   |  in |    1|    axis    |  in_V_dest_V |    pointer   |
+|in_r_TREADY   | out |    1|    axis    |  in_V_dest_V |    pointer   |
+|out_r_TDATA   | out |    8|    axis    | out_V_data_V |    pointer   |
+|out_r_TKEEP   | out |    1|    axis    | out_V_keep_V |    pointer   |
+|out_r_TSTRB   | out |    1|    axis    | out_V_strb_V |    pointer   |
+|out_r_TUSER   | out |    1|    axis    | out_V_user_V |    pointer   |
+|out_r_TLAST   | out |    1|    axis    | out_V_last_V |    pointer   |
+|out_r_TID     | out |    1|    axis    |  out_V_id_V  |    pointer   |
+|out_r_TDEST   | out |    1|    axis    | out_V_dest_V |    pointer   |
+|out_r_TVALID  | out |    1|    axis    | out_V_dest_V |    pointer   |
+|out_r_TREADY  |  in |    1|    axis    | out_V_dest_V |    pointer   |
+|ap_clk        |  in |    1| ap_ctrl_hs |  filtr_Gauss | return value |
+|ap_rst_n      |  in |    1| ap_ctrl_hs |  filtr_Gauss | return value |
+|ap_start      |  in |    1| ap_ctrl_hs |  filtr_Gauss | return value |
+|ap_done       | out |    1| ap_ctrl_hs |  filtr_Gauss | return value |
+|ap_ready      | out |    1| ap_ctrl_hs |  filtr_Gauss | return value |
+|ap_idle       | out |    1| ap_ctrl_hs |  filtr_Gauss | return value |
++--------------+-----+-----+------------+--------------+--------------+
 

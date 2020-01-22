@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Fri Jan 17 23:03:24 2020
-| Host         : LAPTOP-TNDE04NQ running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Jan 22 11:08:18 2020
+| Host         : lsriw running 64-bit Ubuntu 18.04.3 LTS
 | Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
 | Design       : design_1_wrapper
 | Device       : xc7z010clg400-1
@@ -3072,1988 +3072,1988 @@ Related violations: <none>
 
 TIMING-17#605 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/filtr_Gauss_bun_1_s_axi_U/int_ap_start_reg/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#606 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/filtr_Gauss_bun_1_s_axi_U/int_auto_restart_reg/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#607 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#608 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][1]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#609 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][2]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#610 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][3]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#611 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][4]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#612 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][5]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#613 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][6]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#614 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][7]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#615 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#616 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][1]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#617 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][2]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#618 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][3]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#619 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][4]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#620 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][5]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#621 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][6]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/internal_empty_n_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#622 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][7]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/internal_full_n_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#623 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/internal_empty_n_reg/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/mOutPtr_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#624 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/internal_full_n_reg/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/mOutPtr_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#625 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/mOutPtr_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#626 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_in_data_str_U/mOutPtr_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#627 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#628 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][1]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#629 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][2]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#630 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][3]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#631 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][4]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#632 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][5]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#633 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][6]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#634 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0][7]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#635 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#636 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][1]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#637 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][2]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#638 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][3]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#639 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][4]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#640 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][5]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#641 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][6]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/internal_empty_n_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#642 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[1][7]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/internal_full_n_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#643 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/internal_empty_n_reg/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/mOutPtr_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#644 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/internal_full_n_reg/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/mOutPtr_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#645 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/mOutPtr_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/ap_CS_fsm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#646 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/instance_out_data_st_U/mOutPtr_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/ap_CS_fsm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#647 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/ap_CS_fsm_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/ap_CS_fsm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#648 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/ap_CS_fsm_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/ap_CS_fsm_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#649 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/ap_CS_fsm_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/ap_enable_reg_pp0_iter0_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#650 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/ap_CS_fsm_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/ap_enable_reg_pp0_iter1_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#651 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/ap_enable_reg_pp0_iter0_reg/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/ap_enable_reg_pp0_iter2_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#652 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/ap_enable_reg_pp0_iter1_reg/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/ap_enable_reg_pp0_iter3_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#653 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/ap_enable_reg_pp0_iter2_reg/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/ap_enable_reg_pp0_iter4_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#654 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/ap_enable_reg_pp0_iter3_reg/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_0_U/rozmycie_buffer_val_0_ram_U/ram_reg/CLKARDCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#655 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/ap_enable_reg_pp0_iter4_reg/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_0_U/rozmycie_buffer_val_0_ram_U/ram_reg/CLKBWRCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#656 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_0_U/rozmycie_buffer_val_0_ram_U/ram_reg/CLKARDCLK is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_0_addr_reg_744_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#657 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_0_U/rozmycie_buffer_val_0_ram_U/ram_reg/CLKBWRCLK is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_0_addr_reg_744_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#658 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_0_addr_reg_744_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_0_addr_reg_744_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#659 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_0_addr_reg_744_reg[10]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_0_addr_reg_744_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#660 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_0_addr_reg_744_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_0_addr_reg_744_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#661 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_0_addr_reg_744_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_0_addr_reg_744_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#662 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_0_addr_reg_744_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_0_addr_reg_744_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#663 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_0_addr_reg_744_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_0_addr_reg_744_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#664 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_0_addr_reg_744_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_0_addr_reg_744_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#665 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_0_addr_reg_744_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_0_addr_reg_744_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#666 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_0_addr_reg_744_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_0_addr_reg_744_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#667 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_0_addr_reg_744_reg[8]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_1_U/rozmycie_buffer_val_0_ram_U/ram_reg/CLKARDCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#668 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_0_addr_reg_744_reg[9]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_1_U/rozmycie_buffer_val_0_ram_U/ram_reg/CLKBWRCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#669 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_1_U/rozmycie_buffer_val_0_ram_U/ram_reg/CLKARDCLK is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/col_assign_reg_198_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#670 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/buffer_val_1_U/rozmycie_buffer_val_0_ram_U/ram_reg/CLKBWRCLK is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/col_assign_reg_198_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#671 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/col_assign_reg_198_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/col_assign_reg_198_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#672 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/col_assign_reg_198_reg[10]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/col_assign_reg_198_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#673 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/col_assign_reg_198_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/col_assign_reg_198_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#674 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/col_assign_reg_198_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/col_assign_reg_198_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#675 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/col_assign_reg_198_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/col_assign_reg_198_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#676 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/col_assign_reg_198_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/col_assign_reg_198_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#677 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/col_assign_reg_198_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/col_assign_reg_198_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#678 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/col_assign_reg_198_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/col_assign_reg_198_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#679 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/col_assign_reg_198_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/col_assign_reg_198_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#680 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/col_assign_reg_198_reg[8]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/exitcond_reg_721_pp0_iter1_reg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#681 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/col_assign_reg_198_reg[9]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/exitcond_reg_721_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#682 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/exitcond_reg_721_pp0_iter1_reg_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_U13/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_DSP48_0_U/p/CLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#683 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/exitcond_reg_721_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_1_reg_701_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#684 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_U13/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_DSP48_0_U/p/CLK is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_1_reg_701_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#685 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_1_reg_701_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_1_reg_701_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#686 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_1_reg_701_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_1_reg_701_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#687 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_1_reg_701_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_1_reg_701_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#688 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_1_reg_701_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_1_reg_701_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#689 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_1_reg_701_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_1_reg_701_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#690 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_1_reg_701_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_1_reg_701_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#691 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_1_reg_701_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_1_reg_701_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#692 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_1_reg_701_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_1_reg_701_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#693 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_1_reg_701_reg[8]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_reg_187_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#694 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_1_reg_701_reg[9]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_reg_187_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#695 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_reg_187_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_reg_187_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#696 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_reg_187_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_reg_187_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#697 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_reg_187_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_reg_187_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#698 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_reg_187_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_reg_187_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#699 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_reg_187_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_reg_187_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#700 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_reg_187_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_reg_187_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#701 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_reg_187_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_reg_187_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#702 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_reg_187_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_reg_187_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#703 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_reg_187_reg[8]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/icmp1_reg_750_pp0_iter1_reg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#704 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/i_reg_187_reg[9]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/icmp1_reg_750_pp0_iter2_reg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#705 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/icmp1_reg_750_pp0_iter1_reg_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/icmp1_reg_750_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#706 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/icmp1_reg_750_pp0_iter2_reg_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/icmp_reg_711_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#707 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/icmp1_reg_750_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_1_fu_120_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#708 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/icmp_reg_711_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_1_fu_120_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#709 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_1_fu_120_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_1_fu_120_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#710 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_1_fu_120_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_1_fu_120_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#711 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_1_fu_120_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_1_fu_120_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#712 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_1_fu_120_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_1_fu_120_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#713 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_1_fu_120_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_1_fu_120_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#714 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_1_fu_120_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_1_fu_120_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#715 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_1_fu_120_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_s_fu_104_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#716 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_1_fu_120_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_s_fu_104_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#717 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_s_fu_104_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_s_fu_104_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#718 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_s_fu_104_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_s_fu_104_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#719 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_s_fu_104_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_s_fu_104_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#720 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_s_fu_104_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_s_fu_104_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#721 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_s_fu_104_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_s_fu_104_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#722 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_s_fu_104_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_s_fu_104_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#723 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_s_fu_104_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_0_s_fu_112_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#724 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_0_0_s_fu_104_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_0_s_fu_112_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#725 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_0_s_fu_112_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_0_s_fu_112_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#726 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_0_s_fu_112_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_0_s_fu_112_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#727 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_0_s_fu_112_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_0_s_fu_112_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#728 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_0_s_fu_112_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_0_s_fu_112_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#729 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_0_s_fu_112_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_0_s_fu_112_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#730 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_0_s_fu_112_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_0_s_fu_112_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#731 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_0_s_fu_112_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_1_s_fu_116_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#732 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_0_s_fu_112_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_1_s_fu_116_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#733 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_1_s_fu_116_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_1_s_fu_116_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#734 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_1_s_fu_116_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_1_s_fu_116_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#735 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_1_s_fu_116_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_1_s_fu_116_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#736 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_1_s_fu_116_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_1_s_fu_116_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#737 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_1_s_fu_116_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_1_s_fu_116_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#738 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_1_s_fu_116_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_1_s_fu_116_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#739 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_1_s_fu_116_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_2_0_s_fu_124_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#740 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_1_1_s_fu_116_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_2_0_s_fu_124_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#741 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_2_0_s_fu_124_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_2_0_s_fu_124_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#742 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_2_0_s_fu_124_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_2_0_s_fu_124_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#743 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_2_0_s_fu_124_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_2_0_s_fu_124_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#744 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_2_0_s_fu_124_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_2_0_s_fu_124_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#745 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_2_0_s_fu_124_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_2_0_s_fu_124_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#746 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_2_0_s_fu_124_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_2_0_s_fu_124_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#747 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_2_0_s_fu_124_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/or_cond6_reg_755_pp0_iter1_reg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#748 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/okno_val_2_0_s_fu_124_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/or_cond6_reg_755_pp0_iter2_reg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#749 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/or_cond6_reg_755_pp0_iter1_reg_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/or_cond6_reg_755_pp0_iter3_reg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#750 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/or_cond6_reg_755_pp0_iter2_reg_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/or_cond6_reg_755_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#751 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/or_cond6_reg_755_pp0_iter3_reg_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/start_once_reg_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#752 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/or_cond6_reg_755_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp10_reg_774_reg/CLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#753 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/start_once_reg_reg/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp1_1_fu_100_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#754 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp10_reg_774_reg/CLK is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp1_1_fu_100_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#755 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp1_1_fu_100_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp1_1_fu_100_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#756 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp1_1_fu_100_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp1_1_fu_100_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#757 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp1_1_fu_100_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp1_1_fu_100_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#758 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp1_1_fu_100_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp1_1_fu_100_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#759 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp1_1_fu_100_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp1_1_fu_100_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#760 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp1_1_fu_100_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp1_1_fu_100_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#761 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp1_1_fu_100_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp6_reg_759_reg/CLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#762 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp1_1_fu_100_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp7_reg_764_reg/CLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#763 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp6_reg_759_reg/CLK is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp9_reg_769_reg/CLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#764 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp7_reg_764_reg/CLK is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp_12_reg_779_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#765 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp9_reg_769_reg/CLK is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp_12_reg_779_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#766 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp_12_reg_779_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp_12_reg_779_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#767 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp_12_reg_779_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp_12_reg_779_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#768 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp_12_reg_779_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp_12_reg_779_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#769 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp_12_reg_779_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp_12_reg_779_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#770 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp_12_reg_779_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp_12_reg_779_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#771 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp_12_reg_779_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp_12_reg_779_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#772 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp_12_reg_779_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp_2_reg_716_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#773 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp_12_reg_779_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp_4_reg_730_pp0_iter1_reg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#774 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp_2_reg_716_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp_4_reg_730_pp0_iter2_reg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#775 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp_4_reg_730_pp0_iter1_reg_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp_4_reg_730_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#776 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp_4_reg_730_pp0_iter2_reg_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp_reg_706_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#777 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp_4_reg_730_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/start_for_Mat2AXIvideo_U0_U/internal_empty_n_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#778 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/rozmycie_U0/tmp_reg_706_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/start_for_Mat2AXIvideo_U0_U/internal_full_n_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#779 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/start_for_Mat2AXIvideo_U0_U/internal_empty_n_reg/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/start_for_Mat2AXIvideo_U0_U/mOutPtr_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#780 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/start_for_Mat2AXIvideo_U0_U/internal_full_n_reg/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/start_for_Mat2AXIvideo_U0_U/mOutPtr_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#781 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/start_for_Mat2AXIvideo_U0_U/mOutPtr_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/start_for_rozmycie_U0_U/internal_empty_n_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#782 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/start_for_Mat2AXIvideo_U0_U/mOutPtr_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/start_for_rozmycie_U0_U/internal_full_n_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#783 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/start_for_rozmycie_U0_U/internal_empty_n_reg/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/start_for_rozmycie_U0_U/mOutPtr_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#784 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/start_for_rozmycie_U0_U/internal_full_n_reg/C is not reached by a timing clock
+The clock pin design_1_i/filtr_Gauss_0/inst/start_for_rozmycie_U0_U/mOutPtr_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#785 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/start_for_rozmycie_U0_U/mOutPtr_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/MULB/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#786 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/filtr_Gauss_0/inst/start_for_rozmycie_U0_U/mOutPtr_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/MULG/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#787 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/MULB/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/MULR/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#788 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/MULG/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/add1_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#789 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/MULR/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/add1_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#790 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/add1_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/add1_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#791 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/add1_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/add1_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#792 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/add1_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/add1_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#793 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/add1_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/add1_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#794 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/add1_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/add1_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#795 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/add1_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/add1_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#796 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/add1_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/add2_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#797 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/add1_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[8]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/add2_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#798 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/add2_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/add2_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#799 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/add2_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/add2_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#800 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/add2_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/add2_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#801 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/add2_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/add2_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#802 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/add2_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/add2_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#803 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/add2_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/add2_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#804 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/add2_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/delay_mult1/(null)[0].reg_i/val_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#805 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/add2_block/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[8]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/delay_mult1/(null)[0].reg_i/val_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#806 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/delay_mult1/(null)[0].reg_i/val_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/delay_mult1/(null)[0].reg_i/val_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#807 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/delay_mult1/(null)[0].reg_i/val_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/delay_mult1/(null)[0].reg_i/val_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#808 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/delay_mult1/(null)[0].reg_i/val_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/delay_mult1/(null)[0].reg_i/val_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#809 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/delay_mult1/(null)[0].reg_i/val_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/delay_mult1/(null)[0].reg_i/val_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#810 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/delay_mult1/(null)[0].reg_i/val_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/delay_mult1/(null)[0].reg_i/val_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#811 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/delay_mult1/(null)[0].reg_i/val_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/delay_mult1/(null)[0].reg_i/val_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#812 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/delay_mult1/(null)[0].reg_i/val_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/delaysync/(null)[0].reg_i/val_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#813 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/delay_mult1/(null)[0].reg_i/val_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/delaysync/(null)[0].reg_i/val_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#814 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/delaysync/(null)[0].reg_i/val_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/delaysync/(null)[0].reg_i/val_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#815 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/delaysync/(null)[0].reg_i/val_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/delaysync/(null)[3].reg_i/val_reg[0]_srl3/CLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#816 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/delaysync/(null)[0].reg_i/val_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/delaysync/(null)[3].reg_i/val_reg[1]_srl3/CLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#817 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/delaysync/(null)[3].reg_i/val_reg[0]_srl3/CLK is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/delaysync/(null)[3].reg_i/val_reg[2]_srl3/CLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#818 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/delaysync/(null)[3].reg_i/val_reg[1]_srl3/CLK is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/delaysync/(null)[4].reg_i/val_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#819 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/delaysync/(null)[3].reg_i/val_reg[2]_srl3/CLK is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/delaysync/(null)[4].reg_i/val_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#820 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/delaysync/(null)[4].reg_i/val_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2gray_0/inst/delaysync/(null)[4].reg_i/val_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#821 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/delaysync/(null)[4].reg_i/val_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#822 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2gray_0/inst/delaysync/(null)[4].reg_i/val_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#823 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[11]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#824 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[12]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#825 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[13]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#826 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[14]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#827 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[15]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#828 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[19]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#829 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[20]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#830 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[21]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#831 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[22]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#832 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[23]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#833 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#834 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#835 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#836 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#837 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2vga_0/U0/vga_pHSync_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#838 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2vga_0/U0/int_pData_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/rgb2vga_0/U0/vga_pVSync_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#839 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2vga_0/U0/vga_pHSync_reg/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/FSM_sequential_gen_fwft.curr_fwft_state_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#840 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/rgb2vga_0/U0/vga_pVSync_reg/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/FSM_sequential_gen_fwft.curr_fwft_state_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#841 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/FSM_sequential_gen_fwft.curr_fwft_state_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/gen_fwft.rdpp1_inst/count_value_i_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#842 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/FSM_sequential_gen_fwft.curr_fwft_state_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/gen_fwft.rdpp1_inst/count_value_i_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#843 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/gen_fwft.rdpp1_inst/count_value_i_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/gen_pntr_flags_cc.gen_full_rst_val.ram_full_i_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#844 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/gen_fwft.rdpp1_inst/count_value_i_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/gen_pntr_flags_cc.ram_empty_i_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#845 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/gen_pntr_flags_cc.gen_full_rst_val.ram_full_i_reg/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/CLKARDCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#846 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/gen_pntr_flags_cc.ram_empty_i_reg/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/CLKBWRCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#847 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/CLKARDCLK is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/grdc.rd_data_count_i_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#848 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/CLKBWRCLK is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/grdc.rd_data_count_i_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#849 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/grdc.rd_data_count_i_reg[10]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/grdc.rd_data_count_i_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#850 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/grdc.rd_data_count_i_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/grdc.rd_data_count_i_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#851 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/grdc.rd_data_count_i_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/grdc.rd_data_count_i_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#852 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/grdc.rd_data_count_i_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/grdc.rd_data_count_i_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#853 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/grdc.rd_data_count_i_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/grdc.rd_data_count_i_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#854 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/grdc.rd_data_count_i_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/grdc.rd_data_count_i_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#855 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/grdc.rd_data_count_i_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/grdc.rd_data_count_i_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#856 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/grdc.rd_data_count_i_reg[8]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#857 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/grdc.rd_data_count_i_reg[9]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#858 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#859 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[10]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#860 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#861 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#862 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#863 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#864 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#865 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#866 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#867 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[8]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#868 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdp_inst/count_value_i_reg[9]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#869 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#870 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#871 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#872 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#873 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#874 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#875 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#876 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#877 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i_reg[8]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rst_d1_inst/d_out_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#878 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rdpp1_inst/count_value_i_reg[9]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrp_inst/count_value_i_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#879 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/rst_d1_inst/d_out_reg/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrp_inst/count_value_i_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#880 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrp_inst/count_value_i_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrp_inst/count_value_i_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#881 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrp_inst/count_value_i_reg[10]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrp_inst/count_value_i_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#882 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrp_inst/count_value_i_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrp_inst/count_value_i_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#883 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrp_inst/count_value_i_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrp_inst/count_value_i_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#884 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrp_inst/count_value_i_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrp_inst/count_value_i_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#885 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrp_inst/count_value_i_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrp_inst/count_value_i_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#886 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrp_inst/count_value_i_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrp_inst/count_value_i_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#887 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrp_inst/count_value_i_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrp_inst/count_value_i_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#888 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrp_inst/count_value_i_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrp_inst/count_value_i_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#889 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrp_inst/count_value_i_reg[8]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrpp1_inst/count_value_i_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#890 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrp_inst/count_value_i_reg[9]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrpp1_inst/count_value_i_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#891 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrpp1_inst/count_value_i_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrpp1_inst/count_value_i_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#892 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrpp1_inst/count_value_i_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrpp1_inst/count_value_i_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#893 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrpp1_inst/count_value_i_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrpp1_inst/count_value_i_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#894 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrpp1_inst/count_value_i_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrpp1_inst/count_value_i_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#895 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrpp1_inst/count_value_i_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrpp1_inst/count_value_i_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#896 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrpp1_inst/count_value_i_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrpp1_inst/count_value_i_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#897 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrpp1_inst/count_value_i_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrpp1_inst/count_value_i_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#898 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrpp1_inst/count_value_i_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrpp1_inst/count_value_i_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#899 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrpp1_inst/count_value_i_reg[8]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_cc.fifo_wr_rst_cc_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#900 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/wrpp1_inst/count_value_i_reg[9]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_cc.fifo_wr_rst_cc_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#901 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_cc.fifo_wr_rst_cc_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_cc.fifo_wr_rst_cc_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#902 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_cc.fifo_wr_rst_cc_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/xpm_fifo_rst_inst/power_on_rst_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#903 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_cc.fifo_wr_rst_cc_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/xpm_fifo_rst_inst/power_on_rst_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#904 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/xpm_fifo_rst_inst/power_on_rst_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/fivid_reset_full_frame_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#905 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/xpm_fifo_rst_inst/power_on_rst_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#906 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/fivid_reset_full_frame_reg/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#907 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[11]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#908 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[12]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#909 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[13]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#910 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[14]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#911 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[15]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#912 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[19]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#913 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[20]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#914 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[21]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#915 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[22]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#916 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[23]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#917 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#918 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#919 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#920 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#921 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_de_mux_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#922 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_data_mux_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_hsync_mux_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#923 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_de_mux_reg/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_vsync_mux_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#924 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_hsync_mux_reg/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vblank_rising_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#925 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/in_vsync_mux_reg/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vtg_vblank_1_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#926 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vblank_rising_reg/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#927 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/FORMATTER_INST/vtg_vblank_1_reg/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#928 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#929 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#930 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_cnt_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#931 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_cnt_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#932 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_cnt_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_cnt_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#933 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_cnt_reg[10]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_cnt_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#934 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_cnt_reg[11]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_cnt_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#935 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_cnt_reg[12]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_cnt_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#936 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_cnt_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_cnt_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#937 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_cnt_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_cnt_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#938 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_cnt_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_cnt_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#939 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_cnt_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_cnt_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#940 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_cnt_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_cnt_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#941 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_cnt_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_cnt_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#942 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_cnt_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_cnt_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#943 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_cnt_reg[8]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_dly_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#944 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_cnt_reg[9]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_re_dly_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#945 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_dly_reg/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_sof_cnt_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#946 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_re_dly_reg/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_sof_cnt_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#947 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_sof_cnt_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_sof_cnt_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#948 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_sof_cnt_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_sof_cnt_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#949 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_sof_cnt_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_sof_cnt_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#950 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_sof_cnt_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_sof_cnt_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#951 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_sof_cnt_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_sof_cnt_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#952 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_sof_cnt_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_sof_cnt_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#953 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_sof_cnt_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_sof_dly_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#954 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_sof_cnt_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/locked_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#955 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_sof_dly_reg/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/sof_ignore_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#956 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/locked_reg/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_de_dly_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#957 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/sof_ignore_reg/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#958 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_de_dly_reg/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#959 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#960 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[10]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#961 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[11]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#962 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[12]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#963 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[13]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#964 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[14]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#965 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[15]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#966 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[16]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#967 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[17]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#968 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[18]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#969 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[19]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#970 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#971 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[20]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#972 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[21]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#973 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[22]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#974 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[23]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#975 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[24]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#976 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[25]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[27]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#977 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[26]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#978 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[27]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[29]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#979 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[28]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#980 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[29]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[30]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#981 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[31]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#982 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[30]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#983 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[31]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#984 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#985 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#986 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#987 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#988 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#989 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[8]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_sof_cnt_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#990 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_lag_reg[9]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_sof_cnt_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#991 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_sof_cnt_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_sof_cnt_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#992 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_sof_cnt_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_sof_cnt_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#993 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_sof_cnt_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_sof_cnt_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#994 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_sof_cnt_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_sof_cnt_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#995 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_sof_cnt_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_sof_cnt_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#996 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_sof_cnt_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_sof_cnt_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#997 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_sof_cnt_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_sof_dly_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#998 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_sof_cnt_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_vsync_bp_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#999 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_sof_dly_reg/C is not reached by a timing clock
+The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_vsync_dly_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#1000 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_vsync_bp_reg/C is not reached by a timing clock
+The clock pin design_1_i/v_tc_0/U0/U_TC_TOP/GEN_DETECTION.U_tc_DET/DET_HACTIVE.DET_AVIDEO_LOCK.active_video_count_last_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 XDCB-5#1 Warning
 Runtime inefficient way to find pin objects  
 The option '-through : [get_pins -filter {NAME =~ */SyncAsync*/oSyncStages_reg[0]/D} -hier]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '4' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_0/src/dvi2rgb.xdc (Line: 13)
+Current XDC: /home/lsriw/HLS/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_0/src/dvi2rgb.xdc (Line: 13)
 Related violations: <none>
 
 

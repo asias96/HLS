@@ -1,0 +1,19 @@
+
+
+Implementation tool: Xilinx Vivado v.2018.3
+Project:             GAUSS
+Solution:            Gauss_Solution_1
+Device target:       xc7z010clg400-1
+Report date:         Wed Jan 15 10:57:24 CET 2020
+
+#=== Post-Synthesis Resource usage ===
+SLICE:            0
+LUT:            390
+FF:             418
+DSP:              9
+BRAM:             2
+SRL:              1
+#=== Final timing ===
+CP required:    10.000
+CP achieved post-synthesis:    8.757
+Timing met

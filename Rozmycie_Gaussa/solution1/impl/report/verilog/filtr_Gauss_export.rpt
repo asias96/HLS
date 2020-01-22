@@ -4,12 +4,12 @@ Implementation tool: Xilinx Vivado v.2018.3
 Project:             Rozmycie_Gaussa
 Solution:            solution1
 Device target:       xc7z010clg400-1
-Report date:         Wed Jan 15 10:57:10 CET 2020
+Report date:         Wed Jan 22 11:02:10 CET 2020
 
 #=== Post-Synthesis Resource usage ===
 SLICE:            0
-LUT:            399
-FF:             402
+LUT:            377
+FF:             378
 DSP:              5
 BRAM:             2
 SRL:              0

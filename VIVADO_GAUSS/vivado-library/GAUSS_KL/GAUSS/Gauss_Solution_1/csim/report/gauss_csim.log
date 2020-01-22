@@ -1,0 +1,11 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../test/test_gauss.cpp in debug mode
+csim.mk:77: recipe for target 'obj/test_gauss.o' failed
+../../../test/test_gauss.cpp:4:25: fatal error: src/gauss.hpp: No such file or directory
+ #include "src/gauss.hpp"
+                         ^
+compilation terminated.
+make: *** [obj/test_gauss.o] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

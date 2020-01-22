@@ -1,75 +1,79 @@
 {
    "ExpandedHierarchyInLayout":"",
-   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 TLS
 #  -string -flagsOSRD
-preplace port vga_hs -pg 1 -y 920 -defaultsOSRD
-preplace port hdmi_in_clk_n -pg 1 -y 720 -defaultsOSRD
-preplace port sys_clock -pg 1 -y 820 -defaultsOSRD
-preplace port hdmi_in_clk_p -pg 1 -y 690 -defaultsOSRD
-preplace port vga_vs -pg 1 -y 950 -defaultsOSRD
-preplace port hdmi_in_ddc -pg 1 -y 780 -defaultsOSRD
-preplace portBus vga_b -pg 1 -y 890 -defaultsOSRD
-preplace portBus hdmi_hpd -pg 1 -y 660 -defaultsOSRD
-preplace portBus hdmi_out_en -pg 1 -y 1000 -defaultsOSRD
-preplace portBus hdmi_in_data_n -pg 1 -y 780 -defaultsOSRD
-preplace portBus vga_r -pg 1 -y 830 -defaultsOSRD
-preplace portBus hdmi_in_data_p -pg 1 -y 750 -defaultsOSRD
-preplace portBus vga_g -pg 1 -y 860 -defaultsOSRD
-preplace inst v_axi4s_vid_out_0 -pg 1 -lvl 6 -y 600 -defaultsOSRD
-preplace inst xlslice_0 -pg 1 -lvl 3 -y 140 -defaultsOSRD
-preplace inst rgb2gray_0 -pg 1 -lvl 3 -y 660 -defaultsOSRD
-preplace inst v_tc_0 -pg 1 -lvl 5 -y 650 -defaultsOSRD
-preplace inst GND -pg 1 -lvl 6 -y 1000 -defaultsOSRD
-preplace inst xlconcat_0 -pg 1 -lvl 5 -y 240 -defaultsOSRD
-preplace inst v_vid_in_axi4s_0 -pg 1 -lvl 4 -y 500 -defaultsOSRD
-preplace inst filtr_Gauss_0 -pg 1 -lvl 4 -y 140 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 1 -y 820 -defaultsOSRD
-preplace inst VCC -pg 1 -lvl 7 -y 720 -defaultsOSRD
-preplace inst dvi2rgb_0 -pg 1 -lvl 2 -y 750 -defaultsOSRD
-preplace inst rgb2vga_0 -pg 1 -lvl 7 -y 890 -defaultsOSRD
-preplace netloc v_axi4s_vid_out_0_vid_data 1 6 1 2040
-preplace netloc rgb2vga_0_vga_pRed 1 7 1 2350J
-preplace netloc VCC_dout 1 3 5 860 690 1310 760 1640 770 2030J 660 2350
-preplace netloc v_vid_in_axi4s_0_m_axis_video_tvalid 1 3 2 830 290 1290
-preplace netloc v_axi4s_vid_out_0_vid_hsync 1 6 1 2020
-preplace netloc rgb2vga_0_vga_pGreen 1 7 1 2350J
-preplace netloc v_axi4s_vid_out_0_vid_io_out 1 6 1 2050
-preplace netloc rgb2gray_0_pixel_out 1 3 1 810
-preplace netloc filtr_Gauss_0_out_r_TVALID 1 4 2 1340J 140 1620
-preplace netloc dvi2rgb_0_vid_pVDE 1 2 1 550
-preplace netloc rgb2gray_0_de_out 1 3 1 830
-preplace netloc hdmi_in_clk_n_1 1 0 2 NJ 720 NJ
-preplace netloc hdmi_in_clk_p_1 1 0 2 NJ 690 200J
-preplace netloc hdmi_in_data_n_1 1 0 2 20J 760 NJ
+preplace port vga_hs -pg 1 -y 260 -defaultsOSRD
+preplace port hdmi_in_clk_n -pg 1 -y 470 -defaultsOSRD
+preplace port sys_clock -pg 1 -y 570 -defaultsOSRD
+preplace port hdmi_in_clk_p -pg 1 -y 450 -defaultsOSRD
+preplace port vga_vs -pg 1 -y 280 -defaultsOSRD
+preplace port hdmi_in_ddc -pg 1 -y 530 -defaultsOSRD
+preplace portBus vga_b -pg 1 -y 240 -defaultsOSRD
+preplace portBus hdmi_hpd -pg 1 -y 410 -defaultsOSRD
+preplace portBus hdmi_out_en -pg 1 -y 630 -defaultsOSRD
+preplace portBus hdmi_in_data_n -pg 1 -y 510 -defaultsOSRD
+preplace portBus vga_r -pg 1 -y 200 -defaultsOSRD
+preplace portBus hdmi_in_data_p -pg 1 -y 490 -defaultsOSRD
+preplace portBus vga_g -pg 1 -y 220 -defaultsOSRD
+preplace inst v_axi4s_vid_out_0 -pg 1 -lvl 8 -y 290 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 5 -y 180 -defaultsOSRD
+preplace inst rgb2gray_0 -pg 1 -lvl 3 -y 430 -defaultsOSRD
+preplace inst v_tc_0 -pg 1 -lvl 5 -y 380 -defaultsOSRD
+preplace inst GND -pg 1 -lvl 8 -y 690 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 7 -y 110 -defaultsOSRD
+preplace inst v_vid_in_axi4s_0 -pg 1 -lvl 4 -y 300 -defaultsOSRD
+preplace inst filtr_Gauss_0 -pg 1 -lvl 6 -y 250 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -y 570 -defaultsOSRD
+preplace inst VCC -pg 1 -lvl 9 -y 470 -defaultsOSRD
+preplace inst dvi2rgb_0 -pg 1 -lvl 2 -y 500 -defaultsOSRD
+preplace inst rgb2vga_0 -pg 1 -lvl 9 -y 240 -defaultsOSRD
+preplace netloc v_axi4s_vid_out_0_vid_data 1 8 1 N
+preplace netloc rgb2vga_0_vga_pRed 1 9 1 NJ
+preplace netloc VCC_dout 1 3 7 960 150 1360 260 1730 500 NJ 500 2470 530 NJ 530 3210
+preplace netloc v_vid_in_axi4s_0_m_axis_video_tvalid 1 4 2 1390 110 NJ
+preplace netloc v_axi4s_vid_out_0_vid_hsync 1 8 1 N
+preplace netloc rgb2vga_0_vga_pGreen 1 9 1 NJ
+preplace netloc v_axi4s_vid_out_0_vid_io_out 1 8 1 N
+preplace netloc rgb2gray_0_pixel_out 1 3 1 910
+preplace netloc filtr_Gauss_0_out_r_TVALID 1 6 2 2200 30 2450J
+preplace netloc v_tc_0_vsync_out 1 5 3 1710 480 2230J 350 NJ
+preplace netloc v_tc_0_vblank_out 1 5 3 1720 490 2220J 330 NJ
+preplace netloc dvi2rgb_0_vid_pVDE 1 2 1 630
+preplace netloc rgb2gray_0_de_out 1 3 1 930
+preplace netloc hdmi_in_clk_n_1 1 0 2 NJ 470 NJ
+preplace netloc hdmi_in_clk_p_1 1 0 2 NJ 450 NJ
+preplace netloc hdmi_in_data_n_1 1 0 2 NJ 510 NJ
 preplace netloc sys_clock_1 1 0 1 NJ
-preplace netloc v_vid_in_axi4s_0_m_axis_video_tuser 1 3 2 840 300 1270
-preplace netloc dvi2rgb_0_DDC 1 2 6 NJ 780 860J 700 1250J 780 NJ 780 NJ 780 NJ
-preplace netloc filtr_Gauss_0_in_r_TREADY 1 3 2 870 280 1280
-preplace netloc v_vid_in_axi4s_0_m_axis_video_tlast 1 3 2 850 310 1260
-preplace netloc xlconcat_0_dout 1 5 1 1640
-preplace netloc v_axi4s_vid_out_0_vtg_ce 1 4 3 1330 430 NJ 430 2000
-preplace netloc dvi2rgb_0_vid_pHSync 1 2 1 540
-preplace netloc rgb2vga_0_vga_pVSync 1 7 1 2350J
-preplace netloc rgb2vga_0_vga_pHSync 1 7 1 2350J
-preplace netloc dvi2rgb_0_vid_pVSync 1 2 1 570
-preplace netloc dvi2rgb_0_vid_pData 1 2 1 530
-preplace netloc clk_wiz_0_clk_out1 1 1 1 200J
-preplace netloc v_vid_in_axi4s_0_m_axis_video_tdata 1 2 3 530 400 810J 320 1250
-preplace netloc filtr_Gauss_0_out_r_TUSER 1 4 2 1310J 320 1600
-preplace netloc v_axi4s_vid_out_0_s_axis_video_tready 1 4 2 1330J 160 1630
-preplace netloc v_vid_in_axi4s_0_vtiming_out 1 4 1 1270
-preplace netloc v_tc_0_vtiming_out 1 5 1 1610
-preplace netloc filtr_Gauss_0_out_r_TLAST 1 4 2 1300J 330 1610
-preplace netloc filtr_Gauss_0_out_r_TDATA 1 4 1 1320
-preplace netloc v_axi4s_vid_out_0_vid_vsync 1 6 1 2010
-preplace netloc GND_dout 1 1 7 210 880 NJ 880 840J 800 1300J 880 NJ 880 2000 1000 NJ
-preplace netloc xlslice_0_Dout 1 3 1 NJ
-preplace netloc rgb2gray_0_vsync_out 1 3 1 850
-preplace netloc rgb2gray_0_hsync_out 1 3 1 840
-preplace netloc rgb2vga_0_vga_pBlue 1 7 1 NJ
-preplace netloc dvi2rgb_0_PixelClk 1 2 5 560 760 820 680 1280 770 1630 940 NJ
-preplace netloc hdmi_in_data_p_1 1 0 2 NJ 750 200J
-levelinfo -pg 1 0 110 370 690 1060 1470 1820 2200 2370 -top 0 -bot 1060
+preplace netloc v_vid_in_axi4s_0_m_axis_video_tuser 1 4 2 1410 240 1760J
+preplace netloc dvi2rgb_0_DDC 1 2 8 NJ 530 NJ 530 NJ 530 NJ 530 NJ 530 2450J 540 NJ 540 3220J
+preplace netloc filtr_Gauss_0_in_r_TREADY 1 4 2 1370 120 1770J
+preplace netloc v_vid_in_axi4s_0_m_axis_video_tlast 1 4 2 N 250 1770J
+preplace netloc xlconcat_0_dout 1 7 1 2460J
+preplace netloc v_axi4s_vid_out_0_vtg_ce 1 4 5 1390 510 NJ 510 NJ 510 NJ 510 2880
+preplace netloc dvi2rgb_0_vid_pHSync 1 2 1 600
+preplace netloc v_tc_0_hblank_out 1 5 3 1740 20 2190J 290 NJ
+preplace netloc rgb2vga_0_vga_pVSync 1 9 1 NJ
+preplace netloc rgb2vga_0_vga_pHSync 1 9 1 NJ
+preplace netloc dvi2rgb_0_vid_pVSync 1 2 1 620
+preplace netloc dvi2rgb_0_vid_pData 1 2 1 590
+preplace netloc clk_wiz_0_clk_out1 1 1 1 220J
+preplace netloc filtr_Gauss_0_out_r_TUSER 1 6 2 2230 210 NJ
+preplace netloc v_axi4s_vid_out_0_s_axis_video_tready 1 6 2 2230 190 NJ
+preplace netloc v_tc_0_hsync_out 1 5 3 1760 470 2200J 310 NJ
+preplace netloc v_vid_in_axi4s_0_m_axis_video_tdata 1 4 1 1380
+preplace netloc v_vid_in_axi4s_0_vtiming_out 1 4 1 N
+preplace netloc filtr_Gauss_0_out_r_TLAST 1 6 2 2210 20 2480J
+preplace netloc filtr_Gauss_0_out_r_TDATA 1 6 1 2220
+preplace netloc v_axi4s_vid_out_0_vid_vsync 1 8 1 N
+preplace netloc GND_dout 1 1 9 230 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 2890 630 NJ
+preplace netloc xlslice_0_Dout 1 5 1 1730J
+preplace netloc v_tc_0_active_video_out 1 5 3 1750 30 2180J 270 NJ
+preplace netloc rgb2gray_0_vsync_out 1 3 1 950
+preplace netloc rgb2gray_0_hsync_out 1 3 1 940
+preplace netloc rgb2vga_0_vga_pBlue 1 9 1 NJ
+preplace netloc dvi2rgb_0_PixelClk 1 2 7 610 330 920 140 1400 100 1780 10 NJ 10 2470 70 2890J
+preplace netloc hdmi_in_data_p_1 1 0 2 NJ 490 NJ
+levelinfo -pg 1 0 120 410 770 1160 1560 1980 2340 2680 3050 3240 -top 0 -bot 750
 "
 }
 {

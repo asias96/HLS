@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Wed Jan 15 10:51:05 CET 2020
+// File generated on Wed Jan 22 10:57:28 CET 2020
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -102011,6 +102011,7 @@ static void init_wsp(wsp_Gauss coeff[3][3]);
 static wsp_Gauss coeff_tab[3][3];
 
 static void init_wsp(wsp_Gauss coeff[3][3]){
+#pragma HLS ARRAY_PARTITION variable=coeff_tab complete dim=1
 
  float coeff_float[3][3];
  float sum = 0;
@@ -102091,7 +102092,6 @@ void filtr_Gauss (dane& in, dane& out){
 #pragma HLS DATAFLOW
 #pragma HLS INTERFACE axis register both port=out
 #pragma HLS INTERFACE axis register both port=in
-#pragma HLS INTERFACE s_axilite port=return bundle=bun_1
 
  img_gray instance_in;
  img_gray instance_out;

@@ -17,34 +17,11 @@
 #include "fifo_w8_d2_A.h"
 #include "start_for_rozmycie_U0.h"
 #include "start_for_Mat2AXIvideo_U0.h"
-#include "filtr_Gauss_bun_1_s_axi.h"
 
 namespace ap_rtl {
 
-template<unsigned int C_S_AXI_BUN_1_ADDR_WIDTH = 4,
-         unsigned int C_S_AXI_BUN_1_DATA_WIDTH = 32>
 struct filtr_Gauss : public sc_module {
-    // Port declarations 38
-    sc_in< sc_logic > s_axi_bun_1_AWVALID;
-    sc_out< sc_logic > s_axi_bun_1_AWREADY;
-    sc_in< sc_uint<C_S_AXI_BUN_1_ADDR_WIDTH> > s_axi_bun_1_AWADDR;
-    sc_in< sc_logic > s_axi_bun_1_WVALID;
-    sc_out< sc_logic > s_axi_bun_1_WREADY;
-    sc_in< sc_uint<C_S_AXI_BUN_1_DATA_WIDTH> > s_axi_bun_1_WDATA;
-    sc_in< sc_uint<C_S_AXI_BUN_1_DATA_WIDTH/8> > s_axi_bun_1_WSTRB;
-    sc_in< sc_logic > s_axi_bun_1_ARVALID;
-    sc_out< sc_logic > s_axi_bun_1_ARREADY;
-    sc_in< sc_uint<C_S_AXI_BUN_1_ADDR_WIDTH> > s_axi_bun_1_ARADDR;
-    sc_out< sc_logic > s_axi_bun_1_RVALID;
-    sc_in< sc_logic > s_axi_bun_1_RREADY;
-    sc_out< sc_uint<C_S_AXI_BUN_1_DATA_WIDTH> > s_axi_bun_1_RDATA;
-    sc_out< sc_lv<2> > s_axi_bun_1_RRESP;
-    sc_out< sc_logic > s_axi_bun_1_BVALID;
-    sc_in< sc_logic > s_axi_bun_1_BREADY;
-    sc_out< sc_lv<2> > s_axi_bun_1_BRESP;
-    sc_in_clk ap_clk;
-    sc_in< sc_logic > ap_rst_n;
-    sc_out< sc_logic > interrupt;
+    // Port declarations 24
     sc_in< sc_lv<8> > in_r_TDATA;
     sc_in< sc_lv<1> > in_r_TKEEP;
     sc_in< sc_lv<1> > in_r_TSTRB;
@@ -59,10 +36,16 @@ struct filtr_Gauss : public sc_module {
     sc_out< sc_lv<1> > out_r_TLAST;
     sc_out< sc_lv<1> > out_r_TID;
     sc_out< sc_lv<1> > out_r_TDEST;
+    sc_in_clk ap_clk;
+    sc_in< sc_logic > ap_rst_n;
     sc_in< sc_logic > in_r_TVALID;
     sc_out< sc_logic > in_r_TREADY;
+    sc_in< sc_logic > ap_start;
     sc_out< sc_logic > out_r_TVALID;
     sc_in< sc_logic > out_r_TREADY;
+    sc_out< sc_logic > ap_done;
+    sc_out< sc_logic > ap_ready;
+    sc_out< sc_logic > ap_idle;
     sc_signal< sc_logic > ap_var_for_const0;
 
 
@@ -76,7 +59,6 @@ struct filtr_Gauss : public sc_module {
 
     ofstream mHdltvinHandle;
     ofstream mHdltvoutHandle;
-    filtr_Gauss_bun_1_s_axi<C_S_AXI_BUN_1_ADDR_WIDTH,C_S_AXI_BUN_1_DATA_WIDTH>* filtr_Gauss_bun_1_s_axi_U;
     AXIvideo2Mat* AXIvideo2Mat_U0;
     rozmycie* rozmycie_U0;
     Mat2AXIvideo* Mat2AXIvideo_U0;
@@ -85,10 +67,6 @@ struct filtr_Gauss : public sc_module {
     start_for_rozmycie_U0* start_for_rozmycie_U0_U;
     start_for_Mat2AXIvideo_U0* start_for_Mat2AXIvideo_U0_U;
     sc_signal< sc_logic > ap_rst_n_inv;
-    sc_signal< sc_logic > ap_start;
-    sc_signal< sc_logic > ap_ready;
-    sc_signal< sc_logic > ap_done;
-    sc_signal< sc_logic > ap_idle;
     sc_signal< sc_logic > AXIvideo2Mat_U0_ap_start;
     sc_signal< sc_logic > AXIvideo2Mat_U0_ap_done;
     sc_signal< sc_logic > AXIvideo2Mat_U0_ap_continue;
@@ -142,12 +120,9 @@ struct filtr_Gauss : public sc_module {
     sc_signal< sc_logic > start_for_Mat2AXIvideo_U0_empty_n;
     sc_signal< sc_logic > Mat2AXIvideo_U0_start_full_n;
     sc_signal< sc_logic > Mat2AXIvideo_U0_start_write;
-    static const int C_S_AXI_DATA_WIDTH;
-    static const int C_S_AXI_WSTRB_WIDTH;
-    static const int C_S_AXI_ADDR_WIDTH;
-    static const sc_logic ap_const_logic_1;
     static const sc_lv<8> ap_const_lv8_0;
     static const sc_lv<1> ap_const_lv1_0;
+    static const sc_logic ap_const_logic_1;
     static const sc_logic ap_const_logic_0;
     // Thread declarations
     void thread_ap_var_for_const0();

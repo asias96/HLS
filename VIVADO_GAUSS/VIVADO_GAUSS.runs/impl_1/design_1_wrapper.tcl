@@ -60,7 +60,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {HDL-1065} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -71,19 +70,19 @@ set rc [catch {
   set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir D:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.cache/wt [current_project]
-  set_property parent.project_path D:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.xpr [current_project]
-  set_property ip_repo_paths D:/HLS/VIVADO_GAUSS/vivado-library [current_project]
+  set_property webtalk.parent_dir /home/lsriw/HLS/HLS/VIVADO_GAUSS/VIVADO_GAUSS.cache/wt [current_project]
+  set_property parent.project_path /home/lsriw/HLS/HLS/VIVADO_GAUSS/VIVADO_GAUSS.xpr [current_project]
+  set_property ip_repo_paths /home/lsriw/HLS/HLS/VIVADO_GAUSS/vivado-library [current_project]
   update_ip_catalog
-  set_property ip_output_repo D:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.cache/ip [current_project]
+  set_property ip_output_repo /home/lsriw/HLS/HLS/VIVADO_GAUSS/VIVADO_GAUSS.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO} [current_project]
-  add_files -quiet D:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.runs/synth_1/design_1_wrapper.dcp
+  add_files -quiet /home/lsriw/HLS/HLS/VIVADO_GAUSS/VIVADO_GAUSS.runs/synth_1/design_1_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files D:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/design_1.bd
+  add_files /home/lsriw/HLS/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/design_1.bd
   set_param project.isImplRun false
-  read_xdc D:/HLS/VIVADO_GAUSS/XDC_IP/ZYBO_Master.xdc
+  read_xdc /home/lsriw/HLS/HLS/VIVADO_GAUSS/XDC_IP/ZYBO_Master.xdc
   set_param project.isImplRun true
   link_design -top design_1_wrapper -part xc7z010clg400-1
   set_param project.isImplRun false

@@ -1,0 +1,14 @@
+gauss_mul_mul_8ns_11ns_19_1_1
+gauss_mac_muladd_8ns_10ns_18ns_18_1_1
+gauss_mac_muladd_8ns_10ns_19ns_19_1_1
+gauss_mac_muladd_8ns_10ns_18ns_19_1_1
+gauss_blur_buff_val_0
+fifo_w8_d2_A
+fifo_w8_d2_A
+start_for_gauss_blur_U0
+start_for_Mat2AXIvideo_U0
+gauss_bun_1_s_axi
+AXIvideo2Mat
+gauss_blur
+Mat2AXIvideo
+gauss

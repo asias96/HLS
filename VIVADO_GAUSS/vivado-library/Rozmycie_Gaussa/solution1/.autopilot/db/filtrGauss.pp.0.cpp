@@ -34201,6 +34201,7 @@ static void init_wsp(wsp_Gauss coeff[3][3]);
 static wsp_Gauss coeff_tab[3][3];
 
 static void init_wsp(wsp_Gauss coeff[3][3]){_ssdm_SpecArrayDimSize(coeff, 3);
+#pragma HLS ARRAY_PARTITION variable=&coeff_tab complete dim=1
 
  float coeff_float[3][3];
  float sum = 0;
@@ -34281,7 +34282,6 @@ void filtr_Gauss (dane& in, dane& out){
 #pragma HLS DATAFLOW
 #pragma HLS INTERFACE axis register both port=&out
 #pragma HLS INTERFACE axis register both port=&in
-#pragma HLS INTERFACE s_axilite port=return bundle=bun_1
 
  img_gray instance_in;
  img_gray instance_out;

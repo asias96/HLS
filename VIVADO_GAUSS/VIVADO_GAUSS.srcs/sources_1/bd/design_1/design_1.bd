@@ -18,9 +18,9 @@
       "v_axi4s_vid_out_0": "",
       "rgb2vga_0": "",
       "rgb2gray_0": "",
-      "filtr_Gauss_0": "",
       "xlconcat_0": "",
-      "xlslice_0": ""
+      "xlslice_0": "",
+      "filtr_Gauss_0": ""
     },
     "interface_ports": {
       "hdmi_in_ddc": {
@@ -204,10 +204,6 @@
         "vlnv": "xilinx.com:user:rgb2gray:1.0",
         "xci_name": "design_1_rgb2gray_0_0"
       },
-      "filtr_Gauss_0": {
-        "vlnv": "xilinx.com:hls:filtr_Gauss:1.0",
-        "xci_name": "design_1_filtr_Gauss_0_0"
-      },
       "xlconcat_0": {
         "vlnv": "xilinx.com:ip:xlconcat:2.1",
         "xci_name": "design_1_xlconcat_0_0",
@@ -234,6 +230,10 @@
             "value": "8"
           }
         }
+      },
+      "filtr_Gauss_0": {
+        "vlnv": "xilinx.com:hls:filtr_Gauss:1.0",
+        "xci_name": "design_1_filtr_Gauss_0_1"
       }
     },
     "interface_nets": {
@@ -243,22 +243,16 @@
           "v_vid_in_axi4s_0/vtiming_out"
         ]
       },
-      "v_axi4s_vid_out_0_vid_io_out": {
-        "interface_ports": [
-          "v_axi4s_vid_out_0/vid_io_out",
-          "rgb2vga_0/vid_in"
-        ]
-      },
       "dvi2rgb_0_DDC": {
         "interface_ports": [
           "hdmi_in_ddc",
           "dvi2rgb_0/DDC"
         ]
       },
-      "v_tc_0_vtiming_out": {
+      "v_axi4s_vid_out_0_vid_io_out": {
         "interface_ports": [
-          "v_axi4s_vid_out_0/vtiming_in",
-          "v_tc_0/vtiming_out"
+          "v_axi4s_vid_out_0/vid_io_out",
+          "rgb2vga_0/vid_in"
         ]
       }
     },
@@ -321,7 +315,8 @@
           "v_axi4s_vid_out_0/aclken",
           "v_axi4s_vid_out_0/vid_io_out_ce",
           "v_axi4s_vid_out_0/aresetn",
-          "filtr_Gauss_0/ap_rst_n"
+          "filtr_Gauss_0/ap_rst_n",
+          "filtr_Gauss_0/ap_start"
         ]
       },
       "dvi2rgb_0_PixelClk": {
@@ -451,6 +446,42 @@
           "v_axi4s_vid_out_0/s_axis_video_tdata"
         ]
       },
+      "v_vid_in_axi4s_0_m_axis_video_tdata": {
+        "ports": [
+          "v_vid_in_axi4s_0/m_axis_video_tdata",
+          "xlslice_0/Din"
+        ]
+      },
+      "v_tc_0_active_video_out": {
+        "ports": [
+          "v_tc_0/active_video_out",
+          "v_axi4s_vid_out_0/vtg_active_video"
+        ]
+      },
+      "v_tc_0_hblank_out": {
+        "ports": [
+          "v_tc_0/hblank_out",
+          "v_axi4s_vid_out_0/vtg_hblank"
+        ]
+      },
+      "v_tc_0_hsync_out": {
+        "ports": [
+          "v_tc_0/hsync_out",
+          "v_axi4s_vid_out_0/vtg_hsync"
+        ]
+      },
+      "v_tc_0_vblank_out": {
+        "ports": [
+          "v_tc_0/vblank_out",
+          "v_axi4s_vid_out_0/vtg_vblank"
+        ]
+      },
+      "v_tc_0_vsync_out": {
+        "ports": [
+          "v_tc_0/vsync_out",
+          "v_axi4s_vid_out_0/vtg_vsync"
+        ]
+      },
       "filtr_Gauss_0_out_r_TLAST": {
         "ports": [
           "filtr_Gauss_0/out_r_TLAST",
@@ -473,12 +504,6 @@
         "ports": [
           "filtr_Gauss_0/out_r_TVALID",
           "v_axi4s_vid_out_0/s_axis_video_tvalid"
-        ]
-      },
-      "v_vid_in_axi4s_0_m_axis_video_tdata": {
-        "ports": [
-          "v_vid_in_axi4s_0/m_axis_video_tdata",
-          "xlslice_0/Din"
         ]
       },
       "xlslice_0_Dout": {

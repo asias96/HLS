@@ -1765,3 +1765,309 @@ SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ==============================================================
+==============================================================
+File generated on Wed Jan 22 10:30:02 CET 2020
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Rozmycie_Gaussa/.settings/filtrGauss.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 446.191 ; gain = 0.191 ; free physical = 9217 ; free virtual = 14886
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 446.191 ; gain = 0.191 ; free physical = 9217 ; free virtual = 14886
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:701) in function 'hls::Mat<720, 1280, 0>::write(hls::Scalar<1, unsigned char>)' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:677) in function 'hls::Mat<720, 1280, 0>::read()' completely with a factor of 1.
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 0>::init' into 'hls::Mat<720, 1280, 0>::Mat.1' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:636).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<8, unsigned char>.1' into 'hls::AXIGetBitFields<8, unsigned char>' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_axi_io.h:71).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<8, unsigned char>' into 'hls::AXIvideo2Mat<8, 720, 1280, 0>' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:92).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 0>::write' into 'hls::Mat<720, 1280, 0>::operator<<' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 0>::operator<<' into 'hls::AXIvideo2Mat<8, 720, 1280, 0>' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:94).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 0>::operator<<' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:67).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 1280, unsigned char, 0>::shift_pixels_down' into 'hls::LineBuffer<3, 1280, unsigned char, 0>::shift_down' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:853).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 1280, unsigned char, 0>::shift_down' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:45).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 1280, unsigned char, 0>::getval' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:47).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 1280, unsigned char, 0>::getval' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:46).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 0>::read' into 'hls::Mat<720, 1280, 0>::operator>>' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 0>::operator>>' into 'hls::Mat2AXIvideo<8, 720, 1280, 0>' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:140).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 0>::operator>>' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:49).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 1280, unsigned char, 0>::insert_top_row' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:50).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::shift_pixels_right' into 'hls::Window<3, 3, unsigned char>::shift_right' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:543).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::shift_right' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:53).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::insert_pixel' into 'hls::Window<3, 3, unsigned char>::insert' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:573).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::insert' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:55).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::insert' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:56).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::insert' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:57).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::getval' into 'operator_Gauss' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:78).
+INFO: [XFORM 203-603] Inlining function 'hls::AXISetBitFields<8, unsigned char>.1' into 'hls::AXISetBitFields<8, unsigned char>' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_axi_io.h:100).
+INFO: [XFORM 203-603] Inlining function 'hls::AXISetBitFields<8, unsigned char>' into 'hls::Mat2AXIvideo<8, 720, 1280, 0>' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:143).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 576.160 ; gain = 130.160 ; free physical = 9153 ; free virtual = 14843
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 638.000 ; gain = 192.000 ; free physical = 9116 ; free virtual = 14811
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'instance_out.data_stream.V' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:91).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'instance_in.data_stream.V' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:90).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'IN_LOOP' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:36) in function 'rozmycie' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'operator_Gauss' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:72).
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:687) in function 'rozmycie' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:161) in function 'rozmycie' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2.1' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:163) in function 'rozmycie' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'OUT_LOOP_OPERATOR' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:76) in function 'operator_Gauss' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'IN_LOOP_OPERATOR' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:77) in function 'operator_Gauss' completely with a factor of 3.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'instance_in.data_stream.V' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:90) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'instance_out.data_stream.V' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:91) .
+INFO: [XFORM 203-101] Partitioning array 'coeff_tab.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'okno.val' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:31) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'buffer.val' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:32) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'new_pixel.val' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:42) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'value.val' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:42) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:115) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:56) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'instance_in.data_stream.V' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:90) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'instance_out.data_stream.V' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:91) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'okno.val' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:31) in dimension 2 completely.
+INFO: [XFORM 203-602] Inlining function 'operator_Gauss' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:62) automatically.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 1280 for loop 'loop_width' in function 'hls::Mat2AXIvideo<8, 720, 1280, 0>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 720 for loop 'loop_height' in function 'hls::Mat2AXIvideo<8, 720, 1280, 0>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 1280 for loop 'loop_channels' in function 'hls::AXIvideo2Mat<8, 720, 1280, 0>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 720 for loop 'loop_height' in function 'hls::AXIvideo2Mat<8, 720, 1280, 0>'.
+INFO: [XFORM 203-712] Applying dataflow to function 'filtr_Gauss', detected/extracted 3 process function(s): 
+	 'hls::AXIvideo2Mat<8, 720, 1280, 0>'
+	 'rozmycie'
+	 'hls::Mat2AXIvideo<8, 720, 1280, 0>'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:165:17) to (Rozmycie_Gaussa/.settings/filtrGauss.cpp:66:4) in function 'rozmycie'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (Rozmycie_Gaussa/.settings/filtrGauss.cpp:21:4) to (Rozmycie_Gaussa/.settings/filtrGauss.cpp:23:4) in function 'init_wsp'... converting 8 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:28)...11 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 639.922 ; gain = 193.922 ; free physical = 9037 ; free virtual = 14736
+WARNING: [XFORM 203-631] Renaming function 'hls::Mat2AXIvideo<8, 720, 1280, 0>' to 'Mat2AXIvideo' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:125:50)
+WARNING: [XFORM 203-631] Renaming function 'hls::AXIvideo2Mat<8, 720, 1280, 0>' to 'AXIvideo2Mat' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:63:9)
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'buffer.val[0]' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:32).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'buffer.val[1]' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:32).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'buffer.val[0]' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:32).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'buffer.val[1]' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:32).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'buffer.val[0]' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:32).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'buffer.val[1]' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:32).
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 640.020 ; gain = 194.020 ; free physical = 9003 ; free virtual = 14704
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'filtr_Gauss' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIvideo2Mat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_start'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_eol'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 56.78 seconds; current allocated memory: 218.297 MB.
+INFO: [HLS 200-434] Only 3 loops out of a total 4 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 218.582 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'rozmycie' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'IN_LOOP'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
+WARNING: [SCHED 204-21] Estimated clock period (9.4ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'rozmycie' consists of the following:
+	'load' operation ('okno_val_2_1_load', Rozmycie_Gaussa/.settings/filtrGauss.cpp:78->Rozmycie_Gaussa/.settings/filtrGauss.cpp:62) on local variable 'Window<3, 3, unsigned char>.val[2][2]' [74]  (0 ns)
+	'mul' operation of DSP[121] ('ret_V_2_2_i', Rozmycie_Gaussa/.settings/filtrGauss.cpp:78->Rozmycie_Gaussa/.settings/filtrGauss.cpp:62) [112]  (3.36 ns)
+	'add' operation of DSP[121] ('tmp11', Rozmycie_Gaussa/.settings/filtrGauss.cpp:78->Rozmycie_Gaussa/.settings/filtrGauss.cpp:62) [121]  (3.02 ns)
+	'add' operation of DSP[123] ('tmp10', Rozmycie_Gaussa/.settings/filtrGauss.cpp:78->Rozmycie_Gaussa/.settings/filtrGauss.cpp:62) [123]  (3.02 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 219.088 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 219.568 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Mat2AXIvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 219.718 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.03 seconds; current allocated memory: 219.925 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'filtr_Gauss' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+==============================================================
+File generated on Wed Jan 22 10:54:54 CET 2020
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Rozmycie_Gaussa/.settings/filtrGauss.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 446.191 ; gain = 0.191 ; free physical = 6721 ; free virtual = 12557
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 446.191 ; gain = 0.191 ; free physical = 6721 ; free virtual = 12557
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:701) in function 'hls::Mat<720, 1280, 0>::write(hls::Scalar<1, unsigned char>)' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:677) in function 'hls::Mat<720, 1280, 0>::read()' completely with a factor of 1.
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 0>::init' into 'hls::Mat<720, 1280, 0>::Mat.1' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:636).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<8, unsigned char>.1' into 'hls::AXIGetBitFields<8, unsigned char>' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_axi_io.h:71).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<8, unsigned char>' into 'hls::AXIvideo2Mat<8, 720, 1280, 0>' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:92).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 0>::write' into 'hls::Mat<720, 1280, 0>::operator<<' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 0>::operator<<' into 'hls::AXIvideo2Mat<8, 720, 1280, 0>' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:94).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 0>::operator<<' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:67).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 1280, unsigned char, 0>::shift_pixels_down' into 'hls::LineBuffer<3, 1280, unsigned char, 0>::shift_down' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:853).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 1280, unsigned char, 0>::shift_down' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:45).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 1280, unsigned char, 0>::getval' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:47).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 1280, unsigned char, 0>::getval' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:46).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 0>::read' into 'hls::Mat<720, 1280, 0>::operator>>' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 0>::operator>>' into 'hls::Mat2AXIvideo<8, 720, 1280, 0>' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:140).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 0>::operator>>' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:49).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 1280, unsigned char, 0>::insert_top_row' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:50).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::shift_pixels_right' into 'hls::Window<3, 3, unsigned char>::shift_right' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:543).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::shift_right' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:53).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::insert_pixel' into 'hls::Window<3, 3, unsigned char>::insert' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:573).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::insert' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:55).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::insert' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:56).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::insert' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:57).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::getval' into 'operator_Gauss' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:78).
+INFO: [XFORM 203-603] Inlining function 'hls::AXISetBitFields<8, unsigned char>.1' into 'hls::AXISetBitFields<8, unsigned char>' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_axi_io.h:100).
+INFO: [XFORM 203-603] Inlining function 'hls::AXISetBitFields<8, unsigned char>' into 'hls::Mat2AXIvideo<8, 720, 1280, 0>' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:143).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 576.160 ; gain = 130.160 ; free physical = 6664 ; free virtual = 12510
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 638.000 ; gain = 192.000 ; free physical = 6627 ; free virtual = 12478
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'instance_out.data_stream.V' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:90).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'instance_in.data_stream.V' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:89).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'IN_LOOP' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:36) in function 'rozmycie' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'operator_Gauss' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:72).
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:687) in function 'rozmycie' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:161) in function 'rozmycie' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2.1' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:163) in function 'rozmycie' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'OUT_LOOP_OPERATOR' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:76) in function 'operator_Gauss' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'IN_LOOP_OPERATOR' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:77) in function 'operator_Gauss' completely with a factor of 3.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'instance_in.data_stream.V' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:89) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'instance_out.data_stream.V' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:90) .
+INFO: [XFORM 203-101] Partitioning array 'coeff_tab.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'okno.val' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:31) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'buffer.val' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:32) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'new_pixel.val' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:42) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'value.val' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:42) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:115) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:56) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'instance_in.data_stream.V' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:89) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'instance_out.data_stream.V' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:90) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'okno.val' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:31) in dimension 2 completely.
+INFO: [XFORM 203-602] Inlining function 'operator_Gauss' into 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:62) automatically.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 1280 for loop 'loop_width' in function 'hls::Mat2AXIvideo<8, 720, 1280, 0>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 720 for loop 'loop_height' in function 'hls::Mat2AXIvideo<8, 720, 1280, 0>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 1280 for loop 'loop_channels' in function 'hls::AXIvideo2Mat<8, 720, 1280, 0>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 720 for loop 'loop_height' in function 'hls::AXIvideo2Mat<8, 720, 1280, 0>'.
+INFO: [XFORM 203-712] Applying dataflow to function 'filtr_Gauss', detected/extracted 3 process function(s): 
+	 'hls::AXIvideo2Mat<8, 720, 1280, 0>'
+	 'rozmycie'
+	 'hls::Mat2AXIvideo<8, 720, 1280, 0>'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:165:17) to (Rozmycie_Gaussa/.settings/filtrGauss.cpp:66:4) in function 'rozmycie'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (Rozmycie_Gaussa/.settings/filtrGauss.cpp:21:4) to (Rozmycie_Gaussa/.settings/filtrGauss.cpp:23:4) in function 'init_wsp'... converting 8 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'rozmycie' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:28)...11 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 639.922 ; gain = 193.922 ; free physical = 6514 ; free virtual = 12372
+WARNING: [XFORM 203-631] Renaming function 'hls::Mat2AXIvideo<8, 720, 1280, 0>' to 'Mat2AXIvideo' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:125:50)
+WARNING: [XFORM 203-631] Renaming function 'hls::AXIvideo2Mat<8, 720, 1280, 0>' to 'AXIvideo2Mat' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:63:9)
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'buffer.val[1]' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:32).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'buffer.val[0]' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:32).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'buffer.val[1]' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:32).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'buffer.val[0]' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:32).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'buffer.val[1]' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:32).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'buffer.val[0]' (Rozmycie_Gaussa/.settings/filtrGauss.cpp:32).
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 640.020 ; gain = 194.020 ; free physical = 6421 ; free virtual = 12281
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'filtr_Gauss' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIvideo2Mat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_start'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_eol'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 54.42 seconds; current allocated memory: 218.280 MB.
+INFO: [HLS 200-434] Only 3 loops out of a total 4 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 218.566 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'rozmycie' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'IN_LOOP'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
+WARNING: [SCHED 204-21] Estimated clock period (9.4ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'rozmycie' consists of the following:
+	'load' operation ('okno_val_2_1_load', Rozmycie_Gaussa/.settings/filtrGauss.cpp:78->Rozmycie_Gaussa/.settings/filtrGauss.cpp:62) on local variable 'Window<3, 3, unsigned char>.val[2][2]' [74]  (0 ns)
+	'mul' operation of DSP[121] ('ret_V_2_2_i', Rozmycie_Gaussa/.settings/filtrGauss.cpp:78->Rozmycie_Gaussa/.settings/filtrGauss.cpp:62) [112]  (3.36 ns)
+	'add' operation of DSP[121] ('tmp11', Rozmycie_Gaussa/.settings/filtrGauss.cpp:78->Rozmycie_Gaussa/.settings/filtrGauss.cpp:62) [121]  (3.02 ns)
+	'add' operation of DSP[123] ('tmp10', Rozmycie_Gaussa/.settings/filtrGauss.cpp:78->Rozmycie_Gaussa/.settings/filtrGauss.cpp:62) [123]  (3.02 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 219.073 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 219.551 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Mat2AXIvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 219.701 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.03 seconds; current allocated memory: 219.909 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'filtr_Gauss' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+==============================================================
+File generated on Wed Jan 22 10:56:25 CET 2020
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Wed Jan 22 11:00:37 CET 2020
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================

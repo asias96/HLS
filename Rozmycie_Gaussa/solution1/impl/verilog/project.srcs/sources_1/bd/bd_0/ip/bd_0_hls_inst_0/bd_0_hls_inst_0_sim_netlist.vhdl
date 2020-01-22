@@ -1,7 +1,7 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
--- Date        : Wed Jan 15 10:56:32 2020
+-- Date        : Wed Jan 22 11:01:34 2020
 -- Host        : lsriw running 64-bit Ubuntu 18.04.3 LTS
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/lsriw/HLS/HLS/Rozmycie_Gaussa/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0_sim_netlist.vhdl
@@ -21,14 +21,13 @@ entity bd_0_hls_inst_0_AXIvideo2Mat is
     start_once_reg : out STD_LOGIC;
     AXIvideo2Mat_U0_img_data_stream_V_write : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
-    \ap_CS_fsm_reg[3]_0\ : out STD_LOGIC;
-    AXIvideo2Mat_U0_ap_ready : out STD_LOGIC;
+    ap_ready : out STD_LOGIC;
     \exitcond_reg_335_reg[0]_0\ : out STD_LOGIC;
     \p_Val2_s_reg_202_reg[7]_0\ : out STD_LOGIC_VECTOR ( 7 downto 0 );
     ap_clk : in STD_LOGIC;
     ap_rst_n : in STD_LOGIC;
     start_for_rozmycie_U0_full_n : in STD_LOGIC;
-    AXIvideo2Mat_U0_ap_start : in STD_LOGIC;
+    ap_start : in STD_LOGIC;
     instance_in_data_str_full_n : in STD_LOGIC;
     in_r_TVALID : in STD_LOGIC;
     in_r_TLAST : in STD_LOGIC_VECTOR ( 0 to 0 );
@@ -57,8 +56,8 @@ architecture STRUCTURE of bd_0_hls_inst_0_AXIvideo2Mat is
   signal \AXI_video_strm_V_data_V_0_state_reg_n_2_[0]\ : STD_LOGIC;
   signal AXI_video_strm_V_dest_V_0_state : STD_LOGIC_VECTOR ( 1 to 1 );
   signal \AXI_video_strm_V_dest_V_0_state[0]_i_1_n_2\ : STD_LOGIC;
-  signal \AXI_video_strm_V_dest_V_0_state[1]_i_3_n_2\ : STD_LOGIC;
   signal \AXI_video_strm_V_dest_V_0_state[1]_i_4_n_2\ : STD_LOGIC;
+  signal \AXI_video_strm_V_dest_V_0_state[1]_i_5_n_2\ : STD_LOGIC;
   signal \AXI_video_strm_V_dest_V_0_state_reg_n_2_[0]\ : STD_LOGIC;
   signal AXI_video_strm_V_last_V_0_ack_in : STD_LOGIC;
   signal AXI_video_strm_V_last_V_0_data_out : STD_LOGIC;
@@ -95,7 +94,6 @@ architecture STRUCTURE of bd_0_hls_inst_0_AXIvideo2Mat is
   signal \ap_CS_fsm[5]_i_7_n_2\ : STD_LOGIC;
   signal \ap_CS_fsm[5]_i_8_n_2\ : STD_LOGIC;
   signal ap_CS_fsm_pp1_stage0 : STD_LOGIC;
-  signal \^ap_cs_fsm_reg[3]_0\ : STD_LOGIC;
   signal ap_CS_fsm_state2 : STD_LOGIC;
   signal ap_CS_fsm_state3 : STD_LOGIC;
   signal ap_CS_fsm_state4 : STD_LOGIC;
@@ -108,6 +106,8 @@ architecture STRUCTURE of bd_0_hls_inst_0_AXIvideo2Mat is
   signal ap_enable_reg_pp1_iter0_i_1_n_2 : STD_LOGIC;
   signal ap_enable_reg_pp1_iter1_i_1_n_2 : STD_LOGIC;
   signal ap_enable_reg_pp1_iter1_reg_n_2 : STD_LOGIC;
+  signal ap_ready_INST_0_i_1_n_2 : STD_LOGIC;
+  signal ap_ready_INST_0_i_2_n_2 : STD_LOGIC;
   signal \^ap_rst_n_inv\ : STD_LOGIC;
   signal axi_data_V1_reg_123 : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \axi_data_V1_reg_123[0]_i_1_n_2\ : STD_LOGIC;
@@ -151,7 +151,6 @@ architecture STRUCTURE of bd_0_hls_inst_0_AXIvideo2Mat is
   signal i_V_reg_330 : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal \i_V_reg_330[9]_i_2_n_2\ : STD_LOGIC;
   signal \^in_r_tready\ : STD_LOGIC;
-  signal int_ap_start_i_4_n_2 : STD_LOGIC;
   signal j_V_fu_286_p2 : STD_LOGIC_VECTOR ( 10 downto 0 );
   signal p_1_in : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \p_Val2_s_reg_202[0]_i_1_n_2\ : STD_LOGIC;
@@ -175,24 +174,24 @@ architecture STRUCTURE of bd_0_hls_inst_0_AXIvideo2Mat is
   signal tmp_data_V_reg_306 : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal tmp_last_V_reg_314 : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of AXI_video_strm_V_data_V_0_sel_rd_i_1 : label is "soft_lutpair20";
+  attribute SOFT_HLUTNM of AXI_video_strm_V_data_V_0_sel_rd_i_1 : label is "soft_lutpair19";
   attribute SOFT_HLUTNM of AXI_video_strm_V_data_V_0_sel_wr_i_1 : label is "soft_lutpair12";
   attribute SOFT_HLUTNM of \AXI_video_strm_V_data_V_0_state[1]_i_1\ : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of \AXI_video_strm_V_dest_V_0_state[1]_i_3\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of AXI_video_strm_V_last_V_0_sel_rd_i_1 : label is "soft_lutpair20";
-  attribute SOFT_HLUTNM of AXI_video_strm_V_last_V_0_sel_wr_i_1 : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \AXI_video_strm_V_last_V_0_state[1]_i_1\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of AXI_video_strm_V_user_V_0_sel_wr_i_1 : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of \AXI_video_strm_V_user_V_0_state[1]_i_1\ : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of \ap_CS_fsm[0]_i_1__0\ : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of \AXI_video_strm_V_dest_V_0_state[1]_i_4\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of AXI_video_strm_V_last_V_0_sel_rd_i_1 : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of AXI_video_strm_V_last_V_0_sel_wr_i_1 : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \AXI_video_strm_V_last_V_0_state[1]_i_1\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of AXI_video_strm_V_user_V_0_sel_wr_i_1 : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \AXI_video_strm_V_user_V_0_state[1]_i_1\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \ap_CS_fsm[0]_i_1\ : label is "soft_lutpair4";
   attribute SOFT_HLUTNM of \ap_CS_fsm[1]_i_2\ : label is "soft_lutpair2";
   attribute SOFT_HLUTNM of \ap_CS_fsm[2]_i_1__1\ : label is "soft_lutpair2";
   attribute SOFT_HLUTNM of \ap_CS_fsm[4]_i_1\ : label is "soft_lutpair6";
   attribute SOFT_HLUTNM of \ap_CS_fsm[5]_i_1\ : label is "soft_lutpair6";
   attribute SOFT_HLUTNM of \ap_CS_fsm[5]_i_3\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \ap_CS_fsm[5]_i_4\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \ap_CS_fsm[5]_i_4\ : label is "soft_lutpair14";
   attribute SOFT_HLUTNM of \ap_CS_fsm[5]_i_6\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \ap_CS_fsm[6]_i_1\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \ap_CS_fsm[6]_i_1\ : label is "soft_lutpair13";
   attribute FSM_ENCODING : string;
   attribute FSM_ENCODING of \ap_CS_fsm_reg[0]\ : label is "none";
   attribute FSM_ENCODING of \ap_CS_fsm_reg[1]\ : label is "none";
@@ -202,54 +201,53 @@ architecture STRUCTURE of bd_0_hls_inst_0_AXIvideo2Mat is
   attribute FSM_ENCODING of \ap_CS_fsm_reg[5]\ : label is "none";
   attribute FSM_ENCODING of \ap_CS_fsm_reg[6]\ : label is "none";
   attribute FSM_ENCODING of \ap_CS_fsm_reg[7]\ : label is "none";
-  attribute SOFT_HLUTNM of \axi_data_V1_reg_123[0]_i_1\ : label is "soft_lutpair29";
+  attribute SOFT_HLUTNM of ap_ready_INST_0 : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \axi_data_V1_reg_123[1]_i_1\ : label is "soft_lutpair30";
   attribute SOFT_HLUTNM of \axi_data_V1_reg_123[2]_i_1\ : label is "soft_lutpair30";
-  attribute SOFT_HLUTNM of \axi_data_V1_reg_123[3]_i_1\ : label is "soft_lutpair30";
+  attribute SOFT_HLUTNM of \axi_data_V1_reg_123[3]_i_1\ : label is "soft_lutpair29";
   attribute SOFT_HLUTNM of \axi_data_V1_reg_123[4]_i_1\ : label is "soft_lutpair29";
   attribute SOFT_HLUTNM of \axi_data_V1_reg_123[5]_i_1\ : label is "soft_lutpair28";
   attribute SOFT_HLUTNM of \axi_data_V1_reg_123[6]_i_1\ : label is "soft_lutpair28";
-  attribute SOFT_HLUTNM of \axi_data_V1_reg_123[7]_i_1\ : label is "soft_lutpair16";
-  attribute SOFT_HLUTNM of \axi_data_V_1_reg_155[0]_i_1\ : label is "soft_lutpair24";
+  attribute SOFT_HLUTNM of \axi_data_V1_reg_123[7]_i_1\ : label is "soft_lutpair15";
+  attribute SOFT_HLUTNM of \axi_data_V_1_reg_155[0]_i_1\ : label is "soft_lutpair23";
   attribute SOFT_HLUTNM of \axi_data_V_1_reg_155[1]_i_1\ : label is "soft_lutpair25";
-  attribute SOFT_HLUTNM of \axi_data_V_1_reg_155[3]_i_1\ : label is "soft_lutpair18";
-  attribute SOFT_HLUTNM of \axi_data_V_1_reg_155[4]_i_1\ : label is "soft_lutpair25";
-  attribute SOFT_HLUTNM of \axi_data_V_1_reg_155[5]_i_1\ : label is "soft_lutpair24";
-  attribute SOFT_HLUTNM of \axi_data_V_1_reg_155[6]_i_1\ : label is "soft_lutpair21";
-  attribute SOFT_HLUTNM of \axi_data_V_1_reg_155[7]_i_2\ : label is "soft_lutpair21";
-  attribute SOFT_HLUTNM of \axi_last_V1_reg_113[0]_i_1\ : label is "soft_lutpair16";
+  attribute SOFT_HLUTNM of \axi_data_V_1_reg_155[3]_i_1\ : label is "soft_lutpair25";
+  attribute SOFT_HLUTNM of \axi_data_V_1_reg_155[4]_i_1\ : label is "soft_lutpair18";
+  attribute SOFT_HLUTNM of \axi_data_V_1_reg_155[5]_i_1\ : label is "soft_lutpair23";
+  attribute SOFT_HLUTNM of \axi_data_V_1_reg_155[6]_i_1\ : label is "soft_lutpair20";
+  attribute SOFT_HLUTNM of \axi_data_V_1_reg_155[7]_i_2\ : label is "soft_lutpair20";
+  attribute SOFT_HLUTNM of \axi_last_V1_reg_113[0]_i_1\ : label is "soft_lutpair15";
   attribute SOFT_HLUTNM of \eol_1_reg_144[0]_i_1\ : label is "soft_lutpair18";
   attribute SOFT_HLUTNM of \exitcond_reg_335[0]_i_1\ : label is "soft_lutpair9";
-  attribute SOFT_HLUTNM of \i_V_reg_330[1]_i_1\ : label is "soft_lutpair23";
-  attribute SOFT_HLUTNM of \i_V_reg_330[2]_i_1\ : label is "soft_lutpair23";
+  attribute SOFT_HLUTNM of \i_V_reg_330[1]_i_1\ : label is "soft_lutpair22";
+  attribute SOFT_HLUTNM of \i_V_reg_330[2]_i_1\ : label is "soft_lutpair22";
   attribute SOFT_HLUTNM of \i_V_reg_330[3]_i_1\ : label is "soft_lutpair1";
   attribute SOFT_HLUTNM of \i_V_reg_330[4]_i_1\ : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of \i_V_reg_330[6]_i_1\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \i_V_reg_330[7]_i_1\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \i_V_reg_330[8]_i_1\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \i_V_reg_330[9]_i_1\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of int_ap_ready_i_1 : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of internal_empty_n_i_2 : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \mOutPtr[1]_i_2__0\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \i_V_reg_330[6]_i_1\ : label is "soft_lutpair17";
+  attribute SOFT_HLUTNM of \i_V_reg_330[7]_i_1\ : label is "soft_lutpair17";
+  attribute SOFT_HLUTNM of \i_V_reg_330[8]_i_1\ : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of \i_V_reg_330[9]_i_1\ : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of internal_empty_n_i_2 : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \mOutPtr[1]_i_2__0\ : label is "soft_lutpair3";
   attribute SOFT_HLUTNM of \p_Val2_s_reg_202[7]_i_3\ : label is "soft_lutpair9";
-  attribute SOFT_HLUTNM of \t_V_2_reg_166[1]_i_1\ : label is "soft_lutpair17";
-  attribute SOFT_HLUTNM of \t_V_2_reg_166[2]_i_1\ : label is "soft_lutpair17";
-  attribute SOFT_HLUTNM of \t_V_2_reg_166[3]_i_1\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \t_V_2_reg_166[4]_i_1\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \t_V_2_reg_166[6]_i_1\ : label is "soft_lutpair13";
-  attribute SOFT_HLUTNM of \t_V_2_reg_166[8]_i_1\ : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \t_V_2_reg_166[9]_i_1\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \t_V_2_reg_166[1]_i_1\ : label is "soft_lutpair16";
+  attribute SOFT_HLUTNM of \t_V_2_reg_166[2]_i_1\ : label is "soft_lutpair16";
+  attribute SOFT_HLUTNM of \t_V_2_reg_166[3]_i_1\ : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \t_V_2_reg_166[4]_i_1\ : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \t_V_2_reg_166[6]_i_1\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \t_V_2_reg_166[8]_i_1\ : label is "soft_lutpair8";
+  attribute SOFT_HLUTNM of \t_V_2_reg_166[9]_i_1\ : label is "soft_lutpair8";
   attribute SOFT_HLUTNM of \tmp_data_V_reg_306[0]_i_1\ : label is "soft_lutpair27";
-  attribute SOFT_HLUTNM of \tmp_data_V_reg_306[1]_i_1\ : label is "soft_lutpair27";
-  attribute SOFT_HLUTNM of \tmp_data_V_reg_306[2]_i_1\ : label is "soft_lutpair22";
-  attribute SOFT_HLUTNM of \tmp_data_V_reg_306[3]_i_1\ : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of \tmp_data_V_reg_306[1]_i_1\ : label is "soft_lutpair24";
+  attribute SOFT_HLUTNM of \tmp_data_V_reg_306[2]_i_1\ : label is "soft_lutpair21";
+  attribute SOFT_HLUTNM of \tmp_data_V_reg_306[3]_i_1\ : label is "soft_lutpair27";
   attribute SOFT_HLUTNM of \tmp_data_V_reg_306[4]_i_1\ : label is "soft_lutpair26";
   attribute SOFT_HLUTNM of \tmp_data_V_reg_306[5]_i_1\ : label is "soft_lutpair26";
-  attribute SOFT_HLUTNM of \tmp_data_V_reg_306[6]_i_1\ : label is "soft_lutpair22";
-  attribute SOFT_HLUTNM of \tmp_data_V_reg_306[7]_i_1\ : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of \tmp_data_V_reg_306[6]_i_1\ : label is "soft_lutpair24";
+  attribute SOFT_HLUTNM of \tmp_data_V_reg_306[7]_i_1\ : label is "soft_lutpair21";
 begin
   AXIvideo2Mat_U0_img_data_stream_V_write <= \^axivideo2mat_u0_img_data_stream_v_write\;
   Q(0) <= \^q\(0);
-  \ap_CS_fsm_reg[3]_0\ <= \^ap_cs_fsm_reg[3]_0\;
   ap_rst_n_inv <= \^ap_rst_n_inv\;
   in_r_TREADY <= \^in_r_tready\;
   \p_Val2_s_reg_202_reg[7]_0\(7 downto 0) <= \^p_val2_s_reg_202_reg[7]_0\(7 downto 0);
@@ -501,7 +499,15 @@ AXI_video_strm_V_data_V_0_sel_wr_reg: unisim.vcomponents.FDRE
       I4 => ap_rst_n,
       O => \AXI_video_strm_V_dest_V_0_state[0]_i_1_n_2\
     );
-\AXI_video_strm_V_dest_V_0_state[1]_i_1\: unisim.vcomponents.LUT4
+\AXI_video_strm_V_dest_V_0_state[1]_i_1\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => ap_rst_n,
+      O => \^ap_rst_n_inv\
+    );
+\AXI_video_strm_V_dest_V_0_state[1]_i_2\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"FF2F"
     )
@@ -512,20 +518,20 @@ AXI_video_strm_V_data_V_0_sel_wr_reg: unisim.vcomponents.FDRE
       I3 => AXI_video_strm_V_data_V_0_ack_out,
       O => AXI_video_strm_V_dest_V_0_state(1)
     );
-\AXI_video_strm_V_dest_V_0_state[1]_i_2\: unisim.vcomponents.LUT6
+\AXI_video_strm_V_dest_V_0_state[1]_i_3\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"AAAAAAAAAABAAAAA"
     )
         port map (
-      I0 => \AXI_video_strm_V_dest_V_0_state[1]_i_3_n_2\,
-      I1 => \AXI_video_strm_V_dest_V_0_state[1]_i_4_n_2\,
+      I0 => \AXI_video_strm_V_dest_V_0_state[1]_i_4_n_2\,
+      I1 => \AXI_video_strm_V_dest_V_0_state[1]_i_5_n_2\,
       I2 => ap_enable_reg_pp1_iter0,
       I3 => ap_block_pp1_stage0_subdone,
       I4 => ap_CS_fsm_pp1_stage0,
       I5 => exitcond_fu_280_p2,
       O => AXI_video_strm_V_data_V_0_ack_out
     );
-\AXI_video_strm_V_dest_V_0_state[1]_i_3\: unisim.vcomponents.LUT4
+\AXI_video_strm_V_dest_V_0_state[1]_i_4\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"F020"
     )
@@ -534,9 +540,9 @@ AXI_video_strm_V_data_V_0_sel_wr_reg: unisim.vcomponents.FDRE
       I1 => \eol_2_reg_239_reg_n_2_[0]\,
       I2 => \AXI_video_strm_V_data_V_0_state_reg_n_2_[0]\,
       I3 => ap_CS_fsm_state2,
-      O => \AXI_video_strm_V_dest_V_0_state[1]_i_3_n_2\
+      O => \AXI_video_strm_V_dest_V_0_state[1]_i_4_n_2\
     );
-\AXI_video_strm_V_dest_V_0_state[1]_i_4\: unisim.vcomponents.LUT6
+\AXI_video_strm_V_dest_V_0_state[1]_i_5\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"EEEEFEEEEEEEAEEE"
     )
@@ -547,7 +553,7 @@ AXI_video_strm_V_data_V_0_sel_wr_reg: unisim.vcomponents.FDRE
       I3 => ap_CS_fsm_pp1_stage0,
       I4 => \exitcond_reg_335_reg_n_2_[0]\,
       I5 => \axi_last_V_2_reg_189_reg_n_2_[0]\,
-      O => \AXI_video_strm_V_dest_V_0_state[1]_i_4_n_2\
+      O => \AXI_video_strm_V_dest_V_0_state[1]_i_5_n_2\
     );
 \AXI_video_strm_V_dest_V_0_state_reg[0]\: unisim.vcomponents.FDRE
     generic map(
@@ -825,34 +831,26 @@ AXI_video_strm_V_user_V_0_sel_wr_reg: unisim.vcomponents.FDRE
       Q => AXI_video_strm_V_user_V_0_ack_in,
       R => \^ap_rst_n_inv\
     );
-\FSM_onehot_wstate[1]_i_1\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => ap_rst_n,
-      O => \^ap_rst_n_inv\
-    );
-\ap_CS_fsm[0]_i_1__0\: unisim.vcomponents.LUT5
+\ap_CS_fsm[0]_i_1\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"1F00FFFF"
     )
         port map (
       I0 => start_for_rozmycie_U0_full_n,
       I1 => \^start_once_reg\,
-      I2 => AXIvideo2Mat_U0_ap_start,
+      I2 => ap_start,
       I3 => \^q\(0),
-      I4 => \^ap_cs_fsm_reg[3]_0\,
+      I4 => ap_ready_INST_0_i_1_n_2,
       O => ap_NS_fsm(0)
     );
-\ap_CS_fsm[1]_i_1__0\: unisim.vcomponents.LUT6
+\ap_CS_fsm[1]_i_1\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"FFFFE000E000E000"
     )
         port map (
       I0 => start_for_rozmycie_U0_full_n,
       I1 => \^start_once_reg\,
-      I2 => AXIvideo2Mat_U0_ap_start,
+      I2 => ap_start,
       I3 => \^q\(0),
       I4 => ap_CS_fsm_state2,
       I5 => \ap_CS_fsm[1]_i_2_n_2\,
@@ -911,7 +909,7 @@ AXI_video_strm_V_user_V_0_sel_wr_reg: unisim.vcomponents.FDRE
       I1 => t_V_reg_133(0),
       I2 => t_V_reg_133(3),
       I3 => t_V_reg_133(2),
-      I4 => int_ap_start_i_4_n_2,
+      I4 => ap_ready_INST_0_i_2_n_2,
       I5 => ap_CS_fsm_state4,
       O => \ap_CS_fsm[4]_i_2_n_2\
     );
@@ -935,7 +933,7 @@ AXI_video_strm_V_user_V_0_sel_wr_reg: unisim.vcomponents.FDRE
       I1 => \ap_CS_fsm[5]_i_5_n_2\,
       I2 => \ap_CS_fsm[5]_i_6_n_2\,
       I3 => \ap_CS_fsm[5]_i_7_n_2\,
-      I4 => \AXI_video_strm_V_dest_V_0_state[1]_i_4_n_2\,
+      I4 => \AXI_video_strm_V_dest_V_0_state[1]_i_5_n_2\,
       I5 => \ap_CS_fsm[5]_i_8_n_2\,
       O => ap_block_pp1_stage0_subdone
     );
@@ -1156,6 +1154,40 @@ ap_enable_reg_pp1_iter1_reg: unisim.vcomponents.FDRE
       D => ap_enable_reg_pp1_iter1_i_1_n_2,
       Q => ap_enable_reg_pp1_iter1_reg_n_2,
       R => '0'
+    );
+ap_ready_INST_0: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => ap_ready_INST_0_i_1_n_2,
+      O => ap_ready
+    );
+ap_ready_INST_0_i_1: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FFFFFFFDFFFFFFFF"
+    )
+        port map (
+      I0 => ap_CS_fsm_state4,
+      I1 => t_V_reg_133(1),
+      I2 => t_V_reg_133(0),
+      I3 => t_V_reg_133(3),
+      I4 => t_V_reg_133(2),
+      I5 => ap_ready_INST_0_i_2_n_2,
+      O => ap_ready_INST_0_i_1_n_2
+    );
+ap_ready_INST_0_i_2: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"0000200000000000"
+    )
+        port map (
+      I0 => t_V_reg_133(4),
+      I1 => t_V_reg_133(5),
+      I2 => t_V_reg_133(6),
+      I3 => t_V_reg_133(7),
+      I4 => t_V_reg_133(8),
+      I5 => t_V_reg_133(9),
+      O => ap_ready_INST_0_i_2_n_2
     );
 \axi_data_V1_reg_123[0]_i_1\: unisim.vcomponents.LUT3
     generic map(
@@ -1957,40 +1989,6 @@ ap_enable_reg_pp1_iter1_reg: unisim.vcomponents.FDRE
       Q => i_V_reg_330(9),
       R => '0'
     );
-int_ap_ready_i_1: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => \^ap_cs_fsm_reg[3]_0\,
-      O => AXIvideo2Mat_U0_ap_ready
-    );
-int_ap_start_i_3: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"FFFFFFFDFFFFFFFF"
-    )
-        port map (
-      I0 => ap_CS_fsm_state4,
-      I1 => t_V_reg_133(1),
-      I2 => t_V_reg_133(0),
-      I3 => t_V_reg_133(3),
-      I4 => t_V_reg_133(2),
-      I5 => int_ap_start_i_4_n_2,
-      O => \^ap_cs_fsm_reg[3]_0\
-    );
-int_ap_start_i_4: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000200000000000"
-    )
-        port map (
-      I0 => t_V_reg_133(4),
-      I1 => t_V_reg_133(5),
-      I2 => t_V_reg_133(6),
-      I3 => t_V_reg_133(7),
-      I4 => t_V_reg_133(8),
-      I5 => t_V_reg_133(9),
-      O => int_ap_start_i_4_n_2
-    );
 internal_empty_n_i_2: unisim.vcomponents.LUT5
     generic map(
       INIT => X"EFFFFFFF"
@@ -2128,7 +2126,7 @@ internal_empty_n_i_2: unisim.vcomponents.LUT5
       INIT => X"2"
     )
         port map (
-      I0 => \AXI_video_strm_V_dest_V_0_state[1]_i_4_n_2\,
+      I0 => \AXI_video_strm_V_dest_V_0_state[1]_i_5_n_2\,
       I1 => exitcond_fu_280_p2,
       O => \axi_last_V_2_reg_1891__0\
     );
@@ -2222,10 +2220,10 @@ start_once_reg_i_1: unisim.vcomponents.LUT4
       INIT => X"EC00"
     )
         port map (
-      I0 => AXIvideo2Mat_U0_ap_start,
+      I0 => ap_start,
       I1 => \^start_once_reg\,
       I2 => start_for_rozmycie_U0_full_n,
-      I3 => \^ap_cs_fsm_reg[3]_0\,
+      I3 => ap_ready_INST_0_i_1_n_2,
       O => start_once_reg_i_1_n_2
     );
 start_once_reg_reg: unisim.vcomponents.FDRE
@@ -2741,7 +2739,7 @@ entity bd_0_hls_inst_0_Mat2AXIvideo is
   port (
     out_r_TVALID : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
-    Mat2AXIvideo_U0_ap_ready : out STD_LOGIC;
+    \t_V_reg_124_reg[2]_0\ : out STD_LOGIC;
     Mat2AXIvideo_U0_img_data_stream_V_read : out STD_LOGIC;
     internal_empty_n_reg : out STD_LOGIC;
     out_r_TUSER : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -2811,7 +2809,6 @@ architecture STRUCTURE of bd_0_hls_inst_0_Mat2AXIvideo is
   signal AXI_video_strm_V_user_V_1_state : STD_LOGIC_VECTOR ( 1 to 1 );
   signal \AXI_video_strm_V_user_V_1_state[0]_i_1_n_2\ : STD_LOGIC;
   signal \AXI_video_strm_V_user_V_1_state_reg_n_2_[0]\ : STD_LOGIC;
-  signal \^mat2axivideo_u0_ap_ready\ : STD_LOGIC;
   signal \^mat2axivideo_u0_img_data_stream_v_read\ : STD_LOGIC;
   signal \^q\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \ap_CS_fsm[2]_i_2__0_n_2\ : STD_LOGIC;
@@ -2824,8 +2821,10 @@ architecture STRUCTURE of bd_0_hls_inst_0_Mat2AXIvideo is
   signal ap_NS_fsm : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal ap_NS_fsm112_out : STD_LOGIC;
   signal ap_block_pp0_stage0_subdone : STD_LOGIC;
+  signal ap_done_INST_0_i_1_n_2 : STD_LOGIC;
+  signal ap_done_INST_0_i_3_n_2 : STD_LOGIC;
   signal ap_enable_reg_pp0_iter0 : STD_LOGIC;
-  signal ap_enable_reg_pp0_iter0_i_1_n_2 : STD_LOGIC;
+  signal \ap_enable_reg_pp0_iter0_i_1__0_n_2\ : STD_LOGIC;
   signal \ap_enable_reg_pp0_iter1_i_1__0_n_2\ : STD_LOGIC;
   signal ap_enable_reg_pp0_iter1_reg_n_2 : STD_LOGIC;
   signal ap_enable_reg_pp0_iter2_i_1_n_2 : STD_LOGIC;
@@ -2842,9 +2841,7 @@ architecture STRUCTURE of bd_0_hls_inst_0_Mat2AXIvideo is
   signal i_V_fu_157_p2 : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal i_V_reg_201 : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal i_V_reg_2010 : STD_LOGIC;
-  signal \i_V_reg_201[9]_i_3_n_2\ : STD_LOGIC;
-  signal \i_V_reg_201[9]_i_4_n_2\ : STD_LOGIC;
-  signal \int_isr[0]_i_4_n_2\ : STD_LOGIC;
+  signal \i_V_reg_201[9]_i_2_n_2\ : STD_LOGIC;
   signal j_V_fu_169_p2 : STD_LOGIC_VECTOR ( 10 downto 0 );
   signal \^out_r_tvalid\ : STD_LOGIC;
   signal t_V_1_reg_135 : STD_LOGIC;
@@ -2853,6 +2850,7 @@ architecture STRUCTURE of bd_0_hls_inst_0_Mat2AXIvideo is
   signal \t_V_1_reg_135[8]_i_2_n_2\ : STD_LOGIC;
   signal \t_V_1_reg_135_reg__0\ : STD_LOGIC_VECTOR ( 10 downto 0 );
   signal t_V_reg_124 : STD_LOGIC_VECTOR ( 9 downto 0 );
+  signal \^t_v_reg_124_reg[2]_0\ : STD_LOGIC;
   signal tmp_user_V_fu_84 : STD_LOGIC;
   signal \tmp_user_V_fu_84[0]_i_1_n_2\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
@@ -2883,7 +2881,7 @@ architecture STRUCTURE of bd_0_hls_inst_0_Mat2AXIvideo is
   attribute SOFT_HLUTNM of \i_V_reg_201[6]_i_1\ : label is "soft_lutpair43";
   attribute SOFT_HLUTNM of \i_V_reg_201[7]_i_1\ : label is "soft_lutpair43";
   attribute SOFT_HLUTNM of \i_V_reg_201[8]_i_1\ : label is "soft_lutpair32";
-  attribute SOFT_HLUTNM of \i_V_reg_201[9]_i_2\ : label is "soft_lutpair32";
+  attribute SOFT_HLUTNM of \i_V_reg_201[9]_i_1\ : label is "soft_lutpair32";
   attribute SOFT_HLUTNM of \internal_full_n_i_2__0\ : label is "soft_lutpair37";
   attribute SOFT_HLUTNM of \out_r_TDATA[0]_INST_0\ : label is "soft_lutpair47";
   attribute SOFT_HLUTNM of \out_r_TDATA[1]_INST_0\ : label is "soft_lutpair48";
@@ -2900,10 +2898,10 @@ architecture STRUCTURE of bd_0_hls_inst_0_Mat2AXIvideo is
   attribute SOFT_HLUTNM of \t_V_1_reg_135[7]_i_1\ : label is "soft_lutpair35";
   attribute SOFT_HLUTNM of \t_V_1_reg_135[8]_i_2\ : label is "soft_lutpair34";
 begin
-  Mat2AXIvideo_U0_ap_ready <= \^mat2axivideo_u0_ap_ready\;
   Mat2AXIvideo_U0_img_data_stream_V_read <= \^mat2axivideo_u0_img_data_stream_v_read\;
   Q(0) <= \^q\(0);
   out_r_TVALID <= \^out_r_tvalid\;
+  \t_V_reg_124_reg[2]_0\ <= \^t_v_reg_124_reg[2]_0\;
 \AXI_video_strm_V_data_V_1_payload_A[7]_i_1\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"0D"
@@ -3584,39 +3582,39 @@ AXI_video_strm_V_user_V_1_sel_wr_reg: unisim.vcomponents.FDRE
       Q => AXI_video_strm_V_user_V_1_ack_in,
       R => ap_rst_n_inv
     );
-\ap_CS_fsm[0]_i_1\: unisim.vcomponents.LUT4
+\ap_CS_fsm[0]_i_1__1\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"8F88"
     )
         port map (
-      I0 => \^mat2axivideo_u0_ap_ready\,
+      I0 => \^t_v_reg_124_reg[2]_0\,
       I1 => ap_CS_fsm_state2,
       I2 => Mat2AXIvideo_U0_ap_start,
       I3 => \^q\(0),
       O => ap_NS_fsm(0)
     );
-\ap_CS_fsm[1]_i_1\: unisim.vcomponents.LUT6
+\ap_CS_fsm[1]_i_1__1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"EAEAEAEAFFEAEAEA"
+      INIT => X"EAFFEAEAEAEAEAEA"
     )
         port map (
       I0 => ap_CS_fsm_state6,
       I1 => \^q\(0),
       I2 => Mat2AXIvideo_U0_ap_start,
-      I3 => \ap_CS_fsm[2]_i_2__0_n_2\,
-      I4 => ap_CS_fsm_state2,
-      I5 => \^mat2axivideo_u0_ap_ready\,
+      I3 => \^t_v_reg_124_reg[2]_0\,
+      I4 => \ap_CS_fsm[2]_i_2__0_n_2\,
+      I5 => ap_CS_fsm_state2,
       O => ap_NS_fsm(1)
     );
-\ap_CS_fsm[2]_i_1\: unisim.vcomponents.LUT6
+\ap_CS_fsm[2]_i_1__0\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"FFFF0030AABA0030"
     )
         port map (
       I0 => ap_block_pp0_stage0_subdone,
-      I1 => \^mat2axivideo_u0_ap_ready\,
+      I1 => \ap_CS_fsm[2]_i_2__0_n_2\,
       I2 => ap_CS_fsm_state2,
-      I3 => \ap_CS_fsm[2]_i_2__0_n_2\,
+      I3 => \^t_v_reg_124_reg[2]_0\,
       I4 => ap_CS_fsm_pp0_stage0,
       I5 => \ap_CS_fsm[2]_i_3__0_n_2\,
       O => ap_NS_fsm(2)
@@ -3626,7 +3624,7 @@ AXI_video_strm_V_user_V_1_sel_wr_reg: unisim.vcomponents.FDRE
       INIT => X"00000002FFFFFFFF"
     )
         port map (
-      I0 => \int_isr[0]_i_4_n_2\,
+      I0 => ap_done_INST_0_i_1_n_2,
       I1 => t_V_reg_124(2),
       I2 => t_V_reg_124(3),
       I3 => t_V_reg_124(0),
@@ -3749,7 +3747,56 @@ AXI_video_strm_V_user_V_1_sel_wr_reg: unisim.vcomponents.FDRE
       Q => ap_CS_fsm_state6,
       R => ap_rst_n_inv
     );
-ap_enable_reg_pp0_iter0_i_1: unisim.vcomponents.LUT6
+ap_done_INST_0: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"0000000200000000"
+    )
+        port map (
+      I0 => ap_done_INST_0_i_1_n_2,
+      I1 => t_V_reg_124(2),
+      I2 => t_V_reg_124(3),
+      I3 => t_V_reg_124(0),
+      I4 => t_V_reg_124(1),
+      I5 => i_V_reg_2010,
+      O => \^t_v_reg_124_reg[2]_0\
+    );
+ap_done_INST_0_i_1: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"0000200000000000"
+    )
+        port map (
+      I0 => t_V_reg_124(4),
+      I1 => t_V_reg_124(5),
+      I2 => t_V_reg_124(6),
+      I3 => t_V_reg_124(7),
+      I4 => t_V_reg_124(8),
+      I5 => t_V_reg_124(9),
+      O => ap_done_INST_0_i_1_n_2
+    );
+ap_done_INST_0_i_2: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"80000000"
+    )
+        port map (
+      I0 => \AXI_video_strm_V_id_V_1_state_reg_n_2_[1]\,
+      I1 => \AXI_video_strm_V_dest_V_1_state_reg_n_2_[1]\,
+      I2 => AXI_video_strm_V_data_V_1_ack_in,
+      I3 => ap_CS_fsm_state2,
+      I4 => ap_done_INST_0_i_3_n_2,
+      O => i_V_reg_2010
+    );
+ap_done_INST_0_i_3: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"8000"
+    )
+        port map (
+      I0 => \AXI_video_strm_V_strb_V_1_state_reg_n_2_[1]\,
+      I1 => \AXI_video_strm_V_keep_V_1_state_reg_n_2_[1]\,
+      I2 => AXI_video_strm_V_last_V_1_ack_in,
+      I3 => AXI_video_strm_V_user_V_1_ack_in,
+      O => ap_done_INST_0_i_3_n_2
+    );
+\ap_enable_reg_pp0_iter0_i_1__0\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"8A8A008A8A8A8A8A"
     )
@@ -3760,7 +3807,7 @@ ap_enable_reg_pp0_iter0_i_1: unisim.vcomponents.LUT6
       I3 => exitcond_fu_163_p2,
       I4 => ap_block_pp0_stage0_subdone,
       I5 => ap_CS_fsm_pp0_stage0,
-      O => ap_enable_reg_pp0_iter0_i_1_n_2
+      O => \ap_enable_reg_pp0_iter0_i_1__0_n_2\
     );
 ap_enable_reg_pp0_iter0_reg: unisim.vcomponents.FDRE
     generic map(
@@ -3769,7 +3816,7 @@ ap_enable_reg_pp0_iter0_reg: unisim.vcomponents.FDRE
         port map (
       C => ap_clk,
       CE => '1',
-      D => ap_enable_reg_pp0_iter0_i_1_n_2,
+      D => \ap_enable_reg_pp0_iter0_i_1__0_n_2\,
       Q => ap_enable_reg_pp0_iter0,
       R => '0'
     );
@@ -3968,7 +4015,7 @@ ap_enable_reg_pp0_iter2_reg: unisim.vcomponents.FDRE
       INIT => X"9"
     )
         port map (
-      I0 => \i_V_reg_201[9]_i_4_n_2\,
+      I0 => \i_V_reg_201[9]_i_2_n_2\,
       I1 => t_V_reg_124(6),
       O => i_V_fu_157_p2(6)
     );
@@ -3978,7 +4025,7 @@ ap_enable_reg_pp0_iter2_reg: unisim.vcomponents.FDRE
     )
         port map (
       I0 => t_V_reg_124(6),
-      I1 => \i_V_reg_201[9]_i_4_n_2\,
+      I1 => \i_V_reg_201[9]_i_2_n_2\,
       I2 => t_V_reg_124(7),
       O => i_V_fu_157_p2(7)
     );
@@ -3988,47 +4035,24 @@ ap_enable_reg_pp0_iter2_reg: unisim.vcomponents.FDRE
     )
         port map (
       I0 => t_V_reg_124(7),
-      I1 => \i_V_reg_201[9]_i_4_n_2\,
+      I1 => \i_V_reg_201[9]_i_2_n_2\,
       I2 => t_V_reg_124(6),
       I3 => t_V_reg_124(8),
       O => i_V_fu_157_p2(8)
     );
 \i_V_reg_201[9]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"80000000"
-    )
-        port map (
-      I0 => \AXI_video_strm_V_id_V_1_state_reg_n_2_[1]\,
-      I1 => \AXI_video_strm_V_dest_V_1_state_reg_n_2_[1]\,
-      I2 => AXI_video_strm_V_data_V_1_ack_in,
-      I3 => ap_CS_fsm_state2,
-      I4 => \i_V_reg_201[9]_i_3_n_2\,
-      O => i_V_reg_2010
-    );
-\i_V_reg_201[9]_i_2\: unisim.vcomponents.LUT5
-    generic map(
       INIT => X"F7FF0800"
     )
         port map (
       I0 => t_V_reg_124(8),
       I1 => t_V_reg_124(6),
-      I2 => \i_V_reg_201[9]_i_4_n_2\,
+      I2 => \i_V_reg_201[9]_i_2_n_2\,
       I3 => t_V_reg_124(7),
       I4 => t_V_reg_124(9),
       O => i_V_fu_157_p2(9)
     );
-\i_V_reg_201[9]_i_3\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"8000"
-    )
-        port map (
-      I0 => \AXI_video_strm_V_strb_V_1_state_reg_n_2_[1]\,
-      I1 => \AXI_video_strm_V_keep_V_1_state_reg_n_2_[1]\,
-      I2 => AXI_video_strm_V_last_V_1_ack_in,
-      I3 => AXI_video_strm_V_user_V_1_ack_in,
-      O => \i_V_reg_201[9]_i_3_n_2\
-    );
-\i_V_reg_201[9]_i_4\: unisim.vcomponents.LUT6
+\i_V_reg_201[9]_i_2\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"7FFFFFFFFFFFFFFF"
     )
@@ -4039,7 +4063,7 @@ ap_enable_reg_pp0_iter2_reg: unisim.vcomponents.FDRE
       I3 => t_V_reg_124(3),
       I4 => t_V_reg_124(4),
       I5 => t_V_reg_124(5),
-      O => \i_V_reg_201[9]_i_4_n_2\
+      O => \i_V_reg_201[9]_i_2_n_2\
     );
 \i_V_reg_201_reg[0]\: unisim.vcomponents.FDRE
      port map (
@@ -4120,32 +4144,6 @@ ap_enable_reg_pp0_iter2_reg: unisim.vcomponents.FDRE
       D => i_V_fu_157_p2(9),
       Q => i_V_reg_201(9),
       R => '0'
-    );
-\int_isr[0]_i_3\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000000200000000"
-    )
-        port map (
-      I0 => \int_isr[0]_i_4_n_2\,
-      I1 => t_V_reg_124(2),
-      I2 => t_V_reg_124(3),
-      I3 => t_V_reg_124(0),
-      I4 => t_V_reg_124(1),
-      I5 => i_V_reg_2010,
-      O => \^mat2axivideo_u0_ap_ready\
-    );
-\int_isr[0]_i_4\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000200000000000"
-    )
-        port map (
-      I0 => t_V_reg_124(4),
-      I1 => t_V_reg_124(5),
-      I2 => t_V_reg_124(6),
-      I3 => t_V_reg_124(7),
-      I4 => t_V_reg_124(8),
-      I5 => t_V_reg_124(9),
-      O => \int_isr[0]_i_4_n_2\
     );
 \internal_full_n_i_2__0\: unisim.vcomponents.LUT2
     generic map(
@@ -5129,670 +5127,6 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity bd_0_hls_inst_0_filtr_Gauss_bun_1_s_axi is
-  port (
-    \FSM_onehot_wstate_reg[1]_0\ : out STD_LOGIC;
-    \FSM_onehot_wstate_reg[2]_0\ : out STD_LOGIC;
-    s_axi_bun_1_BVALID : out STD_LOGIC;
-    AXIvideo2Mat_U0_ap_start : out STD_LOGIC;
-    interrupt : out STD_LOGIC;
-    \FSM_onehot_rstate_reg[1]_0\ : out STD_LOGIC;
-    s_axi_bun_1_RVALID : out STD_LOGIC;
-    s_axi_bun_1_RDATA : out STD_LOGIC_VECTOR ( 4 downto 0 );
-    ap_rst_n_inv : in STD_LOGIC;
-    ap_idle : in STD_LOGIC;
-    ap_clk : in STD_LOGIC;
-    AXIvideo2Mat_U0_ap_ready : in STD_LOGIC;
-    s_axi_bun_1_AWVALID : in STD_LOGIC;
-    s_axi_bun_1_WDATA : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s_axi_bun_1_WVALID : in STD_LOGIC;
-    s_axi_bun_1_WSTRB : in STD_LOGIC_VECTOR ( 0 to 0 );
-    s_axi_bun_1_BREADY : in STD_LOGIC;
-    s_axi_bun_1_ARADDR : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    int_ap_start_reg_0 : in STD_LOGIC;
-    s_axi_bun_1_ARVALID : in STD_LOGIC;
-    s_axi_bun_1_RREADY : in STD_LOGIC;
-    Mat2AXIvideo_U0_ap_ready : in STD_LOGIC;
-    s_axi_bun_1_AWADDR : in STD_LOGIC_VECTOR ( 3 downto 0 )
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bd_0_hls_inst_0_filtr_Gauss_bun_1_s_axi : entity is "filtr_Gauss_bun_1_s_axi";
-end bd_0_hls_inst_0_filtr_Gauss_bun_1_s_axi;
-
-architecture STRUCTURE of bd_0_hls_inst_0_filtr_Gauss_bun_1_s_axi is
-  signal \^axivideo2mat_u0_ap_start\ : STD_LOGIC;
-  signal \FSM_onehot_rstate[1]_i_1_n_2\ : STD_LOGIC;
-  signal \FSM_onehot_rstate[2]_i_1_n_2\ : STD_LOGIC;
-  signal \^fsm_onehot_rstate_reg[1]_0\ : STD_LOGIC;
-  signal \FSM_onehot_wstate[1]_i_2_n_2\ : STD_LOGIC;
-  signal \FSM_onehot_wstate[2]_i_1_n_2\ : STD_LOGIC;
-  signal \FSM_onehot_wstate[3]_i_1_n_2\ : STD_LOGIC;
-  signal \^fsm_onehot_wstate_reg[1]_0\ : STD_LOGIC;
-  signal \^fsm_onehot_wstate_reg[2]_0\ : STD_LOGIC;
-  signal ar_hs : STD_LOGIC;
-  signal int_ap_done : STD_LOGIC;
-  signal int_ap_done_i_1_n_2 : STD_LOGIC;
-  signal int_ap_done_i_2_n_2 : STD_LOGIC;
-  signal int_ap_idle : STD_LOGIC;
-  signal int_ap_ready : STD_LOGIC;
-  signal int_ap_start3_out : STD_LOGIC;
-  signal int_ap_start_i_1_n_2 : STD_LOGIC;
-  signal int_auto_restart : STD_LOGIC;
-  signal int_auto_restart_i_1_n_2 : STD_LOGIC;
-  signal int_gie_i_1_n_2 : STD_LOGIC;
-  signal int_gie_reg_n_2 : STD_LOGIC;
-  signal \int_ier[0]_i_1_n_2\ : STD_LOGIC;
-  signal \int_ier[1]_i_1_n_2\ : STD_LOGIC;
-  signal \int_ier[1]_i_2_n_2\ : STD_LOGIC;
-  signal \int_ier_reg_n_2_[0]\ : STD_LOGIC;
-  signal int_isr : STD_LOGIC;
-  signal int_isr6_out : STD_LOGIC;
-  signal \int_isr[0]_i_1_n_2\ : STD_LOGIC;
-  signal \int_isr[1]_i_1_n_2\ : STD_LOGIC;
-  signal \int_isr_reg_n_2_[0]\ : STD_LOGIC;
-  signal \p_0_in__0\ : STD_LOGIC;
-  signal p_1_in : STD_LOGIC;
-  signal rdata : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal \rdata[0]_i_2_n_2\ : STD_LOGIC;
-  signal \rdata[0]_i_3_n_2\ : STD_LOGIC;
-  signal \rdata[1]_i_2_n_2\ : STD_LOGIC;
-  signal \^s_axi_bun_1_bvalid\ : STD_LOGIC;
-  signal \^s_axi_bun_1_rvalid\ : STD_LOGIC;
-  signal waddr : STD_LOGIC;
-  signal \waddr_reg_n_2_[0]\ : STD_LOGIC;
-  signal \waddr_reg_n_2_[1]\ : STD_LOGIC;
-  signal \waddr_reg_n_2_[2]\ : STD_LOGIC;
-  signal \waddr_reg_n_2_[3]\ : STD_LOGIC;
-  attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \FSM_onehot_rstate[1]_i_1\ : label is "soft_lutpair56";
-  attribute SOFT_HLUTNM of \FSM_onehot_rstate[2]_i_1\ : label is "soft_lutpair56";
-  attribute FSM_ENCODED_STATES : string;
-  attribute FSM_ENCODED_STATES of \FSM_onehot_rstate_reg[1]\ : label is "RDIDLE:010,RDDATA:100,iSTATE:001";
-  attribute FSM_ENCODED_STATES of \FSM_onehot_rstate_reg[2]\ : label is "RDIDLE:010,RDDATA:100,iSTATE:001";
-  attribute FSM_ENCODED_STATES of \FSM_onehot_wstate_reg[1]\ : label is "WRDATA:0100,WRRESP:1000,WRIDLE:0010,iSTATE:0001";
-  attribute FSM_ENCODED_STATES of \FSM_onehot_wstate_reg[2]\ : label is "WRDATA:0100,WRRESP:1000,WRIDLE:0010,iSTATE:0001";
-  attribute FSM_ENCODED_STATES of \FSM_onehot_wstate_reg[3]\ : label is "WRDATA:0100,WRRESP:1000,WRIDLE:0010,iSTATE:0001";
-  attribute SOFT_HLUTNM of int_ap_done_i_2 : label is "soft_lutpair50";
-  attribute SOFT_HLUTNM of int_ap_start_i_1 : label is "soft_lutpair55";
-  attribute SOFT_HLUTNM of int_ap_start_i_2 : label is "soft_lutpair52";
-  attribute SOFT_HLUTNM of int_auto_restart_i_1 : label is "soft_lutpair51";
-  attribute SOFT_HLUTNM of int_gie_i_1 : label is "soft_lutpair52";
-  attribute SOFT_HLUTNM of \int_isr[0]_i_2\ : label is "soft_lutpair51";
-  attribute SOFT_HLUTNM of \int_isr[1]_i_2\ : label is "soft_lutpair55";
-  attribute SOFT_HLUTNM of \rdata[0]_i_2\ : label is "soft_lutpair53";
-  attribute SOFT_HLUTNM of \rdata[1]_i_2\ : label is "soft_lutpair54";
-  attribute SOFT_HLUTNM of \rdata[2]_i_1\ : label is "soft_lutpair50";
-  attribute SOFT_HLUTNM of \rdata[3]_i_1\ : label is "soft_lutpair54";
-  attribute SOFT_HLUTNM of \rdata[7]_i_2\ : label is "soft_lutpair53";
-begin
-  AXIvideo2Mat_U0_ap_start <= \^axivideo2mat_u0_ap_start\;
-  \FSM_onehot_rstate_reg[1]_0\ <= \^fsm_onehot_rstate_reg[1]_0\;
-  \FSM_onehot_wstate_reg[1]_0\ <= \^fsm_onehot_wstate_reg[1]_0\;
-  \FSM_onehot_wstate_reg[2]_0\ <= \^fsm_onehot_wstate_reg[2]_0\;
-  s_axi_bun_1_BVALID <= \^s_axi_bun_1_bvalid\;
-  s_axi_bun_1_RVALID <= \^s_axi_bun_1_rvalid\;
-\FSM_onehot_rstate[1]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"F277"
-    )
-        port map (
-      I0 => \^fsm_onehot_rstate_reg[1]_0\,
-      I1 => s_axi_bun_1_ARVALID,
-      I2 => s_axi_bun_1_RREADY,
-      I3 => \^s_axi_bun_1_rvalid\,
-      O => \FSM_onehot_rstate[1]_i_1_n_2\
-    );
-\FSM_onehot_rstate[2]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"8F88"
-    )
-        port map (
-      I0 => s_axi_bun_1_ARVALID,
-      I1 => \^fsm_onehot_rstate_reg[1]_0\,
-      I2 => s_axi_bun_1_RREADY,
-      I3 => \^s_axi_bun_1_rvalid\,
-      O => \FSM_onehot_rstate[2]_i_1_n_2\
-    );
-\FSM_onehot_rstate_reg[1]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => ap_clk,
-      CE => '1',
-      D => \FSM_onehot_rstate[1]_i_1_n_2\,
-      Q => \^fsm_onehot_rstate_reg[1]_0\,
-      R => ap_rst_n_inv
-    );
-\FSM_onehot_rstate_reg[2]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => ap_clk,
-      CE => '1',
-      D => \FSM_onehot_rstate[2]_i_1_n_2\,
-      Q => \^s_axi_bun_1_rvalid\,
-      R => ap_rst_n_inv
-    );
-\FSM_onehot_wstate[1]_i_2\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FF0C1D1D"
-    )
-        port map (
-      I0 => \^fsm_onehot_wstate_reg[2]_0\,
-      I1 => \^fsm_onehot_wstate_reg[1]_0\,
-      I2 => s_axi_bun_1_AWVALID,
-      I3 => s_axi_bun_1_BREADY,
-      I4 => \^s_axi_bun_1_bvalid\,
-      O => \FSM_onehot_wstate[1]_i_2_n_2\
-    );
-\FSM_onehot_wstate[2]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"F444"
-    )
-        port map (
-      I0 => s_axi_bun_1_WVALID,
-      I1 => \^fsm_onehot_wstate_reg[2]_0\,
-      I2 => s_axi_bun_1_AWVALID,
-      I3 => \^fsm_onehot_wstate_reg[1]_0\,
-      O => \FSM_onehot_wstate[2]_i_1_n_2\
-    );
-\FSM_onehot_wstate[3]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"F444"
-    )
-        port map (
-      I0 => s_axi_bun_1_BREADY,
-      I1 => \^s_axi_bun_1_bvalid\,
-      I2 => s_axi_bun_1_WVALID,
-      I3 => \^fsm_onehot_wstate_reg[2]_0\,
-      O => \FSM_onehot_wstate[3]_i_1_n_2\
-    );
-\FSM_onehot_wstate_reg[1]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => ap_clk,
-      CE => '1',
-      D => \FSM_onehot_wstate[1]_i_2_n_2\,
-      Q => \^fsm_onehot_wstate_reg[1]_0\,
-      R => ap_rst_n_inv
-    );
-\FSM_onehot_wstate_reg[2]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => ap_clk,
-      CE => '1',
-      D => \FSM_onehot_wstate[2]_i_1_n_2\,
-      Q => \^fsm_onehot_wstate_reg[2]_0\,
-      R => ap_rst_n_inv
-    );
-\FSM_onehot_wstate_reg[3]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => ap_clk,
-      CE => '1',
-      D => \FSM_onehot_wstate[3]_i_1_n_2\,
-      Q => \^s_axi_bun_1_bvalid\,
-      R => ap_rst_n_inv
-    );
-int_ap_done_i_1: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FF7FFF00"
-    )
-        port map (
-      I0 => int_ap_done_i_2_n_2,
-      I1 => s_axi_bun_1_ARVALID,
-      I2 => \^fsm_onehot_rstate_reg[1]_0\,
-      I3 => Mat2AXIvideo_U0_ap_ready,
-      I4 => int_ap_done,
-      O => int_ap_done_i_1_n_2
-    );
-int_ap_done_i_2: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"0001"
-    )
-        port map (
-      I0 => s_axi_bun_1_ARADDR(2),
-      I1 => s_axi_bun_1_ARADDR(1),
-      I2 => s_axi_bun_1_ARADDR(0),
-      I3 => s_axi_bun_1_ARADDR(3),
-      O => int_ap_done_i_2_n_2
-    );
-int_ap_done_reg: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => ap_clk,
-      CE => '1',
-      D => int_ap_done_i_1_n_2,
-      Q => int_ap_done,
-      R => ap_rst_n_inv
-    );
-int_ap_idle_reg: unisim.vcomponents.FDRE
-     port map (
-      C => ap_clk,
-      CE => '1',
-      D => ap_idle,
-      Q => int_ap_idle,
-      R => ap_rst_n_inv
-    );
-int_ap_ready_reg: unisim.vcomponents.FDRE
-     port map (
-      C => ap_clk,
-      CE => '1',
-      D => AXIvideo2Mat_U0_ap_ready,
-      Q => int_ap_ready,
-      R => ap_rst_n_inv
-    );
-int_ap_start_i_1: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"FECE"
-    )
-        port map (
-      I0 => int_auto_restart,
-      I1 => int_ap_start3_out,
-      I2 => int_ap_start_reg_0,
-      I3 => \^axivideo2mat_u0_ap_start\,
-      O => int_ap_start_i_1_n_2
-    );
-int_ap_start_i_2: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"0400"
-    )
-        port map (
-      I0 => \waddr_reg_n_2_[2]\,
-      I1 => s_axi_bun_1_WDATA(0),
-      I2 => \waddr_reg_n_2_[3]\,
-      I3 => \int_ier[1]_i_2_n_2\,
-      O => int_ap_start3_out
-    );
-int_ap_start_reg: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => ap_clk,
-      CE => '1',
-      D => int_ap_start_i_1_n_2,
-      Q => \^axivideo2mat_u0_ap_start\,
-      R => ap_rst_n_inv
-    );
-int_auto_restart_i_1: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FEFF0200"
-    )
-        port map (
-      I0 => s_axi_bun_1_WDATA(2),
-      I1 => \waddr_reg_n_2_[3]\,
-      I2 => \waddr_reg_n_2_[2]\,
-      I3 => \int_ier[1]_i_2_n_2\,
-      I4 => int_auto_restart,
-      O => int_auto_restart_i_1_n_2
-    );
-int_auto_restart_reg: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => ap_clk,
-      CE => '1',
-      D => int_auto_restart_i_1_n_2,
-      Q => int_auto_restart,
-      R => ap_rst_n_inv
-    );
-int_gie_i_1: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"EFFF2000"
-    )
-        port map (
-      I0 => s_axi_bun_1_WDATA(0),
-      I1 => \waddr_reg_n_2_[3]\,
-      I2 => \waddr_reg_n_2_[2]\,
-      I3 => \int_ier[1]_i_2_n_2\,
-      I4 => int_gie_reg_n_2,
-      O => int_gie_i_1_n_2
-    );
-int_gie_reg: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => ap_clk,
-      CE => '1',
-      D => int_gie_i_1_n_2,
-      Q => int_gie_reg_n_2,
-      R => ap_rst_n_inv
-    );
-\int_ier[0]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"EFFF2000"
-    )
-        port map (
-      I0 => s_axi_bun_1_WDATA(0),
-      I1 => \waddr_reg_n_2_[2]\,
-      I2 => \waddr_reg_n_2_[3]\,
-      I3 => \int_ier[1]_i_2_n_2\,
-      I4 => \int_ier_reg_n_2_[0]\,
-      O => \int_ier[0]_i_1_n_2\
-    );
-\int_ier[1]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"EFFF2000"
-    )
-        port map (
-      I0 => s_axi_bun_1_WDATA(1),
-      I1 => \waddr_reg_n_2_[2]\,
-      I2 => \waddr_reg_n_2_[3]\,
-      I3 => \int_ier[1]_i_2_n_2\,
-      I4 => \p_0_in__0\,
-      O => \int_ier[1]_i_1_n_2\
-    );
-\int_ier[1]_i_2\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"00400000"
-    )
-        port map (
-      I0 => \waddr_reg_n_2_[0]\,
-      I1 => \^fsm_onehot_wstate_reg[2]_0\,
-      I2 => s_axi_bun_1_WVALID,
-      I3 => \waddr_reg_n_2_[1]\,
-      I4 => s_axi_bun_1_WSTRB(0),
-      O => \int_ier[1]_i_2_n_2\
-    );
-\int_ier_reg[0]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => ap_clk,
-      CE => '1',
-      D => \int_ier[0]_i_1_n_2\,
-      Q => \int_ier_reg_n_2_[0]\,
-      R => ap_rst_n_inv
-    );
-\int_ier_reg[1]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => ap_clk,
-      CE => '1',
-      D => \int_ier[1]_i_1_n_2\,
-      Q => \p_0_in__0\,
-      R => ap_rst_n_inv
-    );
-\int_isr[0]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"F777F888"
-    )
-        port map (
-      I0 => s_axi_bun_1_WDATA(0),
-      I1 => int_isr6_out,
-      I2 => \int_ier_reg_n_2_[0]\,
-      I3 => Mat2AXIvideo_U0_ap_ready,
-      I4 => \int_isr_reg_n_2_[0]\,
-      O => \int_isr[0]_i_1_n_2\
-    );
-\int_isr[0]_i_2\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"80"
-    )
-        port map (
-      I0 => \waddr_reg_n_2_[3]\,
-      I1 => \waddr_reg_n_2_[2]\,
-      I2 => \int_ier[1]_i_2_n_2\,
-      O => int_isr6_out
-    );
-\int_isr[1]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"FFFF7FFFFFFF8000"
-    )
-        port map (
-      I0 => s_axi_bun_1_WDATA(1),
-      I1 => \int_ier[1]_i_2_n_2\,
-      I2 => \waddr_reg_n_2_[2]\,
-      I3 => \waddr_reg_n_2_[3]\,
-      I4 => int_isr,
-      I5 => p_1_in,
-      O => \int_isr[1]_i_1_n_2\
-    );
-\int_isr[1]_i_2\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \p_0_in__0\,
-      I1 => int_ap_start_reg_0,
-      O => int_isr
-    );
-\int_isr_reg[0]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => ap_clk,
-      CE => '1',
-      D => \int_isr[0]_i_1_n_2\,
-      Q => \int_isr_reg_n_2_[0]\,
-      R => ap_rst_n_inv
-    );
-\int_isr_reg[1]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => ap_clk,
-      CE => '1',
-      D => \int_isr[1]_i_1_n_2\,
-      Q => p_1_in,
-      R => ap_rst_n_inv
-    );
-interrupt_INST_0: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"E0"
-    )
-        port map (
-      I0 => \int_isr_reg_n_2_[0]\,
-      I1 => p_1_in,
-      I2 => int_gie_reg_n_2,
-      O => interrupt
-    );
-\rdata[0]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FFFFC840"
-    )
-        port map (
-      I0 => s_axi_bun_1_ARADDR(3),
-      I1 => \rdata[0]_i_2_n_2\,
-      I2 => \^axivideo2mat_u0_ap_start\,
-      I3 => \int_ier_reg_n_2_[0]\,
-      I4 => \rdata[0]_i_3_n_2\,
-      O => rdata(0)
-    );
-\rdata[0]_i_2\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"01"
-    )
-        port map (
-      I0 => s_axi_bun_1_ARADDR(0),
-      I1 => s_axi_bun_1_ARADDR(1),
-      I2 => s_axi_bun_1_ARADDR(2),
-      O => \rdata[0]_i_2_n_2\
-    );
-\rdata[0]_i_3\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0202020000000200"
-    )
-        port map (
-      I0 => s_axi_bun_1_ARADDR(2),
-      I1 => s_axi_bun_1_ARADDR(1),
-      I2 => s_axi_bun_1_ARADDR(0),
-      I3 => int_gie_reg_n_2,
-      I4 => s_axi_bun_1_ARADDR(3),
-      I5 => \int_isr_reg_n_2_[0]\,
-      O => \rdata[0]_i_3_n_2\
-    );
-\rdata[1]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"F000C0C00000A0A0"
-    )
-        port map (
-      I0 => int_ap_done,
-      I1 => \p_0_in__0\,
-      I2 => \rdata[1]_i_2_n_2\,
-      I3 => p_1_in,
-      I4 => s_axi_bun_1_ARADDR(2),
-      I5 => s_axi_bun_1_ARADDR(3),
-      O => rdata(1)
-    );
-\rdata[1]_i_2\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => s_axi_bun_1_ARADDR(1),
-      I1 => s_axi_bun_1_ARADDR(0),
-      O => \rdata[1]_i_2_n_2\
-    );
-\rdata[2]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"00010000"
-    )
-        port map (
-      I0 => s_axi_bun_1_ARADDR(3),
-      I1 => s_axi_bun_1_ARADDR(0),
-      I2 => s_axi_bun_1_ARADDR(1),
-      I3 => s_axi_bun_1_ARADDR(2),
-      I4 => int_ap_idle,
-      O => rdata(2)
-    );
-\rdata[3]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"00010000"
-    )
-        port map (
-      I0 => s_axi_bun_1_ARADDR(3),
-      I1 => s_axi_bun_1_ARADDR(0),
-      I2 => s_axi_bun_1_ARADDR(1),
-      I3 => s_axi_bun_1_ARADDR(2),
-      I4 => int_ap_ready,
-      O => rdata(3)
-    );
-\rdata[7]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => \^fsm_onehot_rstate_reg[1]_0\,
-      I1 => s_axi_bun_1_ARVALID,
-      O => ar_hs
-    );
-\rdata[7]_i_2\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"00010000"
-    )
-        port map (
-      I0 => s_axi_bun_1_ARADDR(3),
-      I1 => s_axi_bun_1_ARADDR(0),
-      I2 => s_axi_bun_1_ARADDR(1),
-      I3 => s_axi_bun_1_ARADDR(2),
-      I4 => int_auto_restart,
-      O => rdata(7)
-    );
-\rdata_reg[0]\: unisim.vcomponents.FDRE
-     port map (
-      C => ap_clk,
-      CE => ar_hs,
-      D => rdata(0),
-      Q => s_axi_bun_1_RDATA(0),
-      R => '0'
-    );
-\rdata_reg[1]\: unisim.vcomponents.FDRE
-     port map (
-      C => ap_clk,
-      CE => ar_hs,
-      D => rdata(1),
-      Q => s_axi_bun_1_RDATA(1),
-      R => '0'
-    );
-\rdata_reg[2]\: unisim.vcomponents.FDRE
-     port map (
-      C => ap_clk,
-      CE => ar_hs,
-      D => rdata(2),
-      Q => s_axi_bun_1_RDATA(2),
-      R => '0'
-    );
-\rdata_reg[3]\: unisim.vcomponents.FDRE
-     port map (
-      C => ap_clk,
-      CE => ar_hs,
-      D => rdata(3),
-      Q => s_axi_bun_1_RDATA(3),
-      R => '0'
-    );
-\rdata_reg[7]\: unisim.vcomponents.FDRE
-     port map (
-      C => ap_clk,
-      CE => ar_hs,
-      D => rdata(7),
-      Q => s_axi_bun_1_RDATA(4),
-      R => '0'
-    );
-\waddr[3]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => s_axi_bun_1_AWVALID,
-      I1 => \^fsm_onehot_wstate_reg[1]_0\,
-      O => waddr
-    );
-\waddr_reg[0]\: unisim.vcomponents.FDRE
-     port map (
-      C => ap_clk,
-      CE => waddr,
-      D => s_axi_bun_1_AWADDR(0),
-      Q => \waddr_reg_n_2_[0]\,
-      R => '0'
-    );
-\waddr_reg[1]\: unisim.vcomponents.FDRE
-     port map (
-      C => ap_clk,
-      CE => waddr,
-      D => s_axi_bun_1_AWADDR(1),
-      Q => \waddr_reg_n_2_[1]\,
-      R => '0'
-    );
-\waddr_reg[2]\: unisim.vcomponents.FDRE
-     port map (
-      C => ap_clk,
-      CE => waddr,
-      D => s_axi_bun_1_AWADDR(2),
-      Q => \waddr_reg_n_2_[2]\,
-      R => '0'
-    );
-\waddr_reg[3]\: unisim.vcomponents.FDRE
-     port map (
-      C => ap_clk,
-      CE => waddr,
-      D => s_axi_bun_1_AWADDR(3),
-      Q => \waddr_reg_n_2_[3]\,
-      R => '0'
-    );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
 entity bd_0_hls_inst_0_filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_DSP48_0 is
   port (
     P : out STD_LOGIC_VECTOR ( 13 downto 0 );
@@ -6368,13 +5702,13 @@ entity bd_0_hls_inst_0_start_for_Mat2AXIvideo_U0 is
     Mat2AXIvideo_U0_ap_start : out STD_LOGIC;
     ap_idle : out STD_LOGIC;
     ap_clk : in STD_LOGIC;
+    ap_idle_0 : in STD_LOGIC;
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
+    ap_idle_1 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    ap_idle_2 : in STD_LOGIC_VECTOR ( 0 to 0 );
     ap_rst_n : in STD_LOGIC;
     \mOutPtr_reg[1]_0\ : in STD_LOGIC;
-    Mat2AXIvideo_U0_ap_ready : in STD_LOGIC;
-    int_ap_idle_reg : in STD_LOGIC;
-    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
-    int_ap_idle_reg_0 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    int_ap_idle_reg_1 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \mOutPtr_reg[1]_1\ : in STD_LOGIC;
     \mOutPtr_reg[0]_0\ : in STD_LOGIC;
     rozmycie_U0_ap_start : in STD_LOGIC;
     ap_rst_n_inv : in STD_LOGIC
@@ -6385,9 +5719,9 @@ end bd_0_hls_inst_0_start_for_Mat2AXIvideo_U0;
 
 architecture STRUCTURE of bd_0_hls_inst_0_start_for_Mat2AXIvideo_U0 is
   signal \^mat2axivideo_u0_ap_start\ : STD_LOGIC;
-  signal int_ap_idle_i_3_n_2 : STD_LOGIC;
-  signal internal_empty_n_i_1_n_2 : STD_LOGIC;
-  signal internal_full_n_i_1_n_2 : STD_LOGIC;
+  signal ap_idle_INST_0_i_2_n_2 : STD_LOGIC;
+  signal \internal_empty_n_i_1__1_n_2\ : STD_LOGIC;
+  signal \internal_full_n_i_1__1_n_2\ : STD_LOGIC;
   signal \internal_full_n_i_2__1_n_2\ : STD_LOGIC;
   signal \mOutPtr[0]_i_1_n_2\ : STD_LOGIC;
   signal \mOutPtr[1]_i_1_n_2\ : STD_LOGIC;
@@ -6395,25 +5729,25 @@ architecture STRUCTURE of bd_0_hls_inst_0_start_for_Mat2AXIvideo_U0 is
   signal \mOutPtr_reg_n_2_[1]\ : STD_LOGIC;
   signal \^start_for_mat2axivideo_u0_full_n\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \internal_full_n_i_2__1\ : label is "soft_lutpair72";
-  attribute SOFT_HLUTNM of \mOutPtr[1]_i_1\ : label is "soft_lutpair72";
+  attribute SOFT_HLUTNM of \internal_full_n_i_2__1\ : label is "soft_lutpair65";
+  attribute SOFT_HLUTNM of \mOutPtr[1]_i_1\ : label is "soft_lutpair65";
 begin
   Mat2AXIvideo_U0_ap_start <= \^mat2axivideo_u0_ap_start\;
   start_for_Mat2AXIvideo_U0_full_n <= \^start_for_mat2axivideo_u0_full_n\;
-int_ap_idle_i_1: unisim.vcomponents.LUT6
+ap_idle_INST_0: unisim.vcomponents.LUT6
     generic map(
       INIT => X"0000000010000000"
     )
         port map (
-      I0 => int_ap_idle_reg,
+      I0 => ap_idle_0,
       I1 => \^mat2axivideo_u0_ap_start\,
       I2 => Q(0),
-      I3 => int_ap_idle_reg_0(0),
-      I4 => int_ap_idle_reg_1(0),
-      I5 => int_ap_idle_i_3_n_2,
+      I3 => ap_idle_1(0),
+      I4 => ap_idle_2(0),
+      I5 => ap_idle_INST_0_i_2_n_2,
       O => ap_idle
     );
-int_ap_idle_i_3: unisim.vcomponents.LUT3
+ap_idle_INST_0_i_2: unisim.vcomponents.LUT3
     generic map(
       INIT => X"E0"
     )
@@ -6421,20 +5755,20 @@ int_ap_idle_i_3: unisim.vcomponents.LUT3
       I0 => \^start_for_mat2axivideo_u0_full_n\,
       I1 => \mOutPtr_reg[0]_0\,
       I2 => rozmycie_U0_ap_start,
-      O => int_ap_idle_i_3_n_2
+      O => ap_idle_INST_0_i_2_n_2
     );
-internal_empty_n_i_1: unisim.vcomponents.LUT6
+\internal_empty_n_i_1__1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"AA22AA22AA222A22"
+      INIT => X"A2A2A2A2A2A222A2"
     )
         port map (
       I0 => ap_rst_n,
       I1 => \mOutPtr_reg[1]_0\,
-      I2 => Mat2AXIvideo_U0_ap_ready,
-      I3 => \^mat2axivideo_u0_ap_start\,
+      I2 => \^mat2axivideo_u0_ap_start\,
+      I3 => \mOutPtr_reg[1]_1\,
       I4 => \mOutPtr_reg_n_2_[0]\,
       I5 => \mOutPtr_reg_n_2_[1]\,
-      O => internal_empty_n_i_1_n_2
+      O => \internal_empty_n_i_1__1_n_2\
     );
 internal_empty_n_reg: unisim.vcomponents.FDRE
     generic map(
@@ -6443,11 +5777,11 @@ internal_empty_n_reg: unisim.vcomponents.FDRE
         port map (
       C => ap_clk,
       CE => '1',
-      D => internal_empty_n_i_1_n_2,
+      D => \internal_empty_n_i_1__1_n_2\,
       Q => \^mat2axivideo_u0_ap_start\,
       R => '0'
     );
-internal_full_n_i_1: unisim.vcomponents.LUT6
+\internal_full_n_i_1__1\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"FFDDDDDDDDD5D5D5"
     )
@@ -6455,10 +5789,10 @@ internal_full_n_i_1: unisim.vcomponents.LUT6
       I0 => ap_rst_n,
       I1 => \^start_for_mat2axivideo_u0_full_n\,
       I2 => \internal_full_n_i_2__1_n_2\,
-      I3 => \^mat2axivideo_u0_ap_start\,
-      I4 => Mat2AXIvideo_U0_ap_ready,
+      I3 => \mOutPtr_reg[1]_1\,
+      I4 => \^mat2axivideo_u0_ap_start\,
       I5 => \mOutPtr_reg[1]_0\,
-      O => internal_full_n_i_1_n_2
+      O => \internal_full_n_i_1__1_n_2\
     );
 \internal_full_n_i_2__1\: unisim.vcomponents.LUT2
     generic map(
@@ -6476,7 +5810,7 @@ internal_full_n_reg: unisim.vcomponents.FDRE
         port map (
       C => ap_clk,
       CE => '1',
-      D => internal_full_n_i_1_n_2,
+      D => \internal_full_n_i_1__1_n_2\,
       Q => \^start_for_mat2axivideo_u0_full_n\,
       R => '0'
     );
@@ -6488,8 +5822,8 @@ internal_full_n_reg: unisim.vcomponents.FDRE
       I0 => \^start_for_mat2axivideo_u0_full_n\,
       I1 => \mOutPtr_reg[0]_0\,
       I2 => rozmycie_U0_ap_start,
-      I3 => Mat2AXIvideo_U0_ap_ready,
-      I4 => \^mat2axivideo_u0_ap_start\,
+      I3 => \^mat2axivideo_u0_ap_start\,
+      I4 => \mOutPtr_reg[1]_1\,
       I5 => \mOutPtr_reg_n_2_[0]\,
       O => \mOutPtr[0]_i_1_n_2\
     );
@@ -6499,8 +5833,8 @@ internal_full_n_reg: unisim.vcomponents.FDRE
     )
         port map (
       I0 => \mOutPtr_reg_n_2_[0]\,
-      I1 => \^mat2axivideo_u0_ap_start\,
-      I2 => Mat2AXIvideo_U0_ap_ready,
+      I1 => \mOutPtr_reg[1]_1\,
+      I2 => \^mat2axivideo_u0_ap_start\,
       I3 => \mOutPtr_reg[1]_0\,
       I4 => \mOutPtr_reg_n_2_[1]\,
       O => \mOutPtr[1]_i_1_n_2\
@@ -6541,7 +5875,7 @@ entity bd_0_hls_inst_0_start_for_rozmycie_U0 is
     ap_clk : in STD_LOGIC;
     ap_rst_n : in STD_LOGIC;
     start_once_reg : in STD_LOGIC;
-    AXIvideo2Mat_U0_ap_start : in STD_LOGIC;
+    ap_start : in STD_LOGIC;
     \mOutPtr_reg[0]_0\ : in STD_LOGIC;
     \mOutPtr_reg[1]_0\ : in STD_LOGIC;
     start_for_Mat2AXIvideo_U0_full_n : in STD_LOGIC;
@@ -6552,8 +5886,8 @@ entity bd_0_hls_inst_0_start_for_rozmycie_U0 is
 end bd_0_hls_inst_0_start_for_rozmycie_U0;
 
 architecture STRUCTURE of bd_0_hls_inst_0_start_for_rozmycie_U0 is
-  signal \internal_empty_n_i_1__0_n_2\ : STD_LOGIC;
-  signal \internal_full_n_i_1__0_n_2\ : STD_LOGIC;
+  signal internal_empty_n_i_1_n_2 : STD_LOGIC;
+  signal internal_full_n_i_1_n_2 : STD_LOGIC;
   signal \mOutPtr0__4\ : STD_LOGIC;
   signal mOutPtr110_out : STD_LOGIC;
   signal \mOutPtr[0]_i_1_n_2\ : STD_LOGIC;
@@ -6563,22 +5897,22 @@ architecture STRUCTURE of bd_0_hls_inst_0_start_for_rozmycie_U0 is
   signal \^rozmycie_u0_ap_start\ : STD_LOGIC;
   signal \^start_for_rozmycie_u0_full_n\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \mOutPtr[1]_i_2\ : label is "soft_lutpair73";
-  attribute SOFT_HLUTNM of \mOutPtr[1]_i_3\ : label is "soft_lutpair73";
+  attribute SOFT_HLUTNM of \mOutPtr[1]_i_2\ : label is "soft_lutpair66";
+  attribute SOFT_HLUTNM of \mOutPtr[1]_i_3\ : label is "soft_lutpair66";
 begin
   rozmycie_U0_ap_start <= \^rozmycie_u0_ap_start\;
   start_for_rozmycie_U0_full_n <= \^start_for_rozmycie_u0_full_n\;
-int_ap_idle_i_2: unisim.vcomponents.LUT3
+ap_idle_INST_0_i_1: unisim.vcomponents.LUT3
     generic map(
       INIT => X"E0"
     )
         port map (
       I0 => \^start_for_rozmycie_u0_full_n\,
       I1 => start_once_reg,
-      I2 => AXIvideo2Mat_U0_ap_start,
+      I2 => ap_start,
       O => internal_full_n_reg_0
     );
-\internal_empty_n_i_1__0\: unisim.vcomponents.LUT6
+internal_empty_n_i_1: unisim.vcomponents.LUT6
     generic map(
       INIT => X"A0A8A0A8A0A800A8"
     )
@@ -6589,7 +5923,7 @@ int_ap_idle_i_2: unisim.vcomponents.LUT3
       I3 => mOutPtr110_out,
       I4 => \mOutPtr_reg_n_2_[0]\,
       I5 => \mOutPtr_reg_n_2_[1]\,
-      O => \internal_empty_n_i_1__0_n_2\
+      O => internal_empty_n_i_1_n_2
     );
 internal_empty_n_reg: unisim.vcomponents.FDRE
     generic map(
@@ -6598,11 +5932,11 @@ internal_empty_n_reg: unisim.vcomponents.FDRE
         port map (
       C => ap_clk,
       CE => '1',
-      D => \internal_empty_n_i_1__0_n_2\,
+      D => internal_empty_n_i_1_n_2,
       Q => \^rozmycie_u0_ap_start\,
       R => '0'
     );
-\internal_full_n_i_1__0\: unisim.vcomponents.LUT6
+internal_full_n_i_1: unisim.vcomponents.LUT6
     generic map(
       INIT => X"FFFFFFFFDDD5DDDD"
     )
@@ -6613,7 +5947,7 @@ internal_empty_n_reg: unisim.vcomponents.FDRE
       I3 => \mOutPtr_reg_n_2_[1]\,
       I4 => \mOutPtr0__4\,
       I5 => mOutPtr110_out,
-      O => \internal_full_n_i_1__0_n_2\
+      O => internal_full_n_i_1_n_2
     );
 internal_full_n_reg: unisim.vcomponents.FDRE
     generic map(
@@ -6622,7 +5956,7 @@ internal_full_n_reg: unisim.vcomponents.FDRE
         port map (
       C => ap_clk,
       CE => '1',
-      D => \internal_full_n_i_1__0_n_2\,
+      D => internal_full_n_i_1_n_2,
       Q => \^start_for_rozmycie_u0_full_n\,
       R => '0'
     );
@@ -6635,7 +5969,7 @@ internal_full_n_reg: unisim.vcomponents.FDRE
       I1 => \mOutPtr_reg[0]_0\,
       I2 => \^start_for_rozmycie_u0_full_n\,
       I3 => start_once_reg,
-      I4 => AXIvideo2Mat_U0_ap_start,
+      I4 => ap_start,
       I5 => \mOutPtr_reg_n_2_[0]\,
       O => \mOutPtr[0]_i_1_n_2\
     );
@@ -6657,7 +5991,7 @@ internal_full_n_reg: unisim.vcomponents.FDRE
         port map (
       I0 => \^start_for_rozmycie_u0_full_n\,
       I1 => start_once_reg,
-      I2 => AXIvideo2Mat_U0_ap_start,
+      I2 => ap_start,
       I3 => \^rozmycie_u0_ap_start\,
       I4 => \mOutPtr_reg[0]_0\,
       O => mOutPtr110_out
@@ -6681,7 +6015,7 @@ internal_full_n_reg: unisim.vcomponents.FDRE
       I1 => \mOutPtr_reg[0]_0\,
       I2 => \^start_for_rozmycie_u0_full_n\,
       I3 => start_once_reg,
-      I4 => AXIvideo2Mat_U0_ap_start,
+      I4 => ap_start,
       O => \mOutPtr0__4\
     );
 \mOutPtr_reg[0]\: unisim.vcomponents.FDSE
@@ -6732,8 +6066,8 @@ end bd_0_hls_inst_0_fifo_w8_d2_A;
 architecture STRUCTURE of bd_0_hls_inst_0_fifo_w8_d2_A is
   signal \^instance_in_data_str_empty_n\ : STD_LOGIC;
   signal \^instance_in_data_str_full_n\ : STD_LOGIC;
-  signal \internal_empty_n_i_1__1_n_2\ : STD_LOGIC;
-  signal \internal_full_n_i_1__1_n_2\ : STD_LOGIC;
+  signal \internal_empty_n_i_1__0_n_2\ : STD_LOGIC;
+  signal \internal_full_n_i_1__0_n_2\ : STD_LOGIC;
   signal \mOutPtr[0]_i_1_n_2\ : STD_LOGIC;
   signal \mOutPtr[1]_i_1_n_2\ : STD_LOGIC;
   signal \mOutPtr_reg_n_2_[0]\ : STD_LOGIC;
@@ -6751,7 +6085,7 @@ U_fifo_w8_d2_A_ram: entity work.bd_0_hls_inst_0_fifo_w8_d2_A_shiftReg_3
       ram_reg => \mOutPtr_reg_n_2_[1]\,
       ram_reg_0 => \mOutPtr_reg_n_2_[0]\
     );
-\internal_empty_n_i_1__1\: unisim.vcomponents.LUT6
+\internal_empty_n_i_1__0\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"A2A2A2A2A2A222A2"
     )
@@ -6762,7 +6096,7 @@ U_fifo_w8_d2_A_ram: entity work.bd_0_hls_inst_0_fifo_w8_d2_A_shiftReg_3
       I3 => rozmycie_U0_img_in_data_stream_V_read,
       I4 => \mOutPtr_reg_n_2_[0]\,
       I5 => \mOutPtr_reg_n_2_[1]\,
-      O => \internal_empty_n_i_1__1_n_2\
+      O => \internal_empty_n_i_1__0_n_2\
     );
 internal_empty_n_reg: unisim.vcomponents.FDRE
     generic map(
@@ -6771,11 +6105,11 @@ internal_empty_n_reg: unisim.vcomponents.FDRE
         port map (
       C => ap_clk,
       CE => '1',
-      D => \internal_empty_n_i_1__1_n_2\,
+      D => \internal_empty_n_i_1__0_n_2\,
       Q => \^instance_in_data_str_empty_n\,
       R => '0'
     );
-\internal_full_n_i_1__1\: unisim.vcomponents.LUT6
+\internal_full_n_i_1__0\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"FDFFFFFF55FF55FF"
     )
@@ -6786,7 +6120,7 @@ internal_empty_n_reg: unisim.vcomponents.FDRE
       I3 => internal_full_n_reg_0,
       I4 => AXIvideo2Mat_U0_img_data_stream_V_write,
       I5 => \^instance_in_data_str_full_n\,
-      O => \internal_full_n_i_1__1_n_2\
+      O => \internal_full_n_i_1__0_n_2\
     );
 internal_full_n_reg: unisim.vcomponents.FDRE
     generic map(
@@ -6795,7 +6129,7 @@ internal_full_n_reg: unisim.vcomponents.FDRE
         port map (
       C => ap_clk,
       CE => '1',
-      D => \internal_full_n_i_1__1_n_2\,
+      D => \internal_full_n_i_1__0_n_2\,
       Q => \^instance_in_data_str_full_n\,
       R => '0'
     );
@@ -6878,8 +6212,8 @@ architecture STRUCTURE of bd_0_hls_inst_0_fifo_w8_d2_A_0 is
   signal \mOutPtr_reg_n_2_[0]\ : STD_LOGIC;
   signal \mOutPtr_reg_n_2_[1]\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \mOutPtr[0]_i_1\ : label is "soft_lutpair57";
-  attribute SOFT_HLUTNM of \mOutPtr[1]_i_1\ : label is "soft_lutpair57";
+  attribute SOFT_HLUTNM of \mOutPtr[0]_i_1\ : label is "soft_lutpair50";
+  attribute SOFT_HLUTNM of \mOutPtr[1]_i_1\ : label is "soft_lutpair50";
 begin
   instance_out_data_st_empty_n <= \^instance_out_data_st_empty_n\;
   instance_out_data_st_full_n <= \^instance_out_data_st_full_n\;
@@ -7168,7 +6502,7 @@ architecture STRUCTURE of bd_0_hls_inst_0_rozmycie is
   signal ap_block_pp0_stage0_subdone : STD_LOGIC;
   signal ap_block_pp0_stage0_subdone4_in : STD_LOGIC;
   signal ap_enable_reg_pp0_iter0 : STD_LOGIC;
-  signal \ap_enable_reg_pp0_iter0_i_1__0_n_2\ : STD_LOGIC;
+  signal ap_enable_reg_pp0_iter0_i_1_n_2 : STD_LOGIC;
   signal ap_enable_reg_pp0_iter1_i_1_n_2 : STD_LOGIC;
   signal ap_enable_reg_pp0_iter1_reg_n_2 : STD_LOGIC;
   signal ap_enable_reg_pp0_iter2 : STD_LOGIC;
@@ -7539,42 +6873,42 @@ architecture STRUCTURE of bd_0_hls_inst_0_rozmycie is
   signal \NLW_tmp_12_reg_779_reg[3]_i_2_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_tmp_12_reg_779_reg[7]_i_2_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \ap_CS_fsm[2]_i_2\ : label is "soft_lutpair66";
-  attribute SOFT_HLUTNM of \ap_CS_fsm[2]_i_5\ : label is "soft_lutpair62";
-  attribute SOFT_HLUTNM of \ap_CS_fsm[3]_i_2__0\ : label is "soft_lutpair60";
+  attribute SOFT_HLUTNM of \ap_CS_fsm[2]_i_2\ : label is "soft_lutpair59";
+  attribute SOFT_HLUTNM of \ap_CS_fsm[2]_i_5\ : label is "soft_lutpair55";
+  attribute SOFT_HLUTNM of \ap_CS_fsm[3]_i_2__0\ : label is "soft_lutpair53";
   attribute FSM_ENCODING : string;
   attribute FSM_ENCODING of \ap_CS_fsm_reg[0]\ : label is "none";
   attribute FSM_ENCODING of \ap_CS_fsm_reg[1]\ : label is "none";
   attribute FSM_ENCODING of \ap_CS_fsm_reg[2]\ : label is "none";
   attribute FSM_ENCODING of \ap_CS_fsm_reg[3]\ : label is "none";
-  attribute SOFT_HLUTNM of ap_enable_reg_pp0_iter1_i_1 : label is "soft_lutpair60";
-  attribute SOFT_HLUTNM of ap_enable_reg_pp0_iter3_i_1 : label is "soft_lutpair66";
-  attribute SOFT_HLUTNM of \col_assign_reg_198[1]_i_1\ : label is "soft_lutpair70";
-  attribute SOFT_HLUTNM of \col_assign_reg_198[2]_i_1\ : label is "soft_lutpair70";
-  attribute SOFT_HLUTNM of \col_assign_reg_198[3]_i_1\ : label is "soft_lutpair59";
-  attribute SOFT_HLUTNM of \col_assign_reg_198[4]_i_1\ : label is "soft_lutpair59";
-  attribute SOFT_HLUTNM of \col_assign_reg_198[6]_i_1\ : label is "soft_lutpair67";
-  attribute SOFT_HLUTNM of \col_assign_reg_198[8]_i_1\ : label is "soft_lutpair61";
-  attribute SOFT_HLUTNM of \col_assign_reg_198[9]_i_1\ : label is "soft_lutpair61";
-  attribute SOFT_HLUTNM of \exitcond_reg_721[0]_i_1\ : label is "soft_lutpair58";
-  attribute SOFT_HLUTNM of \exitcond_reg_721[0]_i_3\ : label is "soft_lutpair67";
-  attribute SOFT_HLUTNM of \i_1_reg_701[1]_i_1\ : label is "soft_lutpair71";
-  attribute SOFT_HLUTNM of \i_1_reg_701[2]_i_1\ : label is "soft_lutpair71";
-  attribute SOFT_HLUTNM of \i_1_reg_701[3]_i_1\ : label is "soft_lutpair64";
-  attribute SOFT_HLUTNM of \i_1_reg_701[4]_i_1\ : label is "soft_lutpair64";
-  attribute SOFT_HLUTNM of \i_1_reg_701[6]_i_1\ : label is "soft_lutpair69";
-  attribute SOFT_HLUTNM of \i_1_reg_701[7]_i_1\ : label is "soft_lutpair69";
-  attribute SOFT_HLUTNM of \i_1_reg_701[8]_i_1\ : label is "soft_lutpair63";
-  attribute SOFT_HLUTNM of \i_1_reg_701[9]_i_1\ : label is "soft_lutpair63";
-  attribute SOFT_HLUTNM of \icmp1_reg_750[0]_i_1\ : label is "soft_lutpair65";
-  attribute SOFT_HLUTNM of \icmp_reg_711[0]_i_1\ : label is "soft_lutpair68";
-  attribute SOFT_HLUTNM of \icmp_reg_711[0]_i_2\ : label is "soft_lutpair62";
-  attribute SOFT_HLUTNM of \or_cond6_reg_755[0]_i_2\ : label is "soft_lutpair58";
+  attribute SOFT_HLUTNM of ap_enable_reg_pp0_iter1_i_1 : label is "soft_lutpair53";
+  attribute SOFT_HLUTNM of ap_enable_reg_pp0_iter3_i_1 : label is "soft_lutpair59";
+  attribute SOFT_HLUTNM of \col_assign_reg_198[1]_i_1\ : label is "soft_lutpair63";
+  attribute SOFT_HLUTNM of \col_assign_reg_198[2]_i_1\ : label is "soft_lutpair63";
+  attribute SOFT_HLUTNM of \col_assign_reg_198[3]_i_1\ : label is "soft_lutpair52";
+  attribute SOFT_HLUTNM of \col_assign_reg_198[4]_i_1\ : label is "soft_lutpair52";
+  attribute SOFT_HLUTNM of \col_assign_reg_198[6]_i_1\ : label is "soft_lutpair60";
+  attribute SOFT_HLUTNM of \col_assign_reg_198[8]_i_1\ : label is "soft_lutpair54";
+  attribute SOFT_HLUTNM of \col_assign_reg_198[9]_i_1\ : label is "soft_lutpair54";
+  attribute SOFT_HLUTNM of \exitcond_reg_721[0]_i_1\ : label is "soft_lutpair51";
+  attribute SOFT_HLUTNM of \exitcond_reg_721[0]_i_3\ : label is "soft_lutpair60";
+  attribute SOFT_HLUTNM of \i_1_reg_701[1]_i_1\ : label is "soft_lutpair64";
+  attribute SOFT_HLUTNM of \i_1_reg_701[2]_i_1\ : label is "soft_lutpair64";
+  attribute SOFT_HLUTNM of \i_1_reg_701[3]_i_1\ : label is "soft_lutpair57";
+  attribute SOFT_HLUTNM of \i_1_reg_701[4]_i_1\ : label is "soft_lutpair57";
+  attribute SOFT_HLUTNM of \i_1_reg_701[6]_i_1\ : label is "soft_lutpair62";
+  attribute SOFT_HLUTNM of \i_1_reg_701[7]_i_1\ : label is "soft_lutpair62";
+  attribute SOFT_HLUTNM of \i_1_reg_701[8]_i_1\ : label is "soft_lutpair56";
+  attribute SOFT_HLUTNM of \i_1_reg_701[9]_i_1\ : label is "soft_lutpair56";
+  attribute SOFT_HLUTNM of \icmp1_reg_750[0]_i_1\ : label is "soft_lutpair58";
+  attribute SOFT_HLUTNM of \icmp_reg_711[0]_i_1\ : label is "soft_lutpair61";
+  attribute SOFT_HLUTNM of \icmp_reg_711[0]_i_2\ : label is "soft_lutpair55";
+  attribute SOFT_HLUTNM of \or_cond6_reg_755[0]_i_2\ : label is "soft_lutpair51";
   attribute METHODOLOGY_DRC_VIOS : string;
   attribute METHODOLOGY_DRC_VIOS of tmp10_reg_774_reg : label is "{SYNTH-12 {cell *THIS*}}";
   attribute METHODOLOGY_DRC_VIOS of tmp6_reg_759_reg : label is "{SYNTH-12 {cell *THIS*}}";
-  attribute SOFT_HLUTNM of \tmp_2_reg_716[0]_i_1\ : label is "soft_lutpair68";
-  attribute SOFT_HLUTNM of \tmp_4_reg_730[0]_i_2\ : label is "soft_lutpair65";
+  attribute SOFT_HLUTNM of \tmp_2_reg_716[0]_i_1\ : label is "soft_lutpair61";
+  attribute SOFT_HLUTNM of \tmp_4_reg_730[0]_i_2\ : label is "soft_lutpair58";
 begin
   E(0) <= \^e\(0);
   Q(0) <= \^q\(0);
@@ -7591,7 +6925,7 @@ begin
       I3 => ap_block_pp0_stage0_subdone,
       O => shiftReg_ce
     );
-\ap_CS_fsm[0]_i_1__1\: unisim.vcomponents.LUT5
+\ap_CS_fsm[0]_i_1__0\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"1F00FFFF"
     )
@@ -7616,7 +6950,7 @@ begin
       I5 => \ap_CS_fsm[2]_i_5_n_2\,
       O => \^ap_cs_fsm_reg[1]_0\
     );
-\ap_CS_fsm[1]_i_1__1\: unisim.vcomponents.LUT5
+\ap_CS_fsm[1]_i_1__0\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"FFFFE000"
     )
@@ -7628,7 +6962,7 @@ begin
       I4 => ap_CS_fsm_state8,
       O => ap_NS_fsm(1)
     );
-\ap_CS_fsm[2]_i_1__0\: unisim.vcomponents.LUT6
+\ap_CS_fsm[2]_i_1\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"FFBF0000FFFFFFFF"
     )
@@ -7752,7 +7086,7 @@ begin
       Q => ap_CS_fsm_state8,
       R => ap_rst_n_inv
     );
-\ap_enable_reg_pp0_iter0_i_1__0\: unisim.vcomponents.LUT6
+ap_enable_reg_pp0_iter0_i_1: unisim.vcomponents.LUT6
     generic map(
       INIT => X"8A8A008A8A8A8A8A"
     )
@@ -7763,7 +7097,7 @@ begin
       I3 => exitcond_fu_249_p2,
       I4 => ap_block_pp0_stage0_subdone,
       I5 => ap_CS_fsm_pp0_stage0,
-      O => \ap_enable_reg_pp0_iter0_i_1__0_n_2\
+      O => ap_enable_reg_pp0_iter0_i_1_n_2
     );
 ap_enable_reg_pp0_iter0_reg: unisim.vcomponents.FDRE
     generic map(
@@ -7772,7 +7106,7 @@ ap_enable_reg_pp0_iter0_reg: unisim.vcomponents.FDRE
         port map (
       C => ap_clk,
       CE => '1',
-      D => \ap_enable_reg_pp0_iter0_i_1__0_n_2\,
+      D => ap_enable_reg_pp0_iter0_i_1_n_2,
       Q => ap_enable_reg_pp0_iter0,
       R => '0'
     );
@@ -11286,26 +10620,6 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity bd_0_hls_inst_0_filtr_Gauss is
   port (
-    s_axi_bun_1_AWVALID : in STD_LOGIC;
-    s_axi_bun_1_AWREADY : out STD_LOGIC;
-    s_axi_bun_1_AWADDR : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s_axi_bun_1_WVALID : in STD_LOGIC;
-    s_axi_bun_1_WREADY : out STD_LOGIC;
-    s_axi_bun_1_WDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    s_axi_bun_1_WSTRB : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s_axi_bun_1_ARVALID : in STD_LOGIC;
-    s_axi_bun_1_ARREADY : out STD_LOGIC;
-    s_axi_bun_1_ARADDR : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s_axi_bun_1_RVALID : out STD_LOGIC;
-    s_axi_bun_1_RREADY : in STD_LOGIC;
-    s_axi_bun_1_RDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    s_axi_bun_1_RRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s_axi_bun_1_BVALID : out STD_LOGIC;
-    s_axi_bun_1_BREADY : in STD_LOGIC;
-    s_axi_bun_1_BRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    ap_clk : in STD_LOGIC;
-    ap_rst_n : in STD_LOGIC;
-    interrupt : out STD_LOGIC;
     in_r_TDATA : in STD_LOGIC_VECTOR ( 7 downto 0 );
     in_r_TKEEP : in STD_LOGIC_VECTOR ( 0 to 0 );
     in_r_TSTRB : in STD_LOGIC_VECTOR ( 0 to 0 );
@@ -11320,23 +10634,17 @@ entity bd_0_hls_inst_0_filtr_Gauss is
     out_r_TLAST : out STD_LOGIC_VECTOR ( 0 to 0 );
     out_r_TID : out STD_LOGIC_VECTOR ( 0 to 0 );
     out_r_TDEST : out STD_LOGIC_VECTOR ( 0 to 0 );
+    ap_clk : in STD_LOGIC;
+    ap_rst_n : in STD_LOGIC;
     in_r_TVALID : in STD_LOGIC;
     in_r_TREADY : out STD_LOGIC;
+    ap_start : in STD_LOGIC;
     out_r_TVALID : out STD_LOGIC;
-    out_r_TREADY : in STD_LOGIC
+    out_r_TREADY : in STD_LOGIC;
+    ap_done : out STD_LOGIC;
+    ap_ready : out STD_LOGIC;
+    ap_idle : out STD_LOGIC
   );
-  attribute C_S_AXI_ADDR_WIDTH : integer;
-  attribute C_S_AXI_ADDR_WIDTH of bd_0_hls_inst_0_filtr_Gauss : entity is 32;
-  attribute C_S_AXI_BUN_1_ADDR_WIDTH : integer;
-  attribute C_S_AXI_BUN_1_ADDR_WIDTH of bd_0_hls_inst_0_filtr_Gauss : entity is 4;
-  attribute C_S_AXI_BUN_1_DATA_WIDTH : integer;
-  attribute C_S_AXI_BUN_1_DATA_WIDTH of bd_0_hls_inst_0_filtr_Gauss : entity is 32;
-  attribute C_S_AXI_BUN_1_WSTRB_WIDTH : integer;
-  attribute C_S_AXI_BUN_1_WSTRB_WIDTH of bd_0_hls_inst_0_filtr_Gauss : entity is 4;
-  attribute C_S_AXI_DATA_WIDTH : integer;
-  attribute C_S_AXI_DATA_WIDTH of bd_0_hls_inst_0_filtr_Gauss : entity is 32;
-  attribute C_S_AXI_WSTRB_WIDTH : integer;
-  attribute C_S_AXI_WSTRB_WIDTH of bd_0_hls_inst_0_filtr_Gauss : entity is 4;
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of bd_0_hls_inst_0_filtr_Gauss : entity is "filtr_Gauss";
   attribute hls_module : string;
@@ -11346,18 +10654,14 @@ end bd_0_hls_inst_0_filtr_Gauss;
 architecture STRUCTURE of bd_0_hls_inst_0_filtr_Gauss is
   signal \<const0>\ : STD_LOGIC;
   signal \<const1>\ : STD_LOGIC;
-  signal AXIvideo2Mat_U0_ap_ready : STD_LOGIC;
-  signal AXIvideo2Mat_U0_ap_start : STD_LOGIC;
   signal AXIvideo2Mat_U0_img_data_stream_V_write : STD_LOGIC;
   signal AXIvideo2Mat_U0_n_6 : STD_LOGIC;
-  signal AXIvideo2Mat_U0_n_7 : STD_LOGIC;
-  signal AXIvideo2Mat_U0_n_9 : STD_LOGIC;
-  signal Mat2AXIvideo_U0_ap_ready : STD_LOGIC;
+  signal AXIvideo2Mat_U0_n_8 : STD_LOGIC;
   signal Mat2AXIvideo_U0_ap_start : STD_LOGIC;
   signal Mat2AXIvideo_U0_img_data_stream_V_read : STD_LOGIC;
   signal Mat2AXIvideo_U0_n_3 : STD_LOGIC;
   signal Mat2AXIvideo_U0_n_6 : STD_LOGIC;
-  signal ap_idle : STD_LOGIC;
+  signal \^ap_done\ : STD_LOGIC;
   signal ap_rst_n_inv : STD_LOGIC;
   signal instance_in_data_str_dout : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal instance_in_data_str_empty_n : STD_LOGIC;
@@ -11379,7 +10683,6 @@ architecture STRUCTURE of bd_0_hls_inst_0_filtr_Gauss is
   signal rozmycie_U0_n_4 : STD_LOGIC;
   signal rozmycie_U0_n_5 : STD_LOGIC;
   signal rozmycie_U0_n_7 : STD_LOGIC;
-  signal \^s_axi_bun_1_rdata\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal shiftReg_ce : STD_LOGIC;
   signal start_for_Mat2AXIvideo_U0_full_n : STD_LOGIC;
   signal start_for_rozmycie_U0_U_n_4 : STD_LOGIC;
@@ -11388,54 +10691,21 @@ architecture STRUCTURE of bd_0_hls_inst_0_filtr_Gauss is
   signal start_once_reg : STD_LOGIC;
   signal tmp_12_reg_779 : STD_LOGIC_VECTOR ( 7 downto 0 );
 begin
+  ap_done <= \^ap_done\;
   out_r_TDEST(0) <= \<const0>\;
   out_r_TID(0) <= \<const0>\;
   out_r_TKEEP(0) <= \<const1>\;
   out_r_TSTRB(0) <= \<const0>\;
-  s_axi_bun_1_BRESP(1) <= \<const0>\;
-  s_axi_bun_1_BRESP(0) <= \<const0>\;
-  s_axi_bun_1_RDATA(31) <= \<const0>\;
-  s_axi_bun_1_RDATA(30) <= \<const0>\;
-  s_axi_bun_1_RDATA(29) <= \<const0>\;
-  s_axi_bun_1_RDATA(28) <= \<const0>\;
-  s_axi_bun_1_RDATA(27) <= \<const0>\;
-  s_axi_bun_1_RDATA(26) <= \<const0>\;
-  s_axi_bun_1_RDATA(25) <= \<const0>\;
-  s_axi_bun_1_RDATA(24) <= \<const0>\;
-  s_axi_bun_1_RDATA(23) <= \<const0>\;
-  s_axi_bun_1_RDATA(22) <= \<const0>\;
-  s_axi_bun_1_RDATA(21) <= \<const0>\;
-  s_axi_bun_1_RDATA(20) <= \<const0>\;
-  s_axi_bun_1_RDATA(19) <= \<const0>\;
-  s_axi_bun_1_RDATA(18) <= \<const0>\;
-  s_axi_bun_1_RDATA(17) <= \<const0>\;
-  s_axi_bun_1_RDATA(16) <= \<const0>\;
-  s_axi_bun_1_RDATA(15) <= \<const0>\;
-  s_axi_bun_1_RDATA(14) <= \<const0>\;
-  s_axi_bun_1_RDATA(13) <= \<const0>\;
-  s_axi_bun_1_RDATA(12) <= \<const0>\;
-  s_axi_bun_1_RDATA(11) <= \<const0>\;
-  s_axi_bun_1_RDATA(10) <= \<const0>\;
-  s_axi_bun_1_RDATA(9) <= \<const0>\;
-  s_axi_bun_1_RDATA(8) <= \<const0>\;
-  s_axi_bun_1_RDATA(7) <= \^s_axi_bun_1_rdata\(7);
-  s_axi_bun_1_RDATA(6) <= \<const0>\;
-  s_axi_bun_1_RDATA(5) <= \<const0>\;
-  s_axi_bun_1_RDATA(4) <= \<const0>\;
-  s_axi_bun_1_RDATA(3 downto 0) <= \^s_axi_bun_1_rdata\(3 downto 0);
-  s_axi_bun_1_RRESP(1) <= \<const0>\;
-  s_axi_bun_1_RRESP(0) <= \<const0>\;
 AXIvideo2Mat_U0: entity work.bd_0_hls_inst_0_AXIvideo2Mat
      port map (
-      AXIvideo2Mat_U0_ap_ready => AXIvideo2Mat_U0_ap_ready,
-      AXIvideo2Mat_U0_ap_start => AXIvideo2Mat_U0_ap_start,
       AXIvideo2Mat_U0_img_data_stream_V_write => AXIvideo2Mat_U0_img_data_stream_V_write,
       Q(0) => AXIvideo2Mat_U0_n_6,
-      \ap_CS_fsm_reg[3]_0\ => AXIvideo2Mat_U0_n_7,
       ap_clk => ap_clk,
+      ap_ready => ap_ready,
       ap_rst_n => ap_rst_n,
       ap_rst_n_inv => ap_rst_n_inv,
-      \exitcond_reg_335_reg[0]_0\ => AXIvideo2Mat_U0_n_9,
+      ap_start => ap_start,
+      \exitcond_reg_335_reg[0]_0\ => AXIvideo2Mat_U0_n_8,
       in_r_TDATA(7 downto 0) => in_r_TDATA(7 downto 0),
       in_r_TLAST(0) => in_r_TLAST(0),
       in_r_TREADY => in_r_TREADY,
@@ -11460,7 +10730,6 @@ Mat2AXIvideo_U0: entity work.bd_0_hls_inst_0_Mat2AXIvideo
       D(2) => instance_out_data_st_U_n_9,
       D(1) => instance_out_data_st_U_n_10,
       D(0) => instance_out_data_st_U_n_11,
-      Mat2AXIvideo_U0_ap_ready => Mat2AXIvideo_U0_ap_ready,
       Mat2AXIvideo_U0_ap_start => Mat2AXIvideo_U0_ap_start,
       Mat2AXIvideo_U0_img_data_stream_V_read => Mat2AXIvideo_U0_img_data_stream_V_read,
       Q(0) => Mat2AXIvideo_U0_n_3,
@@ -11473,39 +10742,12 @@ Mat2AXIvideo_U0: entity work.bd_0_hls_inst_0_Mat2AXIvideo
       out_r_TLAST(0) => out_r_TLAST(0),
       out_r_TREADY => out_r_TREADY,
       out_r_TUSER(0) => out_r_TUSER(0),
-      out_r_TVALID => out_r_TVALID
+      out_r_TVALID => out_r_TVALID,
+      \t_V_reg_124_reg[2]_0\ => \^ap_done\
     );
 VCC: unisim.vcomponents.VCC
      port map (
       P => \<const1>\
-    );
-filtr_Gauss_bun_1_s_axi_U: entity work.bd_0_hls_inst_0_filtr_Gauss_bun_1_s_axi
-     port map (
-      AXIvideo2Mat_U0_ap_ready => AXIvideo2Mat_U0_ap_ready,
-      AXIvideo2Mat_U0_ap_start => AXIvideo2Mat_U0_ap_start,
-      \FSM_onehot_rstate_reg[1]_0\ => s_axi_bun_1_ARREADY,
-      \FSM_onehot_wstate_reg[1]_0\ => s_axi_bun_1_AWREADY,
-      \FSM_onehot_wstate_reg[2]_0\ => s_axi_bun_1_WREADY,
-      Mat2AXIvideo_U0_ap_ready => Mat2AXIvideo_U0_ap_ready,
-      ap_clk => ap_clk,
-      ap_idle => ap_idle,
-      ap_rst_n_inv => ap_rst_n_inv,
-      int_ap_start_reg_0 => AXIvideo2Mat_U0_n_7,
-      interrupt => interrupt,
-      s_axi_bun_1_ARADDR(3 downto 0) => s_axi_bun_1_ARADDR(3 downto 0),
-      s_axi_bun_1_ARVALID => s_axi_bun_1_ARVALID,
-      s_axi_bun_1_AWADDR(3 downto 0) => s_axi_bun_1_AWADDR(3 downto 0),
-      s_axi_bun_1_AWVALID => s_axi_bun_1_AWVALID,
-      s_axi_bun_1_BREADY => s_axi_bun_1_BREADY,
-      s_axi_bun_1_BVALID => s_axi_bun_1_BVALID,
-      s_axi_bun_1_RDATA(4) => \^s_axi_bun_1_rdata\(7),
-      s_axi_bun_1_RDATA(3 downto 0) => \^s_axi_bun_1_rdata\(3 downto 0),
-      s_axi_bun_1_RREADY => s_axi_bun_1_RREADY,
-      s_axi_bun_1_RVALID => s_axi_bun_1_RVALID,
-      s_axi_bun_1_WDATA(2) => s_axi_bun_1_WDATA(7),
-      s_axi_bun_1_WDATA(1 downto 0) => s_axi_bun_1_WDATA(1 downto 0),
-      s_axi_bun_1_WSTRB(0) => s_axi_bun_1_WSTRB(0),
-      s_axi_bun_1_WVALID => s_axi_bun_1_WVALID
     );
 instance_in_data_str_U: entity work.bd_0_hls_inst_0_fifo_w8_d2_A
      port map (
@@ -11517,7 +10759,7 @@ instance_in_data_str_U: entity work.bd_0_hls_inst_0_fifo_w8_d2_A
       ap_rst_n_inv => ap_rst_n_inv,
       instance_in_data_str_empty_n => instance_in_data_str_empty_n,
       instance_in_data_str_full_n => instance_in_data_str_full_n,
-      internal_empty_n_reg_0 => AXIvideo2Mat_U0_n_9,
+      internal_empty_n_reg_0 => AXIvideo2Mat_U0_n_8,
       internal_full_n_reg_0 => rozmycie_U0_n_7,
       rozmycie_U0_img_in_data_stream_V_read => rozmycie_U0_img_in_data_stream_V_read
     );
@@ -11561,27 +10803,27 @@ rozmycie_U0: entity work.bd_0_hls_inst_0_rozmycie
     );
 start_for_Mat2AXIvideo_U0_U: entity work.bd_0_hls_inst_0_start_for_Mat2AXIvideo_U0
      port map (
-      Mat2AXIvideo_U0_ap_ready => Mat2AXIvideo_U0_ap_ready,
       Mat2AXIvideo_U0_ap_start => Mat2AXIvideo_U0_ap_start,
       Q(0) => Mat2AXIvideo_U0_n_3,
       ap_clk => ap_clk,
       ap_idle => ap_idle,
+      ap_idle_0 => start_for_rozmycie_U0_U_n_4,
+      ap_idle_1(0) => AXIvideo2Mat_U0_n_6,
+      ap_idle_2(0) => rozmycie_U0_n_4,
       ap_rst_n => ap_rst_n,
       ap_rst_n_inv => ap_rst_n_inv,
-      int_ap_idle_reg => start_for_rozmycie_U0_U_n_4,
-      int_ap_idle_reg_0(0) => AXIvideo2Mat_U0_n_6,
-      int_ap_idle_reg_1(0) => rozmycie_U0_n_4,
       \mOutPtr_reg[0]_0\ => rozmycie_U0_n_3,
       \mOutPtr_reg[1]_0\ => start_for_rozmycie_U0_U_n_5,
+      \mOutPtr_reg[1]_1\ => \^ap_done\,
       rozmycie_U0_ap_start => rozmycie_U0_ap_start,
       start_for_Mat2AXIvideo_U0_full_n => start_for_Mat2AXIvideo_U0_full_n
     );
 start_for_rozmycie_U0_U: entity work.bd_0_hls_inst_0_start_for_rozmycie_U0
      port map (
-      AXIvideo2Mat_U0_ap_start => AXIvideo2Mat_U0_ap_start,
       ap_clk => ap_clk,
       ap_rst_n => ap_rst_n,
       ap_rst_n_inv => ap_rst_n_inv,
+      ap_start => ap_start,
       internal_empty_n_reg_0 => start_for_rozmycie_U0_U_n_5,
       internal_full_n_reg_0 => start_for_rozmycie_U0_U_n_4,
       \mOutPtr_reg[0]_0\ => rozmycie_U0_n_5,
@@ -11598,26 +10840,6 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity bd_0_hls_inst_0 is
   port (
-    s_axi_bun_1_AWADDR : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s_axi_bun_1_AWVALID : in STD_LOGIC;
-    s_axi_bun_1_AWREADY : out STD_LOGIC;
-    s_axi_bun_1_WDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    s_axi_bun_1_WSTRB : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s_axi_bun_1_WVALID : in STD_LOGIC;
-    s_axi_bun_1_WREADY : out STD_LOGIC;
-    s_axi_bun_1_BRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s_axi_bun_1_BVALID : out STD_LOGIC;
-    s_axi_bun_1_BREADY : in STD_LOGIC;
-    s_axi_bun_1_ARADDR : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s_axi_bun_1_ARVALID : in STD_LOGIC;
-    s_axi_bun_1_ARREADY : out STD_LOGIC;
-    s_axi_bun_1_RDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    s_axi_bun_1_RRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s_axi_bun_1_RVALID : out STD_LOGIC;
-    s_axi_bun_1_RREADY : in STD_LOGIC;
-    ap_clk : in STD_LOGIC;
-    ap_rst_n : in STD_LOGIC;
-    interrupt : out STD_LOGIC;
     in_r_TVALID : in STD_LOGIC;
     in_r_TREADY : out STD_LOGIC;
     in_r_TDATA : in STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -11635,7 +10857,13 @@ entity bd_0_hls_inst_0 is
     out_r_TUSER : out STD_LOGIC_VECTOR ( 0 to 0 );
     out_r_TLAST : out STD_LOGIC_VECTOR ( 0 to 0 );
     out_r_TID : out STD_LOGIC_VECTOR ( 0 to 0 );
-    out_r_TDEST : out STD_LOGIC_VECTOR ( 0 to 0 )
+    out_r_TDEST : out STD_LOGIC_VECTOR ( 0 to 0 );
+    ap_clk : in STD_LOGIC;
+    ap_rst_n : in STD_LOGIC;
+    ap_start : in STD_LOGIC;
+    ap_done : out STD_LOGIC;
+    ap_ready : out STD_LOGIC;
+    ap_idle : out STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of bd_0_hls_inst_0 : entity is true;
@@ -11652,41 +10880,21 @@ entity bd_0_hls_inst_0 is
 end bd_0_hls_inst_0;
 
 architecture STRUCTURE of bd_0_hls_inst_0 is
-  attribute C_S_AXI_ADDR_WIDTH : integer;
-  attribute C_S_AXI_ADDR_WIDTH of inst : label is 32;
-  attribute C_S_AXI_BUN_1_ADDR_WIDTH : integer;
-  attribute C_S_AXI_BUN_1_ADDR_WIDTH of inst : label is 4;
-  attribute C_S_AXI_BUN_1_DATA_WIDTH : integer;
-  attribute C_S_AXI_BUN_1_DATA_WIDTH of inst : label is 32;
-  attribute C_S_AXI_BUN_1_WSTRB_WIDTH : integer;
-  attribute C_S_AXI_BUN_1_WSTRB_WIDTH of inst : label is 4;
-  attribute C_S_AXI_DATA_WIDTH : integer;
-  attribute C_S_AXI_DATA_WIDTH of inst : label is 32;
-  attribute C_S_AXI_WSTRB_WIDTH : integer;
-  attribute C_S_AXI_WSTRB_WIDTH of inst : label is 4;
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of ap_clk : signal is "xilinx.com:signal:clock:1.0 ap_clk CLK";
   attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of ap_clk : signal is "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF s_axi_bun_1:in_r:out_r, ASSOCIATED_RESET ap_rst_n, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}, FREQ_HZ 100000000.0, PHASE 0.000, CLK_DOMAIN bd_0_ap_clk_0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of ap_clk : signal is "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF in_r:out_r, ASSOCIATED_RESET ap_rst_n, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}, FREQ_HZ 100000000.0, PHASE 0.000, CLK_DOMAIN bd_0_ap_clk_0, INSERT_VIP 0";
+  attribute X_INTERFACE_INFO of ap_done : signal is "xilinx.com:interface:acc_handshake:1.0 ap_ctrl done";
+  attribute X_INTERFACE_INFO of ap_idle : signal is "xilinx.com:interface:acc_handshake:1.0 ap_ctrl idle";
+  attribute X_INTERFACE_PARAMETER of ap_idle : signal is "XIL_INTERFACENAME ap_ctrl, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {start {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} done {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} ready {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} idle {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}";
+  attribute X_INTERFACE_INFO of ap_ready : signal is "xilinx.com:interface:acc_handshake:1.0 ap_ctrl ready";
   attribute X_INTERFACE_INFO of ap_rst_n : signal is "xilinx.com:signal:reset:1.0 ap_rst_n RST";
   attribute X_INTERFACE_PARAMETER of ap_rst_n : signal is "XIL_INTERFACENAME ap_rst_n, POLARITY ACTIVE_LOW, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {RST {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}, INSERT_VIP 0";
+  attribute X_INTERFACE_INFO of ap_start : signal is "xilinx.com:interface:acc_handshake:1.0 ap_ctrl start";
   attribute X_INTERFACE_INFO of in_r_TREADY : signal is "xilinx.com:interface:axis:1.0 in_r TREADY";
   attribute X_INTERFACE_INFO of in_r_TVALID : signal is "xilinx.com:interface:axis:1.0 in_r TVALID";
-  attribute X_INTERFACE_INFO of interrupt : signal is "xilinx.com:signal:interrupt:1.0 interrupt INTERRUPT";
-  attribute X_INTERFACE_PARAMETER of interrupt : signal is "XIL_INTERFACENAME interrupt, SENSITIVITY LEVEL_HIGH, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {INTERRUPT {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}, PortWidth 1";
   attribute X_INTERFACE_INFO of out_r_TREADY : signal is "xilinx.com:interface:axis:1.0 out_r TREADY";
   attribute X_INTERFACE_INFO of out_r_TVALID : signal is "xilinx.com:interface:axis:1.0 out_r TVALID";
-  attribute X_INTERFACE_INFO of s_axi_bun_1_ARREADY : signal is "xilinx.com:interface:aximm:1.0 s_axi_bun_1 ARREADY";
-  attribute X_INTERFACE_INFO of s_axi_bun_1_ARVALID : signal is "xilinx.com:interface:aximm:1.0 s_axi_bun_1 ARVALID";
-  attribute X_INTERFACE_INFO of s_axi_bun_1_AWREADY : signal is "xilinx.com:interface:aximm:1.0 s_axi_bun_1 AWREADY";
-  attribute X_INTERFACE_INFO of s_axi_bun_1_AWVALID : signal is "xilinx.com:interface:aximm:1.0 s_axi_bun_1 AWVALID";
-  attribute X_INTERFACE_INFO of s_axi_bun_1_BREADY : signal is "xilinx.com:interface:aximm:1.0 s_axi_bun_1 BREADY";
-  attribute X_INTERFACE_INFO of s_axi_bun_1_BVALID : signal is "xilinx.com:interface:aximm:1.0 s_axi_bun_1 BVALID";
-  attribute X_INTERFACE_INFO of s_axi_bun_1_RREADY : signal is "xilinx.com:interface:aximm:1.0 s_axi_bun_1 RREADY";
-  attribute X_INTERFACE_PARAMETER of s_axi_bun_1_RREADY : signal is "XIL_INTERFACENAME s_axi_bun_1, ADDR_WIDTH 4, DATA_WIDTH 32, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}, FREQ_HZ 100000000.0, ID_WIDTH 0, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN bd_0_ap_clk_0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
-  attribute X_INTERFACE_INFO of s_axi_bun_1_RVALID : signal is "xilinx.com:interface:aximm:1.0 s_axi_bun_1 RVALID";
-  attribute X_INTERFACE_INFO of s_axi_bun_1_WREADY : signal is "xilinx.com:interface:aximm:1.0 s_axi_bun_1 WREADY";
-  attribute X_INTERFACE_INFO of s_axi_bun_1_WVALID : signal is "xilinx.com:interface:aximm:1.0 s_axi_bun_1 WVALID";
   attribute X_INTERFACE_INFO of in_r_TDATA : signal is "xilinx.com:interface:axis:1.0 in_r TDATA";
   attribute X_INTERFACE_INFO of in_r_TDEST : signal is "xilinx.com:interface:axis:1.0 in_r TDEST";
   attribute X_INTERFACE_PARAMETER of in_r_TDEST : signal is "XIL_INTERFACENAME in_r, TDATA_NUM_BYTES 1, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} TUSER {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000.0, PHASE 0.000, CLK_DOMAIN bd_0_ap_clk_0, INSERT_VIP 0";
@@ -11703,18 +10911,15 @@ architecture STRUCTURE of bd_0_hls_inst_0 is
   attribute X_INTERFACE_INFO of out_r_TLAST : signal is "xilinx.com:interface:axis:1.0 out_r TLAST";
   attribute X_INTERFACE_INFO of out_r_TSTRB : signal is "xilinx.com:interface:axis:1.0 out_r TSTRB";
   attribute X_INTERFACE_INFO of out_r_TUSER : signal is "xilinx.com:interface:axis:1.0 out_r TUSER";
-  attribute X_INTERFACE_INFO of s_axi_bun_1_ARADDR : signal is "xilinx.com:interface:aximm:1.0 s_axi_bun_1 ARADDR";
-  attribute X_INTERFACE_INFO of s_axi_bun_1_AWADDR : signal is "xilinx.com:interface:aximm:1.0 s_axi_bun_1 AWADDR";
-  attribute X_INTERFACE_INFO of s_axi_bun_1_BRESP : signal is "xilinx.com:interface:aximm:1.0 s_axi_bun_1 BRESP";
-  attribute X_INTERFACE_INFO of s_axi_bun_1_RDATA : signal is "xilinx.com:interface:aximm:1.0 s_axi_bun_1 RDATA";
-  attribute X_INTERFACE_INFO of s_axi_bun_1_RRESP : signal is "xilinx.com:interface:aximm:1.0 s_axi_bun_1 RRESP";
-  attribute X_INTERFACE_INFO of s_axi_bun_1_WDATA : signal is "xilinx.com:interface:aximm:1.0 s_axi_bun_1 WDATA";
-  attribute X_INTERFACE_INFO of s_axi_bun_1_WSTRB : signal is "xilinx.com:interface:aximm:1.0 s_axi_bun_1 WSTRB";
 begin
 inst: entity work.bd_0_hls_inst_0_filtr_Gauss
      port map (
       ap_clk => ap_clk,
+      ap_done => ap_done,
+      ap_idle => ap_idle,
+      ap_ready => ap_ready,
       ap_rst_n => ap_rst_n,
+      ap_start => ap_start,
       in_r_TDATA(7 downto 0) => in_r_TDATA(7 downto 0),
       in_r_TDEST(0) => in_r_TDEST(0),
       in_r_TID(0) => in_r_TID(0),
@@ -11724,7 +10929,6 @@ inst: entity work.bd_0_hls_inst_0_filtr_Gauss
       in_r_TSTRB(0) => in_r_TSTRB(0),
       in_r_TUSER(0) => in_r_TUSER(0),
       in_r_TVALID => in_r_TVALID,
-      interrupt => interrupt,
       out_r_TDATA(7 downto 0) => out_r_TDATA(7 downto 0),
       out_r_TDEST(0) => out_r_TDEST(0),
       out_r_TID(0) => out_r_TID(0),
@@ -11733,23 +10937,6 @@ inst: entity work.bd_0_hls_inst_0_filtr_Gauss
       out_r_TREADY => out_r_TREADY,
       out_r_TSTRB(0) => out_r_TSTRB(0),
       out_r_TUSER(0) => out_r_TUSER(0),
-      out_r_TVALID => out_r_TVALID,
-      s_axi_bun_1_ARADDR(3 downto 0) => s_axi_bun_1_ARADDR(3 downto 0),
-      s_axi_bun_1_ARREADY => s_axi_bun_1_ARREADY,
-      s_axi_bun_1_ARVALID => s_axi_bun_1_ARVALID,
-      s_axi_bun_1_AWADDR(3 downto 0) => s_axi_bun_1_AWADDR(3 downto 0),
-      s_axi_bun_1_AWREADY => s_axi_bun_1_AWREADY,
-      s_axi_bun_1_AWVALID => s_axi_bun_1_AWVALID,
-      s_axi_bun_1_BREADY => s_axi_bun_1_BREADY,
-      s_axi_bun_1_BRESP(1 downto 0) => s_axi_bun_1_BRESP(1 downto 0),
-      s_axi_bun_1_BVALID => s_axi_bun_1_BVALID,
-      s_axi_bun_1_RDATA(31 downto 0) => s_axi_bun_1_RDATA(31 downto 0),
-      s_axi_bun_1_RREADY => s_axi_bun_1_RREADY,
-      s_axi_bun_1_RRESP(1 downto 0) => s_axi_bun_1_RRESP(1 downto 0),
-      s_axi_bun_1_RVALID => s_axi_bun_1_RVALID,
-      s_axi_bun_1_WDATA(31 downto 0) => s_axi_bun_1_WDATA(31 downto 0),
-      s_axi_bun_1_WREADY => s_axi_bun_1_WREADY,
-      s_axi_bun_1_WSTRB(3 downto 0) => s_axi_bun_1_WSTRB(3 downto 0),
-      s_axi_bun_1_WVALID => s_axi_bun_1_WVALID
+      out_r_TVALID => out_r_TVALID
     );
 end STRUCTURE;

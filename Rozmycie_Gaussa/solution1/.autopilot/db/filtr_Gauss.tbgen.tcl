@@ -43,28 +43,8 @@ set C_modelArgMapList {[
  	{ "Name" : "out_V_id_V", "interface" : "axis", "bitwidth" : 1, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "out.V.id.V","cData": "uint1","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
  	{ "Name" : "out_V_dest_V", "interface" : "axis", "bitwidth" : 1, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "out.V.dest.V","cData": "uint1","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} ]}
 # RTL Port declarations: 
-set portNum 38
+set portNum 24
 set portList { 
-	{ s_axi_bun_1_AWVALID sc_in sc_logic 1 signal -1 } 
-	{ s_axi_bun_1_AWREADY sc_out sc_logic 1 signal -1 } 
-	{ s_axi_bun_1_AWADDR sc_in sc_lv 4 signal -1 } 
-	{ s_axi_bun_1_WVALID sc_in sc_logic 1 signal -1 } 
-	{ s_axi_bun_1_WREADY sc_out sc_logic 1 signal -1 } 
-	{ s_axi_bun_1_WDATA sc_in sc_lv 32 signal -1 } 
-	{ s_axi_bun_1_WSTRB sc_in sc_lv 4 signal -1 } 
-	{ s_axi_bun_1_ARVALID sc_in sc_logic 1 signal -1 } 
-	{ s_axi_bun_1_ARREADY sc_out sc_logic 1 signal -1 } 
-	{ s_axi_bun_1_ARADDR sc_in sc_lv 4 signal -1 } 
-	{ s_axi_bun_1_RVALID sc_out sc_logic 1 signal -1 } 
-	{ s_axi_bun_1_RREADY sc_in sc_logic 1 signal -1 } 
-	{ s_axi_bun_1_RDATA sc_out sc_lv 32 signal -1 } 
-	{ s_axi_bun_1_RRESP sc_out sc_lv 2 signal -1 } 
-	{ s_axi_bun_1_BVALID sc_out sc_logic 1 signal -1 } 
-	{ s_axi_bun_1_BREADY sc_in sc_logic 1 signal -1 } 
-	{ s_axi_bun_1_BRESP sc_out sc_lv 2 signal -1 } 
-	{ ap_clk sc_in sc_logic 1 clock -1 } 
-	{ ap_rst_n sc_in sc_logic 1 reset -1 active_low_sync } 
-	{ interrupt sc_out sc_logic 1 signal -1 } 
 	{ in_r_TDATA sc_in sc_lv 8 signal 0 } 
 	{ in_r_TKEEP sc_in sc_lv 1 signal 1 } 
 	{ in_r_TSTRB sc_in sc_lv 1 signal 2 } 
@@ -79,33 +59,19 @@ set portList {
 	{ out_r_TLAST sc_out sc_lv 1 signal 11 } 
 	{ out_r_TID sc_out sc_lv 1 signal 12 } 
 	{ out_r_TDEST sc_out sc_lv 1 signal 13 } 
+	{ ap_clk sc_in sc_logic 1 clock -1 } 
+	{ ap_rst_n sc_in sc_logic 1 reset -1 active_low_sync } 
 	{ in_r_TVALID sc_in sc_logic 1 invld 6 } 
 	{ in_r_TREADY sc_out sc_logic 1 inacc 6 } 
+	{ ap_start sc_in sc_logic 1 start -1 } 
 	{ out_r_TVALID sc_out sc_logic 1 outvld 13 } 
 	{ out_r_TREADY sc_in sc_logic 1 outacc 13 } 
+	{ ap_done sc_out sc_logic 1 predone -1 } 
+	{ ap_ready sc_out sc_logic 1 ready -1 } 
+	{ ap_idle sc_out sc_logic 1 done -1 } 
 }
 set NewPortList {[ 
-	{ "name": "s_axi_bun_1_AWADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "bun_1", "role": "AWADDR" },"address":[{"name":"filtr_Gauss","role":"start","value":"0","valid_bit":"0"},{"name":"filtr_Gauss","role":"continue","value":"0","valid_bit":"4"},{"name":"filtr_Gauss","role":"auto_start","value":"0","valid_bit":"7"}] },
-	{ "name": "s_axi_bun_1_AWVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bun_1", "role": "AWVALID" } },
-	{ "name": "s_axi_bun_1_AWREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bun_1", "role": "AWREADY" } },
-	{ "name": "s_axi_bun_1_WVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bun_1", "role": "WVALID" } },
-	{ "name": "s_axi_bun_1_WREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bun_1", "role": "WREADY" } },
-	{ "name": "s_axi_bun_1_WDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "bun_1", "role": "WDATA" } },
-	{ "name": "s_axi_bun_1_WSTRB", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "bun_1", "role": "WSTRB" } },
-	{ "name": "s_axi_bun_1_ARADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "bun_1", "role": "ARADDR" },"address":[{"name":"filtr_Gauss","role":"start","value":"0","valid_bit":"0"},{"name":"filtr_Gauss","role":"done","value":"0","valid_bit":"1"},{"name":"filtr_Gauss","role":"idle","value":"0","valid_bit":"2"},{"name":"filtr_Gauss","role":"ready","value":"0","valid_bit":"3"},{"name":"filtr_Gauss","role":"auto_start","value":"0","valid_bit":"7"}] },
-	{ "name": "s_axi_bun_1_ARVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bun_1", "role": "ARVALID" } },
-	{ "name": "s_axi_bun_1_ARREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bun_1", "role": "ARREADY" } },
-	{ "name": "s_axi_bun_1_RVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bun_1", "role": "RVALID" } },
-	{ "name": "s_axi_bun_1_RREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bun_1", "role": "RREADY" } },
-	{ "name": "s_axi_bun_1_RDATA", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "bun_1", "role": "RDATA" } },
-	{ "name": "s_axi_bun_1_RRESP", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "bun_1", "role": "RRESP" } },
-	{ "name": "s_axi_bun_1_BVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bun_1", "role": "BVALID" } },
-	{ "name": "s_axi_bun_1_BREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bun_1", "role": "BREADY" } },
-	{ "name": "s_axi_bun_1_BRESP", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "bun_1", "role": "BRESP" } },
-	{ "name": "interrupt", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bun_1", "role": "interrupt" } }, 
- 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
- 	{ "name": "ap_rst_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "reset", "bundle":{"name": "ap_rst_n", "role": "default" }} , 
- 	{ "name": "in_r_TDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "in_V_data_V", "role": "default" }} , 
+	{ "name": "in_r_TDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "in_V_data_V", "role": "default" }} , 
  	{ "name": "in_r_TKEEP", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "in_V_keep_V", "role": "default" }} , 
  	{ "name": "in_r_TSTRB", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "in_V_strb_V", "role": "default" }} , 
  	{ "name": "in_r_TUSER", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "in_V_user_V", "role": "default" }} , 
@@ -119,13 +85,19 @@ set NewPortList {[
  	{ "name": "out_r_TLAST", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "out_V_last_V", "role": "default" }} , 
  	{ "name": "out_r_TID", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "out_V_id_V", "role": "default" }} , 
  	{ "name": "out_r_TDEST", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "out_V_dest_V", "role": "default" }} , 
+ 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
+ 	{ "name": "ap_rst_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "reset", "bundle":{"name": "ap_rst_n", "role": "default" }} , 
  	{ "name": "in_r_TVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "in_V_dest_V", "role": "default" }} , 
  	{ "name": "in_r_TREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "inacc", "bundle":{"name": "in_V_dest_V", "role": "default" }} , 
+ 	{ "name": "ap_start", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "start", "bundle":{"name": "ap_start", "role": "default" }} , 
  	{ "name": "out_r_TVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "out_V_dest_V", "role": "default" }} , 
- 	{ "name": "out_r_TREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "outacc", "bundle":{"name": "out_V_dest_V", "role": "default" }}  ]}
+ 	{ "name": "out_r_TREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "outacc", "bundle":{"name": "out_V_dest_V", "role": "default" }} , 
+ 	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
+ 	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
+ 	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "11", "12", "13", "14", "15"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "10", "11", "12", "13", "14"],
 		"CDFG" : "filtr_Gauss",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -139,54 +111,53 @@ set RtlHierarchyInfo {[
 		"InDataflowNetwork" : "0",
 		"HasNonBlockingOperation" : "0",
 		"InputProcess" : [
-			{"ID" : "2", "Name" : "AXIvideo2Mat_U0"}],
+			{"ID" : "1", "Name" : "AXIvideo2Mat_U0"}],
 		"OutputProcess" : [
-			{"ID" : "11", "Name" : "Mat2AXIvideo_U0"}],
+			{"ID" : "10", "Name" : "Mat2AXIvideo_U0"}],
 		"Port" : [
 			{"Name" : "in_V_data_V", "Type" : "Axis", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "AXIvideo2Mat_U0", "Port" : "AXI_video_strm_V_data_V"}]},
+					{"ID" : "1", "SubInstance" : "AXIvideo2Mat_U0", "Port" : "AXI_video_strm_V_data_V"}]},
 			{"Name" : "in_V_keep_V", "Type" : "Axis", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "AXIvideo2Mat_U0", "Port" : "AXI_video_strm_V_keep_V"}]},
+					{"ID" : "1", "SubInstance" : "AXIvideo2Mat_U0", "Port" : "AXI_video_strm_V_keep_V"}]},
 			{"Name" : "in_V_strb_V", "Type" : "Axis", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "AXIvideo2Mat_U0", "Port" : "AXI_video_strm_V_strb_V"}]},
+					{"ID" : "1", "SubInstance" : "AXIvideo2Mat_U0", "Port" : "AXI_video_strm_V_strb_V"}]},
 			{"Name" : "in_V_user_V", "Type" : "Axis", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "AXIvideo2Mat_U0", "Port" : "AXI_video_strm_V_user_V"}]},
+					{"ID" : "1", "SubInstance" : "AXIvideo2Mat_U0", "Port" : "AXI_video_strm_V_user_V"}]},
 			{"Name" : "in_V_last_V", "Type" : "Axis", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "AXIvideo2Mat_U0", "Port" : "AXI_video_strm_V_last_V"}]},
+					{"ID" : "1", "SubInstance" : "AXIvideo2Mat_U0", "Port" : "AXI_video_strm_V_last_V"}]},
 			{"Name" : "in_V_id_V", "Type" : "Axis", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "AXIvideo2Mat_U0", "Port" : "AXI_video_strm_V_id_V"}]},
+					{"ID" : "1", "SubInstance" : "AXIvideo2Mat_U0", "Port" : "AXI_video_strm_V_id_V"}]},
 			{"Name" : "in_V_dest_V", "Type" : "Axis", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "AXIvideo2Mat_U0", "Port" : "AXI_video_strm_V_dest_V"}]},
+					{"ID" : "1", "SubInstance" : "AXIvideo2Mat_U0", "Port" : "AXI_video_strm_V_dest_V"}]},
 			{"Name" : "out_V_data_V", "Type" : "Axis", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "11", "SubInstance" : "Mat2AXIvideo_U0", "Port" : "AXI_video_strm_V_data_V"}]},
+					{"ID" : "10", "SubInstance" : "Mat2AXIvideo_U0", "Port" : "AXI_video_strm_V_data_V"}]},
 			{"Name" : "out_V_keep_V", "Type" : "Axis", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "11", "SubInstance" : "Mat2AXIvideo_U0", "Port" : "AXI_video_strm_V_keep_V"}]},
+					{"ID" : "10", "SubInstance" : "Mat2AXIvideo_U0", "Port" : "AXI_video_strm_V_keep_V"}]},
 			{"Name" : "out_V_strb_V", "Type" : "Axis", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "11", "SubInstance" : "Mat2AXIvideo_U0", "Port" : "AXI_video_strm_V_strb_V"}]},
+					{"ID" : "10", "SubInstance" : "Mat2AXIvideo_U0", "Port" : "AXI_video_strm_V_strb_V"}]},
 			{"Name" : "out_V_user_V", "Type" : "Axis", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "11", "SubInstance" : "Mat2AXIvideo_U0", "Port" : "AXI_video_strm_V_user_V"}]},
+					{"ID" : "10", "SubInstance" : "Mat2AXIvideo_U0", "Port" : "AXI_video_strm_V_user_V"}]},
 			{"Name" : "out_V_last_V", "Type" : "Axis", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "11", "SubInstance" : "Mat2AXIvideo_U0", "Port" : "AXI_video_strm_V_last_V"}]},
+					{"ID" : "10", "SubInstance" : "Mat2AXIvideo_U0", "Port" : "AXI_video_strm_V_last_V"}]},
 			{"Name" : "out_V_id_V", "Type" : "Axis", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "11", "SubInstance" : "Mat2AXIvideo_U0", "Port" : "AXI_video_strm_V_id_V"}]},
+					{"ID" : "10", "SubInstance" : "Mat2AXIvideo_U0", "Port" : "AXI_video_strm_V_id_V"}]},
 			{"Name" : "out_V_dest_V", "Type" : "Axis", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "11", "SubInstance" : "Mat2AXIvideo_U0", "Port" : "AXI_video_strm_V_dest_V"}]}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.filtr_Gauss_bun_1_s_axi_U", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.AXIvideo2Mat_U0", "Parent" : "0",
+					{"ID" : "10", "SubInstance" : "Mat2AXIvideo_U0", "Port" : "AXI_video_strm_V_dest_V"}]}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.AXIvideo2Mat_U0", "Parent" : "0",
 		"CDFG" : "AXIvideo2Mat",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1",
@@ -209,10 +180,10 @@ set RtlHierarchyInfo {[
 			{"Name" : "AXI_video_strm_V_last_V", "Type" : "Axis", "Direction" : "I"},
 			{"Name" : "AXI_video_strm_V_id_V", "Type" : "Axis", "Direction" : "I"},
 			{"Name" : "AXI_video_strm_V_dest_V", "Type" : "Axis", "Direction" : "I"},
-			{"Name" : "img_data_stream_V", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "3", "DependentChan" : "12",
+			{"Name" : "img_data_stream_V", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "2", "DependentChan" : "11",
 				"BlockSignal" : [
 					{"Name" : "img_data_stream_V_blk_n", "Type" : "RtlSignal"}]}]},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.rozmycie_U0", "Parent" : "0", "Child" : ["4", "5", "6", "7", "8", "9", "10"],
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.rozmycie_U0", "Parent" : "0", "Child" : ["3", "4", "5", "6", "7", "8", "9"],
 		"CDFG" : "rozmycie",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1",
@@ -225,23 +196,23 @@ set RtlHierarchyInfo {[
 		"HasSubDataflow" : "0",
 		"InDataflowNetwork" : "1",
 		"HasNonBlockingOperation" : "0",
-		"StartSource" : "2",
+		"StartSource" : "1",
 		"StartFifo" : "start_for_rozmycie_U0_U",
 		"Port" : [
-			{"Name" : "img_in_data_stream_V", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "2", "DependentChan" : "12",
+			{"Name" : "img_in_data_stream_V", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "1", "DependentChan" : "11",
 				"BlockSignal" : [
 					{"Name" : "img_in_data_stream_V_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "img_out_data_stream_V", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "11", "DependentChan" : "13",
+			{"Name" : "img_out_data_stream_V", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "10", "DependentChan" : "12",
 				"BlockSignal" : [
 					{"Name" : "img_out_data_stream_V_blk_n", "Type" : "RtlSignal"}]}]},
-	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.rozmycie_U0.buffer_val_0_U", "Parent" : "3"},
-	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.rozmycie_U0.buffer_val_1_U", "Parent" : "3"},
-	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.rozmycie_U0.filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_U9", "Parent" : "3"},
-	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.rozmycie_U0.filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_U10", "Parent" : "3"},
-	{"ID" : "8", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.rozmycie_U0.filtr_Gauss_mac_muladd_7ns_8ns_14ns_15_1_1_U11", "Parent" : "3"},
-	{"ID" : "9", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.rozmycie_U0.filtr_Gauss_mac_muladd_6ns_8ns_14ns_15_1_1_U12", "Parent" : "3"},
-	{"ID" : "10", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.rozmycie_U0.filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_U13", "Parent" : "3"},
-	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Mat2AXIvideo_U0", "Parent" : "0",
+	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.rozmycie_U0.buffer_val_0_U", "Parent" : "2"},
+	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.rozmycie_U0.buffer_val_1_U", "Parent" : "2"},
+	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.rozmycie_U0.filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_U9", "Parent" : "2"},
+	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.rozmycie_U0.filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_U10", "Parent" : "2"},
+	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.rozmycie_U0.filtr_Gauss_mac_muladd_7ns_8ns_14ns_15_1_1_U11", "Parent" : "2"},
+	{"ID" : "8", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.rozmycie_U0.filtr_Gauss_mac_muladd_6ns_8ns_14ns_15_1_1_U12", "Parent" : "2"},
+	{"ID" : "9", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.rozmycie_U0.filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_U13", "Parent" : "2"},
+	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Mat2AXIvideo_U0", "Parent" : "0",
 		"CDFG" : "Mat2AXIvideo",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1",
@@ -254,10 +225,10 @@ set RtlHierarchyInfo {[
 		"HasSubDataflow" : "0",
 		"InDataflowNetwork" : "1",
 		"HasNonBlockingOperation" : "0",
-		"StartSource" : "3",
+		"StartSource" : "2",
 		"StartFifo" : "start_for_Mat2AXIvideo_U0_U",
 		"Port" : [
-			{"Name" : "img_data_stream_V", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "3", "DependentChan" : "13",
+			{"Name" : "img_data_stream_V", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "2", "DependentChan" : "12",
 				"BlockSignal" : [
 					{"Name" : "img_data_stream_V_blk_n", "Type" : "RtlSignal"}]},
 			{"Name" : "AXI_video_strm_V_data_V", "Type" : "Axis", "Direction" : "O",
@@ -269,10 +240,10 @@ set RtlHierarchyInfo {[
 			{"Name" : "AXI_video_strm_V_last_V", "Type" : "Axis", "Direction" : "O"},
 			{"Name" : "AXI_video_strm_V_id_V", "Type" : "Axis", "Direction" : "O"},
 			{"Name" : "AXI_video_strm_V_dest_V", "Type" : "Axis", "Direction" : "O"}]},
-	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.instance_in_data_str_U", "Parent" : "0"},
-	{"ID" : "13", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.instance_out_data_st_U", "Parent" : "0"},
-	{"ID" : "14", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.start_for_rozmycie_U0_U", "Parent" : "0"},
-	{"ID" : "15", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.start_for_Mat2AXIvideo_U0_U", "Parent" : "0"}]}
+	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.instance_in_data_str_U", "Parent" : "0"},
+	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.instance_out_data_st_U", "Parent" : "0"},
+	{"ID" : "13", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.start_for_rozmycie_U0_U", "Parent" : "0"},
+	{"ID" : "14", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.start_for_Mat2AXIvideo_U0_U", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {

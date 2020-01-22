@@ -1,0 +1,6 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+ERROR: [COSIM-24] TB preprocess failed : /home/lsriw/HLS/LisKonrad/GAUSS/test/test_gauss.cpp:4:21: fatal error: gauss.hpp: No such file or directory
+ #include "gauss.hpp"
+                     ^
+compilation terminated.
