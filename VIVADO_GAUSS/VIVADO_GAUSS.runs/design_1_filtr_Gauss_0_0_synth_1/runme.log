@@ -1,0 +1,816 @@
+
+*** Running vivado
+    with args -log design_1_filtr_Gauss_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_filtr_Gauss_0_0.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source design_1_filtr_Gauss_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/HLS/VIVADO_GAUSS/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 305.746 ; gain = 39.000
+Command: synth_design -top design_1_filtr_Gauss_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20764 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 428.172 ; gain = 100.809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_filtr_Gauss_0_0' [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ip/design_1_filtr_Gauss_0_0/synth/design_1_filtr_Gauss_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'filtr_Gauss' [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/filtr_Gauss.v:12]
+	Parameter C_S_AXI_BUN_1_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_BUN_1_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_BUN_1_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'filtr_Gauss_bun_1_s_axi' [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/filtr_Gauss_bun_1_s_axi.v:9]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 4'b0000 
+	Parameter ADDR_GIE bound to: 4'b0100 
+	Parameter ADDR_IER bound to: 4'b1000 
+	Parameter ADDR_ISR bound to: 4'b1100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/filtr_Gauss_bun_1_s_axi.v:189]
+INFO: [Synth 8-6155] done synthesizing module 'filtr_Gauss_bun_1_s_axi' (1#1) [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/filtr_Gauss_bun_1_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AXIvideo2Mat' [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/AXIvideo2Mat.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 8'b00000001 
+	Parameter ap_ST_fsm_state2 bound to: 8'b00000010 
+	Parameter ap_ST_fsm_state3 bound to: 8'b00000100 
+	Parameter ap_ST_fsm_state4 bound to: 8'b00001000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 8'b00010000 
+	Parameter ap_ST_fsm_state7 bound to: 8'b00100000 
+	Parameter ap_ST_fsm_state8 bound to: 8'b01000000 
+	Parameter ap_ST_fsm_state9 bound to: 8'b10000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/AXIvideo2Mat.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'AXIvideo2Mat' (2#1) [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/AXIvideo2Mat.v:10]
+INFO: [Synth 8-6157] synthesizing module 'rozmycie' [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/rozmycie.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state8 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/rozmycie.v:60]
+INFO: [Synth 8-6157] synthesizing module 'rozmycie_buffer_val_0' [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/rozmycie_buffer_val_0.v:53]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1280 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rozmycie_buffer_val_0_ram' [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/rozmycie_buffer_val_0.v:9]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 11 - type: integer 
+	Parameter MEM_SIZE bound to: 1280 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/rozmycie_buffer_val_0.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'rozmycie_buffer_val_0_ram' (3#1) [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/rozmycie_buffer_val_0.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'rozmycie_buffer_val_0' (4#1) [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/rozmycie_buffer_val_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1' [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1.v:33]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 6 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 14 - type: integer 
+	Parameter dout_WIDTH bound to: 14 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_DSP48_0' [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_DSP48_0' (5#1) [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1' (6#1) [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1.v:33]
+INFO: [Synth 8-6157] synthesizing module 'filtr_Gauss_mac_muladd_7ns_8ns_14ns_15_1_1' [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/filtr_Gauss_mac_muladd_7ns_8ns_14ns_15_1_1.v:33]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 7 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 14 - type: integer 
+	Parameter dout_WIDTH bound to: 15 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'filtr_Gauss_mac_muladd_7ns_8ns_14ns_15_1_1_DSP48_1' [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/filtr_Gauss_mac_muladd_7ns_8ns_14ns_15_1_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'filtr_Gauss_mac_muladd_7ns_8ns_14ns_15_1_1_DSP48_1' (7#1) [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/filtr_Gauss_mac_muladd_7ns_8ns_14ns_15_1_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'filtr_Gauss_mac_muladd_7ns_8ns_14ns_15_1_1' (8#1) [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/filtr_Gauss_mac_muladd_7ns_8ns_14ns_15_1_1.v:33]
+INFO: [Synth 8-6157] synthesizing module 'filtr_Gauss_mac_muladd_6ns_8ns_14ns_15_1_1' [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/filtr_Gauss_mac_muladd_6ns_8ns_14ns_15_1_1.v:33]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 6 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 14 - type: integer 
+	Parameter dout_WIDTH bound to: 15 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'filtr_Gauss_mac_muladd_6ns_8ns_14ns_15_1_1_DSP48_2' [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/filtr_Gauss_mac_muladd_6ns_8ns_14ns_15_1_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'filtr_Gauss_mac_muladd_6ns_8ns_14ns_15_1_1_DSP48_2' (9#1) [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/filtr_Gauss_mac_muladd_6ns_8ns_14ns_15_1_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'filtr_Gauss_mac_muladd_6ns_8ns_14ns_15_1_1' (10#1) [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/filtr_Gauss_mac_muladd_6ns_8ns_14ns_15_1_1.v:33]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/rozmycie.v:791]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/rozmycie.v:795]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/rozmycie.v:799]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/rozmycie.v:847]
+INFO: [Synth 8-6155] done synthesizing module 'rozmycie' (11#1) [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/rozmycie.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Mat2AXIvideo' [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/Mat2AXIvideo.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state6 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/Mat2AXIvideo.v:63]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_dest_V_1_sel_rd_reg was removed.  [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/Mat2AXIvideo.v:239]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_id_V_1_sel_rd_reg was removed.  [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/Mat2AXIvideo.v:265]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_keep_V_1_sel_rd_reg was removed.  [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/Mat2AXIvideo.v:291]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_strb_V_1_sel_rd_reg was removed.  [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/Mat2AXIvideo.v:353]
+INFO: [Synth 8-6155] done synthesizing module 'Mat2AXIvideo' (12#1) [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/Mat2AXIvideo.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A' [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/fifo_w8_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A_shiftReg' [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/fifo_w8_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A_shiftReg' (13#1) [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/fifo_w8_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A' (14#1) [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/fifo_w8_d2_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_rozmycie_U0' [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/start_for_rozmycie_U0.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_rozmycie_U0_shiftReg' [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/start_for_rozmycie_U0.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_rozmycie_U0_shiftReg' (15#1) [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/start_for_rozmycie_U0.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_rozmycie_U0' (16#1) [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/start_for_rozmycie_U0.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Mat2AXIvideo_U0' [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/start_for_Mat2AXIvideo_U0.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Mat2AXIvideo_U0_shiftReg' [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/start_for_Mat2AXIvideo_U0.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Mat2AXIvideo_U0_shiftReg' (17#1) [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/start_for_Mat2AXIvideo_U0.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Mat2AXIvideo_U0' (18#1) [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/start_for_Mat2AXIvideo_U0.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'filtr_Gauss' (19#1) [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/filtr_Gauss.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_filtr_Gauss_0_0' (20#1) [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ip/design_1_filtr_Gauss_0_0/synth/design_1_filtr_Gauss_0_0.v:58]
+WARNING: [Synth 8-3331] design rozmycie_buffer_val_0 has unconnected port reset
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TKEEP[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TSTRB[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TID[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TDEST[0]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[31]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[30]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[29]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[28]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[27]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[26]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[25]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[24]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[23]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[22]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[21]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[20]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[19]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[18]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[17]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[16]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[15]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[14]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[13]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[12]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[11]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[10]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[9]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[8]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[6]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[5]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[4]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[3]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WDATA[2]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WSTRB[3]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WSTRB[2]
+WARNING: [Synth 8-3331] design filtr_Gauss_bun_1_s_axi has unconnected port WSTRB[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 487.230 ; gain = 159.867
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 487.230 ; gain = 159.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 487.230 ; gain = 159.867
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ip/design_1_filtr_Gauss_0_0/constraints/filtr_Gauss_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ip/design_1_filtr_Gauss_0_0/constraints/filtr_Gauss_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.runs/design_1_filtr_Gauss_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.runs/design_1_filtr_Gauss_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 825.230 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 825.305 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 826.621 ; gain = 1.391
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 826.621 ; gain = 499.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 826.621 ; gain = 499.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.runs/design_1_filtr_Gauss_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 826.621 ; gain = 499.258
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'filtr_Gauss_bun_1_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'filtr_Gauss_bun_1_s_axi'
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond3_fu_268_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_280_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'buffer_val_1_addr_reg_738_reg[10:0]' into 'buffer_val_0_addr_reg_744_reg[10:0]' [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/rozmycie.v:245]
+INFO: [Synth 8-4471] merging register 'tmp1_1_fu_100_reg[31:8]' into 'tmp2_1_fu_96_reg[31:8]' [d:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/31c3/hdl/verilog/rozmycie.v:793]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond3_fu_209_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_249_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond2_fu_151_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_163_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "axi_last_V_fu_175_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'filtr_Gauss_bun_1_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'filtr_Gauss_bun_1_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 826.621 ; gain = 499.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     16 Bit       Adders := 1     
+	   3 Input     14 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               15 Bit    Registers := 2     
+	               14 Bit    Registers := 2     
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 6     
+	                8 Bit    Registers := 26    
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 16    
+	                1 Bit    Registers := 83    
++---RAMs : 
+	              10K Bit         RAMs := 2     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 15    
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   3 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 14    
+	   4 Input      2 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 73    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module filtr_Gauss_bun_1_s_axi 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module AXIvideo2Mat 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 8     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 23    
++---Muxes : 
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 5     
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 29    
+Module rozmycie_buffer_val_0_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	              10K Bit         RAMs := 1     
+Module rozmycie 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     16 Bit       Adders := 1     
+	   3 Input     14 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               15 Bit    Registers := 2     
+	               14 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 10    
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 22    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 7     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module Mat2AXIvideo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 8     
+	   4 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 17    
+Module fifo_w8_d2_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module fifo_w8_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_rozmycie_U0_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_rozmycie_U0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_Mat2AXIvideo_U0_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_Mat2AXIvideo_U0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "AXIvideo2Mat_U0/exitcond_fu_280_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "AXIvideo2Mat_U0/exitcond3_fu_268_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rozmycie_U0/exitcond_fu_249_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rozmycie_U0/exitcond3_fu_209_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Mat2AXIvideo_U0/exitcond_fu_163_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Mat2AXIvideo_U0/exitcond2_fu_151_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Mat2AXIvideo_U0/axi_last_V_fu_175_p2" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP rozmycie_U0/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_U13/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_DSP48_0_U/p, operation Mode is: C+A''*(B:0x13).
+DSP Report: register A is absorbed into DSP rozmycie_U0/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_U13/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_DSP48_0_U/p.
+DSP Report: register A is absorbed into DSP rozmycie_U0/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_U13/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_DSP48_0_U/p.
+DSP Report: operator rozmycie_U0/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_U13/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_DSP48_0_U/p is absorbed into DSP rozmycie_U0/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_U13/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_DSP48_0_U/p.
+DSP Report: operator rozmycie_U0/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_U13/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_DSP48_0_U/m is absorbed into DSP rozmycie_U0/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_U13/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_DSP48_0_U/p.
+DSP Report: Generating DSP rozmycie_U0/tmp10_reg_774_reg, operation Mode is: C+A*(B:0x13).
+DSP Report: register rozmycie_U0/tmp10_reg_774_reg is absorbed into DSP rozmycie_U0/tmp10_reg_774_reg.
+DSP Report: operator rozmycie_U0/filtr_Gauss_mac_muladd_6ns_8ns_14ns_15_1_1_U12/filtr_Gauss_mac_muladd_6ns_8ns_14ns_15_1_1_DSP48_2_U/p is absorbed into DSP rozmycie_U0/tmp10_reg_774_reg.
+DSP Report: operator rozmycie_U0/filtr_Gauss_mac_muladd_6ns_8ns_14ns_15_1_1_U12/filtr_Gauss_mac_muladd_6ns_8ns_14ns_15_1_1_DSP48_2_U/m is absorbed into DSP rozmycie_U0/tmp10_reg_774_reg.
+DSP Report: Generating DSP rozmycie_U0/tmp7_reg_764_reg, operation Mode is: C+A''*(B:0x13).
+DSP Report: register A is absorbed into DSP rozmycie_U0/tmp7_reg_764_reg.
+DSP Report: register A is absorbed into DSP rozmycie_U0/tmp7_reg_764_reg.
+DSP Report: register rozmycie_U0/tmp7_reg_764_reg is absorbed into DSP rozmycie_U0/tmp7_reg_764_reg.
+DSP Report: operator rozmycie_U0/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_U10/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_DSP48_0_U/p is absorbed into DSP rozmycie_U0/tmp7_reg_764_reg.
+DSP Report: operator rozmycie_U0/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_U10/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_DSP48_0_U/m is absorbed into DSP rozmycie_U0/tmp7_reg_764_reg.
+DSP Report: Generating DSP rozmycie_U0/tmp9_reg_769_reg, operation Mode is: C+A2*(B:0x34).
+DSP Report: register A is absorbed into DSP rozmycie_U0/tmp9_reg_769_reg.
+DSP Report: register rozmycie_U0/tmp9_reg_769_reg is absorbed into DSP rozmycie_U0/tmp9_reg_769_reg.
+DSP Report: operator rozmycie_U0/filtr_Gauss_mac_muladd_7ns_8ns_14ns_15_1_1_U11/filtr_Gauss_mac_muladd_7ns_8ns_14ns_15_1_1_DSP48_1_U/p is absorbed into DSP rozmycie_U0/tmp9_reg_769_reg.
+DSP Report: operator rozmycie_U0/filtr_Gauss_mac_muladd_7ns_8ns_14ns_15_1_1_U11/filtr_Gauss_mac_muladd_7ns_8ns_14ns_15_1_1_DSP48_1_U/m is absorbed into DSP rozmycie_U0/tmp9_reg_769_reg.
+DSP Report: Generating DSP rozmycie_U0/tmp6_reg_759_reg, operation Mode is: C+A*(B:0x13).
+DSP Report: register rozmycie_U0/tmp6_reg_759_reg is absorbed into DSP rozmycie_U0/tmp6_reg_759_reg.
+DSP Report: operator rozmycie_U0/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_U9/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_DSP48_0_U/p is absorbed into DSP rozmycie_U0/tmp6_reg_759_reg.
+DSP Report: operator rozmycie_U0/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_U9/filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_DSP48_0_U/m is absorbed into DSP rozmycie_U0/tmp6_reg_759_reg.
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[31]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[30]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[29]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[28]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[27]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[26]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[25]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[24]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[23]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[22]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[21]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[20]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[19]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[18]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[17]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[16]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[15]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[14]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[13]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[12]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[11]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[10]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[9]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[8]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[6]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[5]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[4]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[3]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WDATA[2]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WSTRB[3]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WSTRB[2]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port s_axi_bun_1_WSTRB[1]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port in_r_TKEEP[0]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port in_r_TSTRB[0]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port in_r_TID[0]
+WARNING: [Synth 8-3331] design filtr_Gauss has unconnected port in_r_TDEST[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\rozmycie_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\AXIvideo2Mat_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Mat2AXIvideo_U0/ap_done_reg_reg )
+INFO: [Synth 8-3886] merging instance 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[4]' (FDE) to 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[5]' (FDE) to 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[6]' (FDE) to 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[8]' (FDE) to 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[9]' (FDE) to 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[10]' (FDE) to 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[11]' (FDE) to 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[12]' (FDE) to 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[13]' (FDE) to 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[14]' (FDE) to 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[15]' (FDE) to 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[16]' (FDE) to 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[17]' (FDE) to 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[18]' (FDE) to 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[19]' (FDE) to 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[20]' (FDE) to 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[21]' (FDE) to 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[22]' (FDE) to 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[23]' (FDE) to 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[24]' (FDE) to 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[25]' (FDE) to 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[26]' (FDE) to 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[27]' (FDE) to 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[28]' (FDE) to 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[29]' (FDE) to 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[30]' (FDE) to 'inst/filtr_Gauss_bun_1_s_axi_U/rdata_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\filtr_Gauss_bun_1_s_axi_U/rdata_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (filtr_Gauss_bun_1_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module filtr_Gauss.
+WARNING: [Synth 8-3332] Sequential element (filtr_Gauss_bun_1_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module filtr_Gauss.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 826.621 ; gain = 499.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++---------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|rozmycie_buffer_val_0_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|rozmycie_buffer_val_0_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++---------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|filtr_Gauss | C+A''*(B:0x13) | 9      | 6      | 14     | -      | 14     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|filtr_Gauss | C+A*(B:0x13)   | 9      | 6      | 15     | -      | 15     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|filtr_Gauss | C+A''*(B:0x13) | 9      | 6      | 14     | -      | 14     | 2    | 0    | 0    | -    | -     | 0    | 1    | 
+|filtr_Gauss | C+A2*(B:0x34)  | 9      | 7      | 15     | -      | 15     | 1    | 0    | 0    | -    | -     | 0    | 1    | 
+|filtr_Gauss | C+A*(B:0x13)   | 9      | 6      | 14     | -      | 14     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance inst/i_2_0/rozmycie_U0/buffer_val_0_U/rozmycie_buffer_val_0_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 869.906 ; gain = 542.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 881.051 ; gain = 553.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++---------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|rozmycie_buffer_val_0_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|rozmycie_buffer_val_0_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++---------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance inst/rozmycie_U0/buffer_val_0_U/rozmycie_buffer_val_0_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 899.656 ; gain = 572.293
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 899.656 ; gain = 572.293
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 899.656 ; gain = 572.293
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 899.656 ; gain = 572.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 899.656 ; gain = 572.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 899.656 ; gain = 572.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 899.656 ; gain = 572.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |    20|
+|2     |DSP48E1    |     1|
+|3     |DSP48E1_1  |     2|
+|4     |DSP48E1_2  |     1|
+|5     |DSP48E1_3  |     1|
+|6     |LUT1       |    39|
+|7     |LUT2       |    41|
+|8     |LUT3       |   130|
+|9     |LUT4       |    81|
+|10    |LUT5       |   108|
+|11    |LUT6       |    77|
+|12    |RAMB18E1   |     1|
+|13    |RAMB18E1_1 |     1|
+|14    |FDRE       |   391|
+|15    |FDSE       |    11|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-------------------------------------------------------------+---------------------------------------------------+------+
+|      |Instance                                                     |Module                                             |Cells |
++------+-------------------------------------------------------------+---------------------------------------------------+------+
+|1     |top                                                          |                                                   |   905|
+|2     |  inst                                                       |filtr_Gauss                                        |   905|
+|3     |    AXIvideo2Mat_U0                                          |AXIvideo2Mat                                       |   253|
+|4     |    Mat2AXIvideo_U0                                          |Mat2AXIvideo                                       |   170|
+|5     |    filtr_Gauss_bun_1_s_axi_U                                |filtr_Gauss_bun_1_s_axi                            |    53|
+|6     |    instance_in_data_str_U                                   |fifo_w8_d2_A                                       |    33|
+|7     |      U_fifo_w8_d2_A_ram                                     |fifo_w8_d2_A_shiftReg_3                            |    25|
+|8     |    instance_out_data_st_U                                   |fifo_w8_d2_A_0                                     |    32|
+|9     |      U_fifo_w8_d2_A_ram                                     |fifo_w8_d2_A_shiftReg                              |    24|
+|10    |    rozmycie_U0                                              |rozmycie                                           |   341|
+|11    |      buffer_val_0_U                                         |rozmycie_buffer_val_0                              |     2|
+|12    |        rozmycie_buffer_val_0_ram_U                          |rozmycie_buffer_val_0_ram_2                        |     2|
+|13    |      buffer_val_1_U                                         |rozmycie_buffer_val_0_1                            |     6|
+|14    |        rozmycie_buffer_val_0_ram_U                          |rozmycie_buffer_val_0_ram                          |     6|
+|15    |      filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_U13         |filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1         |    15|
+|16    |        filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_DSP48_0_U |filtr_Gauss_mac_muladd_6ns_8ns_14ns_14_1_1_DSP48_0 |    15|
+|17    |    start_for_Mat2AXIvideo_U0_U                              |start_for_Mat2AXIvideo_U0                          |    11|
+|18    |    start_for_rozmycie_U0_U                                  |start_for_rozmycie_U0                              |    12|
++------+-------------------------------------------------------------+---------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 899.656 ; gain = 572.293
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 38 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:00:51 . Memory (MB): peak = 899.656 ; gain = 232.902
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 899.656 ; gain = 572.293
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 899.656 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+120 Infos, 83 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 899.656 ; gain = 582.656
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 899.656 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.runs/design_1_filtr_Gauss_0_0_synth_1/design_1_filtr_Gauss_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_filtr_Gauss_0_0, cache-ID = 0117c3eb38bdcfce
+INFO: [Coretcl 2-1174] Renamed 17 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 899.656 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/HLS/VIVADO_GAUSS/VIVADO_GAUSS.runs/design_1_filtr_Gauss_0_0_synth_1/design_1_filtr_Gauss_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_filtr_Gauss_0_0_utilization_synth.rpt -pb design_1_filtr_Gauss_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 17 23:00:00 2020...

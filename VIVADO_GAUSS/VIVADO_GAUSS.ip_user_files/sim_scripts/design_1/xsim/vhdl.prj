@@ -1,0 +1,23 @@
+vhdl xil_defaultlib  \
+"../../../../VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/0387/src/SyncBase.vhd" \
+"../../../../VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/0387/src/EEPROM_8b.vhd" \
+"../../../../VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/0387/src/TWI_SlaveCtl.vhd" \
+"../../../../VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/0387/src/GlitchFilter.vhd" \
+"../../../../VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/0387/src/SyncAsync.vhd" \
+"../../../../VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/0387/src/DVI_Constants.vhd" \
+"../../../../VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/0387/src/SyncAsyncReset.vhd" \
+"../../../../VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/0387/src/PhaseAlign.vhd" \
+"../../../../VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/0387/src/InputSERDES.vhd" \
+"../../../../VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/0387/src/ChannelBond.vhd" \
+"../../../../VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/0387/src/ResyncToBUFG.vhd" \
+"../../../../VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/0387/src/TMDS_Decoder.vhd" \
+"../../../../VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/0387/src/TMDS_Clocking.vhd" \
+"../../../../VIVADO_GAUSS.srcs/sources_1/bd/design_1/ipshared/0387/src/dvi2rgb.vhd" \
+"../../../bd/design_1/ip/design_1_dvi2rgb_0_0/sim/design_1_dvi2rgb_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_rgb2gray_0_0/RGB2GARY/RGB2GARY.srcs/sources_1/ip/add/sim/add.vhd" \
+"../../../bd/design_1/ip/design_1_rgb2gray_0_0/RGB2GARY/RGB2GARY.srcs/sources_1/ip/mult1/sim/mult1.vhd" \
+"../../../bd/design_1/ip/design_1_v_tc_0_0/sim/design_1_v_tc_0_0.vhd" \
+"../../../bd/design_1/ipshared/69dc/src/rgb2vga.vhd" \
+"../../../bd/design_1/ip/design_1_rgb2vga_0_0/sim/design_1_rgb2vga_0_0.vhd" \
+
+nosort
